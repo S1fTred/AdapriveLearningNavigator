@@ -1,5 +1,18 @@
 package com.example.adaprivelearningnavigator.domain.enums;
 
 public enum ResourceType {
-    Видео, Статья, Онлайн_курс, Книга, Интерактивный_материал
+    VIDEO("Видео"),
+    ARTICLE("Статья"),
+    COURSE("Онлайн-курс"),
+    BOOK("Книга"),
+    INTERACTIVE("Интерактивный материал");
+
+    private final String displayName;
+    ResourceType(String displayName) {
+        this.displayName = displayName;
+    }
+
+    public String getDisplayName() {
+        return displayName;
+    }
 }
