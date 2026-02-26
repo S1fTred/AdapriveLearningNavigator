@@ -27,7 +27,4 @@ public class UserPreference {
     @Column(name = "hours_per_week_default")
     private Integer hoursPerWeekDefault;
 
-    // MVP: строка/список через запятую. Позже можно нормализовать.
-    @Column(name = "preferred_resource_types", length = 200)
-    private String preferredResourceTypes;
 }
