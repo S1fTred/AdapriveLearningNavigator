@@ -1,6 +1,7 @@
-package com.example.adaprivelearningnavigator.domain;
+package com.example.adaprivelearningnavigator.domain.quizAndProgress;
 
 import com.example.adaprivelearningnavigator.domain.enums.EntityStatus;
+import com.example.adaprivelearningnavigator.domain.knowledgeBase.Topic;
 import jakarta.persistence.*;
 import lombok.*;
 

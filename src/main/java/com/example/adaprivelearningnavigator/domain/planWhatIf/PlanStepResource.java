@@ -1,6 +1,7 @@
-package com.example.adaprivelearningnavigator.domain;
+package com.example.adaprivelearningnavigator.domain.planWhatIf;
 
 import com.example.adaprivelearningnavigator.domain.compositeKeys.PlanStepResourceId;
+import com.example.adaprivelearningnavigator.domain.knowledgeBase.Resource;
 import jakarta.persistence.*;
 import lombok.*;
 

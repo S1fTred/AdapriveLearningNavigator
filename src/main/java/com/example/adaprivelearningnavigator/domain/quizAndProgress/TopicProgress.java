@@ -1,7 +1,9 @@
-package com.example.adaprivelearningnavigator.domain;
+package com.example.adaprivelearningnavigator.domain.quizAndProgress;
 
 import com.example.adaprivelearningnavigator.domain.compositeKeys.TopicProgressId;
 import com.example.adaprivelearningnavigator.domain.enums.ProgressStatus;
+import com.example.adaprivelearningnavigator.domain.knowledgeBase.Topic;
+import com.example.adaprivelearningnavigator.domain.planWhatIf.Plan;
 import jakarta.persistence.*;
 import lombok.*;
 

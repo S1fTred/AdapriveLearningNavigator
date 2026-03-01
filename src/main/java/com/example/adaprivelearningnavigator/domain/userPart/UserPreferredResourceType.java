@@ -1,4 +1,4 @@
-package com.example.adaprivelearningnavigator.domain;
+package com.example.adaprivelearningnavigator.domain.userPart;
 
 import com.example.adaprivelearningnavigator.domain.compositeKeys.UserPreferredResourceTypeId;
 import jakarta.persistence.*;

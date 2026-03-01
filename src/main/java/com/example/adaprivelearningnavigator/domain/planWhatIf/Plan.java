@@ -1,6 +1,9 @@
-package com.example.adaprivelearningnavigator.domain;
+package com.example.adaprivelearningnavigator.domain.planWhatIf;
 
+import com.example.adaprivelearningnavigator.domain.AuditableEntity;
 import com.example.adaprivelearningnavigator.domain.enums.ScenarioType;
+import com.example.adaprivelearningnavigator.domain.knowledgeBase.RoleGoal;
+import com.example.adaprivelearningnavigator.domain.userPart.User;
 import jakarta.persistence.*;
 import lombok.*;
 

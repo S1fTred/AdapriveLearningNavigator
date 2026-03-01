@@ -1,5 +1,6 @@
-package com.example.adaprivelearningnavigator.domain;
+package com.example.adaprivelearningnavigator.domain.planWhatIf;
 
+import com.example.adaprivelearningnavigator.domain.knowledgeBase.Topic;
 import jakarta.persistence.*;
 import lombok.*;
 

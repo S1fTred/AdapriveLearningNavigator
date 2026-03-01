@@ -1,4 +1,4 @@
-package com.example.adaprivelearningnavigator.domain;
+package com.example.adaprivelearningnavigator.domain.knowledgeBase;
 
 import com.example.adaprivelearningnavigator.domain.enums.EntityStatus;
 import jakarta.persistence.*;

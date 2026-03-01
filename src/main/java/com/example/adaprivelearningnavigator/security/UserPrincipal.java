@@ -1,6 +1,6 @@
 package com.example.adaprivelearningnavigator.security;
 
-import com.example.adaprivelearningnavigator.domain.User;
+import com.example.adaprivelearningnavigator.domain.userPart.User;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.springframework.security.core.*;

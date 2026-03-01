@@ -1,5 +1,6 @@
-package com.example.adaprivelearningnavigator.domain;
+package com.example.adaprivelearningnavigator.domain.knowledgeBase;
 
+import com.example.adaprivelearningnavigator.domain.AuditableEntity;
 import com.example.adaprivelearningnavigator.domain.enums.PrereqRelationType;
 import jakarta.persistence.*;
 import lombok.*;

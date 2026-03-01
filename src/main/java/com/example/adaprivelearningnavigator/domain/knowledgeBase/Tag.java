@@ -1,4 +1,4 @@
-package com.example.adaprivelearningnavigator.domain;
+package com.example.adaprivelearningnavigator.domain.knowledgeBase;
 
 import jakarta.persistence.*;
 import lombok.*;

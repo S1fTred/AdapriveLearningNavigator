@@ -1,5 +1,6 @@
-package com.example.adaprivelearningnavigator.domain;
+package com.example.adaprivelearningnavigator.domain.userPart;
 
+import com.example.adaprivelearningnavigator.domain.knowledgeBase.Topic;
 import com.example.adaprivelearningnavigator.domain.compositeKeys.UserKnownTopicId;
 import com.example.adaprivelearningnavigator.domain.enums.KnownSource;
 import jakarta.persistence.*;

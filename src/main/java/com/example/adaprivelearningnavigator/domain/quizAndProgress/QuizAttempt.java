@@ -1,5 +1,6 @@
-package com.example.adaprivelearningnavigator.domain;
+package com.example.adaprivelearningnavigator.domain.quizAndProgress;
 
+import com.example.adaprivelearningnavigator.domain.userPart.User;
 import jakarta.persistence.*;
 import lombok.*;
 

@@ -1,4 +1,4 @@
-package com.example.adaprivelearningnavigator.domain;
+package com.example.adaprivelearningnavigator.domain.quizAndProgress;
 
 import com.example.adaprivelearningnavigator.domain.enums.QuizQuestionType;
 import jakarta.persistence.*;
