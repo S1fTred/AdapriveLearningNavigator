@@ -2,26 +2,47 @@ spring:
   application:
     name: aln
 
+  datasource:
+    # H2 в режиме PostgreSQL (удобно для dev)
+    url: jdbc:h2:file:./db/aln_db;AUTO_SERVER=TRUE;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE
+    username: aln
+    password: aln
+    driver-class-name: org.h2.Driver
+
+  sql:
+    init:
+      # Первый запуск: always (создаёт таблицы из schema.sql)
+      # Потом можно переключить на never
+      mode: always
+      schema-locations: classpath:schema.sql
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc.time_zone: UTC
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  flyway:
+    enabled: false
+
 ---
 # ========================
 # JWT (Bearer) Authentication
 # ========================
 security:
   jwt:
-    # Секрет для подписи токенов (на проде подставляется из переменной окружения JWT_SECRET)
     secret: ${JWT_SECRET:change-me-dev-secret-at-least-32-bytes-long}
-
-    # Время жизни токенов (можно "900s", "15m", "PT15M")
-    access-ttl: 900s      # Access-токен: 15 минут
-    refresh-ttl: 7d       # Refresh-токен: 7 дней
+    access-ttl: 900s
+    refresh-ttl: 7d
 
 ---
-# ========================
-# Сервер (порт и пр.)
-# ========================
 server:
   port: 8080
-spring:
-  web:
-    error:
-      include-message: always
