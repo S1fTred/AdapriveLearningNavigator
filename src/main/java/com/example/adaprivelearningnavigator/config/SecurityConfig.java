@@ -1,6 +1,5 @@
 package com.example.adaprivelearningnavigator.config;
 
-import com.example.adaprivelearningnavigator.repo.UserRepository;
 import com.example.adaprivelearningnavigator.security.JwtAuthenticationFilter;
 import com.example.adaprivelearningnavigator.security.JwtProperties;
 import com.example.adaprivelearningnavigator.security.JwtService;
@@ -23,6 +22,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.web.cors.*;
+import com.example.adaprivelearningnavigator.repo.UserRepository;
+
 
 import java.util.List;
 
