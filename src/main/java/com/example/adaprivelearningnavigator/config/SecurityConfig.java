@@ -1,5 +1,6 @@
 package com.example.adaprivelearningnavigator.config;
 
+import com.example.adaprivelearningnavigator.repo.UserRepository;
 import com.example.adaprivelearningnavigator.security.JwtAuthenticationFilter;
 import com.example.adaprivelearningnavigator.security.JwtProperties;
 import com.example.adaprivelearningnavigator.security.JwtService;
@@ -40,7 +41,7 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        var jwtFilter = new JwtAuthenticationFilter(jwtService, userRepository);
+        var jwtFilter = new JwtAuthenticationFilter(jwtService, userRepository, authenticationEntryPoint);
 
         http
                 .csrf(csrf -> csrf

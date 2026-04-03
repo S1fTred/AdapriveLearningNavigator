@@ -1,11 +1,11 @@
 package com.example.adaprivelearningnavigator.security;
 
+import com.example.adaprivelearningnavigator.repo.UserRepository;
 import io.jsonwebtoken.Claims;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpHeaders;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.AuthenticationEntryPoint;
@@ -16,14 +16,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import java.io.IOException;
 import java.util.List;
 
-@RequiredArgsConstructor
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
-
-    private final JwtService jwtService;
-    private final UserRepository userRepository;
-
-    // чтобы отдавать 401 в формате ApiErrorResponse
-    private final AuthenticationEntryPoint authenticationEntryPoint;
 
     private static final AntPathMatcher PATH_MATCHER = new AntPathMatcher();
     private static final List<String> WHITELIST = List.of(
@@ -33,12 +26,29 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             "/api/topics/**", "/api/roles/**"
     );
 
+    private final JwtService jwtService;
+    private final UserRepository userRepository;
+    private final AuthenticationEntryPoint authenticationEntryPoint;
+
+    public JwtAuthenticationFilter(JwtService jwtService,
+                                   UserRepository userRepository,
+                                   AuthenticationEntryPoint authenticationEntryPoint) {
+        this.jwtService = jwtService;
+        this.userRepository = userRepository;
+        this.authenticationEntryPoint = authenticationEntryPoint;
+    }
+
     @Override
     protected boolean shouldNotFilter(HttpServletRequest request) {
-        if ("OPTIONS".equalsIgnoreCase(request.getMethod())) return true;
+        if ("OPTIONS".equalsIgnoreCase(request.getMethod())) {
+            return true;
+        }
+
         String uri = request.getRequestURI();
         for (String pattern : WHITELIST) {
-            if (PATH_MATCHER.match(pattern, uri)) return true;
+            if (PATH_MATCHER.match(pattern, uri)) {
+                return true;
+            }
         }
         return false;
     }
@@ -49,8 +59,6 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                                     FilterChain chain) throws ServletException, IOException {
 
         String header = req.getHeader(HttpHeaders.AUTHORIZATION);
-
-        // Если заголовка нет — просто идём дальше (доступ решит SecurityFilterChain)
         if (!StringUtils.hasText(header) || !header.startsWith("Bearer ")) {
             chain.doFilter(req, res);
             return;
@@ -64,9 +72,10 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
             var userOpt = userRepository.findById(userId);
             if (userOpt.isEmpty()) {
-                // Токен валиден, но пользователь не найден — считаем, что авторизация невозможна
                 SecurityContextHolder.clearContext();
-                authenticationEntryPoint.commence(req, res,
+                authenticationEntryPoint.commence(
+                        req,
+                        res,
                         new org.springframework.security.authentication.BadCredentialsException(
                                 "Пользователь не найден"
                         )
@@ -76,18 +85,21 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
             var principal = UserPrincipal.from(userOpt.get());
             var auth = new org.springframework.security.authentication.UsernamePasswordAuthenticationToken(
-                    principal, null, principal.getAuthorities()
+                    principal,
+                    null,
+                    principal.getAuthorities()
             );
             SecurityContextHolder.getContext().setAuthentication(auth);
 
             chain.doFilter(req, res);
-
         } catch (Exception ex) {
-            // Любая ошибка валидации JWT (просрочен, подпись, формат) => 401 в едином формате
             SecurityContextHolder.clearContext();
-            authenticationEntryPoint.commence(req, res,
+            authenticationEntryPoint.commence(
+                    req,
+                    res,
                     new org.springframework.security.authentication.BadCredentialsException(
-                            "Неверный или просроченный токен", ex
+                            "Неверный или просроченный токен",
+                            ex
                     )
             );
         }
