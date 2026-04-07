@@ -1,0 +1,4 @@
+2026-04-07 23:03:34.082833+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "users" уже существует
+Table "users" already exists; SQL statement:
+CREATE TABLE users ( id UUID PRIMARY KEY, email VARCHAR(255) NOT NULL UNIQUE, password_hash VARCHAR(255) NOT NULL, display_name VARCHAR(120), created_at TIMESTAMP WITH TIME ZONE DEFAULT now(), updated_at TIMESTAMP WITH TIME ZONE ) [42101-240]

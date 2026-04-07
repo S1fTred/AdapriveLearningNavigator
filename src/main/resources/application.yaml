@@ -2,8 +2,15 @@ spring:
   application:
     name: aln
 
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        options:
+          model: qwen2.5:7b
+
   datasource:
-    # H2 в режиме PostgreSQL (удобно для dev)
+    # H2 in PostgreSQL compatibility mode for local development
     url: jdbc:h2:file:./db/aln_db;AUTO_SERVER=TRUE;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE
     username: aln
     password: aln
@@ -11,8 +18,8 @@ spring:
 
   sql:
     init:
-      # Первый запуск: always (создаёт таблицы из schema.sql)
-      # Потом можно переключить на never
+      # Dev mode: schema.sql recreates the schema on every application start.
+      # Switch to never if you want to keep local data between restarts.
       mode: always
       schema-locations: classpath:schema.sql
 
@@ -34,12 +41,10 @@ spring:
     enabled: false
 
 ---
-# ========================
-# JWT (Bearer) Authentication
-# ========================
 security:
   jwt:
     secret: ${JWT_SECRET:change-me-dev-secret-at-least-32-bytes-long}
+    issuer: aln
     access-ttl: 900s
     refresh-ttl: 7d
 

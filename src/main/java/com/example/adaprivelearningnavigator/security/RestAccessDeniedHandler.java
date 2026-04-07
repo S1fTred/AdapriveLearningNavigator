@@ -1,7 +1,7 @@
 package com.example.adaprivelearningnavigator.security;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.example.adaprivelearningnavigator.service.exception.ApiErrorResponse;
-import tools.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;

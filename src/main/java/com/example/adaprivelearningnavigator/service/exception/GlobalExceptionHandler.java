@@ -56,6 +56,16 @@ public class  GlobalExceptionHandler {
         return build(HttpStatus.UNAUTHORIZED, ex.getMessage(), req, null);
     }
 
+    @ExceptionHandler(AiRouteGenerationException.class)
+    public ResponseEntity<ApiErrorResponse> handleAiGeneration(AiRouteGenerationException ex, HttpServletRequest req) {
+        return build(HttpStatus.SERVICE_UNAVAILABLE, ex.getMessage(), req, null);
+    }
+
+    @ExceptionHandler(AiRouteValidationException.class)
+    public ResponseEntity<ApiErrorResponse> handleAiValidation(AiRouteValidationException ex, HttpServletRequest req) {
+        return build(HttpStatus.BAD_REQUEST, ex.getMessage(), req, null);
+    }
+
     // ALN-специфика
     @ExceptionHandler(GraphCycleException.class)
     public ResponseEntity<ApiErrorResponse> handleGraphCycle(GraphCycleException ex, HttpServletRequest req) {
