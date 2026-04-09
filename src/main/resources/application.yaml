@@ -20,7 +20,7 @@ spring:
     init:
       # Dev mode: schema.sql recreates the schema on every application start.
       # Switch to never if you want to keep local data between restarts.
-      mode: always
+      mode: never
       schema-locations: classpath:schema.sql
 
   jpa:

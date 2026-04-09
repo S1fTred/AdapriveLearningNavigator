@@ -67,7 +67,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         String token = header.substring(7);
 
         try {
-            Claims claims = jwtService.parseAndValidate(token);
+            Claims claims = jwtService.parseAndValidateAccessToken(token);
             Long userId = claims.get("userId", Number.class).longValue();
 
             var userOpt = userRepository.findById(userId);
