@@ -3,6 +3,12 @@ spring:
     name: aln
 
   ai:
+    retry:
+      max-attempts: 1
+      backoff:
+        initial-interval: 200ms
+        multiplier: 1
+        max-interval: 200ms
     ollama:
       base-url: http://localhost:11434
       chat:

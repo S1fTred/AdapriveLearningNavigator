@@ -34,9 +34,11 @@ public class AiRouteGenerationServiceImpl implements AiRouteGenerationService {
     }
 
     @Override
-    public AiRouteGenerateResponse generateRoute(AiPlanGenerateRequest request, List<AiTopicScopeItemDto> topicScope) {
+    public AiRouteGenerateResponse generateRoute(AiPlanGenerateRequest request,
+                                                 List<AiTopicScopeItemDto> topicScope,
+                                                 String correctionFeedback) {
         String systemPrompt = promptBuilder.buildSystemPrompt();
-        String userPrompt = promptBuilder.buildUserPrompt(request, topicScope);
+        String userPrompt = promptBuilder.buildUserPrompt(request, topicScope, correctionFeedback);
         String rawResponse;
 
         log.debug("AI system prompt: {}", systemPrompt);

@@ -20,6 +20,12 @@ spring:
         jdbc.time_zone: UTC
 
   ai:
+    retry:
+      max-attempts: 1
+      backoff:
+        initial-interval: 50ms
+        multiplier: 1
+        max-interval: 50ms
     ollama:
       base-url: http://localhost:11434
       chat:

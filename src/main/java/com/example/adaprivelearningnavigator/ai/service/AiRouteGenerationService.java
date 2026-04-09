@@ -7,5 +7,11 @@ import com.example.adaprivelearningnavigator.ai.dto.AiTopicScopeItemDto;
 import java.util.List;
 
 public interface AiRouteGenerationService {
-    AiRouteGenerateResponse generateRoute(AiPlanGenerateRequest request, List<AiTopicScopeItemDto> topicScope);
+    default AiRouteGenerateResponse generateRoute(AiPlanGenerateRequest request, List<AiTopicScopeItemDto> topicScope) {
+        return generateRoute(request, topicScope, null);
+    }
+
+    AiRouteGenerateResponse generateRoute(AiPlanGenerateRequest request,
+                                          List<AiTopicScopeItemDto> topicScope,
+                                          String correctionFeedback);
 }

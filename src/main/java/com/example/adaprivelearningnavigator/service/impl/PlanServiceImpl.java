@@ -134,13 +134,13 @@ public class PlanServiceImpl implements PlanService {
                 .collect(Collectors.toMap(roleTopic -> roleTopic.getTopic().getId(), Function.identity()));
 
         Map<Long, Topic> roleScopeTopics = buildRoleScope(roleTopicMeta.values());
-        List<AiTopicScopeItemDto> topicScope = buildAiTopicScope(roleScopeTopics.values());
-        AiRouteGenerateResponse aiResponse = aiRouteGenerationService.generateRoute(request, topicScope);
-        aiRouteValidationService.validateGeneratedRoute(aiResponse);
+        Map<Long, List<TopicPrereq>> requiredPrereqMap = buildRequiredPrereqMap();
+        List<AiTopicScopeItemDto> topicScope = buildAiTopicScope(roleScopeTopics.values(), roleTopicMeta, knownTopicIds, requiredPrereqMap);
+        AiRouteGenerateResponse aiResponse = generateValidatedAiRoute(request, topicScope, roleScopeTopics, roleTopicMeta, knownTopicIds, requiredPrereqMap);
 
         List<PlanningTopic> aiTopics = mapAiTopics(aiResponse, roleScopeTopics, roleTopicMeta, knownTopicIds);
-        List<PlanningTopic> workingTopics = buildWorkingTopics(aiTopics, roleScopeTopics, knownTopicIds, roleTopicMeta);
-        List<PlanningTopic> orderedTopics = orderTopics(workingTopics, roleTopicMeta);
+        List<PlanningTopic> workingTopics = buildWorkingTopics(aiTopics, roleScopeTopics, knownTopicIds, roleTopicMeta, requiredPrereqMap);
+        List<PlanningTopic> orderedTopics = orderTopics(workingTopics, roleTopicMeta, requiredPrereqMap);
         if (orderedTopics.isEmpty()) {
             throw new PlanBuildException("После исключения уже известных тем не осталось шагов для построения плана");
         }
@@ -269,15 +269,55 @@ public class PlanServiceImpl implements PlanService {
         return result;
     }
 
-    private List<AiTopicScopeItemDto> buildAiTopicScope(Collection<Topic> topics) {
+    private AiRouteGenerateResponse generateValidatedAiRoute(AiPlanGenerateRequest request,
+                                                             List<AiTopicScopeItemDto> topicScope,
+                                                             Map<Long, Topic> roleScopeTopics,
+                                                             Map<Long, RoleTopic> roleTopicMeta,
+                                                             Set<Long> knownTopicIds,
+                                                             Map<Long, List<TopicPrereq>> requiredPrereqMap) {
+        AiRouteGenerateResponse aiResponse = aiRouteGenerationService.generateRoute(request, topicScope);
+        aiRouteValidationService.validateGeneratedRoute(aiResponse);
+
+        List<String> issues = describeAiRouteIssues(aiResponse, roleScopeTopics, roleTopicMeta, knownTopicIds, requiredPrereqMap);
+        if (issues.isEmpty()) {
+            return aiResponse;
+        }
+
+        String correctionFeedback = issues.stream()
+                .map(issue -> "- " + issue)
+                .collect(Collectors.joining("\n"));
+        log.info("AI-маршрут неполный или некорректно покрывает цель, выполняется один correction retry: {}", issues);
+
+        AiRouteGenerateResponse correctedResponse = aiRouteGenerationService.generateRoute(request, topicScope, correctionFeedback);
+        aiRouteValidationService.validateGeneratedRoute(correctedResponse);
+
+        List<String> retryIssues = describeAiRouteIssues(correctedResponse, roleScopeTopics, roleTopicMeta, knownTopicIds, requiredPrereqMap);
+        if (!retryIssues.isEmpty()) {
+            log.warn("AI-маршрут после correction retry всё ещё неполный. Backend включит fallback enrichment: {}", retryIssues);
+        }
+
+        return correctedResponse;
+    }
+
+    private List<AiTopicScopeItemDto> buildAiTopicScope(Collection<Topic> topics,
+                                                        Map<Long, RoleTopic> roleTopicMeta,
+                                                        Set<Long> knownTopicIds,
+                                                        Map<Long, List<TopicPrereq>> requiredPrereqMap) {
         return topics.stream()
                 .sorted(Comparator.comparing(Topic::getCode, String.CASE_INSENSITIVE_ORDER))
                 .map(topic -> new AiTopicScopeItemDto(
                         topic.getCode(),
                         topic.getTitle(),
                         topic.getLevel() != null ? topic.getLevel().name() : "UNKNOWN",
+                        rolePriority(roleTopicMeta.get(topic.getId())),
+                        isRequiredRoleTopic(roleTopicMeta.get(topic.getId())),
+                        knownTopicIds.contains(topic.getId()),
                         topic.isCore(),
-                        topic.getEstimatedHours()
+                        topic.getEstimatedHours(),
+                        requiredPrereqMap.getOrDefault(topic.getId(), List.of()).stream()
+                                .map(prereq -> prereq.getPrereqTopic().getCode())
+                                .sorted(String.CASE_INSENSITIVE_ORDER)
+                                .toList()
                 ))
                 .toList();
     }
@@ -324,7 +364,8 @@ public class PlanServiceImpl implements PlanService {
     private List<PlanningTopic> buildWorkingTopics(List<PlanningTopic> aiTopics,
                                                    Map<Long, Topic> roleScopeTopics,
                                                    Set<Long> knownTopicIds,
-                                                   Map<Long, RoleTopic> roleTopicMeta) {
+                                                   Map<Long, RoleTopic> roleTopicMeta,
+                                                   Map<Long, List<TopicPrereq>> prereqsByNextId) {
         Map<Long, PlanningTopic> result = aiTopics.stream()
                 .collect(Collectors.toMap(
                         planningTopic -> planningTopic.topic().getId(),
@@ -333,8 +374,9 @@ public class PlanServiceImpl implements PlanService {
                         LinkedHashMap::new
                 ));
 
-        Map<Long, List<TopicPrereq>> prereqsByNextId = buildRequiredPrereqMap();
-        Deque<Topic> stack = aiTopics.stream()
+        addMissingRequiredRoleTopics(result, roleTopicMeta, knownTopicIds);
+
+        Deque<Topic> stack = result.values().stream()
                 .map(PlanningTopic::topic)
                 .collect(Collectors.toCollection(ArrayDeque::new));
 
@@ -365,12 +407,90 @@ public class PlanServiceImpl implements PlanService {
         return new ArrayList<>(result.values());
     }
 
-    private List<PlanningTopic> orderTopics(List<PlanningTopic> topics, Map<Long, RoleTopic> roleTopicMeta) {
+    private void addMissingRequiredRoleTopics(Map<Long, PlanningTopic> result,
+                                              Map<Long, RoleTopic> roleTopicMeta,
+                                              Set<Long> knownTopicIds) {
+        for (RoleTopic roleTopic : roleTopicMeta.values()) {
+            Topic topic = roleTopic.getTopic();
+            if (!roleTopic.isRequired() || knownTopicIds.contains(topic.getId()) || result.containsKey(topic.getId())) {
+                continue;
+            }
+
+            int fallbackPriority = rolePriority(roleTopic);
+            result.put(topic.getId(), new PlanningTopic(
+                    topic,
+                    defaultHours(topic),
+                    fallbackPriority,
+                    Integer.MAX_VALUE,
+                    "Добавлено backend как обязательная тема выбранной роли.",
+                    false,
+                    false
+            ));
+        }
+    }
+
+    private List<String> describeAiRouteIssues(AiRouteGenerateResponse aiResponse,
+                                               Map<Long, Topic> roleScopeTopics,
+                                               Map<Long, RoleTopic> roleTopicMeta,
+                                               Set<Long> knownTopicIds,
+                                               Map<Long, List<TopicPrereq>> prereqsByNextId) {
+        Map<Long, Topic> aiTopicsById = new LinkedHashMap<>();
+        List<String> issues = new ArrayList<>();
+        List<Long> orderedIds = new ArrayList<>();
+
+        for (AiGeneratedTopicDto generatedTopic : aiResponse.topics()) {
+            Topic topic = aiRouteValidationService.resolveExistingTopic(generatedTopic);
+            if (!roleScopeTopics.containsKey(topic.getId())) {
+                issues.add("Topic '%s' is outside the allowed role scope.".formatted(generatedTopic.topicCode()));
+                continue;
+            }
+            if (knownTopicIds.contains(topic.getId())) {
+                issues.add("Known topic '%s' must not appear in the generated route.".formatted(generatedTopic.topicCode()));
+                continue;
+            }
+            aiTopicsById.putIfAbsent(topic.getId(), topic);
+            orderedIds.add(topic.getId());
+        }
+
+        for (RoleTopic roleTopic : roleTopicMeta.values()) {
+            Topic topic = roleTopic.getTopic();
+            if (roleTopic.isRequired() && !knownTopicIds.contains(topic.getId()) && !aiTopicsById.containsKey(topic.getId())) {
+                issues.add("Missing required topic '%s' (%s).".formatted(topic.getCode(), topic.getTitle()));
+            }
+        }
+
+        for (Long topicId : orderedIds) {
+            Topic topic = aiTopicsById.get(topicId);
+            if (topic == null) {
+                continue;
+            }
+            for (TopicPrereq prereq : prereqsByNextId.getOrDefault(topicId, List.of())) {
+                Long prereqId = prereq.getPrereqTopic().getId();
+                if (knownTopicIds.contains(prereqId)) {
+                    continue;
+                }
+                if (!aiTopicsById.containsKey(prereqId)) {
+                    issues.add("Missing required prerequisite '%s' for topic '%s'."
+                            .formatted(prereq.getPrereqTopic().getCode(), topic.getCode()));
+                    continue;
+                }
+                if (orderedIds.indexOf(prereqId) > orderedIds.indexOf(topicId)) {
+                    issues.add("Prerequisite '%s' must appear before topic '%s'."
+                            .formatted(prereq.getPrereqTopic().getCode(), topic.getCode()));
+                }
+            }
+        }
+
+        return issues;
+    }
+
+    private List<PlanningTopic> orderTopics(List<PlanningTopic> topics,
+                                            Map<Long, RoleTopic> roleTopicMeta,
+                                            Map<Long, List<TopicPrereq>> prereqsByNextId) {
         Map<Long, PlanningTopic> topicById = topics.stream()
                 .collect(Collectors.toMap(planningTopic -> planningTopic.topic().getId(), Function.identity()));
         Map<Long, List<Long>> outgoing = new HashMap<>();
         Map<Long, Integer> indegree = new HashMap<>();
-        Map<Long, List<TopicPrereq>> prereqsByNextId = buildRequiredPrereqMap();
 
         for (PlanningTopic topic : topics) {
             indegree.put(topic.topic().getId(), 0);
@@ -432,19 +552,18 @@ public class PlanServiceImpl implements PlanService {
                 .scenarioType(ScenarioType.BASE)
                 .scenarioLabel(null)
                 .build();
-        return planRepository.save(plan);
+        return planRepository.saveAndFlush(plan);
     }
 
     private void savePlanSnapshot(Plan plan, Integer hoursPerWeek) {
         PlanParamsSnapshot snapshot = PlanParamsSnapshot.builder()
-                .planId(plan.getId())
                 .plan(plan)
                 .hoursPerWeek(hoursPerWeek)
                 .prefsLanguage(null)
                 .prefsResourceTypes(null)
                 .algoVersion(AI_ALGO_VERSION)
                 .build();
-        planParamsSnapshotRepository.save(snapshot);
+        planParamsSnapshotRepository.saveAndFlush(snapshot);
     }
 
     private void savePlanWeeksAndSteps(Plan plan,
@@ -512,7 +631,6 @@ public class PlanServiceImpl implements PlanService {
                 : "KB_REQUIRED_PREREQ_ADDED";
 
         PlanStepExplanation explanation = planStepExplanationRepository.save(PlanStepExplanation.builder()
-                .planStepId(step.getId())
                 .planStep(step)
                 .ruleApplied(ruleApplied)
                 .topicPriorityReason(planningTopic.reason())
@@ -640,6 +758,10 @@ public class PlanServiceImpl implements PlanService {
         return roleTopic != null && roleTopic.getPriority() != null
                 ? roleTopic.getPriority()
                 : Integer.MAX_VALUE;
+    }
+
+    private boolean isRequiredRoleTopic(RoleTopic roleTopic) {
+        return roleTopic != null && roleTopic.isRequired();
     }
 
     private RoleGoal singleOrNull(List<RoleGoal> candidates, String ambiguousMessage) {

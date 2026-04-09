@@ -38,8 +38,8 @@ class AiPromptBuilderTest {
                 Set.of("Git", "HTTP")
         );
         List<AiTopicScopeItemDto> scope = List.of(
-                new AiTopicScopeItemDto("JAVA_BASICS", "Java Basics", "BASIC", true, BigDecimal.valueOf(6)),
-                new AiTopicScopeItemDto("OOP_JAVA", "OOP in Java", "BASIC", true, BigDecimal.valueOf(5))
+                new AiTopicScopeItemDto("JAVA_BASICS", "Java Basics", "BASIC", 1, true, false, true, BigDecimal.valueOf(6), List.of()),
+                new AiTopicScopeItemDto("OOP_JAVA", "OOP in Java", "BASIC", 2, true, false, true, BigDecimal.valueOf(5), List.of("JAVA_BASICS"))
         );
 
         String prompt = promptBuilder.buildUserPrompt(request, scope);
@@ -53,7 +53,10 @@ class AiPromptBuilderTest {
                 () -> assertTrue(prompt.contains("JAVA_BASICS")),
                 () -> assertTrue(prompt.contains("Java Basics")),
                 () -> assertTrue(prompt.contains("OOP_JAVA")),
-                () -> assertTrue(prompt.contains("OOP in Java"))
+                () -> assertTrue(prompt.contains("OOP in Java")),
+                () -> assertTrue(prompt.contains("required=true")),
+                () -> assertTrue(prompt.contains("known=false")),
+                () -> assertTrue(prompt.contains("requiredPrereqCodes=[JAVA_BASICS]"))
         );
     }
 }

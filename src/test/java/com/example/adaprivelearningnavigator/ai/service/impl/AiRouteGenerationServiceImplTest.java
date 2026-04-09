@@ -156,8 +156,8 @@ class AiRouteGenerationServiceImplTest {
 
     private List<AiTopicScopeItemDto> topicScope() {
         return List.of(
-                new AiTopicScopeItemDto("JAVA_BASICS", "Java Basics", "BASIC", true, BigDecimal.valueOf(6)),
-                new AiTopicScopeItemDto("SPRING_BOOT", "Spring Boot", "INTERMEDIATE", true, BigDecimal.valueOf(8))
+                new AiTopicScopeItemDto("JAVA_BASICS", "Java Basics", "BASIC", 1, true, false, true, BigDecimal.valueOf(6), List.of()),
+                new AiTopicScopeItemDto("SPRING_BOOT", "Spring Boot", "INTERMEDIATE", 2, true, false, true, BigDecimal.valueOf(8), List.of("JAVA_BASICS"))
         );
     }
 }

@@ -6,7 +6,11 @@ public record AiTopicScopeItemDto(
         String topicCode,
         String title,
         String level,
+        Integer rolePriority,
+        boolean required,
+        boolean known,
         boolean core,
-        BigDecimal estimatedHours
+        BigDecimal estimatedHours,
+        java.util.List<String> requiredPrereqCodes
 ) {
 }

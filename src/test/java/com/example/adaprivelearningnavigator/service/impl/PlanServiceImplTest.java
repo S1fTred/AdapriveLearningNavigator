@@ -60,14 +60,18 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertIterableEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyList;
 import static org.mockito.ArgumentMatchers.anyLong;
+import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.doAnswer;
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.lenient;
 import static org.mockito.Mockito.spy;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -118,6 +122,7 @@ class PlanServiceImplTest {
                 prereq(http, spring)
         ));
         when(aiRouteGenerationService.generateRoute(eq(request), anyList())).thenReturn(aiResponse);
+        lenient().when(aiRouteGenerationService.generateRoute(eq(request), anyList(), anyString())).thenReturn(aiResponse);
         doNothing().when(aiRouteValidationService).validateGeneratedRoute(aiResponse);
         when(aiRouteValidationService.resolveExistingTopic("Java Basics")).thenReturn(basics);
         when(aiRouteValidationService.resolveExistingTopic(any(AiGeneratedTopicDto.class))).thenAnswer(invocation -> {
@@ -182,6 +187,7 @@ class PlanServiceImplTest {
                 .thenReturn(List.of(roleTopic(role, spring, 1, true)));
         when(topicPrereqRepository.findAll()).thenReturn(List.of());
         when(aiRouteGenerationService.generateRoute(eq(request), anyList())).thenReturn(aiResponse);
+        lenient().when(aiRouteGenerationService.generateRoute(eq(request), anyList(), anyString())).thenReturn(aiResponse);
         doNothing().when(aiRouteValidationService).validateGeneratedRoute(aiResponse);
         when(aiRouteValidationService.resolveExistingTopic(any(AiGeneratedTopicDto.class))).thenReturn(spring);
 
@@ -230,6 +236,7 @@ class PlanServiceImplTest {
                 .thenReturn(List.of(roleTopic(role, basics, 1, true)));
         when(topicPrereqRepository.findAll()).thenReturn(List.of());
         when(aiRouteGenerationService.generateRoute(eq(request), anyList())).thenReturn(aiResponse);
+        lenient().when(aiRouteGenerationService.generateRoute(eq(request), anyList(), anyString())).thenReturn(aiResponse);
         doNothing().when(aiRouteValidationService).validateGeneratedRoute(aiResponse);
         when(aiRouteValidationService.resolveExistingTopic("Java Basics")).thenReturn(basics);
         when(aiRouteValidationService.resolveExistingTopic(any(AiGeneratedTopicDto.class))).thenReturn(basics);
@@ -237,6 +244,123 @@ class PlanServiceImplTest {
         PlanServiceImpl planService = spyPlanService(new ArrayList<>(), new ArrayList<>(), new PlanParamsSnapshot[1]);
 
         assertThrows(PlanBuildException.class, () -> planService.generatePlanWithAi(1L, request));
+    }
+
+    @Test
+    void shouldAddMissingRequiredRoleTopicsEvenWhenAiOmitsThem() {
+        User user = user(1L, "test@example.com");
+        RoleGoal role = roleGoal(100L, "java-backend", "Java Backend Developer");
+        Topic basics = topic(10L, "JAVA_BASICS", "Java Basics");
+        Topic http = topic(11L, "HTTP", "HTTP");
+        Topic spring = topic(12L, "SPRING_BOOT", "Spring Boot");
+        Topic sql = topic(13L, "SQL", "SQL");
+        Topic jpa = topic(14L, "JPA", "JPA/Hibernate");
+
+        AiPlanGenerateRequest request = new AiPlanGenerateRequest(
+                "java-backend",
+                UserLevel.BEGINNER,
+                10,
+                Set.of()
+        );
+        AiRouteGenerateResponse aiResponse = new AiRouteGenerateResponse(
+                "Java backend developer",
+                List.of(generatedTopic("Spring Boot", 1, 8, "Main framework topic"))
+        );
+
+        when(userRepository.findById(1L)).thenReturn(Optional.of(user));
+        when(roleGoalRepository.findAll()).thenReturn(List.of(role));
+        when(roleTopicRepository.findAllByRole_IdOrderByPriorityAsc(100L))
+                .thenReturn(List.of(
+                        roleTopic(role, spring, 1, true),
+                        roleTopic(role, jpa, 2, true)
+                ));
+        when(topicPrereqRepository.findAll()).thenReturn(List.of(
+                prereq(basics, spring),
+                prereq(http, spring),
+                prereq(sql, jpa),
+                prereq(spring, jpa)
+        ));
+        when(aiRouteGenerationService.generateRoute(eq(request), anyList())).thenReturn(aiResponse);
+        lenient().when(aiRouteGenerationService.generateRoute(eq(request), anyList(), anyString())).thenReturn(aiResponse);
+        doNothing().when(aiRouteValidationService).validateGeneratedRoute(aiResponse);
+        when(aiRouteValidationService.resolveExistingTopic(any(AiGeneratedTopicDto.class))).thenReturn(spring);
+
+        List<PlanStep> savedSteps = new ArrayList<>();
+        PlanServiceImpl planService = spyPlanService(savedSteps, new ArrayList<>(), new PlanParamsSnapshot[1]);
+
+        planService.generatePlanWithAi(1L, request);
+
+        List<Long> orderedTopicIds = savedSteps.stream()
+                .map(step -> step.getTopic().getId())
+                .toList();
+
+        assertEquals(5, orderedTopicIds.size());
+        assertTrue(orderedTopicIds.containsAll(List.of(
+                basics.getId(),
+                http.getId(),
+                sql.getId(),
+                spring.getId(),
+                jpa.getId()
+        )));
+        assertTrue(orderedTopicIds.indexOf(spring.getId()) > orderedTopicIds.indexOf(basics.getId()));
+        assertTrue(orderedTopicIds.indexOf(spring.getId()) > orderedTopicIds.indexOf(http.getId()));
+        assertTrue(orderedTopicIds.indexOf(jpa.getId()) > orderedTopicIds.indexOf(sql.getId()));
+        assertTrue(orderedTopicIds.indexOf(jpa.getId()) > orderedTopicIds.indexOf(spring.getId()));
+    }
+
+    @Test
+    void shouldRetryAiWhenInitialRouteMissesRequiredTopics() {
+        User user = user(1L, "test@example.com");
+        RoleGoal role = roleGoal(100L, "java-backend", "Java Backend Developer");
+        Topic basics = topic(10L, "JAVA_BASICS", "Java Basics");
+        Topic spring = topic(12L, "SPRING_BOOT", "Spring Boot");
+
+        AiPlanGenerateRequest request = new AiPlanGenerateRequest(
+                "java-backend",
+                UserLevel.BEGINNER,
+                10,
+                Set.of()
+        );
+        AiRouteGenerateResponse incompleteResponse = new AiRouteGenerateResponse(
+                "Java backend developer",
+                List.of(generatedTopic("Spring Boot", 1, 8, "Framework topic"))
+        );
+        AiRouteGenerateResponse correctedResponse = new AiRouteGenerateResponse(
+                "Java backend developer",
+                List.of(
+                        generatedTopic("Java Basics", 1, 6, "Foundation topic"),
+                        generatedTopic("Spring Boot", 2, 8, "Framework topic")
+                )
+        );
+
+        when(userRepository.findById(1L)).thenReturn(Optional.of(user));
+        when(roleGoalRepository.findAll()).thenReturn(List.of(role));
+        when(roleTopicRepository.findAllByRole_IdOrderByPriorityAsc(100L))
+                .thenReturn(List.of(
+                        roleTopic(role, basics, 1, true),
+                        roleTopic(role, spring, 2, true)
+                ));
+        when(topicPrereqRepository.findAll()).thenReturn(List.of(prereq(basics, spring)));
+        when(aiRouteGenerationService.generateRoute(eq(request), anyList())).thenReturn(incompleteResponse);
+        when(aiRouteGenerationService.generateRoute(eq(request), anyList(), anyString())).thenReturn(correctedResponse);
+        doNothing().when(aiRouteValidationService).validateGeneratedRoute(any(AiRouteGenerateResponse.class));
+        when(aiRouteValidationService.resolveExistingTopic(any(AiGeneratedTopicDto.class))).thenAnswer(invocation -> {
+            AiGeneratedTopicDto dto = invocation.getArgument(0);
+            return switch (dto.topicCode()) {
+                case "JAVA_BASICS" -> basics;
+                case "SPRING_BOOT" -> spring;
+                default -> null;
+            };
+        });
+
+        List<PlanStep> savedSteps = new ArrayList<>();
+        PlanServiceImpl planService = spyPlanService(savedSteps, new ArrayList<>(), new PlanParamsSnapshot[1]);
+
+        planService.generatePlanWithAi(1L, request);
+
+        verify(aiRouteGenerationService, times(1)).generateRoute(eq(request), anyList(), anyString());
+        assertEquals(List.of(basics.getId(), spring.getId()),
+                savedSteps.stream().map(step -> step.getTopic().getId()).toList());
     }
 
     @Test
@@ -262,6 +386,7 @@ class PlanServiceImplTest {
                 .thenReturn(List.of(roleTopic(role, spring, 1, true)));
         when(topicPrereqRepository.findAll()).thenReturn(List.of());
         when(aiRouteGenerationService.generateRoute(eq(request), anyList())).thenReturn(aiResponse);
+        lenient().when(aiRouteGenerationService.generateRoute(eq(request), anyList(), anyString())).thenReturn(aiResponse);
         doNothing().when(aiRouteValidationService).validateGeneratedRoute(aiResponse);
         when(aiRouteValidationService.resolveExistingTopic(any(AiGeneratedTopicDto.class))).thenReturn(spring);
 
@@ -296,6 +421,7 @@ class PlanServiceImplTest {
                 .thenReturn(List.of(roleTopic(matchingRole, spring, 1, true)));
         when(topicPrereqRepository.findAll()).thenReturn(List.of());
         when(aiRouteGenerationService.generateRoute(eq(request), anyList())).thenReturn(aiResponse);
+        lenient().when(aiRouteGenerationService.generateRoute(eq(request), anyList(), anyString())).thenReturn(aiResponse);
         doNothing().when(aiRouteValidationService).validateGeneratedRoute(aiResponse);
         when(aiRouteValidationService.resolveExistingTopic(any(AiGeneratedTopicDto.class))).thenReturn(spring);
 
@@ -539,14 +665,14 @@ class PlanServiceImplTest {
         AtomicLong weekIds = new AtomicLong(600L);
         AtomicLong stepIds = new AtomicLong(700L);
 
-        lenient().when(planRepository.save(any(Plan.class))).thenAnswer(invocation -> {
+        lenient().when(planRepository.saveAndFlush(any(Plan.class))).thenAnswer(invocation -> {
             Plan plan = invocation.getArgument(0);
             if (plan.getId() == null) {
                 plan.setId(planIds.getAndIncrement());
             }
             return plan;
         });
-        lenient().when(planParamsSnapshotRepository.save(any(PlanParamsSnapshot.class))).thenAnswer(invocation -> {
+        lenient().when(planParamsSnapshotRepository.saveAndFlush(any(PlanParamsSnapshot.class))).thenAnswer(invocation -> {
             PlanParamsSnapshot snapshot = invocation.getArgument(0);
             savedSnapshot[0] = snapshot;
             return snapshot;
