@@ -41,7 +41,7 @@ public class AuthServiceImpl implements AuthService {
     public AuthResponse register(RegisterRequest request) {
         String email = normalizeEmail(request.email());
         if (userRepository.existsByEmailIgnoreCase(email)) {
-            throw new ConflictException("РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ СЃ С‚Р°РєРёРј email СѓР¶Рµ СЃСѓС‰РµСЃС‚РІСѓРµС‚");
+            throw new ConflictException("Пользователь с таким email уже существует");
         }
 
         User user = userRepository.save(User.builder()
@@ -59,11 +59,11 @@ public class AuthServiceImpl implements AuthService {
     public AuthResponse login(AuthRequest request) {
         String email = normalizeEmail(request.email());
         User user = userRepository.findByEmailIgnoreCase(email)
-                .orElseThrow(() -> new AuthException("РќРµРІРµСЂРЅС‹Р№ email РёР»Рё РїР°СЂРѕР»СЊ"));
+                .orElseThrow(() -> new AuthException("Неверный email или пароль"));
 
         if (!StringUtils.hasText(user.getPasswordHash())
                 || !passwordEncoder.matches(request.password(), user.getPasswordHash())) {
-            throw new AuthException("РќРµРІРµСЂРЅС‹Р№ email РёР»Рё РїР°СЂРѕР»СЊ");
+            throw new AuthException("Неверный email или пароль");
         }
 
         return issueTokens(user);
@@ -76,12 +76,12 @@ public class AuthServiceImpl implements AuthService {
         try {
             claims = jwtService.parseAndValidateRefreshToken(request.refreshToken());
         } catch (JwtException | IllegalArgumentException ex) {
-            throw new AuthException("РќРµРІРµСЂРЅС‹Р№ РёР»Рё РїСЂРѕСЃСЂРѕС‡РµРЅРЅС‹Р№ refresh token");
+            throw new AuthException("Неверный или просроченный refresh token");
         }
 
         Long userId = claims.get("userId", Number.class).longValue();
         User user = userRepository.findById(userId)
-                .orElseThrow(() -> new AuthException("РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ РґР»СЏ refresh token РЅРµ РЅР°Р№РґРµРЅ"));
+                .orElseThrow(() -> new AuthException("Пользователь для refresh token не найден"));
 
         return issueTokens(user);
     }

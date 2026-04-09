@@ -5,16 +5,16 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 
 public record RegisterRequest(
-        @Email(message = "РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ email")
-        @NotBlank(message = "Email РѕР±СЏР·Р°С‚РµР»РµРЅ")
+        @Email(message = "Некорректный email")
+        @NotBlank(message = "Email обязателен")
         String email,
 
-        @NotBlank(message = "РџР°СЂРѕР»СЊ РѕР±СЏР·Р°С‚РµР»РµРЅ")
-        @Size(min = 8, max = 100, message = "РџР°СЂРѕР»СЊ РґРѕР»Р¶РµРЅ СЃРѕРґРµСЂР¶Р°С‚СЊ РѕС‚ 8 РґРѕ 100 СЃРёРјРІРѕР»РѕРІ")
+        @NotBlank(message = "Пароль обязателен")
+        @Size(min = 8, max = 100, message = "Пароль должен содержать от 8 до 100 символов")
         String password,
 
-        @NotBlank(message = "РРјСЏ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ")
-        @Size(max = 120, message = "РРјСЏ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ РЅРµ РґРѕР»Р¶РЅРѕ РїСЂРµРІС‹С€Р°С‚СЊ 120 СЃРёРјРІРѕР»РѕРІ")
+        @NotBlank(message = "Имя отображения обязательно")
+        @Size(max = 120, message = "Имя отображения не должно превышать 120 символов")
         String displayName
 ) {
 }

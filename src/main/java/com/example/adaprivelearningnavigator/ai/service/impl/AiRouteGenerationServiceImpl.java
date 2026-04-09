@@ -3,6 +3,7 @@ package com.example.adaprivelearningnavigator.ai.service.impl;
 import com.example.adaprivelearningnavigator.ai.dto.AiGeneratedTopicDto;
 import com.example.adaprivelearningnavigator.ai.dto.AiPlanGenerateRequest;
 import com.example.adaprivelearningnavigator.ai.dto.AiRouteGenerateResponse;
+import com.example.adaprivelearningnavigator.ai.dto.AiTopicScopeItemDto;
 import com.example.adaprivelearningnavigator.ai.prompt.AiPromptBuilder;
 import com.example.adaprivelearningnavigator.ai.service.AiRouteGenerationService;
 import com.example.adaprivelearningnavigator.service.exception.AiRouteGenerationException;
@@ -33,13 +34,18 @@ public class AiRouteGenerationServiceImpl implements AiRouteGenerationService {
     }
 
     @Override
-    public AiRouteGenerateResponse generateRoute(AiPlanGenerateRequest request) {
+    public AiRouteGenerateResponse generateRoute(AiPlanGenerateRequest request, List<AiTopicScopeItemDto> topicScope) {
+        String systemPrompt = promptBuilder.buildSystemPrompt();
+        String userPrompt = promptBuilder.buildUserPrompt(request, topicScope);
         String rawResponse;
+
+        log.debug("AI system prompt: {}", systemPrompt);
+        log.debug("AI user prompt: {}", userPrompt);
 
         try {
             rawResponse = chatClient.prompt()
-                    .system(promptBuilder.buildSystemPrompt())
-                    .user(promptBuilder.buildUserPrompt(request))
+                    .system(systemPrompt)
+                    .user(userPrompt)
                     .call()
                     .content();
         } catch (Exception ex) {
@@ -55,7 +61,7 @@ public class AiRouteGenerationServiceImpl implements AiRouteGenerationService {
 
         try {
             AiRouteGenerateResponse response = objectMapper.readValue(rawResponse, AiRouteGenerateResponse.class);
-            validateStructure(response, rawResponse);
+            validateStructure(response);
             return response;
         } catch (AiRouteGenerationException ex) {
             log.warn("AI вернул структурно некорректный ответ: {}", rawResponse);
@@ -66,7 +72,7 @@ public class AiRouteGenerationServiceImpl implements AiRouteGenerationService {
         }
     }
 
-    private void validateStructure(AiRouteGenerateResponse response, String rawResponse) {
+    private void validateStructure(AiRouteGenerateResponse response) {
         if (response == null || !StringUtils.hasText(response.interpretedGoal())) {
             throw new AiRouteGenerationException("AI вернул некорректную структуру ответа");
         }
@@ -76,10 +82,11 @@ public class AiRouteGenerationServiceImpl implements AiRouteGenerationService {
         List<AiGeneratedTopicDto> topics = response.topics();
         for (AiGeneratedTopicDto topic : topics) {
             if (topic == null
-                    || topic.title() == null
+                    || !StringUtils.hasText(topic.topicCode())
+                    || !StringUtils.hasText(topic.title())
                     || topic.priority() == null
                     || topic.estimatedHours() == null
-                    || topic.reason() == null) {
+                    || !StringUtils.hasText(topic.reason())) {
                 throw new AiRouteGenerationException("AI вернул неполную структуру темы");
             }
         }

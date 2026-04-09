@@ -20,7 +20,7 @@ import java.time.Instant;
 import java.util.List;
 
 @RestControllerAdvice
-public class  GlobalExceptionHandler {
+public class GlobalExceptionHandler {
 
     private final Clock clock;
 
@@ -112,7 +112,7 @@ public class  GlobalExceptionHandler {
         return new ApiErrorResponse.FieldErrorItem(path, v.getMessage());
     }
 
-    // --------- Частые техошибки входа ---------
+    // --------- Частые ошибки входа ---------
 
     @ExceptionHandler(HttpMessageNotReadableException.class)
     public ResponseEntity<ApiErrorResponse> handleUnreadable(HttpMessageNotReadableException ex, HttpServletRequest req) {

@@ -51,6 +51,7 @@ import java.math.BigDecimal;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Optional;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicLong;
@@ -60,7 +61,9 @@ import static org.junit.jupiter.api.Assertions.assertIterableEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyList;
 import static org.mockito.ArgumentMatchers.anyLong;
+import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.doAnswer;
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.lenient;
@@ -114,10 +117,17 @@ class PlanServiceImplTest {
                 prereq(basics, spring),
                 prereq(http, spring)
         ));
-        when(aiRouteGenerationService.generateRoute(request)).thenReturn(aiResponse);
+        when(aiRouteGenerationService.generateRoute(eq(request), anyList())).thenReturn(aiResponse);
         doNothing().when(aiRouteValidationService).validateGeneratedRoute(aiResponse);
         when(aiRouteValidationService.resolveExistingTopic("Java Basics")).thenReturn(basics);
-        when(aiRouteValidationService.resolveExistingTopic("Spring Boot")).thenReturn(spring);
+        when(aiRouteValidationService.resolveExistingTopic(any(AiGeneratedTopicDto.class))).thenAnswer(invocation -> {
+            AiGeneratedTopicDto dto = invocation.getArgument(0);
+            return switch (dto.topicCode()) {
+                case "JAVA_BASICS" -> basics;
+                case "SPRING_BOOT" -> spring;
+                default -> null;
+            };
+        });
 
         List<PlanStep> savedSteps = new ArrayList<>();
         List<PlanStepExplanationPrereq> savedPrereqs = new ArrayList<>();
@@ -171,9 +181,9 @@ class PlanServiceImplTest {
         when(roleTopicRepository.findAllByRole_IdOrderByPriorityAsc(100L))
                 .thenReturn(List.of(roleTopic(role, spring, 1, true)));
         when(topicPrereqRepository.findAll()).thenReturn(List.of());
-        when(aiRouteGenerationService.generateRoute(request)).thenReturn(aiResponse);
+        when(aiRouteGenerationService.generateRoute(eq(request), anyList())).thenReturn(aiResponse);
         doNothing().when(aiRouteValidationService).validateGeneratedRoute(aiResponse);
-        when(aiRouteValidationService.resolveExistingTopic("Spring Boot")).thenReturn(spring);
+        when(aiRouteValidationService.resolveExistingTopic(any(AiGeneratedTopicDto.class))).thenReturn(spring);
 
         PlanServiceImpl planService = spyPlanService(new ArrayList<>(), new ArrayList<>(), new PlanParamsSnapshot[1]);
 
@@ -219,9 +229,10 @@ class PlanServiceImplTest {
         when(roleTopicRepository.findAllByRole_IdOrderByPriorityAsc(100L))
                 .thenReturn(List.of(roleTopic(role, basics, 1, true)));
         when(topicPrereqRepository.findAll()).thenReturn(List.of());
-        when(aiRouteGenerationService.generateRoute(request)).thenReturn(aiResponse);
+        when(aiRouteGenerationService.generateRoute(eq(request), anyList())).thenReturn(aiResponse);
         doNothing().when(aiRouteValidationService).validateGeneratedRoute(aiResponse);
         when(aiRouteValidationService.resolveExistingTopic("Java Basics")).thenReturn(basics);
+        when(aiRouteValidationService.resolveExistingTopic(any(AiGeneratedTopicDto.class))).thenReturn(basics);
 
         PlanServiceImpl planService = spyPlanService(new ArrayList<>(), new ArrayList<>(), new PlanParamsSnapshot[1]);
 
@@ -250,9 +261,9 @@ class PlanServiceImplTest {
         when(roleTopicRepository.findAllByRole_IdOrderByPriorityAsc(100L))
                 .thenReturn(List.of(roleTopic(role, spring, 1, true)));
         when(topicPrereqRepository.findAll()).thenReturn(List.of());
-        when(aiRouteGenerationService.generateRoute(request)).thenReturn(aiResponse);
+        when(aiRouteGenerationService.generateRoute(eq(request), anyList())).thenReturn(aiResponse);
         doNothing().when(aiRouteValidationService).validateGeneratedRoute(aiResponse);
-        when(aiRouteValidationService.resolveExistingTopic("Spring Boot")).thenReturn(spring);
+        when(aiRouteValidationService.resolveExistingTopic(any(AiGeneratedTopicDto.class))).thenReturn(spring);
 
         PlanServiceImpl planService = spyPlanService(new ArrayList<>(), new ArrayList<>(), new PlanParamsSnapshot[1]);
 
@@ -284,9 +295,9 @@ class PlanServiceImplTest {
         when(roleTopicRepository.findAllByRole_IdOrderByPriorityAsc(100L))
                 .thenReturn(List.of(roleTopic(matchingRole, spring, 1, true)));
         when(topicPrereqRepository.findAll()).thenReturn(List.of());
-        when(aiRouteGenerationService.generateRoute(request)).thenReturn(aiResponse);
+        when(aiRouteGenerationService.generateRoute(eq(request), anyList())).thenReturn(aiResponse);
         doNothing().when(aiRouteValidationService).validateGeneratedRoute(aiResponse);
-        when(aiRouteValidationService.resolveExistingTopic("Spring Boot")).thenReturn(spring);
+        when(aiRouteValidationService.resolveExistingTopic(any(AiGeneratedTopicDto.class))).thenReturn(spring);
 
         PlanServiceImpl planService = spyPlanService(new ArrayList<>(), new ArrayList<>(), new PlanParamsSnapshot[1]);
 
@@ -634,6 +645,7 @@ class PlanServiceImplTest {
 
     private AiGeneratedTopicDto generatedTopic(String title, int priority, int hours, String reason) {
         return new AiGeneratedTopicDto(
+                title.toUpperCase(Locale.ROOT).replace(' ', '_').replace('/', '_').replace('-', '_'),
                 title,
                 priority,
                 BigDecimal.valueOf(hours),

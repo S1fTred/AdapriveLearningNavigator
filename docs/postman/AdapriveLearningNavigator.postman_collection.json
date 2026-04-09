@@ -1,0 +1,939 @@
+{
+  "info": {
+    "_postman_id": "ccf0ec4e-5c28-4a01-9b1c-bf36c340db93",
+    "name": "AdapriveLearningNavigator",
+    "description": "Manual API checks for ALN auth and AI-driven plan generation.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{accessToken}}",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          "const defaults = {",
+          "  registerPassword: 'StrongPass123',",
+          "  registerDisplayName: 'Manual Tester',",
+          "  goal: 'java-backend',",
+          "  goalUnknown: 'go-backend',",
+          "  goalAmbiguous: 'java',",
+          "  currentLevel: 'BEGINNER',",
+          "  hoursPerWeek: '10',",
+          "  tinyHoursPerWeek: '1',",
+          "  knownTopicsJson: '[]',",
+          "  knownTopicsWithJavaBasicsJson: '[\"Java Basics\"]'",
+          "};",
+          "Object.entries(defaults).forEach(([key, value]) => {",
+          "  if (!pm.environment.get(key)) {",
+          "    pm.environment.set(key, value);",
+          "  }",
+          "});",
+          "if (!pm.environment.get('registerEmail')) {",
+          "  pm.environment.set('registerEmail', `manual.${Date.now()}@example.com`);",
+          "}"
+        ]
+      }
+    }
+  ],
+  "item": [
+    {
+      "name": "Auth",
+      "description": "Standard register/login/refresh flow with JWT access and refresh tokens.",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"{{registerEmail}}\",\n  \"password\": \"{{registerPassword}}\",\n  \"displayName\": \"{{registerDisplayName}}\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/auth/register",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "auth",
+                "register"
+              ]
+            },
+            "description": "Expected: 201 Created. Saves accessToken and refreshToken into environment."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status is 201', function () {",
+                  "  pm.response.to.have.status(201);",
+                  "});",
+                  "const json = pm.response.json();",
+                  "pm.test('Tokens are returned', function () {",
+                  "  pm.expect(json.accessToken).to.be.a('string').and.not.empty;",
+                  "  pm.expect(json.refreshToken).to.be.a('string').and.not.empty;",
+                  "  pm.expect(json.tokenType).to.eql('Bearer');",
+                  "});",
+                  "pm.environment.set('accessToken', json.accessToken);",
+                  "pm.environment.set('refreshToken', json.refreshToken);"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Register Duplicate Email",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"{{registerEmail}}\",\n  \"password\": \"{{registerPassword}}\",\n  \"displayName\": \"{{registerDisplayName}}\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/auth/register",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "auth",
+                "register"
+              ]
+            },
+            "description": "Run after successful Register. Expected: 409 Conflict."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status is 409', function () {",
+                  "  pm.response.to.have.status(409);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Register Invalid Body",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"bad-email\",\n  \"password\": \"123\",\n  \"displayName\": \"\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/auth/register",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "auth",
+                "register"
+              ]
+            },
+            "description": "Expected: 400 Bad Request."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status is 400', function () {",
+                  "  pm.response.to.have.status(400);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Login",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"{{registerEmail}}\",\n  \"password\": \"{{registerPassword}}\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/auth/login",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "auth",
+                "login"
+              ]
+            },
+            "description": "Expected: 200 OK. Saves accessToken and refreshToken into environment."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status is 200', function () {",
+                  "  pm.response.to.have.status(200);",
+                  "});",
+                  "const json = pm.response.json();",
+                  "pm.environment.set('accessToken', json.accessToken);",
+                  "pm.environment.set('refreshToken', json.refreshToken);"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Login Invalid Password",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"{{registerEmail}}\",\n  \"password\": \"WrongPass123\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/auth/login",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "auth",
+                "login"
+              ]
+            },
+            "description": "Expected: 401 Unauthorized."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status is 401', function () {",
+                  "  pm.response.to.have.status(401);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Refresh",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"refreshToken\": \"{{refreshToken}}\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/auth/refresh",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "auth",
+                "refresh"
+              ]
+            },
+            "description": "Expected: 200 OK. Saves fresh accessToken and refreshToken into environment."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status is 200', function () {",
+                  "  pm.response.to.have.status(200);",
+                  "});",
+                  "const json = pm.response.json();",
+                  "pm.environment.set('accessToken', json.accessToken);",
+                  "pm.environment.set('refreshToken', json.refreshToken);"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Refresh With Access Token",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"refreshToken\": \"{{accessToken}}\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/auth/refresh",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "auth",
+                "refresh"
+              ]
+            },
+            "description": "Expected: 401 Unauthorized."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status is 401', function () {",
+                  "  pm.response.to.have.status(401);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Refresh Invalid Token",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"refreshToken\": \"invalid-token\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/auth/refresh",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "auth",
+                "refresh"
+              ]
+            },
+            "description": "Expected: 401 Unauthorized."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status is 401', function () {",
+                  "  pm.response.to.have.status(401);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Plan / Security & Validation",
+      "description": "Deterministic checks for /api/plans/generate-with-ai.",
+      "item": [
+        {
+          "name": "Generate Without Token",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"goal\": \"{{goal}}\",\n  \"currentLevel\": \"{{currentLevel}}\",\n  \"hoursPerWeek\": {{hoursPerWeek}},\n  \"knownTopics\": {{knownTopicsJson}}\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/plans/generate-with-ai",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "plans",
+                "generate-with-ai"
+              ]
+            },
+            "description": "Expected: 401 Unauthorized."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status is 401', function () {",
+                  "  pm.response.to.have.status(401);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Generate With Invalid Token",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "invalid-token",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"goal\": \"{{goal}}\",\n  \"currentLevel\": \"{{currentLevel}}\",\n  \"hoursPerWeek\": {{hoursPerWeek}},\n  \"knownTopics\": {{knownTopicsJson}}\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/plans/generate-with-ai",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "plans",
+                "generate-with-ai"
+              ]
+            },
+            "description": "Expected: 401 Unauthorized."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status is 401', function () {",
+                  "  pm.response.to.have.status(401);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Generate Invalid Body",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"goal\": \"\",\n  \"currentLevel\": \"BEGINNER\",\n  \"hoursPerWeek\": 0,\n  \"knownTopics\": [\"\"]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/plans/generate-with-ai",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "plans",
+                "generate-with-ai"
+              ]
+            },
+            "description": "Expected: 400 Bad Request."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status is 400', function () {",
+                  "  pm.response.to.have.status(400);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Generate Invalid Enum",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"goal\": \"{{goal}}\",\n  \"currentLevel\": \"NOVICE\",\n  \"hoursPerWeek\": {{hoursPerWeek}},\n  \"knownTopics\": {{knownTopicsJson}}\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/plans/generate-with-ai",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "plans",
+                "generate-with-ai"
+              ]
+            },
+            "description": "Expected: 400 Bad Request."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status is 400', function () {",
+                  "  pm.response.to.have.status(400);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Generate Malformed JSON",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"goal\":\"{{goal}}\",\"currentLevel\":\"{{currentLevel}}\""
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/plans/generate-with-ai",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "plans",
+                "generate-with-ai"
+              ]
+            },
+            "description": "Expected: 400 Bad Request."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status is 400', function () {",
+                  "  pm.response.to.have.status(400);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Generate Unsupported Media Type",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "text/plain"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "plain-text"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/plans/generate-with-ai",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "plans",
+                "generate-with-ai"
+              ]
+            },
+            "description": "Expected: 415 Unsupported Media Type."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status is 415', function () {",
+                  "  pm.response.to.have.status(415);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Generate Unknown Goal",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"goal\": \"{{goalUnknown}}\",\n  \"currentLevel\": \"{{currentLevel}}\",\n  \"hoursPerWeek\": {{hoursPerWeek}},\n  \"knownTopics\": {{knownTopicsJson}}\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/plans/generate-with-ai",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "plans",
+                "generate-with-ai"
+              ]
+            },
+            "description": "Expected: 400 Bad Request."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status is 400', function () {",
+                  "  pm.response.to.have.status(400);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Generate Ambiguous Goal",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"goal\": \"{{goalAmbiguous}}\",\n  \"currentLevel\": \"{{currentLevel}}\",\n  \"hoursPerWeek\": {{hoursPerWeek}},\n  \"knownTopics\": {{knownTopicsJson}}\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/plans/generate-with-ai",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "plans",
+                "generate-with-ai"
+              ]
+            },
+            "description": "Expected: 400 Bad Request."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status is 400', function () {",
+                  "  pm.response.to.have.status(400);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Plan / Live AI",
+      "description": "Nondeterministic checks against the live Ollama model.",
+      "item": [
+        {
+          "name": "Generate Plan With AI",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"goal\": \"{{goal}}\",\n  \"currentLevel\": \"{{currentLevel}}\",\n  \"hoursPerWeek\": {{hoursPerWeek}},\n  \"knownTopics\": {{knownTopicsJson}}\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/plans/generate-with-ai",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "plans",
+                "generate-with-ai"
+              ]
+            },
+            "description": "Live AI check. Common outcomes: 200 if the LLM returns a valid route fully mappable to KB, 400 if AI returns unknown topics, 503 if Ollama is unavailable. This request stores planId on 200."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status is not 500', function () {",
+                  "  pm.expect(pm.response.code).to.not.eql(500);",
+                  "});",
+                  "if (pm.response.code === 200) {",
+                  "  const json = pm.response.json();",
+                  "  pm.environment.set('planId', json.id);",
+                  "}"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Generate Plan With Known Topics",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"goal\": \"{{goal}}\",\n  \"currentLevel\": \"{{currentLevel}}\",\n  \"hoursPerWeek\": {{hoursPerWeek}},\n  \"knownTopics\": {{knownTopicsWithJavaBasicsJson}}\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/plans/generate-with-ai",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "plans",
+                "generate-with-ai"
+              ]
+            },
+            "description": "Live AI check with known topics. Use it to verify that already known topics do not appear in persisted plan steps."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status is not 500', function () {",
+                  "  pm.expect(pm.response.code).to.not.eql(500);",
+                  "});",
+                  "if (pm.response.code === 200) {",
+                  "  const json = pm.response.json();",
+                  "  pm.environment.set('planId', json.id);",
+                  "}"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Generate Plan With Tiny Weekly Budget",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"goal\": \"{{goal}}\",\n  \"currentLevel\": \"{{currentLevel}}\",\n  \"hoursPerWeek\": {{tinyHoursPerWeek}},\n  \"knownTopics\": {{knownTopicsJson}}\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/plans/generate-with-ai",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "plans",
+                "generate-with-ai"
+              ]
+            },
+            "description": "Live AI check for plan build under tight weekly limits. Common outcomes: 400 or 200 depending on the returned AI route."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status is not 500', function () {",
+                  "  pm.expect(pm.response.code).to.not.eql(500);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Generate Plan When Ollama Is Down",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"goal\": \"{{goal}}\",\n  \"currentLevel\": \"{{currentLevel}}\",\n  \"hoursPerWeek\": {{hoursPerWeek}},\n  \"knownTopics\": {{knownTopicsJson}}\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/plans/generate-with-ai",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "plans",
+                "generate-with-ai"
+              ]
+            },
+            "description": "Stop Ollama manually before sending this request. Expected: 503 Service Unavailable."
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status is 503', function () {",
+                  "  pm.response.to.have.status(503);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

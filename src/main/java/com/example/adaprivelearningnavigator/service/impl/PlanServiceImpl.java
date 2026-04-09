@@ -3,6 +3,7 @@ package com.example.adaprivelearningnavigator.service.impl;
 import com.example.adaprivelearningnavigator.ai.dto.AiGeneratedTopicDto;
 import com.example.adaprivelearningnavigator.ai.dto.AiPlanGenerateRequest;
 import com.example.adaprivelearningnavigator.ai.dto.AiRouteGenerateResponse;
+import com.example.adaprivelearningnavigator.ai.dto.AiTopicScopeItemDto;
 import com.example.adaprivelearningnavigator.ai.service.AiRouteGenerationService;
 import com.example.adaprivelearningnavigator.ai.validation.AiRouteValidationService;
 import com.example.adaprivelearningnavigator.domain.compositeKeys.PlanStepExplanationPrereqId;
@@ -133,7 +134,8 @@ public class PlanServiceImpl implements PlanService {
                 .collect(Collectors.toMap(roleTopic -> roleTopic.getTopic().getId(), Function.identity()));
 
         Map<Long, Topic> roleScopeTopics = buildRoleScope(roleTopicMeta.values());
-        AiRouteGenerateResponse aiResponse = aiRouteGenerationService.generateRoute(request);
+        List<AiTopicScopeItemDto> topicScope = buildAiTopicScope(roleScopeTopics.values());
+        AiRouteGenerateResponse aiResponse = aiRouteGenerationService.generateRoute(request, topicScope);
         aiRouteValidationService.validateGeneratedRoute(aiResponse);
 
         List<PlanningTopic> aiTopics = mapAiTopics(aiResponse, roleScopeTopics, roleTopicMeta, knownTopicIds);
@@ -267,6 +269,19 @@ public class PlanServiceImpl implements PlanService {
         return result;
     }
 
+    private List<AiTopicScopeItemDto> buildAiTopicScope(Collection<Topic> topics) {
+        return topics.stream()
+                .sorted(Comparator.comparing(Topic::getCode, String.CASE_INSENSITIVE_ORDER))
+                .map(topic -> new AiTopicScopeItemDto(
+                        topic.getCode(),
+                        topic.getTitle(),
+                        topic.getLevel() != null ? topic.getLevel().name() : "UNKNOWN",
+                        topic.isCore(),
+                        topic.getEstimatedHours()
+                ))
+                .toList();
+    }
+
     private List<PlanningTopic> mapAiTopics(AiRouteGenerateResponse aiResponse,
                                             Map<Long, Topic> roleScopeTopics,
                                             Map<Long, RoleTopic> roleTopicMeta,
@@ -276,7 +291,7 @@ public class PlanServiceImpl implements PlanService {
 
         for (int index = 0; index < aiResponse.topics().size(); index++) {
             AiGeneratedTopicDto generatedTopic = aiResponse.topics().get(index);
-            Topic topic = aiRouteValidationService.resolveExistingTopic(generatedTopic.title());
+            Topic topic = aiRouteValidationService.resolveExistingTopic(generatedTopic);
 
             if (knownTopicIds.contains(topic.getId())) {
                 continue;
