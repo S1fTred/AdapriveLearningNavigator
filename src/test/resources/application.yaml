@@ -42,3 +42,7 @@ security:
     issuer: aln-test
     access-ttl: 900s
     refresh-ttl: 7d
+
+app:
+  browser:
+    auto-open: false
