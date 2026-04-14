@@ -4,7 +4,9 @@ import com.example.adaprivelearningnavigator.ai.dto.AiPlanGenerateRequest;
 import com.example.adaprivelearningnavigator.domain.enums.UserLevel;
 import com.example.adaprivelearningnavigator.security.UserPrincipal;
 import com.example.adaprivelearningnavigator.service.PlanService;
+import com.example.adaprivelearningnavigator.service.dto.common.PageResponse;
 import com.example.adaprivelearningnavigator.service.dto.plan.PlanFullResponse;
+import com.example.adaprivelearningnavigator.service.dto.plan.PlanShortResponse;
 import com.example.adaprivelearningnavigator.service.exception.AiRouteGenerationException;
 import com.example.adaprivelearningnavigator.service.exception.AiRouteValidationException;
 import com.example.adaprivelearningnavigator.service.exception.GlobalExceptionHandler;
@@ -29,6 +31,7 @@ import java.util.Set;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.when;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -73,6 +76,8 @@ class PlanControllerTest {
                 .thenReturn(PlanFullResponse.builder()
                         .id(100L)
                         .roleId(200L)
+                        .roleCode("java-backend")
+                        .roleName("Java Backend Developer")
                         .weeks(List.of())
                         .build());
 
@@ -82,7 +87,49 @@ class PlanControllerTest {
                         .content(objectMapper.writeValueAsString(validRequest())))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.id").value(100))
-                .andExpect(jsonPath("$.roleId").value(200));
+                .andExpect(jsonPath("$.roleId").value(200))
+                .andExpect(jsonPath("$.roleCode").value("java-backend"));
+    }
+
+    @Test
+    void shouldReturnPlansPageWhenAuthenticationPresent() throws Exception {
+        when(planService.getPlans(42L, 0, 10))
+                .thenReturn(PageResponse.<PlanShortResponse>builder()
+                        .items(List.of(PlanShortResponse.builder()
+                                .id(100L)
+                                .roleId(200L)
+                                .roleCode("java-backend")
+                                .roleName("Java Backend Developer")
+                                .status("DRAFT")
+                                .build()))
+                        .total(1)
+                        .page(0)
+                        .size(10)
+                        .build());
+
+        mockMvc.perform(get("/api/plans")
+                        .principal(authentication()))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.items[0].roleCode").value("java-backend"))
+                .andExpect(jsonPath("$.items[0].roleName").value("Java Backend Developer"));
+    }
+
+    @Test
+    void shouldReturnSinglePlanWhenAuthenticationPresent() throws Exception {
+        when(planService.getPlan(42L, 100L))
+                .thenReturn(PlanFullResponse.builder()
+                        .id(100L)
+                        .roleId(200L)
+                        .roleCode("java-backend")
+                        .roleName("Java Backend Developer")
+                        .weeks(List.of())
+                        .build());
+
+        mockMvc.perform(get("/api/plans/100")
+                        .principal(authentication()))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.roleCode").value("java-backend"))
+                .andExpect(jsonPath("$.roleName").value("Java Backend Developer"));
     }
 
     @Test

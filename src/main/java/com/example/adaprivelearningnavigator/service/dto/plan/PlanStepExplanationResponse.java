@@ -15,6 +15,8 @@ public record PlanStepExplanationResponse(
 ) {
     public record PrereqItem(
             Long prereqTopicId,
+            String prereqTopicCode,
+            String prereqTopicTitle,
             PrereqStatus status
     ) {}
 }

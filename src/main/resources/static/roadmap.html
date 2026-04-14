@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap | Adaptive Learning Navigator</title>
+    <link rel="stylesheet" href="/assets/css/app.css">
+</head>
+<body>
+<div class="app-shell">
+    <aside class="app-sidebar">
+        <a class="brand" href="/dashboard">
+            <span class="brand-mark">ALN</span>
+            <span class="brand-copy">
+                <strong>Adaptive Learning Navigator</strong>
+                <span>Roadmap view</span>
+            </span>
+        </a>
+        <div class="sidebar-note">
+            Здесь маршрут читается как карта движения: неделя, тема, причина выбора и prerequisite-статусы.
+        </div>
+        <nav class="sidebar-nav">
+            <a class="sidebar-link" data-nav="dashboard" href="/dashboard"><span>Кабинет</span><small>Overview</small></a>
+            <a class="sidebar-link" data-nav="roadmap" href="/roadmap"><span>Roadmap</span><small>Graph</small></a>
+            <a class="sidebar-link" data-nav="plan" href="/plan"><span>План</span><small>Weeks</small></a>
+            <a class="sidebar-link" data-nav="progress" href="/progress"><span>Прогресс</span><small>Track</small></a>
+            <a class="sidebar-link" data-nav="profile" href="/profile"><span>Профиль</span><small>Prefs</small></a>
+        </nav>
+        <div class="sidebar-footer">
+            <div class="user-pill">
+                <strong data-user-name>Пользователь</strong>
+                <span data-user-email>user@example.com</span>
+            </div>
+            <button class="button button-secondary" data-logout type="button">Выйти</button>
+        </div>
+    </aside>
+
+    <div class="app-main">
+        <header class="app-topbar">
+            <div>
+                <p class="eyebrow">Roadmap</p>
+                <h1>Карта маршрута</h1>
+                <p>Фронт строит roadmap прямо из `PlanFullResponse`, без дополнительных ручных JSON и временных заглушек.</p>
+            </div>
+            <div class="user-pill">
+                <strong data-user-name>Пользователь</strong>
+                <span data-user-email>user@example.com</span>
+            </div>
+        </header>
+
+        <main class="app-content">
+            <div id="roadmap-status" class="status-box"></div>
+            <section id="roadmap-meta"></section>
+            <section id="roadmap-switcher"></section>
+            <section id="roadmap-flow"></section>
+        </main>
+    </div>
+</div>
+
+<script type="module" src="/assets/js/pages/roadmap.js"></script>
+</body>
+</html>

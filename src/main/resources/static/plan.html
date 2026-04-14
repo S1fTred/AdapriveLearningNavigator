@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>План по неделям | Adaptive Learning Navigator</title>
+    <link rel="stylesheet" href="/assets/css/app.css">
+</head>
+<body>
+<div class="app-shell">
+    <aside class="app-sidebar">
+        <a class="brand" href="/dashboard">
+            <span class="brand-mark">ALN</span>
+            <span class="brand-copy">
+                <strong>Adaptive Learning Navigator</strong>
+                <span>Weekly plan</span>
+            </span>
+        </a>
+        <div class="sidebar-note">
+            Недельная раскладка показывает нагрузку, состав недели и объяснение, почему шаг попал именно сюда.
+        </div>
+        <nav class="sidebar-nav">
+            <a class="sidebar-link" data-nav="dashboard" href="/dashboard"><span>Кабинет</span><small>Overview</small></a>
+            <a class="sidebar-link" data-nav="roadmap" href="/roadmap"><span>Roadmap</span><small>Graph</small></a>
+            <a class="sidebar-link" data-nav="plan" href="/plan"><span>План</span><small>Weeks</small></a>
+            <a class="sidebar-link" data-nav="progress" href="/progress"><span>Прогресс</span><small>Track</small></a>
+            <a class="sidebar-link" data-nav="profile" href="/profile"><span>Профиль</span><small>Prefs</small></a>
+        </nav>
+        <div class="sidebar-footer">
+            <div class="user-pill">
+                <strong data-user-name>Пользователь</strong>
+                <span data-user-email>user@example.com</span>
+            </div>
+            <button class="button button-secondary" data-logout type="button">Выйти</button>
+        </div>
+    </aside>
+
+    <div class="app-main">
+        <header class="app-topbar">
+            <div>
+                <p class="eyebrow">Weekly plan</p>
+                <h1>План по неделям</h1>
+                <p>Это прикладной слой поверх roadmap: сколько часов уйдёт на каждую неделю и какие темы в ней лежат.</p>
+            </div>
+            <div class="user-pill">
+                <strong data-user-name>Пользователь</strong>
+                <span data-user-email>user@example.com</span>
+            </div>
+        </header>
+
+        <main class="app-content">
+            <div id="plan-status" class="status-box"></div>
+            <section id="plan-summary"></section>
+            <section id="plan-switcher"></section>
+            <section id="plan-weeks"></section>
+        </main>
+    </div>
+</div>
+
+<script type="module" src="/assets/js/pages/plan.js"></script>
+</body>
+</html>

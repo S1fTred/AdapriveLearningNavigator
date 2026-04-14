@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход | Adaptive Learning Navigator</title>
+    <link rel="stylesheet" href="/assets/css/app.css">
+</head>
+<body>
+<main class="auth-layout">
+    <section class="auth-side">
+        <div>
+            <a class="brand" href="/">
+                <span class="brand-mark">ALN</span>
+                <span class="brand-copy">
+                    <strong>Adaptive Learning Navigator</strong>
+                    <span>Персональные roadmap и недельные планы</span>
+                </span>
+            </a>
+        </div>
+        <div>
+            <p class="eyebrow" style="color:#fff;">Вход в рабочую зону</p>
+            <h1>Возвращайтесь к своему маршруту без лишних шагов.</h1>
+            <p>
+                После входа вы попадёте в личный кабинет, где можно собрать новый AI-маршрут,
+                открыть roadmap, посмотреть недельную раскладку и продолжить работу с сохранёнными планами.
+            </p>
+        </div>
+        <div class="auth-stats">
+            <article class="auth-stat">
+                <strong>JWT</strong>
+                <span>Access и refresh flow уже подключены.</span>
+            </article>
+            <article class="auth-stat">
+                <strong>Roadmap</strong>
+                <span>Карта тем и недельный план в одном кабинете.</span>
+            </article>
+            <article class="auth-stat">
+                <strong>AI</strong>
+                <span>Маршрут строится на базе знаний проекта.</span>
+            </article>
+        </div>
+    </section>
+    <section class="auth-main">
+        <article class="card auth-card">
+            <p class="eyebrow">Авторизация</p>
+            <h2>Войти</h2>
+            <p>Используйте email и пароль, которые были указаны при регистрации.</p>
+            <div id="login-status" class="status-box"></div>
+            <form id="login-form" class="form-grid">
+                <div class="form-row">
+                    <label for="login-email">Email</label>
+                    <input class="input" id="login-email" name="email" type="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-row">
+                    <label for="login-password">Пароль</label>
+                    <input class="input" id="login-password" name="password" type="password" placeholder="Введите пароль" required>
+                </div>
+                <div class="form-actions">
+                    <button id="login-submit" class="button button-primary" type="submit">Войти</button>
+                    <a class="button button-secondary" href="/register">Регистрация</a>
+                </div>
+            </form>
+        </article>
+    </section>
+</main>
+
+<script type="module" src="/assets/js/pages/login.js"></script>
+</body>
+</html>

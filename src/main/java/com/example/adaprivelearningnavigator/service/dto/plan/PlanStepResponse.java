@@ -9,6 +9,8 @@ import java.util.List;
 public record PlanStepResponse(
         Long id,
         Long topicId,
+        String topicCode,
+        String topicTitle,
         int orderInWeek,
         BigDecimal plannedHours,
         boolean isOptional,

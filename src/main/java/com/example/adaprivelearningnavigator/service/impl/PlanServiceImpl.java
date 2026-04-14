@@ -201,6 +201,8 @@ public class PlanServiceImpl implements PlanService {
         return PlanFullResponse.builder()
                 .id(plan.getId())
                 .roleId(plan.getRole().getId())
+                .roleCode(plan.getRole().getCode())
+                .roleName(plan.getRole().getName())
                 .status(plan.getStatus())
                 .scenarioType(plan.getScenarioType())
                 .scenarioLabel(plan.getScenarioLabel())
@@ -669,6 +671,8 @@ public class PlanServiceImpl implements PlanService {
         return PlanShortResponse.builder()
                 .id(plan.getId())
                 .roleId(plan.getRole().getId())
+                .roleCode(plan.getRole().getCode())
+                .roleName(plan.getRole().getName())
                 .status(plan.getStatus())
                 .scenarioType(plan.getScenarioType())
                 .scenarioLabel(plan.getScenarioLabel())
@@ -707,6 +711,8 @@ public class PlanServiceImpl implements PlanService {
         return PlanStepResponse.builder()
                 .id(step.getId())
                 .topicId(step.getTopic().getId())
+                .topicCode(step.getTopic().getCode())
+                .topicTitle(step.getTopic().getTitle())
                 .orderInWeek(step.getOrderInWeek())
                 .plannedHours(step.getPlannedHours())
                 .isOptional(step.isOptional())
@@ -721,6 +727,8 @@ public class PlanServiceImpl implements PlanService {
                         .stream()
                         .map(item -> new PlanStepExplanationResponse.PrereqItem(
                                 item.getPrereqTopic().getId(),
+                                item.getPrereqTopic().getCode(),
+                                item.getPrereqTopic().getTitle(),
                                 item.getPrereqStatus()
                         ))
                         .toList();

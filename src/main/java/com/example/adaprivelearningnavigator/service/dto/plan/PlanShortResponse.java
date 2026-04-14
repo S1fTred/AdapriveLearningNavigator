@@ -9,6 +9,8 @@ import java.time.Instant;
 public record PlanShortResponse(
         Long id,
         Long roleId,
+        String roleCode,
+        String roleName,
         String status,
         ScenarioType scenarioType,
         String scenarioLabel,

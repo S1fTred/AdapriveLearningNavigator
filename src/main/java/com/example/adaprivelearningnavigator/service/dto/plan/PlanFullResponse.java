@@ -10,6 +10,8 @@ import java.util.List;
 public record PlanFullResponse(
         Long id,
         Long roleId,
+        String roleCode,
+        String roleName,
         String status,
         ScenarioType scenarioType,
         String scenarioLabel,
