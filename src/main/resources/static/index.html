@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adaptive Learning Navigator</title>
-    <meta name="description" content="Персональный AI-маршрут обучения в IT с roadmap и недельным планом.">
+    <meta name="description" content="Персональные AI-маршруты обучения в IT с roadmap и недельным планом.">
     <link rel="stylesheet" href="/assets/css/app.css">
 </head>
 <body>
@@ -13,13 +13,11 @@
         <span class="brand-mark">ALN</span>
         <span class="brand-copy">
             <strong>Adaptive Learning Navigator</strong>
-            <span>Русский сервис персональных roadmap</span>
+            <span>Персональные roadmap для IT</span>
         </span>
     </a>
-    <nav class="nav-inline">
-        <a href="#how-it-works">Как это работает</a>
-        <a href="#capabilities">Возможности</a>
-        <a href="#preview">Интерфейс</a>
+    <nav class="nav-inline">    
+        <a href="#about">О сервисе</a>
     </nav>
     <div class="actions-inline" data-header-auth>
         <a class="button button-ghost" href="/login">Войти</a>
@@ -31,21 +29,17 @@
     <section class="hero">
         <div class="container hero-grid">
             <article class="card hero-copy">
-                <p class="eyebrow">Roadmap-first сервис</p>
-                <h1>Построй персональный маршрут обучения в IT, а не просто список тем.</h1>
-                <p>
-                    Adaptive Learning Navigator собирает маршрут из цели, текущего уровня, недельного лимита и базы знаний.
-                    На выходе вы получаете понятный roadmap, недельную раскладку и объяснение, почему тема стоит именно сейчас.
-                </p>
+                <h1>Маршрут обучения в IT.</h1>
+                <p>AI-генерация. Roadmap. Недельный план.</p>
                 <div class="hero-actions">
-                    <a class="button button-primary" href="/register" data-hero-primary>Создать маршрут</a>
-                    <a class="button button-secondary" href="#preview" data-hero-secondary>Смотреть интерфейс</a>
+                    <a class="button button-primary" href="/register" data-hero-primary>Собрать маршрут</a>
+                    <a class="button button-secondary" href="#preview" data-hero-secondary>Что получает пользователь</a>
                 </div>
                 <div class="hero-points">
                     <span class="topic-chip">AI + knowledge base</span>
-                    <span class="topic-chip">Русский интерфейс</span>
-                    <span class="topic-chip">Недельный план</span>
-                    <span class="topic-chip">Объяснимый порядок тем</span>
+                    <span class="topic-chip">Roadmap</span>
+                    <span class="topic-chip">Week plan</span>
+                    <span class="topic-chip">RU-first</span>
                 </div>
             </article>
             <aside class="card hero-visual">
@@ -55,28 +49,28 @@
                         <span class="route-node-dot"></span>
                         <div class="route-node-card">
                             <strong>Java Basics</strong>
-                            <span>Фундамент языка до фреймворков и persistence-слоя.</span>
+                            <span>База языка</span>
                         </div>
                     </div>
                     <div class="route-node">
                         <span class="route-node-dot"></span>
                         <div class="route-node-card">
                             <strong>OOP in Java</strong>
-                            <span>Принципы проектирования и моделирования объектов.</span>
+                            <span>Объектная модель</span>
                         </div>
                     </div>
                     <div class="route-node">
                         <span class="route-node-dot"></span>
                         <div class="route-node-card">
                             <strong>Spring Boot</strong>
-                            <span>Сборка backend-приложения с корректным порядком prereq.</span>
+                            <span>Backend-ядро</span>
                         </div>
                     </div>
                     <div class="route-node">
                         <span class="route-node-dot"></span>
                         <div class="route-node-card">
                             <strong>JPA / Hibernate</strong>
-                            <span>Persistence-слой и ORM в финальной части маршрута.</span>
+                            <span>Persistence-слой</span>
                         </div>
                     </div>
                 </div>
@@ -84,97 +78,73 @@
         </div>
     </section>
 
-    <section class="section" id="how-it-works">
+    <section class="section" id="about">
         <div class="container">
-            <p class="eyebrow">Как работает сервис</p>
-            <h2 class="section-title">Не копия roadmap.sh, а персональный навигатор обучения.</h2>
-            <p class="section-copy">
-                Здесь фокус не только на карте знаний. Система учитывает уже известные темы, достраивает обязательные зависимости,
-                раскладывает нагрузку по неделям и сохраняет рабочий маршрут в кабинете.
-            </p>
-            <div class="feature-grid" style="margin-top:24px;">
+            <p class="eyebrow">О сервисе</p>
+            <div class="feature-grid" style="margin-top: 6px;">
                 <article class="card feature-card">
-                    <p class="eyebrow">Шаг 1</p>
-                    <h3>Формулируете цель</h3>
-                    <p>Например: Java backend. Сервис резолвит роль, подбирает scope тем и проверяет допустимые шаги.</p>
+                    <h3>Цель</h3>
+                    <p>Вы выбираете направление обучения.</p>
                 </article>
                 <article class="card feature-card">
-                    <p class="eyebrow">Шаг 2</p>
-                    <h3>Указываете уровень и лимит</h3>
-                    <p>Начальный уровень, часы в неделю и уже знакомые темы сразу влияют на итоговый маршрут.</p>
+                    <h3>Уровень</h3>
+                    <p>Сервис учитывает текущую базу пользователя.</p>
                 </article>
                 <article class="card feature-card">
-                    <p class="eyebrow">Шаг 3</p>
-                    <h3>Получаете roadmap и недели</h3>
-                    <p>AI формирует маршрут, backend валидирует его по knowledge base и строит понятный учебный темп.</p>
+                    <h3>Время</h3>
+                    <p>План строится под часовую нагрузку в неделю.</p>
                 </article>
             </div>
         </div>
     </section>
 
-    <section class="section" id="capabilities">
+    <section class="section" id="service">
         <div class="container">
-            <p class="eyebrow">Ключевые преимущества</p>
-            <div class="metric-grid" style="margin-top:18px;">
-                <article class="card metric-card">
-                    <p>Понятный маршрут</p>
-                    <strong>AI</strong>
-                    <p>Генерация маршрута grounded на базе знаний, а не свободный список советов.</p>
+            <div class="panel-grid">
+                <article class="card panel-card panel-card-copy">
+                    <h3>Помогает учиться без хаотичного набора тем.</h3>
+                    <p>Сервис собирает персональный путь обучения и держит фокус на последовательности, темпе и понятной структуре.</p>
                 </article>
-                <article class="card metric-card">
-                    <p>Проверка зависимостей</p>
-                    <strong>DAG</strong>
-                    <p>Сервис не даст поставить зависимую тему раньше обязательного prereq.</p>
-                </article>
-                <article class="card metric-card">
-                    <p>Недельный ритм</p>
-                    <strong>Week</strong>
-                    <p>Темы раскладываются по бюджетам времени и не ломают недельный лимит.</p>
-                </article>
-                <article class="card metric-card">
-                    <p>Русский-first UX</p>
-                    <strong>RU</strong>
-                    <p>Интерфейс и поток работы изначально ориентированы на русскоязычную аудиторию.</p>
+                <article class="card panel-card">
+                    <p class="eyebrow">Подходит если</p>
+                    <div class="topic-tags" style="margin-top: 16px;">
+                        <span class="topic-chip">Нужен понятный маршрут</span>
+                        <span class="topic-chip">Нужен темп по неделям</span>
+                        <span class="topic-chip">Нужна структура вместо хаоса</span>
+                        <span class="topic-chip">Нужен русский интерфейс</span>
+                    </div>
                 </article>
             </div>
         </div>
     </section>
 
     <section class="section" id="preview">
-        <div class="container panel-grid">
+        <div class="container">
             <article class="card panel-card">
-                <p class="eyebrow">Личный кабинет</p>
-                <h3>Кабинет не прячет логику внутри одной страницы.</h3>
-                <p>
-                    После авторизации пользователь попадает в рабочую зону с навигацией между dashboard, roadmap,
-                    недельным планом, профилем и локальным трекером прогресса.
-                </p>
-                <div class="form-actions" style="margin-top:18px;">
-                    <a class="button button-primary" href="/register">Открыть сервис</a>
-                    <a class="button button-secondary" href="/login">У меня уже есть аккаунт</a>
-                </div>
-            </article>
-            <article class="card panel-card">
-                <p class="eyebrow">Навигация</p>
-                <div class="list">
-                    <article class="list-item">
-                        <div>
-                            <h4>Dashboard</h4>
-                            <p>Генерация нового маршрута, история планов и быстрые переходы.</p>
-                        </div>
-                    </article>
+                <p class="eyebrow">Что получает пользователь</p>
+                <div class="list" style="margin-top: 18px;">
                     <article class="list-item">
                         <div>
                             <h4>Roadmap</h4>
-                            <p>Визуальная карта тем по неделям с причинами выбора и prereq-статусами.</p>
+                            <p>Последовательность тем и зависимостей.</p>
                         </div>
                     </article>
                     <article class="list-item">
                         <div>
-                            <h4>Weekly Plan</h4>
-                            <p>Чёткая недельная раскладка, где видно нагрузку и состав каждой недели.</p>
+                            <h4>Недельный план</h4>
+                            <p>Чёткая раскладка по времени.</p>
                         </div>
                     </article>
+                    <article class="list-item">
+                        <div>
+                            <h4>Пояснение выбора</h4>
+                            <p>Почему тема стоит именно сейчас.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="form-actions" style="margin-top: 22px;">
+                    <a class="button button-primary" href="/register">Открыть сервис</a>
+                    <a class="button button-secondary" href="/login">У меня уже есть аккаунт</a>
                 </div>
             </article>
         </div>
@@ -187,10 +157,9 @@
             <span class="brand-mark">ALN</span>
             <span class="brand-copy">
                 <strong>Adaptive Learning Navigator</strong>
-                <span>AI-маршруты обучения для IT</span>
+                <span>Персональные маршруты обучения в IT</span>
             </span>
         </div>
-        <span>Spring Boot backend + MPA frontend внутри одного проекта.</span>
     </div>
 </footer>
 
