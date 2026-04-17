@@ -56,11 +56,13 @@ import org.springframework.util.StringUtils;
 import java.math.BigDecimal;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Comparator;
 import java.util.Deque;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Locale;
@@ -77,6 +79,70 @@ public class PlanServiceImpl implements PlanService {
 
     private static final Logger log = LoggerFactory.getLogger(PlanServiceImpl.class);
     private static final String AI_ALGO_VERSION = "ai-ollama-v1";
+    private static final Set<String> ROLE_STOP_WORDS = Set.of(
+            "a", "an", "and", "for", "in", "of", "on", "the", "to",
+            "в", "во", "для", "и", "или", "на", "по", "с", "со"
+    );
+    private static final Set<String> ROLE_GENERIC_TOKENS = Set.of(
+            "developer", "dev", "engineer", "specialist",
+            "разработчик", "разработка", "разработки", "инженер", "специалист"
+    );
+    private static final Map<String, String> ROLE_TOKEN_ALIASES = Map.ofEntries(
+            Map.entry("backend", "backend"),
+            Map.entry("back", "backend"),
+            Map.entry("server", "backend"),
+            Map.entry("serverside", "backend"),
+            Map.entry("серверный", "backend"),
+            Map.entry("серверная", "backend"),
+            Map.entry("серверной", "backend"),
+            Map.entry("бэкенд", "backend"),
+            Map.entry("бекенд", "backend"),
+
+            Map.entry("frontend", "frontend"),
+            Map.entry("front", "frontend"),
+            Map.entry("clientside", "frontend"),
+            Map.entry("фронтенд", "frontend"),
+            Map.entry("клиентский", "frontend"),
+            Map.entry("клиентская", "frontend"),
+
+            Map.entry("mobile", "mobile"),
+            Map.entry("android", "mobile"),
+            Map.entry("ios", "mobile"),
+            Map.entry("мобильный", "mobile"),
+            Map.entry("мобильная", "mobile"),
+            Map.entry("андроид", "mobile"),
+            Map.entry("айос", "mobile"),
+
+            Map.entry("game", "gamedev"),
+            Map.entry("games", "gamedev"),
+            Map.entry("gamedev", "gamedev"),
+            Map.entry("gameplay", "gamedev"),
+            Map.entry("игра", "gamedev"),
+            Map.entry("игры", "gamedev"),
+            Map.entry("игр", "gamedev"),
+            Map.entry("игровой", "gamedev"),
+            Map.entry("геймдев", "gamedev"),
+
+            Map.entry("java", "java"),
+            Map.entry("джава", "java"),
+            Map.entry("ява", "java"),
+
+            Map.entry("csharp", "csharp"),
+            Map.entry("dotnet", "dotnet"),
+            Map.entry("сишарп", "csharp"),
+            Map.entry("дотнет", "dotnet"),
+
+            Map.entry("developer", ""),
+            Map.entry("dev", ""),
+            Map.entry("engineer", ""),
+            Map.entry("specialist", ""),
+            Map.entry("development", ""),
+            Map.entry("разработчик", ""),
+            Map.entry("разработка", ""),
+            Map.entry("разработки", ""),
+            Map.entry("инженер", ""),
+            Map.entry("специалист", "")
+    );
 
     private final UserRepository userRepository;
     private final RoleGoalRepository roleGoalRepository;
@@ -155,7 +221,44 @@ public class PlanServiceImpl implements PlanService {
 
     @Override
     public IdResponse buildPlan(Long userId, PlanBuildRequest request) {
-        throw new PlanBuildException("Обычная генерация плана пока не реализована");
+        PlanFullResponse plan = buildPlanFromRoadmap(userId, request);
+        return IdResponse.builder()
+                .id(plan.id())
+                .build();
+    }
+
+    @Override
+    public PlanFullResponse buildPlanFromRoadmap(Long userId, PlanBuildRequest request) {
+        User user = userRepository.findById(userId)
+                .orElseThrow(() -> new NotFoundException("Пользователь не найден"));
+
+        RoleGoal roleGoal = roleGoalRepository.findById(request.roleId())
+                .orElseThrow(() -> new NotFoundException("Roadmap не найден"));
+
+        Map<Long, RoleTopic> roleTopicMeta = roleTopicRepository.findAllByRole_IdOrderByPriorityAsc(roleGoal.getId())
+                .stream()
+                .collect(Collectors.toMap(roleTopic -> roleTopic.getTopic().getId(), Function.identity()));
+        if (roleTopicMeta.isEmpty()) {
+            throw new PlanBuildException("Для выбранного roadmap пока не заведены темы");
+        }
+
+        Set<Long> knownTopicIds = request.knownTopicIds() != null
+                ? new HashSet<>(request.knownTopicIds())
+                : Set.of();
+        Map<Long, Topic> roleScopeTopics = buildRoleScope(roleTopicMeta.values());
+        Map<Long, List<TopicPrereq>> requiredPrereqMap = buildRequiredPrereqMap();
+        List<PlanningTopic> workingTopics = buildRoadmapTopics(roleScopeTopics, roleTopicMeta, knownTopicIds, requiredPrereqMap);
+        List<PlanningTopic> orderedTopics = orderTopics(workingTopics, roleTopicMeta, requiredPrereqMap);
+        if (orderedTopics.isEmpty()) {
+            throw new PlanBuildException("После исключения уже известных тем в выбранном roadmap не осталось шагов");
+        }
+
+        Plan plan = savePlan(user, roleGoal);
+        savePlanSnapshot(plan, request.hoursPerWeek());
+        savePlanWeeksAndSteps(plan, orderedTopics, request.hoursPerWeek(), knownTopicIds);
+
+        log.info("Roadmap-план сохранён: userId={}, planId={}, roleId={}", userId, plan.getId(), roleGoal.getId());
+        return getPlan(userId, plan.getId());
     }
 
     @Override
@@ -236,6 +339,39 @@ public class PlanServiceImpl implements PlanService {
                 .toList(), "Цель обучения неоднозначна, найдено несколько ролей");
         if (contains != null) {
             return contains;
+        }
+
+        Set<String> requestedTokens = canonicalRoleTokens(rawGoal);
+        if (!requestedTokens.isEmpty()) {
+            RoleGoal semanticExact = singleOrNull(roleGoals.stream()
+                    .filter(role -> canonicalRoleTokens(role).equals(requestedTokens))
+                    .sorted(roleGoalComparator())
+                    .toList(), "Цель обучения неоднозначна, найдено несколько ролей");
+            if (semanticExact != null) {
+                return semanticExact;
+            }
+
+            Set<String> requestedCoreTokens = coreRoleTokens(requestedTokens);
+            if (!requestedCoreTokens.isEmpty()) {
+                RoleGoal semanticCoreExact = singleOrNull(roleGoals.stream()
+                        .filter(role -> coreRoleTokens(canonicalRoleTokens(role)).equals(requestedCoreTokens))
+                        .sorted(roleGoalComparator())
+                        .toList(), "Цель обучения неоднозначна, найдено несколько ролей");
+                if (semanticCoreExact != null) {
+                    return semanticCoreExact;
+                }
+
+                List<RoleGoal> coveringMatches = roleGoals.stream()
+                        .filter(role -> coreRoleTokens(canonicalRoleTokens(role)).containsAll(requestedCoreTokens))
+                        .sorted(roleGoalComparator())
+                        .toList();
+                if (coveringMatches.size() == 1) {
+                    return coveringMatches.get(0);
+                }
+                if (coveringMatches.size() > 1) {
+                    throw new AiRouteValidationException("Цель обучения неоднозначна, найдено несколько ролей");
+                }
+            }
         }
 
         throw new AiRouteValidationException("Не удалось определить цель обучения по запросу: " + rawGoal);
@@ -361,6 +497,62 @@ public class PlanServiceImpl implements PlanService {
         }
 
         return topics;
+    }
+
+    private List<PlanningTopic> buildRoadmapTopics(Map<Long, Topic> roleScopeTopics,
+                                                   Map<Long, RoleTopic> roleTopicMeta,
+                                                   Set<Long> knownTopicIds,
+                                                   Map<Long, List<TopicPrereq>> prereqsByNextId) {
+        Map<Long, PlanningTopic> result = new LinkedHashMap<>();
+
+        for (RoleTopic roleTopic : roleTopicMeta.values()) {
+            Topic topic = roleTopic.getTopic();
+            if (knownTopicIds.contains(topic.getId())) {
+                continue;
+            }
+
+            result.put(topic.getId(), new PlanningTopic(
+                    topic,
+                    defaultHours(topic),
+                    rolePriority(roleTopic),
+                    Integer.MAX_VALUE,
+                    roleTopic.isRequired()
+                            ? "Тема входит в обязательный curated roadmap выбранного направления."
+                            : "Тема входит в curated roadmap выбранного направления.",
+                    !roleTopic.isRequired(),
+                    false
+            ));
+        }
+
+        Deque<Topic> stack = result.values().stream()
+                .map(PlanningTopic::topic)
+                .collect(Collectors.toCollection(ArrayDeque::new));
+
+        while (!stack.isEmpty()) {
+            Topic current = stack.pop();
+            for (TopicPrereq prereq : prereqsByNextId.getOrDefault(current.getId(), List.of())) {
+                Topic prereqTopic = prereq.getPrereqTopic();
+                if (knownTopicIds.contains(prereqTopic.getId()) || !roleScopeTopics.containsKey(prereqTopic.getId())) {
+                    continue;
+                }
+                if (!result.containsKey(prereqTopic.getId())) {
+                    RoleTopic roleTopic = roleTopicMeta.get(prereqTopic.getId());
+                    boolean optional = roleTopic != null && !roleTopic.isRequired();
+                    result.put(prereqTopic.getId(), new PlanningTopic(
+                            prereqTopic,
+                            defaultHours(prereqTopic),
+                            rolePriority(roleTopic),
+                            Integer.MAX_VALUE,
+                            "Добавлено в план как обязательный prerequisite внутри roadmap.",
+                            optional,
+                            false
+                    ));
+                    stack.push(prereqTopic);
+                }
+            }
+        }
+
+        return new ArrayList<>(result.values());
     }
 
     private List<PlanningTopic> buildWorkingTopics(List<PlanningTopic> aiTopics,
@@ -770,6 +962,49 @@ public class PlanServiceImpl implements PlanService {
 
     private boolean isRequiredRoleTopic(RoleTopic roleTopic) {
         return roleTopic != null && roleTopic.isRequired();
+    }
+
+    private Comparator<RoleGoal> roleGoalComparator() {
+        return Comparator.comparing(RoleGoal::getCode, String.CASE_INSENSITIVE_ORDER);
+    }
+
+    private Set<String> canonicalRoleTokens(RoleGoal roleGoal) {
+        return canonicalRoleTokens(roleGoal.getCode() + " " + roleGoal.getName());
+    }
+
+    private Set<String> canonicalRoleTokens(String value) {
+        return Arrays.stream(preprocessRoleValue(value).split("[^\\p{IsAlphabetic}\\p{IsDigit}]+"))
+                .filter(StringUtils::hasText)
+                .map(this::canonicalizeRoleToken)
+                .filter(StringUtils::hasText)
+                .collect(Collectors.toCollection(LinkedHashSet::new));
+    }
+
+    private Set<String> coreRoleTokens(Set<String> tokens) {
+        return tokens.stream()
+                .filter(token -> !ROLE_GENERIC_TOKENS.contains(token))
+                .collect(Collectors.toCollection(LinkedHashSet::new));
+    }
+
+    private String canonicalizeRoleToken(String rawToken) {
+        String token = normalize(rawToken);
+        if (!StringUtils.hasText(token) || ROLE_STOP_WORDS.contains(token)) {
+            return "";
+        }
+
+        String alias = ROLE_TOKEN_ALIASES.getOrDefault(token, token);
+        return ROLE_STOP_WORDS.contains(alias) ? "" : alias;
+    }
+
+    private String preprocessRoleValue(String value) {
+        return normalize(value)
+                .replace("c#", " csharp ")
+                .replace("c-sharp", " csharp ")
+                .replace(".net", " dotnet ")
+                .replace("back-end", " backend ")
+                .replace("front-end", " frontend ")
+                .replace("game dev", " gamedev ")
+                .replace("game-dev", " gamedev ");
     }
 
     private RoleGoal singleOrNull(List<RoleGoal> candidates, String ambiguousMessage) {

@@ -4,6 +4,7 @@ import com.example.adaprivelearningnavigator.ai.dto.AiPlanGenerateRequest;
 import com.example.adaprivelearningnavigator.security.UserPrincipal;
 import com.example.adaprivelearningnavigator.service.PlanService;
 import com.example.adaprivelearningnavigator.service.dto.common.PageResponse;
+import com.example.adaprivelearningnavigator.service.dto.plan.PlanBuildRequest;
 import com.example.adaprivelearningnavigator.service.dto.plan.PlanFullResponse;
 import com.example.adaprivelearningnavigator.service.dto.plan.PlanShortResponse;
 import com.example.adaprivelearningnavigator.service.exception.AuthException;
@@ -44,6 +45,12 @@ public class PlanController {
     public PlanFullResponse generateWithAi(@Valid @RequestBody AiPlanGenerateRequest request,
                                            Authentication authentication) {
         return planService.generatePlanWithAi(requireUserId(authentication), request);
+    }
+
+    @PostMapping("/build-from-roadmap")
+    public PlanFullResponse buildFromRoadmap(@Valid @RequestBody PlanBuildRequest request,
+                                             Authentication authentication) {
+        return planService.buildPlanFromRoadmap(requireUserId(authentication), request);
     }
 
     private Long requireUserId(Authentication authentication) {

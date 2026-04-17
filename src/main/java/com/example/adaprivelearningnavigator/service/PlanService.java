@@ -12,6 +12,8 @@ public interface PlanService {
 
     IdResponse buildPlan(Long userId, PlanBuildRequest request);
 
+    PlanFullResponse buildPlanFromRoadmap(Long userId, PlanBuildRequest request);
+
     IdResponse buildWhatIfPlan(Long userId, Long basePlanId, PlanBuildRequest request);
 
     PageResponse<PlanShortResponse> getPlans(Long userId, int page, int size);

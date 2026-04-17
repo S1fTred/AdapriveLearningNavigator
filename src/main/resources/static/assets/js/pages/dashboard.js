@@ -1,83 +1,271 @@
-import { ApiError, plansApi } from "/assets/js/core/api.js";
+import { ApiError, plansApi, roadmapsApi } from "/assets/js/core/api.js";
 import { requireAuth } from "/assets/js/core/guard.js";
 import { resolveActivePlan, summarizePlan } from "/assets/js/core/plans.js";
+import { resolveActiveRoadmap } from "/assets/js/core/roadmaps.js";
 import { initPrivateShell } from "/assets/js/core/shell.js";
-import { getPlanDraft, savePlanDraft, setSelectedPlanId } from "/assets/js/core/session.js";
-import { clearStatus, escapeHtml, flattenPlanSteps, formatDate, formatHours, renderEmptyState, showStatus } from "/assets/js/core/ui.js";
+import {
+    getPlanDraft,
+    savePlanDraft,
+    setSelectedPlanId,
+    setSelectedRoadmapId
+} from "/assets/js/core/session.js";
+import {
+    clearStatus,
+    escapeHtml,
+    flattenPlanSteps,
+    formatDate,
+    formatHours,
+    renderEmptyState,
+    showStatus
+} from "/assets/js/core/ui.js";
 
 if (requireAuth()) {
     initPrivateShell("dashboard");
 
-    const form = document.querySelector("#generate-plan-form");
     const statusBox = document.querySelector("#dashboard-status");
-    const submitButton = document.querySelector("#generate-submit");
+    const roadmapsContainer = document.querySelector("#roadmaps-list");
+    const roadmapSearch = document.querySelector("#roadmap-search");
+    const roadmapSummary = document.querySelector("#selected-roadmap-summary");
+    const selectedRoadmapIdField = document.querySelector("#selected-roadmap-id");
+    const selectedRoadmapLink = document.querySelector("#selected-roadmap-link");
+    const knownTopicsPicker = document.querySelector("#known-topics-picker");
+    const buildForm = document.querySelector("#build-roadmap-plan-form");
+    const submitButton = document.querySelector("#build-plan-submit");
     const plansContainer = document.querySelector("#plans-list");
     const spotlightContainer = document.querySelector("#plan-spotlight");
+    const hoursPerWeekField = document.querySelector("#hoursPerWeek");
+
+    const state = {
+        roadmaps: [],
+        selectedRoadmap: null,
+        searchQuery: "",
+        knownTopicIds: new Set()
+    };
 
     prefillDraft();
     loadDashboard().catch((error) => handleError(error, statusBox));
 
-    form?.addEventListener("submit", async (event) => {
+    roadmapSearch?.addEventListener("input", (event) => {
+        state.searchQuery = String(event.target.value || "").trim().toLowerCase();
+        renderRoadmapCatalog();
+    });
+
+    buildForm?.addEventListener("submit", async (event) => {
         event.preventDefault();
         clearStatus(statusBox);
 
-        const payload = readPlanPayload();
+        if (!state.selectedRoadmap) {
+            showStatus(statusBox, "error", "Сначала выберите roadmap.");
+            return;
+        }
+
+        const payload = {
+            roleId: state.selectedRoadmap.id,
+            hoursPerWeek: Number(hoursPerWeekField?.value || 10),
+            knownTopicIds: readKnownTopicIds(),
+            scenarioLabel: null
+        };
+
         savePlanDraft({
-            goal: payload.goal,
-            currentLevel: payload.currentLevel,
+            roleId: payload.roleId,
             hoursPerWeek: payload.hoursPerWeek,
-            knownTopics: payload.knownTopics.join(", ")
+            knownTopicIds: payload.knownTopicIds
         });
 
         submitButton.disabled = true;
-        submitButton.textContent = "Строим маршрут...";
-        showStatus(statusBox, "info", "Отправляем запрос в AI-модуль и собираем план.");
+        submitButton.textContent = "Собираем план...";
+        showStatus(statusBox, "info", "Строим недельный план на основе выбранного roadmap.");
 
         try {
-            const plan = await plansApi.generate(payload);
+            const plan = await plansApi.buildFromRoadmap(payload);
             renderSpotlight(plan);
             await renderPlansList();
-            showStatus(statusBox, "success", "План построен. Можно открыть roadmap и недельный план.");
+            showStatus(statusBox, "success", "План собран. Можно открыть roadmap или недельную раскладку.");
         } catch (error) {
             handleError(error, statusBox);
         } finally {
             submitButton.disabled = false;
-            submitButton.textContent = "Построить маршрут";
+            submitButton.textContent = "Построить недельный план";
         }
     });
 
-    function prefillDraft() {
-        const draft = getPlanDraft();
-        const goalField = form?.querySelector("[name=goal]");
-        if (goalField) {
-            goalField.value = draft.goal || "";
-        }
-        const levelSelect = form?.querySelector("[name=currentLevel]");
-        if (levelSelect) {
-            levelSelect.value = draft.currentLevel || "BEGINNER";
-        }
-        const hoursField = form?.querySelector("[name=hoursPerWeek]");
-        if (hoursField) {
-            hoursField.value = draft.hoursPerWeek || 10;
-        }
-        const knownTopicsField = form?.querySelector("[name=knownTopics]");
-        if (knownTopicsField) {
-            knownTopicsField.value = draft.knownTopics || "";
-        }
-    }
-
     async function loadDashboard() {
+        const roadmapsPage = await roadmapsApi.list(0, 48);
+        state.roadmaps = roadmapsPage.items || [];
+
+        if (!state.roadmaps.length) {
+            renderEmptyState(
+                roadmapsContainer,
+                "Каталог пока пуст",
+                "В базе знаний пока нет опубликованных roadmap’ов."
+            );
+            renderEmptyState(
+                roadmapSummary,
+                "Roadmap не выбран",
+                "Когда в базе появятся направления, здесь можно будет собрать недельный план."
+            );
+            renderEmptyState(
+                spotlightContainer,
+                "Нет активного плана",
+                "После первого построения плана здесь появится краткая сводка."
+            );
+            return;
+        }
+
+        const activeRoadmap = await resolveActiveRoadmap(getPlanDraft().roleId || null);
+        if (activeRoadmap) {
+            await selectRoadmap(activeRoadmap.id);
+        }
+
+        renderRoadmapCatalog();
         await renderPlansList();
+
         const activePlan = await resolveActivePlan();
         if (activePlan) {
             renderSpotlight(activePlan);
         } else {
             renderEmptyState(
                 spotlightContainer,
-                "Пока нет плана",
-                "Соберите первый маршрут по цели, уровню и доступному времени. После этого roadmap и недельный план появятся автоматически."
+                "Нет активного плана",
+                "Выберите roadmap и постройте personal weekly plan, чтобы получить здесь сводку."
             );
         }
+    }
+
+    async function selectRoadmap(roadmapId) {
+        const roadmap = await roadmapsApi.get(roadmapId);
+        const draft = getPlanDraft();
+
+        state.selectedRoadmap = roadmap;
+        state.knownTopicIds = new Set(
+            (draft.roleId === roadmapId ? draft.knownTopicIds : [])
+                .filter((topicId) => roadmap.topics.some((topic) => topic.topicId === topicId))
+        );
+
+        setSelectedRoadmapId(roadmapId);
+        selectedRoadmapIdField.value = String(roadmapId);
+        selectedRoadmapLink.href = `/roadmap?roadmapId=${roadmapId}`;
+
+        renderSelectedRoadmap();
+        renderRoadmapCatalog();
+        renderKnownTopics();
+    }
+
+    function renderRoadmapCatalog() {
+        if (!state.roadmaps.length) {
+            return;
+        }
+
+        const items = state.roadmaps.filter((roadmap) => {
+            if (!state.searchQuery) {
+                return true;
+            }
+
+            const haystack = `${roadmap.name} ${roadmap.code} ${roadmap.description || ""}`.toLowerCase();
+            return haystack.includes(state.searchQuery);
+        });
+
+        if (!items.length) {
+            renderEmptyState(
+                roadmapsContainer,
+                "Ничего не найдено",
+                "Попробуйте другой запрос или очистите поиск."
+            );
+            return;
+        }
+
+        roadmapsContainer.innerHTML = `
+            <div class="roadmap-catalog">
+                ${items.map((roadmap) => {
+                    const isActive = roadmap.id === state.selectedRoadmap?.id;
+                    return `
+                        <article class="card roadmap-catalog-card ${isActive ? "is-selected" : ""}">
+                            <div>
+                                <p class="eyebrow">${escapeHtml(roadmap.code || "roadmap")}</p>
+                                <h4>${escapeHtml(roadmap.name)}</h4>
+                                <p>${escapeHtml(roadmap.description || "Roadmap без описания.")}</p>
+                            </div>
+                            <div class="pill-row roadmap-card-pills">
+                                <span class="badge">${roadmap.topicCount} тем</span>
+                                <span class="badge badge-dark">${roadmap.requiredTopicCount} обязательных</span>
+                                <span class="badge badge-success">${escapeHtml(formatHours(roadmap.totalEstimatedHours))}</span>
+                            </div>
+                            <div class="list-actions roadmap-card-actions">
+                                <button class="button ${isActive ? "button-primary" : "button-secondary"}" data-select-roadmap="${roadmap.id}">
+                                    ${isActive ? "Выбрано" : "Выбрать"}
+                                </button>
+                                <a class="button button-ghost" href="/roadmap?roadmapId=${roadmap.id}">Открыть</a>
+                            </div>
+                        </article>
+                    `;
+                }).join("")}
+            </div>
+        `;
+
+        roadmapsContainer.querySelectorAll("[data-select-roadmap]").forEach((button) => {
+            button.addEventListener("click", async () => {
+                const roadmapId = Number(button.dataset.selectRoadmap);
+                await selectRoadmap(roadmapId);
+            });
+        });
+    }
+
+    function renderSelectedRoadmap() {
+        if (!state.selectedRoadmap) {
+            renderEmptyState(
+                roadmapSummary,
+                "Roadmap не выбран",
+                "Выберите направление из каталога слева."
+            );
+            return;
+        }
+
+        roadmapSummary.innerHTML = `
+            <div class="selection-card-inner">
+                <p class="eyebrow">Выбранное направление</p>
+                <h4>${escapeHtml(state.selectedRoadmap.name)}</h4>
+                <p>${escapeHtml(state.selectedRoadmap.description || "Roadmap без описания.")}</p>
+                <div class="pill-row roadmap-card-pills">
+                    <span class="badge">${state.selectedRoadmap.topicCount} тем</span>
+                    <span class="badge badge-dark">${state.selectedRoadmap.requiredTopicCount} обязательных</span>
+                    <span class="badge badge-success">${escapeHtml(formatHours(state.selectedRoadmap.totalEstimatedHours))}</span>
+                </div>
+            </div>
+        `;
+    }
+
+    function renderKnownTopics() {
+        if (!state.selectedRoadmap) {
+            knownTopicsPicker.innerHTML = "";
+            return;
+        }
+
+        knownTopicsPicker.innerHTML = `
+            ${state.selectedRoadmap.topics.map((topic) => `
+                <label class="topic-check-item">
+                    <input
+                        type="checkbox"
+                        value="${topic.topicId}"
+                        ${state.knownTopicIds.has(topic.topicId) ? "checked" : ""}
+                    >
+                    <span>
+                        <strong>${escapeHtml(topic.topicTitle)}</strong>
+                        <small>${escapeHtml(topic.topicCode)} · ${escapeHtml(formatHours(topic.estimatedHours))}</small>
+                    </span>
+                </label>
+            `).join("")}
+        `;
+
+        knownTopicsPicker.querySelectorAll("input[type=checkbox]").forEach((checkbox) => {
+            checkbox.addEventListener("change", () => {
+                const topicId = Number(checkbox.value);
+                if (checkbox.checked) {
+                    state.knownTopicIds.add(topicId);
+                } else {
+                    state.knownTopicIds.delete(topicId);
+                }
+            });
+        });
     }
 
     async function renderPlansList() {
@@ -87,8 +275,8 @@ if (requireAuth()) {
         if (!items.length) {
             renderEmptyState(
                 plansContainer,
-                "История пока пуста",
-                "Здесь появятся последние сгенерированные планы. Начните с формы слева."
+                "Планы пока не создавались",
+                "После первого build-from-roadmap здесь появятся сохранённые weekly plan snapshots."
             );
             return;
         }
@@ -100,13 +288,13 @@ if (requireAuth()) {
                         <div>
                             <h4>${escapeHtml(plan.roleName || plan.roleCode || "План обучения")}</h4>
                             <p>Создан: ${escapeHtml(formatDate(plan.createdAt))}</p>
-                            <div class="pill-row" style="margin-top:10px;">
+                            <div class="pill-row roadmap-card-pills">
                                 <span class="badge">${escapeHtml(plan.scenarioType || "BASE")}</span>
                                 <span class="badge badge-dark">${escapeHtml(plan.status || "DRAFT")}</span>
                             </div>
                         </div>
                         <div class="list-actions">
-                            <a class="button button-secondary" href="/roadmap?planId=${plan.id}">Roadmap</a>
+                            <a class="button button-secondary" href="/roadmap?roadmapId=${plan.roleId}&planId=${plan.id}">Roadmap</a>
                             <a class="button button-ghost" href="/plan?planId=${plan.id}">Недели</a>
                             <button class="button button-ghost" data-open-plan="${plan.id}">Выбрать</button>
                         </div>
@@ -130,70 +318,62 @@ if (requireAuth()) {
         const nextSteps = flattenPlanSteps(plan).slice(0, 3);
 
         spotlightContainer.innerHTML = `
-            <section class="hero-panel">
-                <div class="card panel-card">
-                    <p class="eyebrow">Активный маршрут</p>
-                    <h3>${escapeHtml(plan.roleName || plan.roleCode || "Персональный план")}</h3>
-                    <p>Маршрут создан ${escapeHtml(formatDate(plan.createdAt))}. AI-версия: ${escapeHtml(plan.params?.algoVersion || "—")}.</p>
-                    <div class="metric-grid" style="margin-top:20px;">
-                        <article class="metric-card card">
-                            <p>Недель</p>
-                            <strong>${summary.weekCount}</strong>
-                            <p>Разложено по недельному лимиту.</p>
-                        </article>
-                        <article class="metric-card card">
-                            <p>Тем</p>
-                            <strong>${summary.stepCount}</strong>
-                            <p>Шагов внутри текущего маршрута.</p>
-                        </article>
-                        <article class="metric-card card">
-                            <p>Часов</p>
-                            <strong>${summary.totalHours}</strong>
-                            <p>Суммарная учебная нагрузка.</p>
-                        </article>
-                        <article class="metric-card card">
-                            <p>Лимит</p>
-                            <strong>${escapeHtml(String(plan.params?.hoursPerWeek || "—"))}</strong>
-                            <p>Часов в неделю по вашему сценарию.</p>
-                        </article>
-                    </div>
+            <div class="card panel-card plan-highlight">
+                <p class="eyebrow">Active plan</p>
+                <h3>${escapeHtml(plan.roleName || plan.roleCode || "Личный weekly plan")}</h3>
+                <p>Snapshot построен ${escapeHtml(formatDate(plan.createdAt))}. Лимит: ${escapeHtml(String(plan.params?.hoursPerWeek || "—"))} ч/нед.</p>
+                <div class="metric-grid panel-top-gap">
+                    <article class="metric-card card">
+                        <p>Недель</p>
+                        <strong>${summary.weekCount}</strong>
+                        <p>Сколько недель получилось после раскладки roadmap.</p>
+                    </article>
+                    <article class="metric-card card">
+                        <p>Тем</p>
+                        <strong>${summary.stepCount}</strong>
+                        <p>Шагов в личном плане.</p>
+                    </article>
+                    <article class="metric-card card">
+                        <p>Часов</p>
+                        <strong>${summary.totalHours}</strong>
+                        <p>Суммарный объём маршрута.</p>
+                    </article>
+                    <article class="metric-card card">
+                        <p>Roadmap</p>
+                        <strong>${escapeHtml(plan.roleCode || "—")}</strong>
+                        <p>Основа построения weekly plan.</p>
+                    </article>
                 </div>
-                <div class="card panel-card plan-highlight">
-                    <p class="eyebrow">Ближайшие шаги</p>
-                    <h3>Что делать дальше</h3>
-                    <div class="list">
-                        ${nextSteps.map((step) => `
-                            <article class="list-item">
-                                <div>
-                                    <h4>${escapeHtml(step.topicTitle || step.topicCode || `Тема ${step.topicId}`)}</h4>
-                                    <p>Неделя ${step.weekIndex}, ${escapeHtml(formatHours(step.plannedHours))}</p>
-                                </div>
-                                <span class="badge">${escapeHtml(step.explanation?.ruleApplied || "AI")}</span>
-                            </article>
-                        `).join("")}
-                    </div>
-                    <div class="form-actions">
-                        <a class="button button-primary" href="/roadmap?planId=${plan.id}">Открыть roadmap</a>
-                        <a class="button button-secondary" href="/plan?planId=${plan.id}">Открыть недельный план</a>
-                    </div>
+                <div class="list panel-top-gap">
+                    ${nextSteps.map((step) => `
+                        <article class="list-item">
+                            <div>
+                                <h4>${escapeHtml(step.topicTitle || step.topicCode || `Тема ${step.topicId}`)}</h4>
+                                <p>Неделя ${step.weekIndex}, ${escapeHtml(formatHours(step.plannedHours))}</p>
+                            </div>
+                            <span class="badge">${escapeHtml(step.explanation?.ruleApplied || "ROADMAP")}</span>
+                        </article>
+                    `).join("")}
                 </div>
-            </section>
+                <div class="form-actions panel-top-gap">
+                    <a class="button button-primary" href="/roadmap?roadmapId=${plan.roleId}&planId=${plan.id}">Открыть roadmap</a>
+                    <a class="button button-secondary" href="/plan?planId=${plan.id}">Открыть недельный план</a>
+                </div>
+            </div>
         `;
     }
 
-    function readPlanPayload() {
-        const formData = new FormData(form);
-        const knownTopics = String(formData.get("knownTopics") || "")
-            .split(/[\n,]/)
-            .map((item) => item.trim())
-            .filter(Boolean);
+    function readKnownTopicIds() {
+        return Array.from(knownTopicsPicker.querySelectorAll("input[type=checkbox]:checked"))
+            .map((input) => Number(input.value))
+            .filter((value) => !Number.isNaN(value));
+    }
 
-        return {
-            goal: String(formData.get("goal") || "").trim(),
-            currentLevel: String(formData.get("currentLevel") || "BEGINNER"),
-            hoursPerWeek: Number(formData.get("hoursPerWeek") || 10),
-            knownTopics
-        };
+    function prefillDraft() {
+        const draft = getPlanDraft();
+        if (hoursPerWeekField) {
+            hoursPerWeekField.value = draft.hoursPerWeek || 10;
+        }
     }
 
     function handleError(error, target) {

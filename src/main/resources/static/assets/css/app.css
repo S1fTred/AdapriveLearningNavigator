@@ -985,6 +985,191 @@ img {
     font-size: 14px;
 }
 
+.panel-top-gap {
+    margin-top: 18px;
+}
+
+.roadmap-catalog {
+    display: grid;
+    gap: 14px;
+}
+
+.roadmap-catalog-card {
+    padding: 22px;
+    display: grid;
+    gap: 14px;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.roadmap-catalog-card h4,
+.selection-card-inner h4,
+.topic-detail-card h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.roadmap-catalog-card p,
+.selection-card-inner p,
+.topic-detail-card p {
+    margin: 0;
+    color: var(--color-muted);
+    line-height: 1.55;
+}
+
+.roadmap-catalog-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(92, 158, 173, 0.35);
+}
+
+.roadmap-catalog-card.is-selected {
+    border-color: rgba(92, 158, 173, 0.45);
+    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.18);
+}
+
+.roadmap-card-pills,
+.roadmap-card-actions {
+    margin-top: 2px;
+}
+
+.selection-card {
+    min-height: 154px;
+    border-radius: 18px;
+    background: var(--color-surface);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.selection-card-inner {
+    display: grid;
+    gap: 12px;
+    padding: 18px;
+}
+
+.topic-checklist {
+    display: grid;
+    gap: 10px;
+}
+
+.topic-check-item {
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    gap: 12px;
+    align-items: start;
+    padding: 14px 16px;
+    border-radius: 16px;
+    background: var(--color-surface);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.topic-check-item input {
+    margin-top: 3px;
+}
+
+.topic-check-item span {
+    display: grid;
+    gap: 4px;
+}
+
+.topic-check-item strong {
+    font-size: 15px;
+}
+
+.topic-check-item small {
+    color: var(--color-muted);
+}
+
+.roadmap-board {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.roadmap-topic-grid {
+    display: grid;
+    gap: 14px;
+}
+
+.roadmap-topic-card {
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    color: var(--color-text);
+    box-shadow: var(--shadow-soft);
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.roadmap-topic-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(92, 158, 173, 0.4);
+}
+
+.roadmap-topic-card.is-selected {
+    border-color: rgba(92, 158, 173, 0.55);
+    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.2);
+}
+
+.roadmap-topic-card h4 {
+    margin: 0 0 8px;
+    font-size: 18px;
+}
+
+.roadmap-topic-card p {
+    margin: 0;
+    color: var(--color-muted);
+    line-height: 1.55;
+}
+
+.topic-detail-card {
+    position: sticky;
+    top: 30px;
+}
+
+.topic-tab-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.topic-tab {
+    min-height: 40px;
+    padding: 0 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.03);
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+.topic-tab.is-active {
+    background: var(--color-accent);
+    color: #ffffff;
+    border-color: transparent;
+}
+
+.topic-detail-section {
+    display: grid;
+    gap: 16px;
+}
+
+.topic-detail-block {
+    display: grid;
+    gap: 10px;
+}
+
+.topic-detail-block h4,
+.tutor-placeholder h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.tutor-placeholder {
+    display: grid;
+    gap: 14px;
+}
+
 .footer {
     padding: 32px 0 48px;
     color: rgba(255, 255, 255, 0.76);
@@ -1003,12 +1188,17 @@ img {
     .panel-grid,
     .hero-panel,
     .auth-layout,
-    .app-shell {
+    .app-shell,
+    .roadmap-board {
         grid-template-columns: 1fr;
     }
 
     .app-sidebar {
         min-height: auto;
+        position: static;
+    }
+
+    .topic-detail-card {
         position: static;
     }
 

@@ -5,6 +5,7 @@ import com.example.adaprivelearningnavigator.domain.enums.UserLevel;
 import com.example.adaprivelearningnavigator.security.UserPrincipal;
 import com.example.adaprivelearningnavigator.service.PlanService;
 import com.example.adaprivelearningnavigator.service.dto.common.PageResponse;
+import com.example.adaprivelearningnavigator.service.dto.plan.PlanBuildRequest;
 import com.example.adaprivelearningnavigator.service.dto.plan.PlanFullResponse;
 import com.example.adaprivelearningnavigator.service.dto.plan.PlanShortResponse;
 import com.example.adaprivelearningnavigator.service.exception.AiRouteGenerationException;
@@ -173,6 +174,31 @@ class PlanControllerTest {
                         .content(objectMapper.writeValueAsString(validRequest())))
                 .andExpect(status().isBadRequest())
                 .andExpect(jsonPath("$.message").value("Неизвестная тема"));
+    }
+
+    @Test
+    void shouldBuildPlanFromRoadmapWhenAuthenticationPresent() throws Exception {
+        when(planService.buildPlanFromRoadmap(eq(42L), any(PlanBuildRequest.class)))
+                .thenReturn(PlanFullResponse.builder()
+                        .id(101L)
+                        .roleId(200L)
+                        .roleCode("java-backend")
+                        .roleName("Java Backend Developer")
+                        .weeks(List.of())
+                        .build());
+
+        mockMvc.perform(post("/api/plans/build-from-roadmap")
+                        .principal(authentication())
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(new PlanBuildRequest(
+                                200L,
+                                8,
+                                Set.of(10L, 11L),
+                                null
+                        ))))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.id").value(101))
+                .andExpect(jsonPath("$.roleCode").value("java-backend"));
     }
 
     private UsernamePasswordAuthenticationToken authentication() {

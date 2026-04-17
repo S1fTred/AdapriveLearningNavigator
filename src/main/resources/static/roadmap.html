@@ -17,10 +17,11 @@
             </span>
         </a>
         <div class="sidebar-note">
-            Здесь маршрут читается как карта движения: неделя, тема, причина выбора и prerequisite-статусы.
+            Здесь roadmap — главный объект продукта: структура тем, связи между ними, ресурсы и
+            точка входа в персональный недельный план.
         </div>
         <nav class="sidebar-nav">
-            <a class="sidebar-link" data-nav="dashboard" href="/dashboard"><span>Кабинет</span><small>Overview</small></a>
+            <a class="sidebar-link" data-nav="dashboard" href="/dashboard"><span>Кабинет</span><small>Catalog</small></a>
             <a class="sidebar-link" data-nav="roadmap" href="/roadmap"><span>Roadmap</span><small>Graph</small></a>
             <a class="sidebar-link" data-nav="plan" href="/plan"><span>План</span><small>Weeks</small></a>
             <a class="sidebar-link" data-nav="progress" href="/progress"><span>Прогресс</span><small>Track</small></a>
@@ -39,8 +40,11 @@
         <header class="app-topbar">
             <div>
                 <p class="eyebrow">Roadmap</p>
-                <h1>Карта маршрута</h1>
-                <p>Фронт строит roadmap прямо из `PlanFullResponse`, без дополнительных ручных JSON и временных заглушек.</p>
+                <h1>Карта направления</h1>
+                <p>
+                    Откройте curated roadmap, посмотрите связи между темами и переходите к ресурсам
+                    и AI Tutor на уровне конкретной темы.
+                </p>
             </div>
             <div class="user-pill">
                 <strong data-user-name>Пользователь</strong>
@@ -50,9 +54,12 @@
 
         <main class="app-content">
             <div id="roadmap-status" class="status-box"></div>
-            <section id="roadmap-meta"></section>
             <section id="roadmap-switcher"></section>
-            <section id="roadmap-flow"></section>
+            <section id="roadmap-meta"></section>
+            <section class="roadmap-board">
+                <div id="roadmap-flow"></div>
+                <aside id="roadmap-topic-panel"></aside>
+            </section>
         </main>
     </div>
 </div>

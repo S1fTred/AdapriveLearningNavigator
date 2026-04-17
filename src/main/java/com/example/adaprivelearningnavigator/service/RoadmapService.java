@@ -1,12 +1,14 @@
 package com.example.adaprivelearningnavigator.service;
 
-import com.example.adaprivelearningnavigator.service.dto.topic_graph.TopicPrereqResponse;
-import com.example.adaprivelearningnavigator.service.dto.topic_graph.TopicResponse;
-
-import java.util.List;
+import com.example.adaprivelearningnavigator.service.dto.common.PageResponse;
+import com.example.adaprivelearningnavigator.service.dto.roadmap.RoadmapDetailResponse;
+import com.example.adaprivelearningnavigator.service.dto.roadmap.RoadmapSummaryResponse;
+import com.example.adaprivelearningnavigator.service.dto.roadmap.RoadmapTopicDetailResponse;
 
 public interface RoadmapService {
-    List<TopicResponse> getRoadmapTopics(Long goalId);
+    PageResponse<RoadmapSummaryResponse> getRoadmaps(int page, int size);
 
-    List<TopicPrereqResponse> getRoadmapEdges(Long goalId);
+    RoadmapDetailResponse getRoadmap(Long roleId);
+
+    RoadmapTopicDetailResponse getRoadmapTopic(Long roleId, Long topicId);
 }

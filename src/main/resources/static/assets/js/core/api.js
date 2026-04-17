@@ -1,8 +1,12 @@
 import {
+    cacheRoadmap,
+    cacheRoadmapTopic,
     cachePlan,
     clearSession,
     getAccessToken,
     getCachedPlan,
+    getCachedRoadmap,
+    getCachedRoadmapTopic,
     getRefreshToken,
     saveUserProfile,
     setAuthTokens,
@@ -45,7 +49,7 @@ async function refreshTokens() {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Accept": "application/json"
+            Accept: "application/json"
         },
         body: JSON.stringify({ refreshToken })
     });
@@ -70,7 +74,7 @@ export async function apiRequest(path, options = {}) {
     } = options;
 
     const requestHeaders = {
-        "Accept": "application/json",
+        Accept: "application/json",
         ...headers
     };
 
@@ -79,7 +83,7 @@ export async function apiRequest(path, options = {}) {
     }
 
     if (auth && getAccessToken()) {
-        requestHeaders["Authorization"] = `Bearer ${getAccessToken()}`;
+        requestHeaders.Authorization = `Bearer ${getAccessToken()}`;
     }
 
     const response = await fetch(path, {
@@ -157,6 +161,44 @@ export const plansApi = {
         });
         cachePlan(response);
         setSelectedPlanId(response.id);
+        return response;
+    },
+
+    async buildFromRoadmap(payload) {
+        const response = await apiRequest("/api/plans/build-from-roadmap", {
+            method: "POST",
+            body: payload
+        });
+        cachePlan(response);
+        setSelectedPlanId(response.id);
+        return response;
+    }
+};
+
+export const roadmapsApi = {
+    async list(page = 0, size = 24) {
+        return apiRequest(`/api/roadmaps?page=${page}&size=${size}`);
+    },
+
+    async get(roadmapId) {
+        const cached = getCachedRoadmap(roadmapId);
+        if (cached) {
+            return cached;
+        }
+
+        const response = await apiRequest(`/api/roadmaps/${roadmapId}`);
+        cacheRoadmap(response);
+        return response;
+    },
+
+    async getTopic(roadmapId, topicId) {
+        const cached = getCachedRoadmapTopic(roadmapId, topicId);
+        if (cached) {
+            return cached;
+        }
+
+        const response = await apiRequest(`/api/roadmaps/${roadmapId}/topics/${topicId}`);
+        cacheRoadmapTopic(roadmapId, response);
         return response;
     }
 };

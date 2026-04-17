@@ -23,9 +23,11 @@ if (requireAuth()) {
             renderEmptyState(
                 summaryContainer,
                 "План пока не выбран",
-                "Сначала соберите маршрут в кабинете. После этого здесь появится недельная раскладка."
+                "Сначала соберите маршрут в кабинете. После этого здесь появится недельная раскладка.",
+                `<div class="form-actions panel-top-gap"><a class="button button-primary" href="/dashboard">Открыть кабинет</a></div>`
             );
             weeksContainer.innerHTML = "";
+            switcherContainer.innerHTML = "";
             return;
         }
 
@@ -40,7 +42,7 @@ if (requireAuth()) {
             <div class="card panel-card">
                 <p class="eyebrow">Навигация</p>
                 <h3>Другой сохранённый план</h3>
-                <div class="form-row" style="margin-top:14px;">
+                <div class="form-row panel-top-gap">
                     <label class="field-label" for="plan-select">Выберите план</label>
                     <select class="select" id="plan-select">
                         ${(page.items || []).map((item) => `
@@ -66,13 +68,16 @@ if (requireAuth()) {
                 <article class="card panel-card">
                     <p class="eyebrow">Недельный ритм</p>
                     <h3>${escapeHtml(plan.roleName || plan.roleCode || "Недельный план")}</h3>
-                    <p>Ниже уже разложенные недели с лимитом ${escapeHtml(String(plan.params?.hoursPerWeek || "—"))} ч/нед. Сервис не дробит одну тему на несколько недель, поэтому шаги идут блоками.</p>
+                    <p>
+                        Ниже уже разложенные недели с лимитом ${escapeHtml(String(plan.params?.hoursPerWeek || "—"))} ч/нед.
+                        Сервис не дробит одну тему на несколько недель, поэтому шаги идут цельными блоками.
+                    </p>
                 </article>
                 <article class="card panel-card">
                     <p class="eyebrow">Действия</p>
                     <h3>Переключение режимов</h3>
-                    <div class="form-actions" style="margin-top:18px;">
-                        <a class="button button-primary" href="/roadmap?planId=${plan.id}">Открыть roadmap</a>
+                    <div class="form-actions panel-top-gap">
+                        <a class="button button-primary" href="/roadmap?roadmapId=${plan.roleId}&planId=${plan.id}">Открыть roadmap</a>
                         <a class="button button-secondary" href="/dashboard">Вернуться в кабинет</a>
                     </div>
                 </article>
@@ -103,16 +108,34 @@ if (requireAuth()) {
                                     <article class="step-card">
                                         <div class="step-meta">
                                             <span class="badge">${escapeHtml(formatHours(step.plannedHours))}</span>
-                                            <span class="badge badge-dark">${escapeHtml(step.explanation?.ruleApplied || "AI")}</span>
+                                            <span class="badge badge-dark">${escapeHtml(step.explanation?.ruleApplied || "ROADMAP")}</span>
                                         </div>
                                         <h4>${escapeHtml(step.topicTitle || step.topicCode || `Тема ${step.topicId}`)}</h4>
                                         <p>${escapeHtml(step.explanation?.topicPriorityReason || "Пояснение недоступно.")}</p>
+                                        ${renderPrereqStatus(step)}
                                     </article>
                                 `).join("")}
                             </div>
                         </article>
                     `;
                 }).join("")}
+            </div>
+        `;
+    }
+
+    function renderPrereqStatus(step) {
+        const prereqs = step.explanation?.prereqs || [];
+        if (!prereqs.length) {
+            return "";
+        }
+
+        return `
+            <div class="topic-tags panel-top-gap">
+                ${prereqs.map((item) => `
+                    <span class="topic-chip muted">
+                        prerequisite ${escapeHtml(String(item.prereqTopicId))}: ${escapeHtml(item.status)}
+                    </span>
+                `).join("")}
             </div>
         `;
     }

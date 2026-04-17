@@ -18,13 +18,14 @@
         </a>
 
         <div class="sidebar-note">
-            Здесь начинается рабочий поток: собрать новый AI-маршрут, открыть roadmap и перейти к недельной раскладке.
+            Основной сценарий теперь roadmap-first: выбрать направление, открыть карту тем и собрать личный
+            недельный план под свой темп.
         </div>
 
         <nav class="sidebar-nav">
             <a class="sidebar-link" data-nav="dashboard" href="/dashboard">
                 <span>Кабинет</span>
-                <small>Overview</small>
+                <small>Catalog</small>
             </a>
             <a class="sidebar-link" data-nav="roadmap" href="/roadmap">
                 <span>Roadmap</span>
@@ -57,8 +58,11 @@
         <header class="app-topbar">
             <div>
                 <p class="eyebrow">Dashboard</p>
-                <h1>Личный кабинет</h1>
-                <p>Соберите новый маршрут, переключайтесь между сохранёнными планами и открывайте roadmap без Postman и ручных JSON.</p>
+                <h1>Каталог roadmap’ов</h1>
+                <p>
+                    Выберите направление из базы знаний, отметьте уже знакомые темы и соберите
+                    персональный недельный план без ручных API-запросов.
+                </p>
             </div>
             <div class="user-pill">
                 <strong data-user-name>Пользователь</strong>
@@ -71,51 +75,65 @@
 
             <section class="panel-grid">
                 <article class="card panel-card">
-                    <p class="eyebrow">Генерация нового плана</p>
-                    <h3>Построить маршрут через AI</h3>
-                    <p>Форма опирается на уже реализованный backend endpoint `POST /api/plans/generate-with-ai` и сохраняет последние значения локально.</p>
-                    <form id="generate-plan-form" class="form-grid" style="margin-top:20px;">
-                        <div class="form-row">
-                            <label for="goal">Цель</label>
-                            <input class="input" id="goal" name="goal" type="text" placeholder="Например: java-backend" required>
-                            <span class="form-hint">Поддерживается как code, так и читаемое название роли, если backend сможет её резолвить.</span>
-                        </div>
-                        <div class="form-row-inline">
-                            <div class="form-row">
-                                <label for="currentLevel">Текущий уровень</label>
-                                <select class="select" id="currentLevel" name="currentLevel">
-                                    <option value="BEGINNER">BEGINNER</option>
-                                    <option value="BASIC">BASIC</option>
-                                    <option value="INTERMEDIATE">INTERMEDIATE</option>
-                                    <option value="ADVANCED">ADVANCED</option>
-                                </select>
-                            </div>
-                            <div class="form-row">
-                                <label for="hoursPerWeek">Часов в неделю</label>
-                                <input class="input" id="hoursPerWeek" name="hoursPerWeek" type="number" min="1" max="80" value="10" required>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <label for="knownTopics">Уже известные темы</label>
-                            <textarea class="textarea" id="knownTopics" name="knownTopics" placeholder="Java Basics, Git, HTTP"></textarea>
-                            <span class="form-hint">Можно перечислять через запятую или с новой строки.</span>
-                        </div>
-                        <div class="form-actions">
-                            <button class="button button-primary" id="generate-submit" type="submit">Построить маршрут</button>
-                            <a class="button button-secondary" href="/roadmap">Открыть текущий roadmap</a>
-                        </div>
-                    </form>
+                    <p class="eyebrow">Roadmap catalog</p>
+                    <h3>Выбор направления</h3>
+                    <p>
+                        Каталог подтягивается из базы знаний. Пользователь выбирает готовый roadmap,
+                        а не вводит цель свободным текстом.
+                    </p>
+                    <div class="form-row panel-top-gap">
+                        <label class="field-label" for="roadmap-search">Поиск по направлениям</label>
+                        <input class="input" id="roadmap-search" type="search" placeholder="Например: Java, Frontend, DevOps">
+                    </div>
+                    <div id="roadmaps-list" class="panel-top-gap"></div>
                 </article>
 
                 <article class="card panel-card">
-                    <p class="eyebrow">Сохранённые планы</p>
-                    <h3>История генераций</h3>
-                    <p>Список подтягивается с backend через `GET /api/plans` и даёт быстрые переходы к roadmap и недельному плану.</p>
-                    <div id="plans-list" style="margin-top:20px;"></div>
+                    <p class="eyebrow">Personal weekly plan</p>
+                    <h3>Собрать план из roadmap</h3>
+                    <p>
+                        Сервис исключит уже знакомые темы и разложит оставшийся маршрут по неделям
+                        под ваш лимит часов.
+                    </p>
+
+                    <form id="build-roadmap-plan-form" class="form-grid panel-top-gap">
+                        <input type="hidden" name="roleId" id="selected-roadmap-id">
+
+                        <div id="selected-roadmap-summary" class="selection-card"></div>
+
+                        <div class="form-row">
+                            <label for="hoursPerWeek">Часов в неделю</label>
+                            <input class="input" id="hoursPerWeek" name="hoursPerWeek" type="number" min="1" max="80" value="10" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label>Уже знакомые темы</label>
+                            <div id="known-topics-picker" class="topic-checklist"></div>
+                            <span class="form-hint">
+                                Выбранные темы не попадут в недельный план, но будут учтены как уже закрытые prerequisite.
+                            </span>
+                        </div>
+
+                        <div class="form-actions">
+                            <button class="button button-primary" id="build-plan-submit" type="submit">Построить недельный план</button>
+                            <a class="button button-secondary" id="selected-roadmap-link" href="/roadmap">Открыть roadmap</a>
+                        </div>
+                    </form>
                 </article>
             </section>
 
-            <section id="plan-spotlight"></section>
+            <section class="panel-grid">
+                <article class="card panel-card">
+                    <p class="eyebrow">Saved plans</p>
+                    <h3>Сохранённые планы</h3>
+                    <p>
+                        Здесь лежат snapshot’ы недельных планов, собранных на основе выбранных roadmap’ов.
+                    </p>
+                    <div id="plans-list" class="panel-top-gap"></div>
+                </article>
+
+                <article id="plan-spotlight"></article>
+            </section>
         </main>
     </div>
 </div>

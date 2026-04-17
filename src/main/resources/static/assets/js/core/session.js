@@ -3,7 +3,10 @@ const STORAGE_KEYS = {
     refreshToken: "aln.refreshToken",
     userProfile: "aln.userProfile",
     selectedPlanId: "aln.selectedPlanId",
+    selectedRoadmapId: "aln.selectedRoadmapId",
     cachedPlans: "aln.cachedPlans",
+    cachedRoadmaps: "aln.cachedRoadmaps",
+    cachedRoadmapTopics: "aln.cachedRoadmapTopics",
     planDraft: "aln.planDraft",
     progressByPlan: "aln.progressByPlan"
 };
@@ -57,6 +60,7 @@ export function clearSession() {
     localStorage.removeItem(STORAGE_KEYS.accessToken);
     localStorage.removeItem(STORAGE_KEYS.refreshToken);
     localStorage.removeItem(STORAGE_KEYS.selectedPlanId);
+    localStorage.removeItem(STORAGE_KEYS.selectedRoadmapId);
 }
 
 export function saveUserProfile(profile) {
@@ -104,6 +108,19 @@ export function getSelectedPlanId() {
     return raw ? Number(raw) : null;
 }
 
+export function setSelectedRoadmapId(roadmapId) {
+    if (roadmapId == null) {
+        localStorage.removeItem(STORAGE_KEYS.selectedRoadmapId);
+        return;
+    }
+    localStorage.setItem(STORAGE_KEYS.selectedRoadmapId, String(roadmapId));
+}
+
+export function getSelectedRoadmapId() {
+    const raw = localStorage.getItem(STORAGE_KEYS.selectedRoadmapId);
+    return raw ? Number(raw) : null;
+}
+
 export function cachePlan(plan) {
     const current = readJson(STORAGE_KEYS.cachedPlans, {});
     current[String(plan.id)] = plan;
@@ -118,16 +135,43 @@ export function getCachedPlan(planId) {
     return cached[String(planId)] || null;
 }
 
+export function cacheRoadmap(roadmap) {
+    const current = readJson(STORAGE_KEYS.cachedRoadmaps, {});
+    current[String(roadmap.id)] = roadmap;
+    writeJson(STORAGE_KEYS.cachedRoadmaps, current);
+}
+
+export function getCachedRoadmap(roadmapId) {
+    if (roadmapId == null) {
+        return null;
+    }
+    const cached = readJson(STORAGE_KEYS.cachedRoadmaps, {});
+    return cached[String(roadmapId)] || null;
+}
+
+export function cacheRoadmapTopic(roadmapId, topic) {
+    const current = readJson(STORAGE_KEYS.cachedRoadmapTopics, {});
+    current[`${roadmapId}:${topic.topicId}`] = topic;
+    writeJson(STORAGE_KEYS.cachedRoadmapTopics, current);
+}
+
+export function getCachedRoadmapTopic(roadmapId, topicId) {
+    if (roadmapId == null || topicId == null) {
+        return null;
+    }
+    const cached = readJson(STORAGE_KEYS.cachedRoadmapTopics, {});
+    return cached[`${roadmapId}:${topicId}`] || null;
+}
+
 export function savePlanDraft(draft) {
     writeJson(STORAGE_KEYS.planDraft, draft);
 }
 
 export function getPlanDraft() {
     return readJson(STORAGE_KEYS.planDraft, {
-        goal: "",
-        currentLevel: "BEGINNER",
+        roleId: null,
         hoursPerWeek: 10,
-        knownTopics: ""
+        knownTopicIds: []
     });
 }
 

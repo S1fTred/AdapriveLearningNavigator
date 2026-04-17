@@ -36,7 +36,9 @@ import com.example.adaprivelearningnavigator.repo.RoleGoalRepository;
 import com.example.adaprivelearningnavigator.repo.RoleTopicRepository;
 import com.example.adaprivelearningnavigator.repo.TopicPrereqRepository;
 import com.example.adaprivelearningnavigator.repo.UserRepository;
+import com.example.adaprivelearningnavigator.service.dto.common.IdResponse;
 import com.example.adaprivelearningnavigator.service.dto.common.PageResponse;
+import com.example.adaprivelearningnavigator.service.dto.plan.PlanBuildRequest;
 import com.example.adaprivelearningnavigator.service.dto.plan.PlanFullResponse;
 import com.example.adaprivelearningnavigator.service.dto.plan.PlanShortResponse;
 import com.example.adaprivelearningnavigator.service.exception.AiRouteValidationException;
@@ -211,6 +213,80 @@ class PlanServiceImplTest {
                 1L,
                 new AiPlanGenerateRequest("java", UserLevel.BEGINNER, 8, Set.of())
         ));
+    }
+
+    @Test
+    void shouldResolveRoleByRussianSemanticQuery() {
+        User user = user(1L, "test@example.com");
+        RoleGoal backendRole = roleGoal(100L, "java-backend", "Java Backend Developer");
+        RoleGoal mobileRole = roleGoal(101L, "java-mobile", "Java Mobile Developer");
+        Topic spring = topic(12L, "SPRING_BOOT", "Spring Boot");
+
+        AiPlanGenerateRequest request = new AiPlanGenerateRequest(
+                "Java backend разработчик",
+                UserLevel.BEGINNER,
+                8,
+                Set.of()
+        );
+        AiRouteGenerateResponse aiResponse = new AiRouteGenerateResponse(
+                "Java backend developer",
+                List.of(generatedTopic("Spring Boot", 1, 6, "Main goal topic"))
+        );
+
+        when(userRepository.findById(1L)).thenReturn(Optional.of(user));
+        when(roleGoalRepository.findAll()).thenReturn(List.of(backendRole, mobileRole));
+        when(roleTopicRepository.findAllByRole_IdOrderByPriorityAsc(100L))
+                .thenReturn(List.of(roleTopic(backendRole, spring, 1, true)));
+        when(topicPrereqRepository.findAll()).thenReturn(List.of());
+        when(aiRouteGenerationService.generateRoute(eq(request), anyList())).thenReturn(aiResponse);
+        lenient().when(aiRouteGenerationService.generateRoute(eq(request), anyList(), anyString())).thenReturn(aiResponse);
+        doNothing().when(aiRouteValidationService).validateGeneratedRoute(aiResponse);
+        when(aiRouteValidationService.resolveExistingTopic(any(AiGeneratedTopicDto.class))).thenReturn(spring);
+
+        PlanServiceImpl planService = spyPlanService(new ArrayList<>(), new ArrayList<>(), new PlanParamsSnapshot[1]);
+
+        PlanFullResponse response = planService.generatePlanWithAi(1L, request);
+
+        assertEquals(500L, response.id());
+        verify(roleTopicRepository).findAllByRole_IdOrderByPriorityAsc(100L);
+    }
+
+    @Test
+    void shouldFailWhenRussianJavaDeveloperQueryIsAmbiguous() {
+        User user = user(1L, "test@example.com");
+        RoleGoal first = roleGoal(100L, "java-backend", "Java Backend Developer");
+        RoleGoal second = roleGoal(101L, "java-mobile", "Java Mobile Developer");
+
+        when(userRepository.findById(1L)).thenReturn(Optional.of(user));
+        when(roleGoalRepository.findAll()).thenReturn(List.of(first, second));
+
+        PlanServiceImpl planService = spyPlanService(new ArrayList<>(), new ArrayList<>(), new PlanParamsSnapshot[1]);
+
+        AiRouteValidationException exception = assertThrows(AiRouteValidationException.class, () -> planService.generatePlanWithAi(
+                1L,
+                new AiPlanGenerateRequest("Java разработчик", UserLevel.BEGINNER, 8, Set.of())
+        ));
+
+        assertTrue(exception.getMessage().contains("неоднознач"));
+    }
+
+    @Test
+    void shouldFailWhenRoleDirectionIsMissingFromKnowledgeBase() {
+        User user = user(1L, "test@example.com");
+        RoleGoal first = roleGoal(100L, "java-backend", "Java Backend Developer");
+        RoleGoal second = roleGoal(101L, "java-mobile", "Java Mobile Developer");
+
+        when(userRepository.findById(1L)).thenReturn(Optional.of(user));
+        when(roleGoalRepository.findAll()).thenReturn(List.of(first, second));
+
+        PlanServiceImpl planService = spyPlanService(new ArrayList<>(), new ArrayList<>(), new PlanParamsSnapshot[1]);
+
+        AiRouteValidationException exception = assertThrows(AiRouteValidationException.class, () -> planService.generatePlanWithAi(
+                1L,
+                new AiPlanGenerateRequest("Разработка игр на C#", UserLevel.BEGINNER, 8, Set.of())
+        ));
+
+        assertTrue(exception.getMessage().contains("Не удалось определить цель обучения"));
     }
 
     @Test
@@ -601,24 +677,34 @@ class PlanServiceImplTest {
     }
 
     @Test
-    void shouldFailClassicBuildPlanUntilImplemented() {
-        PlanServiceImpl planService = new PlanServiceImpl(
-                userRepository,
-                roleGoalRepository,
-                roleTopicRepository,
-                topicPrereqRepository,
-                planRepository,
-                planParamsSnapshotRepository,
-                planWeekRepository,
-                planStepRepository,
-                planStepExplanationRepository,
-                planStepExplanationPrereqRepository,
-                planStepResourceRepository,
-                aiRouteGenerationService,
-                aiRouteValidationService
-        );
+    void shouldBuildPlanFromRoadmap() {
+        User user = user(1L, "test@example.com");
+        RoleGoal role = roleGoal(100L, "java-backend", "Java Backend Developer");
+        Topic basics = topic(10L, "JAVA_BASICS", "Java Basics");
+        Topic spring = topic(12L, "SPRING_BOOT", "Spring Boot");
 
-        assertThrows(PlanBuildException.class, () -> planService.buildPlan(1L, null));
+        when(userRepository.findById(1L)).thenReturn(Optional.of(user));
+        when(roleGoalRepository.findById(100L)).thenReturn(Optional.of(role));
+        when(roleTopicRepository.findAllByRole_IdOrderByPriorityAsc(100L))
+                .thenReturn(List.of(
+                        roleTopic(role, basics, 1, true),
+                        roleTopic(role, spring, 2, true)
+                ));
+        when(topicPrereqRepository.findAll()).thenReturn(List.of(prereq(basics, spring)));
+
+        List<PlanStep> savedSteps = new ArrayList<>();
+        PlanServiceImpl planService = spyPlanService(savedSteps, new ArrayList<>(), new PlanParamsSnapshot[1]);
+
+        IdResponse response = planService.buildPlan(1L, new PlanBuildRequest(
+                100L,
+                8,
+                Set.of(),
+                null
+        ));
+
+        assertEquals(500L, response.id());
+        assertEquals(List.of(basics.getId(), spring.getId()),
+                savedSteps.stream().map(step -> step.getTopic().getId()).toList());
     }
 
     @Test

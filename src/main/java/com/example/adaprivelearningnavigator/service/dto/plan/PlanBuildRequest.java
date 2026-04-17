@@ -1,6 +1,5 @@
 package com.example.adaprivelearningnavigator.service.dto.plan;
 
-
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
@@ -16,9 +15,7 @@ public record PlanBuildRequest(
         @Max(value = 80, message = "Часов в неделю должно быть не больше 80")
         Integer hoursPerWeek,
 
-        // what-if / override: если null -> берём из профиля пользователя
         Set<Long> knownTopicIds,
 
-        // метка сценария (для what-if)
         String scenarioLabel
 ) {}
