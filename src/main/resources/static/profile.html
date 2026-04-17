@@ -13,12 +13,10 @@
             <span class="brand-mark">ALN</span>
             <span class="brand-copy">
                 <strong>Adaptive Learning Navigator</strong>
-                <span>Profile</span>
+                <span>Профиль</span>
             </span>
         </a>
-        <div class="sidebar-note">
-            Здесь собраны данные текущей сессии и локальные настройки формы генерации. Серверный профиль можно добавить следующим шагом.
-        </div>
+
         <nav class="sidebar-nav">
             <a class="sidebar-link" data-nav="dashboard" href="/dashboard"><span>Кабинет</span><small>Overview</small></a>
             <a class="sidebar-link" data-nav="roadmap" href="/roadmap"><span>Roadmap</span><small>Graph</small></a>
@@ -26,6 +24,7 @@
             <a class="sidebar-link" data-nav="progress" href="/progress"><span>Прогресс</span><small>Track</small></a>
             <a class="sidebar-link" data-nav="profile" href="/profile"><span>Профиль</span><small>Prefs</small></a>
         </nav>
+
         <div class="sidebar-footer">
             <div class="user-pill">
                 <strong data-user-name>Пользователь</strong>
@@ -40,11 +39,10 @@
             <div>
                 <p class="eyebrow">Profile</p>
                 <h1>Профиль и предпочтения</h1>
-                <p>На этом этапе backend уже умеет auth и генерацию планов. Поэтому профиль пока сфокусирован на сессии и пользовательских заготовках для формы генерации.</p>
-            </div>
-            <div class="user-pill">
-                <strong data-user-name>Пользователь</strong>
-                <span data-user-email>user@example.com</span>
+                <p>
+                    Пока профиль хранит локальные настройки пользователя и служит точкой управления
+                    предпочтениями для работы с roadmap и weekly plan.
+                </p>
             </div>
         </header>
 
@@ -52,11 +50,11 @@
             <section id="profile-info"></section>
             <section class="panel-grid">
                 <article class="card panel-card">
-                    <p class="eyebrow">Настройки генерации</p>
+                    <p class="eyebrow">Настройки</p>
                     <h3>Значения по умолчанию</h3>
-                    <p>Эти поля сохраняются локально и подставляются в форму генерации на dashboard.</p>
+                    <p>Эти поля сохраняются локально и используются как пользовательские заготовки.</p>
                     <div id="profile-status" class="status-box"></div>
-                    <form id="profile-preferences-form" class="form-grid" style="margin-top:18px;">
+                    <form id="profile-preferences-form" class="form-grid panel-top-gap">
                         <div class="form-row">
                             <label for="profile-goal">Цель</label>
                             <input class="input" id="profile-goal" name="goal" type="text" placeholder="java-backend">
@@ -82,18 +80,33 @@
                         </div>
                         <div class="form-actions">
                             <button class="button button-primary" type="submit">Сохранить локально</button>
-                            <a class="button button-secondary" href="/dashboard">К форме генерации</a>
+                            <a class="button button-secondary" href="/dashboard">К кабинету</a>
                         </div>
                     </form>
                 </article>
 
                 <article class="card panel-card">
-                    <p class="eyebrow">Статус реализации</p>
+                    <p class="eyebrow">Статус</p>
                     <h3>Что уже работает</h3>
-                    <div class="list" style="margin-top:18px;">
-                        <article class="list-item"><div><h4>Регистрация и вход</h4><p>Фронт работает через реальные JWT access/refresh endpoint’ы backend.</p></div></article>
-                        <article class="list-item"><div><h4>Построение плана</h4><p>План создаётся через AI и сохраняется в БД, затем читается через новые GET endpoint’ы.</p></div></article>
-                        <article class="list-item"><div><h4>Сохранение настроек</h4><p>До появления серверного профиля используется локальная конфигурация браузера.</p></div></article>
+                    <div class="list panel-top-gap">
+                        <article class="list-item">
+                            <div>
+                                <h4>Регистрация и вход</h4>
+                                <p>Фронт уже использует реальные JWT access/refresh endpoint’ы backend.</p>
+                            </div>
+                        </article>
+                        <article class="list-item">
+                            <div>
+                                <h4>Roadmap-first flow</h4>
+                                <p>Пользователь выбирает направление, открывает roadmap и строит weekly plan из базы знаний.</p>
+                            </div>
+                        </article>
+                        <article class="list-item">
+                            <div>
+                                <h4>Локальные настройки</h4>
+                                <p>До появления серверного профиля используется локальная конфигурация браузера.</p>
+                            </div>
+                        </article>
                     </div>
                 </article>
             </section>

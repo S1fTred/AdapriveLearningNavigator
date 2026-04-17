@@ -370,6 +370,14 @@ img {
     align-items: stretch;
 }
 
+.hero-grid-single {
+    grid-template-columns: 1fr;
+}
+
+.hero-grid-single .hero-copy {
+    width: 100%;
+}
+
 .hero-copy {
     padding: 34px;
 }
