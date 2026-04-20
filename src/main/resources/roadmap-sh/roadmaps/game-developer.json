@@ -1,0 +1,230 @@
+{
+  "source": "roadmap.sh",
+  "sourceUrl": "https://roadmap.sh/game-developer",
+  "roleCode": "game-developer",
+  "roleName": "Game Developer",
+  "roleDescription": "Базовая дорожная карта по game development с фокусом на C# и Unity.",
+  "roleStatus": "ACTIVE",
+  "topics": [
+    {
+      "code": "CSHARP_BASICS",
+      "title": "C# Basics",
+      "description": "Основы синтаксиса, типов, условий, циклов и базовых коллекций в C#.",
+      "level": "BASIC",
+      "core": true,
+      "estimatedHours": 8,
+      "status": "ACTIVE",
+      "priority": 1,
+      "required": true,
+      "prereqs": [],
+      "resources": [
+        {
+          "title": "C# language documentation",
+          "url": "https://learn.microsoft.com/en-us/dotnet/csharp/",
+          "type": "ARTICLE",
+          "language": "en",
+          "durationMinutes": 180,
+          "provider": "Microsoft Learn",
+          "difficulty": "BEGINNER",
+          "status": "ACTIVE",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "code": "OOP_CSHARP",
+      "title": "OOP in C#",
+      "description": "Классы, объекты, инкапсуляция, наследование и полиморфизм в C#.",
+      "level": "BASIC",
+      "core": true,
+      "estimatedHours": 6,
+      "status": "ACTIVE",
+      "priority": 2,
+      "required": true,
+      "prereqs": [
+        {
+          "topicCode": "CSHARP_BASICS",
+          "relationType": "REQUIRED"
+        }
+      ],
+      "resources": [
+        {
+          "title": "Object-Oriented Programming in C#",
+          "url": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/oop",
+          "type": "ARTICLE",
+          "language": "en",
+          "durationMinutes": 90,
+          "provider": "Microsoft Learn",
+          "difficulty": "BEGINNER",
+          "status": "ACTIVE",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "code": "UNITY_EDITOR_FUNDAMENTALS",
+      "title": "Unity Editor Fundamentals",
+      "description": "Навигация по Unity Editor, создание проекта и работа со сценой.",
+      "level": "BASIC",
+      "core": true,
+      "estimatedHours": 8,
+      "status": "ACTIVE",
+      "priority": 3,
+      "required": true,
+      "prereqs": [
+        {
+          "topicCode": "CSHARP_BASICS",
+          "relationType": "REQUIRED"
+        }
+      ],
+      "resources": [
+        {
+          "title": "Editor Essentials",
+          "url": "https://learn.unity.com/pathway/unity-essentials/unit/editor-essentials",
+          "type": "INTERACTIVE",
+          "language": "en",
+          "durationMinutes": 120,
+          "provider": "Unity Learn",
+          "difficulty": "BEGINNER",
+          "status": "ACTIVE",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "code": "MONOBEHAVIOUR_GAME_LOOP",
+      "title": "MonoBehaviour and Game Loop",
+      "description": "Жизненный цикл MonoBehaviour, Start/Update и организация логики кадра.",
+      "level": "INTERMEDIATE",
+      "core": true,
+      "estimatedHours": 6,
+      "status": "ACTIVE",
+      "priority": 4,
+      "required": true,
+      "prereqs": [
+        {
+          "topicCode": "OOP_CSHARP",
+          "relationType": "REQUIRED"
+        },
+        {
+          "topicCode": "UNITY_EDITOR_FUNDAMENTALS",
+          "relationType": "REQUIRED"
+        }
+      ],
+      "resources": [
+        {
+          "title": "MonoBehaviour - Unity Scripting API",
+          "url": "https://docs.unity3d.com/2023.1/Documentation/ScriptReference/MonoBehaviour.html",
+          "type": "ARTICLE",
+          "language": "en",
+          "durationMinutes": 60,
+          "provider": "Unity Docs",
+          "difficulty": "INTERMEDIATE",
+          "status": "ACTIVE",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "code": "INPUT_AND_PHYSICS_IN_UNITY",
+      "title": "Input and Physics in Unity",
+      "description": "Ввод игрока, коллайдеры, Rigidbody и базовое физическое взаимодействие.",
+      "level": "INTERMEDIATE",
+      "core": true,
+      "estimatedHours": 8,
+      "status": "ACTIVE",
+      "priority": 5,
+      "required": true,
+      "prereqs": [
+        {
+          "topicCode": "UNITY_EDITOR_FUNDAMENTALS",
+          "relationType": "REQUIRED"
+        }
+      ],
+      "resources": [
+        {
+          "title": "Input - Unity Manual",
+          "url": "https://docs.unity3d.com/ru/2019.4/Manual/Input.html",
+          "type": "ARTICLE",
+          "language": "ru",
+          "durationMinutes": 45,
+          "provider": "Unity Docs",
+          "difficulty": "BEGINNER",
+          "status": "ACTIVE",
+          "rank": 1
+        },
+        {
+          "title": "Rigidbody Overview - Unity Manual",
+          "url": "https://docs.unity3d.com/ru/2021.1/Manual/RigidbodiesOverview.html",
+          "type": "ARTICLE",
+          "language": "ru",
+          "durationMinutes": 45,
+          "provider": "Unity Docs",
+          "difficulty": "BEGINNER",
+          "status": "ACTIVE",
+          "rank": 2
+        }
+      ]
+    },
+    {
+      "code": "SCRIPTABLE_OBJECTS_ARCHITECTURE",
+      "title": "Scriptable Objects and Project Architecture",
+      "description": "Использование ScriptableObject для данных, конфигурации и базовой архитектуры проекта.",
+      "level": "INTERMEDIATE",
+      "core": true,
+      "estimatedHours": 6,
+      "status": "ACTIVE",
+      "priority": 6,
+      "required": true,
+      "prereqs": [
+        {
+          "topicCode": "MONOBEHAVIOUR_GAME_LOOP",
+          "relationType": "REQUIRED"
+        }
+      ],
+      "resources": [
+        {
+          "title": "ScriptableObject - Unity Manual",
+          "url": "https://docs.unity3d.com/6000.1/Documentation/Manual/class-ScriptableObject.html",
+          "type": "ARTICLE",
+          "language": "en",
+          "durationMinutes": 60,
+          "provider": "Unity Docs",
+          "difficulty": "INTERMEDIATE",
+          "status": "ACTIVE",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "code": "UNITY_UI_TOOLKIT",
+      "title": "Unity UI Toolkit Basics",
+      "description": "Основы построения интерфейсов в Unity с использованием UI Toolkit.",
+      "level": "INTERMEDIATE",
+      "core": false,
+      "estimatedHours": 5,
+      "status": "ACTIVE",
+      "priority": 7,
+      "required": false,
+      "prereqs": [
+        {
+          "topicCode": "UNITY_EDITOR_FUNDAMENTALS",
+          "relationType": "REQUIRED"
+        }
+      ],
+      "resources": [
+        {
+          "title": "UI Toolkit - Unity Manual",
+          "url": "https://docs.unity3d.com/2023.2/Documentation/Manual/UIElements.html",
+          "type": "ARTICLE",
+          "language": "en",
+          "durationMinutes": 60,
+          "provider": "Unity Docs",
+          "difficulty": "INTERMEDIATE",
+          "status": "ACTIVE",
+          "rank": 1
+        }
+      ]
+    }
+  ]
+}

@@ -5,6 +5,7 @@ import com.example.adaprivelearningnavigator.domain.knowledgeBase.TopicResource;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface TopicResourceRepository extends JpaRepository<TopicResource, TopicResourceId> {
     List<TopicResource> findAllByTopic_IdOrderByRankAsc(Long topicId);
@@ -12,4 +13,6 @@ public interface TopicResourceRepository extends JpaRepository<TopicResource, To
     List<TopicResource> findAllByResource_Id(Long resourceId);
 
     boolean existsByTopic_IdAndResource_Id(Long topicId, Long resourceId);
+
+    Optional<TopicResource> findByTopic_IdAndResource_Id(Long topicId, Long resourceId);
 }

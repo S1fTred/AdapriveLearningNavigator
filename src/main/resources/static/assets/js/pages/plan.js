@@ -3,7 +3,14 @@ import { requireAuth } from "/assets/js/core/guard.js";
 import { resolveActivePlan } from "/assets/js/core/plans.js";
 import { initPrivateShell } from "/assets/js/core/shell.js";
 import { setSelectedPlanId } from "/assets/js/core/session.js";
-import { escapeHtml, formatDate, formatHours, renderEmptyState, showStatus } from "/assets/js/core/ui.js";
+import {
+    escapeHtml,
+    formatDate,
+    formatHours,
+    formatRuleLabel,
+    renderEmptyState,
+    showStatus
+} from "/assets/js/core/ui.js";
 
 if (requireAuth()) {
     initPrivateShell("plan");
@@ -68,10 +75,10 @@ if (requireAuth()) {
                 <article class="card panel-card">
                     <p class="eyebrow">Недельный ритм</p>
                     <h3>${escapeHtml(plan.roleName || plan.roleCode || "Недельный план")}</h3>
-                    <p>
-                        Ниже уже разложенные недели с лимитом ${escapeHtml(String(plan.params?.hoursPerWeek || "—"))} ч/нед.
-                        Сервис не дробит одну тему на несколько недель, поэтому шаги идут цельными блоками.
-                    </p>
+                    <p>Лимит пользователя: ${escapeHtml(String(plan.params?.hoursPerWeek || "—"))} ч/нед</p>
+                    <div class="pill-row panel-top-gap">
+                        <span class="badge">${plan.weeks.length} недель</span>
+                    </div>
                 </article>
                 <article class="card panel-card">
                     <p class="eyebrow">Действия</p>
@@ -108,7 +115,7 @@ if (requireAuth()) {
                                     <article class="step-card">
                                         <div class="step-meta">
                                             <span class="badge">${escapeHtml(formatHours(step.plannedHours))}</span>
-                                            <span class="badge badge-dark">${escapeHtml(step.explanation?.ruleApplied || "ROADMAP")}</span>
+                                            <span class="badge badge-dark">${escapeHtml(formatRuleLabel(step.explanation?.ruleApplied || "ROADMAP"))}</span>
                                         </div>
                                         <h4>${escapeHtml(step.topicTitle || step.topicCode || `Тема ${step.topicId}`)}</h4>
                                         <p>${escapeHtml(step.explanation?.topicPriorityReason || "Пояснение недоступно.")}</p>

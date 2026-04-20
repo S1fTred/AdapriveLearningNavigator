@@ -1,4 +1,5 @@
 const STORAGE_KEYS = {
+    storageVersion: "aln.storageVersion",
     accessToken: "aln.accessToken",
     refreshToken: "aln.refreshToken",
     userProfile: "aln.userProfile",
@@ -11,6 +12,10 @@ const STORAGE_KEYS = {
     progressByPlan: "aln.progressByPlan"
 };
 
+const STORAGE_VERSION = "2026-04-20-roadmap-ru";
+
+initializeStorage();
+
 function readJson(key, fallback) {
     try {
         const value = localStorage.getItem(key);
@@ -22,6 +27,16 @@ function readJson(key, fallback) {
 
 function writeJson(key, value) {
     localStorage.setItem(key, JSON.stringify(value));
+}
+
+function initializeStorage() {
+    const currentVersion = localStorage.getItem(STORAGE_KEYS.storageVersion);
+    if (currentVersion === STORAGE_VERSION) {
+        return;
+    }
+
+    clearRoadmapCache();
+    localStorage.setItem(STORAGE_KEYS.storageVersion, STORAGE_VERSION);
 }
 
 function decodeTokenPayload(token) {
@@ -161,6 +176,11 @@ export function getCachedRoadmapTopic(roadmapId, topicId) {
     }
     const cached = readJson(STORAGE_KEYS.cachedRoadmapTopics, {});
     return cached[`${roadmapId}:${topicId}`] || null;
+}
+
+export function clearRoadmapCache() {
+    localStorage.removeItem(STORAGE_KEYS.cachedRoadmaps);
+    localStorage.removeItem(STORAGE_KEYS.cachedRoadmapTopics);
 }
 
 export function savePlanDraft(draft) {

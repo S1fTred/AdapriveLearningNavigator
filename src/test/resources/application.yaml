@@ -46,3 +46,13 @@ security:
 app:
   browser:
     auto-open: false
+  roadmap-sh:
+    catalog-sync:
+      enabled: false
+      catalog-location: classpath:roadmap-sh/catalog.json
+      default-status: DRAFT
+      update-existing: true
+    roadmap-sync:
+      enabled: false
+      manifest-pattern: classpath*:roadmap-sh/roadmaps/*.json
+      update-existing: true
