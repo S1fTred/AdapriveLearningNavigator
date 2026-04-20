@@ -18,7 +18,7 @@
 
         <nav class="sidebar-nav">
             <a class="sidebar-link" data-nav="dashboard" href="/dashboard">
-                <span>Кабинет</span>
+                <span>Каталог</span>
             </a>
             <a class="sidebar-link" data-nav="roadmap" href="/roadmap">
                 <span>Карта направлений</span>
@@ -49,7 +49,7 @@
                 <h1>Каталог roadmap’ов</h1>
                 <p>
                     Выберите направление из базы знаний, отметьте уже знакомые темы и соберите
-                    персональный недельный план без ручных API-запросов.
+                    персональный недельный план.
                 </p>
             </div>
         </header>
@@ -59,12 +59,7 @@
 
             <section class="panel-grid">
                 <article class="card panel-card">
-                    <p class="eyebrow">Roadmap catalog</p>
                     <h3>Выбор направления</h3>
-                    <p>
-                        Каталог подтягивается из базы знаний. Пользователь выбирает готовый roadmap,
-                        а не вводит цель свободным текстом.
-                    </p>
                     <div class="form-row panel-top-gap">
                         <label class="field-label" for="roadmap-search">Поиск по направлениям</label>
                         <input class="input" id="roadmap-search" type="search" placeholder="Например: Java, Frontend, DevOps">
@@ -73,8 +68,7 @@
                 </article>
 
                 <article class="card panel-card">
-                    <p class="eyebrow">Personal weekly plan</p>
-                    <h3>Собрать план из roadmap</h3>
+                    <h3>Персональный план</h3>
                     <p>
                         Сервис исключит уже знакомые темы и разложит оставшийся маршрут по неделям
                         под ваш лимит часов.
@@ -93,9 +87,6 @@
                         <div class="form-row">
                             <label>Уже знакомые темы</label>
                             <div id="known-topics-picker" class="topic-checklist"></div>
-                            <span class="form-hint">
-                                Выбранные темы не попадут в недельный план, но будут учтены как уже закрытые prerequisite.
-                            </span>
                         </div>
 
                         <div class="form-actions">
@@ -108,11 +99,7 @@
 
             <section class="panel-grid">
                 <article class="card panel-card">
-                    <p class="eyebrow">Saved plans</p>
                     <h3>Сохранённые планы</h3>
-                    <p>
-                        Здесь лежат snapshot’ы недельных планов, собранных на основе выбранных roadmap’ов.
-                    </p>
                     <div id="plans-list" class="panel-top-gap"></div>
                 </article>
 

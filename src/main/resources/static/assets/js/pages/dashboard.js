@@ -1,9 +1,10 @@
 import { ApiError, plansApi, roadmapsApi } from "/assets/js/core/api.js";
 import { requireAuth } from "/assets/js/core/guard.js";
-import { resolveActivePlan, summarizePlan } from "/assets/js/core/plans.js";
+import { summarizePlan } from "/assets/js/core/plans.js";
 import { resolveActiveRoadmap } from "/assets/js/core/roadmaps.js";
 import { initPrivateShell } from "/assets/js/core/shell.js";
 import {
+    getCachedPlan,
     getPlanDraft,
     savePlanDraft,
     setSelectedPlanId,
@@ -15,6 +16,7 @@ import {
     flattenPlanSteps,
     formatDate,
     formatHours,
+    formatRuleLabel,
     renderEmptyState,
     showStatus
 } from "/assets/js/core/ui.js";
@@ -37,6 +39,7 @@ if (requireAuth()) {
 
     const state = {
         roadmaps: [],
+        planItems: [],
         selectedRoadmap: null,
         searchQuery: "",
         knownTopicIds: new Set()
@@ -78,8 +81,9 @@ if (requireAuth()) {
 
         try {
             const plan = await plansApi.buildFromRoadmap(payload);
-            renderSpotlight(plan);
+            setSelectedPlanId(plan.id);
             await renderPlansList();
+            renderSpotlight(plan);
             showStatus(statusBox, "success", "План собран. Можно открыть roadmap или недельную раскладку.");
         } catch (error) {
             handleError(error, statusBox);
@@ -97,7 +101,7 @@ if (requireAuth()) {
             renderEmptyState(
                 roadmapsContainer,
                 "Каталог пока пуст",
-                "В базе знаний пока нет опубликованных roadmap’ов."
+                "В базе знаний пока нет опубликованных roadmap'ов."
             );
             renderEmptyState(
                 roadmapSummary,
@@ -106,8 +110,8 @@ if (requireAuth()) {
             );
             renderEmptyState(
                 spotlightContainer,
-                "Нет активного плана",
-                "После первого построения плана здесь появится краткая сводка."
+                "Нет плана по направлению",
+                "После первого построения плана здесь появится краткая сводка по выбранному roadmap."
             );
             return;
         }
@@ -119,17 +123,7 @@ if (requireAuth()) {
 
         renderRoadmapCatalog();
         await renderPlansList();
-
-        const activePlan = await resolveActivePlan();
-        if (activePlan) {
-            renderSpotlight(activePlan);
-        } else {
-            renderEmptyState(
-                spotlightContainer,
-                "Нет активного плана",
-                "Выберите roadmap и постройте personal weekly plan, чтобы получить здесь сводку."
-            );
-        }
+        await renderSpotlightForSelectedRoadmap();
     }
 
     async function selectRoadmap(roadmapId) {
@@ -149,6 +143,7 @@ if (requireAuth()) {
         renderSelectedRoadmap();
         renderRoadmapCatalog();
         renderKnownTopics();
+        await renderSpotlightForSelectedRoadmap();
     }
 
     function renderRoadmapCatalog() {
@@ -271,6 +266,7 @@ if (requireAuth()) {
     async function renderPlansList() {
         const page = await plansApi.list(0, 12);
         const items = page.items || [];
+        state.planItems = items;
 
         if (!items.length) {
             renderEmptyState(
@@ -296,21 +292,42 @@ if (requireAuth()) {
                         <div class="list-actions">
                             <a class="button button-secondary" href="/roadmap?roadmapId=${plan.roleId}&planId=${plan.id}">Roadmap</a>
                             <a class="button button-ghost" href="/plan?planId=${plan.id}">Недели</a>
-                            <button class="button button-ghost" data-open-plan="${plan.id}">Выбрать</button>
                         </div>
                     </article>
                 `).join("")}
             </div>
         `;
+    }
 
-        plansContainer.querySelectorAll("[data-open-plan]").forEach((button) => {
-            button.addEventListener("click", async () => {
-                const planId = Number(button.dataset.openPlan);
-                setSelectedPlanId(planId);
-                const plan = await plansApi.get(planId);
-                renderSpotlight(plan);
-            });
-        });
+    async function renderSpotlightForSelectedRoadmap() {
+        if (!state.selectedRoadmap) {
+            renderEmptyState(
+                spotlightContainer,
+                "План не выбран",
+                "Сначала выберите направление из каталога."
+            );
+            return;
+        }
+
+        const latestPlanItem = findLatestPlanForRoadmap(state.selectedRoadmap.id);
+        if (!latestPlanItem) {
+            renderEmptyState(
+                spotlightContainer,
+                "Плана по этому направлению пока нет",
+                "После построения weekly plan здесь появится краткая сводка именно по выбранному roadmap."
+            );
+            return;
+        }
+
+        const cached = getCachedPlan(latestPlanItem.id);
+        const plan = cached || await plansApi.get(latestPlanItem.id);
+        renderSpotlight(plan);
+    }
+
+    function findLatestPlanForRoadmap(roleId) {
+        return [...state.planItems]
+            .filter((plan) => plan.roleId === roleId)
+            .sort((left, right) => new Date(right.createdAt) - new Date(left.createdAt))[0] || null;
     }
 
     function renderSpotlight(plan) {
@@ -319,7 +336,7 @@ if (requireAuth()) {
 
         spotlightContainer.innerHTML = `
             <div class="card panel-card plan-highlight">
-                <p class="eyebrow">Active plan</p>
+                <p class="eyebrow">Последний план по направлению</p>
                 <h3>${escapeHtml(plan.roleName || plan.roleCode || "Личный weekly plan")}</h3>
                 <p>Snapshot построен ${escapeHtml(formatDate(plan.createdAt))}. Лимит: ${escapeHtml(String(plan.params?.hoursPerWeek || "—"))} ч/нед.</p>
                 <div class="metric-grid panel-top-gap">
@@ -345,15 +362,15 @@ if (requireAuth()) {
                     </article>
                 </div>
                 <div class="list panel-top-gap">
-                    ${nextSteps.map((step) => `
-                        <article class="list-item">
-                            <div>
+                    ${nextSteps.length ? nextSteps.map((step) => `
+                        <article class="list-item plan-highlight-step">
+                            <div class="list-item-copy">
                                 <h4>${escapeHtml(step.topicTitle || step.topicCode || `Тема ${step.topicId}`)}</h4>
                                 <p>Неделя ${step.weekIndex}, ${escapeHtml(formatHours(step.plannedHours))}</p>
                             </div>
-                            <span class="badge">${escapeHtml(step.explanation?.ruleApplied || "ROADMAP")}</span>
+                            <span class="badge badge-dark plan-highlight-badge">${escapeHtml(formatRuleLabel(step.explanation?.ruleApplied || "ROADMAP"))}</span>
                         </article>
-                    `).join("")}
+                    `).join("") : `<p>В этом плане пока нет шагов для предпросмотра.</p>`}
                 </div>
                 <div class="form-actions panel-top-gap">
                     <a class="button button-primary" href="/roadmap?roadmapId=${plan.roleId}&planId=${plan.id}">Открыть roadmap</a>

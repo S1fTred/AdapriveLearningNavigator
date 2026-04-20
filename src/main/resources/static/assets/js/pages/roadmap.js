@@ -3,7 +3,7 @@ import { requireAuth } from "/assets/js/core/guard.js";
 import { resolveActivePlan } from "/assets/js/core/plans.js";
 import { resolveActiveRoadmap } from "/assets/js/core/roadmaps.js";
 import { initPrivateShell } from "/assets/js/core/shell.js";
-import { setSelectedRoadmapId } from "/assets/js/core/session.js";
+import { getPlanDraft, setSelectedRoadmapId } from "/assets/js/core/session.js";
 import { escapeHtml, formatHours, renderEmptyState, showStatus } from "/assets/js/core/ui.js";
 
 if (requireAuth()) {
@@ -20,6 +20,7 @@ if (requireAuth()) {
         selectedTopicId: null,
         activePlanId: null,
         plannedTopicIds: new Set(),
+        knownTopicIds: new Set(),
         topicTab: "overview"
     };
 
@@ -35,8 +36,8 @@ if (requireAuth()) {
         if (!roadmap) {
             renderEmptyState(
                 metaContainer,
-                "Roadmap пока нет",
-                "В knowledge base пока не заведены направления."
+                "Roadmap пока не найден",
+                "В базе знаний пока нет опубликованных направлений."
             );
             flowContainer.innerHTML = "";
             topicPanel.innerHTML = "";
@@ -45,6 +46,7 @@ if (requireAuth()) {
 
         state.roadmap = roadmap;
         setSelectedRoadmapId(roadmap.id);
+        hydrateKnownTopics(roadmap);
         await hydratePlanContext(roadmap.id, explicitPlanId);
         await renderSwitcher(roadmap.id);
         renderMeta(roadmap);
@@ -60,6 +62,16 @@ if (requireAuth()) {
                 "Выберите карточку в roadmap, чтобы открыть детали."
             );
         }
+    }
+
+    function hydrateKnownTopics(roadmap) {
+        const draft = getPlanDraft();
+        const knownTopicIds = draft.roleId === roadmap.id ? (draft.knownTopicIds || []) : [];
+        const roadmapTopicIds = new Set((roadmap.topics || []).map((topic) => topic.topicId));
+
+        state.knownTopicIds = new Set(
+            knownTopicIds.filter((topicId) => roadmapTopicIds.has(topicId))
+        );
     }
 
     async function hydratePlanContext(roleId, explicitPlanId) {
@@ -113,6 +125,7 @@ if (requireAuth()) {
 
     function renderMeta(roadmap) {
         const hasPlan = Boolean(state.activePlanId);
+        const knownCount = state.knownTopicIds.size;
 
         metaContainer.innerHTML = `
             <section class="panel-grid">
@@ -124,7 +137,13 @@ if (requireAuth()) {
                         <span class="badge">${roadmap.topicCount} тем</span>
                         <span class="badge badge-dark">${roadmap.requiredTopicCount} обязательных</span>
                         <span class="badge badge-success">${escapeHtml(formatHours(roadmap.totalEstimatedHours))}</span>
+                        ${knownCount ? `<span class="badge">Уже знакомо: ${knownCount}</span>` : ""}
                     </div>
+                    <p class="panel-top-gap">
+                        ${knownCount
+                            ? "Приглушённые карточки на карте обозначают темы, которые уже отмечены как известные. Они остаются в roadmap для понимания структуры, но не попадают в weekly plan."
+                            : "Roadmap показывает полную структуру направления. Если отметить известные темы в кабинете, здесь они будут визуально отделены от остальных."}
+                    </p>
                 </article>
                 <article class="card panel-card">
                     <p class="eyebrow">Следующий шаг</p>
@@ -157,8 +176,10 @@ if (requireAuth()) {
                 ${roadmap.topics.map((topic) => {
                     const isSelected = topic.topicId === state.selectedTopicId;
                     const isPlanned = state.plannedTopicIds.has(topic.topicId);
+                    const isKnown = state.knownTopicIds.has(topic.topicId);
+
                     return `
-                        <button class="roadmap-topic-card ${isSelected ? "is-selected" : ""}" type="button" data-topic-id="${topic.topicId}">
+                        <button class="roadmap-topic-card ${isSelected ? "is-selected" : ""} ${isKnown ? "is-known" : ""}" type="button" data-topic-id="${topic.topicId}">
                             <div class="step-meta">
                                 <span class="badge badge-dark">${escapeHtml(topic.topicCode)}</span>
                                 <span class="badge">${escapeHtml(formatHours(topic.estimatedHours))}</span>
@@ -168,7 +189,8 @@ if (requireAuth()) {
                             <div class="topic-tags roadmap-card-pills">
                                 ${topic.isRequired ? `<span class="topic-chip">Обязательная</span>` : `<span class="topic-chip muted">Дополнительная</span>`}
                                 ${topic.isCore ? `<span class="topic-chip">Core</span>` : ""}
-                                ${isPlanned ? `<span class="topic-chip">В текущем плане</span>` : ""}
+                                ${isKnown ? `<span class="topic-chip known">Уже знакома</span>` : ""}
+                                ${!isKnown && isPlanned ? `<span class="topic-chip">В текущем плане</span>` : ""}
                                 ${topic.prereqTopicCodes.map((code) => `<span class="topic-chip muted">${escapeHtml(code)}</span>`).join("")}
                             </div>
                         </button>
@@ -199,6 +221,7 @@ if (requireAuth()) {
 
     function renderTopicPanel(topic) {
         const isInPlan = state.plannedTopicIds.has(topic.topicId);
+        const isKnown = state.knownTopicIds.has(topic.topicId);
         const tab = state.topicTab;
 
         topicPanel.innerHTML = `
@@ -210,7 +233,8 @@ if (requireAuth()) {
                     <span class="badge badge-dark">${escapeHtml(topic.topicCode)}</span>
                     <span class="badge">${escapeHtml(formatHours(topic.estimatedHours))}</span>
                     ${topic.isRequired ? `<span class="badge badge-success">Обязательная</span>` : `<span class="badge">Дополнительная</span>`}
-                    ${isInPlan ? `<span class="badge">В активном плане</span>` : ""}
+                    ${isKnown ? `<span class="badge">Уже знакома</span>` : ""}
+                    ${!isKnown && isInPlan ? `<span class="badge">В активном плане</span>` : ""}
                 </div>
 
                 <div class="topic-tab-row panel-top-gap">
@@ -220,7 +244,7 @@ if (requireAuth()) {
                 </div>
 
                 <div class="topic-detail-section">
-                    ${renderTopicTabContent(topic, tab)}
+                    ${renderTopicTabContent(topic, tab, isKnown)}
                 </div>
             </div>
         `;
@@ -233,7 +257,7 @@ if (requireAuth()) {
         });
     }
 
-    function renderTopicTabContent(topic, tab) {
+    function renderTopicTabContent(topic, tab, isKnown) {
         if (tab === "resources") {
             return topic.resources.length
                 ? `
@@ -258,11 +282,11 @@ if (requireAuth()) {
                 <div class="tutor-placeholder">
                     <h4>AI Tutor для темы</h4>
                     <p>
-                        Следующий этап миграции: topic-scoped AI Tutor будет работать из этой панели и
+                        Следующий этап развития продукта: topic-scoped AI Tutor будет работать из этой панели и
                         отвечать в контексте выбранной темы, её prerequisite и ресурсов.
                     </p>
                     <div class="pill-row">
-                        <span class="badge">${quizAvailable ? "Есть квиз" : "Квиз пока не заведен"}</span>
+                        <span class="badge">${quizAvailable ? "Есть квиз" : "Квиз пока не заведён"}</span>
                         <span class="badge badge-dark">${topic.resources.length} ресурсов</span>
                     </div>
                     <button class="button button-secondary panel-top-gap" type="button" disabled>AI Tutor скоро</button>
@@ -271,6 +295,13 @@ if (requireAuth()) {
         }
 
         return `
+            ${isKnown ? `
+                <div class="topic-detail-block">
+                    <h4>Статус</h4>
+                    <p>Тема отмечена как уже знакомая. Она остаётся в roadmap для сохранения полной структуры направления, но не включается в weekly plan.</p>
+                </div>
+            ` : ""}
+
             <div class="topic-detail-block">
                 <h4>Prerequisite</h4>
                 ${topic.prereqs.length ? `

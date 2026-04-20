@@ -64,3 +64,16 @@ export function flattenPlanSteps(plan) {
         }))
     );
 }
+
+export function formatRuleLabel(rule) {
+    switch (rule) {
+        case "AI_LED_ROUTE_BACKEND_VALIDATED":
+            return "Подтверждено системой";
+        case "KB_REQUIRED_PREREQ_ADDED":
+            return "Добавлено по зависимостям";
+        case "ROADMAP":
+            return "Roadmap";
+        default:
+            return rule || "Roadmap";
+    }
+}
