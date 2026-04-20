@@ -319,6 +319,26 @@ img {
     grid-template-columns: 1.15fr 0.85fr;
 }
 
+.panel-grid-top-aligned {
+    align-items: start;
+}
+
+.roadmap-summary-card,
+.roadmap-quick-plan-card {
+    display: grid;
+    align-content: center;
+    gap: 8px;
+    min-height: 200px;
+}
+
+.roadmap-summary-pills {
+    margin-top: 6px;
+}
+
+.roadmap-quick-plan-actions {
+    margin-top: 6px;
+}
+
 .week-grid {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
@@ -350,6 +370,18 @@ img {
     font-size: 34px;
     font-family: var(--font-heading);
     margin: 14px 0 12px;
+}
+
+.metric-card-compact strong {
+    font-size: 22px;
+    line-height: 1.15;
+}
+
+.metric-card-code {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    hyphens: auto;
+    max-width: 100%;
 }
 
 .panel-card-copy {
@@ -776,6 +808,10 @@ img {
 .app-content {
     display: grid;
     gap: 24px;
+}
+
+.roadmap-content {
+    gap: 16px;
 }
 
 .hero-panel {

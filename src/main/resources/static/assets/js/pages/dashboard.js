@@ -355,9 +355,9 @@ if (requireAuth()) {
                         <strong>${summary.totalHours}</strong>
                         <p>Суммарный объём маршрута.</p>
                     </article>
-                    <article class="metric-card card">
+                    <article class="metric-card card metric-card-compact">
                         <p>Roadmap</p>
-                        <strong>${escapeHtml(plan.roleCode || "—")}</strong>
+                        <strong class="metric-card-code">${escapeHtml(plan.roleCode || "—")}</strong>
                         <p>Основа построения weekly plan.</p>
                     </article>
                 </div>

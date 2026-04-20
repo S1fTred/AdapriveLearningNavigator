@@ -101,7 +101,6 @@ if (requireAuth()) {
         const page = await roadmapsApi.list(0, 40);
         switcherContainer.innerHTML = `
             <div class="card panel-card">
-                <p class="eyebrow">Roadmap catalog</p>
                 <h3>Переключить направление</h3>
                 <div class="form-row panel-top-gap">
                     <label class="field-label" for="roadmap-select">Выберите roadmap</label>
@@ -128,33 +127,26 @@ if (requireAuth()) {
         const knownCount = state.knownTopicIds.size;
 
         metaContainer.innerHTML = `
-            <section class="panel-grid">
-                <article class="card panel-card">
-                    <p class="eyebrow">Curated roadmap</p>
+            <section class="panel-grid panel-grid-top-aligned">
+                <article class="card panel-card roadmap-summary-card">
+                    <p class="eyebrow">Текущая roadmap</p>
                     <h3>${escapeHtml(roadmap.name)}</h3>
                     <p>${escapeHtml(roadmap.description || "Roadmap без описания.")}</p>
-                    <div class="pill-row panel-top-gap">
+                    <div class="pill-row roadmap-summary-pills">
                         <span class="badge">${roadmap.topicCount} тем</span>
                         <span class="badge badge-dark">${roadmap.requiredTopicCount} обязательных</span>
                         <span class="badge badge-success">${escapeHtml(formatHours(roadmap.totalEstimatedHours))}</span>
                         ${knownCount ? `<span class="badge">Уже знакомо: ${knownCount}</span>` : ""}
                     </div>
-                    <p class="panel-top-gap">
-                        ${knownCount
-                            ? "Приглушённые карточки на карте обозначают темы, которые уже отмечены как известные. Они остаются в roadmap для понимания структуры, но не попадают в weekly plan."
-                            : "Roadmap показывает полную структуру направления. Если отметить известные темы в кабинете, здесь они будут визуально отделены от остальных."}
-                    </p>
                 </article>
-                <article class="card panel-card">
-                    <p class="eyebrow">Следующий шаг</p>
-                    <h3>Из roadmap в личный план</h3>
-                    <p>
-                        Roadmap описывает структуру направления, а weekly plan раскладывает её по вашему темпу.
-                        ${hasPlan ? "Для этого направления уже есть активный план." : "План можно собрать из кабинета."}
-                    </p>
-                    <div class="form-actions panel-top-gap">
-                        <a class="button button-primary" href="/dashboard">Собрать или пересобрать план</a>
-                        <a class="button button-secondary" href="${hasPlan ? `/plan?planId=${state.activePlanId}` : "/plan"}">Открыть weekly plan</a>
+                <article class="card panel-card roadmap-quick-plan-card">
+                    <p class="eyebrow">План</p>
+                    <h3>${hasPlan ? "Личный weekly plan" : "План по направлению"}</h3>
+                    <p>${hasPlan ? "Для этого направления уже есть собранный план." : "Если план ещё не собран, это можно сделать в каталоге."}</p>
+                    <div class="form-actions roadmap-quick-plan-actions">
+                        <a class="button button-secondary" href="${hasPlan ? `/plan?planId=${state.activePlanId}` : "/dashboard"}">
+                            ${hasPlan ? "Открыть план" : "Перейти к сборке"}
+                        </a>
                     </div>
                 </article>
             </section>
