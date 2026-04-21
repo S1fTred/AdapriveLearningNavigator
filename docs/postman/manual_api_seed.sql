@@ -4,20 +4,20 @@
 MERGE INTO role_goals (role_id, code, name, description, status)
 KEY(role_id)
 VALUES
-  (9201, 'java-backend', 'Java Backend Developer', 'Manual test role', 'ACTIVE'),
-  (9202, 'java-mobile', 'Java Mobile Developer', 'Manual ambiguity role', 'ACTIVE');
+  (9201, 'java-backend', 'Java Backend Developer', 'Базовая дорожная карта по Java backend-разработке: язык, веб-основы, базы данных и Spring-стек.', 'ACTIVE'),
+  (9202, 'java-mobile', 'Java Mobile Developer', 'Дорожная карта по Java mobile-разработке. Направление сохранено в каталоге как отдельная Java-ветка.', 'ACTIVE');
 
 MERGE INTO topics (topic_id, code, title, description, level, is_core, estimated_hours, status, created_at, updated_at)
 KEY(topic_id)
 VALUES
-  (9101, 'GIT', 'Git', 'Version control basics', 'BASIC', TRUE, 2.00, 'ACTIVE', CURRENT_TIMESTAMP, NULL),
-  (9102, 'JAVA_BASICS', 'Java Basics', 'Syntax and core concepts', 'BASIC', TRUE, 6.00, 'ACTIVE', CURRENT_TIMESTAMP, NULL),
-  (9103, 'OOP_JAVA', 'OOP in Java', 'Classes and OOP', 'BASIC', TRUE, 5.00, 'ACTIVE', CURRENT_TIMESTAMP, NULL),
-  (9104, 'HTTP', 'HTTP Basics', 'HTTP and REST basics', 'BASIC', TRUE, 4.00, 'ACTIVE', CURRENT_TIMESTAMP, NULL),
-  (9105, 'SQL', 'SQL Basics', 'Queries and relational basics', 'BASIC', TRUE, 5.00, 'ACTIVE', CURRENT_TIMESTAMP, NULL),
-  (9106, 'MAVEN', 'Maven', 'Build tool basics', 'BASIC', FALSE, 2.00, 'ACTIVE', CURRENT_TIMESTAMP, NULL),
-  (9107, 'SPRING_BOOT', 'Spring Boot', 'Spring Boot fundamentals', 'INTERMEDIATE', TRUE, 8.00, 'ACTIVE', CURRENT_TIMESTAMP, NULL),
-  (9108, 'JPA', 'JPA/Hibernate', 'Persistence basics', 'INTERMEDIATE', TRUE, 8.00, 'ACTIVE', CURRENT_TIMESTAMP, NULL);
+  (9101, 'GIT', 'Git', 'Основы контроля версий: репозиторий, коммиты, ветки и базовый рабочий процесс.', 'BASIC', TRUE, 2.00, 'ACTIVE', CURRENT_TIMESTAMP, NULL),
+  (9102, 'JAVA_BASICS', 'Java Basics', 'Синтаксис Java, типы данных, условия, циклы и базовые конструкции языка.', 'BASIC', TRUE, 6.00, 'ACTIVE', CURRENT_TIMESTAMP, NULL),
+  (9103, 'OOP_JAVA', 'OOP in Java', 'Классы, объекты, инкапсуляция, наследование и полиморфизм в Java.', 'BASIC', TRUE, 5.00, 'ACTIVE', CURRENT_TIMESTAMP, NULL),
+  (9104, 'HTTP', 'HTTP Basics', 'Основы HTTP, структура запросов и ответов, методы, статусы и REST-подход.', 'BASIC', TRUE, 4.00, 'ACTIVE', CURRENT_TIMESTAMP, NULL),
+  (9105, 'SQL', 'SQL Basics', 'Базовые SQL-запросы, таблицы, связи и работа с реляционными данными.', 'BASIC', TRUE, 5.00, 'ACTIVE', CURRENT_TIMESTAMP, NULL),
+  (9106, 'MAVEN', 'Maven', 'Сборка Java-проекта, зависимости, плагины и базовый жизненный цикл Maven.', 'BASIC', FALSE, 2.00, 'ACTIVE', CURRENT_TIMESTAMP, NULL),
+  (9107, 'SPRING_BOOT', 'Spring Boot', 'Быстрый старт со Spring Boot: конфигурация приложения, REST API и базовая backend-архитектура.', 'INTERMEDIATE', TRUE, 8.00, 'ACTIVE', CURRENT_TIMESTAMP, NULL),
+  (9108, 'JPA', 'JPA/Hibernate', 'Основы persistence-слоя: сущности, связи, репозитории и работа с JPA/Hibernate.', 'INTERMEDIATE', TRUE, 8.00, 'ACTIVE', CURRENT_TIMESTAMP, NULL);
 
 MERGE INTO role_topics (role_id, topic_id, priority, is_required)
 KEY(role_id, topic_id)

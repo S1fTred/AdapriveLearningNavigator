@@ -1,0 +1,10 @@
+{
+  "roleDescriptionPrefix": "Дорожная карта по направлению «",
+  "roleDescriptionStarterPrefix": "Стартовая дорожная карта по направлению «",
+  "roleDescriptionSuffix": "» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+  "topicKindTopic": "Тема",
+  "topicKindSubtopic": "Подтема",
+  "topicDescriptionMiddle": " roadmap по направлению «",
+  "topicDescriptionAfterRole": "»: ",
+  "topicDescriptionResourcesSuffix": " К теме прикреплены материалы для самостоятельного изучения."
+}

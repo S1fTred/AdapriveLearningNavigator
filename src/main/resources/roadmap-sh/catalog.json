@@ -1,402 +1,528 @@
-{
-  "source": "roadmap.sh",
-  "sourceUrl": "https://roadmap.sh/",
-  "entries": [
-    {
-      "code": "frontend",
-      "name": "Frontend",
-      "description": "Дорожная карта по frontend-разработке на основе открытого каталога roadmap.sh.",
-      "category": "web"
-    },
-    {
-      "code": "frontend-beginner",
-      "name": "Frontend Beginner",
-      "description": "Стартовая дорожная карта для входа во frontend на основе открытого каталога roadmap.sh.",
-      "category": "web"
-    },
-    {
-      "code": "backend",
-      "name": "Backend",
-      "description": "Дорожная карта по backend-разработке на основе открытого каталога roadmap.sh.",
-      "category": "web"
-    },
-    {
-      "code": "backend-beginner",
-      "name": "Backend Beginner",
-      "description": "Стартовая дорожная карта для входа в backend на основе открытого каталога roadmap.sh.",
-      "category": "web"
-    },
-    {
-      "code": "devops",
-      "name": "DevOps",
-      "description": "Дорожная карта по DevOps-практикам на основе открытого каталога roadmap.sh.",
-      "category": "devops"
-    },
-    {
-      "code": "devops-beginner",
-      "name": "DevOps Beginner",
-      "description": "Стартовая дорожная карта по DevOps на основе открытого каталога roadmap.sh.",
-      "category": "devops"
-    },
-    {
-      "code": "full-stack",
-      "name": "Full Stack",
-      "description": "Дорожная карта по full stack разработке на основе открытого каталога roadmap.sh.",
-      "category": "web"
-    },
-    {
-      "code": "html",
-      "name": "HTML",
-      "description": "Дорожная карта по HTML на основе открытого каталога roadmap.sh.",
-      "category": "language"
-    },
-    {
-      "code": "css",
-      "name": "CSS",
-      "description": "Дорожная карта по CSS на основе открытого каталога roadmap.sh.",
-      "category": "language"
-    },
-    {
-      "code": "javascript",
-      "name": "JavaScript",
-      "description": "Дорожная карта по JavaScript на основе открытого каталога roadmap.sh.",
-      "category": "language"
-    },
-    {
-      "code": "typescript",
-      "name": "TypeScript",
-      "description": "Дорожная карта по TypeScript на основе открытого каталога roadmap.sh.",
-      "category": "language"
-    },
-    {
-      "code": "git-github",
-      "name": "Git and GitHub",
-      "description": "Дорожная карта по Git и GitHub на основе открытого каталога roadmap.sh.",
-      "category": "tooling"
-    },
-    {
-      "code": "api-design",
-      "name": "API Design",
-      "description": "Дорожная карта по проектированию API на основе открытого каталога roadmap.sh.",
-      "category": "architecture"
-    },
-    {
-      "code": "computer-science",
-      "name": "Computer Science",
-      "description": "Дорожная карта по базовым разделам computer science на основе открытого каталога roadmap.sh.",
-      "category": "fundamentals"
-    },
-    {
-      "code": "data-structures-and-algorithms",
-      "name": "Data Structures and Algorithms",
-      "description": "Дорожная карта по структурам данных и алгоритмам на основе открытого каталога roadmap.sh.",
-      "category": "fundamentals"
-    },
-    {
-      "code": "python",
-      "name": "Python",
-      "description": "Дорожная карта по Python на основе открытого каталога roadmap.sh.",
-      "category": "language"
-    },
-    {
-      "code": "django",
-      "name": "Django",
-      "description": "Дорожная карта по Django на основе открытого каталога roadmap.sh.",
-      "category": "framework"
-    },
-    {
-      "code": "java",
-      "name": "Java",
-      "description": "Дорожная карта по Java на основе открытого каталога roadmap.sh.",
-      "category": "language"
-    },
-    {
-      "code": "spring-boot",
-      "name": "Spring Boot",
-      "description": "Дорожная карта по Spring Boot на основе открытого каталога roadmap.sh.",
-      "category": "framework"
-    },
-    {
-      "code": "kotlin",
-      "name": "Kotlin",
-      "description": "Дорожная карта по Kotlin на основе открытого каталога roadmap.sh.",
-      "category": "language"
-    },
-    {
-      "code": "go",
-      "name": "Go",
-      "description": "Дорожная карта по Go на основе открытого каталога roadmap.sh.",
-      "category": "language"
-    },
-    {
-      "code": "rust",
-      "name": "Rust",
-      "description": "Дорожная карта по Rust на основе открытого каталога roadmap.sh.",
-      "category": "language"
-    },
-    {
-      "code": "cpp",
-      "name": "C++",
-      "description": "Дорожная карта по C++ на основе открытого каталога roadmap.sh.",
-      "category": "language"
-    },
-    {
-      "code": "bash-shell",
-      "name": "Bash and Shell",
-      "description": "Дорожная карта по Bash и shell-скриптам на основе открытого каталога roadmap.sh.",
-      "category": "tooling"
-    },
-    {
-      "code": "react",
-      "name": "React",
-      "description": "Дорожная карта по React на основе открытого каталога roadmap.sh.",
-      "category": "framework"
-    },
-    {
-      "code": "nextjs",
-      "name": "Next.js",
-      "description": "Дорожная карта по Next.js на основе открытого каталога roadmap.sh.",
-      "category": "framework"
-    },
-    {
-      "code": "vue",
-      "name": "Vue",
-      "description": "Дорожная карта по Vue на основе открытого каталога roadmap.sh.",
-      "category": "framework"
-    },
-    {
-      "code": "angular",
-      "name": "Angular",
-      "description": "Дорожная карта по Angular на основе открытого каталога roadmap.sh.",
-      "category": "framework"
-    },
-    {
-      "code": "nodejs",
-      "name": "Node.js",
-      "description": "Дорожная карта по Node.js на основе открытого каталога roadmap.sh.",
-      "category": "runtime"
-    },
-    {
-      "code": "php",
-      "name": "PHP",
-      "description": "Дорожная карта по PHP на основе открытого каталога roadmap.sh.",
-      "category": "language"
-    },
-    {
-      "code": "laravel",
-      "name": "Laravel",
-      "description": "Дорожная карта по Laravel на основе открытого каталога roadmap.sh.",
-      "category": "framework"
-    },
-    {
-      "code": "graphql",
-      "name": "GraphQL",
-      "description": "Дорожная карта по GraphQL на основе открытого каталога roadmap.sh.",
-      "category": "api"
-    },
-    {
-      "code": "android",
-      "name": "Android",
-      "description": "Дорожная карта по Android-разработке на основе открытого каталога roadmap.sh.",
-      "category": "mobile"
-    },
-    {
-      "code": "ios",
-      "name": "iOS",
-      "description": "Дорожная карта по iOS-разработке на основе открытого каталога roadmap.sh.",
-      "category": "mobile"
-    },
-    {
-      "code": "flutter",
-      "name": "Flutter",
-      "description": "Дорожная карта по Flutter на основе открытого каталога roadmap.sh.",
-      "category": "mobile"
-    },
-    {
-      "code": "react-native",
-      "name": "React Native",
-      "description": "Дорожная карта по React Native на основе открытого каталога roadmap.sh.",
-      "category": "mobile"
-    },
-    {
-      "code": "aws",
-      "name": "AWS",
-      "description": "Дорожная карта по AWS на основе открытого каталога roadmap.sh.",
-      "category": "cloud"
-    },
-    {
-      "code": "linux",
-      "name": "Linux",
-      "description": "Дорожная карта по Linux на основе открытого каталога roadmap.sh.",
-      "category": "platform"
-    },
-    {
-      "code": "terraform",
-      "name": "Terraform",
-      "description": "Дорожная карта по Terraform на основе открытого каталога roadmap.sh.",
-      "category": "devops"
-    },
-    {
-      "code": "docker",
-      "name": "Docker",
-      "description": "Дорожная карта по Docker на основе открытого каталога roadmap.sh.",
-      "category": "devops"
-    },
-    {
-      "code": "kubernetes",
-      "name": "Kubernetes",
-      "description": "Дорожная карта по Kubernetes на основе открытого каталога roadmap.sh.",
-      "category": "devops"
-    },
-    {
-      "code": "system-design",
-      "name": "System Design",
-      "description": "Дорожная карта по system design на основе открытого каталога roadmap.sh.",
-      "category": "architecture"
-    },
-    {
-      "code": "software-design-architecture",
-      "name": "Software Design and Architecture",
-      "description": "Дорожная карта по software design и архитектуре на основе открытого каталога roadmap.sh.",
-      "category": "architecture"
-    },
-    {
-      "code": "software-architect",
-      "name": "Software Architect",
-      "description": "Дорожная карта по роли software architect на основе открытого каталога roadmap.sh.",
-      "category": "architecture"
-    },
-    {
-      "code": "qa",
-      "name": "QA",
-      "description": "Дорожная карта по QA на основе открытого каталога roadmap.sh.",
-      "category": "quality"
-    },
-    {
-      "code": "data-analyst",
-      "name": "Data Analyst",
-      "description": "Дорожная карта по Data Analyst на основе открытого каталога roadmap.sh.",
-      "category": "data"
-    },
-    {
-      "code": "data-engineer",
-      "name": "Data Engineer",
-      "description": "Дорожная карта по Data Engineer на основе открытого каталога roadmap.sh.",
-      "category": "data"
-    },
-    {
-      "code": "machine-learning",
-      "name": "Machine Learning",
-      "description": "Дорожная карта по machine learning на основе открытого каталога roadmap.sh.",
-      "category": "data"
-    },
-    {
-      "code": "mlops",
-      "name": "MLOps",
-      "description": "Дорожная карта по MLOps на основе открытого каталога roadmap.sh.",
-      "category": "data"
-    },
-    {
-      "code": "ai-engineer",
-      "name": "AI Engineer",
-      "description": "Дорожная карта по AI Engineer на основе открытого каталога roadmap.sh.",
-      "category": "ai"
-    },
-    {
-      "code": "ai-data-scientist",
-      "name": "AI and Data Scientist",
-      "description": "Дорожная карта по AI и data science на основе открытого каталога roadmap.sh.",
-      "category": "ai"
-    },
-    {
-      "code": "ai-agents",
-      "name": "AI Agents",
-      "description": "Дорожная карта по AI Agents на основе открытого каталога roadmap.sh.",
-      "category": "ai"
-    },
-    {
-      "code": "prompt-engineering",
-      "name": "Prompt Engineering",
-      "description": "Дорожная карта по prompt engineering на основе открытого каталога roadmap.sh.",
-      "category": "ai"
-    },
-    {
-      "code": "cyber-security",
-      "name": "Cyber Security",
-      "description": "Дорожная карта по cyber security на основе открытого каталога roadmap.sh.",
-      "category": "security"
-    },
-    {
-      "code": "game-developer",
-      "name": "Game Developer",
-      "description": "Дорожная карта по game development на основе открытого каталога roadmap.sh.",
-      "category": "game-dev"
-    },
-    {
-      "code": "aspnet-core",
-      "name": "ASP.NET Core",
-      "description": "Дорожная карта по ASP.NET Core на основе открытого каталога roadmap.sh.",
-      "category": "framework"
-    },
-    {
-      "code": "sql",
-      "name": "SQL",
-      "description": "Дорожная карта по SQL на основе открытого каталога roadmap.sh.",
-      "category": "data"
-    },
-    {
-      "code": "postgresql",
-      "name": "PostgreSQL",
-      "description": "Дорожная карта по PostgreSQL на основе открытого каталога roadmap.sh.",
-      "category": "data"
-    },
-    {
-      "code": "mongodb",
-      "name": "MongoDB",
-      "description": "Дорожная карта по MongoDB на основе открытого каталога roadmap.sh.",
-      "category": "data"
-    },
-    {
-      "code": "redis",
-      "name": "Redis",
-      "description": "Дорожная карта по Redis на основе открытого каталога roadmap.sh.",
-      "category": "data"
-    },
-    {
-      "code": "elasticsearch",
-      "name": "ElasticSearch",
-      "description": "Дорожная карта по ElasticSearch на основе открытого каталога roadmap.sh.",
-      "category": "data"
-    },
-    {
-      "code": "technical-writer",
-      "name": "Technical Writer",
-      "description": "Дорожная карта по technical writing на основе открытого каталога roadmap.sh.",
-      "category": "writing"
-    },
-    {
-      "code": "devrel-engineer",
-      "name": "DevRel Engineer",
-      "description": "Дорожная карта по DevRel на основе открытого каталога roadmap.sh.",
-      "category": "community"
-    },
-    {
-      "code": "ruby",
-      "name": "Ruby",
-      "description": "Дорожная карта по Ruby на основе открытого каталога roadmap.sh.",
-      "category": "language"
-    },
-    {
-      "code": "ruby-on-rails",
-      "name": "Ruby on Rails",
-      "description": "Дорожная карта по Ruby on Rails на основе открытого каталога roadmap.sh.",
-      "category": "framework"
-    },
-    {
-      "code": "scala",
-      "name": "Scala",
-      "description": "Дорожная карта по Scala на основе открытого каталога roadmap.sh.",
-      "category": "language"
-    }
-  ]
+﻿{
+    "source":  "roadmap.sh",
+    "sourceUrl":  "https://roadmap.sh/",
+    "entries":  [
+                    {
+                        "code":  "ai-agents",
+                        "name":  "AI Agents",
+                        "description":  "Дорожная карта по направлению «AI Agents» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "ai"
+                    },
+                    {
+                        "code":  "ai-data-scientist",
+                        "name":  "AI and Data Scientist Roadmap",
+                        "description":  "Дорожная карта по направлению «AI and Data Scientist Roadmap» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "ai"
+                    },
+                    {
+                        "code":  "ai-engineer",
+                        "name":  "AI Engineer",
+                        "description":  "Дорожная карта по направлению «AI Engineer» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "ai"
+                    },
+                    {
+                        "code":  "ai-product-builder",
+                        "name":  "AI Product Builder",
+                        "description":  "Дорожная карта по направлению «AI Product Builder» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "data"
+                    },
+                    {
+                        "code":  "ai-red-teaming",
+                        "name":  "AI Red Teaming",
+                        "description":  "Дорожная карта по направлению «AI Red Teaming» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "data"
+                    },
+                    {
+                        "code":  "android",
+                        "name":  "Android Developer",
+                        "description":  "Дорожная карта по направлению «Android Developer» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "mobile"
+                    },
+                    {
+                        "code":  "angular",
+                        "name":  "Angular Developer",
+                        "description":  "Дорожная карта по направлению «Angular Developer» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "framework"
+                    },
+                    {
+                        "code":  "api-design",
+                        "name":  "API Design",
+                        "description":  "Дорожная карта по направлению «API Design» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "architecture"
+                    },
+                    {
+                        "code":  "aspnet-core",
+                        "name":  "ASP.NET Core Developer",
+                        "description":  "Дорожная карта по направлению «ASP.NET Core Developer» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "framework"
+                    },
+                    {
+                        "code":  "aws",
+                        "name":  "AWS Roadmap",
+                        "description":  "Дорожная карта по направлению «AWS Roadmap» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "cloud"
+                    },
+                    {
+                        "code":  "backend",
+                        "name":  "Backend Developer",
+                        "description":  "Дорожная карта по направлению «Backend Developer» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "web"
+                    },
+                    {
+                        "code":  "backend-beginner",
+                        "name":  "Backend Beginner",
+                        "description":  "Стартовая дорожная карта по направлению «Backend Beginner» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "web"
+                    },
+                    {
+                        "code":  "bi-analyst",
+                        "name":  "BI Analyst",
+                        "description":  "Дорожная карта по направлению «BI Analyst» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "roadmap"
+                    },
+                    {
+                        "code":  "blockchain",
+                        "name":  "Blockchain Developer",
+                        "description":  "Дорожная карта по направлению «Blockchain Developer» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "roadmap"
+                    },
+                    {
+                        "code":  "claude-code",
+                        "name":  "Claude Code",
+                        "description":  "Дорожная карта по направлению «Claude Code» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "roadmap"
+                    },
+                    {
+                        "code":  "cloudflare",
+                        "name":  "Cloudflare",
+                        "description":  "Дорожная карта по направлению «Cloudflare» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "devops"
+                    },
+                    {
+                        "code":  "code-review",
+                        "name":  "Code Review Pyramid",
+                        "description":  "Дорожная карта по направлению «Code Review Pyramid» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "roadmap"
+                    },
+                    {
+                        "code":  "computer-science",
+                        "name":  "Computer Science",
+                        "description":  "Дорожная карта по направлению «Computer Science» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "fundamentals"
+                    },
+                    {
+                        "code":  "cpp",
+                        "name":  "C++ Developer Roadmap",
+                        "description":  "Дорожная карта по направлению «C++ Developer Roadmap» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "language"
+                    },
+                    {
+                        "code":  "css",
+                        "name":  "CSS",
+                        "description":  "Дорожная карта по направлению «CSS» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "web"
+                    },
+                    {
+                        "code":  "cyber-security",
+                        "name":  "Cyber Security Expert",
+                        "description":  "Дорожная карта по направлению «Cyber Security Expert» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "security"
+                    },
+                    {
+                        "code":  "data-analyst",
+                        "name":  "Data Analyst Roadmap",
+                        "description":  "Дорожная карта по направлению «Data Analyst Roadmap» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "data"
+                    },
+                    {
+                        "code":  "data-engineer",
+                        "name":  "Data Engineer Roadmap",
+                        "description":  "Дорожная карта по направлению «Data Engineer Roadmap» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "data"
+                    },
+                    {
+                        "code":  "datastructures-and-algorithms",
+                        "name":  "Data Structures \u0026 Algorithms",
+                        "description":  "Дорожная карта по направлению «Data Structures \u0026 Algorithms» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "fundamentals"
+                    },
+                    {
+                        "code":  "design-system",
+                        "name":  "Design System",
+                        "description":  "Дорожная карта по направлению «Design System» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "architecture"
+                    },
+                    {
+                        "code":  "devops",
+                        "name":  "DevOps Roadmap",
+                        "description":  "Дорожная карта по направлению «DevOps Roadmap» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "devops"
+                    },
+                    {
+                        "code":  "devops-beginner",
+                        "name":  "Devops Beginner",
+                        "description":  "Стартовая дорожная карта по направлению «Devops Beginner» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "devops"
+                    },
+                    {
+                        "code":  "devrel",
+                        "name":  "Developer Relations",
+                        "description":  "Дорожная карта по направлению «Developer Relations» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "roadmap"
+                    },
+                    {
+                        "code":  "devsecops",
+                        "name":  "DevSecOps",
+                        "description":  "Дорожная карта по направлению «DevSecOps» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "devops"
+                    },
+                    {
+                        "code":  "django",
+                        "name":  "Django",
+                        "description":  "Дорожная карта по направлению «Django» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "framework"
+                    },
+                    {
+                        "code":  "docker",
+                        "name":  "Docker Roadmap",
+                        "description":  "Дорожная карта по направлению «Docker Roadmap» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "devops"
+                    },
+                    {
+                        "code":  "elasticsearch",
+                        "name":  "Elasticsearch",
+                        "description":  "Дорожная карта по направлению «Elasticsearch» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "roadmap"
+                    },
+                    {
+                        "code":  "engineering-manager",
+                        "name":  "Engineering Manager",
+                        "description":  "Дорожная карта по направлению «Engineering Manager» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "roadmap"
+                    },
+                    {
+                        "code":  "flutter",
+                        "name":  "Flutter Developer",
+                        "description":  "Дорожная карта по направлению «Flutter Developer» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "mobile"
+                    },
+                    {
+                        "code":  "frontend",
+                        "name":  "Frontend Developer",
+                        "description":  "Дорожная карта по направлению «Frontend Developer» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "web"
+                    },
+                    {
+                        "code":  "frontend-beginner",
+                        "name":  "Frontend Beginner",
+                        "description":  "Стартовая дорожная карта по направлению «Frontend Beginner» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "web"
+                    },
+                    {
+                        "code":  "full-stack",
+                        "name":  "Full Stack Developer",
+                        "description":  "Дорожная карта по направлению «Full Stack Developer» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "web"
+                    },
+                    {
+                        "code":  "game-developer",
+                        "name":  "Game Developer",
+                        "description":  "Базовая дорожная карта по game development с фокусом на C# и Unity.",
+                        "category":  "game-dev"
+                    },
+                    {
+                        "code":  "git-github",
+                        "name":  "Learn Git and GitHub",
+                        "description":  "Дорожная карта по направлению «Learn Git and GitHub» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "tooling"
+                    },
+                    {
+                        "code":  "git-github-beginner",
+                        "name":  "Git Github Beginner",
+                        "description":  "Стартовая дорожная карта по направлению «Git Github Beginner» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "fundamentals"
+                    },
+                    {
+                        "code":  "golang",
+                        "name":  "Go Developer",
+                        "description":  "Дорожная карта по направлению «Go Developer» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "language"
+                    },
+                    {
+                        "code":  "graphql",
+                        "name":  "GraphQL",
+                        "description":  "Дорожная карта по направлению «GraphQL» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "api"
+                    },
+                    {
+                        "code":  "html",
+                        "name":  "HTML",
+                        "description":  "Дорожная карта по направлению «HTML» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "web"
+                    },
+                    {
+                        "code":  "ios",
+                        "name":  "iOS Developer",
+                        "description":  "Дорожная карта по направлению «iOS Developer» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "mobile"
+                    },
+                    {
+                        "code":  "java",
+                        "name":  "Java Developer",
+                        "description":  "Дорожная карта по направлению «Java Developer» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "language"
+                    },
+                    {
+                        "code":  "java-backend",
+                        "name":  "Java Backend Developer",
+                        "description":  "Базовая дорожная карта по Java backend-разработке: язык, веб-основы, базы данных и Spring-стек.",
+                        "category":  "web"
+                    },
+                    {
+                        "code":  "java-mobile",
+                        "name":  "Java Mobile Developer",
+                        "description":  "Дорожная карта по Java mobile-разработке. Направление сохранено в каталоге как отдельная Java-ветка.",
+                        "category":  "language"
+                    },
+                    {
+                        "code":  "javascript",
+                        "name":  "JavaScript Roadmap",
+                        "description":  "Дорожная карта по направлению «JavaScript Roadmap» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "language"
+                    },
+                    {
+                        "code":  "kotlin",
+                        "name":  "Kotlin",
+                        "description":  "Дорожная карта по направлению «Kotlin» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "language"
+                    },
+                    {
+                        "code":  "kubernetes",
+                        "name":  "Kubernetes Roadmap",
+                        "description":  "Дорожная карта по направлению «Kubernetes Roadmap» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "devops"
+                    },
+                    {
+                        "code":  "laravel",
+                        "name":  "Laravel",
+                        "description":  "Дорожная карта по направлению «Laravel» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "framework"
+                    },
+                    {
+                        "code":  "leetcode",
+                        "name":  "Leetcode",
+                        "description":  "Дорожная карта по направлению «Leetcode» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "fundamentals"
+                    },
+                    {
+                        "code":  "linux",
+                        "name":  "Linux Roadmap",
+                        "description":  "Дорожная карта по направлению «Linux Roadmap» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "platform"
+                    },
+                    {
+                        "code":  "machine-learning",
+                        "name":  "Machine Learning",
+                        "description":  "Дорожная карта по направлению «Machine Learning» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "data"
+                    },
+                    {
+                        "code":  "mlops",
+                        "name":  "MLOps Roadmap",
+                        "description":  "Дорожная карта по направлению «MLOps Roadmap» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "data"
+                    },
+                    {
+                        "code":  "mongodb",
+                        "name":  "MongoDB",
+                        "description":  "Дорожная карта по направлению «MongoDB» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "data"
+                    },
+                    {
+                        "code":  "nextjs",
+                        "name":  "Next.js",
+                        "description":  "Дорожная карта по направлению «Next.js» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "web"
+                    },
+                    {
+                        "code":  "nodejs",
+                        "name":  "Node.js Developer",
+                        "description":  "Дорожная карта по направлению «Node.js Developer» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "runtime"
+                    },
+                    {
+                        "code":  "openclaw",
+                        "name":  "Openclaw",
+                        "description":  "Дорожная карта по направлению «Openclaw» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "roadmap"
+                    },
+                    {
+                        "code":  "php",
+                        "name":  "PHP Roadmap",
+                        "description":  "Дорожная карта по направлению «PHP Roadmap» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "language"
+                    },
+                    {
+                        "code":  "postgresql-dba",
+                        "name":  "PostgreSQL DBA",
+                        "description":  "Дорожная карта по направлению «PostgreSQL DBA» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "language"
+                    },
+                    {
+                        "code":  "product-manager",
+                        "name":  "Product Manager",
+                        "description":  "Дорожная карта по направлению «Product Manager» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "roadmap"
+                    },
+                    {
+                        "code":  "prompt-engineering",
+                        "name":  "Prompt Engineering Roadmap",
+                        "description":  "Дорожная карта по направлению «Prompt Engineering Roadmap» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "data"
+                    },
+                    {
+                        "code":  "python",
+                        "name":  "Python Developer",
+                        "description":  "Дорожная карта по направлению «Python Developer» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "language"
+                    },
+                    {
+                        "code":  "qa",
+                        "name":  "QA Engineer",
+                        "description":  "Дорожная карта по направлению «QA Engineer» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "quality"
+                    },
+                    {
+                        "code":  "react",
+                        "name":  "React Developer",
+                        "description":  "Дорожная карта по направлению «React Developer» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "framework"
+                    },
+                    {
+                        "code":  "react-native",
+                        "name":  "React Native Developer",
+                        "description":  "Дорожная карта по направлению «React Native Developer» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "mobile"
+                    },
+                    {
+                        "code":  "redis",
+                        "name":  "Redis Roadmap",
+                        "description":  "Дорожная карта по направлению «Redis Roadmap» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "data"
+                    },
+                    {
+                        "code":  "ruby",
+                        "name":  "Ruby",
+                        "description":  "Дорожная карта по направлению «Ruby» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "language"
+                    },
+                    {
+                        "code":  "ruby-on-rails",
+                        "name":  "Ruby On Rails",
+                        "description":  "Дорожная карта по направлению «Ruby On Rails» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "language"
+                    },
+                    {
+                        "code":  "rust",
+                        "name":  "Rust Developer",
+                        "description":  "Дорожная карта по направлению «Rust Developer» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "language"
+                    },
+                    {
+                        "code":  "scala",
+                        "name":  "Scala",
+                        "description":  "Дорожная карта по направлению «Scala» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "language"
+                    },
+                    {
+                        "code":  "server-side-game-developer",
+                        "name":  "Server Side Game Developer",
+                        "description":  "Дорожная карта по направлению «Server Side Game Developer» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "roadmap"
+                    },
+                    {
+                        "code":  "shell-bash",
+                        "name":  "Shell Bash",
+                        "description":  "Дорожная карта по направлению «Shell Bash» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "language"
+                    },
+                    {
+                        "code":  "software-architect",
+                        "name":  "Software Architect",
+                        "description":  "Дорожная карта по направлению «Software Architect» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "architecture"
+                    },
+                    {
+                        "code":  "software-design-architecture",
+                        "name":  "Software Design and Architecture",
+                        "description":  "Дорожная карта по направлению «Software Design and Architecture» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "architecture"
+                    },
+                    {
+                        "code":  "spring-boot",
+                        "name":  "Spring Boot Developer",
+                        "description":  "Дорожная карта по направлению «Spring Boot Developer» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "framework"
+                    },
+                    {
+                        "code":  "sql",
+                        "name":  "SQL Roadmap",
+                        "description":  "Дорожная карта по направлению «SQL Roadmap» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "data"
+                    },
+                    {
+                        "code":  "swift-ui",
+                        "name":  "Swift Ui",
+                        "description":  "Дорожная карта по направлению «Swift Ui» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "language"
+                    },
+                    {
+                        "code":  "system-design",
+                        "name":  "System Design Roadmap",
+                        "description":  "Дорожная карта по направлению «System Design Roadmap» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "architecture"
+                    },
+                    {
+                        "code":  "technical-writer",
+                        "name":  "Technical Writer",
+                        "description":  "Дорожная карта по направлению «Technical Writer» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "writing"
+                    },
+                    {
+                        "code":  "terraform",
+                        "name":  "Terraform Roadmap",
+                        "description":  "Дорожная карта по направлению «Terraform Roadmap» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "devops"
+                    },
+                    {
+                        "code":  "typescript",
+                        "name":  "TypeScript",
+                        "description":  "Дорожная карта по направлению «TypeScript» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "language"
+                    },
+                    {
+                        "code":  "ux-design",
+                        "name":  "UX Design",
+                        "description":  "Дорожная карта по направлению «UX Design» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "roadmap"
+                    },
+                    {
+                        "code":  "vibe-coding",
+                        "name":  "Vibe Coding",
+                        "description":  "Дорожная карта по направлению «Vibe Coding» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "roadmap"
+                    },
+                    {
+                        "code":  "vue",
+                        "name":  "Vue Developer",
+                        "description":  "Дорожная карта по направлению «Vue Developer» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "framework"
+                    },
+                    {
+                        "code":  "wordpress",
+                        "name":  "Wordpress",
+                        "description":  "Дорожная карта по направлению «Wordpress» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+                        "category":  "roadmap"
+                    }
+                ]
 }

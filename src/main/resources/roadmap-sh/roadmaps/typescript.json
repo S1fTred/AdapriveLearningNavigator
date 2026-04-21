@@ -1,0 +1,2945 @@
+﻿{
+    "source":  "roadmap.sh",
+    "sourceUrl":  "https://roadmap.sh/typescript",
+    "roleCode":  "typescript",
+    "roleName":  "TypeScript",
+    "roleDescription":  "Дорожная карта по направлению «TypeScript» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+    "roleStatus":  "ACTIVE",
+    "topics":  [
+                   {
+                       "code":  "RM_TYPESCRIPT_BZ71I36HAWGHQTY0YM_DD2EEF23",
+                       "title":  "TS Playground",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: TS Playground. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  1,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "TypeScript Official - Playground",
+                                             "url":  "https://www.typescriptlang.org/play",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Explore top posts about TypeScript",
+                                             "url":  "https://app.daily.dev/tags/typescript?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_IV_T13PSVZET5VPKFT_18E3F058",
+                       "title":  "tsc",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: tsc. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  2,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "tsc CLI Options",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/compiler-options.html#using-the-cli",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_ZCM2_X4BIKH5FTCIZR_B1B38D93",
+                       "title":  "ts-node",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: ts-node. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  9,
+                       "status":  "ACTIVE",
+                       "priority":  3,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "ts-node - GitHub Project",
+                                             "url":  "https://github.com/TypeStrong/ts-node",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Github",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "How To Run TypeScript Scripts with ts-node",
+                                             "url":  "https://www.digitalocean.com/community/tutorials/typescript-running-typescript-ts-node",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Digitalocean",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Explore top posts about TypeScript",
+                                             "url":  "https://app.daily.dev/tags/typescript?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_KDD40JOAVZ8O1MFHTY_D601A80A",
+                       "title":  "Introduction to TypeScript",
+                       "description":  "Тема roadmap по направлению «TypeScript»: Introduction to TypeScript. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  4,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Overview of TypeScript",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "TypeScript Official Handbook",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/intro.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "What Is TypeScript?",
+                                             "url":  "https://thenewstack.io/what-is-typescript/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Thenewstack",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Video: Where TypeScript Excels",
+                                             "url":  "https://youtu.be/BUo7B6UuoJ4",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_MQWZN_KXXVJMOYBRXS_FA0434F2",
+                       "title":  "TypeScript vs JavaScript",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: TypeScript vs JavaScript. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  5,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_KDD40JOAVZ8O1MFHTY_D601A80A",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Learning JavaScript and TypeScript",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html#learning-javascript-and-typescript",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "TypeScript vs. JavaScript",
+                                             "url":  "https://thenewstack.io/typescript-vs-javascript/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Thenewstack",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Explore top posts about JavaScript",
+                                             "url":  "https://app.daily.dev/tags/javascript?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_QDY4ZIY2EKGMPNDU_N_AD9950D4",
+                       "title":  "Running TypeScript",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Running TypeScript. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  6,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_KDD40JOAVZ8O1MFHTY_D601A80A",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Running your TypeScript",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/typescript-tooling-in-5-minutes.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_DCLAEU_LB0Z_QYPL1Z_AFE66C8C",
+                       "title":  "TS and JS Interoperability",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: TS and JS Interoperability. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  7,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_KDD40JOAVZ8O1MFHTY_D601A80A",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Type Checking JavaScript Files",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/type-checking-javascript-files.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Using JavaScript in TypeScript",
+                                             "url":  "https://youtu.be/AZhZlEbBaB4",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_DA8CNQOGJRDA0T7RMY_4077EC08",
+                       "title":  "Installation and Configuration",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Installation and Configuration. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  8,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_KDD40JOAVZ8O1MFHTY_D601A80A",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Install and Configure TypeScript",
+                                             "url":  "https://www.typescriptlang.org/download",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "TypeScript Getting Started",
+                                             "url":  "https://thenewstack.io/typescript-tutorial-a-guide-to-using-the-programming-language/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Thenewstack",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_MVKSM7R4IVPDHNBWT1_DE34ED53",
+                       "title":  "Interface",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Interface. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  9,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Object Types - Interfaces",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/objects.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_HFIHXA5I_5REPJTZQE_845C0E46",
+                       "title":  "boolean",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: boolean. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  10,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Number, String, Boolean, Symbol and Object",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_DMQRX56D9KNBCOSWLJ_F57BBDE6",
+                       "title":  "tsconfig.json",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: tsconfig.json. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  11,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What is a tsconfig.json",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#handbook-content",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_RREXVB7L2GD0S_TLND_509E4DF9",
+                       "title":  "Compiler Options",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Compiler Options. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  12,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Compiler Options",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/compiler-options.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_TTSITP1W1YMS_NJBFB_90870693",
+                       "title":  "Class",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Class. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  13,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "TypeScript Classes",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/classes.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_UH9D3CVGY_E67WFNFW_99AB9C35",
+                       "title":  "number",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: number. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  14,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Number, String, Boolean, Symbol and Object",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_QCRGAPXNZKGYXGCD7O_459DF842",
+                       "title":  "TypeScript Types",
+                       "description":  "Тема roadmap по направлению «TypeScript»: TypeScript Types. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  15,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_KDD40JOAVZ8O1MFHTY_D601A80A",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "TypeScript - Everyday Types",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Explore top posts about TypeScript",
+                                             "url":  "https://app.daily.dev/tags/typescript?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_KUUR_GFOBQODTS_IRF_D0FF2EBE",
+                       "title":  "Type Inference",
+                       "description":  "Тема roadmap по направлению «TypeScript»: Type Inference. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  16,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_QCRGAPXNZKGYXGCD7O_459DF842",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Type Inference",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/type-inference.html#handbook-content",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_BFZIXHCEDKDGQL_24K_A9AC4A72",
+                       "title":  "Enum",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Enum. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  17,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "TypeScript - Enums",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/enums.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_D8IV_IBZ6CSNH8Z5_H_F1B98DEF",
+                       "title":  "string",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: string. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  18,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Number, String, Boolean, Symbol and Object",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_ALMJCEYUZ90XZ_2_G3_B50C6275",
+                       "title":  "Type Compatibility",
+                       "description":  "Тема roadmap по направлению «TypeScript»: Type Compatibility. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  19,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Type Compatibility",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/type-compatibility.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_YBDUIO1BBZKEAZWMXL_895004E2",
+                       "title":  "Array",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Array. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  20,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Arrays",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#arrays",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_YLLQG7BF_ZWRHBXBWF_2A9A0A50",
+                       "title":  "void",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: void. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  21,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "void - TypeScript Docs",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/functions.html#void",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_JQ_GD0DLYZREXQKUMT_3A4DA9AD",
+                       "title":  "Tuple",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Tuple. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  22,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Tuple Types",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/objects.html#tuple-types",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_SA6IZTM4XJSTULTZ_P_01FB4048",
+                       "title":  "undefined",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: undefined. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  23,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "null and undefined",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#null-and-undefined",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_BA0BAUBOMRW9TD_K8U_E8251CCE",
+                       "title":  "as [type]",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: as [type]. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  24,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Type assertions",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-assertions",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_5Z5W3YV1HBOPMLZED4_20F4ACF9",
+                       "title":  "Union Types",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Union Types. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  25,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Union Types in TypeScript",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_CJAWAWHZLO1QVQ93XI_8EBB4E83",
+                       "title":  "null",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: null. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  26,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "null and undefined",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#null-and-undefined",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_VNQVM_WIAKQPDXRW4W_853CF3E3",
+                       "title":  "Object",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Object. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  27,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Object Types in TypeScript",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#object-types",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_AFTNR36VQEXOJPHXM2_351380A9",
+                       "title":  "as any",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: as any. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  28,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "any",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_PGFNTQI0_RSJ0YRMNA_B52C1E56",
+                       "title":  "as const",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: as const. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  29,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "const assertions",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-4.html#const-assertions",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_RWYXEZMODURQWRWF_L_0336E008",
+                       "title":  "Intersection Types",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Intersection Types. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  30,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Intersection Types in TypeScript",
+                                             "url":  "https://www.typescripttutorial.net/typescript-tutorial/typescript-intersection-types/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Typescripttutorial",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_MJAL5OCLNM8VQLHUXW_7B885BFD",
+                       "title":  "Non-null Assertion",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Non-null Assertion. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  31,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Non-null assertion operator",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html#non-null-assertion-operator",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_M_3O21ZJPPGWPTIT5D_BCAD4C3A",
+                       "title":  "Type Aliases",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Type Aliases. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  32,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Type Aliases",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-aliases",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_0PI9VTBNGCAISWUU5L_6380FF28",
+                       "title":  "never",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: never. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  33,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Never Type",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/narrowing.html#the-never-type",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_O2TYBD9I_OQWQK2DKH_43B6F379",
+                       "title":  "unknown",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: unknown. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  34,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Unknown Type in TypeScript",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html#new-unknown-top-type",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_HD1UGOIDP7JGKDW6CE_14D4301C",
+                       "title":  "satisfies keyword",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: satisfies keyword. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  35,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "satisfies Keyword",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-9.html#the-satisfies-operator",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_T1TCESFQ7BV2TKHCFD_5D753132",
+                       "title":  "keyof Operator",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: keyof Operator. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  36,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "keyof Type Operator",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/keyof-types.html#handbook-content",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_YXILEGSLL7SVEU8RBG_7F753AEC",
+                       "title":  "any",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: any. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  37,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "any type in TypeScript",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_QEFNSUGCVEIZVQ2TOR_90E1A047",
+                       "title":  "Combining Types",
+                       "description":  "Тема roadmap по направлению «TypeScript»: Combining Types. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  38,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_ALMJCEYUZ90XZ_2_G3_B50C6275",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Union Types in TypeScript",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Intersection Types in TypeScript",
+                                             "url":  "https://www.typescripttutorial.net/typescript-tutorial/typescript-intersection-types/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Typescripttutorial",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Type Aliases",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-aliases",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Keyof Type Operator",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/keyof-types.html#handbook-content",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_CFZSXPYHDXM7IWWERG_B711E076",
+                       "title":  "Type Guards / Narrowing",
+                       "description":  "Тема roadmap по направлению «TypeScript»: Type Guards / Narrowing. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  39,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_QEFNSUGCVEIZVQ2TOR_90E1A047",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Type Guards - TypeScript Docs",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/narrowing.html#typeof-type-guards",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_EDOU5A7UK17YP3PDFB_B17F2E16",
+                       "title":  "instanceof",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: instanceof. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  40,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_CFZSXPYHDXM7IWWERG_B711E076",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "instanceOf Operator",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/narrowing.html#instanceof-narrowing",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_ZIOCFZY85P7TLZUKYK_6D587894",
+                       "title":  "typeof",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: typeof. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  41,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_CFZSXPYHDXM7IWWERG_B711E076",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Type Guards and Differentiating Types",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/narrowing.html#typeof-type-guards",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_WY2YIK5VGLJECC9VJU_90734234",
+                       "title":  "Equality",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Equality. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  42,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_CFZSXPYHDXM7IWWERG_B711E076",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Equality Narrowing",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/narrowing.html#equality-narrowing",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_XONBXC7MVMEONKBVBK_D8D1BF69",
+                       "title":  "Truthiness",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Truthiness. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  43,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_CFZSXPYHDXM7IWWERG_B711E076",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Truthiness Narrowing",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/narrowing.html#truthiness-narrowing",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_1DOSAIEOMWUNNSQQRQ_6B579B10",
+                       "title":  "Type Predicates",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Type Predicates. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  44,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_CFZSXPYHDXM7IWWERG_B711E076",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Type Guards and Differentiating Types",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/narrowing.html#using-type-predicates",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_QOYNVKDI1GFZ0MXYJH_E4912F99",
+                       "title":  "TypeScript Functions",
+                       "description":  "Тема roadmap по направлению «TypeScript»: TypeScript Functions. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  45,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_CFZSXPYHDXM7IWWERG_B711E076",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Functions in TypeScript",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/functions.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_AH1DXIG5XRDNLKUTJ__42574D33",
+                       "title":  "TypeScript Interfaces",
+                       "description":  "Тема roadmap по направлению «TypeScript»: TypeScript Interfaces. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  46,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_QOYNVKDI1GFZ0MXYJH_E4912F99",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "TypeScript - Interfaces",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/objects.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_TXKEPOOIUUM_FXJUFV_38768A1C",
+                       "title":  "Types vs Interfaces",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Types vs Interfaces. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  47,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_AH1DXIG5XRDNLKUTJ__42574D33",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Interfaces vs. Type Aliases",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#differences-between-type-aliases-and-interfaces",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Interfaces vs Types in TypeScript",
+                                             "url":  "https://stackoverflow.com/questions/37233735/interfaces-vs-types-in-typescript",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Stackoverflow",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_O_9WQQIDUJLIEOTCOF_3C7D3DE5",
+                       "title":  "Extending Interfaces",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Extending Interfaces. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  48,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_AH1DXIG5XRDNLKUTJ__42574D33",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Extending Interfaces",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/objects.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_FY40W8PRPGINQRL50W_8701DC89",
+                       "title":  "Interface Declaration",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Interface Declaration. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  49,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_AH1DXIG5XRDNLKUTJ__42574D33",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Extending Interfaces",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/objects.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_LVTTSHH9YBTCILNG8B_FAE3841E",
+                       "title":  "Hybrid Types",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Hybrid Types.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  50,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_AH1DXIG5XRDNLKUTJ__42574D33",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_IB0JFZZUKYOZ42ADJQ_7AFC8C71",
+                       "title":  "Classes",
+                       "description":  "Тема roadmap по направлению «TypeScript»: Classes. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  51,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Tutorial - Classes",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/classes.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_9FIHHWDNZYKPB42NMS_D3C2112F",
+                       "title":  "Typing Functions",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Typing Functions. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  52,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_QOYNVKDI1GFZ0MXYJH_E4912F99",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "TypeScript Functions",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/functions.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_3XRKBK5OD2EOM0BLAS_5DDF978F",
+                       "title":  "Constructor Params",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Constructor Params. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  53,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "TypeScript - Construct",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/classes.html#constructors",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_0ZP6B8NJDYZ9MAQE3H_6EC38D6D",
+                       "title":  "Function Overloading",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Function Overloading. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  54,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Function Overloads",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/functions.html#function-overloads",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_4GAKQNTGLFQPK9WVKZ_2CF70519",
+                       "title":  "Generics",
+                       "description":  "Тема roadmap по направлению «TypeScript»: Generics. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  55,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Hello World of Generics",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/generics.html#hello-world-of-generics",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_T2_VAVFNTOUJOOWHPH_D95B7DBE",
+                       "title":  "Generic Types",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Generic Types. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  56,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_4GAKQNTGLFQPK9WVKZ_2CF70519",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Hello World of Generics",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/generics.html#hello-world-of-generics",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_0NXHAOUYGIWUPWLN7R_04E7DE1A",
+                       "title":  "Generic Constraints",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Generic Constraints. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  57,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_4GAKQNTGLFQPK9WVKZ_2CF70519",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Generic Constraints - TypeScript",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/generics.html#generic-constraints",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_RJ7ON8WOXRKCXRR3QY_36E02EE1",
+                       "title":  "Access Modifiers",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Access Modifiers. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  58,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "TypeScript Access Modifiers",
+                                             "url":  "https://www.typescripttutorial.net/typescript-tutorial/typescript-access-modifiers/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Typescripttutorial",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_GBTEM9DP3IQLAKQGX4_91C22A23",
+                       "title":  "Partial",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Partial.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  59,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_TZFWEWHDOUJCCETHFX_3312115D",
+                       "title":  "Abstract Classes",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Abstract Classes. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  60,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Abstract Classes",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/classes.html#abstract-classes-and-members",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_YJLXYGHL8QONNURDX__39854947",
+                       "title":  "Omit",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Omit. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  61,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Omit\u003cType, Keys\u003e",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/utility-types.html#omittype-keys",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_8P0_VB9NLNMZ7IC4UV_41D882B6",
+                       "title":  "Inheritance vs Polymorphism",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Inheritance vs Polymorphism. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  62,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Dev.to - Mastering OOP in TypeScript",
+                                             "url":  "https://dev.to/rajrathod/mastering-object-oriented-programming-with-typescript-encapsulation-abstraction-inheritance-and-polymorphism-explained-c6p",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Dev",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Inheritance and Polymorphism In TypeScript",
+                                             "url":  "https://www.youtube.com/watch?v=Sn6K57YSuwU",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_DRDBMF5DT_R09LOPOX_8B4EB216",
+                       "title":  "Record",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Record. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  63,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Record\u003cKeys, Type\u003e",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_TRX3WVWNRDJJF5EL_G_25E68AB4",
+                       "title":  "Decorators",
+                       "description":  "Тема roadmap по направлению «TypeScript»: Decorators. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  64,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Decorators",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/decorators.html#handbook-content",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_LSWUHFALNK5MGHT21P_D8726573",
+                       "title":  "Utility Types",
+                       "description":  "Тема roadmap по направлению «TypeScript»: Utility Types. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  65,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_TRX3WVWNRDJJF5EL_G_25E68AB4",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "TypeScript - Utility Types",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/utility-types.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "TypeScript Utility Types Guide",
+                                             "url":  "https://camchenry.com/blog/typescript-utility-types",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Camchenry",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_E88THQVARKHURZWGAO_9BAA2FCA",
+                       "title":  "Pick",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Pick. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  66,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_LSWUHFALNK5MGHT21P_D8726573",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Pick\u003cType, Keys\u003e",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/utility-types.html#picktype-keys",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_IUO9_O_DQDDYUABDGW_0A2F54E1",
+                       "title":  "Readonly",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Readonly.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  67,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_LSWUHFALNK5MGHT21P_D8726573",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_0FVOXI9GJBEC7ETQTG_839050EA",
+                       "title":  "Exclude",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Exclude. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  68,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_LSWUHFALNK5MGHT21P_D8726573",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Exclude\u003cUnionType, ExcludedMembers\u003e",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/utility-types.html#excludeuniontype-excludedmembers",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_AKNQUTXN2WDQ4RFCT__409DFE96",
+                       "title":  "Method Overriding",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Method Overriding. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  69,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "TypeScript - Overriding Methods",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/classes.html#overriding-methods",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_IIABAZXIVQM1JEI2MT_0595BB52",
+                       "title":  "Extract",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Extract. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  70,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Extract\u003cType, Union\u003e",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/utility-types.html#extracttype-union",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_AEHI_9MFWXRIZH1ZXT_1AD541C5",
+                       "title":  "Awaited",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Awaited. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  71,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_LSWUHFALNK5MGHT21P_D8726573",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Awaited\u003cType\u003e",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/utility-types.html#awaitedtype",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_OXZCYXXY2I7GI7NBVF_6CDF15C9",
+                       "title":  "Constructor Overloading",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Constructor Overloading. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  72,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Constructors - TypeScript",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/classes.html#constructors",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_A7HL0IMZ_JCUACXQIY_42C2EB54",
+                       "title":  "Parameters",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Parameters.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  73,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_LSWUHFALNK5MGHT21P_D8726573",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_2F7VOL_V9DLBOHA263_17750053",
+                       "title":  "Advanced Types",
+                       "description":  "Тема roadmap по направлению «TypeScript»: Advanced Types. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  true,
+                       "estimatedHours":  9,
+                       "status":  "ACTIVE",
+                       "priority":  74,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_LSWUHFALNK5MGHT21P_D8726573",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Advanced Topics",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/type-compatibility.html#advanced-topics",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Tutorial of Typescript - Advanced Types",
+                                             "url":  "https://www.youtube.com/playlist?list=PLw5h0DiJ-9PBIgIyd2ZA1CVnJf0BLFJg2",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_BAZLBEZE7DDR315OEH_7B2DF84D",
+                       "title":  "NonNullable",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: NonNullable.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  75,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_LSWUHFALNK5MGHT21P_D8726573",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_ETVWQ4LNWI3IIFHGB2_F5299CCB",
+                       "title":  "Namespaces",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Namespaces. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  76,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Overview of Namespaces",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/namespaces.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Namespaces and Modules",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/namespaces-and-modules.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "TypeScript - Using Namespaces",
+                                             "url":  "https://typescriptlang.org/docs/handbook/namespaces-and-modules.html#using-namespaces",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_ON75JR_UKIILHA0_QA_FDC02264",
+                       "title":  "ReturnType",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: ReturnType.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  77,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_LSWUHFALNK5MGHT21P_D8726573",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_K_5Y77K8ZZ9_O2WPWX_2251232C",
+                       "title":  "Ambient Modules",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Ambient Modules. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  78,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Ambient Modules",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/modules/reference.html#ambient-modules",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_VQ_V9QIDKGNPSJG2UN_241352D1",
+                       "title":  "Mapped Types",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Mapped Types. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  79,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_2F7VOL_V9DLBOHA263_17750053",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Mapped Types",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/mapped-types.html#handbook-content",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_IZGAJNTRH3BZQT3KIZ_A7123660",
+                       "title":  "InstanceType",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: InstanceType. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  80,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_LSWUHFALNK5MGHT21P_D8726573",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "InstanceType\u003cType\u003e",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/utility-types.html#instancetypetype",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_EGQWK1N3P8PEP83YIW_A2D4FC53",
+                       "title":  "External Modules",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: External Modules. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  81,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "TypeScript - External Module",
+                                             "url":  "https://learncodeweb.com/typescript/modules-in-typescript-explain-with-an-example/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Learncodeweb",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_UBGIHI_WLE0EOPTYXZ_7195CE26",
+                       "title":  "Conditional Types",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Conditional Types. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  82,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Conditional Types",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#handbook-content",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Conditional Types - Advanced TypeScript",
+                                             "url":  "https://www.youtube.com/watch?v=QFWrbNehKk0",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_16TT8R4N_9TCFWMPET_7C2E24DB",
+                       "title":  "Namespace Augmentation",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Namespace Augmentation. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  83,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Module Augmentation",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/declaration-merging.html#module-augmentation",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_CWZGWVL6NWYCALYSLI_9105E8A8",
+                       "title":  "Literal Types",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Literal Types. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  84,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Literal Types",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#literal-types",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_XP25NGW42VQDFZ_9PD_A7D48973",
+                       "title":  "Template Literal Types",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Template Literal Types. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  85,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Template Literal Types",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html#handbook-content",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_N8XBTJ74XV1E5HSLYZ_2FEADC46",
+                       "title":  "Recursive Types",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Recursive Types. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  86,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Recursive Types in TypeScript",
+                                             "url":  "https://www.typescriptlang.org/play/3-7/types-and-code-flow/recursive-type-references.ts.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_SE9LQKKQWNSVJXTJV3_097C4B27",
+                       "title":  "TypeScript Modules",
+                       "description":  "Тема roadmap по направлению «TypeScript»: TypeScript Modules. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  87,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_2F7VOL_V9DLBOHA263_17750053",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Modules",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/modules.html#handbook-content",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "TypeScript - Modules",
+                                             "url":  "https://www.youtube.com/watch?v=EpOPR03z4Vw",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_JQWWEB1GKANSYFQMH6_C54C1248",
+                       "title":  "Global Augmentation",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Global Augmentation. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  88,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_SE9LQKKQWNSVJXTJV3_097C4B27",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Global augmentation",
+                                             "url":  "https://www.typescriptlang.org/docs/handbook/declaration-merging.html#global-augmentation",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "TypeScript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_RQZAWGXXNRITBHVWWK_63A6E726",
+                       "title":  "Ecosystem",
+                       "description":  "Тема roadmap по направлению «TypeScript»: Ecosystem.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  89,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_SE9LQKKQWNSVJXTJV3_097C4B27",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_FU8VNW1DOBM4IXL1TQ_00F01F99",
+                       "title":  "Formatting",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Formatting. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  90,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_RQZAWGXXNRITBHVWWK_63A6E726",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Prettier Website",
+                                             "url":  "https://prettier.io",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Prettier",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Why Prettier",
+                                             "url":  "https://prettier.io/docs/en/why-prettier.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Prettier",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "BiomeJS Website",
+                                             "url":  "https://biomejs.dev",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Biomejs",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_8PCAPORKISKRYPWAMZ_1BB9C6B4",
+                       "title":  "Linting",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Linting. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  91,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_RQZAWGXXNRITBHVWWK_63A6E726",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "ESLint Official Website",
+                                             "url":  "https://eslint.org/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Eslint",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Introduction to ESLint",
+                                             "url":  "https://dev.to/shivambmgupta/eslint-what-why-when-how-5f1d",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Dev",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "ESLint Quickstart - find errors automatically",
+                                             "url":  "https://www.youtube.com/watch?v=qhuFviJn-es",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_PCX3KCVMUW3MMQEEPL_9B0EDEEE",
+                       "title":  "Useful Packages",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Useful Packages. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  92,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_RQZAWGXXNRITBHVWWK_63A6E726",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "zod",
+                                             "url":  "https://zod.dev/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Zod",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "ts-node",
+                                             "url":  "https://typestrong.org/ts-node",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Typestrong",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "ts-morph",
+                                             "url":  "https://github.com/dsherret/ts-morph",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Github",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "ts-jest",
+                                             "url":  "https://github.com/kulshekhar/ts-jest",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Github",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "typesync",
+                                             "url":  "https://github.com/jeffijoe/typesync",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Github",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TYPESCRIPT_I5UWFEJ5XMWR2N2GPB_7BC6714F",
+                       "title":  "Build Tools",
+                       "description":  "Подтема roadmap по направлению «TypeScript»: Build Tools. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  93,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TYPESCRIPT_RQZAWGXXNRITBHVWWK_63A6E726",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "webpack is a static module bundler for modern JavaScript applications",
+                                             "url":  "https://webpack.js.org/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Js",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Vite Next Generation Frontend Tooling",
+                                             "url":  "https://vitejs.dev",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Vitejs",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Parcel is a zero configuration build tool for the web",
+                                             "url":  "https://parceljs.org/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Parceljs",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "esbuild is an extremely fast JavaScript bundler and minifier",
+                                             "url":  "https://esbuild.github.io/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Github",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "swc is a super-fast compiler written in Rust",
+                                             "url":  "https://swc.rs/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Swc",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         }
+                                     ]
+                   }
+               ]
+}

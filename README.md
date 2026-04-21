@@ -1,4 +1,4 @@
-# Adaprive Learning Navigator
+﻿# Adaprive Learning Navigator
 
 ## О проекте
 
@@ -256,6 +256,7 @@ AI-generated route:
 - запуск через Maven.
 
 После старта приложение открывает сайт на главной странице автоматически, если это разрешено окружением и настройками.
+Автооткрытие браузера работает в best-effort режиме: после `ApplicationReadyEvent` приложение пробует `Desktop.browse`, а на Windows дополнительно использует fallback через `cmd /c start`, `powershell Start-Process` и `explorer.exe`.
 
 ## AI и Ollama
 
@@ -398,6 +399,7 @@ AI-generated route:
 - транслит в описаниях запрещён;
 - английский сохраняется только там, где это официальное название технологии, фреймворка, roadmap-направления или внешнего ресурса.
 - при обновлении такого контента фронтенд должен сбрасывать устаревший localStorage-кеш roadmap-данных, чтобы пользователь сразу видел актуальные русские описания.
+- это правило распространяется и на уже существующие legacy KB-данные проекта, включая `java-backend` и `java-mobile`.
 
 Что уже реализовано:
 - classpath-manifest с каталогом направлений: `src/main/resources/roadmap-sh/catalog.json`;
@@ -430,40 +432,73 @@ AI-generated route:
 
 ## roadmap.sh content import
 
-Поверх каталога теперь появился и второй слой: content-level импорт roadmap-данных.
+Поверх каталога теперь работает полноценный content-level import roadmap-данных.
 
-Что уже реализовано:
-- пакетный загрузчик roadmap manifest-файлов из `src/main/resources/roadmap-sh/roadmaps/*.json`;
-- sync-service для content-level наполнения:
+Что реализовано сейчас:
+- в `src/main/resources/roadmap-sh/roadmaps/*.json` хранится полный набор manifest-файлов для roadmap-направлений из `roadmap.sh`;
+- import покрывает современный формат `nodes/edges`, legacy-формат `mockup.controls.control` и content-only roadmap-директории;
+- в content-sync попадают:
   - `role_goals`
   - `topics`
   - `role_topics`
   - `topic_prereqs`
   - `resources`
   - `topic_resources`
-- startup runner для content-sync по отдельному флагу;
-- первый реальный manifest:
-  - `src/main/resources/roadmap-sh/roadmaps/game-developer.json`
+- для локального обновления import-слоя добавлен генератор:
+  - `tools/Generate-RoadmapShManifests.ps1`
+  - `tools/roadmap-sh-localization.json`
 
-Что это даёт сейчас:
-- в проекте уже есть техническая основа не только для каталога roadmap'ов, но и для массового заведения тем, зависимостей и материалов;
-- первый импортируемый roadmap — `game-developer`, чтобы закрыть ранее отсутствовавшее направление game development;
-- sync обновляет существующие записи, если это разрешено конфигурацией, и создаёт новые при отсутствии.
+Итог текущего bulk-import слоя:
+- `87` manifest-файлов roadmap-направлений;
+- `9210` тем и подтем;
+- `20612` ресурсных ссылок;
+- полное покрытие всех каталогов из `roadmap.sh`, доступных в локальном upstream-репозитории.
+
+Как устроена локализация:
+- user-facing описания направлений и тем генерируются на русском;
+- транслит в описаниях запрещён;
+- названия технологий, внешних ресурсов и самих roadmap-направлений могут оставаться в оригинале;
+- curated manifest-файлы (`game-developer`, `java-backend`, `java-mobile`) bulk-генератор не перезаписывает.
+- после обновления bulk-import слоя фронтенд сбрасывает версионированный roadmap-кеш (`session.js`), чтобы каталог и описания перечитывались из backend, а не из устаревшего `localStorage`.
+
+Как устроена генерация:
+- источник данных: локальный clone `roadmap.sh` в `.tmp/roadmap-sh-upstream`;
+- для новых roadmap-графов темы и связи берутся из `nodes/edges`;
+- для legacy-roadmap используется `migration-mapping.json` и иерархия `controlName`;
+- для content-only roadmap темы строятся напрямую по markdown-файлам из `content`;
+- ресурсы извлекаются из markdown-списков и связываются с темами автоматически;
+- `catalog.json` пересобирается из manifest-слоя, чтобы catalog-sync и content-sync были согласованы между собой.
 
 Конфигурация content-sync:
 - `app.roadmap-sh.roadmap-sync.enabled`
 - `app.roadmap-sh.roadmap-sync.manifest-pattern`
 - `app.roadmap-sh.roadmap-sync.update-existing`
 
-Текущее ограничение этого слоя:
-- импорт пока additive и safe-by-default;
-- он не удаляет старые темы, связи или ресурсы, если они уже были заведены раньше вручную;
-- русские локализации для roadmap.sh-контента пока не вынесены в отдельную модель переводов.
+Dev-особенность import-слоя:
+- в локальном запуске roadmap-sync читает manifest-файлы сначала напрямую из `src/main/resources/roadmap-sh/roadmaps`, а затем из classpath;
+- это защищает dev-режим от ситуации, когда IDE не успела перекопировать новые JSON-ресурсы в compiled output, и каталог продолжает видеть старый набор roadmap'ов.
+- если один и тот же roadmap встречается и в `file:`, и в `classpath:`, загрузчик схлопывает дубликаты по `roleCode` и оставляет первую найденную версию; это даёт приоритет локальным dev-manifest'ам и не ломает старт приложения.
 
-Следующий технический шаг:
-- расширять количество manifest-файлов по другим roadmap'ам;
-- продумать import подтем и более глубокой иерархии;
-- решить, как хранить локализованные описания, не смешивая их с базовым импортируемым контентом.
+Текущее ограничение слоя:
+- import остаётся additive и safe-by-default;
+- он не удаляет старые темы, связи или ресурсы, если они уже были заведены раньше вручную;
+- русские описания пока генерируются по шаблонам, а не через отдельную модель переводов по каждому upstream-абзацу.
+
+Следующие логичные шаги после наполнения KB:
+- проверить, как массово импортированные roadmap'ы влияют на построение личного плана;
+- при необходимости сузить weekly plan до core/required тем и отдельно показывать расширенные ветки roadmap;
+- улучшить локализацию витрины ресурсов и человекочитаемых названий для отдельных content-only roadmap'ов.
+
+## Локализация legacy KB
+
+Помимо `roadmap.sh`-контента, в проекте есть и ранее заведённые manual KB-данные для локальных проверок.
+
+Что уже сделано:
+- `docs/postman/manual_api_seed.sql` локализован для `java-backend` и `java-mobile`;
+- добавлены manifest-файлы `src/main/resources/roadmap-sh/roadmaps/java-backend.json` и `src/main/resources/roadmap-sh/roadmaps/java-mobile.json`;
+- при включённом `app.roadmap-sh.roadmap-sync.enabled=true` существующая dev-база получает обновлённые русские описания ролей и тем по этим кодам без ручного редактирования таблиц;
+- названия технологий и направлений оставлены в оригинале, а поясняющие описания переведены на русский;
+- для legacy Java-roadmap'ов в текущем KB пока не заведены отдельные `resources`, поэтому локализация на этом шаге покрывает role/topic descriptions и витрину roadmap'ов.
 
 ## Правило поддержки README
 
@@ -479,3 +514,4 @@ AI-generated route:
 - приоритетов дальнейшей разработки
 
 README нужно обновлять вместе с кодом, а не постфактум.
+

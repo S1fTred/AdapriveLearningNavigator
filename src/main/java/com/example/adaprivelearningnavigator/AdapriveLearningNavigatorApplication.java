@@ -1,5 +1,7 @@
 package com.example.adaprivelearningnavigator;
 
+import com.example.adaprivelearningnavigator.web.BrowserLaunchOnStartup;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -7,7 +9,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class AdapriveLearningNavigatorApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(AdapriveLearningNavigatorApplication.class, args);
+        ConfigurableApplicationContext context =
+                SpringApplication.run(AdapriveLearningNavigatorApplication.class, args);
+        context.getBean(BrowserLaunchOnStartup.class).openFromContext(context);
     }
 
 }

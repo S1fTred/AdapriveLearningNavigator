@@ -1,0 +1,1640 @@
+﻿{
+    "source":  "roadmap.sh",
+    "sourceUrl":  "https://roadmap.sh/technical-writer",
+    "roleCode":  "technical-writer",
+    "roleName":  "Technical Writer",
+    "roleDescription":  "Дорожная карта по направлению «Technical Writer» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+    "roleStatus":  "ACTIVE",
+    "topics":  [
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_DUBLTESNN3WVEH_BKQ_203545F4",
+                       "title":  "Technology Expertise",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Technology Expertise.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  1,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_KNIIAJRVRNOOALLUBR_6FEE58BC",
+                       "title":  "Language Proficiency",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Language Proficiency.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  2,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_HLUUGJ3DOZ68T4GIJE_F319FE80",
+                       "title":  "Introduction",
+                       "description":  "Тема roadmap по направлению «Technical Writer»: Introduction.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  3,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_ZRGSOKU313KY_ANWBW_9340ACA1",
+                       "title":  "Who is a Technical Writer?",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Who is a Technical Writer?. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  4,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_HLUUGJ3DOZ68T4GIJE_F319FE80",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "**What Is a Technical Writer?**",
+                                             "url":  "https://boffin.education/introduction-to-technical-writing/#2-what-is-a-technical-writer",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Boffin",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "**A Day in the Life of a Technical Writer**",
+                                             "url":  "https://boffin.education/technical-writing-roles-and-responsibilities/#4-a-day-in-the-life-of-a-technical-writer",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Boffin",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "**Glossary of Technical Writing Terms: \"Technical Writer\"**",
+                                             "url":  "https://boffin.education/glossary-of-technical-writing-terms/#technical-writer",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Boffin",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_JL1FSQ5_WGKEFYAILN_39BD859C",
+                       "title":  "What is Technical Writing?",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: What is Technical Writing?. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  5,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_HLUUGJ3DOZ68T4GIJE_F319FE80",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Indeed: What Is Technical Writing?",
+                                             "url":  "https://www.indeed.com/career-advice/career-development/technical-writing",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Indeed",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "TechWhirl: What Is Technical Writing?",
+                                             "url":  "https://techwhirl.com/what-is-technical-writing/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Techwhirl",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Amruta Ranade: What do Technical Writers do?",
+                                             "url":  "https://www.youtube.com/watch?v=biocrCx5T_k",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Technical Writer HQ: What is Technical Writing?",
+                                             "url":  "https://www.youtube.com/watch?v=KEI5JzBp2Io",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_J69ERQFOSSZMDLMKCN_DB432A65",
+                       "title":  "Role of Technical Writers in Organizations",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Role of Technical Writers in Organizations.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  6,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_HLUUGJ3DOZ68T4GIJE_F319FE80",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_CNET1DJDFGN0NDPZSX_3B4B98B4",
+                       "title":  "Forms of Technical Writing",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Forms of Technical Writing.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  7,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_HLUUGJ3DOZ68T4GIJE_F319FE80",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_8RJUZ9NZPGWVRGMK6D_317950B2",
+                       "title":  "Required Skills",
+                       "description":  "Тема roadmap по направлению «Technical Writer»: Required Skills.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  8,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_HLUUGJ3DOZ68T4GIJE_F319FE80",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_7_3TQRUPNTOQP4NK_N_D861D54E",
+                       "title":  "Written Communication Proficiency",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Written Communication Proficiency. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  9,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_8RJUZ9NZPGWVRGMK6D_317950B2",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Formal, permanent, clear business communication through writing",
+                                             "url":  "https://www.scribd.com/document/546030656/Unit-3-Written-Communication",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Scribd",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_FVXNJBDBXGF6VKZWW1_C37066CA",
+                       "title":  "Growth as a Technical Writer",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Growth as a Technical Writer.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  10,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_HLUUGJ3DOZ68T4GIJE_F319FE80",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_SDOFE4A3Y_ZP3MLRJ5_2CE0AC37",
+                       "title":  "Blogging Platforms",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Blogging Platforms.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  11,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_FD_8LQ_G2_O_I2QWP__C010D00A",
+                       "title":  "SEO Tools",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: SEO Tools.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  12,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_5XFBL2BHX0F2U9HMSV_E88AA4CE",
+                       "title":  "Tooling",
+                       "description":  "Тема roadmap по направлению «Technical Writer»: Tooling.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  13,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_8RJUZ9NZPGWVRGMK6D_317950B2",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_0XWIRAEOICNBBAGYQN_5CEB2CDE",
+                       "title":  "Research Tools",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Research Tools.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  14,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_5XFBL2BHX0F2U9HMSV_E88AA4CE",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_JC3ZRPSKBQZXIV6SKF_43BAE599",
+                       "title":  "Publishing Tools",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Publishing Tools.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  15,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_5XFBL2BHX0F2U9HMSV_E88AA4CE",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_CSZBTOB0FPPOLGZY_M_D9F7DCAB",
+                       "title":  "Plagiarism Checker",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Plagiarism Checker.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  16,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_5XFBL2BHX0F2U9HMSV_E88AA4CE",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_AM_OCP3R0HM45LYFMC_59A2CD55",
+                       "title":  "Editing Tools",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Editing Tools.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  17,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_FFJYULU9GPB_TDQJEJ_2588B500",
+                       "title":  "Git / Version Control",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Git / Version Control.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  18,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_5XFBL2BHX0F2U9HMSV_E88AA4CE",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_TJ1IUZQ9U_WBRLLRQK_18F346C5",
+                       "title":  "Markdown",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Markdown.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  19,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_YYLSG2LUPANUUHXSVE_86D5395B",
+                       "title":  "Best Practices",
+                       "description":  "Тема roadmap по направлению «Technical Writer»: Best Practices.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  20,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_5XFBL2BHX0F2U9HMSV_E88AA4CE",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_27MUFD1LD1GF6HHIH2_53308546",
+                       "title":  "Story Telling",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Story Telling.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  21,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_YYLSG2LUPANUUHXSVE_86D5395B",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_LXSSJGTQJK_PTRP4HA_05A52B83",
+                       "title":  "Subtle Selling",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Subtle Selling.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  22,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_YYLSG2LUPANUUHXSVE_86D5395B",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_EZZ2E4LYLD_BDNNWVS_3D1A8D85",
+                       "title":  "Content Structure",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Content Structure.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  23,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_YYLSG2LUPANUUHXSVE_86D5395B",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_A1CHWDWZTJZBI79Y38_3A4DA148",
+                       "title":  "Call to Actions",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Call to Actions.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  24,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_YYLSG2LUPANUUHXSVE_86D5395B",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_8QSL2ESJSA3YYUB4D7_733E55BE",
+                       "title":  "References",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: References.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  25,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_YYLSG2LUPANUUHXSVE_86D5395B",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_O_DZEKMU0TP3DUIUPM_4F6CFA61",
+                       "title":  "Content Research",
+                       "description":  "Тема roadmap по направлению «Technical Writer»: Content Research.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  26,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_YYLSG2LUPANUUHXSVE_86D5395B",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_WMOVQYLNEDX0QGC5AD_78D459C3",
+                       "title":  "Crafting Great Titles",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Crafting Great Titles.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  27,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_YYLSG2LUPANUUHXSVE_86D5395B",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_SX4VL_JEHRWQHDTHYQ_0B4C60E2",
+                       "title":  "Topic Score",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Topic Score.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  28,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_O_DZEKMU0TP3DUIUPM_4F6CFA61",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_D9MTDWQX6QWKYO5PA__4B47AF09",
+                       "title":  "Product Content",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Product Content.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  29,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_7FGMPZTD6OUVQEMCGH_79F40FFC",
+                       "title":  "Content Objectives \u0026 Intent",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Content Objectives \u0026 Intent.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  30,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_YYLSG2LUPANUUHXSVE_86D5395B",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_JTFLW5WWH5IXMNB0QI_C9BA9B4A",
+                       "title":  "Keyword Volume",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Keyword Volume.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  31,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_UFUMIHTWQ1M8DS8547_F7A1781E",
+                       "title":  "General Product Prose",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: General Product Prose.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  32,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_UUV51VM2JT_LFFXORS_F8EBFC1D",
+                       "title":  "User Persona",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: User Persona.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  33,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_YYLSG2LUPANUUHXSVE_86D5395B",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_QMEHC1TMWPVWATSIV9_B500BC13",
+                       "title":  "Communities \u0026 Forums",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Communities \u0026 Forums.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  34,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_CNEVPSQZQS9ZDYQMOU_9E30E9F5",
+                       "title":  "Writing Style Guides",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Writing Style Guides.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  35,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_YYLSG2LUPANUUHXSVE_86D5395B",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_IZQYEQKRBOEFLBWIQW_72963866",
+                       "title":  "Search Trends",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Search Trends.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  36,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_O1APL6I_G9DQL8VBL3_4B6B4BC6",
+                       "title":  "ICP \u0026 Buyer Persona",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: ICP \u0026 Buyer Persona.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  37,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_XV8MOX1WNSBL2JAGQQ_E044893B",
+                       "title":  "Types of Technical Content",
+                       "description":  "Тема roadmap по направлению «Technical Writer»: Types of Technical Content.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  38,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_O_DZEKMU0TP3DUIUPM_4F6CFA61",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_C_EVVTF6YABP2A6XVM_573FECB4",
+                       "title":  "How-to Guides",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: How-to Guides.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  39,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_XV8MOX1WNSBL2JAGQQ_E044893B",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_XFMSHYYXC0HLUEY9XX_2CF4D870",
+                       "title":  "Support Request Evaluation",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Support Request Evaluation.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  40,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_EHHKXYPTOLZTZXBXL3_7E626BEF",
+                       "title":  "Buyer Journey \u0026 Content Funnel",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Buyer Journey \u0026 Content Funnel.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  41,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_E8ONOXW1KLY4JDZOJI_7AB32FC9",
+                       "title":  "Developer Docs",
+                       "description":  "Тема roadmap по направлению «Technical Writer»: Developer Docs.",
+                       "level":  "INTERMEDIATE",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  42,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_Z5_73Q7DWBBD4M_ORD_CED90ED1",
+                       "title":  "API Reference",
+                       "description":  "Тема roadmap по направлению «Technical Writer»: API Reference.",
+                       "level":  "INTERMEDIATE",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  43,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_E_BSYRZ0EQQDUURG2Y_A493E56A",
+                       "title":  "Help Content",
+                       "description":  "Тема roadmap по направлению «Technical Writer»: Help Content.",
+                       "level":  "INTERMEDIATE",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  44,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_MJ1S5_SGD_TJ8Y0LLZ_BDF25B8C",
+                       "title":  "Technical Content Marketing",
+                       "description":  "Тема roadmap по направлению «Technical Writer»: Technical Content Marketing.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  45,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_XV8MOX1WNSBL2JAGQQ_E044893B",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_FGYBWRTE34VNQBT_5Q_6FEACD7D",
+                       "title":  "User Goals",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: User Goals.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  46,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_IBBEZOPD8SNO7SWTOH_AFC904DE",
+                       "title":  "Docs Generation Tools",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Docs Generation Tools.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  47,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_8FJCJI96IGE6Z2PBUT_52078790",
+                       "title":  "Troubleshooting",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Troubleshooting.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  48,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_2PNW7WDGIH_M73LHGZ_371921A6",
+                       "title":  "Developer Journey",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Developer Journey.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  49,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_CO_35BSWMRD6PXOHPF_7E19503B",
+                       "title":  "API Definitions",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: API Definitions.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  50,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_7W1SJK_LV9SBZJ673E_5EBC8B77",
+                       "title":  "Developer Support",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Developer Support.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  51,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_EAIOE6B7W8PV2DVAWL_FC415807",
+                       "title":  "Short-tail Keywords",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Short-tail Keywords.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  52,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_JYHFX6RETFGDULYNQD_D9E6AF71",
+                       "title":  "Docs Structure",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Docs Structure.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  53,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_HOW_4RE1NHXPLDOSHU_BAA9E735",
+                       "title":  "Platform Support",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Platform Support.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  54,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_2LAVQ7W11WMIUBSPRL_C5F5720E",
+                       "title":  "Long-Tail Keywords",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Long-Tail Keywords.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  55,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_2WJRA_PQ9CCG9WW994_AD571B30",
+                       "title":  "Comparative Posts",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Comparative Posts.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  56,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_K459CCDRCPMJCIMICC_CBACC693",
+                       "title":  "Tutorials",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Tutorials.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  57,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_UPHVII3Y4T_PKRMQFJ_3C315BCA",
+                       "title":  "Backlinking",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Backlinking.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  58,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_IA6TUXMOZR_Y3HLHQX_EE5C7E80",
+                       "title":  "SEO Keywords",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: SEO Keywords.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  59,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_IBL9S4DELII07W_FMR_30DCE73C",
+                       "title":  "Content SEO",
+                       "description":  "Тема roadmap по направлению «Technical Writer»: Content SEO.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  60,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_MJ1S5_SGD_TJ8Y0LLZ_BDF25B8C",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_5DNZE0OCIZB5QGWGI6_34FD8A63",
+                       "title":  "Top-funnel Content",
+                       "description":  "Тема roadmap по направлению «Technical Writer»: Top-funnel Content.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  61,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_IBL9S4DELII07W_FMR_30DCE73C",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_Q2KD70IKWBXAH3UQGE_4E557B1B",
+                       "title":  "Mid-funnel Content",
+                       "description":  "Тема roadmap по направлению «Technical Writer»: Mid-funnel Content.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  62,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_5DNZE0OCIZB5QGWGI6_34FD8A63",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_VO1UDIIRPXNZCPA3G3_21F6B207",
+                       "title":  "Bottom-funnel Content",
+                       "description":  "Тема roadmap по направлению «Technical Writer»: Bottom-funnel Content.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  63,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_Q2KD70IKWBXAH3UQGE_4E557B1B",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_WBDJGA2PGDMEXXHNIL_2635D2EA",
+                       "title":  "Pillar Content",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Pillar Content.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  64,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_5DNZE0OCIZB5QGWGI6_34FD8A63",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_XDX2QXMUKUOK2FCS3T_F0DE4315",
+                       "title":  "Generic Gated Content",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Generic Gated Content.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  65,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_Q2KD70IKWBXAH3UQGE_4E557B1B",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_QPOFQBGLY5TZLNQEYT_DF66609E",
+                       "title":  "Link Shorteners / Tracking",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Link Shorteners / Tracking.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  66,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_7S2LYMEBZSMBZSSMEI_C3737EF8",
+                       "title":  "Awareness Blog Posts",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Awareness Blog Posts.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  67,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_XA7YBWCBP2APS4U0C4_3585795E",
+                       "title":  "White-papers",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: White-papers.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  68,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_5ZQPRAVKQWAFVWXVOU_48A0FBF7",
+                       "title":  "eBook",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: eBook.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  69,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_HLHBGI3SVU3TMTNAHT_DF49402D",
+                       "title":  "Platform Tracking and Metrics",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Platform Tracking and Metrics.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  70,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_HONQSWY82YBT0YMEJC_B43572F8",
+                       "title":  "Research Reports",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Research Reports.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  71,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_GZXLC9RJY6EWKKC1K__629DFFB6",
+                       "title":  "Release Notes / Product Announcements",
+                       "description":  "Тема roadmap по направлению «Technical Writer»: Release Notes / Product Announcements.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  72,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_UIXN_CNPCLWAFLKJZA_DD1A157F",
+                       "title":  "Conversion Tracking",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Conversion Tracking.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  73,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_W44Q1IEJ7RKM55_9JA_5C7AD0F4",
+                       "title":  "Customer Case-Studies",
+                       "description":  "Тема roadmap по направлению «Technical Writer»: Customer Case-Studies.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  74,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_TAFENZA0MFHMPE5CEV_ACDEFB9E",
+                       "title":  "Technical Website Copy",
+                       "description":  "Тема roadmap по направлению «Technical Writer»: Technical Website Copy.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  75,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_XYFEYDJVJPGZ7QSDOS_5D6CEA3A",
+                       "title":  "Content Optimization",
+                       "description":  "Тема roadmap по направлению «Technical Writer»: Content Optimization.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  76,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_TBSBCITDLSWHVB82FE_2755A49F",
+                       "title":  "Content Analysis",
+                       "description":  "Тема roadmap по направлению «Technical Writer»: Content Analysis.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  77,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_XYFEYDJVJPGZ7QSDOS_5D6CEA3A",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_JGDRXG7MX1GGUNG9UY_76EB91D4",
+                       "title":  "Content Aging \u0026 Timelines",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Content Aging \u0026 Timelines.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  78,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_TBSBCITDLSWHVB82FE_2755A49F",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_PGRKFP1TRCIXHDDVLK_774B834B",
+                       "title":  "Frequently Asked Questions",
+                       "description":  "Тема roadmap по направлению «Technical Writer»: Frequently Asked Questions.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  79,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_AARJ887P_SFRNKAOOV_5E5FE5D9",
+                       "title":  "OpenGraph Data",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: OpenGraph Data.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  80,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_MRQBXSNRL1CQEKTUYS_1FD2DF87",
+                       "title":  "Content Distribution",
+                       "description":  "Тема roadmap по направлению «Technical Writer»: Content Distribution.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  81,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_TBSBCITDLSWHVB82FE_2755A49F",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_NIXIHMEOXRUR8NBJBF_684FB795",
+                       "title":  "Canonical Link",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Canonical Link.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  82,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_MRQBXSNRL1CQEKTUYS_1FD2DF87",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_M9_DQSQFEUKMHJHIFC_BEFDDE8A",
+                       "title":  "Content Distribution Channels",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Content Distribution Channels.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  83,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_MRQBXSNRL1CQEKTUYS_1FD2DF87",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_TECHNICAL_WRIT_CAGBASWDHOQPOIIIKP_2618B926",
+                       "title":  "Content Distribution Amplification Strategies",
+                       "description":  "Подтема roadmap по направлению «Technical Writer»: Content Distribution Amplification Strategies.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  84,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_TECHNICAL_WRIT_MRQBXSNRL1CQEKTUYS_1FD2DF87",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   }
+               ]
+}

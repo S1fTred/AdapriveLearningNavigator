@@ -1,0 +1,3104 @@
+﻿{
+    "source":  "roadmap.sh",
+    "sourceUrl":  "https://roadmap.sh/aws",
+    "roleCode":  "aws",
+    "roleName":  "AWS Roadmap",
+    "roleDescription":  "Дорожная карта по направлению «AWS Roadmap» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+    "roleStatus":  "ACTIVE",
+    "topics":  [
+                   {
+                       "code":  "RM_AWS_PY9NST2FDJ1_HOXEX__B63F6A25",
+                       "title":  "Introduction",
+                       "description":  "Тема roadmap по направлению «AWS Roadmap»: Introduction. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  1,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "AWS Documentation",
+                                             "url":  "https://docs.aws.amazon.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Introduction of AWS",
+                                             "url":  "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "How to Create an AWS Account",
+                                             "url":  "https://grapplingdev.com/tutorials/how-to-create-aws-account",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Grapplingdev",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "AWS Tutorial for Beginners",
+                                             "url":  "https://www.youtube.com/watch?v=zA8guDqfv40",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_74JXGFJ_1QMVNZ_QRP_3D5B57F7",
+                       "title":  "What is Cloud Computing?",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: What is Cloud Computing?. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  2,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_PY9NST2FDJ1_HOXEX__B63F6A25",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What is Cloud Computing - IBM",
+                                             "url":  "https://www.ibm.com/topics/cloud-computing",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Ibm",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Cloud Computing - AWS",
+                                             "url":  "https://aws.amazon.com/what-is-cloud-computing/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_I4IJY3T5GLGNZ0XQRI_6554ABA4",
+                       "title":  "IaaS vs PaaS vs SaaS",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: IaaS vs PaaS vs SaaS. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  3,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_PY9NST2FDJ1_HOXEX__B63F6A25",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "IaaS vs PaaS vs SaaS cloud service models",
+                                             "url":  "https://youtu.be/9CVBohl6w0Q?si=cEDnXpd1sGkpf0K2",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Types of Cloud Computing",
+                                             "url":  "https://aws.amazon.com/types-of-cloud-computing/?nc1=h_ls",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_3HATCMVLDBMUZ73UTX_34075ED5",
+                       "title":  "Public vs Private vs Hybrid Cloud",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Public vs Private vs Hybrid Cloud. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  4,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_PY9NST2FDJ1_HOXEX__B63F6A25",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Types of Cloud Computing",
+                                             "url":  "https://www.redhat.com/en/topics/cloud-computing/public-cloud-vs-private-cloud-and-hybrid-cloud",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Redhat",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Selecting the right cloud for workloads",
+                                             "url":  "https://docs.aws.amazon.com/whitepapers/latest/public-sector-cloud-transformation/selecting-the-right-cloud-for-workloads-differences-between-public-private-and-hybrid.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_DG1V9TV_WGSNLPFAAL_ED15C4FB",
+                       "title":  "Introduction to AWS",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Introduction to AWS. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  5,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_PY9NST2FDJ1_HOXEX__B63F6A25",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "AWS Documentation",
+                                             "url":  "https://docs.aws.amazon.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Introduction of AWS",
+                                             "url":  "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "AWS Tutorial for Beginners",
+                                             "url":  "https://www.youtube.com/watch?v=zA8guDqfv40",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Explore top posts about AWS",
+                                             "url":  "https://app.daily.dev/tags/aws?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_Z9R1BWUGALMNW0E7QQ_E0CA193A",
+                       "title":  "AWS Global Infrastructure",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: AWS Global Infrastructure. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  6,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "AWS Global Infrastructure",
+                                             "url":  "https://aws.amazon.com/about-aws/global-infrastructure/?p=ngi\u0026loc=0",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "AWS Regions / Availability Zones",
+                                             "url":  "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_0FLGTXZMXQKXO3C3SG_72CFAE22",
+                       "title":  "Shared Responsibility Model",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Shared Responsibility Model. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  7,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Shared Responsibility Model",
+                                             "url":  "https://aws.amazon.com/compliance/shared-responsibility-model/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_EKUC7VMKGVYFNBC2RV_4A0035F9",
+                       "title":  "Well Architected Framework",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Well Architected Framework. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  8,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "AWS Well-Architected",
+                                             "url":  "https://aws.amazon.com/architecture/well-architected",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_CL7VIS8H5L2VV6LQJ5_8EF8A39C",
+                       "title":  "EC2",
+                       "description":  "Тема roadmap по направлению «AWS Roadmap»: EC2. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  9,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "EC2 - User Guide",
+                                             "url":  "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Introduction to Amazon EC2",
+                                             "url":  "https://www.youtube.com/watch?v=eaicwmnSdCs",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_SV2AT8EI1RVJHVOKVY_63DCB030",
+                       "title":  "VPC",
+                       "description":  "Тема roadmap по направлению «AWS Roadmap»: VPC. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  10,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_CL7VIS8H5L2VV6LQJ5_8EF8A39C",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "VPC",
+                                             "url":  "https://aws.amazon.com/vpc/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "AWS VPC Beginner to Advanced uses",
+                                             "url":  "https://www.youtube.com/watch?v=g2JOHLHh4rI",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_VHD2ISW9WOSWJP8HH6_FBE132FE",
+                       "title":  "Instance Types",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Instance Types. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  11,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_CL7VIS8H5L2VV6LQJ5_8EF8A39C",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "AWS EC2 Instance Types",
+                                             "url":  "https://aws.amazon.com/ec2/instance-types",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_2HFBV2FHKDYBN_9ITS_8097501A",
+                       "title":  "CIDR Blocks",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: CIDR Blocks. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  12,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_SV2AT8EI1RVJHVOKVY_63DCB030",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "cidr.xyz: Interactive CIDR range visualizer",
+                                             "url":  "https://cidr.xyz/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Cidr",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "VPC - CIRD Blocks",
+                                             "url":  "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-cidr-blocks.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_U2BKJXIRAAK7TMRPTT_751A6995",
+                       "title":  "CPU Credits",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: CPU Credits. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  13,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Burstable Performance Instances and CPU Credits",
+                                             "url":  "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-credits-baseline-concepts.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Computing",
+                                             "url":  "https://app.daily.dev/tags/computing?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_Y64TE0U20KLLMYKJDF_4A4112C3",
+                       "title":  "Subnets",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Subnets. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  14,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Subnets",
+                                             "url":  "https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_A0U7CJWJ5ULAMIAM12_FC2AC313",
+                       "title":  "Storage / Volumes",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Storage / Volumes. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  15,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Elastic Block Store",
+                                             "url":  "https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_YMUURDWW8JG3NSIXCL_114A99E4",
+                       "title":  "Private Subnet",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Private Subnet. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  16,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Subnets",
+                                             "url":  "https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_WFT_FDDGN_DROQG0JO_FA5F9D8B",
+                       "title":  "Keypairs",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Keypairs. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  17,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "EC2 - Keypairs",
+                                             "url":  "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_ABCH1RATHMECYWHYK3_42BE22AD",
+                       "title":  "Public Subnet",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Public Subnet. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  18,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Subnets",
+                                             "url":  "https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_DCVKZSP25PJAIMG0TH_D688D247",
+                       "title":  "Elastic IP",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Elastic IP. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  19,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Elastic IP Addresses",
+                                             "url":  "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_FCDONWQUBHONCFFNF8_5661A709",
+                       "title":  "Route Tables",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Route Tables. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  20,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Route Tables",
+                                             "url":  "https://docs.aws.amazon.com/quicksight/latest/user/vpc-route-table.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_ZKJJGXZ89ZV2ATWCSA_FA084967",
+                       "title":  "User Data Scripts",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: User Data Scripts. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  21,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "User Data Scripts EC2",
+                                             "url":  "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_CD9GDBKCFDRTLRNJMY_F82A5890",
+                       "title":  "Security Groups",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Security Groups. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  22,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Security Groups",
+                                             "url":  "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_8V9T6Y6JC7QAQIGKBT_B3D6480C",
+                       "title":  "Purchasing Options",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Purchasing Options. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  23,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Purchasing Options",
+                                             "url":  "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-purchasing-options.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_LE8YOJZPZXH1XGD7XE_9F7BE6D3",
+                       "title":  "Internet Gateway",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Internet Gateway. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  24,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Internet Gateway",
+                                             "url":  "https://www.cisco.com/c/en/us/products/routers/what-is-a-network-gateway.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Cisco",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_6D_GS32JRCYVMVHR9P_2DBD7BE6",
+                       "title":  "NAT Gateway",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: NAT Gateway. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  25,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "NAT Gateway",
+                                             "url":  "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_KG7TLZJV_HJBHGOOBK_714CD2CC",
+                       "title":  "Sandbox / Sending Limits",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Sandbox / Sending Limits. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  26,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Sandbox / Sending Limits",
+                                             "url":  "https://docs.aws.amazon.com/ses/latest/dg/manage-sending-quotas.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_BTCVHXPG_LTAAFMGIB_4CDF5FAF",
+                       "title":  "Identity Verification",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Identity Verification. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  27,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Identity Verification",
+                                             "url":  "https://docs.aws.amazon.com/ses/latest/dg/Welcome.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_XMKEB4HEI2DUNMHASV_E395A5D4",
+                       "title":  "IAM",
+                       "description":  "Тема roadmap по направлению «AWS Roadmap»: IAM. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  28,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_SV2AT8EI1RVJHVOKVY_63DCB030",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "IAM - User Guide",
+                                             "url":  "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_EQAN3E_K9WNUFPQONW_7909FBB3",
+                       "title":  "Policies",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Policies. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  29,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_XMKEB4HEI2DUNMHASV_E395A5D4",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Permissions and Policies",
+                                             "url":  "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_access-management.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_CWGUORMBSTCSOH80SK_933B324D",
+                       "title":  "Identity-based",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Identity-based. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  30,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_EQAN3E_K9WNUFPQONW_7909FBB3",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Identity Based Policies",
+                                             "url":  "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_V_YMMLOK_DKZJ8MI5F_CEAD7F12",
+                       "title":  "Resource-based",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Resource-based. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  31,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_EQAN3E_K9WNUFPQONW_7909FBB3",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Identity Based Policies",
+                                             "url":  "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_ZWVD1VNM1KS6MDHZOI_BACE70D8",
+                       "title":  "DKIM Setup",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: DKIM Setup. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  32,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "DKIM",
+                                             "url":  "https://dkim.org/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Dkim",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "DKIM - Cloudflare",
+                                             "url":  "https://www.cloudflare.com/learning/email-security/dmarc-dkim-spf/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Cloudflare",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_NN2ZAWK6A31NWZA40J_E94BBA1E",
+                       "title":  "Users / User Groups",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Users / User Groups. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  33,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "IAM - AWS",
+                                             "url":  "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_0NWTFSSJG9SBDXQRKN_2BBCF54F",
+                       "title":  "Feedback Handling",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Feedback Handling. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  34,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Feedbacks",
+                                             "url":  "https://aws.amazon.com/ses/faqs",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_7NI202HX41MI5MS9LZ_BA1AED97",
+                       "title":  "Roles",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Roles. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  35,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Create Your First Role",
+                                             "url":  "https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started-roles.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_I7X1GFOX5AZYFSKEPW_A47F0CCF",
+                       "title":  "Instance Profiles",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Instance Profiles. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  36,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_7NI202HX41MI5MS9LZ_BA1AED97",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Instance Profiles",
+                                             "url":  "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_4SVXYQYMQJUZU39Z8O_8493A7D2",
+                       "title":  "Configuration Sets",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Configuration Sets. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  37,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "SES",
+                                             "url":  "https://docs.aws.amazon.com/ses/latest/dg/using-configuration-sets.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_0IMDO7G_5EL1ELVDXJ_B557D37F",
+                       "title":  "Assuming Roles",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Assuming Roles. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  38,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_7NI202HX41MI5MS9LZ_BA1AED97",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Assuming Roles",
+                                             "url":  "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage-assume.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_VO_PBFB7LXYL27NBBV_8BF6F2AD",
+                       "title":  "Sender Reputation",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Sender Reputation. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  39,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Sender Reputation",
+                                             "url":  "https://aws.amazon.com/blogs/messaging-and-targeting/the-four-pillars-of-email-reputation/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_PNX1DFKJS8WOWC4KGX_16E71536",
+                       "title":  "Dedicated IP",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Dedicated IP. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  40,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Dedicated IP",
+                                             "url":  "https://docs.aws.amazon.com/ses/latest/dg/dedicated-ip.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_DOAZG_NBJWIVDPKYEH_4A59A07A",
+                       "title":  "Auto-Scaling",
+                       "description":  "Тема roadmap по направлению «AWS Roadmap»: Auto-Scaling. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  41,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_XMKEB4HEI2DUNMHASV_E395A5D4",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "AWS Autoscaling",
+                                             "url":  "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_PN3XAYFQ_QGZCRCNSE_79148C9E",
+                       "title":  "S3",
+                       "description":  "Тема roadmap по направлению «AWS Roadmap»: S3. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  42,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_DOAZG_NBJWIVDPKYEH_4A59A07A",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "S3",
+                                             "url":  "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_BWXO6XVF1YZYWEM5OZ_DC20074B",
+                       "title":  "SES",
+                       "description":  "Тема roadmap по направлению «AWS Roadmap»: SES. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  43,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_PN3XAYFQ_QGZCRCNSE_79148C9E",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "SES",
+                                             "url":  "https://aws.amazon.com/ses/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_RTGJDJ5HQBJRPCJ7PR_29E04CCB",
+                       "title":  "Buckets / Objects",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Buckets / Objects. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  44,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_PN3XAYFQ_QGZCRCNSE_79148C9E",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Bucket / Object",
+                                             "url":  "https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_AFAGMWCLLSI81D2XIQ_B263015E",
+                       "title":  "AMIs",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: AMIs. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  45,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "AMIs",
+                                             "url":  "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_F89QL7CG9R_LTXBEG4_6BBCFD3F",
+                       "title":  "Route53",
+                       "description":  "Тема roadmap по направлению «AWS Roadmap»: Route53. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  46,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Route53",
+                                             "url":  "https://aws.amazon.com/route53/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_Z_O_2CGYSM6KW_CNJY_F8B735A7",
+                       "title":  "Hosted Zones",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Hosted Zones. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  47,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_F89QL7CG9R_LTXBEG4_6BBCFD3F",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Hosted Zones",
+                                             "url":  "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-working-with.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_IQHPG1LA7DZESXNX23_410D696E",
+                       "title":  "Routing Policies",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Routing Policies. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  48,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_F89QL7CG9R_LTXBEG4_6BBCFD3F",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Routing Policies",
+                                             "url":  "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_8I6ZPJKMC_PG_TDNMR_D0C19C35",
+                       "title":  "Bucket / Object Lifecycle",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Bucket / Object Lifecycle. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  49,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Bucket / Object Lifecycle",
+                                             "url":  "https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_K0GCK5_HDVP0_ZQSUC_4A68AF27",
+                       "title":  "Launch Templates",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Launch Templates. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  50,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Launch Templates",
+                                             "url":  "https://aws.amazon.com/about-aws/whats-new/2017/11/introducing-launch-templates-for-amazon-ec2-instances/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_LXG_ZNJ3XZPALDXUH2_D6FA14A4",
+                       "title":  "Health Checks",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Health Checks. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  51,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_F89QL7CG9R_LTXBEG4_6BBCFD3F",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Route53 Health Checks",
+                                             "url":  "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/welcome-health-checks.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_PJAAQAX4FABNKOBY5U_1BB9F95D",
+                       "title":  "Storage Types",
+                       "description":  "Тема roadmap по направлению «AWS Roadmap»: Storage Types. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  52,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Storage Types",
+                                             "url":  "https://aws.amazon.com/s3/storage-classes/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_GBKHVG7FVLCEGINKMW_B993243F",
+                       "title":  "Auto-Scaling Groups",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Auto-Scaling Groups. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  53,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Auto Scaling Groups",
+                                             "url":  "https://docs.aws.amazon.com/eks/latest/best-practices/cas.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_FRBAIW8QX8KAPZCPHM_EFE2EBD9",
+                       "title":  "Scaling Policies",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Scaling Policies. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  54,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "AWS Autoscaling Policy",
+                                             "url":  "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_LL5FPCTKPYQ_NIJD7W_F9B09C98",
+                       "title":  "Standard",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Standard. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  55,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "AWS S3 Standard",
+                                             "url":  "https://aws.amazon.com/s3/pricing/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_YAZPKMBMRXYNQF6ALX_11C7DD05",
+                       "title":  "Elastic Load Balancers",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Elastic Load Balancers. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  56,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Elastic Load Balancers",
+                                             "url":  "https://aws.amazon.com/elasticloadbalancing/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_JLKLNQ8WRZGKJAOOTN_844D4E57",
+                       "title":  "S3-IA",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: S3-IA. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  57,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "AWS S3-IA",
+                                             "url":  "https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_IIKKYP58ST2H1LM8GL_7CCA96DF",
+                       "title":  "Glacier",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Glacier. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  58,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "AWS Glacier",
+                                             "url":  "https://aws.amazon.com/s3/storage-classes/glacier/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_VAYXWJH10PFJGS8POK_CD00F6F3",
+                       "title":  "Cloudwatch",
+                       "description":  "Тема roadmap по направлению «AWS Roadmap»: Cloudwatch. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  59,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Amazon Cloudwatch",
+                                             "url":  "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_2VQPMVNK1QPMM_15RK_58E7E4EE",
+                       "title":  "Metrics",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Metrics. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  60,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_VAYXWJH10PFJGS8POK_CD00F6F3",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "CloudWatch Metrics",
+                                             "url":  "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/publishingMetrics.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_THQ6NRVDPCPEOMZGJQ_F3EE2091",
+                       "title":  "Events",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Events. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  61,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_VAYXWJH10PFJGS8POK_CD00F6F3",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Amazon Cloudwatch Events",
+                                             "url":  "https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/cloudwatch-events.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_OC6KIJWAXW0HLL4FWK_040E8DCC",
+                       "title":  "Logs",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Logs. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  62,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_VAYXWJH10PFJGS8POK_CD00F6F3",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Amazon Cloudwatch Logs",
+                                             "url":  "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_0C3GCGDSXOZJK2MNEW_7D609221",
+                       "title":  "Streams",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Streams. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  63,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Streams",
+                                             "url":  "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.Lambda.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_FKMF_2PQZ00UDWXHQT_9C461C83",
+                       "title":  "RDS",
+                       "description":  "Тема roadmap по направлению «AWS Roadmap»: RDS. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  64,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Amazon RDS",
+                                             "url":  "https://aws.amazon.com/rds/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_WGB0TEDNSE_BMV9KRX_06F059A8",
+                       "title":  "DynamoDB",
+                       "description":  "Тема roadmap по направлению «AWS Roadmap»: DynamoDB. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  65,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_FKMF_2PQZ00UDWXHQT_9C461C83",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Amazon DynamoDB",
+                                             "url":  "https://aws.amazon.com/dynamodb/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_DN_IULO9GYDQU8JLEE_A081E17F",
+                       "title":  "Tables / Items / Attributes",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Tables / Items / Attributes. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  66,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_WGB0TEDNSE_BMV9KRX_06F059A8",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Amazon DynamoDB",
+                                             "url":  "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_OWTWGAFZNTPJHQIYFI_01F2C33C",
+                       "title":  "Primary Keys / Secondary Indexes",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Primary Keys / Secondary Indexes. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  67,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_WGB0TEDNSE_BMV9KRX_06F059A8",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Primary Keys / Secondary Indexes",
+                                             "url":  "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SecondaryIndexes.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_AU1LV80XXNKQTD41QF_EC97E0BC",
+                       "title":  "Data Modeling",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Data Modeling. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  68,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_WGB0TEDNSE_BMV9KRX_06F059A8",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Data Modeling",
+                                             "url":  "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/data-modeling.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_KTXWW9J0ZNWZTWL7GK_A73704D6",
+                       "title":  "Capacity Settings",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Capacity Settings. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  69,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_WGB0TEDNSE_BMV9KRX_06F059A8",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Capacity Settings",
+                                             "url":  "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/capacity-mode.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_L9OQ3LIED8ZRPTUPPK_6991AB9E",
+                       "title":  "DB Instances",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: DB Instances. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  70,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "DB Instances - RDS",
+                                             "url":  "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.DBInstance.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_0CTJA_V6AENIMSR5H3_821BDC32",
+                       "title":  "Limits",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Limits. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  71,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_WGB0TEDNSE_BMV9KRX_06F059A8",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Limit Settings",
+                                             "url":  "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ServiceQuotas.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_NWVASQ_ACWXMOKZPDV_7ADEA102",
+                       "title":  "Backup / Restore",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Backup / Restore. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  72,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Backup \u0026 Restore",
+                                             "url":  "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Backup-and-Restore.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_XS057ESPVXXG2R_RDQ_1B7C5960",
+                       "title":  "Storage Types",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Storage Types. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  73,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "RDS Storage Types",
+                                             "url":  "https://aws.amazon.com/rds/instance-types/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_UO5HIYEPEGNJOOORTV_B8B22673",
+                       "title":  "General Purpose",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: General Purpose. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  74,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_XS057ESPVXXG2R_RDQ_1B7C5960",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "General Purpose Storage",
+                                             "url":  "https://aws.amazon.com/ebs/general-purpose/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_3L1JI4JTOJ277VPGON_E5663EAB",
+                       "title":  "Provisioned IOPS",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Provisioned IOPS. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  75,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_XS057ESPVXXG2R_RDQ_1B7C5960",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Provisioned IOPS",
+                                             "url":  "https://docs.aws.amazon.com/ebs/latest/userguide/provisioned-iops.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_YAUCWO1VOG_X483_4M_7122C291",
+                       "title":  "DynamoDB Local",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: DynamoDB Local. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  76,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_WGB0TEDNSE_BMV9KRX_06F059A8",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "DynamoDB Local",
+                                             "url":  "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_Y0CONCEFHYZ350F7PN_196EC02C",
+                       "title":  "Magnetic",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Magnetic. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  77,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_XS057ESPVXXG2R_RDQ_1B7C5960",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Magnetic Storage",
+                                             "url":  "https://aws.amazon.com/ebs/previous-generation/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_TBKC7THOIJATMWEL3Q_72E63E0A",
+                       "title":  "Backup / Restore",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Backup / Restore. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  78,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Backup \u0026 Restore - RDS",
+                                             "url":  "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_CommonTasks.BackupRestore.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_ZFGNU2FL0EUKIMZ9TV_D47AD313",
+                       "title":  "Cloudfront",
+                       "description":  "Тема roadmap по направлению «AWS Roadmap»: Cloudfront. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  79,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_WGB0TEDNSE_BMV9KRX_06F059A8",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Amazon Cloudfront",
+                                             "url":  "https://aws.amazon.com/cloudfront/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_FAK7GRKUNMOIDLD32O_CED30E00",
+                       "title":  "Distributions",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Distributions. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  80,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_ZFGNU2FL0EUKIMZ9TV_D47AD313",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Cloudfront Distribution",
+                                             "url":  "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-working-with.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_9TCYDSDMVKWWHOYE6U_EE7962C9",
+                       "title":  "ElastiCache",
+                       "description":  "Тема roadmap по направлению «AWS Roadmap»: ElastiCache. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  81,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_ZFGNU2FL0EUKIMZ9TV_D47AD313",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Amazon ElastiCache",
+                                             "url":  "https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/WhatIs.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_PYGS4NIQRLLKCBMFM4_7266E203",
+                       "title":  "Quotas",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Quotas. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  82,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_9TCYDSDMVKWWHOYE6U_EE7962C9",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Amazon ElastiCache Quotas",
+                                             "url":  "https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/quota-limits.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_C_WQ84YIU4AC7E0RZD_982F0AFA",
+                       "title":  "ECR",
+                       "description":  "Тема roadmap по направлению «AWS Roadmap»: ECR. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  83,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_9TCYDSDMVKWWHOYE6U_EE7962C9",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "AWS Elastic Container Registry (ECR)",
+                                             "url":  "https://aws.amazon.com/ecr/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Concepts of Amazon ECR",
+                                             "url":  "https://docs.aws.amazon.com/AmazonECR/latest/userguide/concept-and-components.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_DO9ZFUYNIA7L_FCH4D_A4D1E636",
+                       "title":  "Policies",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Policies. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  84,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_ZFGNU2FL0EUKIMZ9TV_D47AD313",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Cloudfront IAM",
+                                             "url":  "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/security-iam.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_HRXBAADGRTXEFWBBXE_67D38EC9",
+                       "title":  "Invalidations",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Invalidations. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  85,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_ZFGNU2FL0EUKIMZ9TV_D47AD313",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Invalidations Cloudfront",
+                                             "url":  "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_EQUT0WPDPRDGTGAZ7N_9C377B85",
+                       "title":  "ECS",
+                       "description":  "Тема roadmap по направлению «AWS Roadmap»: ECS. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  86,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_C_WQ84YIU4AC7E0RZD_982F0AFA",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Amazon Elastic Container Service (ECS)",
+                                             "url":  "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_KVHZEDZQV72AUJQISG_D41E53CB",
+                       "title":  "EKS",
+                       "description":  "Тема roadmap по направлению «AWS Roadmap»: EKS. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  87,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_EQUT0WPDPRDGTGAZ7N_9C377B85",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Amazon Elastic Kubernetes Service (EKS)",
+                                             "url":  "https://aws.amazon.com/eks/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Concepts of Amazon EKS",
+                                             "url":  "https://docs.aws.amazon.com/eks/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_CL93C0NGFQMSCVNFTN_BE66C446",
+                       "title":  "Layers",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Layers. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  88,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "AWS Lambda Layers",
+                                             "url":  "https://docs.aws.amazon.com/lambda/latest/dg/chapter-layers.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Create and Use Lambda Layers",
+                                             "url":  "https://www.youtube.com/watch?v=jyuZDkiHe2Q",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_PPHZNICIJAWVELMY5R_9E743055",
+                       "title":  "Clusters / ECS Container Agents",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Clusters / ECS Container Agents. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  89,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Clusters",
+                                             "url":  "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/clusters.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "ECS Container Agents",
+                                             "url":  "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-agent-config.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_741VSAPTXJLVULAZFG_70998DCB",
+                       "title":  "Lambda",
+                       "description":  "Тема roadmap по направлению «AWS Roadmap»: Lambda. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  90,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_KVHZEDZQV72AUJQISG_D41E53CB",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "AWS Lambda",
+                                             "url":  "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_SDCNEVKJYHFCREMSWY_1967B83B",
+                       "title":  "Creating / Invoking Functions",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Creating / Invoking Functions. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  91,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_741VSAPTXJLVULAZFG_70998DCB",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Create Your First Lambda Function",
+                                             "url":  "https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "First AWS Lambda Function",
+                                             "url":  "https://www.youtube.com/watch?v=e1tkFsFOBHA",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_KWJIAAKMILXN_JSO22_F2F8893E",
+                       "title":  "Custom Runtimes",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Custom Runtimes. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  92,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_741VSAPTXJLVULAZFG_70998DCB",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "AWS Lambda Runtimes",
+                                             "url":  "https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_75ZJUGOZDFOZPLJ32P_D97F7DE6",
+                       "title":  "Versioning / Aliases",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Versioning / Aliases. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  93,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_741VSAPTXJLVULAZFG_70998DCB",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "AWS Lambda Versioning",
+                                             "url":  "https://docs.aws.amazon.com/lambda/latest/dg/configuration-aliases.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_1LHXXPOF11YE3RFOQC_F1FA656B",
+                       "title":  "Tasks",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Tasks. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  94,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Tasks in ECS",
+                                             "url":  "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_ZSISBIDBGFLBBANP4I_A35FCD15",
+                       "title":  "Services",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Services. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  95,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Services in ECS",
+                                             "url":  "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_services.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_0CUFDEMWCWSHVDQKP8_3AA4BD7E",
+                       "title":  "Event Bridge / Scheduled Execution",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Event Bridge / Scheduled Execution. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  96,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_741VSAPTXJLVULAZFG_70998DCB",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Amazon EventBridge",
+                                             "url":  "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_1R2FL3OEOH0S9EE0OV_8D63B846",
+                       "title":  "Launch Config / Autoscaling Groups",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Launch Config / Autoscaling Groups. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  97,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Launch Config in EC2",
+                                             "url":  "https://docs.aws.amazon.com/autoscaling/ec2/userguide/launch-configurations.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_EUOV19JDSJ56CY7PQV_CB9F6E51",
+                       "title":  "Cold Start and Limitations",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Cold Start and Limitations. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  98,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_741VSAPTXJLVULAZFG_70998DCB",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "AWS Cold Start and Limitations",
+                                             "url":  "https://docs.aws.amazon.com/lambda/latest/dg/snapstart.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_OI8Y54RHFPFS_L1L9V_DAAB50B2",
+                       "title":  "Fargate",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Fargate. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  99,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Amazon Fargate",
+                                             "url":  "https://aws.amazon.com/fargate/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_T0DVEZPWX6RAIKWET0_18B9BFE6",
+                       "title":  "API Gateway",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: API Gateway. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  100,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "AWS API Gateway",
+                                             "url":  "https://aws.amazon.com/api-gateway/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AWS_5SF5NO94NFDKHY8UJO_2075F237",
+                       "title":  "Lambda@Edge",
+                       "description":  "Подтема roadmap по направлению «AWS Roadmap»: Lambda@Edge. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  101,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_AWS_741VSAPTXJLVULAZFG_70998DCB",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "AWS Lambda Edge",
+                                             "url":  "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-at-the-edge.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   }
+               ]
+}

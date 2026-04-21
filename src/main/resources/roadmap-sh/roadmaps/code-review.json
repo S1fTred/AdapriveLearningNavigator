@@ -1,0 +1,95 @@
+﻿{
+    "source":  "roadmap.sh",
+    "sourceUrl":  "https://roadmap.sh/code-review",
+    "roleCode":  "code-review",
+    "roleName":  "Code Review Pyramid",
+    "roleDescription":  "Дорожная карта по направлению «Code Review Pyramid» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+    "roleStatus":  "ACTIVE",
+    "topics":  [
+                   {
+                       "code":  "RM_CODE_REVIEW_LEGACY_CODE_STYLE_335FE8E8",
+                       "title":  "Code Style",
+                       "description":  "Тема roadmap по направлению «Code Review Pyramid»: Code Style.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  1,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_CODE_REVIEW_LEGACY_TESTS_EE816F36",
+                       "title":  "Tests",
+                       "description":  "Тема roadmap по направлению «Code Review Pyramid»: Tests.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  2,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_CODE_REVIEW_LEGACY_DOCUMENTATI_8FEE10AE",
+                       "title":  "Documentation",
+                       "description":  "Тема roadmap по направлению «Code Review Pyramid»: Documentation.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  3,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_CODE_REVIEW_LEGACY_IMPLEMENTAT_FE2DFDF8",
+                       "title":  "Implementation Semantics",
+                       "description":  "Тема roadmap по направлению «Code Review Pyramid»: Implementation Semantics.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  4,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_CODE_REVIEW_LEGACY_API_SEMANTI_A0E30D2B",
+                       "title":  "API Semantics",
+                       "description":  "Тема roadmap по направлению «Code Review Pyramid»: API Semantics.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  5,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   }
+               ]
+}

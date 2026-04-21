@@ -1,0 +1,2961 @@
+﻿{
+    "source":  "roadmap.sh",
+    "sourceUrl":  "https://roadmap.sh/design-system",
+    "roleCode":  "design-system",
+    "roleName":  "Design System",
+    "roleDescription":  "Дорожная карта по направлению «Design System» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+    "roleStatus":  "ACTIVE",
+    "topics":  [
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_UVNV1IJE8RV_FKDXHN_5B004CED",
+                       "title":  "Understand he Basics",
+                       "description":  "Тема roadmap по направлению «Design System»: Understand he Basics. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  1,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Design Systems 101",
+                                             "url":  "https://www.nngroup.com/articles/design-systems-101/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Nngroup",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "What is a Design System? Design Systems 101 for Designers",
+                                             "url":  "https://www.youtube.com/watch?v=wc5krC28ynQ",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "How to build your design system",
+                                             "url":  "https://www.figma.com/blog/design-systems-102-how-to-build-your-design-system/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Figma",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Everything you need to know about Design Systems",
+                                             "url":  "https://uxdesign.cc/everything-you-need-to-know-about-design-systems-54b109851969",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Uxdesign",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_4PRKKOZ5FY_OOW0O_B_AE6639CB",
+                       "title":  "What is a Design System?",
+                       "description":  "Подтема roadmap по направлению «Design System»: What is a Design System?. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  2,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DESIGN_SYSTEM_UVNV1IJE8RV_FKDXHN_5B004CED",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Everything you need to know about Design Systems",
+                                             "url":  "https://uxdesign.cc/everything-you-need-to-know-about-design-systems-54b109851969",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Uxdesign",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Design Systems 101",
+                                             "url":  "https://www.nngroup.com/articles/design-systems-101/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Nngroup",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "A comprehensive guide to design systems",
+                                             "url":  "https://www.invisionapp.com/inside-design/guide-to-design-systems/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Invisionapp",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_2RLMLN_YQQV_7DPX1Q_0A86C29A",
+                       "title":  "Need of Design System",
+                       "description":  "Подтема roadmap по направлению «Design System»: Need of Design System. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  3,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DESIGN_SYSTEM_UVNV1IJE8RV_FKDXHN_5B004CED",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Design Systems, when and how much?",
+                                             "url":  "https://www.youtube.com/watch?v=Hx02SaL_IH0",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Why You Need a Strong Design System (and How to Build One)",
+                                             "url":  "https://www.drawbackwards.com/blog/why-you-need-a-strong-design-system-and-how-to-build-one",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Drawbackwards",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "On Design Systems: Sell The Output, Not The Workflow",
+                                             "url":  "https://www.smashingmagazine.com/2016/05/design-systems-responsive-design-sell-output-not-workflow/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Smashingmagazine",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_J5MU0V491QRM_MR1W3_571625AE",
+                       "title":  "Design System vs Component Library",
+                       "description":  "Подтема roadmap по направлению «Design System»: Design System vs Component Library. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  4,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DESIGN_SYSTEM_UVNV1IJE8RV_FKDXHN_5B004CED",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "A Design System: So Much More Than A Component Library",
+                                             "url":  "https://www.architech.ca/a-design-system-so-much-more-than-a-component-library",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Architech",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Design System vs UI Component Library vs Brand Style Guide",
+                                             "url":  "https://prototype.net/blog/design-system-component-library-style-guide",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Prototype",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Design Systems vs Pattern Libraries vs Style Guides vs Component Libraries",
+                                             "url":  "https://www.uxpin.com/studio/blog/design-systems-vs-pattern-libraries-vs-style-guides-whats-difference/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Uxpin",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_6R9XBWLBTHMJRHVIG2_E763FC4A",
+                       "title":  "What is Atomic Design",
+                       "description":  "Подтема roadmap по направлению «Design System»: What is Atomic Design. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  5,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DESIGN_SYSTEM_UVNV1IJE8RV_FKDXHN_5B004CED",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Atomic Design Principles \u0026 Methodology 101",
+                                             "url":  "https://xd.adobe.com/ideas/process/ui-design/atomic-design-principles-methodology-101/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Adobe",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Atomic Design Methodology",
+                                             "url":  "https://atomicdesign.bradfrost.com/chapter-2/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Bradfrost",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Atomic Design and UI Components: Theory to Practice",
+                                             "url":  "https://blog.bitsrc.io/atomic-design-and-ui-components-theory-to-practice-f200db337c24",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Bitsrc",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_VJ4WYTRZY7J10MO8S3_58013BDF",
+                       "title":  "Component Library",
+                       "description":  "Подтема roadmap по направлению «Design System»: Component Library. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  6,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Pattern Lab",
+                                             "url":  "https://patternlab.io/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Patternlab",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Fractal",
+                                             "url":  "https://fractal.build/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Fractal",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Storybook",
+                                             "url":  "https://storybook.js.org/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Js",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_3_TFOPQISX6DSP4YC2_2163F197",
+                       "title":  "Stakeholders Involved in Building",
+                       "description":  "Подтема roadmap по направлению «Design System»: Stakeholders Involved in Building. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  7,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DESIGN_SYSTEM_UVNV1IJE8RV_FKDXHN_5B004CED",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Designing the Design System",
+                                             "url":  "https://www.designbetter.co/design-systems-handbook/designing-design-system",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Designbetter",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_HAUTVRBOAHGRUNO_M__F707415A",
+                       "title":  "Design System Examples",
+                       "description":  "Подтема roadmap по направлению «Design System»: Design System Examples. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  8,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DESIGN_SYSTEM_UVNV1IJE8RV_FKDXHN_5B004CED",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Material Design (Google)",
+                                             "url":  "https://material.io/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Material",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Carbon Design System (IBM)",
+                                             "url":  "https://carbondesignsystem.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Carbondesignsystem",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Atlassian Design System",
+                                             "url":  "https://atlassian.design/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Atlassian",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Polaris Design System (Shopify)",
+                                             "url":  "https://polaris.shopify.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Shopify",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Gov.uk Design System",
+                                             "url":  "https://design-system.service.gov.uk/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Gov",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "Collection of Open Source Design Systems",
+                                             "url":  "https://github.com/alexpate/awesome-design-systems",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Github",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_KIFE3JE2IMMNU1O3_T_E77177AC",
+                       "title":  "Governance",
+                       "description":  "Подтема roadmap по направлению «Design System»: Governance. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  9,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Governance is a design system’s friend",
+                                             "url":  "https://zeroheight.com/blog/governance-is-a-design-systems-friend",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Zeroheight",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Design System Governance – Scale Your Design",
+                                             "url":  "https://www.uxpin.com/studio/blog/design-system-governance/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Uxpin",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Governance by design: Building successful design systems",
+                                             "url":  "https://rangle.io/blog/governance-by-design-building-successful-design-systems/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Rangle",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Team Models for Scaling a Design System",
+                                             "url":  "https://medium.com/eightshapes-llc/team-models-for-scaling-a-design-system-2cf9d03be6a0",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Medium",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_4DZOZMKNHPEDGLQLY9_F05F2868",
+                       "title":  "Pilot",
+                       "description":  "Подтема roadmap по направлению «Design System»: Pilot. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  10,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Design Systems: Pilots \u0026 Scorecards",
+                                             "url":  "https://danmall.com/posts/design-systems-pilots-scorecards/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Danmall",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "How to run a design system pilot",
+                                             "url":  "https://university.obvious.in/product-design/design-system/how-to-run-a-design-system-pilot",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Obvious",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_JETJVUS_ECZJIQASLQ_CF520EF4",
+                       "title":  "Token",
+                       "description":  "Подтема roadmap по направлению «Design System»: Token. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  11,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What Are Design Tokens?",
+                                             "url":  "https://xd.adobe.com/ideas/principles/design-systems/what-are-design-tokens/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Adobe",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_NKM_GXBT5Y7DDWKVKP_FB82DFCC",
+                       "title":  "Performing a Visual Audit",
+                       "description":  "Подтема roadmap по направлению «Design System»: Performing a Visual Audit.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  12,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_LUOBV2N7EH3JDNWWD5_F6E27242",
+                       "title":  "UI Kit",
+                       "description":  "Подтема roadmap по направлению «Design System»: UI Kit. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  13,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Design System vs UI Kit",
+                                             "url":  "https://uigstudio.com/insights/design-system-vs-ui-kit",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Uigstudio",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Your sketch library is not a design system",
+                                             "url":  "http://bradfrost.com/blog/post/your-sketch-library-is-not-a-design-system/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Bradfrost",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_DE0TKVMFTDMKGZC5X7_EB350EB1",
+                       "title":  "Terminology",
+                       "description":  "Тема roadmap по направлению «Design System»: Terminology. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  14,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DESIGN_SYSTEM_4DZOZMKNHPEDGLQLY9_F05F2868",
+                                           "relationType":  "RECOMMENDED"
+                                       },
+                                       {
+                                           "topicCode":  "RM_DESIGN_SYSTEM_JETJVUS_ECZJIQASLQ_CF520EF4",
+                                           "relationType":  "RECOMMENDED"
+                                       },
+                                       {
+                                           "topicCode":  "RM_DESIGN_SYSTEM_KIFE3JE2IMMNU1O3_T_E77177AC",
+                                           "relationType":  "RECOMMENDED"
+                                       },
+                                       {
+                                           "topicCode":  "RM_DESIGN_SYSTEM_LUOBV2N7EH3JDNWWD5_F6E27242",
+                                           "relationType":  "RECOMMENDED"
+                                       },
+                                       {
+                                           "topicCode":  "RM_DESIGN_SYSTEM_UVNV1IJE8RV_FKDXHN_5B004CED",
+                                           "relationType":  "REQUIRED"
+                                       },
+                                       {
+                                           "topicCode":  "RM_DESIGN_SYSTEM_VJ4WYTRZY7J10MO8S3_58013BDF",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Design Systems Glossary",
+                                             "url":  "https://web.archive.org/web/20220620075140/https://superfriendly.com/design-systems/glossary/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Archive",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_97CPJYKBKNAQ1P_PQZ_1457FDBE",
+                       "title":  "Component",
+                       "description":  "Подтема roadmap по направлению «Design System»: Component.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  15,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DESIGN_SYSTEM_DE0TKVMFTDMKGZC5X7_EB350EB1",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_FPUUXRLCHNA3K00KCY_938F0477",
+                       "title":  "Design Language",
+                       "description":  "Подтема roadmap по направлению «Design System»: Design Language. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  16,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DESIGN_SYSTEM_DE0TKVMFTDMKGZC5X7_EB350EB1",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What is a Design Language.. really?",
+                                             "url":  "https://medium.com/thinking-design/what-is-a-design-language-really-cd1ef87be793",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Medium",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "How to Develop a Design Language",
+                                             "url":  "https://xd.adobe.com/ideas/principles/web-design/how-to-develop-design-language/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Adobe",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "What Actually Constitutes Design Language?",
+                                             "url":  "https://www.uxpin.com/studio/blog/design-language/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Uxpin",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Visual Design Language: The Building Blocks Of Design",
+                                             "url":  "https://www.smashingmagazine.com/2020/03/visual-design-language-building-blocks/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Smashingmagazine",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_MLBZJ2YVBR9QUOTHKD_94DDB799",
+                       "title":  "Guidelines",
+                       "description":  "Подтема roadmap по направлению «Design System»: Guidelines. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  17,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DESIGN_SYSTEM_DE0TKVMFTDMKGZC5X7_EB350EB1",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Design Guidelines",
+                                             "url":  "https://www.interaction-design.org/literature/topics/design-guidelines",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Interaction-design",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_7XPT8RUX3HJSWBXH_F_22062DC7",
+                       "title":  "Pattern",
+                       "description":  "Подтема roadmap по направлению «Design System»: Pattern.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  18,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DESIGN_SYSTEM_DE0TKVMFTDMKGZC5X7_EB350EB1",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_DUAOMARPABID4DRQDK_162E682A",
+                       "title":  "Making a Design System",
+                       "description":  "Тема roadmap по направлению «Design System»: Making a Design System. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  19,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DESIGN_SYSTEM_DE0TKVMFTDMKGZC5X7_EB350EB1",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Introducing Design Systems Into Chaos - Diana Mounter, GitHub",
+                                             "url":  "https://www.youtube.com/watch?v=FZSi1bK-BRM",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Design Systems, when and how much?",
+                                             "url":  "https://www.youtube.com/watch?v=Hx02SaL_IH0",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Design Systems: Step-by-Step Guide to Creating Your Own",
+                                             "url":  "https://www.uxpin.com/create-design-system-guide/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Uxpin",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Does My Organization Need a Design System?",
+                                             "url":  "https://www.method.com/insights/does-my-organization-need-a-design-system/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Method",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Create a Design System with Figma - Full Course",
+                                             "url":  "https://www.youtube.com/watch?v=RYDiDpW2VkM",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_9I3FTPNQLMCZMIIUQI_B15FAF7F",
+                       "title":  "Making it from Scratch",
+                       "description":  "Подтема roadmap по направлению «Design System»: Making it from Scratch. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  20,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DESIGN_SYSTEM_DUAOMARPABID4DRQDK_162E682A",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Create a Design System with Figma - Full Course",
+                                             "url":  "https://www.youtube.com/watch?v=RYDiDpW2VkM",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_Z5GBY7BJLBKWBYBXXT_4EB9DB9A",
+                       "title":  "Making it from Existing Design",
+                       "description":  "Подтема roadmap по направлению «Design System»: Making it from Existing Design. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  21,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DESIGN_SYSTEM_DUAOMARPABID4DRQDK_162E682A",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Create a Design System with Figma - Full Course",
+                                             "url":  "https://www.youtube.com/watch?v=RYDiDpW2VkM",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_CNSDOZ3GIAPENBWHUZ_3350419D",
+                       "title":  "Identify Existing Design Process",
+                       "description":  "Подтема roadmap по направлению «Design System»: Identify Existing Design Process.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  22,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_8EWHVW2ZDIXMGHAXL0_E5340175",
+                       "title":  "Existing Design Analysis",
+                       "description":  "Тема roadmap по направлению «Design System»: Existing Design Analysis.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  23,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DESIGN_SYSTEM_DUAOMARPABID4DRQDK_162E682A",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_ILRDANPFGHCZQ_FBLB_305E43A2",
+                       "title":  "A/B Tests \u0026 Experiments",
+                       "description":  "Подтема roadmap по направлению «Design System»: A/B Tests \u0026 Experiments.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  24,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DESIGN_SYSTEM_8EWHVW2ZDIXMGHAXL0_E5340175",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_AAK3227IDDJMH0MQUQ_6E6A6F9B",
+                       "title":  "Icons",
+                       "description":  "Подтема roadmap по направлению «Design System»: Icons.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  25,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_78RSPHSWPL00ABKWKX_C9821D39",
+                       "title":  "Sizing",
+                       "description":  "Подтема roadmap по направлению «Design System»: Sizing.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  26,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_MRRAPOYFWKHSEE2PZ9_77C1A4EF",
+                       "title":  "Visual Forms",
+                       "description":  "Подтема roadmap по направлению «Design System»: Visual Forms.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  27,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_PRJ9WEPNFFX_6EYB50_508A4E3A",
+                       "title":  "Regional Requirements",
+                       "description":  "Подтема roadmap по направлению «Design System»: Regional Requirements.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  28,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DESIGN_SYSTEM_8EWHVW2ZDIXMGHAXL0_E5340175",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_2PRUERYBSJTYJO2QUJ_28E94BEA",
+                       "title":  "Color",
+                       "description":  "Подтема roadmap по направлению «Design System»: Color.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  29,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_GTLYBPJJDZWG0QGA7E_AEB5301B",
+                       "title":  "Spaces",
+                       "description":  "Подтема roadmap по направлению «Design System»: Spaces.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  30,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_ODQ8ZRHC2RSC8PN_AP_D27C3502",
+                       "title":  "Typography",
+                       "description":  "Подтема roadmap по направлению «Design System»: Typography.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  31,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_B4GJLPL_PPDMJSICHT_6EA47B0A",
+                       "title":  "Documentation",
+                       "description":  "Подтема roadmap по направлению «Design System»: Documentation.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  32,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DESIGN_SYSTEM_8EWHVW2ZDIXMGHAXL0_E5340175",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_DIMUXWI73OGBOGJNLI_AEB02402",
+                       "title":  "Avatar",
+                       "description":  "Подтема roadmap по направлению «Design System»: Avatar.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  33,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_5DUOBZUEMZBSCYTZTH_BE9E3A3C",
+                       "title":  "Banners",
+                       "description":  "Подтема roadmap по направлению «Design System»: Banners.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  34,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_UG4AIGJBFZPUHIA4Y1_FAA368EB",
+                       "title":  "Badges",
+                       "description":  "Подтема roadmap по направлению «Design System»: Badges.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  35,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_TOYNBBB5TBYIJZKZUK_9390884C",
+                       "title":  "Writing Guidelines",
+                       "description":  "Подтема roadmap по направлению «Design System»: Writing Guidelines.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  36,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_YLLAUGBGUHBTEDKZNK_15DCAD47",
+                       "title":  "Cards",
+                       "description":  "Подтема roadmap по направлению «Design System»: Cards.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  37,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_5LCMZBNNS206T5ETGA_064AF3E5",
+                       "title":  "Forms",
+                       "description":  "Подтема roadmap по направлению «Design System»: Forms.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  38,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_S6OQVHGWK4CWYX_JEN_F56F7E03",
+                       "title":  "Buttons",
+                       "description":  "Подтема roadmap по направлению «Design System»: Buttons.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  39,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_FNLVIGSMYXJ2UVCCJM_2C51E5A1",
+                       "title":  "Tone of Voice",
+                       "description":  "Подтема roadmap по направлению «Design System»: Tone of Voice.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  40,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_JNANZ9MFMRXQRJW2WA_9FC87025",
+                       "title":  "Creating Design Language",
+                       "description":  "Тема roadmap по направлению «Design System»: Creating Design Language. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  41,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What is a Design Language.. really?",
+                                             "url":  "https://medium.com/thinking-design/what-is-a-design-language-really-cd1ef87be793",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Medium",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "How to Develop a Design Language",
+                                             "url":  "https://xd.adobe.com/ideas/principles/web-design/how-to-develop-design-language/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Adobe",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "What Actually Constitutes Design Language?",
+                                             "url":  "https://www.uxpin.com/studio/blog/design-language/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Uxpin",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Visual Design Language: The Building Blocks Of Design",
+                                             "url":  "https://www.smashingmagazine.com/2020/03/visual-design-language-building-blocks/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Smashingmagazine",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_HZVWLVZAIJ6TGPTCNH_5C8E21E3",
+                       "title":  "Dropdowns",
+                       "description":  "Подтема roadmap по направлению «Design System»: Dropdowns.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  42,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_IA1GYZEPJOTVTRO961_2C524750",
+                       "title":  "...other",
+                       "description":  "Подтема roadmap по направлению «Design System»: ...other.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  43,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_ZSPU1SSUTE34PVMYEP_0C2B28CC",
+                       "title":  "Terminology",
+                       "description":  "Подтема roadmap по направлению «Design System»: Terminology.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  44,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_1RJRMVJF_3CLM7E5OM_83566075",
+                       "title":  "Design Principles",
+                       "description":  "Подтема roadmap по направлению «Design System»: Design Principles.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  45,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_CMFSRTVZVDZZJ0TQEU_13F2EB5B",
+                       "title":  "Vision",
+                       "description":  "Подтема roadmap по направлению «Design System»: Vision. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  9,
+                       "status":  "ACTIVE",
+                       "priority":  46,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Creating Brand Vision",
+                                             "url":  "https://www.interaction-design.org/literature/article/branding-in-ux",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Interaction-design",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Vision-Driven Design Systems",
+                                             "url":  "https://bradfrost.com/blog/post/the-design-system-ecosystem/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Bradfrost",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Brand Strategy for Design",
+                                             "url":  "https://alistapart.com/article/creating-a-brand-identity/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Alistapart",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Purpose-Driven Design",
+                                             "url":  "https://designsystem.digital.gov/design-tokens/brand/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Digital",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Brand Strategy",
+                                             "url":  "https://app.daily.dev/tags/branding?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_FW0CEY2SB0HDBIF7QA_62049DC2",
+                       "title":  "Accessibility",
+                       "description":  "Подтема roadmap по направлению «Design System»: Accessibility.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  47,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_WQBMHC7Q3QDKYF_PX5_7898254F",
+                       "title":  "Units",
+                       "description":  "Подтема roadmap по направлению «Design System»: Units.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  48,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_PV19GRR2SFKNVNFM0M_2D5E34C6",
+                       "title":  "Functional Colors",
+                       "description":  "Подтема roadmap по направлению «Design System»: Functional Colors.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  49,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_8F2V_RM7SOORTTVNO5_70A5D2B5",
+                       "title":  "Grid",
+                       "description":  "Подтема roadmap по направлению «Design System»: Grid.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  50,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_WN8CYLBZ_HYL9_IXCU_14D017B7",
+                       "title":  "Monochrome Version",
+                       "description":  "Подтема roadmap по направлению «Design System»: Monochrome Version.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  51,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_A53CL6ZKVYXXG25II2_62CA73CD",
+                       "title":  "Defining Design Tokens",
+                       "description":  "Тема roadmap по направлению «Design System»: Defining Design Tokens. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  52,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DESIGN_SYSTEM_JNANZ9MFMRXQRJW2WA_9FC87025",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What Are Design Tokens?",
+                                             "url":  "https://xd.adobe.com/ideas/principles/design-systems/what-are-design-tokens/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Adobe",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_KXUNQPYDDWB73IWRCP_3BD87F9C",
+                       "title":  "Dark Mode",
+                       "description":  "Подтема roadmap по направлению «Design System»: Dark Mode.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  53,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_DJWNJQ9Y_HX1YNW01W_9C768932",
+                       "title":  "Breakpoints",
+                       "description":  "Подтема roadmap по направлению «Design System»: Breakpoints.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  54,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_FA3JSZGNHKRGNHVTVR_558B845D",
+                       "title":  "Small Use Guidance",
+                       "description":  "Подтема roadmap по направлению «Design System»: Small Use Guidance. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  55,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Everything You Need to Know About Logo Usage Guidelines",
+                                             "url":  "https://www.tailorbrands.com/blog/logo-usage-guidelines",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Tailorbrands",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_XDFXS5CGJSUTEPRZI2_34288270",
+                       "title":  "Guidelines",
+                       "description":  "Подтема roadmap по направлению «Design System»: Guidelines.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  56,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_DXAYOWTANYSLIPNEBS_599877BF",
+                       "title":  "Spacking",
+                       "description":  "Подтема roadmap по направлению «Design System»: Spacking.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  57,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_7N61402XWHIGJ7DPHG_9A45A12A",
+                       "title":  "Placement Guidance",
+                       "description":  "Подтема roadmap по направлению «Design System»: Placement Guidance.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  58,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_RMSFWKQL9YXXXGKZUS_83525784",
+                       "title":  "Usage Guidance",
+                       "description":  "Подтема roadmap по направлению «Design System»: Usage Guidance. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  9,
+                       "status":  "ACTIVE",
+                       "priority":  59,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Logo Usage Best Practices",
+                                             "url":  "https://99designs.com/blog/tips/logo-usage-guidelines/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "99designs",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Brand Guidelines Development",
+                                             "url":  "https://designsystem.digital.gov/design-tokens/logo/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Digital",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Trademark and Logo Legal Guidelines",
+                                             "url":  "https://www.uspto.gov/trademarks-getting-started/trademark-basics",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Uspto",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Brand Identity Protection",
+                                             "url":  "https://www.brandfolder.com/blog/brand-guidelines",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Brandfolder",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Brand Management",
+                                             "url":  "https://app.daily.dev/tags/branding?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_6LPUMRM_SQVRVEWPDF_19EDCF6B",
+                       "title":  "File Formats",
+                       "description":  "Подтема roadmap по направлению «Design System»: File Formats. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  60,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What is a Vector Logo and Why You Need It",
+                                             "url":  "https://www.renderforest.com/blog/vector-logo",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Renderforest",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_8YVCTGYRHR3VCPUJXM_19388089",
+                       "title":  "Responsiveness",
+                       "description":  "Подтема roadmap по направлению «Design System»: Responsiveness.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  61,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_ZL7MVLLZJGOBRUYTLI_0F2A793C",
+                       "title":  "Grid Relation",
+                       "description":  "Подтема roadmap по направлению «Design System»: Grid Relation.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  62,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_JAB5LO0MGHTY1CU61C_D341AB8D",
+                       "title":  "Guidelines",
+                       "description":  "Подтема roadmap по направлению «Design System»: Guidelines.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  63,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_L2NHDDSV5RGR_BW0I3_01433A5F",
+                       "title":  "Readability",
+                       "description":  "Подтема roadmap по направлению «Design System»: Readability.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  64,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_WFL9AXJAPCVVI8XWDU_8D43931B",
+                       "title":  "Performance",
+                       "description":  "Подтема roadmap по направлению «Design System»: Performance.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  65,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_ALTOGJNFXARZG0PI_E_1E51B331",
+                       "title":  "Accessibility",
+                       "description":  "Подтема roadmap по направлению «Design System»: Accessibility. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  10,
+                       "status":  "ACTIVE",
+                       "priority":  66,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Introduction to Web Accessibility",
+                                             "url":  "https://www.w3.org/WAI/fundamentals/accessibility-intro/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "W3",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "What is Accessibility? by Mozilla",
+                                             "url":  "https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "MDN Web Docs",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Accessibility Principles",
+                                             "url":  "https://www.w3.org/WAI/fundamentals/accessibility-principles/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "W3",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "WebAIMs Website (Web Accessibility In Mind)",
+                                             "url":  "https://webaim.org/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Webaim",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "WAVE Web Accessibility Evaluation Tool",
+                                             "url":  "https://wave.webaim.org/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Webaim",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Accessibility",
+                                             "url":  "https://app.daily.dev/tags/accessibility?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_PLW8MHNOTYYNBTL0ZU_AF475F24",
+                       "title":  "User Onboarding",
+                       "description":  "Подтема roadmap по направлению «Design System»: User Onboarding. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  67,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What is user onboarding?",
+                                             "url":  "https://www.youtube.com/watch?v=PatIqbGEQe4",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_DHRNZWQODG0P7D_27__4B1D537F",
+                       "title":  "Accessibility",
+                       "description":  "Подтема roadmap по направлению «Design System»: Accessibility.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  68,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_SPK1I0XUHPNEWYI1II_DE7244FF",
+                       "title":  "Style",
+                       "description":  "Подтема roadmap по направлению «Design System»: Style.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  69,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_WICLAEEYIORGLMXFCK_A73A4264",
+                       "title":  "Naming",
+                       "description":  "Подтема roadmap по направлению «Design System»: Naming.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  70,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_BD_DJUBAA6L2EK1R9I_A60204F8",
+                       "title":  "Microcopy Guidelines",
+                       "description":  "Подтема roadmap по направлению «Design System»: Microcopy Guidelines.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  71,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_6HMJ_TEQ563JSHQAAL_3E24BD66",
+                       "title":  "Grid Relation",
+                       "description":  "Подтема roadmap по направлению «Design System»: Grid Relation.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  72,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_W3LS85EFERSCAXB2XP_BE39C8A9",
+                       "title":  "Sizes",
+                       "description":  "Подтема roadmap по направлению «Design System»: Sizes.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  73,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_HDF2L4F1F8UUGPVAF7_FFF1DC60",
+                       "title":  "Keywords",
+                       "description":  "Подтема roadmap по направлению «Design System»: Keywords.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  74,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_Y0KXHVRCNGHDAO_38O_E50D98DC",
+                       "title":  "Reserved Icons",
+                       "description":  "Подтема roadmap по направлению «Design System»: Reserved Icons.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  75,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_ETXHPC3AQIMCUAX6WF_E70C4121",
+                       "title":  "Guidelines",
+                       "description":  "Подтема roadmap по направлению «Design System»: Guidelines.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  76,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_H3TZY1YBKZLYUK6W7K_6572FD32",
+                       "title":  "Avatar",
+                       "description":  "Подтема roadmap по направлению «Design System»: Avatar.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  77,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_HJIJJG4KNR8LYKTFQD_C8EEAAB1",
+                       "title":  "Input Text",
+                       "description":  "Подтема roadmap по направлению «Design System»: Input Text.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  78,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_HW_LQING6OTSWDXCH3_E1B8FB1A",
+                       "title":  "Creating Core Components",
+                       "description":  "Тема roadmap по направлению «Design System»: Creating Core Components.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  79,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_CCPT9MPFBC3EWJM1TF_816F4042",
+                       "title":  "Design Editor",
+                       "description":  "Подтема roadmap по направлению «Design System»: Design Editor.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  80,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_KKQRIGDXWAJBX9CJLP_246F09BB",
+                       "title":  "Banner",
+                       "description":  "Подтема roadmap по направлению «Design System»: Banner.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  81,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_F5_SXUNNGEDGF6BKA5_DECF7873",
+                       "title":  "Input Checkbox",
+                       "description":  "Подтема roadmap по направлению «Design System»: Input Checkbox.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  82,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_UO_2O0JWH_DXRMAB9W_535187C6",
+                       "title":  "Plugins",
+                       "description":  "Подтема roadmap по направлению «Design System»: Plugins.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  83,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_LNSXQI8SE_5KZSD_IM_C73566C0",
+                       "title":  "Badge",
+                       "description":  "Подтема roadmap по направлению «Design System»: Badge.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  84,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_RN_PLAA5FKCQL03WSL_5C0A7DF6",
+                       "title":  "Input Radio",
+                       "description":  "Подтема roadmap по направлению «Design System»: Input Radio.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  85,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_CYY6NBQIC2PU5ATWMO_D4E31545",
+                       "title":  "Version Control",
+                       "description":  "Подтема roadmap по направлению «Design System»: Version Control.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  86,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_LWIHKF4Q5UAWJLD84K_F9AF6EBF",
+                       "title":  "Button",
+                       "description":  "Подтема roadmap по направлению «Design System»: Button.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  87,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_NISEAJULDTQ0KSUYXM_4EFD7D0B",
+                       "title":  "Input Switch",
+                       "description":  "Подтема roadmap по направлению «Design System»: Input Switch.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  88,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_JGGRR5NZOE6FY3ZRZJ_93D8DB85",
+                       "title":  "Creating Core Components",
+                       "description":  "Тема roadmap по направлению «Design System»: Creating Core Components.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  89,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_TICNCRPMPGZUHN7JDA_0CC30028",
+                       "title":  "Contribution Guidelines",
+                       "description":  "Подтема roadmap по направлению «Design System»: Contribution Guidelines.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  90,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_RZ7D1C9SWIQLRTBDJL_F5684E2D",
+                       "title":  "Card",
+                       "description":  "Подтема roadmap по направлению «Design System»: Card.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  91,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_2T7TIM3EW3H1U5IJR2_D5172B6F",
+                       "title":  "List",
+                       "description":  "Подтема roadmap по направлению «Design System»: List.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  92,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_YWEXFJZUZK99DXJZLG_72606FA1",
+                       "title":  "Carousel",
+                       "description":  "Подтема roadmap по направлению «Design System»: Carousel.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  93,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_JHNHOMILU6MQCWVIPE_673C79C4",
+                       "title":  "Loading Indicator",
+                       "description":  "Подтема roadmap по направлению «Design System»: Loading Indicator.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  94,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_VELIPZBGR22_MH_8T2_A4BB575C",
+                       "title":  "Component Catalog",
+                       "description":  "Подтема roadmap по направлению «Design System»: Component Catalog.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  95,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_MTBSVKOYJDLD6DIDOL_12A25A10",
+                       "title":  "Dropdown",
+                       "description":  "Подтема roadmap по направлению «Design System»: Dropdown.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  96,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_IJNITKG25VNO30RB4C_9EB3D402",
+                       "title":  "Modal",
+                       "description":  "Подтема roadmap по направлению «Design System»: Modal.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  97,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_K1LWK_B6CLIEYQWC4R_1266E64F",
+                       "title":  "Documentation",
+                       "description":  "Подтема roadmap по направлению «Design System»: Documentation.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  98,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_BZY_IXRNOTCT_WNNRT_F0868F93",
+                       "title":  "Icon",
+                       "description":  "Подтема roadmap по направлению «Design System»: Icon.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  99,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_1VYR1EMYZHJA_ZNXNF_76AF91A8",
+                       "title":  "Tabs",
+                       "description":  "Подтема roadmap по направлению «Design System»: Tabs.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  100,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_ZEQFAUH9ZMKTLWWGX5_754C9837",
+                       "title":  "Code Style",
+                       "description":  "Подтема roadmap по направлению «Design System»: Code Style.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  101,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_N1NUKMQGTPOBZPJHCV_F323F9A6",
+                       "title":  "Select",
+                       "description":  "Подтема roadmap по направлению «Design System»: Select.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  102,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_T7UL6A3LJ5_IICDAG6_D36347F7",
+                       "title":  "Toast",
+                       "description":  "Подтема roadmap по направлению «Design System»: Toast.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  103,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_Y8NO8I0MLTA91J4Q2T_4CC395C0",
+                       "title":  "Unit Testing",
+                       "description":  "Подтема roadmap по направлению «Design System»: Unit Testing.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  104,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_IUSI39FXCU2RBMXIOS_61802A50",
+                       "title":  "Textarea",
+                       "description":  "Подтема roadmap по направлению «Design System»: Textarea.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  105,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_2OCAZSK_Y2Y2OHUI46_5B9852A8",
+                       "title":  "Tooltip",
+                       "description":  "Подтема roadmap по направлению «Design System»: Tooltip.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  106,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_YHP8EHYCWWRBLKYPYO_478D892E",
+                       "title":  "Accessibility Testing",
+                       "description":  "Подтема roadmap по направлению «Design System»: Accessibility Testing.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  107,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_ZLT1YJQINC8OSPQUCC_C9312C6D",
+                       "title":  "Semantic Versioning",
+                       "description":  "Подтема roadmap по направлению «Design System»: Semantic Versioning.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  108,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_JFXWZKN29UGZ17FYHH_44FE952C",
+                       "title":  "Project Management",
+                       "description":  "Тема roadmap по направлению «Design System»: Project Management.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  109,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_CFWCQNACJGL_EGRHFH_35C686CB",
+                       "title":  "Release Strategy",
+                       "description":  "Подтема roadmap по направлению «Design System»: Release Strategy.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  110,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_GMRX5600JQFDPLRIQ__2AD44DD9",
+                       "title":  "Roadmap",
+                       "description":  "Подтема roadmap по направлению «Design System»: Roadmap.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  111,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_RUPXXVWMD9VSLS7RBZ_7C7A5B4B",
+                       "title":  "Milestones",
+                       "description":  "Подтема roadmap по направлению «Design System»: Milestones.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  112,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_I39J0FK4DAPENFIMBH_FF99EFA2",
+                       "title":  "Ticketing",
+                       "description":  "Подтема roadmap по направлению «Design System»: Ticketing.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  113,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_IVYE8OH1IWBUBXMZRX_8FDA9992",
+                       "title":  "Commit Guidelines",
+                       "description":  "Подтема roadmap по направлению «Design System»: Commit Guidelines.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  114,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_WD9ZHZMQV7WBLN_9V4_A4D9B4EE",
+                       "title":  "PR Templates",
+                       "description":  "Подтема roadmap по направлению «Design System»: PR Templates.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  115,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_G8DOKM_4HP7WPF3QJ8_B17C7D5D",
+                       "title":  "Component Analytics",
+                       "description":  "Подтема roadmap по направлению «Design System»: Component Analytics.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  116,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_XYQDMDPJWKSHTL86NT_FC32AA39",
+                       "title":  "Logging",
+                       "description":  "Подтема roadmap по направлению «Design System»: Logging.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  117,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_XJ1LAAHIZVBZOLRVC1_316561C2",
+                       "title":  "Contribution Guidelines",
+                       "description":  "Подтема roadmap по направлению «Design System»: Contribution Guidelines.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  118,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_QIJGYYWL4NAJX_MGZA_9B122A6E",
+                       "title":  "Tooling Analytics",
+                       "description":  "Подтема roadmap по направлению «Design System»: Tooling Analytics.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  119,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_5ZNNOKPF9G9TDIMWB6_ACAB1FB6",
+                       "title":  "Service and Health Metrics",
+                       "description":  "Подтема roadmap по направлению «Design System»: Service and Health Metrics.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  120,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_EG8RANXUINTCQWFEMH_FD1CCD19",
+                       "title":  "Community Meetings",
+                       "description":  "Подтема roadmap по направлению «Design System»: Community Meetings.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  121,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_LWRRKRHWXFMDKGBFW5_693849E6",
+                       "title":  "Communication Channel",
+                       "description":  "Подтема roadmap по направлению «Design System»: Communication Channel.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  122,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_YWOPOO9IW3VLZYXLL2_0974E6B9",
+                       "title":  "Open Hours",
+                       "description":  "Подтема roadmap по направлению «Design System»: Open Hours.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  123,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DESIGN_SYSTEM_CPAEOTBXN8BCSU9RQT_5757F4AB",
+                       "title":  "FAQs",
+                       "description":  "Подтема roadmap по направлению «Design System»: FAQs.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  124,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   }
+               ]
+}

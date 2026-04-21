@@ -1,0 +1,2063 @@
+﻿{
+    "source":  "roadmap.sh",
+    "sourceUrl":  "https://roadmap.sh/ux-design",
+    "roleCode":  "ux-design",
+    "roleName":  "UX Design",
+    "roleDescription":  "Дорожная карта по направлению «UX Design» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+    "roleStatus":  "ACTIVE",
+    "topics":  [
+                   {
+                       "code":  "RM_UX_DESIGN_LIUKYF7UGHUPK25XMP_7E5DBD2F",
+                       "title":  "Human Decision Making",
+                       "description":  "Тема roadmap по направлению «UX Design»: Human Decision Making. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  1,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Types of Cognitive Bias",
+                                             "url":  "https://www.youtube.com/watch?v=wEwGBIr_RIw",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "List of Cognitive Biases",
+                                             "url":  "https://thedecisionlab.com/biases",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Thedecisionlab",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_6FFY5WO_XHKIDJJ5YC_AEEAEB71",
+                       "title":  "Nudge Theory",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Nudge Theory. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  2,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_UX_DESIGN_LIUKYF7UGHUPK25XMP_7E5DBD2F",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Nudge Theory Explained in less than 10 minutes",
+                                             "url":  "https://youtu.be/fA5eGIMZTRQ",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Nudge Theory overview with examples",
+                                             "url":  "https://www.businessballs.com/improving-workplace-performance/nudge-theory/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Businessballs",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_2NLGBLELBYWZX2U2RK_A6E1312C",
+                       "title":  "BJ Fogg\u0027s Behavior Model",
+                       "description":  "Подтема roadmap по направлению «UX Design»: BJ Fogg\u0027s Behavior Model. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  3,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_UX_DESIGN_LIUKYF7UGHUPK25XMP_7E5DBD2F",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Meaning of BJ Fogg\u0027s Behavior Model",
+                                             "url":  "https://behaviormodel.org/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Behaviormodel",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "The Fogg Behavior Model",
+                                             "url":  "https://blog.logrocket.com/ux-design/fogg-behavior-model/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Logrocket",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_K22GVF9DLT0IKC80YZ_7B8D55F4",
+                       "title":  "Persuasive Technology",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Persuasive Technology.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  4,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_UX_DESIGN_LIUKYF7UGHUPK25XMP_7E5DBD2F",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_KCG4IPNEJZA6DI0UQT_E0CAB7A6",
+                       "title":  "CREATE Action Funnel",
+                       "description":  "Подтема roadmap по направлению «UX Design»: CREATE Action Funnel. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  5,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_UX_DESIGN_LIUKYF7UGHUPK25XMP_7E5DBD2F",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Behavioral Science Crash Course: Steve Wendel\u0027s CREATE Action Funnel",
+                                             "url":  "https://www.prodify.group/blog/behavioral-science-crash-course-steve-wendels-create-action-funnel",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Prodify",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_D553_NVELAB5GDXTOK_3CCE7FE1",
+                       "title":  "Behavioral Science",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Behavioral Science. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  6,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_UX_DESIGN_LIUKYF7UGHUPK25XMP_7E5DBD2F",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Behavioral Science",
+                                             "url":  "https://uxplanet.org/how-to-use-behavioral-science-to-influence-user-behavior-in-design-581dc0805f7c",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Uxplanet",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Future of Behavioral Science",
+                                             "url":  "https://behavioralscientist.org/what-is-the-future-of-design-and-behavioral-science-a-conversation-with-cliff-kuang/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Behavioralscientist",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_0DF110GZCDW5WBAE1E_08545FFF",
+                       "title":  "Spectrum of Thinking Interventions",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Spectrum of Thinking Interventions.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  7,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_UX_DESIGN_LIUKYF7UGHUPK25XMP_7E5DBD2F",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_LV6GJ0WLMFHJ7PHRGQ_0F5F7473",
+                       "title":  "Behavioral Economics",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Behavioral Economics. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  8,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_UX_DESIGN_LIUKYF7UGHUPK25XMP_7E5DBD2F",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Behavioral Economics",
+                                             "url":  "https://www.interaction-design.org/literature/article/behavioural-economics-ideas-that-you-can-use-in-ux-design",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Interaction-design",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_KWA8CVOCP1PKOM2N7O_204AF8C1",
+                       "title":  "Dual Process Theory",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Dual Process Theory.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  9,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_UX_DESIGN_LIUKYF7UGHUPK25XMP_7E5DBD2F",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_ZYCBEUQZVLVJLAKNH5_9D983256",
+                       "title":  "Behavior Design",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Behavior Design. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  10,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_UX_DESIGN_LIUKYF7UGHUPK25XMP_7E5DBD2F",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Behavior Design",
+                                             "url":  "https://www.interaction-design.org/literature/topics/behavioral-design",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Interaction-design",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_W_QWN80ZCF1TSVROEY_BCDE8D84",
+                       "title":  "Behavior Change Strategies",
+                       "description":  "Тема roadmap по направлению «UX Design»: Behavior Change Strategies. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  11,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_UX_DESIGN_LIUKYF7UGHUPK25XMP_7E5DBD2F",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Behavioral Change Strategies",
+                                             "url":  "https://blog.logrocket.com/ux-design/starter-guide-behavioral-design/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Logrocket",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_LRBC8VYJPSR65LHDUU_755DA3E1",
+                       "title":  "BJ Fogg\u0027s Behavior Grid",
+                       "description":  "Подтема roadmap по направлению «UX Design»: BJ Fogg\u0027s Behavior Grid. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  12,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_UX_DESIGN_W_QWN80ZCF1TSVROEY_BCDE8D84",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "BJ Fogg’s Behavior Grid",
+                                             "url":  "https://behaviordesign.stanford.edu/resources/fogg-behavior-grid",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Stanford",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "The Fogg Behavior Model",
+                                             "url":  "https://blog.logrocket.com/ux-design/fogg-behavior-model/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Logrocket",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_ZVXJPPQZVUFIXTGVRR_25676CB9",
+                       "title":  "Cheating",
+                       "description":  "Тема roadmap по направлению «UX Design»: Cheating.",
+                       "level":  "INTERMEDIATE",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  13,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_UX_DESIGN_W_QWN80ZCF1TSVROEY_BCDE8D84",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_IPKCXQF_PKXILLWMII_1FD0DDA4",
+                       "title":  "Defaulting",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Defaulting. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  14,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_UX_DESIGN_ZVXJPPQZVUFIXTGVRR_25676CB9",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "The Power of Defaults",
+                                             "url":  "https://www.nngroup.com/articles/the-power-of-defaults/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Nngroup",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_IX5FLL_DAINWLXVF2D_FE457E3F",
+                       "title":  "Making it Incidental",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Making it Incidental.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  15,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_UX_DESIGN_ZVXJPPQZVUFIXTGVRR_25676CB9",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_S2TGQNDJVMCJTAXNCM_8843920E",
+                       "title":  "Help user Avoiding the Cue",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Help user Avoiding the Cue.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  16,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_ZUFRLRNKMOJ4E2T_VW_63A49414",
+                       "title":  "Automate the Act of Repetition",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Automate the Act of Repetition. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  17,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_UX_DESIGN_ZVXJPPQZVUFIXTGVRR_25676CB9",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Repeating Elements",
+                                             "url":  "https://helpx.adobe.com/au/xd/help/create-repeating-elements.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Adobe",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_Y6CQGQTVOT_LRVTNPJ_A3988694",
+                       "title":  "Make or Change Habits",
+                       "description":  "Тема roadmap по направлению «UX Design»: Make or Change Habits.",
+                       "level":  "INTERMEDIATE",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  18,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_C_55TCIBZC6_KYK627_F08CC470",
+                       "title":  "Replace the Routine",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Replace the Routine.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  19,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_PTZROVPPTEVU06SZWM_1B2C960E",
+                       "title":  "Support Conscious Action",
+                       "description":  "Тема roadmap по направлению «UX Design»: Support Conscious Action.",
+                       "level":  "INTERMEDIATE",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  20,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_7J8F9DN1JGAVLHLVVR_2831D256",
+                       "title":  "Target Outcome",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Target Outcome.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  21,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_0MBRHG_VDRDZQQ0JWT_4B438404",
+                       "title":  "Use Consciousness to Interfere",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Use Consciousness to Interfere.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  22,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_SLXJOYL_LHPEF8S9V3_8A196654",
+                       "title":  "Educate \u0026 Encourage User",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Educate \u0026 Encourage User.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  23,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_UX_DESIGN_PTZROVPPTEVU06SZWM_1B2C960E",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_FRN2MAR0_EHSD3ZMWX_453594E4",
+                       "title":  "Target Actor",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Target Actor.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  24,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_D1DXGCHMMF2EFPL5YK_61C2F76C",
+                       "title":  "Mindfulness to Avoid Acting on the Cue",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Mindfulness to Avoid Acting on the Cue.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  25,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_E9N9AN1PGXDPGKLCOH_4345FD06",
+                       "title":  "Help User think about their Action",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Help User think about their Action.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  26,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_AXN_N15U_Z4OAGCLNO_FD057C44",
+                       "title":  "Target Action",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Target Action.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  27,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_B0GG7Z5JL9M9SRB89K_6D6BD04A",
+                       "title":  "Crowd Out Old Habit with New Behavior",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Crowd Out Old Habit with New Behavior.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  28,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_S2KJ5KNV9UCNSP0QKI_DE5A0625",
+                       "title":  "Create User Personas",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Create User Personas. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  9,
+                       "status":  "ACTIVE",
+                       "priority":  29,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Personas – A Simple Introduction",
+                                             "url":  "https://www.interaction-design.org/literature/article/personas-why-and-how-you-should-use-them",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Interaction-design",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Personas Make Users Memorable for Product Team Members",
+                                             "url":  "https://www.nngroup.com/articles/persona/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Nngroup",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Personas in UX",
+                                             "url":  "https://youtube.com/playlist?list=PLJOFJ3Ok_ids-oEPCltCVtmdDOXiyttpq\u0026si=v7ZaI65bQNTfXKHJ",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_PLLTCRHKHD1KYAMSRK_279C98A0",
+                       "title":  "Nir Eyal\u0027s Hook Model",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Nir Eyal\u0027s Hook Model.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  30,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_Q1WX2CP4K4_O1T1VGL_ADF061E8",
+                       "title":  "Understanding the Product",
+                       "description":  "Тема roadmap по направлению «UX Design»: Understanding the Product.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  31,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_UX_DESIGN_W_QWN80ZCF1TSVROEY_BCDE8D84",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_X1AROUI8FGE_LRPKAB_9E6A2A2E",
+                       "title":  "Cue Routine Reward Model",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Cue Routine Reward Model.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  32,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_R6D07CN0MG4YXSIRSR_219E6B29",
+                       "title":  "Conceptual Design",
+                       "description":  "Тема roadmap по направлению «UX Design»: Conceptual Design. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  33,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_UX_DESIGN_Q1WX2CP4K4_O1T1VGL_ADF061E8",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "How to apply design thinking in UX",
+                                             "url":  "https://medium.com/digital-experience-design/how-to-apply-a-design-thinking-hcd-ux-or-any-creative-process-from-scratch-b8786efbf812",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Medium",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_TKBKPVHLWQEONREANR_167C6542",
+                       "title":  "User Stories",
+                       "description":  "Подтема roadmap по направлению «UX Design»: User Stories.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  34,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_SGO9HHJU49_PY0N0AS_3CBC938E",
+                       "title":  "Business Model Canvas",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Business Model Canvas. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  35,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Business Model Canvas",
+                                             "url":  "https://www.interaction-design.org/literature/topics/business-model-canvas",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Interaction-design",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_SC8JJ_77CRKQUXIJYK_9C7AF31A",
+                       "title":  "Lean Canvas",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Lean Canvas.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  36,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_QNJ_LXFYTR8LBNMUY2_7C2AD52D",
+                       "title":  "In general, keep it short and simple",
+                       "description":  "Подтема roadmap по направлению «UX Design»: In general, keep it short and simple.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  37,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_T46S6PIYD8MOJYZDDT_4F8FE5E9",
+                       "title":  "Figma",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Figma. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  38,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Figma Website",
+                                             "url":  "https://figma.com",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Figma",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Free Figma UX Design UI Essentials Course",
+                                             "url":  "https://youtu.be/kbZejnPXyLM?si=W9oY5j_6AcSuHfq2",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_VAU2C45C7DGORYDHR2_0260051E",
+                       "title":  "Make it easy to understand and complete",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Make it easy to understand and complete.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  39,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_GI06_DBGYJLQXQ5TYI_9C2D53EA",
+                       "title":  "Business Model Inspirator",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Business Model Inspirator. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  40,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Business Model Inspirator",
+                                             "url":  "https://businessdesign.org/knowledge-base/business-model-inspirator",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Businessdesign",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_HI_URBHPQT0M3AEBQJ_D761ECDE",
+                       "title":  "Adobe XD",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Adobe XD. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  9,
+                       "status":  "ACTIVE",
+                       "priority":  41,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Adobe XD Platform",
+                                             "url":  "https://adobexdplatform.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Adobexdplatform",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Getting Started with Adobe XD",
+                                             "url":  "https://helpx.adobe.com/xd/get-started.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Adobe",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Learn Adobe XD",
+                                             "url":  "https://www.adobe.com/ph_en/products/xd/learn/get-started-xd-design.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Adobe",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_8YEPYM3CQTOVY0DJQL_746F4EA1",
+                       "title":  "Make progress visible to user",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Make progress visible to user.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  42,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_HUZ5N2MRHZQPYJWX2H_DD951E20",
+                       "title":  "Competitor Analysis",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Competitor Analysis.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  43,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_NB7QL1GVXQEUCSGNIW_E65D0ED2",
+                       "title":  "Sketch",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Sketch. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  44,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Sketch Website",
+                                             "url":  "https://www.sketch.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Sketch",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_D3LVYUCDHD6_KU8GHX_4840487B",
+                       "title":  "Make progress meaningful to reward user",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Make progress meaningful to reward user.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  45,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_F9GPGTRWXQ08JNO5PP_F81E12F3",
+                       "title":  "Five Forces Model",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Five Forces Model.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  46,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_FZKARG6KPXPEMYW1VD_75AC4549",
+                       "title":  "Balsamiq",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Balsamiq. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  47,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Balsamiq Website",
+                                             "url":  "https://balsamiq.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Balsamiq",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_94V3WUTZ0NMM_0VB1P_9AD3C4EA",
+                       "title":  "Make successful completion clearly visible",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Make successful completion clearly visible.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  48,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_XIEN1OGFY1BMCOB0PK_32F44B09",
+                       "title":  "SWOT Analysis",
+                       "description":  "Подтема roadmap по направлению «UX Design»: SWOT Analysis.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  49,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_0KEQAJHFBJFMGA1BKZ_370C8F80",
+                       "title":  "Customer Experience Map by Mel Edwards",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Customer Experience Map by Mel Edwards.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  50,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_JCP5_JYVH9U7HXP379_6A1B2A14",
+                       "title":  "Simple Flowchart",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Simple Flowchart.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  51,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_6YCBFWNTQ_KXFMMGTJ_D1652037",
+                       "title":  "Prototyping",
+                       "description":  "Тема roadmap по направлению «UX Design»: Prototyping.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  52,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_90_M5QABC1VZ1NSXVY_3B47E2CC",
+                       "title":  "Good Layout Rules",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Good Layout Rules. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  53,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_UX_DESIGN_6YCBFWNTQ_KXFMMGTJ_D1652037",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "User Interface Design Guidelines: 10 Rules of Thumb",
+                                             "url":  "https://www.interaction-design.org/literature/article/user-interface-design-guidelines-10-rules-of-thumb",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Interaction-design",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_NCCTOZ_0FUVHMJYTPD_ABB6AF67",
+                       "title":  "Event-driven Process Chain Model (EPC)",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Event-driven Process Chain Model (EPC).",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  54,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_U4ZEFUCGHR9XJSYF_0_089BC292",
+                       "title":  "Call to Action",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Call to Action.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  55,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_MZWD_XSR7SO2RGFPBK_F44D086F",
+                       "title":  "How-to-Tips",
+                       "description":  "Подтема roadmap по направлению «UX Design»: How-to-Tips.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  56,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_JY5JTSEYNE8IJPAD27_671891A0",
+                       "title":  "Business Process Model \u0026 Notation (BPMN)",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Business Process Model \u0026 Notation (BPMN). К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  57,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Business Process Model and Notation (BPMN)",
+                                             "url":  "https://aguayo.co/en/blog-aguayp-user-experience/business-process-model-notation-for-ux/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Aguayo",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "How to Design BPNM",
+                                             "url":  "https://devlight.io/blog/how-to-design-business-process-model-and-notation-for-a-mobile-app/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Devlight",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_G4AP91NGZFKV_54EUW_8BB85B09",
+                       "title":  "Status Reports",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Status Reports.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  58,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_WFWIDROZ5EHPGO9UUU_D05C1549",
+                       "title":  "Reminders \u0026 Planning Prompts",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Reminders \u0026 Planning Prompts.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  59,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_VUF72I5HYALR_8UL9E_47238A68",
+                       "title":  "UX Best Practices",
+                       "description":  "Тема roadmap по направлению «UX Design»: UX Best Practices.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  60,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_UX_DESIGN_6YCBFWNTQ_KXFMMGTJ_D1652037",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_FXJPJDIP_JBC0_0Z4P_00711258",
+                       "title":  "Tell User what the Action is and ask for it",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Tell User what the Action is and ask for it.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  61,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_JSBIW0C6AQ1LHA33Y7_911E3D7E",
+                       "title":  "Behavior Change Games",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Behavior Change Games. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  62,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Behavioral Change Games",
+                                             "url":  "https://medium.com/@jgruver/designing-for-behavioral-change-a-new-approach-in-ux-ui-design-59f9fb0086d1",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Medium",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_IJQH_EV2FDWG0QDQ9C_C2A5D5A9",
+                       "title":  "Clear the Page of Distractions",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Clear the Page of Distractions.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  63,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_9VA3ZWMIKG6NIEQGDV_A4C982E7",
+                       "title":  "Decision-Making Support",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Decision-Making Support.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  64,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_HDJ3HAYAM7K1UJMP_T_6EB01CE9",
+                       "title":  "Make it Clear, Where to Act",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Make it Clear, Where to Act.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  65,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_FBIUR1TEIDNDE6GLS4_898C320C",
+                       "title":  "Gamification",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Gamification.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  66,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_G_BCAN_JNJJFG0_FMO_1D056475",
+                       "title":  "Goal Trackers",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Goal Trackers.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  67,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_ESWGZYUJWV7_XGJQ6K_B16FEA38",
+                       "title":  "Reminders",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Reminders.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  68,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_FOKTBRUTUMD2SZDHLW_D52BA085",
+                       "title":  "Social Sharing",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Social Sharing.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  69,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_AHHFFBKMD_FEROLEBR_0FD5C94E",
+                       "title":  "Make UI Professional and Beautiful",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Make UI Professional and Beautiful.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  70,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_F0N2JKXPCUP0JW_H4C_B39757ED",
+                       "title":  "Tutorials",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Tutorials.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  71,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_EYZF67RNHOKSFH44HN_F15AC3EA",
+                       "title":  "Planners",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Planners.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  72,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_C5DKHIIGBZXTBPFGDS_1B317AE9",
+                       "title":  "Deploy Strong Authority on Subject",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Deploy Strong Authority on Subject.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  73,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_M30EPAW_QA36M9RV9N_728A0554",
+                       "title":  "Be Authentic and Personal",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Be Authentic and Personal. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  74,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Rethinking Personas",
+                                             "url":  "https://uxdesign.cc/rethinking-personas-empathy-and-inclusion-in-ux-design-37145d2ee807",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Uxdesign",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_EMBY09NSM_J6UNRET5_60191D76",
+                       "title":  "Gather Lessons, Prioritize \u0026 Integrate",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Gather Lessons, Prioritize \u0026 Integrate.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  75,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_C1NWA0PIVOO73GANOO_177B2A63",
+                       "title":  "Deploy Social Proof",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Deploy Social Proof.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  76,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_GGBAZWFF2OVOQKUO3D_A73A4619",
+                       "title":  "Measuring the Impact",
+                       "description":  "Тема roadmap по направлению «UX Design»: Measuring the Impact.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  77,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_UX_DESIGN_VUF72I5HYALR_8UL9E_47238A68",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_JBQTUIHGL3EYCTZG85_B199BB4A",
+                       "title":  "Prime User-Relevant Associations",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Prime User-Relevant Associations.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  78,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_IQNVKHWHVBIS4YN1ZX_5285899F",
+                       "title":  "Avoid Direct Payments",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Avoid Direct Payments. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  79,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Payment UX Best Practices",
+                                             "url":  "https://gocardless.com/guides/posts/payment-ux-best-practices/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Gocardless",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_T2NZP1VV1JUCPSC5DI_709EE16A",
+                       "title":  "Multivariate Testing",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Multivariate Testing.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  80,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_8WXLU4KA2IU9CJA1UA_D5AAFBC1",
+                       "title":  "Avoid Choice Overload",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Avoid Choice Overload. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  81,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Choice of Overload",
+                                             "url":  "https://medium.com/@evamiller091/the-impact-of-choice-overload-in-ux-f5defb6cee5d",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Medium",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_Q4XBZ9F3YYZI2F_AZ5_3EEB9646",
+                       "title":  "Incremental A/B Testing",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Incremental A/B Testing.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  82,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_4AZPOKXUN32CKGCHRM_1B7A508F",
+                       "title":  "Avoid Cognitive Overhead",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Avoid Cognitive Overhead. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  83,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Cognitive Overload",
+                                             "url":  "https://blog.logrocket.com/ux-design/cognitive-overload/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Logrocket",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Reducing Cognitive Overload",
+                                             "url":  "https://uxdesign.cc/reducing-cognitive-overload-designing-for-human-cognition-350f07cff9c4",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Uxdesign",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_ZXINWCEH4LLYVXEKLK_F845BE0B",
+                       "title":  "Leverage Loss-Aversion",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Leverage Loss-Aversion.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  84,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_IKHU0O0Z6GCUNCGV_A_E0AF1B62",
+                       "title":  "Use Peer Comparisons",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Use Peer Comparisons.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  85,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_6MVM8SRISYTT99AJ_V_E9EE3BC6",
+                       "title":  "Use Competition",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Use Competition.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  86,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_S9RJR8PC_LN8BXG0SU_02D6722F",
+                       "title":  "Frame Text to Avoid Temporal Myopia",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Frame Text to Avoid Temporal Myopia.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  87,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_EMDGIWAKNBZ5LXR1RW_8AD4A227",
+                       "title":  "Elicit Implementation Intentions",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Elicit Implementation Intentions.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  88,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_KR_UBUFDELVEIPJQT0_6A362E40",
+                       "title":  "Remind of Prior Commitment to Act",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Remind of Prior Commitment to Act.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  89,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_WE5GT1VMGBF3CSA61V_1CF3211E",
+                       "title":  "Default Everything",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Default Everything.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  90,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_DOL2Z6ULPMZRD5N3MR_AABAC586",
+                       "title":  "Make Commitment to Friends",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Make Commitment to Friends.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  91,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_GF7ET64XCQKYBRP9HW_DA3E6F4E",
+                       "title":  "Lessen the Burden of Action / Info",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Lessen the Burden of Action / Info.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  92,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_1PZONOWAFLAEX8EWBH_517A3DC4",
+                       "title":  "Make Reward Scarce",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Make Reward Scarce.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  93,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_UX_DESIGN_GQONZMILQHMIXUEE4J_1B4B7FC1",
+                       "title":  "Deploy Peer Comparisons",
+                       "description":  "Подтема roadmap по направлению «UX Design»: Deploy Peer Comparisons.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  94,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   }
+               ]
+}

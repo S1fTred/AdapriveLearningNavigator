@@ -1,0 +1,2438 @@
+﻿{
+    "source":  "roadmap.sh",
+    "sourceUrl":  "https://roadmap.sh/spring-boot",
+    "roleCode":  "spring-boot",
+    "roleName":  "Spring Boot Developer",
+    "roleDescription":  "Дорожная карта по направлению «Spring Boot Developer» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+    "roleStatus":  "ACTIVE",
+    "topics":  [
+                   {
+                       "code":  "RM_SPRING_BOOT_JY2HEDVZUM6ASCXLI1_3ED711C8",
+                       "title":  "Introduction",
+                       "description":  "Тема roadmap по направлению «Spring Boot Developer»: Introduction. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  1,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Spring Boot",
+                                             "url":  "https://spring.io/projects/spring-boot",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Spring Boot - Introduction",
+                                             "url":  "https://www.tutorialspoint.com/spring_boot/spring_boot_introduction.htm",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Tutorialspoint",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Introduction to Spring Boot",
+                                             "url":  "https://medium.com/adessoturkey/introduction-to-spring-boot-458cb814ec14",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Medium",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "What-is-Spring-Boot?",
+                                             "url":  "https://www.ibm.com/topics/java-spring-boot",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Ibm",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Spring Boot Course",
+                                             "url":  "https://spring.academy/courses/spring-boot",
+                                             "type":  "COURSE",
+                                             "language":  "en",
+                                             "durationMinutes":  180,
+                                             "provider":  "Spring",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_WRUCYVFFNUPHB8JYJJ_AA14C997",
+                       "title":  "Terminology",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Terminology. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  2,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_JY2HEDVZUM6ASCXLI1_3ED711C8",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Spring Boot",
+                                             "url":  "https://spring.io/projects/spring-boot",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Spring Boot - Starter Guide",
+                                             "url":  "https://spring.io/quickstart",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_YUXN_RD4AYYPYUYOR5_CFD73BDD",
+                       "title":  "Architecture",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Architecture. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  3,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_JY2HEDVZUM6ASCXLI1_3ED711C8",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Spring Boot Architecture – Detailed Explanation",
+                                             "url":  "https://www.interviewbit.com/blog/spring-boot-architecture",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Interviewbit",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Architecture",
+                                             "url":  "https://app.daily.dev/tags/architecture?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_WGF3W6BDWL0RK0O6O2_E8FD8C5A",
+                       "title":  "Why use Spring?",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Why use Spring?. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  9,
+                       "status":  "ACTIVE",
+                       "priority":  4,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_JY2HEDVZUM6ASCXLI1_3ED711C8",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Why Spring?",
+                                             "url":  "https://spring.io/why-spring",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Spring vs Spring Boot: Know The Difference",
+                                             "url":  "https://www.interviewbit.com/blog/spring-vs-spring-boot",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Interviewbit",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "A Comparison Between Spring and Spring Boot",
+                                             "url":  "https://www.baeldung.com/spring-vs-spring-boot",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Baeldung",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Advantages of Spring Boot",
+                                             "url":  "https://www.adservio.fr/post/advantages-of-spring-boot",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Adservio",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Spring Framework",
+                                             "url":  "https://app.daily.dev/tags/spring?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_OB_NMUDSCM0P6RQQFA_8E3174FA",
+                       "title":  "Configuration",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Configuration. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  5,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_JY2HEDVZUM6ASCXLI1_3ED711C8",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Spring Framework Documentation",
+                                             "url":  "https://docs.spring.io/spring/docs/current/spring-framework-reference/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "\"Spring Configuration\" tutorial",
+                                             "url":  "https://www.baeldung.com/project-configuration-with-spring",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Baeldung",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "\"Spring Framework\" tutorial",
+                                             "url":  "https://www.tutorialspoint.com/spring/index.htm",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Tutorialspoint",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Spring Configuration | Spring Tutorial For Beginners",
+                                             "url":  "https://www.youtube.com/watch?v=fLs_yULL10g",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_C2EQ5J1AJYF9E9RR2K_2129570E",
+                       "title":  "Dependency Injection",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Dependency Injection. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  6,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_JY2HEDVZUM6ASCXLI1_3ED711C8",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Spring Dependency Injection",
+                                             "url":  "https://www.baeldung.com/spring-dependency-injection",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Baeldung",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Dependency Injection Using Spring Boot",
+                                             "url":  "https://medium.com/edureka/what-is-dependency-injection-5006b53af782",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Medium",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Understanding Dependency Injection",
+                                             "url":  "https://www.youtube.com/watch?v=GB8k2-Egfv0",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Dependency Injection",
+                                             "url":  "https://app.daily.dev/tags/dependency-injection?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_KAUDYVWEIZA6LUDRBL_9EC30F63",
+                       "title":  "Spring Security",
+                       "description":  "Тема roadmap по направлению «Spring Boot Developer»: Spring Security. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  7,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_JY2HEDVZUM6ASCXLI1_3ED711C8",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Spring Security",
+                                             "url":  "https://spring.io/projects/spring-security",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "What is Spring security",
+                                             "url":  "https://www.javadevjournal.com/spring/what-is-spring-security/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Javadevjournal",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Spring Security: Authentication and Authorization In-Depth",
+                                             "url":  "https://www.marcobehler.com/guides/spring-security",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Marcobehler",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Security",
+                                             "url":  "https://app.daily.dev/tags/security?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_SSDK2IAT4AVHC8B5TN_4465B90A",
+                       "title":  "Authentication",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Authentication. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  8,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_KAUDYVWEIZA6LUDRBL_9EC30F63",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Spring Authentication",
+                                             "url":  "https://docs.spring.io/spring-security/reference/features/authentication/index.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Spring Security Authentication",
+                                             "url":  "https://spring.io/projects/spring-security",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Spring Security Basic Authentication",
+                                             "url":  "https://www.baeldung.com/spring-security-basic-authentication",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Baeldung",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Authentication",
+                                             "url":  "https://app.daily.dev/tags/authentication?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_C7W7Z3COA81FKA_YAK_FA48E2F4",
+                       "title":  "Authorization",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Authorization. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  9,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_KAUDYVWEIZA6LUDRBL_9EC30F63",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Spring Authorization",
+                                             "url":  "https://docs.spring.io/spring-security/reference/servlet/authorization/index.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Advanced authorization in Spring",
+                                             "url":  "https://docs.spring.io/spring-security/site/docs/5.2.11.RELEASE/reference/html/authorization.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Spring Security: Authentication and Authorization In-Depth",
+                                             "url":  "https://www.marcobehler.com/guides/spring-security",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Marcobehler",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Authorization",
+                                             "url":  "https://app.daily.dev/tags/authorization?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_PLUU_VZFQ3XX6Z5XRE_94A19713",
+                       "title":  "Spring IOC",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Spring IOC. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  10,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_JY2HEDVZUM6ASCXLI1_3ED711C8",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Spring IoC, Spring Bean Example Tutorial",
+                                             "url":  "https://www.digitalocean.com/community/tutorials/spring-ioc-bean-example-tutorial",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Digitalocean",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Intro to Inversion of Control with Spring",
+                                             "url":  "https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Baeldung",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Spring Framework",
+                                             "url":  "https://app.daily.dev/tags/spring?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_P7T3RLIIM9U08GFC6A_BA8FEF3B",
+                       "title":  "OAuth2",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: OAuth2. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  11,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_KAUDYVWEIZA6LUDRBL_9EC30F63",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "OAuth 2 using Spring Boot",
+                                             "url":  "https://medium.com/@bubu.tripathy/oauth-2-using-spring-boot-99c17292f228",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Medium",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Spring Boot - OAuth2 with JWT",
+                                             "url":  "https://www.tutorialspoint.com/spring_boot/spring_boot_oauth2_with_jwt.htm",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Tutorialspoint",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Spring Security",
+                                             "url":  "https://www.tutorialspoint.com/spring_security/spring_security_with_oauth2.htm",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Tutorialspoint",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "OAuth2 Login Made Easy in Java: A Spring Boot \u0026 Spring Security Walkthrough",
+                                             "url":  "https://www.youtube.com/watch?v=us0VjFiHogo",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Securing a REST API with OAuth 2.0",
+                                             "url":  "https://spring.academy/courses/spring-academy-secure-rest-api-oauth2",
+                                             "type":  "COURSE",
+                                             "language":  "en",
+                                             "durationMinutes":  180,
+                                             "provider":  "Spring",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_WV1_I_4CZMIXPBIONV_90815988",
+                       "title":  "Spring AOP",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Spring AOP. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  12,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_JY2HEDVZUM6ASCXLI1_3ED711C8",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Spring AOP Tutorial",
+                                             "url":  "https://www.simplilearn.com/tutorials/spring-tutorial/spring-aop-aspect-oriented-programming",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Simplilearn",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "AOP with Spring Framework",
+                                             "url":  "https://www.tutorialspoint.com/spring/aop_with_spring.htm",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Tutorialspoint",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Spring AOP Tutorial",
+                                             "url":  "https://howtodoinjava.com/spring-aop-tutorial/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Howtodoinjava",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Spring Framework",
+                                             "url":  "https://app.daily.dev/tags/spring?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_1MY7MBDWABRCJOIA50_D25DF48E",
+                       "title":  "JWT Authentication",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: JWT Authentication. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  13,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_KAUDYVWEIZA6LUDRBL_9EC30F63",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "JWT Token Authentication in Spring",
+                                             "url":  "https://springframework.guru/jwt-authentication-in-spring-microservices-jwt-token/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Springframework",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Spring Security with JWT for REST API",
+                                             "url":  "https://www.toptal.com/spring/spring-security-tutorial",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Toptal",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Spring Security - JWT",
+                                             "url":  "https://www.tutorialspoint.com/spring_security/spring_security_with_jwt.htm",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Tutorialspoint",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Authentication",
+                                             "url":  "https://app.daily.dev/tags/authentication?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_QINWE4SMTAO3CVZJT3_24749DC4",
+                       "title":  "Spring MVC",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Spring MVC. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  14,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_JY2HEDVZUM6ASCXLI1_3ED711C8",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Web MVC framework",
+                                             "url":  "https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/mvc.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Spring - MVC Framework",
+                                             "url":  "https://www.tutorialspoint.com/spring/spring_web_mvc_framework.htm",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Tutorialspoint",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Spring Framework",
+                                             "url":  "https://app.daily.dev/tags/spring?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_HDCPFGMRMAXXK5QRTY_C500663D",
+                       "title":  "Annotations",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Annotations. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  15,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_JY2HEDVZUM6ASCXLI1_3ED711C8",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Spring Annotations",
+                                             "url":  "https://www.digitalocean.com/community/tutorials/spring-annotations",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Digitalocean",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Annotations in Spring",
+                                             "url":  "https://www.techferry.com/articles/spring-annotations.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Techferry",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_KDN62IPNGPFMNDXFLA_9FFD5E33",
+                       "title":  "Spring Bean Scope",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Spring Bean Scope. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  16,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_JY2HEDVZUM6ASCXLI1_3ED711C8",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Spring - Bean Scopes",
+                                             "url":  "https://www.tutorialspoint.com/spring/spring_bean_scopes.htm",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Tutorialspoint",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Quick Guide to Spring Bean Scopes",
+                                             "url":  "https://www.baeldung.com/spring-bean-scopes",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Baeldung",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Spring Bean Scopes",
+                                             "url":  "https://www.digitalocean.com/community/tutorials/spring-bean-scopes",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Digitalocean",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Spring Framework",
+                                             "url":  "https://app.daily.dev/tags/spring?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_H9Z0EVKT_148VD0MR__684A47FB",
+                       "title":  "Transactions",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Transactions. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  17,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Hibernate Transaction Management",
+                                             "url":  "https://www.javaguides.net/2018/12/hibernate-transaction-management-tutorial.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Javaguides",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Hibernate Transaction",
+                                             "url":  "https://www.w3schools.blog/hibernate-transaction-management",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "W3schools",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_JRH2HIU27PHIO1VTRA_A0DA10C3",
+                       "title":  "Spring Boot Starters",
+                       "description":  "Тема roadmap по направлению «Spring Boot Developer»: Spring Boot Starters. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  18,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Intro to Spring Boot Starters",
+                                             "url":  "https://www.baeldung.com/spring-boot-starters",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Baeldung",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Spring Framework",
+                                             "url":  "https://app.daily.dev/tags/spring?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_D4YBYH0YDVL9W2_XUC_8BE65051",
+                       "title":  "Relationships",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Relationships. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  19,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Hibernate Relationships In Depth",
+                                             "url":  "https://www.java4s.com/hibernate/hibernate-relationships-in-depth/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Java4s",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Guide to JPA with Hibernate - Relationship Mapping",
+                                             "url":  "https://stackabuse.com/a-guide-to-jpa-with-hibernate-relationship-mapping/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Stackabuse",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Hibernate Mapping",
+                                             "url":  "https://dzone.com/articles/hibernate-mapping",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Dzone",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_F_I0NX2KOZCH3JWKAS_79828DA2",
+                       "title":  "Spring Cloud Gateway",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Spring Cloud Gateway. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  9,
+                       "status":  "ACTIVE",
+                       "priority":  20,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Spring Cloud Gateway",
+                                             "url":  "https://spring.io/projects/spring-cloud-gateway",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "What is Spring Cloud Gateway?",
+                                             "url":  "https://tanzu.vmware.com/developer/guides/scg-what-is/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Vmware",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Exploring the New Spring Cloud Gateway",
+                                             "url":  "https://www.baeldung.com/spring-cloud-gateway",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Baeldung",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Cloud",
+                                             "url":  "https://app.daily.dev/tags/cloud?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_88_H3D7KB_VMUBSNUU_EEFC7751",
+                       "title":  "Autoconfiguration",
+                       "description":  "Тема roadmap по направлению «Spring Boot Developer»: Autoconfiguration. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  21,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Auto-configuration using Spring Boot",
+                                             "url":  "https://docs.spring.io/spring-boot/docs/2.0.x/reference/html/using-boot-auto-configuration.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_9HG3CB8R41BUB_S8_0_59E75442",
+                       "title":  "Cloud Config",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Cloud Config. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  9,
+                       "status":  "ACTIVE",
+                       "priority":  22,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Spring Cloud Config",
+                                             "url":  "https://spring.io/projects/spring-cloud-config",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Quick Intro to Spring Cloud Configuration",
+                                             "url":  "https://www.baeldung.com/spring-cloud-configuration",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Baeldung",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Spring Boot - Cloud Configuration Server",
+                                             "url":  "https://www.tutorialspoint.com/spring_boot/spring_boot_cloud_configuration_server.htm",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Tutorialspoint",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Cloud",
+                                             "url":  "https://app.daily.dev/tags/cloud?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_N7HD3D_XQTVOGNCQDC_B8E72AEF",
+                       "title":  "Actuators",
+                       "description":  "Тема roadmap по направлению «Spring Boot Developer»: Actuators. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  23,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Building a RESTful Web Service with Spring Boot Actuator",
+                                             "url":  "https://spring.io/guides/gs/actuator-service/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "What is Spring Boot Actuator",
+                                             "url":  "https://www.baeldung.com/spring-boot-actuators",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Baeldung",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Spring Framework",
+                                             "url":  "https://app.daily.dev/tags/spring?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_ONB0VNSUMY8JBEW3G2_FEDF28A7",
+                       "title":  "Embedded Server",
+                       "description":  "Тема roadmap по направлению «Spring Boot Developer»: Embedded Server. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  24,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Embedded Web Servers ‘How-to’ guides",
+                                             "url":  "https://docs.spring.io/spring-boot/docs/2.1.9.RELEASE/reference/html/howto-embedded-web-servers.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Embedded Servers in Spring",
+                                             "url":  "https://subscription.packtpub.com/book/application-development/9781789132588/3/ch03lvl1sec24/embedded-servers",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Packtpub",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "What is an Embedded Server? (Spring Boot)",
+                                             "url":  "https://www.springboottutorial.com/java-programmer-essentials-what-is-an-embedded-server",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Springboottutorial",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Embedded Systems",
+                                             "url":  "https://app.daily.dev/tags/embedded?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_H5_HNYCXFBJGWALSDX_F1E1686D",
+                       "title":  "Hibernate",
+                       "description":  "Тема roadmap по направлению «Spring Boot Developer»: Hibernate. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  25,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_ONB0VNSUMY8JBEW3G2_FEDF28A7",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Difference Between Spring vs Hibernate",
+                                             "url":  "https://www.educba.com/spring-vs-hibernate/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Educba",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Spring Hibernate Integration Example",
+                                             "url":  "https://www.digitalocean.com/community/tutorials/spring-hibernate-integration-example-tutorial",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Digitalocean",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_IJMY0J3VYAETGXTU2V_DFA9AAC2",
+                       "title":  "Entity Lifecycle",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Entity Lifecycle. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  26,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_H5_HNYCXFBJGWALSDX_F1E1686D",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Hibernate Entity Lifecycle \u0026 and its state",
+                                             "url":  "https://www.baeldung.com/hibernate-entity-lifecycle",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Baeldung",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_PVVLBFQOT50VZ_VRK4_64EEA315",
+                       "title":  "Spring Data",
+                       "description":  "Тема roadmap по направлению «Spring Boot Developer»: Spring Data. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  27,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_H5_HNYCXFBJGWALSDX_F1E1686D",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Spring Data",
+                                             "url":  "https://spring.io/projects/spring-data",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Spring Data – One API To Rule Them All?",
+                                             "url":  "https://www.infoq.com/articles/spring-data-intro/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Infoq",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "What is JPA, Spring Data and Spring Data JPA",
+                                             "url":  "https://www.amitph.com/jpa-and-spring-data-jpa/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amitph",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Spring Framework",
+                                             "url":  "https://app.daily.dev/tags/spring?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_JU_KHOPUSU_HOIKK0Z_F7BBA47A",
+                       "title":  "Microservices",
+                       "description":  "Тема roadmap по направлению «Spring Boot Developer»: Microservices. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  28,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_PVVLBFQOT50VZ_VRK4_64EEA315",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Microservices with Spring",
+                                             "url":  "https://spring.io/microservices",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Microservices with Spring Boot",
+                                             "url":  "https://medium.com/omarelgabrys-blog/microservices-with-spring-boot-intro-to-microservices-part-1-c0d24cd422c3",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Medium",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Microservices",
+                                             "url":  "https://app.daily.dev/tags/microservices?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_VWNDYSW83VZI2UPQPR_824A7A8E",
+                       "title":  "Spring Cloud",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Spring Cloud. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  29,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_JU_KHOPUSU_HOIKK0Z_F7BBA47A",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Spring Cloud",
+                                             "url":  "https://spring.io/projects/spring-cloud",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Spring Cloud – Bootstrapping",
+                                             "url":  "https://www.baeldung.com/spring-cloud-bootstrapping",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Baeldung",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Cloud",
+                                             "url":  "https://app.daily.dev/tags/cloud?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_KQPSLO_X9_XYXFQ1KF_7AC12564",
+                       "title":  "Spring Cloud Circuit Breaker",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Spring Cloud Circuit Breaker. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  9,
+                       "status":  "ACTIVE",
+                       "priority":  30,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_VWNDYSW83VZI2UPQPR_824A7A8E",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Spring Cloud Circuit Breaker",
+                                             "url":  "https://spring.io/projects/spring-cloud-circuitbreaker",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Quick Guide to Spring Cloud Circuit Breaker",
+                                             "url":  "https://www.baeldung.com/spring-cloud-circuit-breaker",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Baeldung",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Spring Cloud - Circuit Breaker using Hystrix",
+                                             "url":  "https://www.tutorialspoint.com/spring_cloud/spring_cloud_circuit_breaker_using_hystrix.htm",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Tutorialspoint",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Cloud",
+                                             "url":  "https://app.daily.dev/tags/cloud?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_EKSXTMSN2XDALEJ4WO_CF33C2BB",
+                       "title":  "Spring Cloud Open Feign",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Spring Cloud Open Feign. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  9,
+                       "status":  "ACTIVE",
+                       "priority":  31,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_VWNDYSW83VZI2UPQPR_824A7A8E",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Spring Cloud OpenFeign",
+                                             "url":  "https://spring.io/projects/spring-cloud-openfeign",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Introduction to Spring Cloud OpenFeign",
+                                             "url":  "https://www.baeldung.com/spring-cloud-openfeign",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Baeldung",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Simple Implementation of Spring Cloud OpenFeign",
+                                             "url":  "https://medium.com/javarevisited/simple-implementation-of-spring-cloud-openfeign-7f022630d01d",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Medium",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Cloud",
+                                             "url":  "https://app.daily.dev/tags/cloud?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_6U08QN_PUEFM3O0H5S_272DAB6F",
+                       "title":  "Spring Data JPA",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Spring Data JPA. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  32,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_PVVLBFQOT50VZ_VRK4_64EEA315",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Spring Data JPA",
+                                             "url":  "https://spring.io/projects/spring-data-jpa",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Introduction to Spring Data JPA",
+                                             "url":  "https://www.baeldung.com/the-persistence-layer-with-spring-data-jpa",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Baeldung",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Spring Framework",
+                                             "url":  "https://app.daily.dev/tags/spring?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_GSMBGROHWBJ6XOAALF_EE7D10AA",
+                       "title":  "Micrometer",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Micrometer.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  33,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_6SLE6GB5Y477SMO2GH_CBDDC173",
+                       "title":  "Eureka",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Eureka. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  9,
+                       "status":  "ACTIVE",
+                       "priority":  34,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Introduction to Spring Cloud Netflix – Eureka",
+                                             "url":  "https://www.baeldung.com/spring-cloud-netflix-eureka",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Baeldung",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Spring Boot - Eureka Server",
+                                             "url":  "https://www.tutorialspoint.com/spring_boot/spring_boot_eureka_server.htm",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Tutorialspoint",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Introducing Spring Cloud EUREKA",
+                                             "url":  "https://www.youtube.com/watch?v=1uNo1NrqsX4",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Backend Development",
+                                             "url":  "https://app.daily.dev/tags/backend?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_FY_TPHBQKLPR1ZVFCR_7CBA3E34",
+                       "title":  "Spring Data MongoDB",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Spring Data MongoDB. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  35,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Spring Data MongoDB",
+                                             "url":  "https://spring.io/projects/spring-data-mongodb",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Spring Boot Integration with MongoDB Tutorial",
+                                             "url":  "https://www.mongodb.com/compatibility/spring-boot",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Mongodb",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Introduction to Spring Data MongoDB",
+                                             "url":  "https://www.baeldung.com/spring-data-mongodb-tutorial",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Baeldung",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Explore top posts about MongoDB",
+                                             "url":  "https://app.daily.dev/tags/mongodb?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_DD1A_MYZBS_KNOTVG7_F1A98AC4",
+                       "title":  "Spring Data JDBC",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Spring Data JDBC. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  36,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Spring Data JDBC",
+                                             "url":  "https://spring.io/projects/spring-data-jdbc",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Spring Data JDBC - Reference Documentation",
+                                             "url":  "https://docs.spring.io/spring-data/jdbc/docs/current/reference/html/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Introduction to Spring Data JDBC",
+                                             "url":  "https://www.baeldung.com/spring-data-jdbc-intro",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Baeldung",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Spring Framework",
+                                             "url":  "https://app.daily.dev/tags/spring?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_S_BBOORD7ANVOJRPRJ_EB713902",
+                       "title":  "Spring MVC",
+                       "description":  "Тема roadmap по направлению «Spring Boot Developer»: Spring MVC. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  37,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_JU_KHOPUSU_HOIKK0Z_F7BBA47A",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Spring - MVC Framework",
+                                             "url":  "https://www.tutorialspoint.com/spring/spring_web_mvc_framework.htm",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Tutorialspoint",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Spring MVC Tutorial – Everything You Need To Know",
+                                             "url":  "https://www.edureka.co/blog/spring-mvc-tutorial/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Edureka",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Spring Framework",
+                                             "url":  "https://app.daily.dev/tags/spring?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_35NTX2EO1J02SJY4M6_926EAF52",
+                       "title":  "Servlet",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Servlet. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  38,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_S_BBOORD7ANVOJRPRJ_EB713902",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "The DispatcherServlet",
+                                             "url":  "https://docs.spring.io/spring-framework/docs/3.0.0.M4/spring-framework-reference/html/ch15s02.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "DispatcherServlet and web.xml in Spring Boot",
+                                             "url":  "https://www.baeldung.com/spring-boot-dispatcherservlet-web-xml",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Baeldung",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_LZ0GPMIYZB30IFJDV1_C358F446",
+                       "title":  "JSP Files",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: JSP Files. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  39,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_S_BBOORD7ANVOJRPRJ_EB713902",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Spring MVC: from JSP and Tiles to Thymeleaf",
+                                             "url":  "https://spring.io/blog/2012/10/30/spring-mvc-from-jsp-and-tiles-to-thymeleaf/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Spring Boot With JavaServer Pages (JSP)",
+                                             "url":  "https://www.baeldung.com/spring-boot-jsp",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Baeldung",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_VS_ZDJZEGZS6MIKAFY_55B675C7",
+                       "title":  "Architecture",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Architecture. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  40,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_S_BBOORD7ANVOJRPRJ_EB713902",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Overview of Spring MVC Architecture",
+                                             "url":  "https://terasolunaorg.github.io/guideline/1.0.1.RELEASE/en/Overview/SpringMVCOverview.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Github",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Architecture",
+                                             "url":  "https://app.daily.dev/tags/architecture?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_5D1BERQTKNJMKIBCQA_527500D8",
+                       "title":  "Mock MVC",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Mock MVC. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  41,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Spring MockMVC tutorial",
+                                             "url":  "https://zetcode.com/spring/mockmvc/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Zetcode",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Spring Boot MockMVC Example",
+                                             "url":  "https://howtodoinjava.com/spring-boot2/testing/spring-boot-mockmvc-example/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Howtodoinjava",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Integration Testing in Spring",
+                                             "url":  "https://baeldung.com/integration-testing-in-spring",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Baeldung",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_SGA06TU9Y4CEHTFI8C_5C80FCAC",
+                       "title":  "Components",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: Components. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  42,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_S_BBOORD7ANVOJRPRJ_EB713902",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Web MVC Framework",
+                                             "url":  "https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/mvc.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_7QQRH_RZ_7UAD49G9S_2837A4A2",
+                       "title":  "Testing",
+                       "description":  "Тема roadmap по направлению «Spring Boot Developer»: Testing. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  43,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_S_BBOORD7ANVOJRPRJ_EB713902",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What Is Spring Testing?",
+                                             "url":  "https://www.developer.com/design/what-is-spring-testing/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Developer",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Complete Guide To Spring Testing",
+                                             "url":  "https://www.lambdatest.com/blog/spring-testing/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Lambdatest",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Testing",
+                                             "url":  "https://app.daily.dev/tags/testing?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_NHX2QISD_4PVWD17LS_AE270A09",
+                       "title":  "JPA Test",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: JPA Test. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  44,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_7QQRH_RZ_7UAD49G9S_2837A4A2",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Testing JPA Queries with Spring Boot and @DataJpaTest",
+                                             "url":  "https://reflectoring.io/spring-boot-data-jpa-test/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Reflectoring",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "@DataJpaTest example for Spring Data Repository Unit Test",
+                                             "url":  "https://www.bezkoder.com/spring-boot-unit-test-jpa-repo-datajpatest/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Bezkoder",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Testing in Spring Boot",
+                                             "url":  "https://www.baeldung.com/spring-boot-testing",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Baeldung",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Java",
+                                             "url":  "https://app.daily.dev/tags/java?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_P91CAVPH5GMZFU0YEU_A0F5F831",
+                       "title":  "@SpringBootTest Annotation",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: @SpringBootTest Annotation. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  45,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_7QQRH_RZ_7UAD49G9S_2837A4A2",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Annotation Interface SpringBootTest",
+                                             "url":  "https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/test/context/SpringBootTest.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Testing with Spring Boot and @SpringBootTest",
+                                             "url":  "https://reflectoring.io/spring-boot-test/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Reflectoring",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Testing in Spring Boot",
+                                             "url":  "https://www.baeldung.com/spring-boot-testing",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Baeldung",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Spring Framework",
+                                             "url":  "https://app.daily.dev/tags/spring?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SPRING_BOOT_I77NTA0HPGGBJMQL9U_8B4FBE72",
+                       "title":  "@MockBean Annotation",
+                       "description":  "Подтема roadmap по направлению «Spring Boot Developer»: @MockBean Annotation. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  46,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SPRING_BOOT_7QQRH_RZ_7UAD49G9S_2837A4A2",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Annotation Interface MockBean",
+                                             "url":  "https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/test/mock/mockito/MockBean.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Spring",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Mockito.mock() vs @Mock vs @MockBean",
+                                             "url":  "https://www.baeldung.com/java-spring-mockito-mock-mockbean",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Baeldung",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Spring Boot @MockBean Example",
+                                             "url":  "https://howtodoinjava.com/spring-boot2/testing/spring-mockbean-annotation/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Howtodoinjava",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   }
+               ]
+}

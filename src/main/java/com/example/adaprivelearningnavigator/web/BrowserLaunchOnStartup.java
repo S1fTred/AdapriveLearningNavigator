@@ -4,7 +4,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
-import org.springframework.context.event.EventListener;
+import org.springframework.context.ApplicationListener;
+import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
 
 import java.awt.Desktop;
@@ -14,14 +15,16 @@ import java.lang.reflect.Method;
 import java.net.URI;
 import java.util.List;
 import java.util.Locale;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 @Component
-public class BrowserLaunchOnStartup {
+public class BrowserLaunchOnStartup implements ApplicationListener<ApplicationReadyEvent> {
 
     private static final Logger log = LoggerFactory.getLogger(BrowserLaunchOnStartup.class);
 
     private final boolean autoOpenEnabled;
     private final String urlPath;
+    private final AtomicBoolean attempted = new AtomicBoolean(false);
 
     public BrowserLaunchOnStartup(@Value("${app.browser.auto-open:true}") boolean autoOpenEnabled,
                                   @Value("${app.browser.url-path:/}") String urlPath) {
@@ -29,22 +32,33 @@ public class BrowserLaunchOnStartup {
         this.urlPath = normalizePath(urlPath);
     }
 
-    @EventListener(ApplicationReadyEvent.class)
-    public void openBrowser(ApplicationReadyEvent event) {
+    @Override
+    public void onApplicationEvent(ApplicationReadyEvent event) {
+        openFromContext(event.getApplicationContext());
+    }
+
+    public void openFromContext(ApplicationContext applicationContext) {
+        if (!attempted.compareAndSet(false, true)) {
+            return;
+        }
+
         if (!autoOpenEnabled) {
+            log.info("Автооткрытие браузера отключено в конфигурации.");
+            return;
+        }
+
+        Integer port = extractPort(applicationContext);
+        if (port == null) {
+            log.info("Автооткрытие браузера пропущено: web server context недоступен.");
             return;
         }
 
         try {
-            Integer port = extractPort(event);
-            if (port == null) {
-                log.info("Автооткрытие браузера пропущено: web server context недоступен.");
-                return;
-            }
-
             URI uri = new URI("http://localhost:" + port + urlPath);
+            log.info("Пробуем открыть браузер на адресе: {}", uri);
+
             if (tryDesktopBrowse(uri) || trySystemOpen(uri.toString())) {
-                log.info("Открыта стартовая страница в браузере: {}", uri);
+                log.info("Стартовая страница открыта в браузере: {}", uri);
                 return;
             }
 
@@ -56,14 +70,14 @@ public class BrowserLaunchOnStartup {
 
     private boolean tryDesktopBrowse(URI uri) {
         if (GraphicsEnvironment.isHeadless() || !Desktop.isDesktopSupported()) {
-            log.info("Desktop API недоступен. Используется fallback через системный запуск URL.");
+            log.info("Desktop API недоступен. Используется системный fallback.");
             return false;
         }
 
         try {
             Desktop desktop = Desktop.getDesktop();
             if (!desktop.isSupported(Desktop.Action.BROWSE)) {
-                log.info("Desktop browse action недоступен. Используется fallback через системный запуск URL.");
+                log.info("Desktop browse action недоступен. Используется системный fallback.");
                 return false;
             }
 
@@ -77,36 +91,42 @@ public class BrowserLaunchOnStartup {
 
     private boolean trySystemOpen(String url) {
         String os = System.getProperty("os.name", "").toLowerCase(Locale.ROOT);
-        List<String> command = buildCommand(os, url);
-        if (command.isEmpty()) {
+        List<List<String>> commandVariants = buildCommands(os, url);
+        if (commandVariants.isEmpty()) {
             return false;
         }
 
-        try {
-            new ProcessBuilder(command).start();
-            return true;
-        } catch (IOException ex) {
-            log.debug("Системный запуск URL не сработал.", ex);
-            return false;
+        for (List<String> command : commandVariants) {
+            try {
+                new ProcessBuilder(command).start();
+                return true;
+            } catch (IOException ex) {
+                log.debug("Команда открытия браузера не сработала: {}", command, ex);
+            }
         }
+
+        return false;
     }
 
-    private List<String> buildCommand(String os, String url) {
+    private List<List<String>> buildCommands(String os, String url) {
         if (os.contains("win")) {
-            return List.of("rundll32", "url.dll,FileProtocolHandler", url);
+            return List.of(
+                    List.of("cmd", "/c", "start", "", url),
+                    List.of("powershell", "-NoProfile", "-Command", "Start-Process", url),
+                    List.of("explorer.exe", url)
+            );
         }
         if (os.contains("mac")) {
-            return List.of("open", url);
+            return List.of(List.of("open", url));
         }
         if (os.contains("nix") || os.contains("nux") || os.contains("aix")) {
-            return List.of("xdg-open", url);
+            return List.of(List.of("xdg-open", url));
         }
         return List.of();
     }
 
-    private Integer extractPort(ApplicationReadyEvent event) {
+    private Integer extractPort(ApplicationContext applicationContext) {
         try {
-            Object applicationContext = event.getApplicationContext();
             Method getWebServer = applicationContext.getClass().getMethod("getWebServer");
             Object webServer = getWebServer.invoke(applicationContext);
             if (webServer == null) {
@@ -117,6 +137,7 @@ public class BrowserLaunchOnStartup {
             Object port = getPort.invoke(webServer);
             return port instanceof Integer ? (Integer) port : null;
         } catch (Exception ex) {
+            log.debug("Не удалось определить порт web server для автооткрытия браузера.", ex);
             return null;
         }
     }

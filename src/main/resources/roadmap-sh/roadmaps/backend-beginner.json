@@ -1,0 +1,1769 @@
+﻿{
+    "source":  "roadmap.sh",
+    "sourceUrl":  "https://roadmap.sh/backend-beginner",
+    "roleCode":  "backend-beginner",
+    "roleName":  "Backend Beginner",
+    "roleDescription":  "Стартовая дорожная карта по направлению «Backend Beginner» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+    "roleStatus":  "ACTIVE",
+    "topics":  [
+                   {
+                       "code":  "RM_BACKEND_BEGINN_QSADFAGUFN8MTMDJHJ_2F0F82F0",
+                       "title":  "ACID",
+                       "description":  "Тема roadmap по направлению «Backend Beginner»: ACID. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  1,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What is ACID Compliant Database?",
+                                             "url":  "https://retool.com/blog/whats-an-acid-compliant-database/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Retool",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "What is ACID Compliance?: Atomicity, Consistency, Isolation",
+                                             "url":  "https://fauna.com/blog/what-is-acid-compliance-atomicity-consistency-isolation",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Fauna",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "A Beginner\u0027s Guide to ACID and Database Transactions",
+                                             "url":  "https://vladmihalcea.com/a-beginners-guide-to-acid-and-database-transactions/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Vladmihalcea",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "ACID Explained: Atomic, Consistent, Isolated \u0026 Durable",
+                                             "url":  "https://www.youtube.com/watch?v=yaQ5YMWkxq4",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "ACID Transactions (Explained by Example)",
+                                             "url":  "https://www.youtube.com/watch?v=pomxJOFVcQs",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_BACKEND_BEGINN_PY9G7KQY8BF6EIDR1Y_F94184C3",
+                       "title":  "Authentication",
+                       "description":  "Тема roadmap по направлению «Backend Beginner»: Authentication. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  2,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Basic Authentication",
+                                             "url":  "https://roadmap.sh/guides/basic-authentication",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Session Based Authentication",
+                                             "url":  "https://roadmap.sh/guides/session-based-authentication",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Token Based Authentication",
+                                             "url":  "https://roadmap.sh/guides/token-authentication",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "JWT Authentication",
+                                             "url":  "https://roadmap.sh/guides/jwt-authentication",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "OAuth - Open Authorization",
+                                             "url":  "https://roadmap.sh/guides/oauth",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "SSO - Single Sign On",
+                                             "url":  "https://roadmap.sh/guides/sso",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Authentication",
+                                             "url":  "https://app.daily.dev/tags/authentication?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  7
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_BACKEND_BEGINN_ELJ8AF7MI38KUBAPJF_529A1D2D",
+                       "title":  "Caching",
+                       "description":  "Тема roadmap по направлению «Backend Beginner»: Caching. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  3,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What is Caching - AWS",
+                                             "url":  "https://aws.amazon.com/caching/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Caching - Cloudflare",
+                                             "url":  "https://www.cloudflare.com/learning/cdn/what-is-caching/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Cloudflare",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Caching Strategies and How to Choose the Right One",
+                                             "url":  "https://codeahoy.com/2017/08/11/caching-strategies-and-how-to-choose-the-right-one/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Codeahoy",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Top Caching Strategies Explained",
+                                             "url":  "https://blog.bytebytego.com/p/top-caching-strategies",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Bytebytego",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Cache Systems Every Developer Should Know",
+                                             "url":  "https://www.youtube.com/watch?v=dGAgxozNWFE",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "Caching Complete Tutorial for Beginners",
+                                             "url":  "https://www.youtube.com/watch?v=1XJG34mewts",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_BACKEND_BEGINN_NAGISFQ2CGEK3SSURJ_BCA48329",
+                       "title":  "Functional Testing",
+                       "description":  "Тема roadmap по направлению «Backend Beginner»: Functional Testing. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  4,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What is Functional Testing?",
+                                             "url":  "https://www.guru99.com/functional-testing.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Guru99",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Functional Testing: What It Is and How to Do It Right",
+                                             "url":  "https://www.atlassian.com/continuous-delivery/software-testing/functional-testing",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Atlassian",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "unctional Testing vs Non-Functional Testing",
+                                             "url":  "https://www.youtube.com/watch?v=NgQT7miTP9M",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Software Testing Tutorial for Beginners",
+                                             "url":  "https://www.youtube.com/watch?v=u6QfIXgjwGQ",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Testing",
+                                             "url":  "https://app.daily.dev/tags/testing?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_BACKEND_BEGINN_I1E_WCIVRHJMK6IMIE_C9BD75D2",
+                       "title":  "Git",
+                       "description":  "Тема roadmap по направлению «Backend Beginner»: Git. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  5,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit Dedicated Git \u0026 GitHub Roadmap",
+                                             "url":  "https://roadmap.sh/git-github",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Learn Git with Tutorials, News and Tips - Atlassian",
+                                             "url":  "https://www.atlassian.com/git",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Atlassian",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Getting Started with Git and GitHub: A Complete Tutorial for Beginner",
+                                             "url":  "https://towardsdatascience.com/learn-basic-git-commands-for-your-data-science-works-2a75396d530d/?utm_source=roadmap\u0026utm_medium=Referral\u0026utm_campaign=TDS+roadmap+integration",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Towardsdatascience",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Git Cheat Sheet",
+                                             "url":  "https://cs.fyi/guide/git-cheatsheet",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Cs",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Git \u0026 GitHub Crash Course For Beginners",
+                                             "url":  "https://www.youtube.com/watch?v=SWYqp7iY_Tc",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Git",
+                                             "url":  "https://app.daily.dev/tags/git?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_BACKEND_BEGINN_PTD8EVQWFUYR4W5A_T_7A8F14F7",
+                       "title":  "GitHub",
+                       "description":  "Тема roadmap по направлению «Backend Beginner»: GitHub. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  6,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit Dedicated Git \u0026 GitHub Roadmap",
+                                             "url":  "https://roadmap.sh/git-github",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "GitHub",
+                                             "url":  "https://github.com",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Github",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "GitHub Docs",
+                                             "url":  "https://docs.github.com/en/get-started/quickstart",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Github",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Comprehensive Guide to GitHub for Data Scientists",
+                                             "url":  "https://towardsdatascience.com/comprehensive-guide-to-github-for-data-scientist-d3f71bd320da/?utm_source=roadmap\u0026utm_medium=Referral\u0026utm_campaign=TDS+roadmap+integration",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Towardsdatascience",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "What is GitHub?",
+                                             "url":  "https://www.youtube.com/watch?v=w3jLJU7DT5E",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "Explore top posts about GitHub",
+                                             "url":  "https://app.daily.dev/tags/github?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_BACKEND_BEGINN_BDXBCZ4_AR3XOX0WIK_1BEB7293",
+                       "title":  "Go",
+                       "description":  "Тема roadmap по направлению «Backend Beginner»: Go. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  7,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit Dedicated Go Roadmap",
+                                             "url":  "https://roadmap.sh/golang",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Go Reference Documentation",
+                                             "url":  "https://go.dev/doc/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Go",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Go by Example - annotated example programs",
+                                             "url":  "https://gobyexample.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Gobyexample",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Go, the Programming Language of the Cloud",
+                                             "url":  "https://thenewstack.io/go-the-programming-language-of-the-cloud/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Thenewstack",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Go Programming – Golang Course with Bonus Projects",
+                                             "url":  "https://www.youtube.com/watch?v=un6ZyFkqFKo",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Golang",
+                                             "url":  "https://app.daily.dev/tags/golang?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_BACKEND_BEGINN_381KW1IMRV7CJP_UF__E5D30FFE",
+                       "title":  "Integration Testing",
+                       "description":  "Тема roadmap по направлению «Backend Beginner»: Integration Testing. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  8,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Integration Testing",
+                                             "url":  "https://www.guru99.com/integration-testing.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Guru99",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "How to Integrate and Test Your Tech Stack",
+                                             "url":  "https://thenewstack.io/how-to-integrate-and-test-your-tech-stack/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Thenewstack",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "What is Integration Testing?",
+                                             "url":  "https://www.youtube.com/watch?v=kRD6PA6uxiY",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_BACKEND_BEGINN_8_LO_V6JCYYOKLEJXU_B7DF349B",
+                       "title":  "JavaScript",
+                       "description":  "Тема roadmap по направлению «Backend Beginner»: JavaScript. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  9,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit Dedicated JavaScript Roadmap",
+                                             "url":  "https://roadmap.sh/javascript",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "JavaScript from Beginner to Professional",
+                                             "url":  "https://www.gurukultti.org/admin/notice/javascript.pdf",
+                                             "type":  "BOOK",
+                                             "language":  "en",
+                                             "durationMinutes":  240,
+                                             "provider":  "Gurukultti",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "The Modern JavaScript Tutorial",
+                                             "url":  "https://javascript.info/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Javascript",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Build 30 Javascript projects in 30 days",
+                                             "url":  "https://javascript30.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Javascript30",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "JavaScript Crash Course For Beginners",
+                                             "url":  "https://www.youtube.com/watch?v=hdI2bqOjy3c\u0026t=4s",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_BACKEND_BEGINN_SNCES4MPSIJRKWHNDM_55C39A6E",
+                       "title":  "JSON APIs",
+                       "description":  "Тема roadmap по направлению «Backend Beginner»: JSON APIs. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  10,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "JSON API",
+                                             "url":  "https://jsonapi.org/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Jsonapi",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "JSON API Recommendations and Best Practices",
+                                             "url":  "https://jsonapi.org/recommendations/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Jsonapi",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "JSON.org - Introducing JSON",
+                                             "url":  "https://www.json.org/json-en.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Json",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "What is JSON API?",
+                                             "url":  "https://medium.com/@niranjan.cs/what-is-json-api-3b824fba2788",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Medium",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "JSON API: Explained in 4 minutes",
+                                             "url":  "https://www.youtube.com/watch?v=N-4prIh7t38",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_BACKEND_BEGINN_UXS_MZVUJLIGEWKRXN_9A95DEFB",
+                       "title":  "JWT",
+                       "description":  "Тема roadmap по направлению «Backend Beginner»: JWT. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  11,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "jwt.io Website",
+                                             "url":  "https://jwt.io/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Jwt",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "What is JWT?",
+                                             "url":  "https://www.akana.com/blog/what-is-jwt",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Akana",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "JWT Security Best Practices",
+                                             "url":  "https://curity.io/resources/learn/jwt-best-practices/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Curity",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "What Is JWT and Why Should You Use JWT",
+                                             "url":  "https://www.youtube.com/watch?v=7Q17ubqLfaM",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Explore top posts about JWT",
+                                             "url":  "https://app.daily.dev/tags/jwt?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_BACKEND_BEGINN_EWVLPSI6ALZ4TNNIJT_36FB918B",
+                       "title":  "APIs",
+                       "description":  "Тема roadmap по направлению «Backend Beginner»: APIs. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  12,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit the Dedicated API Design Roadmap",
+                                             "url":  "https://roadmap.sh/api-design",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Visit the Dedicated API Security Best Practices",
+                                             "url":  "https://roadmap.sh/api-security-best-practices",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "What is an API?",
+                                             "url":  "https://aws.amazon.com/what-is/api/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "What is an API (in 5 minutes)",
+                                             "url":  "https://www.youtube.com/watch?v=ByGJQzlzxQg",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "daily.dev API Feed",
+                                             "url":  "https://app.daily.dev/tags/rest-api",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_BACKEND_BEGINN_LJT27ONEOEIBOMIEMT_AD67B572",
+                       "title":  "Databases",
+                       "description":  "Тема roadmap по направлению «Backend Beginner»: Databases. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  13,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Oracle: What is a Database?",
+                                             "url":  "https://www.oracle.com/database/what-is-database/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Oracle",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Prisma.io: What are Databases?",
+                                             "url":  "https://www.prisma.io/dataguide/intro/what-are-databases",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Prisma",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Backend Development",
+                                             "url":  "https://app.daily.dev/tags/backend?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_BACKEND_BEGINN_BQNOAU863HSHDYNMNY_D6783838",
+                       "title":  "N plus one problem",
+                       "description":  "Тема roadmap по направлению «Backend Beginner»: N plus one problem. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  14,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "In Detail Explanation of N+1 Problem",
+                                             "url":  "https://medium.com/doctolib/understanding-and-fixing-n-1-query-30623109fe89",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Medium",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "What is the N+1 Problem",
+                                             "url":  "https://planetscale.com/blog/what-is-n-1-query-problem-and-how-to-solve-it",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Planetscale",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Solving N+1 Problem: For Java Backend Developers",
+                                             "url":  "https://dev.to/jackynote/solving-the-notorious-n1-problem-optimizing-database-queries-for-java-backend-developers-2o0p",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Dev",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "SQLite and the N+1 (no) problem",
+                                             "url":  "https://www.youtube.com/watch?v=qPfAQY_RahA",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_BACKEND_BEGINN_Z7JP_JUJ5PFFSXV7UZ_332A5E85",
+                       "title":  "ORMs",
+                       "description":  "Тема roadmap по направлению «Backend Beginner»: ORMs. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  15,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What is an ORM, how does it work, and how should I use one?",
+                                             "url":  "https://stackoverflow.com/a/1279678",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Stackoverflow",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "What is an ORM",
+                                             "url":  "https://www.freecodecamp.org/news/what-is-an-orm-the-meaning-of-object-relational-mapping-database-tools/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Freecodecamp",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Why Use an ORM?",
+                                             "url":  "https://www.youtube.com/watch?v=vHt2LC1EM3Q",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Backend Development",
+                                             "url":  "https://app.daily.dev/tags/backend?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_BACKEND_BEGINN_2F0ZO6GJELFZ2EIS28_F3D42BF5",
+                       "title":  "Learn a Language",
+                       "description":  "Тема roadmap по направлению «Backend Beginner»: Learn a Language.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  16,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_BACKEND_BEGINN_FIHTRMO56KJ9JT8O_P_59A73D0F",
+                       "title":  "PostgreSQL",
+                       "description":  "Тема roadmap по направлению «Backend Beginner»: PostgreSQL. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  17,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit Dedicated PostgreSQL DBA Roadmap",
+                                             "url":  "https://roadmap.sh/postgresql-dba",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Official Website",
+                                             "url":  "https://www.postgresql.org/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "PostgreSQL",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Learn PostgreSQL - Full Tutorial for Beginners",
+                                             "url":  "https://www.postgresqltutorial.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Postgresqltutorial",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "PostgreSQL in 100 Seconds",
+                                             "url":  "https://www.youtube.com/watch?v=n2Fluyr3lbc",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Postgres tutorial for Beginners",
+                                             "url":  "https://www.youtube.com/watch?v=SpfIwlAYaKk",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "Explore top posts about PostgreSQL",
+                                             "url":  "https://app.daily.dev/tags/postgresql?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_BACKEND_BEGINN_J_SVHSD72YZYQB9KCI_6B5C6F44",
+                       "title":  "Python",
+                       "description":  "Тема roadmap по направлению «Backend Beginner»: Python. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  18,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit Dedicated Python Roadmap",
+                                             "url":  "https://roadmap.sh/python",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Python",
+                                             "url":  "https://www.python.org/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Python",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Real Python",
+                                             "url":  "https://realpython.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Realpython",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Automate the Boring Stuff with Python",
+                                             "url":  "https://automatetheboringstuff.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Automatetheboringstuff",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Python",
+                                             "url":  "https://app.daily.dev/tags/python?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_BACKEND_BEGINN_G8GJKJAHVNSXXTZKS0_6419E26F",
+                       "title":  "Redis",
+                       "description":  "Тема roadmap по направлению «Backend Beginner»: Redis. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  19,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit Dedicated Redis Roadmap",
+                                             "url":  "https://roadmap.sh/redis",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Redis Crash Course",
+                                             "url":  "https://www.youtube.com/watch?v=XCsS_NVAa1g",
+                                             "type":  "COURSE",
+                                             "language":  "en",
+                                             "durationMinutes":  180,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Redis",
+                                             "url":  "https://redis.io/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Redis",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Redis Documentation",
+                                             "url":  "https://redis.io/docs/latest/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Redis",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Redis in 100 Seconds",
+                                             "url":  "https://www.youtube.com/watch?v=G1rOthIU-uo",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Redis",
+                                             "url":  "https://app.daily.dev/tags/redis?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_BACKEND_BEGINN_R45B461NXLN6WBODJ5_5BD615A9",
+                       "title":  "Relational Databases",
+                       "description":  "Тема roadmap по направлению «Backend Beginner»: Relational Databases. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  20,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit the Dedicated SQL Roadmap",
+                                             "url":  "https://roadmap.sh/sql",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Visit the Dedicated SQL Master Course",
+                                             "url":  "https://roadmap.sh/courses/sql",
+                                             "type":  "COURSE",
+                                             "language":  "en",
+                                             "durationMinutes":  180,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Databases and SQL",
+                                             "url":  "https://www.edx.org/course/databases-5-sql",
+                                             "type":  "COURSE",
+                                             "language":  "en",
+                                             "durationMinutes":  180,
+                                             "provider":  "Edx",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Relational Databases",
+                                             "url":  "https://www.ibm.com/cloud/learn/relational-databases",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Ibm",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Intro To Relational Databases",
+                                             "url":  "https://www.udacity.com/course/intro-to-relational-databases--ud197",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Udacity",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "What is Relational Database",
+                                             "url":  "https://youtu.be/OqjJjpjDRLc",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Backend Development",
+                                             "url":  "https://app.daily.dev/tags/backend?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  7
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_BACKEND_BEGINN_NVUCSDWBHZJZ31NZT4_5E5F77E4",
+                       "title":  "Repo Hosting Services",
+                       "description":  "Тема roadmap по направлению «Backend Beginner»: Repo Hosting Services. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  21,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "GitHub",
+                                             "url":  "https://github.com",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Github",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "GitLab",
+                                             "url":  "https://about.gitlab.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Gitlab",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "BitBucket",
+                                             "url":  "https://bitbucket.org/product/guides/getting-started/overview",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Bitbucket",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_BACKEND_BEGINN_LFNFDZZNDRB0LBEAMT_3B60DC25",
+                       "title":  "REST",
+                       "description":  "Тема roadmap по направлению «Backend Beginner»: REST. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  22,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What is a REST API?",
+                                             "url":  "https://www.redhat.com/en/topics/api/what-is-a-rest-api",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Redhat",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Best practices for RESTful web API design",
+                                             "url":  "https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Microsoft Learn",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Roy Fieldings dissertation chapter, Representational State Transfer (REST)",
+                                             "url":  "https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Uci",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Learn REST: A RESTful Tutorial",
+                                             "url":  "https://restapitutorial.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Restapitutorial",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "What is a REST API?",
+                                             "url":  "https://www.youtube.com/watch?v=-mN3VyJuCjM",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "Explore top posts about REST API",
+                                             "url":  "https://app.daily.dev/tags/rest-api?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_BACKEND_BEGINN_STQQBPA7PE3GBJMDL6_5BA07420",
+                       "title":  "Testing",
+                       "description":  "Тема roadmap по направлению «Backend Beginner»: Testing. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  23,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What is Software Testing?",
+                                             "url":  "https://www.guru99.com/software-testing-introduction-importance.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Guru99",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Testing Pyramid",
+                                             "url":  "https://www.browserstack.com/guide/testing-pyramid-for-test-automation",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Browserstack",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_BACKEND_BEGINN_RQ_Y_OBMD9AH_4AOEC_4DC43173",
+                       "title":  "Transactions",
+                       "description":  "Тема roadmap по направлению «Backend Beginner»: Transactions. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  24,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What are Transactions?",
+                                             "url":  "https://fauna.com/blog/database-transaction",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Fauna",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "What is a Database transaction?",
+                                             "url":  "https://www.youtube.com/watch?v=wHUOeXbZCYA",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "ACID Properties in Databases With Examples",
+                                             "url":  "https://www.youtube.com/watch?v=GAe5oB742dw",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_BACKEND_BEGINN_3OYM6B9F6WORKI4KTO_2C174E02",
+                       "title":  "Unit Testing",
+                       "description":  "Тема roadmap по направлению «Backend Beginner»: Unit Testing. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  25,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Unit Testing",
+                                             "url":  "https://en.wikipedia.org/wiki/Unit_testing",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Wikipedia",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "What is Unit Testing?",
+                                             "url":  "https://www.guru99.com/unit-testing-guide.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Guru99",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "What is Unit Testing?",
+                                             "url":  "https://youtu.be/x95ez7_V7rA?si=JhCVhcEN7zZOkxdp",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_BACKEND_BEGINN_EZDQQW9WTUW93F6KJO_637C6B38",
+                       "title":  "Version Control Systems",
+                       "description":  "Тема roadmap по направлению «Backend Beginner»: Version Control Systems. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  26,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit Dedicated Git \u0026 GitHub Roadmap",
+                                             "url":  "https://roadmap.sh/git-github",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Git",
+                                             "url":  "https://git-scm.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Git-scm",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Mercurial",
+                                             "url":  "https://www.mercurial-scm.org/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Mercurial-scm",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Subversion",
+                                             "url":  "https://subversion.apache.org/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Apache",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "What is Version Control?",
+                                             "url":  "https://www.atlassian.com/git/tutorials/what-is-version-control",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Atlassian",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "Version Control System (VCS)",
+                                             "url":  "https://www.youtube.com/watch?v=SVkuliabq4g",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         }
+                                     ]
+                   }
+               ]
+}

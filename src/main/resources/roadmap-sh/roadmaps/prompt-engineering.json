@@ -1,0 +1,1707 @@
+﻿{
+    "source":  "roadmap.sh",
+    "sourceUrl":  "https://roadmap.sh/prompt-engineering",
+    "roleCode":  "prompt-engineering",
+    "roleName":  "Prompt Engineering Roadmap",
+    "roleDescription":  "Дорожная карта по направлению «Prompt Engineering Roadmap» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+    "roleStatus":  "ACTIVE",
+    "topics":  [
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_CVV3GIVQHSTVE_TQJT_D74DF3AB",
+                       "title":  "Basic LLM Concepts",
+                       "description":  "Тема roadmap по направлению «Prompt Engineering Roadmap»: Basic LLM Concepts. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  1,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "LLM Self-Evaluation - LearnPrompting",
+                                             "url":  "https://learnprompting.org/docs/reliability/lm_self_eval",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Learnprompting",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_PAMV5Z8DRKK2IOZBG6_60258EBF",
+                       "title":  "What are LLMs?",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: What are LLMs?. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  2,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_CVV3GIVQHSTVE_TQJT_D74DF3AB",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "LLM - Anthropic Glossary",
+                                             "url":  "https://platform.claude.com/docs/en/about-claude/glossary",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Claude",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Differences Between Chatbots and LLMs - LearnPrompting",
+                                             "url":  "https://learnprompting.org/docs/basics/chatbot_basics",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Learnprompting",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_P5NDYQBME53DOEFSKC_7F521065",
+                       "title":  "Types of LLMs",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Types of LLMs. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  3,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_CVV3GIVQHSTVE_TQJT_D74DF3AB",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Calibrating LLMs - LearnPrompting",
+                                             "url":  "https://learnprompting.org/docs/reliability/calibration",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Learnprompting",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_74JXGFJ_1QMVNZ_QRP_AECA4677",
+                       "title":  "How are LLMs Built?",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: How are LLMs Built?. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  4,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_CVV3GIVQHSTVE_TQJT_D74DF3AB",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What are large language models (LLMs)? - IBM",
+                                             "url":  "https://www.ibm.com/think/topics/large-language-models",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Ibm",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Large language model - Wikipedia",
+                                             "url":  "https://en.wikipedia.org/wiki/Large_language_model",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Wikipedia",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "How Large Language Models Work: Explained Simply",
+                                             "url":  "https://justainews.com/applications/chatbots-and-virtual-assistants/how-large-language-models-work/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Justainews",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "How Large Language Models Work",
+                                             "url":  "https://youtu.be/5sLYAQS9sWQ",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_XHWKGASRBYT4MSCHWV_90999F56",
+                       "title":  "Introduction to Prompting",
+                       "description":  "Тема roadmap по направлению «Prompt Engineering Roadmap»: Introduction to Prompting. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  5,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Assigning Roles to Chatbots - LearnPrompting",
+                                             "url":  "https://learnprompting.org/docs/basics/roles",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Learnprompting",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Role Prompting - LearnPrompting",
+                                             "url":  "https://learnprompting.org/docs/advanced/zero_shot/role_prompting",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Learnprompting",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Context Engineering vs. Prompt Engineering: Smarter AI with RAG \u0026 Agents",
+                                             "url":  "https://youtu.be/vD0E3EUb8-8?si=9orzEniOGmRD7g-o\u0026t=136",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_JRH1QE6ENFXL4FTYYU_30673A9D",
+                       "title":  "Basic Prompting",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Basic Prompting. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  6,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_XHWKGASRBYT4MSCHWV_90999F56",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What is Generative AI? - LearnPrompting",
+                                             "url":  "https://learnprompting.org/docs/basics/generative_ai",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Learnprompting",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_43DRPBTWPQJQPYZWYU_B6148BB0",
+                       "title":  "Need for Prompt Engineering",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Need for Prompt Engineering. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  7,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_XHWKGASRBYT4MSCHWV_90999F56",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Prompt engineering - Wikipedia",
+                                             "url":  "https://en.wikipedia.org/wiki/Prompt_engineering",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Wikipedia",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Introduction to Prompt Engineering - LearnPrompting",
+                                             "url":  "https://learnprompting.org/docs/basics/prompt_engineering",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Learnprompting",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "RAG vs Fine-Tuning vs Prompt Engineering: Optimizing AI Models",
+                                             "url":  "https://youtu.be/zYGDpG-pTho?si=yov4dDrcsHBAkey-\u0026t=522",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_BASIC_LLM_L_053B019F",
+                       "title":  "Vocabulary",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Vocabulary.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  8,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_CVV3GIVQHSTVE_TQJT_D74DF3AB",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_PROMPTS_EFD487B3",
+                       "title":  "Prompts",
+                       "description":  "Тема roadmap по направлению «Prompt Engineering Roadmap»: Prompts.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  9,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_8KS6TXRSUFMK7VOTSQ_7F9330D0",
+                       "title":  "Role Prompting",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Role Prompting. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  9,
+                       "status":  "ACTIVE",
+                       "priority":  10,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "ReAct - DAIR.AI",
+                                             "url":  "https://www.promptingguide.ai/techniques/react",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Promptingguide",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "ReAct: Synergizing Reasoning and Acting - LearnPrompting",
+                                             "url":  "https://learnprompting.org/docs/techniques/react",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Learnprompting",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "4 Methods of Prompt Engineering",
+                                             "url":  "https://youtu.be/vD0E3EUb8-8?si=Y6MCLPzjmhMB4jSu\u0026t=203",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_0H2KEZYD8ITNYBGMNV_CA6BA566",
+                       "title":  "Use Delimiters to distinguish the data from the prompt.",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Use Delimiters to distinguish the data from the prompt.. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  11,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Prompt Debiasing - LearnPrompting",
+                                             "url":  "https://learnprompting.org/docs/reliability/debiasing",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Learnprompting",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_IUFV_LSGUNLS_ALX_B_22691BFB",
+                       "title":  "Few Shot Prompting",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Few Shot Prompting. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  9,
+                       "status":  "ACTIVE",
+                       "priority":  12,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Few-Shot Prompting - DAIR.AI",
+                                             "url":  "https://www.promptingguide.ai/techniques/fewshot",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Promptingguide",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Few-Shot Prompting - LearnPrompting",
+                                             "url":  "https://learnprompting.org/docs/basics/few_shot",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Learnprompting",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Few-Shot Introduction - LearnPrompting",
+                                             "url":  "https://learnprompting.org/docs/advanced/few_shot/introduction",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Learnprompting",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Context Engineering vs. Prompt Engineering: Smarter AI with RAG \u0026 Agents",
+                                             "url":  "https://youtu.be/vD0E3EUb8-8?si=Fi2igdPTBUocqnX7\u0026t=177",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_WSF7ZR8ZYBUKWX0GQX_EE1C6312",
+                       "title":  "Ask for Structured Output e.g. JSON, XML, HTML etc.",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Ask for Structured Output e.g. JSON, XML, HTML etc.. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  13,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Increase Output Consistency - Anthropic",
+                                             "url":  "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/increase-consistency",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Claude",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "General Tips for Designing Prompts - DAIR.AI",
+                                             "url":  "https://www.promptingguide.ai/introduction/tips",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Promptingguide",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_WERAJXEPLHKDYFWSME_42459D60",
+                       "title":  "Chain of Thought Prompting",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Chain of Thought Prompting. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  9,
+                       "status":  "ACTIVE",
+                       "priority":  14,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Chain-of-Thought Prompting - DAIR.AI",
+                                             "url":  "https://www.promptingguide.ai/techniques/cot",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Promptingguide",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Chain-of-Thought Prompting - LearnPrompting",
+                                             "url":  "https://learnprompting.org/docs/intermediate/chain_of_thought",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Learnprompting",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Reasoning LLMs Guide - DAIR.AI",
+                                             "url":  "https://www.promptingguide.ai/guides/reasoning-llms",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Promptingguide",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Context Engineering vs. Prompt Engineering: Smarter AI with RAG \u0026 Agents",
+                                             "url":  "https://youtu.be/vD0E3EUb8-8?si=Y6MCLPzjmhMB4jSu\u0026t=203",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_OB9D0W9B9145DA64NB_823C858D",
+                       "title":  "Include style information to modify the tone of output.",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Include style information to modify the tone of output.. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  15,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Tree of Thoughts - DAIR.AI",
+                                             "url":  "https://www.promptingguide.ai/techniques/tot",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Promptingguide",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_GRERL9UXN73TWPCW2E_F107DDDB",
+                       "title":  "Zero Shot Chain of Thought",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Zero Shot Chain of Thought. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  16,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Zero-Shot Prompting - DAIR.AI",
+                                             "url":  "https://www.promptingguide.ai/techniques/zeroshot",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Promptingguide",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Introduction to Zero-Shot Techniques - LearnPrompting",
+                                             "url":  "https://learnprompting.org/docs/advanced/zero_shot/introduction",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Learnprompting",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_YFSJW1EZE8MWT0IHXV_7C4EF409",
+                       "title":  "Give conditions to the model and ask if they are verified.",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Give conditions to the model and ask if they are verified.. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  17,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What are LLM parameters? - IBM",
+                                             "url":  "https://www.ibm.com/think/topics/llm-parameters",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Ibm",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_FWO39_HEHRGWMX7CF3_4AB80660",
+                       "title":  "Least to Most Prompting",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Least to Most Prompting. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  18,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Prompt Engineering Overview - Anthropic",
+                                             "url":  "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Claude",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Instructions - LearnPrompting",
+                                             "url":  "https://learnprompting.org/docs/basics/instructions",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Learnprompting",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_PROMPTS_GOO_C25D7638",
+                       "title":  "Give successful examples of completing tasks then ask.",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Give successful examples of completing tasks then ask..",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  19,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_I4IJY3T5GLGNZ0XQRI_1A08CC7D",
+                       "title":  "Specify the steps required to perform a task.",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Specify the steps required to perform a task.. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  20,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Basics of Prompting - DAIR.AI",
+                                             "url":  "https://www.promptingguide.ai/introduction/basics",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Promptingguide",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Prompt Elements - DAIR.AI",
+                                             "url":  "https://www.promptingguide.ai/introduction/elements",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Promptingguide",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_6W_ONYREBXHWPIGODX_B1F27800",
+                       "title":  "Dual Prompt Approach",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Dual Prompt Approach. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  9,
+                       "status":  "ACTIVE",
+                       "priority":  21,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Mitigate jailbreaks and prompt injections - Anthropic",
+                                             "url":  "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Claude",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "LLM01:2025 Prompt Injection - OWASP",
+                                             "url":  "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Owasp",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "What Is a Prompt Injection Attack?",
+                                             "url":  "https://www.youtube.com/watch?v=jrHRe9lSqqA",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_PROMPTS_GOO_6858F20D",
+                       "title":  "Instruct model to work out its own solution before giving answers. ",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Instruct model to work out its own solution before giving answers. .",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  22,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_2MBOHH8UGKOH8DSD9D_B60937E3",
+                       "title":  "Combining Techniques",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Combining Techniques. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  23,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Step-Back Prompting - LearnPrompting",
+                                             "url":  "https://learnprompting.org/docs/advanced/thought_generation/step_back_prompting",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Learnprompting",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_PROMPTS_GOO_AF713AA7",
+                       "title":  "Iterate and Refine your prompts.",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Iterate and Refine your prompts..",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  24,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_HOQWHQAKXLX8F2IMSM_21CAFABF",
+                       "title":  "Parts of a Prompt",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Parts of a Prompt. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  25,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_LEGACY_PROMPTS_EFD487B3",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Introduction to Ensembling - LearnPrompting",
+                                             "url":  "https://learnprompting.org/docs/advanced/ensembling/introduction",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Learnprompting",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_REAL_WORLD_7A2774D4",
+                       "title":  "Real World Usage Examples",
+                       "description":  "Тема roadmap по направлению «Prompt Engineering Roadmap»: Real World Usage Examples.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  26,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_LLM_PITFALL_5586DC16",
+                       "title":  "Pitfalls of LLMs",
+                       "description":  "Тема roadmap по направлению «Prompt Engineering Roadmap»: Pitfalls of LLMs.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  27,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_RELIABILITY_22661614",
+                       "title":  "Improving Reliability",
+                       "description":  "Тема roadmap по направлению «Prompt Engineering Roadmap»: Improving Reliability.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  28,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_LLM_SETTING_6C31A875",
+                       "title":  "LLM Settings",
+                       "description":  "Тема roadmap по направлению «Prompt Engineering Roadmap»: LLM Settings.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  29,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_J_PWO_ZMF9OI9A5BWM_CFE2C461",
+                       "title":  "Structured Data",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Structured Data. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  30,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_LEGACY_REAL_WORLD_7A2774D4",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Structured Output - Google Gemini API",
+                                             "url":  "https://ai.google.dev/gemini-api/docs/structured-output",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Google",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Structured Outputs - Anthropic",
+                                             "url":  "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Claude",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Instructor - Structured Output Library",
+                                             "url":  "https://github.com/jxnl/instructor",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Github",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Structured Outputs - LLM Parameter Guide - Vellum",
+                                             "url":  "https://www.vellum.ai/llm-parameters/structured-outputs",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Vellum",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_LLM_PITFALL_ECDA563E",
+                       "title":  "Citing Sources",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Citing Sources.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  31,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_LEGACY_LLM_PITFALL_5586DC16",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_KE5GT163K_EK9SZBCB_881D8FE8",
+                       "title":  "Prompt Debiasing",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Prompt Debiasing. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  32,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_LEGACY_RELIABILITY_22661614",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "When to use prompt engineering vs. fine-tuning - TechTarget",
+                                             "url":  "https://www.techtarget.com/searchEnterpriseAI/tip/Prompt-engineering-vs-fine-tuning-Whats-the-difference",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Techtarget",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Prompt Engineering vs Fine Tuning: When to Use Each - Codecademy",
+                                             "url":  "https://www.codecademy.com/article/prompt-engineering-vs-fine-tuning",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Codecademy",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_IMWG_I76_TG5DHU8DG_CEE434D1",
+                       "title":  "Temperature",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Temperature. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  33,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_LEGACY_LLM_SETTING_6C31A875",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What is LLM Temperature? - IBM",
+                                             "url":  "https://www.ibm.com/think/topics/llm-temperature",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Ibm",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Temperature - LLM Parameter Guide - Vellum",
+                                             "url":  "https://www.vellum.ai/llm-parameters/temperature",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Vellum",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_REAL_WORLD__C77591CB",
+                       "title":  "Inferring",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Inferring.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  34,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_LEGACY_REAL_WORLD_7A2774D4",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_LLM_PITFALL_9CF219AB",
+                       "title":  "Bias",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Bias.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  35,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_LEGACY_LLM_PITFALL_5586DC16",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_DIHNCIUKHEMVGVJ4OM_C96A45C2",
+                       "title":  "Prompt Ensembling",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Prompt Ensembling. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  36,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_LEGACY_RELIABILITY_22661614",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Automatic Prompt Engineer - DAIR.AI",
+                                             "url":  "https://www.promptingguide.ai/techniques/ape",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Promptingguide",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_G1U1JDN5ST1FTUTQMM_2E7AE5C5",
+                       "title":  "Top P",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Top P. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  37,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_LEGACY_LLM_SETTING_6C31A875",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Top P - LLM Parameter Guide - Vellum",
+                                             "url":  "https://www.vellum.ai/llm-parameters/top-p",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Vellum",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_REAL_WORLD__F057112E",
+                       "title":  "Writing Emails",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Writing Emails.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  38,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_LEGACY_REAL_WORLD_7A2774D4",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_LLM_PITFALL_B7F41848",
+                       "title":  "Hallucinations",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Hallucinations.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  39,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_LEGACY_LLM_PITFALL_5586DC16",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_1EZQCOPLXPIHJP9Z_V_3E210DC9",
+                       "title":  "LLM Self Evaluation",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: LLM Self Evaluation. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  40,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_LEGACY_RELIABILITY_22661614",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Self-Consistency - DAIR.AI",
+                                             "url":  "https://www.promptingguide.ai/techniques/consistency",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Promptingguide",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Self-Consistency - LearnPrompting",
+                                             "url":  "https://learnprompting.org/docs/intermediate/self_consistency",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Learnprompting",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_LLM_SETTING_13A287EA",
+                       "title":  "Other Hyperparameters",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Other Hyperparameters.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  41,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_LEGACY_LLM_SETTING_6C31A875",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_REAL_WORLD__E528E656",
+                       "title":  "Coding Assistance",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Coding Assistance.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  42,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_LEGACY_REAL_WORLD_7A2774D4",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_LLM_PITFALL_AB5E1C56",
+                       "title":  "Math",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Math.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  43,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_LEGACY_LLM_PITFALL_5586DC16",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_RELIABILITY_1C7C4F82",
+                       "title":  "Calibrating LLMs",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Calibrating LLMs.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  44,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_LEGACY_RELIABILITY_22661614",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_REAL_WORLD__22478B4A",
+                       "title":  "Study Buddy",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Study Buddy.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  45,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_LEGACY_REAL_WORLD_7A2774D4",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_LLM_PITFALL_8299A077",
+                       "title":  "Prompt Hacking",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Prompt Hacking.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  46,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_LEGACY_LLM_PITFALL_5586DC16",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_RELIABILITY_28BBDB14",
+                       "title":  "Math",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Math.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  47,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_LEGACY_RELIABILITY_22661614",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_REAL_WORLD__D136FC75",
+                       "title":  "Designing Chatbots",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Designing Chatbots.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  48,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_LEGACY_REAL_WORLD_7A2774D4",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_5TNK1KCSZH9GTKIEJN_9E22B65B",
+                       "title":  "Image Prompting",
+                       "description":  "Тема roadmap по направлению «Prompt Engineering Roadmap»: Image Prompting. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  49,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Prompting Best Practices - Anthropic",
+                                             "url":  "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Claude",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Prompt Structure and Key Parts - LearnPrompting",
+                                             "url":  "https://learnprompting.org/docs/basics/prompt_structure",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Learnprompting",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_PROMPT_HACK_C3BA3651",
+                       "title":  "Prompt Hacking",
+                       "description":  "Тема roadmap по направлению «Prompt Engineering Roadmap»: Prompt Hacking.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  50,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_IMAGE_PROMP_7C34CD29",
+                       "title":  "Style Modifiers",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Style Modifiers.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  51,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_5TNK1KCSZH9GTKIEJN_9E22B65B",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_PROMPT_HACK_AD8BE628",
+                       "title":  "Prompt Injection",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Prompt Injection.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  52,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_LEGACY_PROMPT_HACK_C3BA3651",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_IMAGE_PROMP_2D79BF29",
+                       "title":  "Quality Boosters",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Quality Boosters.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  53,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_5TNK1KCSZH9GTKIEJN_9E22B65B",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_PROMPT_HACK_6806DC67",
+                       "title":  "Prompt Leaking",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Prompt Leaking.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  54,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_LEGACY_PROMPT_HACK_C3BA3651",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_IMAGE_PROMP_778F1312",
+                       "title":  "Weighted Terms",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Weighted Terms.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  55,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_5TNK1KCSZH9GTKIEJN_9E22B65B",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_PROMPT_HACK_BFA4006F",
+                       "title":  "Jailbreaking",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Jailbreaking.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  56,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_LEGACY_PROMPT_HACK_C3BA3651",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_IMAGE_PROMP_8A246F02",
+                       "title":  "Fix Deformed Generations",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Fix Deformed Generations.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  57,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_5TNK1KCSZH9GTKIEJN_9E22B65B",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_PROMPT_HACK_74259CF9",
+                       "title":  "Defensive Measures",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Defensive Measures.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  58,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_LEGACY_PROMPT_HACK_C3BA3651",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PROMPT_ENGINEE_LEGACY_PROMPT_HACK_E53E5497",
+                       "title":  "Offensive Measures",
+                       "description":  "Подтема roadmap по направлению «Prompt Engineering Roadmap»: Offensive Measures.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  59,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PROMPT_ENGINEE_LEGACY_PROMPT_HACK_C3BA3651",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   }
+               ]
+}

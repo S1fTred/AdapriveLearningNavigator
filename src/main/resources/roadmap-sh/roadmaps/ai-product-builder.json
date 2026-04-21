@@ -1,0 +1,2144 @@
+﻿{
+    "source":  "roadmap.sh",
+    "sourceUrl":  "https://roadmap.sh/ai-product-builder",
+    "roleCode":  "ai-product-builder",
+    "roleName":  "AI Product Builder",
+    "roleDescription":  "Дорожная карта по направлению «AI Product Builder» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+    "roleStatus":  "ACTIVE",
+    "topics":  [
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_ZGQEASMGUEIZVRDYJS_3D2E6582",
+                       "title":  "Prototyping",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Prototyping. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  1,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Software prototyping: What it is, its process, and the best tools to use",
+                                             "url":  "https://www.hostinger.com/tutorials/software-prototyping#h-can-i-create-prototypes-with-ai",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Hostinger",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_DCCJ2_9A7AYI6QCNI4_FDF33089",
+                       "title":  "2. Generation",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: 2. Generation.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  2,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_S9FE9EG1YWSFVRI8H1_D2D5258B",
+                       "title":  "3. Refinement",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: 3. Refinement.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  3,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_RCR8DMZELUNMJ7I_PW_CE642598",
+                       "title":  "Collaboration",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Collaboration.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  4,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_T03SKYX28SACFP_DPM_20217C65",
+                       "title":  "Deployment",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Deployment. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  5,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What is software deployment?",
+                                             "url":  "https://www.atlassian.com/agile/software-development/software-deployment",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Atlassian",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_COEXWV8FCTHXPZNERX_E7EAD7D3",
+                       "title":  "AI Product Creation Cycle",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: AI Product Creation Cycle. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  6,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Will AI make us all product builders?",
+                                             "url":  "https://www.fundament.design/p/will-ai-make-us-all-product-builders?hide_intro_popup=true",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Fundament",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Building AI Products: From Concept to Launch",
+                                             "url":  "https://www.digitalocean.com/resources/articles/building-ai-products#understanding-the-ai-product-lifecycle",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Digitalocean",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_NCU03BZZTHWT9VRQBE_16831E2E",
+                       "title":  "App Anatomy",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: App Anatomy. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  7,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit the Dedicated Frontend Roadmap",
+                                             "url":  "https://roadmap.sh/frontend/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Visit the Dedicated Fr Backend",
+                                             "url":  "https://roadmap.sh/backend",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Visit the Dedicated API Design Roadmap",
+                                             "url":  "https://roadmap.sh/api-design",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Web Application Architecture: Front-end, Middleware and Back-end",
+                                             "url":  "https://dev.to/techelopment/web-application-architecture-front-end-middleware-and-back-end-2ld7",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Dev",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_MWVED4DEFGCWBTXKH9_5696B0D7",
+                       "title":  "AWS",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: AWS. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  8,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit the Dedicated AWS Roadmap",
+                                             "url":  "https://roadmap.sh/aws",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "AWS Cloud Essentials",
+                                             "url":  "https://aws.amazon.com/getting-started/cloud-essentials/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Overview of Amazon Web Services",
+                                             "url":  "https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduction.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_UOZON_NN8ETNI_J5MA_4027BF47",
+                       "title":  "Azure",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Azure. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  9,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Azure Website",
+                                             "url":  "https://azure.microsoft.com/en-us/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Microsoft",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Microsoft Azure Guide",
+                                             "url":  "https://github.com/mikeroyal/Azure-Guide",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Github",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "icrosoft Azure Fundamentals Certification Course (AZ-900)",
+                                             "url":  "https://www.youtube.com/watch?v=5abffC-K40c",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_DAEMRAI6FPPRMRKMKT_AF83625B",
+                       "title":  "Azure DevOps",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Azure DevOps. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  10,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Azure DevOps",
+                                             "url":  "https://azure.microsoft.com/en-us/products/devops",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Microsoft",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Azure DevOps Tutorial for Beginners | CI/CD with Azure Pipelines",
+                                             "url":  "https://www.youtube.com/watch?v=4BibQ69MD8c",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_KUFODIJMSRNB93I6Y__3A0418E5",
+                       "title":  "Base44",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Base44. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  11,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Base44 Docs",
+                                             "url":  "https://docs.base44.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Base44",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "How to build an app with AI in 6 steps",
+                                             "url":  "https://base44.com/blog/how-to-build-an-app-with-ai",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Base44",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Base44 Tutorial for Beginners 2026 - Step by Step",
+                                             "url":  "https://www.youtube.com/watch?v=FN9fyZ9IPWs",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_ALE1RCDP_5RVIHRMPS_5370661B",
+                       "title":  "Bit Cloud",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Bit Cloud.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  12,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_YZI89OGKFZKIIVBDFM_2DA9D913",
+                       "title":  "Bolt",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Bolt. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  13,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Getting Started with Bolt",
+                                             "url":  "https://support.bolt.new/building/quickstart",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Bolt",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Bolt.new Review 2025: The Good, Bad, and Surprising Findings for Developers",
+                                             "url":  "https://trickle.so/blog/bolt-new-review",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Trickle",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Bolt.New AI Tutorial for Beginners: Create an App in Under 20 Minutes!",
+                                             "url":  "https://www.youtube.com/watch?v=5zfOitaKfmM",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_IREY4HWJCIRAONSIZE_55782151",
+                       "title":  "Browsers / DevTools",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Browsers / DevTools. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  14,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "How Browsers Work",
+                                             "url":  "https://www.ramotion.com/blog/what-is-web-browser/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Ramotion",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "What are browser developer tools?",
+                                             "url":  "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Tools_and_setup/What_are_browser_developer_tools",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "MDN Web Docs",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "How Do Web Browsers Work?",
+                                             "url":  "https://www.youtube.com/watch?v=5rLFYtXHo9s",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "nderstand Browser Dev Tools Network Tab (and avoid these mistakes...)",
+                                             "url":  "https://www.youtube.com/watch?v=2CC0fugc_2o",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_MQZAGHOM3DS_ZN2ZR2_E47B1012",
+                       "title":  "Choose a Prototype Tool",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Choose a Prototype Tool. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  15,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Best AI Prototyping Tools in 2026: Ranked by Use Case",
+                                             "url":  "https://www.banani.co/blog/best-ai-prototyping-tools",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Banani",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Prototyping Tools: A Comprehensive Guide Intro",
+                                             "url":  "https://www.coursera.org/articles/prototyping-tools",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Coursera",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_G86QEPMTB5LX4_DMKV_761D47EA",
+                       "title":  "Claude Code",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Claude Code. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  16,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit the Dedicated Claude Code Roadmap",
+                                             "url":  "https://roadmap.sh/claude-code",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Claude Code Overview",
+                                             "url":  "https://code.claude.com/docs/en/overview",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Claude",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Claude Code: From Zero to Hero",
+                                             "url":  "https://medium.com/@dan.avila7/claude-code-from-zero-to-hero-bebe2436ac32",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Medium",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Claude Code Tutorial for Beginners",
+                                             "url":  "https://www.youtube.com/watch?v=eMZmDH3T2bY",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_FA06GTSWYB9X0QUGSP_A94979CE",
+                       "title":  "Claude Code",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Claude Code. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  17,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit the Dedicated Claude Code Roadmap",
+                                             "url":  "https://roadmap.sh/claude-code",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Claude Code Overview",
+                                             "url":  "https://code.claude.com/docs/en/overview",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Claude",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Claude Code: From Zero to Hero",
+                                             "url":  "https://medium.com/@dan.avila7/claude-code-from-zero-to-hero-bebe2436ac32",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Medium",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "laude Code Tutorial for Beginners",
+                                             "url":  "https://www.youtube.com/watch?v=eMZmDH3T2bY",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_Q6PZFPT_4KELOWVVB2_6B326593",
+                       "title":  "Cloudflare",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Cloudflare. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  18,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit the Dedicated Cloudflare Roadmap",
+                                             "url":  "https://roadmap.sh/cloudflare",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Getting started with Cloudflare",
+                                             "url":  "https://developers.cloudflare.com/pages/get-started/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Cloudflare",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "What is Cloudflare?",
+                                             "url":  "https://www.youtube.com/watch?v=XHvmX3FhTwU",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "IntroLearn Cloudflare Workers 101 - Full Course for Beginnersduction to Cloudflare",
+                                             "url":  "https://www.youtube.com/watch?v=24cml1rKGBs",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_XCOG801UZWSRAK0XMI_3497136B",
+                       "title":  "Codex",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Codex. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  19,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Codex Docs",
+                                             "url":  "https://developers.openai.com/codex",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Openai",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Introduction to OpenAI Codex",
+                                             "url":  "https://www.coursera.org/learn/introduction-to-openai-codex",
+                                             "type":  "COURSE",
+                                             "language":  "en",
+                                             "durationMinutes":  180,
+                                             "provider":  "Coursera",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Getting started with Codex",
+                                             "url":  "https://www.youtube.com/watch?v=px7XlbYgk7I",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_S7UHXLCXVTEGKI1KIR_9D01D566",
+                       "title":  "Codex",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Codex. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  20,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Codex Docs",
+                                             "url":  "https://developers.openai.com/codex",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Openai",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Introduction to OpenAI Codex",
+                                             "url":  "https://www.coursera.org/learn/introduction-to-openai-codex",
+                                             "type":  "COURSE",
+                                             "language":  "en",
+                                             "durationMinutes":  180,
+                                             "provider":  "Coursera",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Getting started with Codex",
+                                             "url":  "https://www.youtube.com/watch?v=px7XlbYgk7I",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_6HLXAFLOJOF0_CUIUP_17D21802",
+                       "title":  "Copilot",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Copilot. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  21,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "GitHub Copilot Docs",
+                                             "url":  "https://docs.github.com/en/copilot",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Github",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Copilot Tutorials",
+                                             "url":  "https://github.com/features/copilot/tutorials",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Github",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Intro to GitHob Copilot in Visual Studio",
+                                             "url":  "https://www.youtube.com/watch?v=z1ycDvspv8U",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_BEW1IOWB0KMICHTDGV_497FC453",
+                       "title":  "Cursor",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Cursor. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  22,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Cursor Docs",
+                                             "url":  "https://cursor.com/docs",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Cursor",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Cursor Learn",
+                                             "url":  "https://cursor.com/learn",
+                                             "type":  "COURSE",
+                                             "language":  "en",
+                                             "durationMinutes":  180,
+                                             "provider":  "Cursor",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Cursor AI Tutorial for Beginners",
+                                             "url":  "https://www.youtube.com/watch?v=3289vhOUdKA",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Cursor Tutorial for Beginners (AI Code Editor)",
+                                             "url":  "https://www.youtube.com/watch?v=ocMOZpuAMw4",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_4DXLJR8BTYKJDXBLEE_A027D932",
+                       "title":  "Definition \u0026 Scope",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Definition \u0026 Scope. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  23,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "How to scope your AI product",
+                                             "url":  "https://uxdesign.cc/how-to-scope-your-ai-product-5b9885ef3851",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Uxdesign",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_ZXLUKZLDGXGVV4MRHM_17A3A0A7",
+                       "title":  "DigitalOcean",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: DigitalOcean. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  24,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "DigitalOcean",
+                                             "url":  "https://www.digitalocean.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Digitalocean",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "DigitalOcean Tutorials",
+                                             "url":  "https://www.digitalocean.com/community/tutorials",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Digitalocean",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Getting Started With Kubernetes on DigitalOcean",
+                                             "url":  "https://www.youtube.com/watch?v=cJKdo-glRD0",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_MB_6YVMGPZUGBJXGZO_942501AB",
+                       "title":  "E2E Testing",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: E2E Testing. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  25,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "End to End Testing",
+                                             "url":  "https://microsoft.github.io/code-with-engineering-playbook/automated-testing/e2e-testing/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Github",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "End to End Testing: Importance, Process, Best Practices \u0026 Frameworks",
+                                             "url":  "https://testgrid.io/blog/end-to-end-testing-a-detailed-guide/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Testgrid",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_5QLJKBRUWUAN_5NG2A_24EE935A",
+                       "title":  "Feature Scoping",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Feature Scoping. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  26,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "How to effectively scope your software projects",
+                                             "url":  "https://www.freecodecamp.org/news/how-to-effectively-scope-your-software-projects-from-planning-to-execution-e96cbcac54b9/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Freecodecamp",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_ZQ_KWLP5V9FIMGHMG5_1A5BFFAF",
+                       "title":  "Feedback \u0026 Validation",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Feedback \u0026 Validation.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  27,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_6HL4_FT8ONZQ80V_ND_020F74EB",
+                       "title":  "GCP",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: GCP. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  28,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Google Cloud Platform",
+                                             "url":  "https://cloud.google.com",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Google",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Cloud Computing, Hosting Services, and APIs",
+                                             "url":  "https://cloud.google.com/gcp",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Google",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Google Cloud Platform Video Course",
+                                             "url":  "https://www.youtube.com/watch?v=fZOz13joN0o",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_VGTNZAA5VH02CTGKVG_6DDDF69A",
+                       "title":  "Gemini CLI",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Gemini CLI. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  29,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Gemini CLI Docs",
+                                             "url":  "https://geminicli.com/docs/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Geminicli",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Hands-on with Gemini CLI",
+                                             "url":  "https://codelabs.developers.google.com/gemini-cli-hands-on#0",
+                                             "type":  "COURSE",
+                                             "language":  "en",
+                                             "durationMinutes":  180,
+                                             "provider":  "Google",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Gemini CLI: The AI agent that lives in your terminal",
+                                             "url":  "https://www.youtube.com/watch?v=C5Cjvpfzc_0",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_OFSCURHJQJFH8QA3SK_C4A388B1",
+                       "title":  "GitHub",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: GitHub. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  30,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit Dedicated Git \u0026 GitHub Roadmap",
+                                             "url":  "https://roadmap.sh/git-github",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "GitHub Docs",
+                                             "url":  "https://docs.github.com/en/get-started/quickstart",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Github",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "What is GitHub?",
+                                             "url":  "https://www.youtube.com/watch?v=w3jLJU7DT5E",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_F_D4JLYSBP9BHUCR0K_B0B0BB0F",
+                       "title":  "GitLab",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: GitLab. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  31,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "https://about.gitlab.com/get-started/ Documentation",
+                                             "url":  "https://docs.gitlab.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Gitlab",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Get Started with Gitlab",
+                                             "url":  "https://about.gitlab.com/get-started/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Gitlab",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "GitLab Explained: What is GitLab and Why Use It?",
+                                             "url":  "https://www.youtube.com/watch?v=bnF7f1zGpo4",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_8EPFXMPV_VM7SKOLEM_ACDF4E96",
+                       "title":  "Hope AI",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Hope AI.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  32,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_CEM2U4LHOA8KW_0GQV_8FB12F29",
+                       "title":  "HTML / CSS / JavaScript",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: HTML / CSS / JavaScript. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  33,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit the Dedicated Frontend Roadmap",
+                                             "url":  "https://roadmap.sh/frontend",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Visit the Dedicated HTML Roadmap",
+                                             "url":  "https://roadmap.sh/html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Visit the Dedicated CSS Roadmap",
+                                             "url":  "https://roadmap.sh/css",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Visit the Dedicated JavaScript Roadmap",
+                                             "url":  "https://roadmap.sh/javascript",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_MXPA6I8K1_AKKQPGK2_E520F384",
+                       "title":  "Integration Testing",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Integration Testing. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  34,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Integration Testing",
+                                             "url":  "https://www.guru99.com/integration-testing.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Guru99",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Unit Test vs Integration Test: What\u0027s the Difference?",
+                                             "url":  "https://www.testim.io/blog/unit-test-vs-integration-test/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Testim",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "What is Integration Testing?",
+                                             "url":  "https://www.youtube.com/watch?v=kRD6PA6uxiY",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_T_NUIQVT8DKMG6UDGV_B452279C",
+                       "title":  "Lovable",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Lovable. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  35,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Lovable Docs",
+                                             "url":  "https://docs.lovable.dev/introduction/welcome",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Lovable",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "What is Lovable AI? A Deep Dive into the Builder | UI Bakery Blog",
+                                             "url":  "https://uibakery.io/blog/what-is-lovable-ai",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Uibakery",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Master Lovable In 24 Minutes",
+                                             "url":  "https://www.youtube.com/watch?v=rqvtLxwMklo",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_GWHXA4WBRZN0VEAX5N_51158316",
+                       "title":  "MongoDB / Atlas",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: MongoDB / Atlas. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  36,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit Dedicated MongoDB Roadmap",
+                                             "url":  "https://roadmap.sh/mongodb",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "MongoDB Website",
+                                             "url":  "https://www.mongodb.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Mongodb",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Learning Path for MongoDB Developers",
+                                             "url":  "https://learn.mongodb.com/catalog",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Mongodb",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Vector Search in MongoDB Atlas",
+                                             "url":  "https://www.mongodb.com/products/platform/atlas-vector-search",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Mongodb",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_HZHZCLBK_OQH7GSOKX_9BB2FC63",
+                       "title":  "New Feature / Structural Change",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: New Feature / Structural Change.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  37,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_D_2UQ2_BEFE1TQM8_Y_156CBE61",
+                       "title":  "Node.js",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Node.js. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  38,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit the Dedicated Node.js Roadmap",
+                                             "url":  "https://roadmap.sh/nodejs",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Node.jsLearn Node.js Official WebsiteDocs",
+                                             "url":  "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Node.js",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Node.js and Express.js Full Course",
+                                             "url":  "https://www.youtube.com/watch?v=Oe421EPjeBE",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_KFL0OJKI1OUSRYRSQO_4DA0B688",
+                       "title":  "PostgreSQL / MySQL",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: PostgreSQL / MySQL. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  39,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit Dedicated PostgreSQL DBA Roadmap",
+                                             "url":  "https://roadmap.sh/postgresql-dba",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "PostgreSQL Docs",
+                                             "url":  "https://www.postgresql.org/docs/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "PostgreSQL",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "MySQL Dcos",
+                                             "url":  "https://dev.mysql.com/doc/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Mysql",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Learn PostgreSQL - Full Tutorial for Beginners",
+                                             "url":  "https://www.postgresqltutorial.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Postgresqltutorial",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "MySQL Tutorial",
+                                             "url":  "https://www.mysqltutorial.org/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Mysqltutorial",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_KXDCKO0AZLY4_HD4_Y_81042926",
+                       "title":  "Problem Definition",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Problem Definition.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  40,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_SV7QFWPKATSVISCN2A_3CC7ACAD",
+                       "title":  "Railway",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Railway. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  41,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Railway",
+                                             "url":  "https://railway.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Railway",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Quick Start Tutorial",
+                                             "url":  "https://docs.railway.com/quick-start",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Railway",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Fastest Way to Deploy a Full Stack Web App (Railway)",
+                                             "url":  "https://www.youtube.com/watch?v=JQIKobOcQ9k",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_AHQ8F3ULEEUXTYCIFZ_7ACA5884",
+                       "title":  "React",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: React. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  42,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit the Dedicated React Roadmap",
+                                             "url":  "https://roadmap.sh/react",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "React Docs",
+                                             "url":  "https://react.dev/reference/react",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "React",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Full Stack React Developer Course",
+                                             "url":  "https://www.youtube.com/watch?v=Bvwq_S0n2pk",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_OBGQ_1BJYBDYI_OFPM_57A8C5B7",
+                       "title":  "Render",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Render. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  43,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Render Docs + Quickstarts",
+                                             "url":  "https://render.com/docs",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Render",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Render: Cloud Deployment with Less Engineering",
+                                             "url":  "https://thenewstack.io/render-cloud-deployment-with-less-engineering/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Thenewstack",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Deploy any application with one click using Render | Cloud Application Platform",
+                                             "url":  "https://www.youtube.com/watch?v=yWxBUcG_C7g",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_GF1EGAJFYQYAJ4I_AT_6CEBED6E",
+                       "title":  "Replit",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Replit. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  44,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Replit Docs",
+                                             "url":  "https://docs.replit.com/getting-started/intro-replit",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Replit",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "What is Replit? An honest look at the AI app builder in 2025",
+                                             "url":  "https://www.eesel.ai/blog/replit",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Eesel",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Getting Started with Replit",
+                                             "url":  "https://www.youtube.com/watch?v=St95nPOwsa8\u0026list=PLto9KpJAqHMTzEMDAFT4r5LlI4NByngyT",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_P4KU5RT5UOVYPUDUQZ_40391E27",
+                       "title":  "Supabase",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Supabase. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  45,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Supabase Dcos",
+                                             "url":  "https://supabase.com/docs",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Supabase",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Supabase Full Course 2025 | Become a Supabase Pro in 1.5 Hours",
+                                             "url":  "https://www.youtube.com/watch?v=kyphLGnSz6Q",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_YDZAN2EHBVAAVHS3IP_AF259991",
+                       "title":  "Targeted Change",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Targeted Change.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  46,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_TN2X9NW0PHCP21OPTH_B0355ABA",
+                       "title":  "Tech Stack \u0026 Constraints",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Tech Stack \u0026 Constraints. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  47,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit the Dedicated Vibe Coding Roadmap",
+                                             "url":  "https://roadmap.sh/vibe-coding",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "The Best Tech Stack in the Age of AI",
+                                             "url":  "https://thebootstrappedfounder.com/the-best-tech-stack-in-the-age-of-ai/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Thebootstrappedfounder",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_VXQHYHA9YPWX70GIHK_9863EB78",
+                       "title":  "Unit Testing",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Unit Testing. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  48,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What is Unit Testing?",
+                                             "url":  "https://www.guru99.com/unit-testing-guide.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Guru99",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "What is Unit Testing?",
+                                             "url":  "https://youtu.be/x95ez7_V7rA?si=JhCVhcEN7zZOkxdp",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_ARA5S0MMMHX9F0NHD3_80DB0E18",
+                       "title":  "User Testing",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: User Testing. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  49,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What is User Testing? Definition, Types \u0026 Methods",
+                                             "url":  "https://trymata.com/blog/what-is-user-testing/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Trymata",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_XKBOLYQGPLDMOTDWEV_C186053C",
+                       "title":  "v0",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: v0. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  50,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "v0 Docs",
+                                             "url":  "https://v0.app/docs",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "V0",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Transforming how you work with v0 - Vercel",
+                                             "url":  "https://vercel.com/blog/transforming-how-you-work-with-v0",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Vercel",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "How To Use v0 by Vercel For Beginners",
+                                             "url":  "https://www.youtube.com/watch?v=41SR07p243Q",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_PRODUCT_BUI_WUG8YPT4AWXGMYGIAI_6DD5A08C",
+                       "title":  "Vercel",
+                       "description":  "Тема roadmap по направлению «AI Product Builder»: Vercel. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  51,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Vercel Documentation",
+                                             "url":  "https://vercel.com/docs",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Vercel",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Vercel Quick Start",
+                                             "url":  "https://vercel.com/docs/getting-started-with-vercel",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Vercel",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Vercel Tutorial - Host a Website for Free",
+                                             "url":  "https://www.youtube.com/watch?v=Vx5nPGdsFaU",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   }
+               ]
+}

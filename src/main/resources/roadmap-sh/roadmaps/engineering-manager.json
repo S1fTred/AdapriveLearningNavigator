@@ -1,0 +1,2461 @@
+﻿{
+    "source":  "roadmap.sh",
+    "sourceUrl":  "https://roadmap.sh/engineering-manager",
+    "roleCode":  "engineering-manager",
+    "roleName":  "Engineering Manager",
+    "roleDescription":  "Дорожная карта по направлению «Engineering Manager» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+    "roleStatus":  "ACTIVE",
+    "topics":  [
+                   {
+                       "code":  "RM_ENGINEERING_MA_IZFN0FARDRGV_8ZII_A2EF599A",
+                       "title":  "Process",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Process.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  1,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_P9ECMVHCQJMVXF67DI_798934BB",
+                       "title":  "Product",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Product.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  2,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_HYN0GEI9BL24NPTETX_F6048C26",
+                       "title":  "What is Engineering Management?",
+                       "description":  "Тема roadmap по направлению «Engineering Manager»: What is Engineering Management?. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  3,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Engineering Management Resources",
+                                             "url":  "https://github.com/engineering-management/awesome-engineering-management",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Github",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Software Engineering at Google: The Engineering Manager",
+                                             "url":  "https://abseil.io/resources/swe-book/html/ch05.html#the_engineering_manager",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Abseil",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_OKBELP4YB8RI1Q3VI0_1D9CB49F",
+                       "title":  "EM vs Tech Lead vs IC",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: EM vs Tech Lead vs IC.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  4,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_ENGINEERING_MA_HYN0GEI9BL24NPTETX_F6048C26",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_ASZ2UVCMPADEPJJT6V_CDDC8463",
+                       "title":  "People",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: People.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  5,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_ENGINEERING_MA_HYN0GEI9BL24NPTETX_F6048C26",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_PDUPCV2QPPVMVVDDK4_18C2E136",
+                       "title":  "System Monitoring \u0026 Performance",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: System Monitoring \u0026 Performance.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  6,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_GAEMPSMVNYJMTA5Q9O_99AD1E96",
+                       "title":  "CI/CD Implementation",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: CI/CD Implementation.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  7,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_IKCJ8YBU2AD1W5VUPN_1F86A4F9",
+                       "title":  "Technical Roadmapping",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Technical Roadmapping.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  8,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_BPJPDBIFPWS4SCOOAT_36F8F2E4",
+                       "title":  "Development / Release Workflow",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Development / Release Workflow.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  9,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_FBENRXDMHOGYGL_D96_B1EB3328",
+                       "title":  "Software Engineering Background",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Software Engineering Background.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  10,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_FTWNNOE3ZOBMJS_OG2_D4179754",
+                       "title":  "Architectural Decision-Making",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Architectural Decision-Making.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  11,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_Q5SJYM1D8CQZZACR_K_F3B54AE2",
+                       "title":  "Testing Strategies",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Testing Strategies.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  12,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_IX4HPGOIEBC_GZE1A0_75388147",
+                       "title":  "System Design and Architecture",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: System Design and Architecture.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  13,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_H0AAV5QKDNINEGJOGP_AC34D670",
+                       "title":  "Build vs Buy Evaluation",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Build vs Buy Evaluation.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  14,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_C2YSAZ32AN_UXV8LB7_4ACE455F",
+                       "title":  "Technical Standards Setting",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Technical Standards Setting.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  15,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_EY6HK5WPD9Y_VA1URO_795800C1",
+                       "title":  "Technical Debt and Management",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Technical Debt and Management.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  16,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_D7ZMBHMFGY9MWMKC9C_D2B58134",
+                       "title":  "Technical Risk Assessment",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Technical Risk Assessment.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  17,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_SQCLHK_JVBITYUULLX_617406AD",
+                       "title":  "Security  Best Practices",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Security  Best Practices.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  18,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_40YK6XZI8LSXDIAXXT_F52E089D",
+                       "title":  "Code Review Best Practices",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Code Review Best Practices.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  19,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_EYOVFMQOJBH1SAPHLI_F50C5AFD",
+                       "title":  "Scaling Infrastructure",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Scaling Infrastructure.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  20,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_O1XPRFG8INWQPD12XS_0FBAF342",
+                       "title":  "Incident Management",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Incident Management.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  21,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_2XNTKT5YI_JJ_WGCLA_DFE68238",
+                       "title":  "Technical Documentation",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Technical Documentation.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  22,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_QUXPEK8SMXRBS2GMDD_546ECF2E",
+                       "title":  "Legacy System Retirement",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Legacy System Retirement.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  23,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_BX2SMHR58UD45SE5DK_AB3EEB06",
+                       "title":  "Delegation",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Delegation.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  24,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_QA5CR5F0GEC_RQC_SO_6075F20D",
+                       "title":  "Conflict Resolution",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Conflict Resolution.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  25,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_B3QOH_LUW_GZ4N8WDG_0DFE52D2",
+                       "title":  "One-on-One Meetings",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: One-on-One Meetings.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  26,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_3NA5MBIPL5F6MJEZKG_5642BC65",
+                       "title":  "Hiring and Recruitment",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Hiring and Recruitment.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  27,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_AZ9GGKLFOAT2T_SYRU_BFC0E14E",
+                       "title":  "Feedback Delivery",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Feedback Delivery.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  28,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_E0ZUICOS8SJ0XB1LNI_7AB1D5E9",
+                       "title":  "Team Meetings",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Team Meetings.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  29,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_TPDMXXJVFI_8_MTO_D_3EE194E7",
+                       "title":  "Team Structure and Design",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Team Structure and Design.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  30,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_U_OONDXKCE387R9OLV_AF2A075A",
+                       "title":  "Team Motivation",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Team Motivation.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  31,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_GQKEGKJEU5SOF5GL_H_E39761F5",
+                       "title":  "Status Reporting",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Status Reporting.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  32,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_EJZYNOB6SARLJXRM51_5B4B80FE",
+                       "title":  "Performance Evaluations",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Performance Evaluations.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  33,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_7PBMYOSMIGZT21A2IP_AB2B2203",
+                       "title":  "Trust / Influence Building",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Trust / Influence Building. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  34,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Understanding The Trust Equation",
+                                             "url":  "https://trustedadvisor.com/why-trust-matters/understanding-trust/understanding-the-trust-equation",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Trustedadvisor",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_TVQVLJQEGLZRSKWNOH_9CE31850",
+                       "title":  "Stakeholder Management",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Stakeholder Management.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  35,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_FHFSR_N4ZDTHINEINU_B9CB8810",
+                       "title":  "Career Development Planning",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Career Development Planning.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  36,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_H7GEQNBGIABDA1Q1BK_072F8B54",
+                       "title":  "Emotional Intelligence",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Emotional Intelligence. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  37,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Daniel Goleman on the different kinds of empathy",
+                                             "url":  "https://www.youtube.com/watch?v=WdDVvLEKoc8",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_ZYNBSBD8PLAZ5LT5OE_AE6EBF1F",
+                       "title":  "Cross-functional Collaboration",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Cross-functional Collaboration.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  38,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_0ULNFQ0ZFJXGOLBKM1_88B2EF1B",
+                       "title":  "Mentoring and Coaching",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Mentoring and Coaching.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  39,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_N9GVPHN4C1U_L6V_W9_208BCF64",
+                       "title":  "Agile methodologies",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Agile methodologies. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  40,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Scrum Guide",
+                                             "url":  "https://scrumguides.org/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Scrumguides",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_4V5YLKYVCMH0S7SQUF_B4475B37",
+                       "title":  "Resource Allocation",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Resource Allocation.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  41,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_SUT6Q5LMMSYVKADLQP_CD05CE1E",
+                       "title":  "Project Tracking",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Project Tracking.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  42,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_7BCTOTQL78QMG4QB43_9B594E0E",
+                       "title":  "Sprint Planning",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Sprint Planning.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  43,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_PXOBPGPGCX3_55W4UT_7B352028",
+                       "title":  "Milestone Management",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Milestone Management.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  44,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_QC6E3GKUUONFZIFYQE_CDDD3165",
+                       "title":  "Release Management",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Release Management.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  45,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_C_LJJSJT8CXW_UT3OC_BC3171E4",
+                       "title":  "Scope Management",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Scope Management.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  46,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_MGW6M8I9QY1EOJPJV__7A7CB21D",
+                       "title":  "Risk Management",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Risk Management.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  47,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_QWO5QFS7KXWFU3AA8I_ABE8F47A",
+                       "title":  "Timeline Estimation",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Timeline Estimation.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  48,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_HH_UDVFLGKOMJCI1SS_8C934290",
+                       "title":  "Dependency management",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Dependency management.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  49,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_NC5DFGLXBLOXUAP2U__C8435801",
+                       "title":  "Product strategy alignment",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Product strategy alignment.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  50,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_VHOHVFF_LFQRROK6SG_E522278E",
+                       "title":  "Business Case Development",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Business Case Development.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  51,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_XINUWPAHODUFMLYCEW_BC17C08B",
+                       "title":  "ROI analysis",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: ROI analysis.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  52,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_WD8FCEAGZBTVSD_K4T_67DC38A3",
+                       "title":  "KPI Definition",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: KPI Definition.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  53,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_P2GIOT_I0SQEOMBO_X_51FDB13D",
+                       "title":  "Market awareness",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Market awareness.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  54,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_IDD92ZTBVUZPTBL5JR_495C617D",
+                       "title":  "Velocity Tracking",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Velocity Tracking.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  55,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_76GJWWEYAEX_KH02OS_8AB70111",
+                       "title":  "Competitive Analysis",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Competitive Analysis.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  56,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_ZWWSUFM_G4KVVL_CV8_06D517B0",
+                       "title":  "Quality Metrics",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Quality Metrics.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  57,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_TQY4HJO56RDDLBZJS__54D0F799",
+                       "title":  "Competitive Analysis",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Competitive Analysis.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  58,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_OQJR26B27SHSYVQ4IF_FD4BD61C",
+                       "title":  "Budget Planning",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Budget Planning.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  59,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_KPDHK7TL_BNIJ_OBNQ_737CA45E",
+                       "title":  "Team Health Metrics",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Team Health Metrics.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  60,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_IWWXNSVVCMZ57STXWZ_2CE0B6A8",
+                       "title":  "Resource forecasting",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Resource forecasting.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  61,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_G9WWA50V8ZBHIJGBRX_1F8E5939",
+                       "title":  "Project Postmortems",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Project Postmortems.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  62,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_KA0Y6KDVTJJFEX3FRH_D86F5396",
+                       "title":  "Company Culture",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Company Culture.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  63,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_RBHZJZTRV1ZZ5QAYW7_E40B0A19",
+                       "title":  "Cost Optimization",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Cost Optimization.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  64,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_TT02QGHSN4FPBPBOZ1_AB1E6182",
+                       "title":  "Change management",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Change management.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  65,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_IMGT669VBUT_IEC2O4_482322C4",
+                       "title":  "Vendor Management",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Vendor Management.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  66,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_MJMRNHPKEB4LEZXBB8_ADB89987",
+                       "title":  "Organization structure",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Organization structure.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  67,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_ZOZ01JCNU69GR95ICW_02397D94",
+                       "title":  "Politics navigation",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Politics navigation.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  68,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_HB_RZE4K37RR0ENSH7_6A8421AE",
+                       "title":  "Cross-department collaboration",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Cross-department collaboration.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  69,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_ZUZUZWY_FRSN_PFJZV_663FD783",
+                       "title":  "Defining and Enforcing Values",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Defining and Enforcing Values.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  70,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_6IM0N4FAMNHK4MEZS9_7A727E6D",
+                       "title":  "Inclusive environment creation",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Inclusive environment creation.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  71,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_NJQJYPMQK3NGYTQHZU_67D72B8C",
+                       "title":  "Innovation fostering",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Innovation fostering.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  72,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_8NRO6PTKEKNUGYBJQF_5D2FDA5F",
+                       "title":  "Team Traditions and Rituals",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Team Traditions and Rituals.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  73,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_AED_KBZER1NHFTAD8Y_9A0CE30E",
+                       "title":  "Learning culture development",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Learning culture development.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  74,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_VB3A4A_UPGTAES_DVI_D7C4DD5D",
+                       "title":  "Recognition programs",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Recognition programs.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  75,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_74_7HDXABVXYO6LJDG_D179910C",
+                       "title":  "Knowledge sharing practices",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Knowledge sharing practices.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  76,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_LE3YKYSYFL23KVUWXE_EF29EF59",
+                       "title":  "Social connections",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Social connections.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  77,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_CQ0OFAWQSRATHZO_BX_6045683E",
+                       "title":  "Technical excellence mindset",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Technical excellence mindset.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  78,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_G9FVFKC715TZL2ZGLP_CA039A67",
+                       "title":  "Bias Recognition / Mitigation",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Bias Recognition / Mitigation.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  79,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_FYKKO8D35AHD8AGR3Y_5FB8CDEE",
+                       "title":  "Blameless Post-mortems",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Blameless Post-mortems.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  80,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_XAEB67NQDI0KWVEHQU_5494EA6B",
+                       "title":  "Emergency protocols",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Emergency protocols.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  81,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_2RWPGPEGD2GYIIV6SV_1245AC31",
+                       "title":  "Contingency planning",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Contingency planning.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  82,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_MIUX8ZAHWYPWPGVXUT_CC40B4C8",
+                       "title":  "Contingency planning",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Contingency planning. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  83,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Preventing Burnout: A Guide to Protecting Your Well-Being",
+                                             "url":  "https://www.psychiatry.org/news-room/apa-blogs/preventing-burnout-protecting-your-well-being",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Psychiatry",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Beating Burnout",
+                                             "url":  "https://hbr.org/2016/11/beating-burnout",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Hbr",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "How to Avoid Burnout",
+                                             "url":  "https://www.youtube.com/watch?v=smjGAcyqDnk",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_LQ3YFAGJ4UADGTNN_C_B6B211A1",
+                       "title":  "War Room Management",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: War Room Management.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  84,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_KOTZJ8E7MC0WMF46VR_D51AD278",
+                       "title":  "Disaster recovery",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Disaster recovery.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  85,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_NNOVA8W70HRNDXN3XQ_5562141D",
+                       "title":  "Disaster recovery",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Disaster recovery. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  86,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "How to Lead Through a Crisis",
+                                             "url":  "https://www.ccl.org/articles/leading-effectively-articles/how-to-lead-through-a-crisis/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Ccl",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Lead how they need: adopting a situational leadership style",
+                                             "url":  "https://www.atlassian.com/blog/teamwork/situational-leadership",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Atlassian",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Situational Leadership Model Explained",
+                                             "url":  "https://www.youtube.com/watch?v=pykuvuA-QFU",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_IREWTIUBCJORNLH27Q_E02214EC",
+                       "title":  "Stakeholder Communication",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Stakeholder Communication.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  87,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_V6N7BH0B55GX0ONXB5_AD674770",
+                       "title":  "Business continuity",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Business continuity.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  88,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_FWK_B7JRBBXVNUY9JX_CFF9C2D6",
+                       "title":  "Business continuity",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Business continuity. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  89,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Five Components of Effective Emergency Staffing Solutions",
+                                             "url":  "https://www.atriumglobal.com/resources/effective-emergency-staffing-solutions/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Atriumglobal",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_2FHCB1DANF34APCAAL_D7887A49",
+                       "title":  "Service Recovery",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Service Recovery.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  90,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_FNP4_RGPVFC76PJKJX_11988ADE",
+                       "title":  "Security incident handling",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Security incident handling.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  91,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_QFHHOGWZ_BGZGOFKFG_6CE623B8",
+                       "title":  "Security incident handling",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Security incident handling. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  92,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Stress Management",
+                                             "url":  "https://www.helpguide.org/mental-health/stress/stress-management",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Helpguide",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "5 Steps to Rapidly Reduce Stress (Top Stress Management Techniques)",
+                                             "url":  "https://www.youtube.com/watch?v=1WIHlVZcrzs",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_8ZYK34SWHRY2LRWCHW_B01C25DE",
+                       "title":  "Post-incident analysis",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Post-incident analysis.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  93,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_KQG_WK66_51DA4LY9I_E93C78BB",
+                       "title":  "Production issues management",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Production issues management.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  94,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_TMY4KTU6LUFG5WKYLJ_C41DB5E6",
+                       "title":  "Production issues management",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Production issues management. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  95,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "The Work-Life Balance Crisis",
+                                             "url":  "https://www.speechtherapypd.com/blogs/the-worklife-balance-crisis",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Speechtherapypd",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "5 Ways to Keep Your Career on Track During a Life Crisis",
+                                             "url":  "https://melodywilding.com/5-ways-to-keep-your-career-on-track-during-a-life-crisis/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Melodywilding",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_WYOQFMK5EJB2UOIYXH_A0C4B3FB",
+                       "title":  "Vendor relationships",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Vendor relationships.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  96,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_QEVILNGG4UV9Q9PWIG_BD066D85",
+                       "title":  "Customer feedback integration",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Customer feedback integration.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  97,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_XMN575NNNQJEHE2OJY_6E28D1DF",
+                       "title":  "Technology partnerships",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Technology partnerships.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  98,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_V5S2I_L2TSZFNXMLN__E05E1FC2",
+                       "title":  "Technical customer support",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Technical customer support.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  99,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_F3P0FF4UZGVQZUMVTV_31F11761",
+                       "title":  "Integration management",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Integration management.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  100,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_A_AA7VDDAYFAMUZD_C_6F4E71D1",
+                       "title":  "Customer success alignment",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Customer success alignment.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  101,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_GHHNI32MSBMQK_OKOY_7D53A0D1",
+                       "title":  "Architecture documentation",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Architecture documentation.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  102,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_UKMMMWACEKCEJEIEKC_1DBE6235",
+                       "title":  "API strategy",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: API strategy.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  103,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_2QWMCO27H3YGTLLWVP_D52D4A4C",
+                       "title":  "Feature prioritization",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Feature prioritization.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  104,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_KWY9O1Z2HPEE0SB3QT_7609BE83",
+                       "title":  "Process documentation",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Process documentation.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  105,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_JCTP5TPCK_VY35_BH7_E46A5A9D",
+                       "title":  "External collaboration",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: External collaboration.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  106,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_TCT2SYTMYEHCSPDLXX_E4D2919A",
+                       "title":  "Technical partnerships",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Technical partnerships.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  107,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_DTJP_REL1ITZJVELQV_9455BE0B",
+                       "title":  "Decision records",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Decision records.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  108,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_4_MCXFOKMGCN369OPG_A050A25B",
+                       "title":  "Best Practices",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Best Practices.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  109,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_HUQ_VU2PDBPYF0MBOC_BCC2DAA1",
+                       "title":  "Lessons Learned",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Lessons Learned.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  110,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_5MM1CCB1PMQCD3UYJM_1879C358",
+                       "title":  "Board presentations",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Board presentations.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  111,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_CHOTHGVL8ULFTHWS7U_28955D7D",
+                       "title":  "Executive summaries",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Executive summaries.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  112,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_UBRSV_EOCAKRWEQJYJ_798CDB60",
+                       "title":  "Strategic proposals",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Strategic proposals.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  113,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_G6K9FXWDRQT5H_U4Y__A3C1FD2F",
+                       "title":  "Mentoring Programs",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Mentoring Programs.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  114,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_PLUOU2AMAJ9AJAMILV_69E84F2D",
+                       "title":  "Budget requests",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Budget requests.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  115,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_7T9JMV3_LRCEG5Y5DA_84F100CB",
+                       "title":  "Knowledge bases",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Knowledge bases.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  116,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_QSSXMEIFOI3DTU_EXP_0F690AF4",
+                       "title":  "Vision alignment",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Vision alignment.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  117,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_2LO0IWF_Y3L4RA1N_O_C570054A",
+                       "title":  "Tech Talks",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Tech Talks.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  118,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_QMAIEKVFHRRP6LUWVD_EC9DAEBA",
+                       "title":  "Migration planning",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Migration planning.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  119,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_S8_NWYKLG7YHL2DWWR_76EA64AA",
+                       "title":  "Brown Bags",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Brown Bags.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  120,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_9MNLFNTU1TPJCX3ROU_CC24DB6D",
+                       "title":  "Legacy system retirement",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Legacy system retirement.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  121,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_1_ZRE1IU1FDX9YNPWS_3E282615",
+                       "title":  "Change strategy",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Change strategy.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  122,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_JERPOYFCCWZBNUE_CL_F67E94E3",
+                       "title":  "Technology adoption",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Technology adoption.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  123,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_OGMTKOGVGA4HUGJQKB_2C9B919C",
+                       "title":  "Impact assessment",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Impact assessment.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  124,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_F_52WRFPRRA9INIOMY_35318B52",
+                       "title":  "Tool transitions",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Tool transitions.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  125,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_5_CE3P5JMA1UEQFNFP_7BFA0E25",
+                       "title":  "Reorganizations",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Reorganizations.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  126,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_34UONTA7DKOYZL0ET__C3493F08",
+                       "title":  "Stakeholder management",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Stakeholder management.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  127,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_EV9ZKYGQETCTLMST1G_F9CBF368",
+                       "title":  "Process changes",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Process changes.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  128,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_PH0U4L2ALVJ8LUJ96Q_0812A976",
+                       "title":  "Team mergers",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Team mergers.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  129,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_MXI4G_PZT0OYC3NGR0_7EEBCC28",
+                       "title":  "Communication planning",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Communication planning.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  130,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_FAYHWDUHHYFFBWNXX3_D501EFF1",
+                       "title":  "Role transitions",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Role transitions.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  131,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_VFP6VMWNHPRE_EDORG_FA42C32E",
+                       "title":  "Resistance management",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Resistance management.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  132,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_EILW4MZKNQFBSTDMZF_DFFF472F",
+                       "title":  "Responsibility shifts",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Responsibility shifts.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  133,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_ENGINEERING_MA_Y7YHIZ7OI4SNFC_NHF_806F1B19",
+                       "title":  "Culture evolution",
+                       "description":  "Подтема roadmap по направлению «Engineering Manager»: Culture evolution.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  134,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   }
+               ]
+}

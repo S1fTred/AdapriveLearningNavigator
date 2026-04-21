@@ -1,0 +1,9 @@
+{
+  "source": "legacy-kb",
+  "sourceUrl": null,
+  "roleCode": "java-mobile",
+  "roleName": "Java Mobile Developer",
+  "roleDescription": "Дорожная карта по Java mobile-разработке. Направление сохранено в каталоге как отдельная Java-ветка.",
+  "roleStatus": "ACTIVE",
+  "topics": []
+}

@@ -70,5 +70,5 @@ app:
       update-existing: true
     roadmap-sync:
       enabled: true
-      manifest-pattern: classpath*:roadmap-sh/roadmaps/*.json
+      manifest-pattern: file:./src/main/resources/roadmap-sh/roadmaps/*.json,classpath*:roadmap-sh/roadmaps/*.json
       update-existing: true

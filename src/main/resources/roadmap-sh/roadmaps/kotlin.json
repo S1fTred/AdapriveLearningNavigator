@@ -1,0 +1,2611 @@
+﻿{
+    "source":  "roadmap.sh",
+    "sourceUrl":  "https://roadmap.sh/kotlin",
+    "roleCode":  "kotlin",
+    "roleName":  "Kotlin",
+    "roleDescription":  "Дорожная карта по направлению «Kotlin» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+    "roleStatus":  "ACTIVE",
+    "topics":  [
+                   {
+                       "code":  "RM_KOTLIN_8JKULEKBXXSXPHBEFU_4B3FB627",
+                       "title":  "Abstract Class",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Abstract Class.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  1,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_NRPMP5ND2R4YKRNSMO_25C7F6BE",
+                       "title":  "Aggregate Operations",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Aggregate Operations.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  2,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_RSUFL2BZKXZHZ9M98O_2211C26B",
+                       "title":  "AI Development",
+                       "description":  "Тема roadmap по направлению «Kotlin»: AI Development.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  3,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_3BZQ_ZWCVOE3KIKJPT_80E5C1FF",
+                       "title":  "Android Jetpack",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Android Jetpack.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  4,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_XPALRB8KUT_I4LJ0EJ_38269499",
+                       "title":  "Android SDK",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Android SDK.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  5,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_SZGLBXGW6Z6UHPOTJI_8144D3A6",
+                       "title":  "Android Studio",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Android Studio.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  6,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_DBN3SAG2SEY3ZQNRWD_0688E06B",
+                       "title":  "Android Studio",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Android Studio.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  7,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_7BYTT5_WILZKBYMQW1_A2283BF0",
+                       "title":  "Anonymous Functions",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Anonymous Functions.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  8,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_EOV8P756JUNC87FHSA_2C8E145A",
+                       "title":  "Arrays",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Arrays.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  9,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_E6H0XI4REQLA6VJC1V_D206CDD7",
+                       "title":  "Asynchronous Flow",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Asynchronous Flow.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  10,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_Z0NAGUEWAO9QO_T4BG_25DB95FE",
+                       "title":  "Booleans",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Booleans.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  11,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_YI0SCKL2SGQKLDGWT7_BE4E77E4",
+                       "title":  "break \u0026 continue",
+                       "description":  "Тема roadmap по направлению «Kotlin»: break \u0026 continue.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  12,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_XCFSWVRDRSOYDEIDSX_7D5842D0",
+                       "title":  "Buffered Streams",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Buffered Streams.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  13,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_JP4S5PGIWS7_WF_JFW_246CD927",
+                       "title":  "Build Tool API",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Build Tool API.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  14,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_B1PAHSUITG5NTXLLZ1_38D2193D",
+                       "title":  "Build Tools",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Build Tools.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  15,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_VKDNV_XLMJ3LURKN_Z_33230A8C",
+                       "title":  "Catching Exceptions",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Catching Exceptions.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  16,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_VTAV9GZVDTJDNQ_BNK_F307E11A",
+                       "title":  "Characters",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Characters.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  17,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_ZLYP0OCA5I5X5FHPHU_B0FA78B8",
+                       "title":  "CI/CD Tools",
+                       "description":  "Тема roadmap по направлению «Kotlin»: CI/CD Tools.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  18,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_7YBZWY7G4HSQYPUGFT_C4F49784",
+                       "title":  "C Interoperability",
+                       "description":  "Тема roadmap по направлению «Kotlin»: C Interoperability.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  19,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_YQX5ZVNVSIT5ANRLDJ_860BDA16",
+                       "title":  "Class Generics",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Class Generics.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  20,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_2DNH4OQET17AUQWVJ6_FF9E93EC",
+                       "title":  "Class Members",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Class Members.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  21,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_OBF1LA3VL0F6HVMMQD_6A8950FC",
+                       "title":  "Code Organization",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Code Organization.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  22,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_X7OK7ROBQOQPTS3FBT_B79C635F",
+                       "title":  "Collections",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Collections.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  23,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_G3SKQ_A6CBSZY7KMJI_9FE1523D",
+                       "title":  "Comments",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Comments.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  24,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_JZJNHDC4TAMJJDRPJ__FCB750CA",
+                       "title":  "Competitive Programming",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Competitive Programming.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  25,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_GWD16V8ONLVGFSN2ZX_934E1F9A",
+                       "title":  "Compose Multiplatform",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Compose Multiplatform.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  26,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_FP4XLFS4IAZRXXKIAI_9CBE183B",
+                       "title":  "Conditional Expressions",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Conditional Expressions.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  27,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_XKT2UMEP9C37GIF169_097EC3A8",
+                       "title":  "Constructors",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Constructors.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  28,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_Y14EPI1_XQCPHJBZEC_5D4A8A1C",
+                       "title":  "Coroutines",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Coroutines.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  29,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_LV108QHOIYF_6CW_UK_5B11C289",
+                       "title":  "Coroutines",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Coroutines.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  30,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_X5KAFOEEYNJR1A_4KL_9C13EE10",
+                       "title":  "Coroutines Behavior",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Coroutines Behavior.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  31,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_FTCSS_GBGODZZ2QFBE_5E791AEB",
+                       "title":  "Coroutines Best practices",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Coroutines Best practices.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  32,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_HVAPXZNV0LY2CK7_UU_80D3674F",
+                       "title":  "Coroutines Builders",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Coroutines Builders.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  33,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_4XN_KZ_HCOOXTFGNLT_41DC80F1",
+                       "title":  "Creating Files",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Creating Files.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  34,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_AW03C8G40FM5RUDVMA_C0C8B5DD",
+                       "title":  "Creating Instances",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Creating Instances.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  35,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_NNGEY4QNJFUK5XMMIY_63C852E1",
+                       "title":  "Data Analysis",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Data Analysis.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  36,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_ACOWST8OEJD7JXNMHG_45E9B6B4",
+                       "title":  "Data Classes",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Data Classes.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  37,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_0K0AFQPI3CNB8BAAA2_62AB7986",
+                       "title":  "Data types",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Data types.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  38,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_BOHAQPYQH9KMSSN4KV_F97C1762",
+                       "title":  "Date \u0026 Time",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Date \u0026 Time.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  39,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_CPITSUFCKMZCIOR9WP_0B3A6065",
+                       "title":  "Default Imports",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Default Imports.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  40,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_UIK2GDDNLZVBHQ5ERN_6662A3C6",
+                       "title":  "Defining Classess",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Defining Classess.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  41,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_WDBRLUYHLNKPR_RIPN_D35B8598",
+                       "title":  "Documentation",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Documentation.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  42,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_VLMXE68XP_YRC3GUXF_33929A5D",
+                       "title":  "Dokka",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Dokka.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  43,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_QSDPHBFVDU7PEDKT7K_01D650C4",
+                       "title":  "Enum Class",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Enum Class.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  44,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_ZYMUALJVJBDEU9QJO__E66A8BDC",
+                       "title":  "Exceptions",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Exceptions.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  45,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_JPIJY_WBE6YNXZENOD_DABCA9E7",
+                       "title":  "Extension Functions",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Extension Functions.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  46,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_0BQSJ_CAOO7SRXJSOC_84CD4B77",
+                       "title":  "Extension Functions",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Extension Functions.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  47,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_KHEBNQAFOWOPGYCYJC_F197B761",
+                       "title":  "Filtering",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Filtering.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  48,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_LIEMXRI675SNPQF950_C626C50A",
+                       "title":  "Floats",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Floats.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  49,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_JMIDPEDGVOW2RPIHYN_C2BD0EA1",
+                       "title":  "for",
+                       "description":  "Тема roadmap по направлению «Kotlin»: for.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  50,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_WOPAR_IYLCKAIXQAAW_6EBB15F9",
+                       "title":  "Function Types",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Function Types.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  51,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_GC4HGG4V8F_8BHQTDL_B308976A",
+                       "title":  "Gradle",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Gradle.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  52,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_MKGY2GTA5_YKZNORME_98DC6586",
+                       "title":  "Gradle Pluggins",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Gradle Pluggins.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  53,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_OVQ4WYOC5U_UHMDEUF_47DAA436",
+                       "title":  "Grouping",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Grouping.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  54,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_Q9MQRFJUVXL3YLUWJ1_A85A36CD",
+                       "title":  "Higher-order Functions﻿",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Higher-order Functions﻿.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  55,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_SLF_A7UWSL_FEQYICI_F5086E55",
+                       "title":  "History of Kotlin",
+                       "description":  "Тема roadmap по направлению «Kotlin»: History of Kotlin.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  56,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_EE6XLEWVK_V9FCXBZ9_1EF6F9FA",
+                       "title":  "IDEs",
+                       "description":  "Тема roadmap по направлению «Kotlin»: IDEs.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  57,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_2OS2FHSZADXPM9EG2V_8EDB1E5E",
+                       "title":  "if",
+                       "description":  "Тема roadmap по направлению «Kotlin»: if.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  58,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_SCMAS0UEG2RZBNITYI_BF0191D5",
+                       "title":  "Importing Packages",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Importing Packages.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  59,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_ADGV966VKXZN0_VZ_O_BAC9C00F",
+                       "title":  "Inheritance",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Inheritance.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  60,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_RCNP0MYQHLGYRMZU3J_0CADE302",
+                       "title":  "Inline Class",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Inline Class.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  61,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_UMTIONS6PAXRDH7ZOD_638986DA",
+                       "title":  "Integers",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Integers.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  62,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_2Z9T6NLOZUIYGI6DAH_A094819E",
+                       "title":  "IntelliJ IDEA",
+                       "description":  "Тема roadmap по направлению «Kotlin»: IntelliJ IDEA.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  63,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_UYOKP_AYKF8AW92PGS_2C515FBC",
+                       "title":  "Interfaces",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Interfaces.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  64,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_LOD4CYZLUACMMQ3_GK_C88A23B7",
+                       "title":  "Introduction to Kotlin",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Introduction to Kotlin.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  65,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_IF4LV0M03ALLPQ88VW_702FC84C",
+                       "title":  "I/O",
+                       "description":  "Тема roadmap по направлению «Kotlin»: I/O.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  66,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_OTHSTW8ZVCAMI1DCQH_F6A6D95B",
+                       "title":  "I/O Library",
+                       "description":  "Тема roadmap по направлению «Kotlin»: I/O Library.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  67,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_H1794CAM_XQNJVT1LK_C9A4BE33",
+                       "title":  "Iterators",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Iterators.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  68,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_I_ECET4Q1QQXHOIVT2_F63FB1D2",
+                       "title":  "Java from Kotlin",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Java from Kotlin.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  69,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_ID1AI_OCCB32I2HSIE_8EE1B1E2",
+                       "title":  "Java Interoperability",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Java Interoperability.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  70,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_RVPHK5JE3Y4HPUKEAO_B04578FC",
+                       "title":  "JVM Metadata",
+                       "description":  "Тема roadmap по направлению «Kotlin»: JVM Metadata.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  71,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_JIIVSHQVSOTMFIPQUC_2CA96379",
+                       "title":  "Kandy",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Kandy.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  72,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_IPV1ROEKN9_YKD98NB_2AE42ACC",
+                       "title":  "KDoc",
+                       "description":  "Тема roadmap по направлению «Kotlin»: KDoc.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  73,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_A5IDGZG8_FPPJWCMHC_A5F7DB15",
+                       "title":  "Koog",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Koog.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  74,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_AARV0H4U6OL3AULGOW_A4CE0C13",
+                       "title":  "Kotlin DataFrame",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Kotlin DataFrame.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  75,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_PHHVIBSQHYDSNUHBFB_C5132B09",
+                       "title":  "Kotline Notebook",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Kotline Notebook.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  76,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_QBUO_KGC_0UGIRCVR5_97AE53CB",
+                       "title":  "Kotlin from Java",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Kotlin from Java.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  77,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_E0OOAE_E_RQ6WRJFLU_57A2F29F",
+                       "title":  "Kotlin/Java",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Kotlin/Java.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  78,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_IIWY4HHTDRJ3N9D_O4_7DE2CFEA",
+                       "title":  "Kotlin/JavaScript",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Kotlin/JavaScript.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  79,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_FLN83FUNYP4V_0JNFN_DCBE19DF",
+                       "title":  "Kotlin Libraries",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Kotlin Libraries.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  80,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_E24E1ZTPDR6TNNLKIT_E8685AE3",
+                       "title":  "Kotlin Multiplatform",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Kotlin Multiplatform.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  81,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_NCAPM0PSES5RZTRWIB_E30924E0",
+                       "title":  "Kotlin/Native",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Kotlin/Native.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  82,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_N4AFOCCKQNGRRWUD0U_2A28D2E8",
+                       "title":  "Kotlin Notebooks",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Kotlin Notebooks.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  83,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_88WF_LAKQW41C6FRMC_DC2C5F73",
+                       "title":  "Kotlin Scripting",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Kotlin Scripting.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  84,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_NAVZP9XVNNVU47DIEE_EFC9F268",
+                       "title":  "Kotlin/WASM",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Kotlin/WASM.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  85,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_Q546DQ42Z3_WN_FOLL_1069287B",
+                       "title":  "Ktor",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Ktor.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  86,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_LFDVPEF2GXVDQR4E1D_D357A8E9",
+                       "title":  "Label Loops",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Label Loops.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  87,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_CFEXAJLC_ATE8V9EWE_F3082974",
+                       "title":  "Lambda Functions",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Lambda Functions.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  88,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_PFXVX1JXCUR31NM1PI_95FB17C7",
+                       "title":  "Lists",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Lists.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  89,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_0IZ9QFST8YW08CTW8D_BEFEFA69",
+                       "title":  "Lists",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Lists.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  90,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_HRJELMSILAYXK6RU3I_0B9E0C94",
+                       "title":  "Local Functions",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Local Functions.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  91,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_HRCMW3NHSOY2TVYMPI_2EFB1324",
+                       "title":  "Loops",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Loops.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  92,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_OQAXTBQUB1JUB9YFUY_551A5294",
+                       "title":  "main  Function",
+                       "description":  "Тема roadmap по направлению «Kotlin»: main  Function.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  93,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_4_NXFG_9JZLV9TNHP7_B8F293B2",
+                       "title":  "Maps",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Maps.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  94,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_KEZHYJPFUUBWWPLXGY_3E36177A",
+                       "title":  "Maps",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Maps.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  95,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_7J55MUQI7BQRTWVTAQ_BC9ECFFB",
+                       "title":  "Maven",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Maven.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  96,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_EXFJKM3FLX3OEHSX8M_5329C335",
+                       "title":  "Member Functions",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Member Functions.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  97,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_9TLITYBNF9WNISVWBH_3737C3F8",
+                       "title":  "Methods",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Methods.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  98,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_TJCG72UQT87_FIOBBZ_DB8DF33E",
+                       "title":  "Nested \u0026 Inner Classes",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Nested \u0026 Inner Classes.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  99,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_XID8W3JQNHGJJVXFCC_57B1E28A",
+                       "title":  "Nullability Check Operators",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Nullability Check Operators.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  100,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_7XMKY_SIPKYV8K_WYT_15E8D0C8",
+                       "title":  "Nullable vs Non-nullable",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Nullable vs Non-nullable.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  101,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_MIGCYRZHAQ4KEUK1MH_50EDB5BB",
+                       "title":  "Object Declarations",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Object Declarations.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  102,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_S900IAQX50PG7NGDMG_7978359D",
+                       "title":  "Opt-in Requirements",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Opt-in Requirements.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  103,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_95FCQMESWDXCICDFJR_9DC45F0B",
+                       "title":  "Ordering",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Ordering.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  104,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_9IIVOVOTENTINZVOVW_31C21D65",
+                       "title":  "parameters",
+                       "description":  "Тема roadmap по направлению «Kotlin»: parameters.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  105,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_A0WXD3IH_R8W2NAD2D_087E5920",
+                       "title":  "plus \u0026 minus Operators",
+                       "description":  "Тема roadmap по направлению «Kotlin»: plus \u0026 minus Operators.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  106,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_YR7DSQMOAOE15574QB_D63885F1",
+                       "title":  "Printing data",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Printing data.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  107,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_VK146KVCJWYDWEOEJI_1637EA20",
+                       "title":  "print \u0026 println",
+                       "description":  "Тема roadmap по направлению «Kotlin»: print \u0026 println.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  108,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_O_IGCTRWA3AVBRBJW__1B6B1C76",
+                       "title":  "Progressions",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Progressions.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  109,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_2WBXYUOX1F4RMD5EHU_C3AE5897",
+                       "title":  "Properties",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Properties.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  110,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_ROPGM_1Q1MBYMK5ALY_F89ADEF8",
+                       "title":  "Property Delegates",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Property Delegates.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  111,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_MZV6A_0SA9LHGALNMH_86218113",
+                       "title":  "Quarkus",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Quarkus.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  112,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_LZLKX9YYYLODMJUXXN_64A3BD40",
+                       "title":  "Ranges",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Ranges.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  113,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_D4G8DOX5B39RXW2FTG_CCF9C78F",
+                       "title":  "read-only vs mutable",
+                       "description":  "Тема roadmap по направлению «Kotlin»: read-only vs mutable.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  114,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_L4_AIY4MFWSTDZXIAS_F2587EA6",
+                       "title":  "Retrieving Collection Parts",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Retrieving Collection Parts.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  115,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_L6O23EO_OYSXA3PNXH_F171294E",
+                       "title":  "Retrieving single elements",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Retrieving single elements.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  116,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_GVXXMYVLZZ5CHPBWGL_39A3E44B",
+                       "title":  "return",
+                       "description":  "Тема roadmap по направлению «Kotlin»: return.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  117,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_QMFR2RJMP7O_MEBR8W_FEA287DA",
+                       "title":  "Safe Casts",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Safe Casts.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  118,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_HIY_SN0VES5ATKJI2F_0202472E",
+                       "title":  "Sealed Class",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Sealed Class.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  119,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_LLC_5N2K19HVVMUQ5N_09E47089",
+                       "title":  "Sequences",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Sequences.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  120,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_TYUUD4479UXSBRY9NO_2CC0B5C5",
+                       "title":  "Serialization",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Serialization.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  121,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_AJ_YIDGFPBOFOSS2KY_79742B6E",
+                       "title":  "Server-side Apps",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Server-side Apps.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  122,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_XBSKQ7192KVZE_6UN__02BB35D1",
+                       "title":  "Sets",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Sets.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  123,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_GKRPXFLWSNLIXW8OS__9A7842CF",
+                       "title":  "Sets",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Sets.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  124,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_KBMJGMWER_KXFYOFB__D27FB34E",
+                       "title":  "Setting up the Environment",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Setting up the Environment.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  125,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_UIYJAX5WLKOOYK_I1L_3D1EDDD0",
+                       "title":  "Spring",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Spring.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  126,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_BY2B4UKZ6QJAUPFVQB_6C90AB5D",
+                       "title":  "Spring Boot",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Spring Boot.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  127,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_0LUPMXLIXOUZE0_COG_3E2C9462",
+                       "title":  "Standard functions",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Standard functions.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  128,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_FHBQSOZNCYTAWWCSDD_EA31146C",
+                       "title":  "Standard Library",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Standard Library.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  129,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_MY6B8KIE6DGJHES_QM_C7F2D32C",
+                       "title":  "Strings",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Strings.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  130,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_OQE1JVWYNLDNFVI_S7_2BA5DCF2",
+                       "title":  "String Templates",
+                       "description":  "Тема roadmap по направлению «Kotlin»: String Templates.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  131,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_KVHTQQGHGIDJCQO0YY_9A41B24A",
+                       "title":  "Suspending Functions",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Suspending Functions.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  132,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_AEVBW7ATLVVTOL4QEQ_768283F5",
+                       "title":  "Swift/Objective-C Interop.",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Swift/Objective-C Interop..",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  133,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_IKV5K8LKG0VLA7WHEG_EA34BDC2",
+                       "title":  "Tail-recursive Functions",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Tail-recursive Functions.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  134,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_AIG_7_IGM_LSR3YBAP_AE22DA02",
+                       "title":  "TeamCity",
+                       "description":  "Тема roadmap по направлению «Kotlin»: TeamCity.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  135,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_2_JMTC_ZIQ7SUPNCCH_4FBCA921",
+                       "title":  "Test Library",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Test Library.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  136,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_8_U8EKHWHESEK7PFPA_47B7EE0F",
+                       "title":  "Throwing Exceptions",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Throwing Exceptions.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  137,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_GR2PYEOMFPG6HA3YUL_4F335844",
+                       "title":  "Transformations",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Transformations.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  138,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_D2KZMMWOG29ULNTP3T_D9901A70",
+                       "title":  "Type Aliases",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Type Aliases.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  139,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_3IHCC_DNSKB_32QJ0E_67BCE426",
+                       "title":  "Type Checks \u0026 Casts",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Type Checks \u0026 Casts.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  140,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_YX5BHDGJ5NJASPC7KY_594D58FD",
+                       "title":  "Type Inference",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Type Inference.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  141,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_JCXT2OP2VDY6BBHZRQ_94E83DFA",
+                       "title":  "Understanding Packages",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Understanding Packages.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  142,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_G0BGNHK9WOSF6GSHLS_5B519278",
+                       "title":  "Unsigned Integers",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Unsigned Integers.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  143,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_VDWWBV0KF_S88CQFTN_3760E4DB",
+                       "title":  "val vs var",
+                       "description":  "Тема roadmap по направлению «Kotlin»: val vs var.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  144,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_B2CXZGSEPESZGATX4W_1DAD6F8D",
+                       "title":  "varargs",
+                       "description":  "Тема roadmap по направлению «Kotlin»: varargs.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  145,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_S7HNF7C_IO_EOETZBG_19BBA8AC",
+                       "title":  "Variables",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Variables.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  146,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_MCZAITRPBRIMOUBDYB_9F3A7D6D",
+                       "title":  "Vert.x",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Vert.x.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  147,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_YAT8ZSAB_IJLFZTTYV_75FDF566",
+                       "title":  "Visibility Modifiers",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Visibility Modifiers.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  148,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_VH_RXZ7BSX6ZB777FT_28F0BE8B",
+                       "title":  "What is Null Safety?",
+                       "description":  "Тема roadmap по направлению «Kotlin»: What is Null Safety?.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  149,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_ZJT9KVWYIBDTSGP5TT_B30F3811",
+                       "title":  "when",
+                       "description":  "Тема roadmap по направлению «Kotlin»: when.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  150,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_QNUPY4DNTFYZRGEQJP_2CC85A4D",
+                       "title":  "while",
+                       "description":  "Тема roadmap по направлению «Kotlin»: while.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  151,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_4PRKKOZ5FY_OOW0O_B_1C514440",
+                       "title":  "Why use Kotlin",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Why use Kotlin.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  152,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_KOTLIN_D56NRDWDFS_VQDALQO_71E4933D",
+                       "title":  "Writing \u0026 Reading Files",
+                       "description":  "Тема roadmap по направлению «Kotlin»: Writing \u0026 Reading Files.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  153,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   }
+               ]
+}

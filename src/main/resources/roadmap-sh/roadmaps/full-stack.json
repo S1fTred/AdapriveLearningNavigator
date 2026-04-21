@@ -1,0 +1,2128 @@
+﻿{
+    "source":  "roadmap.sh",
+    "sourceUrl":  "https://roadmap.sh/full-stack",
+    "roleCode":  "full-stack",
+    "roleName":  "Full Stack Developer",
+    "roleDescription":  "Дорожная карта по направлению «Full Stack Developer» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+    "roleStatus":  "ACTIVE",
+    "topics":  [
+                   {
+                       "code":  "RM_FULL_STACK_B0KARTODVCBI0IOF8I_62A30AA3",
+                       "title":  "HTML",
+                       "description":  "Тема roadmap по направлению «Full Stack Developer»: HTML. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  1,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit the Dedicated HTML Roadmap",
+                                             "url":  "https://roadmap.sh/html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "HTML Full Course for Beginners",
+                                             "url":  "https://youtu.be/mJgBOIoGihA",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "HTML Full Course - Build a Website Tutorial",
+                                             "url":  "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Explore top posts about HTML",
+                                             "url":  "https://app.daily.dev/tags/html?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_DAJHWMGEIYDZZ1ZJRW_89323147",
+                       "title":  "CSS",
+                       "description":  "Тема roadmap по направлению «Full Stack Developer»: CSS. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  2,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_FULL_STACK_B0KARTODVCBI0IOF8I_62A30AA3",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit the Dedicated CSS Roadmap",
+                                             "url":  "https://roadmap.sh/css",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Web.dev by Google — Learn CSS",
+                                             "url":  "https://web.dev/learn/css/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Web",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "CSS: Cascading Style Sheets | MDN",
+                                             "url":  "https://developer.mozilla.org/en-US/docs/Web/CSS",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "MDN Web Docs",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "CSS Complete Course",
+                                             "url":  "https://youtu.be/n4R2E7O-Ngo",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "HTML and CSS Tutorial",
+                                             "url":  "https://www.youtube.com/watch?v=D-h8L5hgW-w",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "Explore top posts about CSS",
+                                             "url":  "https://app.daily.dev/tags/css?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_T9PB6WQF_FA9NXKKVV_7C69EFCC",
+                       "title":  "JavaScript",
+                       "description":  "Тема roadmap по направлению «Full Stack Developer»: JavaScript. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  3,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_FULL_STACK_DAJHWMGEIYDZZ1ZJRW_89323147",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit Dedicated JavaScript Roadmap",
+                                             "url":  "https://roadmap.sh/javascript",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "The Modern JavaScript Tutorial",
+                                             "url":  "https://javascript.info/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Javascript",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Build 30 Javascript projects in 30 days",
+                                             "url":  "https://javascript30.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Javascript30",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "JavaScript Crash Course for Beginners",
+                                             "url":  "https://youtu.be/hdI2bqOjy3c?t=2",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Explore top posts about JavaScript",
+                                             "url":  "https://app.daily.dev/tags/javascript?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_WSDUAEAI7FX6DKKHPX_E91752BA",
+                       "title":  "Checkpoint - Static Webpages",
+                       "description":  "Подтема roadmap по направлению «Full Stack Developer»: Checkpoint - Static Webpages.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  4,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_2DFZOIUJKDAKGJFU_S_93AC3129",
+                       "title":  "Checkpoint - Interactivity",
+                       "description":  "Подтема roadmap по направлению «Full Stack Developer»: Checkpoint - Interactivity.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  5,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_MGGX_QTEPMVKF6AIJX_C2CC4262",
+                       "title":  "npm",
+                       "description":  "Тема roadmap по направлению «Full Stack Developer»: npm. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  6,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_FULL_STACK_T9PB6WQF_FA9NXKKVV_7C69EFCC",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "How to NPM",
+                                             "url":  "https://github.com/workshopper/how-to-npm",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Github",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Modern JavaScript for Dinosaurs",
+                                             "url":  "https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Peterxjang",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "An Absolute Beginners Guide to Using npm",
+                                             "url":  "https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Nodesource",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "NPM tutorial for Beginners",
+                                             "url":  "https://www.youtube.com/watch?v=2V1UUhBJ62Y",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "NPM Crash Course",
+                                             "url":  "https://www.youtube.com/watch?v=jHDhaSSKmB0",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "Explore top posts about NPM",
+                                             "url":  "https://app.daily.dev/tags/npm?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_ZFGWXGLPCZOW7KIZLN_4E4D8129",
+                       "title":  "Checkpoint - Collaborative Work",
+                       "description":  "Подтема roadmap по направлению «Full Stack Developer»: Checkpoint - Collaborative Work.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  7,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_R4AEJNORFWYVP3EA_Q_44A887F0",
+                       "title":  "Checkpoint - External Packages",
+                       "description":  "Подтема roadmap по направлению «Full Stack Developer»: Checkpoint - External Packages.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  8,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_WE2APJPOPTR_VNFOWG_2FD80736",
+                       "title":  "Git",
+                       "description":  "Тема roadmap по направлению «Full Stack Developer»: Git. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  9,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_FULL_STACK_MGGX_QTEPMVKF6AIJX_C2CC4262",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit Dedicated Git \u0026 GitHub Roadmap",
+                                             "url":  "https://roadmap.sh/git-github",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Git Documentation",
+                                             "url":  "https://git-scm.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Git-scm",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Learn Git with Tutorials, News and Tips - Atlassian",
+                                             "url":  "https://www.atlassian.com/git",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Atlassian",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Git Cheat Sheet",
+                                             "url":  "https://cs.fyi/guide/git-cheatsheet",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Cs",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Git \u0026 GitHub Crash Course For Beginners 2025",
+                                             "url":  "https://youtu.be/vA5TTz6BXhY?si=GvKMbLL4UBtOq6fh",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "Git Tutorial For Dummies",
+                                             "url":  "https://www.youtube.com/watch?v=mJ-qvsxPHpY",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Git",
+                                             "url":  "https://app.daily.dev/tags/git?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  7
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_8SPXL8ICLPPQJE03KS_9DF49A7A",
+                       "title":  "GitHub",
+                       "description":  "Тема roadmap по направлению «Full Stack Developer»: GitHub. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  10,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_FULL_STACK_WE2APJPOPTR_VNFOWG_2FD80736",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "GitHub",
+                                             "url":  "https://github.com",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Github",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "GitHub Documentation",
+                                             "url":  "https://docs.github.com/en/get-started/quickstart",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Github",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "How to Use Git in a Professional Dev Team",
+                                             "url":  "https://ooloo.io/project/github-flow",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Ooloo",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "What is GitHub?",
+                                             "url":  "https://www.youtube.com/watch?v=w3jLJU7DT5E",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Git vs. GitHub: Whats the difference?",
+                                             "url":  "https://www.youtube.com/watch?v=wpISo9TNjfU",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "Git and GitHub for Beginners",
+                                             "url":  "https://www.youtube.com/watch?v=RGOj5yH7evk",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         },
+                                         {
+                                             "title":  "Git and GitHub - CS50 Beyond 2019",
+                                             "url":  "https://www.youtube.com/watch?v=eulnSXkhE7I",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  7
+                                         },
+                                         {
+                                             "title":  "Explore top posts about GitHub",
+                                             "url":  "https://app.daily.dev/tags/github?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  8
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_CVCQDPKQ_HGQFI8EEI_5CF16614",
+                       "title":  "Tailwind CSS",
+                       "description":  "Тема roadmap по направлению «Full Stack Developer»: Tailwind CSS. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  11,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_FULL_STACK_8SPXL8ICLPPQJE03KS_9DF49A7A",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Tailwind CSS",
+                                             "url":  "https://tailwindcss.com",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Tailwindcss",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Tailwind CSS Full Course for Beginners",
+                                             "url":  "https://www.youtube.com/watch?v=lCxcTsOHrjo",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Tailwind CSS Crash Course",
+                                             "url":  "https://www.youtube.com/watch?v=UBOj6rqRUME",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Should You Use Tailwind CSS?",
+                                             "url":  "https://www.youtube.com/watch?v=hdGsFpZ0J2E",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Tailwind CSS",
+                                             "url":  "https://app.daily.dev/tags/tailwind-css?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_KHOUTTUXDF8UDAZN9__33AE2A28",
+                       "title":  "React",
+                       "description":  "Тема roadmap по направлению «Full Stack Developer»: React. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  12,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_FULL_STACK_CVCQDPKQ_HGQFI8EEI_5CF16614",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit Dedicated React Roadmap",
+                                             "url":  "https://roadmap.sh/react",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "React",
+                                             "url":  "https://react.dev/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "React",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Getting Started with React",
+                                             "url":  "https://react.dev/learn/tutorial-tic-tac-toe",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "React",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "React JS Course for Beginners",
+                                             "url":  "https://www.youtube.com/watch?v=nTeuhbP7wdE",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "React Course - Beginners Tutorial for React",
+                                             "url":  "https://www.youtube.com/watch?v=bMknfKXIFA8",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "Understanding Reacts UI Rendering Process",
+                                             "url":  "https://www.youtube.com/watch?v=i793Qm6kv3U",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         },
+                                         {
+                                             "title":  "Explore top posts about React",
+                                             "url":  "https://app.daily.dev/tags/react?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  7
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_7JU1CVGGMDOZUV_ADG_FF009547",
+                       "title":  "Checkpoint - Frontend Apps",
+                       "description":  "Подтема roadmap по направлению «Full Stack Developer»: Checkpoint - Frontend Apps.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  13,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_AA6HP4KKGJEPTQO8OK_30F84BEE",
+                       "title":  "Node.js",
+                       "description":  "Тема roadmap по направлению «Full Stack Developer»: Node.js. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  14,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit Dedicated Node.js Roadmap",
+                                             "url":  "https://roadmap.sh/nodejs",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Node.js Website",
+                                             "url":  "https://nodejs.org/en/about/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Node.js",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Learn Node.js Official Website",
+                                             "url":  "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Node.js",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Node.js and Express.js Full Course",
+                                             "url":  "https://www.youtube.com/watch?v=Oe421EPjeBE",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Node.js",
+                                             "url":  "https://app.daily.dev/tags/nodejs?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_JGU0TKWAW_IEIG92BY_F92261DC",
+                       "title":  "Checkpoint — CLI Apps",
+                       "description":  "Подтема roadmap по направлению «Full Stack Developer»: Checkpoint — CLI Apps.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  15,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_HGHNBMG6JH6CAMUH4D_AF22001B",
+                       "title":  "PostgreSQL",
+                       "description":  "Тема roadmap по направлению «Full Stack Developer»: PostgreSQL. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  16,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_FULL_STACK_AA6HP4KKGJEPTQO8OK_30F84BEE",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit Dedicated PostgreSQL DBA Roadmap",
+                                             "url":  "https://roadmap.sh/postgresql-dba",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "PostgreSQL Website",
+                                             "url":  "https://www.postgresql.org/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "PostgreSQL",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Learn PostgreSQL - Full Tutorial for Beginners",
+                                             "url":  "https://www.postgresqltutorial.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Postgresqltutorial",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Learn PostgreSQL Tutorial - Full Course for Beginners",
+                                             "url":  "https://www.youtube.com/watch?v=qw--VYLpxG4",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Postgres tutorial for Beginners",
+                                             "url":  "https://www.youtube.com/watch?v=eMIxuk0nOkU",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "Explore top posts about PostgreSQL",
+                                             "url":  "https://app.daily.dev/tags/postgresql?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_3ETGLO6CWKLC1_O9GW_A177F903",
+                       "title":  "Checkpoint — Simple CRUD Apps",
+                       "description":  "Подтема roadmap по направлению «Full Stack Developer»: Checkpoint — Simple CRUD Apps.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  17,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_VMHBWDMMHF53OTXIRQ_2E309600",
+                       "title":  "RESTful APIs",
+                       "description":  "Тема roadmap по направлению «Full Stack Developer»: RESTful APIs. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  18,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_FULL_STACK_HGHNBMG6JH6CAMUH4D_AF22001B",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What is a REST API?",
+                                             "url":  "https://www.redhat.com/en/topics/api/what-is-a-rest-api",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Redhat",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Roy Fieldings dissertation chapter, Representational State Transfer (REST)",
+                                             "url":  "https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Uci",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Learn REST: A RESTful Tutorial",
+                                             "url":  "https://restapitutorial.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Restapitutorial",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "What Is A RESTful API? Explanation of REST \u0026 HTTP",
+                                             "url":  "https://www.youtube.com/watch?v=Q-BpqyOT3a8",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_VHOJHJYJIN0IWRUEQI_8748DB71",
+                       "title":  "JWT Auth",
+                       "description":  "Тема roadmap по направлению «Full Stack Developer»: JWT Auth. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  19,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_FULL_STACK_VMHBWDMMHF53OTXIRQ_2E309600",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "jwt.io",
+                                             "url":  "https://jwt.io/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Jwt",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Introduction to JSON Web Tokens",
+                                             "url":  "https://jwt.io/introduction",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Jwt",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "What is JWT?",
+                                             "url":  "https://www.akana.com/blog/what-is-jwt",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Akana",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "What Is JWT and Why Should You Use JWT",
+                                             "url":  "https://www.youtube.com/watch?v=7Q17ubqLfaM",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "What is JWT? JSON Web Token Explained",
+                                             "url":  "https://www.youtube.com/watch?v=926mknSW9Lo",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "JWT Authentication Tutorial - Node.js",
+                                             "url":  "https://www.youtube.com/watch?v=mbsmsi7l3r4",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         },
+                                         {
+                                             "title":  "Explore top posts about JWT",
+                                             "url":  "https://app.daily.dev/tags/jwt?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  7
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_ONFD7SL8LG2SJH2AQY_5DE3654C",
+                       "title":  "Redis",
+                       "description":  "Тема roadmap по направлению «Full Stack Developer»: Redis. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  20,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_FULL_STACK_VHOJHJYJIN0IWRUEQI_8748DB71",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit Dedicated Redis Roadmap",
+                                             "url":  "https://roadmap.sh/redis",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Redis Website",
+                                             "url":  "https://redis.io/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Redis",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Redis Documentation",
+                                             "url":  "https://redis.io/docs/latest/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Redis",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Redis University",
+                                             "url":  "https://university.redis.io/academy",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Redis",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Redis in 100 Seconds",
+                                             "url":  "https://www.youtube.com/watch?v=G1rOthIU-uo",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "Redis Caching in Node.js",
+                                             "url":  "https://www.youtube.com/watch?v=oaJq1mQ3dFI",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Redis",
+                                             "url":  "https://app.daily.dev/tags/redis?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  7
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_V4NF25LJELATKU0RM6_CCF103B3",
+                       "title":  "Checkpoint — Complete App",
+                       "description":  "Подтема roadmap по направлению «Full Stack Developer»: Checkpoint — Complete App.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  21,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_5ZYYPU9CYUTFWQCJTB_15D6F841",
+                       "title":  "Route53",
+                       "description":  "Подтема roadmap по направлению «Full Stack Developer»: Route53. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  22,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Route53",
+                                             "url":  "https://aws.amazon.com/route53/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Amazon Route 53",
+                                             "url":  "https://www.youtube.com/watch?v=RGWgfhZByAI",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "AWS Route 53 Domain Name",
+                                             "url":  "https://www.youtube.com/watch?v=jDz4j_kkyLA",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "DNS with AWS Route 53",
+                                             "url":  "https://www.youtube.com/watch?v=yRIY7BJohfo\u0026t=2s",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_B_CPHY7IMNV6JBMUJV_69A581FE",
+                       "title":  "SES",
+                       "description":  "Подтема roadmap по направлению «Full Stack Developer»: SES. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  23,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Amazon AWS SES",
+                                             "url":  "https://aws.amazon.com/ses/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Contact Form Submission With AWS SES",
+                                             "url":  "https://www.youtube.com/watch?v=HiHflLTqiwU",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_6OBIXYJ8WPCUHIDQ99_2235C583",
+                       "title":  "EC2",
+                       "description":  "Подтема roadmap по направлению «Full Stack Developer»: EC2. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  24,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Amazon AWS EC2",
+                                             "url":  "https://aws.amazon.com/ec2/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Up and Running with AWS EC2",
+                                             "url":  "https://cs.fyi/guide/up-and-running-with-aws-ec2",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Cs",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "EC2 Essentials",
+                                             "url":  "https://cloudcasts.io/course/ec2-essentials",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Cloudcasts",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Deploy Node App on AWS EC2",
+                                             "url":  "https://youtu.be/oHAQ3TzUTro",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Explore top posts about AWS EC2",
+                                             "url":  "https://app.daily.dev/tags/aws-ec2?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_QTL_BLKTWIDH00K6K__2448CF56",
+                       "title":  "VPC",
+                       "description":  "Подтема roadmap по направлению «Full Stack Developer»: VPC. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  25,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Amazon AWS VPC",
+                                             "url":  "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Up and Running with AWS VPC",
+                                             "url":  "https://cs.fyi/guide/up-and-running-with-aws-vpc",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Cs",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "VPC Basics",
+                                             "url":  "https://cloudcasts.io/course/vpc-basics",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Cloudcasts",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "AWS VPC \u0026 Subnets For Beginners",
+                                             "url":  "https://youtu.be/TUTqYEZZUdc",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_N2XP_IJJ2OS8XHE7XM_FFA126C7",
+                       "title":  "S3",
+                       "description":  "Подтема roadmap по направлению «Full Stack Developer»: S3. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  26,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Amazon AWS S3",
+                                             "url":  "https://aws.amazon.com/s3/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Amazon",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Upload Images to S3 from Node Back End",
+                                             "url":  "https://www.youtube.com/watch?v=NZElg91l_ms",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "S3 Bucket Hosting a Static Website",
+                                             "url":  "https://www.youtube.com/watch?v=RoY3ekCCxKc\u0026list=PL0X6fGhFFNTcU-_MCPe9dkH6sqmgfhy_M",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Explore top posts about AWS S3",
+                                             "url":  "https://app.daily.dev/tags/aws-s3?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_SHTSVMDQI7X1_ZT7_M_332C4B78",
+                       "title":  "Linux Basics",
+                       "description":  "Тема roadmap по направлению «Full Stack Developer»: Linux Basics. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  27,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_FULL_STACK_ONFD7SL8LG2SJH2AQY_5DE3654C",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit Dedicated Linux Roadmap",
+                                             "url":  "https://roadmap.sh/linux",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Coursera - Unix Courses",
+                                             "url":  "https://www.coursera.org/courses?query=unix",
+                                             "type":  "COURSE",
+                                             "language":  "en",
+                                             "durationMinutes":  180,
+                                             "provider":  "Coursera",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Linux Basics",
+                                             "url":  "https://dev.to/rudrakshi99/linux-basics-2onj",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Dev",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Unix / Linux Tutorial",
+                                             "url":  "https://www.tutorialspoint.com/unix/index.htm",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Tutorialspoint",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Linux Operating System - Crash Course",
+                                             "url":  "https://www.youtube.com/watch?v=ROjZy1WbCIA",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Linux",
+                                             "url":  "https://app.daily.dev/tags/linux?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_CUOFVOLQ_0UU1VX3I6_552387D5",
+                       "title":  "Basic AWS Services",
+                       "description":  "Тема roadmap по направлению «Full Stack Developer»: Basic AWS Services. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  28,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_FULL_STACK_SHTSVMDQI7X1_ZT7_M_332C4B78",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Up and Running with AWS VPC",
+                                             "url":  "https://cs.fyi/guide/up-and-running-with-aws-vpc",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Cs",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Up and Running with AWS EC2",
+                                             "url":  "https://cs.fyi/guide/up-and-running-with-aws-ec2",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Cs",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "VPC Basics",
+                                             "url":  "https://cloudcasts.io/course/vpc-basics",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Cloudcasts",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "EC2 Essentials",
+                                             "url":  "https://cloudcasts.io/course/ec2-essentials",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Cloudcasts",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Deploy Node App on AWS EC2",
+                                             "url":  "https://youtu.be/oHAQ3TzUTro",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "AWS VPC \u0026 Subnets For Beginners",
+                                             "url":  "https://youtu.be/TUTqYEZZUdc",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         },
+                                         {
+                                             "title":  "DNS with AWS Route 53",
+                                             "url":  "https://www.youtube.com/watch?v=yRIY7BJohfo",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  7
+                                         },
+                                         {
+                                             "title":  "Upload Images to S3 from Node Back End",
+                                             "url":  "https://www.youtube.com/watch?v=NZElg91l_ms",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  8
+                                         },
+                                         {
+                                             "title":  "Explore top posts about AWS",
+                                             "url":  "https://app.daily.dev/tags/aws?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  9
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_J2_IWAB1S9ZZCXOY3N_59A24BD5",
+                       "title":  "Checkpoint — Deployment",
+                       "description":  "Подтема roadmap по направлению «Full Stack Developer»: Checkpoint — Deployment. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  29,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Deploy Node App on AWS EC2",
+                                             "url":  "https://youtu.be/oHAQ3TzUTro",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Explore top posts about CI/CD",
+                                             "url":  "https://app.daily.dev/tags/cicd?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_Y1SFX7UVWACY4OYBNE_5D6DFF50",
+                       "title":  "Monit",
+                       "description":  "Тема roadmap по направлению «Full Stack Developer»: Monit. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  30,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_FULL_STACK_CUOFVOLQ_0UU1VX3I6_552387D5",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Monit",
+                                             "url":  "https://mmonit.com/monit/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Mmonit",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Monit Documentation",
+                                             "url":  "https://mmonit.com/monit/documentation/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Mmonit",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_SO_9_L4FECBAQIAFNY_9DD8F4B6",
+                       "title":  "Checkpoint — Automation",
+                       "description":  "Подтема roadmap по направлению «Full Stack Developer»: Checkpoint — Automation.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  31,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_LIAY1GNLOATEB_ZKBJ_900C13FE",
+                       "title":  "Checkpoint — CI / CD",
+                       "description":  "Подтема roadmap по направлению «Full Stack Developer»: Checkpoint — CI / CD.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  32,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_NQMEL27EBPYHIVCXDO_6921D1D0",
+                       "title":  "Checkpoint — Monitoring",
+                       "description":  "Подтема roadmap по направлению «Full Stack Developer»: Checkpoint — Monitoring.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  33,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_863KMXCFJZINVTP_LD_DE1BFBC5",
+                       "title":  "GitHub Actions",
+                       "description":  "Тема roadmap по направлению «Full Stack Developer»: GitHub Actions. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  34,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_FULL_STACK_Y1SFX7UVWACY4OYBNE_5D6DFF50",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit Dedicated Git \u0026 GitHub Roadmap",
+                                             "url":  "https://roadmap.sh/git-github",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "GitHub Actions",
+                                             "url":  "https://github.com/features/actions",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Github",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "GitHub Actions Documentation",
+                                             "url":  "https://docs.github.com/en/actions",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Github",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "5 Ways to DevOps-ify your App",
+                                             "url":  "https://www.youtube.com/watch?v=eB0nUzAI7M8",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "DevOps CI/CD Explained in 100 Seconds",
+                                             "url":  "https://www.youtube.com/watch?v=scEDHsr3APg",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "Explore top posts about GitHub",
+                                             "url":  "https://app.daily.dev/tags/github-actions?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_RFXUPYPUFFP7VZO8ZH_C4422E82",
+                       "title":  "Ansible",
+                       "description":  "Тема roadmap по направлению «Full Stack Developer»: Ansible. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  35,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_FULL_STACK_863KMXCFJZINVTP_LD_DE1BFBC5",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Ansible",
+                                             "url":  "https://www.ansible.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Ansible",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Ansible Documentation",
+                                             "url":  "https://docs.ansible.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Ansible",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Ansible Getting Started Guide",
+                                             "url":  "https://www.ansible.com/resources/get-started",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Ansible",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Ansible Full Course for Beginners",
+                                             "url":  "https://www.youtube.com/watch?v=9Ua2b06oAr4",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Ansible",
+                                             "url":  "https://app.daily.dev/tags/ansible?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_2KKHUQZSCU7HCDGQWX_43583E91",
+                       "title":  "Terraform",
+                       "description":  "Тема roadmap по направлению «Full Stack Developer»: Terraform. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  36,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_FULL_STACK_RFXUPYPUFFP7VZO8ZH_C4422E82",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit Dedicated Terraform Roadmap",
+                                             "url":  "https://roadmap.sh/terraform",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Terraform Website",
+                                             "url":  "https://www.terraform.io/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Terraform",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Terraform Documentation",
+                                             "url":  "https://www.terraform.io/docs",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Terraform",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Terraform CDK",
+                                             "url":  "https://www.terraform.io/cdktf",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Terraform",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Terraform Tutorials",
+                                             "url":  "https://learn.hashicorp.com/terraform",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Hashicorp",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "Intro to Terraform Video",
+                                             "url":  "https://www.youtube.com/watch?v=h970ZBgKINg\u0026ab_channel=HashiCorp",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Terraform",
+                                             "url":  "https://app.daily.dev/tags/terraform?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  7
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_FULL_STACK_YVMYHFSCVF_GGXYDQ__658F58D3",
+                       "title":  "Checkpoint — Infrastructure",
+                       "description":  "Подтема roadmap по направлению «Full Stack Developer»: Checkpoint — Infrastructure.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  37,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   }
+               ]
+}

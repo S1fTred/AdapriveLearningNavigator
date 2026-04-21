@@ -11,7 +11,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 @Component
@@ -32,18 +34,41 @@ public class ClasspathRoadmapShRoadmapSource implements RoadmapShRoadmapSource {
     @Override
     public List<RoadmapShRoadmapManifest> loadRoadmaps() {
         try {
-            Resource[] resources = resourcePatternResolver.getResources(properties.manifestPattern());
-            List<RoadmapShRoadmapManifest> manifests = new ArrayList<>();
+            Resource[] resources = resolveResources(properties.manifestPattern());
+            Map<String, RoadmapShRoadmapManifest> manifestsByRoleCode = new LinkedHashMap<>();
             for (Resource resource : resources) {
                 try (InputStream inputStream = resource.getInputStream()) {
-                    manifests.add(objectMapper.readValue(inputStream, RoadmapShRoadmapManifest.class));
+                    RoadmapShRoadmapManifest manifest = objectMapper.readValue(inputStream, RoadmapShRoadmapManifest.class);
+                    if (manifest != null && !isBlank(manifest.roleCode())) {
+                        manifestsByRoleCode.putIfAbsent(manifest.roleCode(), manifest);
+                    }
                 }
             }
+
+            List<RoadmapShRoadmapManifest> manifests = new ArrayList<>(manifestsByRoleCode.values());
             validate(manifests);
             return manifests;
         } catch (IOException exception) {
             throw new IllegalStateException("Failed to read roadmap.sh roadmap manifests: " + properties.manifestPattern(), exception);
         }
+    }
+
+    private Resource[] resolveResources(String patternValue) throws IOException {
+        String[] patterns = patternValue.split("[,;\\r\\n]+");
+        Map<String, Resource> uniqueResources = new LinkedHashMap<>();
+
+        for (String rawPattern : patterns) {
+            String pattern = rawPattern == null ? "" : rawPattern.trim();
+            if (pattern.isEmpty()) {
+                continue;
+            }
+
+            for (Resource resource : resourcePatternResolver.getResources(pattern)) {
+                uniqueResources.putIfAbsent(resource.getURL().toExternalForm(), resource);
+            }
+        }
+
+        return uniqueResources.values().toArray(Resource[]::new);
     }
 
     private void validate(List<RoadmapShRoadmapManifest> manifests) {

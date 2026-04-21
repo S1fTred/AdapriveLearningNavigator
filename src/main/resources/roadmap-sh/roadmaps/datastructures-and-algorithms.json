@@ -1,0 +1,3277 @@
+﻿{
+    "source":  "roadmap.sh",
+    "sourceUrl":  "https://roadmap.sh/datastructures-and-algorithms",
+    "roleCode":  "datastructures-and-algorithms",
+    "roleName":  "Data Structures \u0026 Algorithms",
+    "roleDescription":  "Дорожная карта по направлению «Data Structures \u0026 Algorithms» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+    "roleStatus":  "ACTIVE",
+    "topics":  [
+                   {
+                       "code":  "RM_DATASTRUCTURES_BZVNEZJCNUHPG5SKX9_815661FE",
+                       "title":  "C#",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: C#. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  1,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "C# Learning Path",
+                                             "url":  "https://docs.microsoft.com/en-us/learn/paths/csharp-first-steps/?WT.mc_id=dotnet-35129-website",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Microsoft",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Introduction to C#",
+                                             "url":  "https://docs.microsoft.com/en-us/shows/CSharp-101/?WT.mc_id=Educationalcsharp-c9-scottha",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Microsoft",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "C# tutorials",
+                                             "url":  "https://www.youtube.com/watch?v=gfkTfcpWqAY\u0026list=PLTjRvDozrdlz3_FPXwb6lX_HoGXa09Yef",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Explore top posts about C#",
+                                             "url":  "https://app.daily.dev/tags/csharp?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_IWMQ4UFB5J6O3UJFAR_703EB00A",
+                       "title":  "C++",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: C++. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  2,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit Dedicated C++ Roadmap",
+                                             "url":  "https://roadmap.sh/cpp",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Learn Cpp",
+                                             "url":  "https://learncpp.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Learncpp",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "C++ Reference",
+                                             "url":  "https://en.cppreference.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Cppreference",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Explore top posts about C++",
+                                             "url":  "https://app.daily.dev/tags/c++?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_Z4UVZAONZCAKYJD_LP_B066185D",
+                       "title":  "Pick a Language",
+                       "description":  "Тема roadmap по направлению «Data Structures \u0026 Algorithms»: Pick a Language.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  3,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_HVD9G3JLLBSAG111VQ_1BD06F34",
+                       "title":  "JavaScript",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: JavaScript. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  4,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_Z4UVZAONZCAKYJD_LP_B066185D",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit Dedicated JavaScript Roadmap",
+                                             "url":  "https://roadmap.sh/javascript",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "The Modern JavaScript Tutorial",
+                                             "url":  "https://javascript.info/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Javascript",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Official Documentation",
+                                             "url":  "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Node.js",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "JavaScript Crash Course for Beginners",
+                                             "url":  "https://youtu.be/hdI2bqOjy3c",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Node.js Crash Course",
+                                             "url":  "https://www.youtube.com/watch?v=fBNz5xF-Kx4",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "Node.js Tutorial for Beginners",
+                                             "url":  "https://www.youtube.com/watch?v=TlB_eWDSMt4",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         },
+                                         {
+                                             "title":  "Explore top posts about JavaScript",
+                                             "url":  "https://app.daily.dev/tags/javascript?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  7
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_GJZZOWMYKXQHPFG9YN_5A00AD99",
+                       "title":  "Java",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Java. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  5,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_Z4UVZAONZCAKYJD_LP_B066185D",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit Dedicated Java Roadmap",
+                                             "url":  "https://roadmap.sh/java",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Java Website",
+                                             "url":  "https://www.java.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Java",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Java Crash Course",
+                                             "url":  "https://www.youtube.com/watch?v=eIrMbAQSU34",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Complete Java course",
+                                             "url":  "https://www.youtube.com/watch?v=xk4_1vDrzzo",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Java",
+                                             "url":  "https://app.daily.dev/tags/java?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_OKDM_PJGE70J5TSJT2_A2D5C964",
+                       "title":  "Go",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Go. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  6,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_Z4UVZAONZCAKYJD_LP_B066185D",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit Dedicated Go Roadmap",
+                                             "url":  "https://roadmap.sh/golang",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "A Tour of Go – Go Basics",
+                                             "url":  "https://go.dev/tour/welcome/1",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Go",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Go Reference Documentation",
+                                             "url":  "https://go.dev/doc/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Go",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Go by Example - annotated example programs",
+                                             "url":  "https://gobyexample.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Gobyexample",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Making a RESTful JSON API in Go",
+                                             "url":  "https://thenewstack.io/make-a-restful-json-api-go/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Thenewstack",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "Go, the Programming Language of the Cloud",
+                                             "url":  "https://thenewstack.io/go-the-programming-language-of-the-cloud/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Thenewstack",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Golang",
+                                             "url":  "https://app.daily.dev/tags/golang?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  7
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_XYRCXHZJQFCDNAUSNN_E31A6DB5",
+                       "title":  "Python",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Python. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  7,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit Dedicated Python Roadmap",
+                                             "url":  "https://roadmap.sh/python",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Python Website",
+                                             "url":  "https://www.python.org/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Python",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Python Getting Started",
+                                             "url":  "https://www.python.org/about/gettingstarted/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Python",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Automate the Boring Stuff",
+                                             "url":  "https://automatetheboringstuff.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Automatetheboringstuff",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Python principles - Python basics",
+                                             "url":  "https://pythonprinciples.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Pythonprinciples",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "Python Crash Course",
+                                             "url":  "https://ehmatthes.github.io/pcc/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Github",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         },
+                                         {
+                                             "title":  "An Introduction to Python for Non-Programmers",
+                                             "url":  "https://thenewstack.io/an-introduction-to-python-for-non-programmers/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Thenewstack",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  7
+                                         },
+                                         {
+                                             "title":  "Getting Started with Python and InfluxDB",
+                                             "url":  "https://thenewstack.io/getting-started-with-python-and-influxdb/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Thenewstack",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  8
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Python",
+                                             "url":  "https://app.daily.dev/tags/python?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  9
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_EBQDTOAOV54WBTOHMF_7153899B",
+                       "title":  "Programming Fundamentals",
+                       "description":  "Тема roadmap по направлению «Data Structures \u0026 Algorithms»: Programming Fundamentals.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  8,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_KE6QDDRHO8C5UR3JBE_D919D6FA",
+                       "title":  "Language Syntax",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Language Syntax.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  9,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_EBQDTOAOV54WBTOHMF_7153899B",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_G74XP8_EMZO2OEZNTR_990B3C35",
+                       "title":  "Control Structures",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Control Structures.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  10,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_EBQDTOAOV54WBTOHMF_7153899B",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_TVY3VIC8VP_IE2X_OY_46096FA0",
+                       "title":  "Pseudo Code",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Pseudo Code.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  11,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_EBQDTOAOV54WBTOHMF_7153899B",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_9H1MZ0XAUVPRNRM9VN_6B04ADAA",
+                       "title":  "Ruby",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Ruby. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  12,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_Z4UVZAONZCAKYJD_LP_B066185D",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Ruby Website",
+                                             "url":  "https://www.ruby-lang.org/en/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Ruby",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Learn Ruby in 20 minutes",
+                                             "url":  "https://www.ruby-lang.org/en/documentation/quickstart/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Ruby",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Ruby, An Introduction to a Programmer’s Best Friend",
+                                             "url":  "https://thenewstack.io/ruby-a-programmers-best-friend/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Thenewstack",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Ruby",
+                                             "url":  "https://app.daily.dev/tags/ruby?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_ACGRMEUL4ZGGRHPZ7K_E3F9C7ED",
+                       "title":  "Rust",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Rust. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  13,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "The Rust Programming Language - online book",
+                                             "url":  "https://doc.rust-lang.org/book/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Rust-lang",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Rust by Example - collection of runnable examples",
+                                             "url":  "https://doc.rust-lang.org/stable/rust-by-example/index.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Rust-lang",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Rust vs. Go: Why They’re Better Together",
+                                             "url":  "https://thenewstack.io/rust-vs-go-why-theyre-better-together/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Thenewstack",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Rust by the Numbers: The Rust Programming Language in 2021",
+                                             "url":  "https://thenewstack.io/rust-by-the-numbers-the-rust-programming-language-in-2021/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Thenewstack",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Rust",
+                                             "url":  "https://app.daily.dev/tags/rust?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_CU08M5JOFVRPUDGONY_1984527E",
+                       "title":  "Functions",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Functions.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  14,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_EBQDTOAOV54WBTOHMF_7153899B",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_QFR1FMOF2OV3N3JCDN_C14B5602",
+                       "title":  "OOP Basics",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: OOP Basics. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  15,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_EBQDTOAOV54WBTOHMF_7153899B",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Object-Oriented Programming (Simplified)",
+                                             "url":  "https://youtu.be/pTB0EiLXUC8?si=I8rV2K5fhpoqmixX",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_JVWUYXWRTT_EPAWC4Q_7FA6DADC",
+                       "title":  "What are Data Structures?",
+                       "description":  "Тема roadmap по направлению «Data Structures \u0026 Algorithms»: What are Data Structures?. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  true,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  16,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_EBQDTOAOV54WBTOHMF_7153899B",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What an Algorithms and More(MIT)",
+                                             "url":  "https://youtu.be/Zc54gFhdpLA?si=F_1QRigN_h2t2nSp\u0026t=133",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "What Are Data Structures?",
+                                             "url":  "https://www.youtube.com/watch?v=bum_19loj9A",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Introduction to Algorithms",
+                                             "url":  "https://www.youtube.com/watch?v=0IAPZzGSbME",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_NQNO1WZ3GYIMR98_BN_91A60B64",
+                       "title":  "Common Runtimes",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Common Runtimes.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  17,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_LXY3ERXJ_D3ZKSAXIB_B8D7B569",
+                       "title":  "Array",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Array. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  18,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Arrays in Python",
+                                             "url":  "https://www.youtube.com/watch?v=gDqQf4Ekr2A\u0026ab_channel=codebasics",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Arrays in Java",
+                                             "url":  "https://www.youtube.com/watch?v=ei_4Nt7XWOw\u0026ab_channel=BroCode",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Arrays in Javascript",
+                                             "url":  "https://www.youtube.com/watch?v=yQ1fz8LY354",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Arrays in GoLang",
+                                             "url":  "https://www.youtube.com/watch?v=e-oBn806Pzc\u0026pp=ygUIYXJyYXkgZ28%3D",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Arrays in C#",
+                                             "url":  "https://www.youtube.com/watch?v=YiE0oetGMAg\u0026pp=ygUIYXJyYXkgYyM%3D",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "Arrays in C++",
+                                             "url":  "https://www.youtube.com/watch?v=G38hQKXa_RU\u0026pp=ygUJYXJyYXkgYysr",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         },
+                                         {
+                                             "title":  "Arrays in Rust",
+                                             "url":  "https://www.youtube.com/watch?v=cH6Qv47MPwk\u0026pp=ygUKYXJyYXkgcnVzdA%3D%3D",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  7
+                                         },
+                                         {
+                                             "title":  "Arrays in Ruby",
+                                             "url":  "https://www.youtube.com/watch?v=SP3Vf2KcYeU\u0026pp=ygUKYXJyYXkgcnVieQ%3D%3D",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  8
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_8_GKF9ZHRL8TVT2QU__21DBB144",
+                       "title":  "Why are Data Structures Important?",
+                       "description":  "Тема roadmap по направлению «Data Structures \u0026 Algorithms»: Why are Data Structures Important?. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  19,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What are Data Structures? Why is it Important?",
+                                             "url":  "https://www.youtube.com/watch?v=18V8Avz2OH8",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_BPV8MKVOY8ZATTXYAE_ADB63C58",
+                       "title":  "Constant",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Constant.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  20,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_ITLPA9A7H33FKUAV0U_BB374AC3",
+                       "title":  "Basic Data Structures",
+                       "description":  "Тема roadmap по направлению «Data Structures \u0026 Algorithms»: Basic Data Structures.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  21,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_BRU9U8PEAQ1TMKYGJI_EEEE3E43",
+                       "title":  "Linked Lists",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Linked Lists. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  22,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_ITLPA9A7H33FKUAV0U_BB374AC3",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Introduction To Linked List",
+                                             "url":  "https://youtu.be/Nq7ok-OyEpg?si=xttaGoYKcoJ09Ln2",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Python Linked List",
+                                             "url":  "https://www.youtube.com/watch?v=qp8u-frRAnU\u0026list=PLeo1K3hjS3uu_n_a__MI_KktGTLYopZ12\u0026index=4\u0026ab_channel=codebasics",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_V0PHJC75JHME1Z_F9Z_FCBB00EF",
+                       "title":  "Queues",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Queues. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  23,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Queue",
+                                             "url":  "https://www.youtube.com/watch?v=M6GnoUDpqEE",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Python Queue",
+                                             "url":  "https://www.youtube.com/watch?v=rUUrmGKYwHw",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_JVKRYKGNY140FLQUF2_79150C45",
+                       "title":  "Stacks",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Stacks. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  24,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_ITLPA9A7H33FKUAV0U_BB374AC3",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Leetcode",
+                                             "url":  "https://leetcode.com/problems/valid-parentheses/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Leetcode",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Stacks",
+                                             "url":  "https://www.youtube.com/watch?v=GYptUgnIM_I\u0026list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma\u0026index=69\u0026ab_channel=takeUforward",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Stack Data Structure Tutorial",
+                                             "url":  "https://www.youtube.com/watch?v=O1KeXo8lE8A",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Python Stacks",
+                                             "url":  "https://www.youtube.com/watch?v=zwb3GmNAtFk",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_CNCEET0YROFHZN8NPA_B906BA5E",
+                       "title":  "Logarithmic",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Logarithmic.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  25,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_KSY_8UBESDMIX4FYL8_5AF4A66D",
+                       "title":  "Hash Tables",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Hash Tables. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  26,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_ITLPA9A7H33FKUAV0U_BB374AC3",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Hash Table",
+                                             "url":  "https://www.youtube.com/watch?v=KEs5UyBJ39g\u0026ab_channel=takeUforward",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Python Hash Table Part 1",
+                                             "url":  "https://www.youtube.com/watch?v=ea8BRGxGmlA",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Python Hash Table Part 2",
+                                             "url":  "https://www.youtube.com/watch?v=54iv1si4YCM",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_HOPL_4JYHOE0LNRRKP_97FAD9A6",
+                       "title":  "Linear",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Linear.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  27,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_QKHMM_IG1FKBUDFDRF_E0710875",
+                       "title":  "Polynomial",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Polynomial.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  28,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_VOTDHK0_BI3CEOIF_K_9E2A5D96",
+                       "title":  "Algorithmic Complexity",
+                       "description":  "Тема roadmap по направлению «Data Structures \u0026 Algorithms»: Algorithmic Complexity.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  29,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_ITLPA9A7H33FKUAV0U_BB374AC3",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_UNAYMPZK761EH_IZML_9064257C",
+                       "title":  "Time vs Space Complexity",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Time vs Space Complexity. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  30,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_VOTDHK0_BI3CEOIF_K_9E2A5D96",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Cheat Sheet",
+                                             "url":  "https://www.bigocheatsheet.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Bigocheatsheet",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Big O Notation — Calculating Time Complexity",
+                                             "url":  "https://www.youtube.com/watch?v=Z0bH0cMY0E8",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Free Code Camp Big-O Tutorial",
+                                             "url":  "https://youtu.be/Mo4vesaut8g?si=1jyb-EkfCLf9PNND",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_HOSRC0HCZUBBHRWXCZ_604D892B",
+                       "title":  "How to Calculate Complexity?",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: How to Calculate Complexity?. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  31,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_VOTDHK0_BI3CEOIF_K_9E2A5D96",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Time \u0026 Space Complexity",
+                                             "url":  "https://www.youtube.com/watch?v=Z0bH0cMY0E8",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "How Write and Analyze Algorithm",
+                                             "url":  "https://www.youtube.com/watch?v=xGYsEqe9Vl0",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_XQZAYJBVLSNTT6QZ59_6BB9BE54",
+                       "title":  "Exponential",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Exponential.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  32,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_WCLY3CMT1FBNYJLSMI_DDA710BB",
+                       "title":  "Factorial",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Factorial.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  33,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_V0LRABYYOKZV4OCXOK_FE315CAE",
+                       "title":  "Asymptotic Notation",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Asymptotic Notation. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  34,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_VOTDHK0_BI3CEOIF_K_9E2A5D96",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Asymptotic Analysis: Big-O Notation and More",
+                                             "url":  "https://www.programiz.com/dsa/asymptotic-notations",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Programiz",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "The Big O Notation",
+                                             "url":  "https://towardsdatascience.com/big-o-notation-32fb458e5260/?utm_source=roadmap\u0026utm_medium=Referral\u0026utm_campaign=TDS+roadmap+integration",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Towardsdatascience",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_OYLTFOP_JDPHJ3JYUA_675AABE5",
+                       "title":  "Big-O Notation",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Big-O Notation. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  9,
+                       "status":  "ACTIVE",
+                       "priority":  35,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Big-O Cheat Sheet",
+                                             "url":  "https://www.bigocheatsheet.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Bigocheatsheet",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Introduction to Big O Notation and Time Complexity",
+                                             "url":  "https://www.youtube.com/watch?v=D6xkbGLQesk",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Big-O Notation",
+                                             "url":  "https://www.youtube.com/watch?v=BgLTDT03QtU",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_WT74MRKAZCS8LYVFQJ_355545EE",
+                       "title":  "Binary Search",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Binary Search. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  36,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Learn Binary Search in 10 minutes",
+                                             "url":  "https://www.youtube.com/watch?v=xrMppTpoqdw",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_WZFKDKCBL8EA9DBKJF_955406EE",
+                       "title":  "Sorting Algorithms",
+                       "description":  "Тема roadmap по направлению «Data Structures \u0026 Algorithms»: Sorting Algorithms.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  37,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_VOTDHK0_BI3CEOIF_K_9E2A5D96",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_EX6TZU6GWRARWM1CNF_178F126D",
+                       "title":  "Big-θ Notation",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Big-θ Notation.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  38,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_ATX_PEI8NY4_5BA_XL_27FE42C2",
+                       "title":  "Linear Search",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Linear Search. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  39,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Learn Linear Search in 3 minutes",
+                                             "url":  "https://www.youtube.com/watch?v=246V51AWwZM",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_CKUI93TVTKEM2_ISHN_CD671309",
+                       "title":  "Big-Ω Notation",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Big-Ω Notation.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  40,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_ZUDKCJCQHLW4C_6A34_53F91C9E",
+                       "title":  "Bubble Sort",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Bubble Sort. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  41,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Bubble Sort Visualize",
+                                             "url":  "https://www.hackerearth.com/practice/algorithms/sorting/bubble-sort/visualize/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Hackerearth",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Bubble Sort",
+                                             "url":  "https://www.youtube.com/watch?v=Jdtq5uKz-w4",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Bubble Sort",
+                                             "url":  "https://www.youtube.com/watch?v=p__ETf2CKY4",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_K0UBAJ3HOYAB4MUZIO_B2BABCCE",
+                       "title":  "Merge Sort",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Merge Sort. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  42,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Merge Sort Visualize",
+                                             "url":  "https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/visualize/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Hackerearth",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Merge Sort",
+                                             "url":  "https://www.youtube.com/watch?v=4VqmGXwpLqc",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_Z_CF_ALLAYSCYYTNVI_43422FFA",
+                       "title":  "Search Algorithms",
+                       "description":  "Тема roadmap по направлению «Data Structures \u0026 Algorithms»: Search Algorithms.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  43,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_LIJFTV5AJAFZCFWBDV_59A617E4",
+                       "title":  "Insertion Sort",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Insertion Sort. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  44,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Insertion Sort",
+                                             "url":  "https://youtu.be/JU767SDMDvA",
+                                             "type":  "COURSE",
+                                             "language":  "en",
+                                             "durationMinutes":  180,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Insertion Sort Visualization",
+                                             "url":  "https://www.hackerearth.com/practice/algorithms/sorting/insertion-sort/visualize/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Hackerearth",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_LGEV0WM4AVROQR8BV5_8130D5D8",
+                       "title":  "Quick Sort",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Quick Sort. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  45,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Quick Sort Visualize",
+                                             "url":  "https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/visualize/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Hackerearth",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "A Complete Overview of Quicksort",
+                                             "url":  "https://www.youtube.com/watch?v=0SkOjNaO1XY",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "QuickSort",
+                                             "url":  "https://www.youtube.com/watch?v=7h1s2SojIRw",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "QuickSort Analysis",
+                                             "url":  "https://www.youtube.com/watch?v=-qOVVRIZzao",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_XVW2_DL3UN0SOWMJH1_17001E72",
+                       "title":  "Directed Graph",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Directed Graph.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  46,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_SMGBHVQXLD6CGR2NIX_3923675B",
+                       "title":  "Selection Sort",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Selection Sort. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  47,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Selection Sort Visualize",
+                                             "url":  "https://www.hackerearth.com/practice/algorithms/sorting/selection-sort/practice-problems/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Hackerearth",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Selection sort in 3 minutes",
+                                             "url":  "https://www.youtube.com/watch?v=g-PGLbMth_g\u0026t=5s",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_YMV9OA3HSGT8ADX6M__E50821F8",
+                       "title":  "Heap Sort",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Heap Sort. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  48,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Heap Sort Visualize",
+                                             "url":  "https://www.hackerearth.com/practice/algorithms/sorting/heap-sort/tutorial/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Hackerearth",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Heap sort in 4 minutes",
+                                             "url":  "https://www.youtube.com/watch?v=2DmK_H7IdTo",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_R2JAGZBX0QOG_VTXBY_9204EE1B",
+                       "title":  "Tree Data Structures",
+                       "description":  "Тема roadmap по направлению «Data Structures \u0026 Algorithms»: Tree Data Structures.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  49,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_J_R1TB16BA7R3YDAWN_D9BCBABA",
+                       "title":  "Graph Data Structures",
+                       "description":  "Тема roadmap по направлению «Data Structures \u0026 Algorithms»: Graph Data Structures.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  50,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_R2JAGZBX0QOG_VTXBY_9204EE1B",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_VNKM_J7MCUW9LO0IKY_138545D4",
+                       "title":  "Undirected Graph",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Undirected Graph.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  51,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_J_R1TB16BA7R3YDAWN_D9BCBABA",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_YJSAQWJPLWVN6OCXNW_F5D7AFA1",
+                       "title":  "Search Algorithms",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Search Algorithms.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  52,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_2OD5LNC6FCM6GYJ_AX_412AEC1A",
+                       "title":  "Tree Traversal",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Tree Traversal.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  53,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_RPU5CGP2LI5LK0UB_Z_BFCE885B",
+                       "title":  "Binary Trees",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Binary Trees. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  54,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Binary Tree",
+                                             "url":  "https://youtu.be/4r_XR9fUPhQ?si=PBsRjix_Z9kVHgMM",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_LW5HZMCA4LVHBBA8KY_8FC32A96",
+                       "title":  "Search Algorithms",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Search Algorithms.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  55,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_PFG_QCLOPVLSGMDLZ1_F3142A2D",
+                       "title":  "Breadth First Search",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Breadth First Search.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  56,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_UYM7UNZFXD9GE5EYV4_F304FA27",
+                       "title":  "Binary Search Trees",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Binary Search Trees. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  57,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Binary Search Tree Part-1",
+                                             "url":  "https://youtu.be/lFq5mYUWEBk?si=GKRm1O278NCetnry",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Binary Search Tree Part-2",
+                                             "url":  "https://youtu.be/JnrbMQyGLiU?si=1pfKn2akKXWLshY6",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_ICA7UKZIH4ITDMDNEC_6BF6DD78",
+                       "title":  "In-Order Traversal",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: In-Order Traversal.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  58,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_C7LDXJPV_5M_NPKSCX_674AEA68",
+                       "title":  "Breadth First Search",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Breadth First Search.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  59,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_GR8KCOIADUXS8HDIEA_61BD9989",
+                       "title":  "Depth First Search",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Depth First Search.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  60,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_BMEOO65ZSX51H4JS1G_D3D612C4",
+                       "title":  "Pre-Order Traversal",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Pre-Order Traversal.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  61,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_5MCGKPYLPZDZAGBEUU_6C3C235F",
+                       "title":  "AVL Trees",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: AVL Trees. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  62,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "AVL trees in 5 minutes — Intro \u0026 Search",
+                                             "url":  "https://www.youtube.com/watch?v=DB1HFCEdLxA",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_NRPO7VF8Z1WZMA9CA3_0E2643F2",
+                       "title":  "Depth First Search",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Depth First Search. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  63,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Learn Depth First Search in 7 minutes",
+                                             "url":  "https://youtu.be/by93qH4ACxo?si=FXcUfuwB5atV5SIY",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_J6_DYKIYG1WBUYGQKX_26A5FB9B",
+                       "title":  "Post-Order Traversal",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Post-Order Traversal.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  64,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_2F6BCBAZICYNOK3OEJ_8652CAF7",
+                       "title":  "B-Trees",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: B-Trees. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  65,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "B-trees in 4 minutes — Intro",
+                                             "url":  "https://www.youtube.com/watch?v=FgWbADOG44s",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_R3COQ0TG1_CSOXZXWG_6DFCBCCC",
+                       "title":  "Heap",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Heap. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  66,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Heap Data Structure",
+                                             "url":  "https://www.programiz.com/dsa/heap-data-structure",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Programiz",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Heap Data Structure",
+                                             "url":  "https://www.youtube.com/watch?v=t0Cq6tVNRBA",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Heaps and Priority Queues",
+                                             "url":  "https://www.youtube.com/watch?v=B7hVxCmfPtM",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_N_QVYIRXPORCATSLVL_B338C9B6",
+                       "title":  "Shortest Path Algorithms",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Shortest Path Algorithms.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  67,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_87UUGVREIYWF0E7ACO_7CDC6ECC",
+                       "title":  "Dijkstra\u0027s Algorithm",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Dijkstra\u0027s Algorithm.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  68,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_7CGGWDWHNOMISMEPTJ_2E893409",
+                       "title":  "Bellman-Ford Algoritm",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Bellman-Ford Algoritm.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  69,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_AABJQPUWFVBVS02YPD_D1F73850",
+                       "title":  "A* Algorithm",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: A* Algorithm.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  70,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_KNYUHDVPDTUO0EKAS9_CBAECB09",
+                       "title":  "Advanced Data Structures",
+                       "description":  "Тема roadmap по направлению «Data Structures \u0026 Algorithms»: Advanced Data Structures.",
+                       "level":  "ADVANCED",
+                       "core":  true,
+                       "estimatedHours":  9,
+                       "status":  "ACTIVE",
+                       "priority":  71,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_ZY3WPB1MJIZFUFX9_R_1E8DB458",
+                       "title":  "Trie",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Trie.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  72,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_KNYUHDVPDTUO0EKAS9_CBAECB09",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_IFNS3X9WVRIJPIXCT6_574CB022",
+                       "title":  "Segment Trees",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Segment Trees.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  73,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_KNYUHDVPDTUO0EKAS9_CBAECB09",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_V9SWO58KAMSU1NT7Q2_4C1B4C94",
+                       "title":  "Fenwick Trees",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Fenwick Trees.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  74,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_KNYUHDVPDTUO0EKAS9_CBAECB09",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_KTQAU1VKVRNNVYBYQC_2740E912",
+                       "title":  "Minimum Spanning Tree",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Minimum Spanning Tree.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  75,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_LA8XAT0BWVQRCRVQXT_626E9EDE",
+                       "title":  "Disjoint Set (Union-Find)",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Disjoint Set (Union-Find).",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  76,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_KNYUHDVPDTUO0EKAS9_CBAECB09",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_YEWNYJW0ZLVHSLC9RH_BD03515B",
+                       "title":  "Prim\u0027s Algorithm",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Prim\u0027s Algorithm.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  77,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_ZPRVKXPOJAXNO0LQAR_80D3F4DA",
+                       "title":  "Suffix Trees and Arrays",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Suffix Trees and Arrays.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  78,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_KNYUHDVPDTUO0EKAS9_CBAECB09",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_F3BPBWIDCNMZL7QXEY_85F33EFE",
+                       "title":  "Kruskal\u0027s Algorithm",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Kruskal\u0027s Algorithm.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  79,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_KSPGFUAHYZYSWLGBLO_D023AAF1",
+                       "title":  "Complex Data Structures",
+                       "description":  "Тема roadmap по направлению «Data Structures \u0026 Algorithms»: Complex Data Structures.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  80,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_O0FNAHJ1LSCDMGZY2N_C1B397D9",
+                       "title":  "2-3 Trees",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: 2-3 Trees.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  81,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_KSPGFUAHYZYSWLGBLO_D023AAF1",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_AR7GEGFI9O_DLPBIEV_DF4D5F4F",
+                       "title":  "Indexing",
+                       "description":  "Тема roadmap по направлению «Data Structures \u0026 Algorithms»: Indexing.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  82,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_KSPGFUAHYZYSWLGBLO_D023AAF1",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_4NOAV5W_8GRMTXN1LX_99CA2BF5",
+                       "title":  "Linear",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Linear.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  83,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_AR7GEGFI9O_DLPBIEV_DF4D5F4F",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_ZXUFEYFC5OSKKGKTXU_E02EF8CF",
+                       "title":  "Tree-Based",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Tree-Based.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  84,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_AR7GEGFI9O_DLPBIEV_DF4D5F4F",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_2G6VN7K11_MPQQ7_IX_898059C4",
+                       "title":  "B/B+ Trees",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: B/B+ Trees. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  85,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_KSPGFUAHYZYSWLGBLO_D023AAF1",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "B Trees and B+ Trees. How they are useful in Databases",
+                                             "url":  "https://www.youtube.com/watch?v=aZjYr87r1b8",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_TQU_OBPVR_AQFMBYUC_9798A461",
+                       "title":  "Skip List",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Skip List. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  86,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_KSPGFUAHYZYSWLGBLO_D023AAF1",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Skip Lists",
+                                             "url":  "https://www.youtube.com/watch?v=NDGpsfwAaqo",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_5T2Y6IQI_I_ZOTLKES_DDC94110",
+                       "title":  "Brute Force",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Brute Force. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  87,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Brute Force Technique in Algorithms",
+                                             "url":  "https://medium.com/@shraddharao_/brute-force-technique-in-algorithms-34bac04bde8a",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Medium",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Brute Force Algorithm Explained With C++ Examples",
+                                             "url":  "https://www.youtube.com/watch?v=BYWf6-tpQ4k",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_UXERZ4GLEKQWHRUG88_171F76AD",
+                       "title":  "ISAM",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: ISAM. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  88,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_KSPGFUAHYZYSWLGBLO_D023AAF1",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "DBMS - Index Sequential Access Method (ISAM)",
+                                             "url":  "https://www.youtube.com/watch?v=EiW1VVPor10",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_Q9QLI6HZOJ0VYAIVRZ_EEADCC43",
+                       "title":  "Island traversal",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Island traversal.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  89,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_Y1UZ6XRBR1YQFTO4AK_E614650F",
+                       "title":  "Problem Solving Techniques",
+                       "description":  "Тема roadmap по направлению «Data Structures \u0026 Algorithms»: Problem Solving Techniques.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  90,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_MKOC5O_GLSTJALQ8IX_E4B9E206",
+                       "title":  "Backtracking",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Backtracking. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  91,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_Y1UZ6XRBR1YQFTO4AK_E614650F",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What is backtracking?",
+                                             "url":  "https://www.youtube.com/watch?v=Peo7k2osVVs",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_QULQYTJK3XKF9DEM6L_FD988B30",
+                       "title":  "Greedy Algorithms",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Greedy Algorithms. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  92,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_Y1UZ6XRBR1YQFTO4AK_E614650F",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Greedy Algorithms Tutorial",
+                                             "url":  "https://www.youtube.com/watch?v=bC7o8P_Ste4",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_RIS8KZS3YBE6MKWPHS_46BEE914",
+                       "title":  "Randomised Algorithms",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Randomised Algorithms. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  93,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_Y1UZ6XRBR1YQFTO4AK_E614650F",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Algorithm Classification Randomized Algorithm",
+                                             "url":  "https://www.youtube.com/watch?v=J_EVG6yCOz0",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_GAARAL3HR48QJ9RZ1C_90EAC9CF",
+                       "title":  "Multi-threaded",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Multi-threaded.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  94,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_XCHWHSIZAKGYUHPC4T_B71CA4E1",
+                       "title":  "Divide and COnquer",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Divide and COnquer. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  95,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_Y1UZ6XRBR1YQFTO4AK_E614650F",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Divide \u0026 Conquer Algorithm In 3 Minutes",
+                                             "url":  "https://www.youtube.com/watch?v=YOh6hBtX5l0",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_WAM_J5MBE_XOA7H8U4_A049D1E4",
+                       "title":  "Leetcode",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Leetcode.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  96,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_MGB8UFZTTK75AXAYEA_228FEB5D",
+                       "title":  "Two Heaps",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Two Heaps. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  97,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Two Heaps — A Coding Pattern for Median-finding (Emre Bolat)",
+                                             "url":  "https://emre.me/coding-patterns/two-heaps/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Emre",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Coding Pattern - Two Heaps",
+                                             "url":  "https://www.youtube.com/watch?v=9P7W5aEaatQ",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_JCCHUF_U99ZKFPXP3V_B9E8F866",
+                       "title":  "Kth Element",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Kth Element.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  98,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_4ZAZCWP0OPGZ9RW042_CE2FAD1E",
+                       "title":  "Recursion",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Recursion. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  99,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_Y1UZ6XRBR1YQFTO4AK_E614650F",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Recursion in 100 Seconds",
+                                             "url":  "https://www.youtube.com/watch?v=rf60MejMz3E",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_8_7PHXPP1D1MV2YUBP_6563D3B8",
+                       "title":  "Edabit",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Edabit.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  100,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_S2MBVLFTD673XCXXIS_E2476EAC",
+                       "title":  "Merge Intervals",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Merge Intervals.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  101,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_JKAZNYBU9CXUFNBDFS_3BE44041",
+                       "title":  "Dynamic Programming",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Dynamic Programming. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  102,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_Y1UZ6XRBR1YQFTO4AK_E614650F",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Getting Started with Dynamic Programming in Data Structures and Algorithms",
+                                             "url":  "https://medium.com/@PythonicPioneer/getting-started-with-dynamic-programming-in-data-structures-and-algorithms-126c7a16775c",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Medium",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "What Is Dynamic Programming and How To Use It",
+                                             "url":  "https://www.youtube.com/watch?v=vYquumk4nWw\u0026t=4s",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "5 Simple Steps for Solving Dynamic Programming Problems",
+                                             "url":  "https://www.youtube.com/watch?v=aPQY__2H3tE",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_L1FIJALUYXG6CGAVLM_E7F6D03A",
+                       "title":  "Cyclic Sort",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Cyclic Sort.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  103,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_ITVHUXBE9DR9JN5GA2_734EB396",
+                       "title":  "Two Pointer Technique",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Two Pointer Technique. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  104,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_Y1UZ6XRBR1YQFTO4AK_E614650F",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Two Pointers Technique",
+                                             "url":  "https://medium.com/@johnnyJK/data-structures-and-algorithms-907a63d691c1",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Medium",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Mastering the Two Pointers Technique: An In-Depth Guide",
+                                             "url":  "https://lordkonadu.medium.com/mastering-the-two-pointers-technique-an-in-depth-guide-3c2167584ccc",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Medium",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Visual introduction Two Pointer Algorithm",
+                                             "url":  "https://www.youtube.com/watch?v=On03HWe2tZM",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_VMV4F_SPKWN9CTPHXE_95968804",
+                       "title":  "Platforms to Practice",
+                       "description":  "Тема roadmap по направлению «Data Structures \u0026 Algorithms»: Platforms to Practice.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  105,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_J_NO8GTA92DCWPTUA3_F964B1BE",
+                       "title":  "Fast and Slow Pointers",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Fast and Slow Pointers.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  106,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_DATASTRUCTURES_GBHVR_OJRXV9I0E5ES_9B11F6E7",
+                       "title":  "Sliding Window Technique",
+                       "description":  "Подтема roadmap по направлению «Data Structures \u0026 Algorithms»: Sliding Window Technique. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  107,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_DATASTRUCTURES_Y1UZ6XRBR1YQFTO4AK_E614650F",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Mastering Sliding Window Techniques",
+                                             "url":  "https://medium.com/@rishu__2701/mastering-sliding-window-techniques-48f819194fd7",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Medium",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Sliding window technique",
+                                             "url":  "https://www.youtube.com/watch?v=p-ss2JNynmw",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   }
+               ]
+}

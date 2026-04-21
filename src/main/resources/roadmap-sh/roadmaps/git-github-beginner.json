@@ -1,0 +1,214 @@
+﻿{
+    "source":  "roadmap.sh",
+    "sourceUrl":  "https://roadmap.sh/git-github-beginner",
+    "roleCode":  "git-github-beginner",
+    "roleName":  "Git Github Beginner",
+    "roleDescription":  "Стартовая дорожная карта по направлению «Git Github Beginner» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+    "roleStatus":  "ACTIVE",
+    "topics":  [
+                   {
+                       "code":  "RM_GIT_GITHUB_BEG_PTU5QWFZN3N1I3ORLC_BE331216",
+                       "title":  "Basic Git Usage",
+                       "description":  "Тема roadmap по направлению «Git Github Beginner»: Basic Git Usage. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  1,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Learn Git with Tutorials, News and Tips - Atlassian",
+                                             "url":  "https://www.atlassian.com/git",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Atlassian",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Git Cheat Sheet",
+                                             "url":  "https://cs.fyi/guide/git-cheatsheet",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Cs",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Git \u0026 GitHub Crash Course For Beginners",
+                                             "url":  "https://www.youtube.com/watch?v=vA5TTz6BXhY",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Creating a Repository? (Interactive Lesson)",
+                                             "url":  "https://inter-git.com/lessons/creating-repository",
+                                             "type":  "COURSE",
+                                             "language":  "en",
+                                             "durationMinutes":  180,
+                                             "provider":  "Inter-git",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "Adding Files to Index (Interactive Lesson)",
+                                             "url":  "https://inter-git.com/lessons/adding-files-to-index",
+                                             "type":  "COURSE",
+                                             "language":  "en",
+                                             "durationMinutes":  180,
+                                             "provider":  "Inter-git",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         },
+                                         {
+                                             "title":  "Making a Commit (Interactive Lesson)",
+                                             "url":  "https://inter-git.com/lessons/making-a-commit",
+                                             "type":  "COURSE",
+                                             "language":  "en",
+                                             "durationMinutes":  180,
+                                             "provider":  "Inter-git",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  6
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_GIT_GITHUB_BEG_BXFCUG3H1TIFPGD4WU_FA7DE9EA",
+                       "title":  "Collaboration",
+                       "description":  "Тема roadmap по направлению «Git Github Beginner»: Collaboration.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  2,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_GIT_GITHUB_BEG_HLUUGJ3DOZ68T4GIJE_E205A90F",
+                       "title":  "Learn the Basics",
+                       "description":  "Тема roadmap по направлению «Git Github Beginner»: Learn the Basics. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  3,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit the Dedicated Git \u0026 GitHub Roadmap",
+                                             "url":  "https://roadmap.sh/git-github",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Git",
+                                             "url":  "https://git-scm.com/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Git-scm",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "GitHub",
+                                             "url":  "https://github.com",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Github",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         },
+                                         {
+                                             "title":  "Git \u0026 GitHub Crash Course For Beginners",
+                                             "url":  "https://www.youtube.com/watch?v=vA5TTz6BXhY",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  4
+                                         },
+                                         {
+                                             "title":  "What is Version Control? (Interactive Lesson)",
+                                             "url":  "https://inter-git.com/lessons/introduction",
+                                             "type":  "COURSE",
+                                             "language":  "en",
+                                             "durationMinutes":  180,
+                                             "provider":  "Inter-git",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  5
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_GIT_GITHUB_BEG_AZMVZ6KC52VLGCZFD9_EE8FFB89",
+                       "title":  "More Git",
+                       "description":  "Тема roadmap по направлению «Git Github Beginner»: More Git.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  4,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_GIT_GITHUB_BEG_STI_TAGZVSPUFWTYGA_ADDA5B8C",
+                       "title":  "More GitHub",
+                       "description":  "Тема roadmap по направлению «Git Github Beginner»: More GitHub.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  5,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   }
+               ]
+}

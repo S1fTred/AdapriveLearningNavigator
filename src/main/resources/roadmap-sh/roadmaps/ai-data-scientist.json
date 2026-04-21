@@ -1,0 +1,186 @@
+﻿{
+    "source":  "roadmap.sh",
+    "sourceUrl":  "https://roadmap.sh/ai-data-scientist",
+    "roleCode":  "ai-data-scientist",
+    "roleName":  "AI and Data Scientist Roadmap",
+    "roleDescription":  "Дорожная карта по направлению «AI and Data Scientist Roadmap» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+    "roleStatus":  "ACTIVE",
+    "topics":  [
+                   {
+                       "code":  "RM_AI_DATA_SCIENT_ASTADENN5PHEA_CFVN_6BE7743C",
+                       "title":  "Mathematics",
+                       "description":  "Тема roadmap по направлению «AI and Data Scientist Roadmap»: Mathematics. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  1,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Linear Algebra Done Right - Sheldon Axler",
+                                             "url":  "https://linear.axler.net/LADR4e.pdf",
+                                             "type":  "BOOK",
+                                             "language":  "en",
+                                             "durationMinutes":  240,
+                                             "provider":  "Axler",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_DATA_SCIENT_4WZL_FZJ3CZDWLLDOW_1A53CF3B",
+                       "title":  "Statistics",
+                       "description":  "Тема roadmap по направлению «AI and Data Scientist Roadmap»: Statistics.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  2,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_DATA_SCIENT_GD2EGQKZPNBPW1W2JW_06F2820D",
+                       "title":  "Econometrics",
+                       "description":  "Тема roadmap по направлению «AI and Data Scientist Roadmap»: Econometrics.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  3,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_DATA_SCIENT_XLDWUST4TI4GNMQMFD_4ED8B06B",
+                       "title":  "Coding",
+                       "description":  "Тема roadmap по направлению «AI and Data Scientist Roadmap»: Coding.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  4,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_DATA_SCIENT_L1027SBZXTHKZQWW98_2F8506BE",
+                       "title":  "Exploratory Data Analysis",
+                       "description":  "Тема roadmap по направлению «AI and Data Scientist Roadmap»: Exploratory Data Analysis.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  5,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_DATA_SCIENT_KBDT_T2SVVSY3BLFUB_7A5829BB",
+                       "title":  "Machine Learning",
+                       "description":  "Тема roadmap по направлению «AI and Data Scientist Roadmap»: Machine Learning. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  6,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit the Dedicated Machine Learning Roadmap",
+                                             "url":  "https://roadmap.sh/machine-learning",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_DATA_SCIENT_CJVVLN0XJRKPN6O20O_2FBCDE04",
+                       "title":  "Deep Learning",
+                       "description":  "Тема roadmap по направлению «AI and Data Scientist Roadmap»: Deep Learning. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  7,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit the Dedicated Machine Learning Roadmap",
+                                             "url":  "https://roadmap.sh/machine-learning",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_AI_DATA_SCIENT_QA85HEVE2KZ62K9PJ4_4A81179A",
+                       "title":  "MLOps",
+                       "description":  "Тема roadmap по направлению «AI and Data Scientist Roadmap»: MLOps. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  8,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Visit the Dedicated MLOps Roadmap",
+                                             "url":  "https://roadmap.sh/mlops",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "roadmap.sh",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   }
+               ]
+}

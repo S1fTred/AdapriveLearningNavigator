@@ -1,0 +1,3225 @@
+﻿{
+    "source":  "roadmap.sh",
+    "sourceUrl":  "https://roadmap.sh/server-side-game-developer",
+    "roleCode":  "server-side-game-developer",
+    "roleName":  "Server Side Game Developer",
+    "roleDescription":  "Дорожная карта по направлению «Server Side Game Developer» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+    "roleStatus":  "ACTIVE",
+    "topics":  [
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_RQARTUVKGVGLN_FW9Y_524321A6",
+                       "title":  "Server-Side Development",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Server-Side Development.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  1,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_MUCIDJOSVLMAVDF2JM_F973ED06",
+                       "title":  "TCP",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: TCP.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  2,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_XXBL_ZO7CF6DPOZ2BM_D8CD6702",
+                       "title":  "Checksum",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Checksum.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  3,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_MUCIDJOSVLMAVDF2JM_F973ED06",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_ZTCMPUP9J5P1WPGGIB_5AB061F5",
+                       "title":  "Segment Structure",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Segment Structure.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  4,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_MUCIDJOSVLMAVDF2JM_F973ED06",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_IMYHWNXXJK6OFXZOML_4499C7D3",
+                       "title":  "UDP",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: UDP.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  5,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_VH81GNOUOZVDOLOYI5_334B0C43",
+                       "title":  "Reliability",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Reliability.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  6,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_IMYHWNXXJK6OFXZOML_4499C7D3",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_WD_HWC9YXPHLKILT58_19CB33C4",
+                       "title":  "Datagram",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Datagram.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  7,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_IMYHWNXXJK6OFXZOML_4499C7D3",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_JSNSYRGZEGVNJIF2L5_A15136E9",
+                       "title":  "Congestion Control",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Congestion Control.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  8,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_IMYHWNXXJK6OFXZOML_4499C7D3",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_TBOVBPDI3SOKZJAMKX_D359A4B6",
+                       "title":  "Checksum",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Checksum.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  9,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_IMYHWNXXJK6OFXZOML_4499C7D3",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_MWLWDLCIJOQ_0N5S3G_21BA0871",
+                       "title":  "Vulnerability",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Vulnerability.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  10,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_MUCIDJOSVLMAVDF2JM_F973ED06",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_W6YSMCSBN9JJ8XMVG7_173D5BF7",
+                       "title":  "Max Segment Size",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Max Segment Size. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  11,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "RFC 879 - Maximum Segment Size",
+                                             "url":  "https://tools.ietf.org/html/rfc879",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Ietf",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "What is MSS (maximum segment size)?",
+                                             "url":  "https://www.cloudflare.com/learning/network-layer/what-is-mss/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Cloudflare",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "TCP Maximum Segment Size tuning",
+                                             "url":  "https://www.ibm.com/docs/en/aix/7.2?topic=tuning-tcp-maximum-segment-size",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Ibm",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_CCXVNRGDKA1EROXGF__16ED7A7A",
+                       "title":  "Packet Structure",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Packet Structure.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  12,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_IMYHWNXXJK6OFXZOML_4499C7D3",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_ZVBKJCEXRSFEE_3MDC_F7EA4B7F",
+                       "title":  "Window Scaling",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Window Scaling.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  13,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_TBXJO_4XSNZK1FVVJK_84DAE30B",
+                       "title":  "Denial of Service",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Denial of Service.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  14,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_MWLWDLCIJOQ_0N5S3G_21BA0871",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_5SI3RHALUDQ4TFPJOY_EC948C47",
+                       "title":  "Connection",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Connection.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  15,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_UBRIY3JDH3IS3DIN48_12B3F720",
+                       "title":  "Connection Hijacking",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Connection Hijacking.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  16,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_LKGI0VPJ3WKPPHKJHJ_723D2C44",
+                       "title":  "Resource Usage",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Resource Usage.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  17,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_ZLTFPRZ0RF_MTD7Z0R_D2CD98B3",
+                       "title":  "Veto",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Veto.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  18,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_1L5DHQWYPHUSG_CY5P_BC5AA820",
+                       "title":  "Max Segment Scaling",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Max Segment Scaling.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  19,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_RFTCTUJAXYP49FNUF4_0491F343",
+                       "title":  "TCP vs UDP",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: TCP vs UDP.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  20,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_IMYHWNXXJK6OFXZOML_4499C7D3",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_WMDCDMFSYTSF2AWQXF_21E3E544",
+                       "title":  "Ordered vs Unordered",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Ordered vs Unordered.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  21,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_RFTCTUJAXYP49FNUF4_0491F343",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_OYXKTL4A_VAK6YGO6H_6574E20D",
+                       "title":  "Heavy vs Lightweight",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Heavy vs Lightweight.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  22,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_RFTCTUJAXYP49FNUF4_0491F343",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_JE3UZ5U6OE6DVZSMGL_AC3D82D9",
+                       "title":  "Packet vs Datagram",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Packet vs Datagram.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  23,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_RFTCTUJAXYP49FNUF4_0491F343",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_6KAYNPLEFMP6JHA8FL_7E7C96F1",
+                       "title":  "Timestamp",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Timestamp.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  24,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_MOYBGT9BSCUE8VMN4J_27C3543F",
+                       "title":  "Reliable vs Unreliable",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Reliable vs Unreliable.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  25,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_RFTCTUJAXYP49FNUF4_0491F343",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_5BJUCX3V4DPDLISX7B_53AC1D2C",
+                       "title":  "Data Transfer",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Data Transfer.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  26,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_1GML0JSFDB1FN_0PNR_358B0313",
+                       "title":  "Congestion Control",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Congestion Control. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  27,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_5BJUCX3V4DPDLISX7B_53AC1D2C",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Congestion Control in Linux TCP",
+                                             "url":  "https://www.usenix.org/conference/2002-usenix-annual-technical-conference/congestion-control-linux-tcp",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Usenix",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_X2KHWGQZDHSVDSTRMU_0423CD08",
+                       "title":  "Reliable Transmission",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Reliable Transmission. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  28,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_5BJUCX3V4DPDLISX7B_53AC1D2C",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Reliable Transmission",
+                                             "url":  "https://book.systemsapproach.org/direct/reliable.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Systemsapproach",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "TCP Reliable Transmission (IETF RFC 793)",
+                                             "url":  "https://datatracker.ietf.org/doc/html/rfc793",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Ietf",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_PJW8FN1DT3BABTZVZ7_92CBBE48",
+                       "title":  "Streaming vs Broadcast",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Streaming vs Broadcast.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  29,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_RFTCTUJAXYP49FNUF4_0491F343",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_3OMU3RM_6PMJQY1JAM_DB290CD4",
+                       "title":  "Out-of-Band Data",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Out-of-Band Data.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  30,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_LDVD_3I64MK7_KPJRX_85D4A7F4",
+                       "title":  "Flow Control",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Flow Control. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  9,
+                       "status":  "ACTIVE",
+                       "priority":  31,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_5BJUCX3V4DPDLISX7B_53AC1D2C",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "How Flow Control is Achieved in TCP?",
+                                             "url":  "https://datatracker.ietf.org/doc/html/rfc5681",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Ietf",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Flow Control vs. Congestion Control in TCP",
+                                             "url":  "https://www.baeldung.com/cs/tcp-flow-control-vs-congestion-control",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Baeldung",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "TCP Flow Control",
+                                             "url":  "https://www.sanfoundry.com/computer-network-tcp-flow-control/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Sanfoundry",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_SPPOO25B7WPAJWDIRK_55B961C9",
+                       "title":  "Selective Ack.",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Selective Ack..",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  32,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_VFM311XSA5OQNVOVE2_2816BCA6",
+                       "title":  "Error Detection",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Error Detection. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  33,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_LDVD_3I64MK7_KPJRX_85D4A7F4",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Error Detection Code – Checksum",
+                                             "url":  "https://www.geeksforgeeks.org/error-detection-code-checksum/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Geeksforgeeks",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Error Control in TCP",
+                                             "url":  "https://www.cisco.com/c/en/us/support/docs/ip/tcp/13733-40.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Cisco",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_TG94V7K0MGYHPKUMP__AD7C7C9E",
+                       "title":  "IP",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: IP.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  34,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_RFTCTUJAXYP49FNUF4_0491F343",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_5KF1FQR_MN5_15E3AM_5BF1F8BB",
+                       "title":  "Capability",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Capability.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  35,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_TG94V7K0MGYHPKUMP__AD7C7C9E",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_2JDV_OVVRKBBTTLK5V_DB9A37C6",
+                       "title":  "Reliability",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Reliability.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  36,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_TG94V7K0MGYHPKUMP__AD7C7C9E",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_OZY_LPCFJ1SBM_0F0W_031CBADE",
+                       "title":  "Link Capacity",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Link Capacity.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  37,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_TG94V7K0MGYHPKUMP__AD7C7C9E",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_H21PANCGGDFQT34_JZ_E7859BBF",
+                       "title":  "Byte Manipulation",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Byte Manipulation.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  38,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_R2OEI7YC1BLLFCTC8Q_FA50195B",
+                       "title":  "Transactions",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Transactions.",
+                       "level":  "INTERMEDIATE",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  39,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_SBA7PA9O0AM0ZEBEPD_84E40460",
+                       "title":  "Address Conversion",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Address Conversion.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  40,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_6ILQZJVI4J1PUCMTJ3_30A3C69C",
+                       "title":  "Programming Languages",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Programming Languages.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  41,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_TG94V7K0MGYHPKUMP__AD7C7C9E",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_JI_WUDT2HJSRVBIHLV_7552B01B",
+                       "title":  "ARP",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: ARP.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  42,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_YNYTLRQAMKBW4T73YR_534104E1",
+                       "title":  "DNS",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: DNS.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  43,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_ATHJH_XW8SOCXC1BID_E4A1F26A",
+                       "title":  "DHCP",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: DHCP.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  44,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_NH2EQ1_NIJ1ICTGOO0_CA82430C",
+                       "title":  "Category",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Category.",
+                       "level":  "INTERMEDIATE",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  45,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_TQBLAMFHARHLJED6XD_086EAA20",
+                       "title":  "IPv6",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: IPv6.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  46,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_PHVB0K8VTK3TOD6N_F_FD8E7F8A",
+                       "title":  "IPv4",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: IPv4.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  47,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_LG8JPL1PO_GES1V5JY_2B2ECA37",
+                       "title":  "Java",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Java.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  48,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_DUYUC9A_47UZ03YR4A_9600B594",
+                       "title":  "C#",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: C#.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  49,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_FX8ASD_QZTUFDHZBB9_2D4B67EB",
+                       "title":  "TLS",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: TLS.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  50,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_QKO0S9ZR0SANJTRWCR_6B768F79",
+                       "title":  "Security",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Security.",
+                       "level":  "INTERMEDIATE",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  51,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_E4H3HNIIW6HKPH3QR__E2523065",
+                       "title":  "C/C++",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: C/C++. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  52,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "C Programming Language",
+                                             "url":  "https://en.wikipedia.org/wiki/C_%28programming_language%29",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Wikipedia",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "C++ Programming Language",
+                                             "url":  "https://en.wikipedia.org/wiki/C%2B%2B",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Wikipedia",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_QGTGX5LBEWA1DD3Y7Z_9226652A",
+                       "title":  "Erlang",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Erlang.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  53,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_HVPUFTCKNHPHNFKHMH_0CF22DC9",
+                       "title":  "Socket Programming",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Socket Programming.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  54,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_6ILQZJVI4J1PUCMTJ3_30A3C69C",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_OAYMJ6ULSV1YJ87YAJ_6FCCB455",
+                       "title":  "Descriptor",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Descriptor.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  55,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_HVPUFTCKNHPHNFKHMH_0CF22DC9",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_YPVM8XD_FAFYCQ_B7__BFA782C8",
+                       "title":  "Function",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Function.",
+                       "level":  "INTERMEDIATE",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  56,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_UFUFNULQSGLE5VHEIA_2BEA36CE",
+                       "title":  "JavaScript",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: JavaScript.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  57,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_D5IQYN97VUOXJNCFGP_74969DBC",
+                       "title":  "Go",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Go.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  58,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_JNQAZUUNWPJGORURIF_81B8C304",
+                       "title":  "Datagram Construction",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Datagram Construction.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  59,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_YPVM8XD_FAFYCQ_B7__BFA782C8",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_3USE5VULBJTK40WOG9_A9BB9D5C",
+                       "title":  "Sharding",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Sharding.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  60,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_A2PCXVTGDAPW8ALVDR_620C35C3",
+                       "title":  "API",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: API.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  61,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_HVPUFTCKNHPHNFKHMH_0CF22DC9",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_TS6DZ61RUSXM_SQMK6_A62B6B54",
+                       "title":  "Serialization",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Serialization.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  62,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_HVPUFTCKNHPHNFKHMH_0CF22DC9",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_3ZCJNDCHW2PFZEWMOB_FD4615CA",
+                       "title":  "IP Addressing",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: IP Addressing.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  63,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_BYB7NA_VN9E6VTDBUT_67ACA6C9",
+                       "title":  "Routing",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Routing.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  64,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_TVJRLUSG30YIM1YJSZ_67B03BA0",
+                       "title":  "Fiber",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Fiber.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  65,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_U_TZFM80W3XJX8JJ4S_F7C6A0DF",
+                       "title":  "BSD Socket",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: BSD Socket.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  66,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_Y0ZJQQFI8QX6SB4WNZ_AD6043FF",
+                       "title":  "JSON",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: JSON.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  67,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_L8IEC3G0ICSFMIE1MX_BE252539",
+                       "title":  "TOML",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: TOML.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  68,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_GFTXFFISLYQGP66ZCQ_9AF63F3C",
+                       "title":  "Winsock",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Winsock.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  69,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_V43K6SRDS7M5SQFQNA_B925DF37",
+                       "title":  "XML",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: XML.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  70,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_UHCUSVLZ_2_USK6CKS_246FF0FE",
+                       "title":  "YAML",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: YAML.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  71,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_3QSLUMKD0G08N3MIB1_3EE2C56D",
+                       "title":  "Multithreading",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Multithreading.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  72,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_IED_OQ1BKWLKNC_R0L_EE48E715",
+                       "title":  "Thread Local Storage",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Thread Local Storage.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  73,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_3QSLUMKD0G08N3MIB1_3EE2C56D",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_W2ZBAB_6GXW6AWS0N7_4A983D00",
+                       "title":  "Protobuf",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Protobuf.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  74,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_MW2L_9NCKGPRH7G5W9_A4FB3FDD",
+                       "title":  "Windows",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Windows.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  75,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_HU0YUYL89WD8WNR9PJ_A732CEA2",
+                       "title":  "pthread",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: pthread.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  76,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_IDMRGKGVWVLZYANBXI_D775FA7A",
+                       "title":  "Synchronization",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Synchronization.",
+                       "level":  "INTERMEDIATE",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  77,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_TGQU18PWDATW7HVKTP_EB9347BE",
+                       "title":  "Programming Techniques",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Programming Techniques.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  78,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_GB_TYPGUDV47BXZNNJ_56AA5CAE",
+                       "title":  "Design Patterns",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Design Patterns.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  79,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_TGQU18PWDATW7HVKTP_EB9347BE",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_FKOHE21PVLAKIOZI4H_707CFB18",
+                       "title":  "TDD",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: TDD.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  80,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_TGQU18PWDATW7HVKTP_EB9347BE",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_UTLXYDOTVT_QP0GXLW_8C200DC8",
+                       "title":  "Dependency Injection",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Dependency Injection.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  81,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_TGQU18PWDATW7HVKTP_EB9347BE",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_XR6PERLDQ4WPL9GVLH_0B2C74B4",
+                       "title":  "Condition Variable",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Condition Variable.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  82,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_1C6EQGV1G_D8M1I0VK_224D5F6C",
+                       "title":  "Dump Analysis",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Dump Analysis.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  83,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_TGQU18PWDATW7HVKTP_EB9347BE",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_7YNAELVCOV7DV1FA06_1BCE25A6",
+                       "title":  "Redis",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Redis.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  84,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_LVXFA_OZR82MFFBVLN_72904D39",
+                       "title":  "Spinlock",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Spinlock.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  85,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_HXSWVHGT4L5W6XGOO__BB95B55C",
+                       "title":  "Functional Programming",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Functional Programming.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  86,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_TGQU18PWDATW7HVKTP_EB9347BE",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_AYEEZKXQKXAPJMTSHS_1102FE9E",
+                       "title":  "Memcached",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Memcached.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  87,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_6K25AMPKU9LNZ7FMNN_47ECEAB5",
+                       "title":  "Barrier",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Barrier.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  88,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_QMNUAKAURI9LYF2_JU_A3F4F233",
+                       "title":  "MS SQL",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: MS SQL.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  89,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_9VC7SFE_XAKYXTKRMX_059C9478",
+                       "title":  "DynamoDB",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: DynamoDB.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  90,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_ZBIBPLQTNSBJUKQH9I_B3FEA222",
+                       "title":  "Future \u0026 Promises",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Future \u0026 Promises.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  91,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_FLFAGZDG2MSG6_YHNW_45DE5F1B",
+                       "title":  "Databases",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Databases.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  92,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_TGQU18PWDATW7HVKTP_EB9347BE",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_O0Y_HM0KXUAPFSXG4P_C46B74B2",
+                       "title":  "Coroutine",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Coroutine. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  93,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "C++ Coroutines (cppreference)",
+                                             "url":  "https://en.cppreference.com/w/cpp/language/coroutines",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Cppreference",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Python Coroutines and Tasks",
+                                             "url":  "https://docs.python.org/3/library/asyncio-task.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Python Docs",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_SXOEMKCVYBSRZA6BPM_67FA1F29",
+                       "title":  "Channel",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Channel. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  9,
+                       "status":  "ACTIVE",
+                       "priority":  94,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_ZBIBPLQTNSBJUKQH9I_B3FEA222",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Go Channel Documentation",
+                                             "url":  "https://golang.org/doc/effective_go.html#channels",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Golang",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Rust Channels for Concurrency",
+                                             "url":  "https://doc.rust-lang.org/book/ch16-02-message-passing.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Rust-lang",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Comprehensive Guide to Channel",
+                                             "url":  "https://elixir-lang.org/getting-started/processes.html#using-processes-and-messages",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Elixir-lang",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_HSBQD08RO0VJNX0FLU_7A213A67",
+                       "title":  "MySQL",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: MySQL.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  95,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_HYXTPW401_J6AYCTUI_D938612E",
+                       "title":  "MongoDB",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: MongoDB.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  96,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_G_BEJKKJ1_NC43AOSY_85C61E65",
+                       "title":  "Mutex",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Mutex.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  97,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_DYVZGC_R0SLOARPPC1_3DFD2F45",
+                       "title":  "Semaphore",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Semaphore. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  98,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_G_BEJKKJ1_NC43AOSY_85C61E65",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Semaphores in Process Synchronization",
+                                             "url":  "https://www.geeksforgeeks.org/semaphores-in-process-synchronization/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Geeksforgeeks",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_OYXWMFY8S7LXKO_K89_E2D6D226",
+                       "title":  "ORM",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: ORM.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  99,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_DAIEWN7PHWMYAITVM5_D664A234",
+                       "title":  "PostgreSQL",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: PostgreSQL.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  100,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_1JQSXK1NWBYIQA1DE8_A8F357FF",
+                       "title":  "Cassandra",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Cassandra.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  101,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_DT_SMZUWKLLIMHUPVJ_6B2F8857",
+                       "title":  "DAL",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: DAL.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  102,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_6KTJ_GIX2K9L2LPD_F_AB1A3875",
+                       "title":  "Couchbase",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Couchbase.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  103,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_OQ3GQ5GBUXIL1QE8NB_5C954709",
+                       "title":  "REST",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: REST.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  104,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_GL7HUBTH3QIMYUWEAZ_AA3DDAE9",
+                       "title":  "Apache Kafka",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Apache Kafka. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  105,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Apache Kafka Quickstart",
+                                             "url":  "https://kafka.apache.org/quickstart",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Apache",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Apache Kafka Fundamentals",
+                                             "url":  "https://www.youtube.com/watch?v=B5j3uNBH8X4",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Kafka",
+                                             "url":  "https://app.daily.dev/tags/kafka?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_PSVPJAVTKO71BEIA_H_E7E91A6D",
+                       "title":  "SSL",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: SSL.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  106,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_1788KFQSQBKYARQA0T_6FE433EA",
+                       "title":  "Cipher",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Cipher.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  107,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_FLFAGZDG2MSG6_YHNW_45DE5F1B",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_YXAROYL_AZ0VKRCEU2_02BEEDED",
+                       "title":  "RPC / REST",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: RPC / REST.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  108,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_1788KFQSQBKYARQA0T_6FE433EA",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_UQTTBUYAZDHBEUKDZM_F6A43E22",
+                       "title":  "gRPC",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: gRPC.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  109,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_YXAROYL_AZ0VKRCEU2_02BEEDED",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_CW7WDFFL5HPEZ_N8WY_AC610109",
+                       "title":  "Message Queues",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Message Queues.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  110,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_YXAROYL_AZ0VKRCEU2_02BEEDED",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_UESJGRFYUBNF4PQAMA_56E8C979",
+                       "title":  "RabbitMQ",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: RabbitMQ.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  111,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_CW7WDFFL5HPEZ_N8WY_AC610109",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_TIG0MZPLJ2ZUR2IPYY_E80F3313",
+                       "title":  "Thread Building Block (C++)",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Thread Building Block (C++).",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  112,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_RT9XVLXVIM_HHTTNMB_C89775B6",
+                       "title":  "Concurrency (Java)",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Concurrency (Java).",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  113,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_3EAT22RFJUL4ETTGZ8_59EE793A",
+                       "title":  "Update Process",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Update Process.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  114,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_MAXMPUDMHGONCNCRRE_046604B5",
+                       "title":  "Asnc-await (C#)",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Asnc-await (C#).",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  115,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_ZFX1JJT1HKGCPYHFTZ_4DC08E86",
+                       "title":  "Determinism",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Determinism.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  116,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_F_L_EAZD0EJBW9_N9P_5DFEBFD4",
+                       "title":  "goroutine (Go)",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: goroutine (Go).",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  117,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_L5QTK408UBAGW8XZRA_1B4D6BAF",
+                       "title":  "Synchrony",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Synchrony.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  118,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_YWJ70LPF4LKB8J6GBY_9F2978CA",
+                       "title":  "OORP",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: OORP.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  119,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_XDYOVIBXC_IJ2ZOKQE_68B8B75C",
+                       "title":  "FRP",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: FRP.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  120,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_LKPCEEQBOPHQOZTD3C_4377FB8F",
+                       "title":  "Task-Based",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Task-Based.",
+                       "level":  "INTERMEDIATE",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  121,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_P0P3ZGQ_QTCOP0VMWE_10D42DCA",
+                       "title":  "Reactive Model",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Reactive Model.",
+                       "level":  "INTERMEDIATE",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  122,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_VL_WW0LTHRQTOO_TFL_4543F212",
+                       "title":  "Reactive Approach",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Reactive Approach.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  123,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_JD91RRAXGBJI9RHXLS_13E45759",
+                       "title":  "Multithreading",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Multithreading.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  124,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_CW7WDFFL5HPEZ_N8WY_AC610109",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_LVWGXMZHMEWGQY61QW_96DB5839",
+                       "title":  "Reactive Approach",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Reactive Approach.",
+                       "level":  "INTERMEDIATE",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  125,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_JD91RRAXGBJI9RHXLS_13E45759",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_THBXS9XIMT9ORXFNTO_D1408294",
+                       "title":  "Asynchronous",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Asynchronous.",
+                       "level":  "INTERMEDIATE",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  126,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_JD91RRAXGBJI9RHXLS_13E45759",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_KUQEGHLDZPOLWFOXQQ_2DA87C1D",
+                       "title":  "Actor Model",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Actor Model.",
+                       "level":  "INTERMEDIATE",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  127,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_SSOZ9PJ6JC_55PGPMZ_971067AB",
+                       "title":  "Akk.net (C#)",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Akk.net (C#).",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  128,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_TVXE2NEMCH21Y_EB4B_C4B9A502",
+                       "title":  "Proactor",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Proactor.",
+                       "level":  "ADVANCED",
+                       "core":  true,
+                       "estimatedHours":  9,
+                       "status":  "ACTIVE",
+                       "priority":  129,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_7MYPGN2GR_5VAYW_UR_F566F70E",
+                       "title":  "Reactor",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Reactor.",
+                       "level":  "ADVANCED",
+                       "core":  true,
+                       "estimatedHours":  9,
+                       "status":  "ACTIVE",
+                       "priority":  130,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_EAEPEUVZCSKO9UCILM_7949C737",
+                       "title":  "Akka (Java)",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Akka (Java).",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  131,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_7PGDOZOMHGILBTWFJL_0FAEED95",
+                       "title":  "IOCP",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: IOCP. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  132,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Microsoft IOCP Documentation",
+                                             "url":  "https://learn.microsoft.com/en-us/windows/win32/fileio/i-o-completion-ports",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Microsoft Learn",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_YH7U1FKH85WZ78J0ST_6CC0A7E1",
+                       "title":  "io_uring",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: io_uring. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  133,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Linux io_uring_enter",
+                                             "url":  "https://man7.org/linux/man-pages/man2/io_uring_enter.2.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Man7",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Efficient Networking with io_uring",
+                                             "url":  "https://lwn.net/Articles/776703/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Lwn",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_D9YEYN8PHDHB1OHMWC_A70CE318",
+                       "title":  "WSA Poll",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: WSA Poll. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  134,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Microsoft WSA-Poll Documentation",
+                                             "url":  "https://learn.microsoft.com/en-us/windows/win32/api/winsock2/nf-winsock2-wsapoll",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Microsoft Learn",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_5_5TOY2CBLZPCV9D5Q_21C3D4A3",
+                       "title":  "select",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: select. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  135,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Linux select API",
+                                             "url":  "https://man7.org/linux/man-pages/man2/select.2.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Man7",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "select vs epoll vs poll",
+                                             "url":  "https://devarea.com/linux-io-multiplexing-select-vs-poll-vs-epoll/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Devarea",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_DOMBRRK_RRPELOUTB7_482E2A71",
+                       "title":  "Serverless",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Serverless.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  136,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_CAK32NMMRN_3BGAXZO_AB912792",
+                       "title":  "kqueue",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: kqueue. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  137,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "FreeBSD kqueue Documentation",
+                                             "url":  "https://man.freebsd.org/cgi/man.cgi?query=kqueue",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Freebsd",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "macOS kqueue API Reference",
+                                             "url":  "https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man2/kqueue.2.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Apple",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_QAWV4GXNNJ3UX8LEM9_80CBB2F6",
+                       "title":  "epoll",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: epoll. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  9,
+                       "status":  "ACTIVE",
+                       "priority":  138,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Linux epoll API",
+                                             "url":  "https://man7.org/linux/man-pages/man7/epoll.7.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Man7",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Understanding epoll for Scalable Network Servers",
+                                             "url":  "https://medium.com/@copyconstruct/the-method-to-epolls-madness-d9d2d6378642",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Medium",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "epoll vs select vs poll",
+                                             "url":  "https://devarea.com/linux-io-multiplexing-select-vs-poll-vs-epoll/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Devarea",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_94HJX1IGIFDZIUAU3Z_83975DD9",
+                       "title":  "Registered IO",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Registered IO. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  139,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Microsoft Registered I/O (RIO)",
+                                             "url":  "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh997032(v=ws.11)",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Microsoft Learn",
+                                             "difficulty":  "ADVANCED",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_HHTQVFFTCUVPT0OPU4_8453393D",
+                       "title":  "Cloud",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Cloud.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  140,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_JD91RRAXGBJI9RHXLS_13E45759",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_73UOFNGCCALXIURNBE_E101412D",
+                       "title":  "Azure",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Azure.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  141,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_HHTQVFFTCUVPT0OPU4_8453393D",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_XCJVGUSS7_ODR_XGDD_40D57060",
+                       "title":  "Data Clustering",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Data Clustering.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  142,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_HHTQVFFTCUVPT0OPU4_8453393D",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_K3FJY26SVXDZX4MLLE_54BD07D8",
+                       "title":  "Containerization",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Containerization.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  143,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_XCJVGUSS7_ODR_XGDD_40D57060",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_ZW_7VLEEHQP8FP_F5N_AA3FE660",
+                       "title":  "Docker",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Docker.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  144,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_K3FJY26SVXDZX4MLLE_54BD07D8",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_WD6DURS_TP2GPCHPGH_89036DA6",
+                       "title":  "GCP",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: GCP.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  145,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_HHTQVFFTCUVPT0OPU4_8453393D",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_RKX2A6OWSDDLCTSEZL_E64007EB",
+                       "title":  "AWS",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: AWS.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  146,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_HHTQVFFTCUVPT0OPU4_8453393D",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_YRWIWJMSYTWXDAKJBQ_F85FA2BB",
+                       "title":  "Apache Spark",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Apache Spark. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  147,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_XCJVGUSS7_ODR_XGDD_40D57060",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "ApacheSpark",
+                                             "url":  "https://spark.apache.org/documentation.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Apache",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Spark By Examples",
+                                             "url":  "https://sparkbyexamples.com",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Sparkbyexamples",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         },
+                                         {
+                                             "title":  "Explore top posts about Apache Spark",
+                                             "url":  "https://app.daily.dev/tags/spark?ref=roadmapsh",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Daily",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  3
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_YAF7VDX7DYAT5ADLNN_39A04E0C",
+                       "title":  "Docker Compose",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Docker Compose.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  148,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_ZW_7VLEEHQP8FP_F5N_AA3FE660",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_LUBUUOETJFADMM4OPT_814EA66C",
+                       "title":  "Kubernetes",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Kubernetes.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  149,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_DKCVWUY8GKEEI3VJAR_A085F4AC",
+                       "title":  "AI",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: AI.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  150,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_K3FJY26SVXDZX4MLLE_54BD07D8",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_XVVLVDKFYRCCYTTDWO_C018C1D4",
+                       "title":  "Cloud ML",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Cloud ML.",
+                       "level":  "INTERMEDIATE",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  151,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_DKCVWUY8GKEEI3VJAR_A085F4AC",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_U0RLO_PUEZQPZP0_IB_1CD920A2",
+                       "title":  "Amazon ML",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Amazon ML.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  152,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_JKWVFP4GQCKYPQ48GT_E65F740B",
+                       "title":  "Deep Learning",
+                       "description":  "Тема roadmap по направлению «Server Side Game Developer»: Deep Learning.",
+                       "level":  "INTERMEDIATE",
+                       "core":  true,
+                       "estimatedHours":  7,
+                       "status":  "ACTIVE",
+                       "priority":  153,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_SERVER_SIDE_GA_DKCVWUY8GKEEI3VJAR_A085F4AC",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_VBQWMLZOT5XVEHV9IE_BED7626D",
+                       "title":  "Azure ML",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Azure ML.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  154,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_IJE9RNKC8QJPNSFEZA_098B35D1",
+                       "title":  "TensorFlow",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: TensorFlow.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  155,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_SERVER_SIDE_GA_LTSIFQ10QDJMTCNIIY_22FB9224",
+                       "title":  "Pytorch",
+                       "description":  "Подтема roadmap по направлению «Server Side Game Developer»: Pytorch.",
+                       "level":  "ADVANCED",
+                       "core":  false,
+                       "estimatedHours":  8,
+                       "status":  "ACTIVE",
+                       "priority":  156,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   }
+               ]
+}

@@ -1,0 +1,2339 @@
+﻿{
+    "source":  "roadmap.sh",
+    "sourceUrl":  "https://roadmap.sh/leetcode",
+    "roleCode":  "leetcode",
+    "roleName":  "Leetcode",
+    "roleDescription":  "Дорожная карта по направлению «Leetcode» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+    "roleStatus":  "ACTIVE",
+    "topics":  [
+                   {
+                       "code":  "RM_LEETCODE_SRU06JYWQWCNRDYEAV_08DE5C07",
+                       "title":  "Stage 13 — 1-D Dynamic Programming",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Stage 13 — 1-D Dynamic Programming.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  1,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_SXYW3ZAURJUZE8_G9P_7977327F",
+                       "title":  "Stage 14 — 2-D Dynamic Programming",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Stage 14 — 2-D Dynamic Programming.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  2,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_YIS4_D0GREUKOUIRCC_8A93195A",
+                       "title":  "3Sum",
+                       "description":  "Тема roadmap по направлению «Leetcode»: 3Sum.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  3,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_JNYQFVR3IAFFXBAQHL_0D8943E1",
+                       "title":  "Stage 12 — Advanced Graphs",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Stage 12 — Advanced Graphs.",
+                       "level":  "ADVANCED",
+                       "core":  true,
+                       "estimatedHours":  9,
+                       "status":  "ACTIVE",
+                       "priority":  4,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_C4M0XFOTB9_Q8SRAJU_AFC3C988",
+                       "title":  "Stage 1 — Arrays \u0026 Hashing",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Stage 1 — Arrays \u0026 Hashing.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  5,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_GEZFGJPQ0JFJPRWL3Z_0159F93E",
+                       "title":  "Stage 9 — Backtracking",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Stage 9 — Backtracking.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  6,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_K7QTP_HRMXXVLYVR4F_7FB6BEDF",
+                       "title":  "Best Time to Buy and Sell Stock",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Best Time to Buy and Sell Stock.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  7,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_OKNQABVYMKPXVHE7GV_FB55D2CA",
+                       "title":  "Stage 4 — Binary Search",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Stage 4 — Binary Search.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  8,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_KXVOWB6WYF8GWARP6J_21F464FC",
+                       "title":  "Binary Search",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Binary Search.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  9,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_7AC9OA_REXH7XFHJ3L_C86B854F",
+                       "title":  "Binary Tree Level Order Traversal",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Binary Tree Level Order Traversal.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  10,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_5HTWCUI4DZ_G2AR1EN_C68747F8",
+                       "title":  "Binary Tree Maximum Path Sum",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Binary Tree Maximum Path Sum.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  11,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_VIXFDMKWL9VW6LYXXO_29734266",
+                       "title":  "Stage 17 — Bit Manipulation",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Stage 17 — Bit Manipulation.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  12,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_IMPBL26VNVXVPM4KG5_06089C08",
+                       "title":  "Burst Balloons",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Burst Balloons.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  13,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_IWMQ4UFB5J6O3UJFAR_F6C3807D",
+                       "title":  "C++",
+                       "description":  "Тема roadmap по направлению «Leetcode»: C++.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  14,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_ALQVOCF91X1_IRTP7V_345478E5",
+                       "title":  "Longest Repeating Character Replacement",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Longest Repeating Character Replacement.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  15,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_IJY7CMX7WD5UP_6WWO_842B1CCF",
+                       "title":  "Cheapest Flights Within K Stops",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Cheapest Flights Within K Stops.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  16,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_BXCVRNPO1AVN8XLLTS_C091F707",
+                       "title":  "Climbing Stairs",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Climbing Stairs.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  17,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_WO238SUHVIIZHDLF6K_25FB0B39",
+                       "title":  "Clone Graph",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Clone Graph.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  18,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_WTOHLWOHNKE9JDXTMB_AE6D6E87",
+                       "title":  "Coin Change",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Coin Change.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  19,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_P0ODRJDYJGSHVN02SJ_151607F8",
+                       "title":  "Combination Sum",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Combination Sum.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  20,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_YXFJQL5BHYNHRYT9RO_F8CF89D0",
+                       "title":  "Container With Most Water",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Container With Most Water.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  21,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_WCMBEWDZ7QB21U8HSZ_80E49166",
+                       "title":  "Contains Duplicate",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Contains Duplicate.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  22,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_JZSCKONBYP5QDMCXUA_6DD32E83",
+                       "title":  "Counting Bits",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Counting Bits.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  23,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_CLOI_M9A3D1UFAVCYK_12E615E6",
+                       "title":  "Course Schedule",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Course Schedule.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  24,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_PMCILFK_XFN91VNYTW_263E043A",
+                       "title":  "Daily Temperatures",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Daily Temperatures.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  25,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_XRQFE6LIWRKLOVQQKX_DE77111A",
+                       "title":  "Design Add and Search Words Data Structure",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Design Add and Search Words Data Structure.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  26,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_XEMUW3R72U4HVGHSOC_87B6622F",
+                       "title":  "Edit Distance",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Edit Distance.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  27,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_CJ8HK6XFXULHMBO6XD_4533ABBC",
+                       "title":  "Find Median from Data Stream",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Find Median from Data Stream.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  28,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_UWJLU3CFCGO487MOEU_21293A96",
+                       "title":  "Gas Station",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Gas Station.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  29,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_DW4_XZASJY2CRWS2PY_05D34B33",
+                       "title":  "Generate Parentheses",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Generate Parentheses.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  30,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_OKDM_PJGE70J5TSJT2_9C60A19D",
+                       "title":  "Go",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Go.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  31,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_SST7KZITNDEVFYQMJE_1539043E",
+                       "title":  "Stage 11 — Graphs",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Stage 11 — Graphs.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  32,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_MU6I1N0KKIAU_FKBTB_DD60BB5E",
+                       "title":  "Stage 15 — Greedy",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Stage 15 — Greedy.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  33,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_P7_B_NIBLQYKZR2PKR_3833E403",
+                       "title":  "Group Anagrams",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Group Anagrams.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  34,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_VVB6ZLZG6IXB4LQG8J_7B236D73",
+                       "title":  "Happy Number",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Happy Number.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  35,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_MVCSC0KFID0AT5A2FF_58A2F90E",
+                       "title":  "Stage 8 — Heap and Priority Queue",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Stage 8 — Heap and Priority Queue.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  36,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_GELGOM3OCXZ_GJMUES_52C59F7E",
+                       "title":  "House Robber",
+                       "description":  "Тема roadmap по направлению «Leetcode»: House Robber.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  37,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_ZUMANOKIAD4ZS3WNTA_539FB6AE",
+                       "title":  "Implement Trie",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Implement Trie.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  38,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_BHIAYH1UG08LNPH8DT_2B8F3619",
+                       "title":  "Insert Interval",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Insert Interval.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  39,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_ZHDAHN1GN5OFX2EYQG_C1265508",
+                       "title":  "Stage 16 — Intervals",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Stage 16 — Intervals.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  40,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_GJZZOWMYKXQHPFG9YN_5635784D",
+                       "title":  "Java",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Java.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  41,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_HVD9G3JLLBSAG111VQ_1E0C1424",
+                       "title":  "JavaScript",
+                       "description":  "Тема roadmap по направлению «Leetcode»: JavaScript.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  42,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_SO5POPGQYB5VNRZ_NY_E4FD3EBC",
+                       "title":  "Jump Game",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Jump Game.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  43,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_GJ1O1H12KONEJTV_Q0_DD0AF38A",
+                       "title":  "Jump Game II",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Jump Game II.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  44,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_IOU03PTCCY58DXKHAR_01B6BD2F",
+                       "title":  "K Closest Points to Origin",
+                       "description":  "Тема roadmap по направлению «Leetcode»: K Closest Points to Origin.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  45,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_WYU9WYYQ54KGMERSBS_C0A37690",
+                       "title":  "Koko Eating Bananas",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Koko Eating Bananas.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  46,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_TMVBBPZDAWI2RJSFGO_10337C78",
+                       "title":  "Kth Largest Element in an Array",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Kth Largest Element in an Array.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  47,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_ZLM5EW7HZ7TRUZYNPV_D818FF36",
+                       "title":  "Largest Rectangle in Histogram",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Largest Rectangle in Histogram.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  48,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_LDT9PTNMP8LSDEH7EV_AC55F5F6",
+                       "title":  "Stage 6 — Linked List",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Stage 6 — Linked List.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  49,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_QAWEEYFVFD8_LTZGZ2_398EC3F7",
+                       "title":  "Linked List Cycle",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Linked List Cycle.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  50,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_8HRT_SZWMLSCJ13G0G_EC95C9F2",
+                       "title":  "Longest Common Prefix",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Longest Common Prefix.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  51,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_IODBHWYOWDM5JTAAQG_E44419B3",
+                       "title":  "Longest Common Subsequence",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Longest Common Subsequence.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  52,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_H9YVRXDYEZ9MCQBEKO_4CB18C8C",
+                       "title":  "Longest Increasing Subsequence",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Longest Increasing Subsequence.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  53,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_CHPRRJBTRZNI6UBC_W_A60EDE5B",
+                       "title":  "Lowest Common Ancestor of a BST",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Lowest Common Ancestor of a BST.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  54,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_RX59JH_YNZC5WRGJA3_316ED2CE",
+                       "title":  "Stage 18 — Math and Geometry",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Stage 18 — Math and Geometry.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  55,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_3NY1NAGANSCRUAOV2I_8F75C84A",
+                       "title":  "Maximum Depth of Binary Tree",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Maximum Depth of Binary Tree.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  56,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_KV9Z7UQSYFMR6UMO0F_CBFB8E28",
+                       "title":  "Median of Two Sorted Arrays",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Median of Two Sorted Arrays.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  57,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_9EVXTNZ1IVONQWCQ7L_75A75320",
+                       "title":  "Meeting Rooms",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Meeting Rooms.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  58,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_JSJPXTE3ZP5E7VCWUM_C1ED4CD0",
+                       "title":  "Merge Intervals",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Merge Intervals.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  59,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_EHNN9THTTLPIUTZ9Z2_B6584655",
+                       "title":  "Merge K Sorted Lists",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Merge K Sorted Lists.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  60,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_EC2DVHYWQGNU_1HMBE_A8BCCD78",
+                       "title":  "Merge K Sorted Lists",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Merge K Sorted Lists.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  61,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_QEYZ2DJ1HQLDBFWYX7_3B4190D2",
+                       "title":  "Merge Two Sorted Lists",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Merge Two Sorted Lists.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  62,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_5NXA27PJ7_PN40XZD7_73190D37",
+                       "title":  "Min Cost to Connect All Points",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Min Cost to Connect All Points.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  63,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_XYTIX8ONH3QCMXJRBY_E95A4607",
+                       "title":  "Find Minimum in Rotated Sorted Array",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Find Minimum in Rotated Sorted Array.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  64,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_P7SCDQHMNUPA6UI36Y_2FE15294",
+                       "title":  "Minimum Window Substring",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Minimum Window Substring.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  65,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_EYPHWNYTPHFBXCO_G4_A48C2969",
+                       "title":  "Minimum Interval to Include Each Query",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Minimum Interval to Include Each Query.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  66,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_XJJHO0GX0DW8YF09TN_1F2E1557",
+                       "title":  "Min Stack",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Min Stack.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  67,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_NFOZXHOSHJ1_2_ISVI_9895CCA5",
+                       "title":  "More Exercises",
+                       "description":  "Тема roadmap по направлению «Leetcode»: More Exercises.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  68,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_Q_VNW7YUH_4U6IM7NR_B4C0E25F",
+                       "title":  "More Exercises",
+                       "description":  "Тема roadmap по направлению «Leetcode»: More Exercises.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  69,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_KHLCYCZQFXQVLHAS7Y_4B43D1E8",
+                       "title":  "More Exercises",
+                       "description":  "Тема roadmap по направлению «Leetcode»: More Exercises.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  70,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_LICG83FALXF4JPOV7V_72643BBF",
+                       "title":  "More Exercises",
+                       "description":  "Тема roadmap по направлению «Leetcode»: More Exercises.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  71,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_Q0AXFKBRUYY5RY2PO5_1C5E5AAD",
+                       "title":  "More Exercises",
+                       "description":  "Тема roadmap по направлению «Leetcode»: More Exercises.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  72,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_XJVIEOLZYD_BK9DHGN_B41F5D8F",
+                       "title":  "More Exercises",
+                       "description":  "Тема roadmap по направлению «Leetcode»: More Exercises.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  73,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_Y_QUVGZ8J5RMZ2IXUF_EF67D174",
+                       "title":  "More Exercises",
+                       "description":  "Тема roadmap по направлению «Leetcode»: More Exercises.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  74,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_UR6ESM0T_JQD2J710V_1ECBC1BD",
+                       "title":  "More Exercises",
+                       "description":  "Тема roadmap по направлению «Leetcode»: More Exercises.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  75,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_VPQUOGXR8OG_JLKEDS_0F8611F0",
+                       "title":  "More Exercises",
+                       "description":  "Тема roadmap по направлению «Leetcode»: More Exercises.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  76,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_2VHZHAKOFENOI1UTHC_6993A77C",
+                       "title":  "More Exercises",
+                       "description":  "Тема roadmap по направлению «Leetcode»: More Exercises.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  77,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_AMT2ZQPDLKUM_D2VT1_C8FAA268",
+                       "title":  "More Exercises",
+                       "description":  "Тема roadmap по направлению «Leetcode»: More Exercises.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  78,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_0U8IQZVJV7ORHCBFUB_B996875C",
+                       "title":  "More Exercises",
+                       "description":  "Тема roadmap по направлению «Leetcode»: More Exercises.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  79,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_2R0Q7GIC8ORJX2W28O_6A54B9C7",
+                       "title":  "More Exercises",
+                       "description":  "Тема roadmap по направлению «Leetcode»: More Exercises.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  80,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_AWYK5VUD2HS9YWJQFF_5C6BEECC",
+                       "title":  "More Exercises",
+                       "description":  "Тема roadmap по направлению «Leetcode»: More Exercises.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  81,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_I4A57JKRKHLW_JW3I3_7476AD37",
+                       "title":  "More Exercises",
+                       "description":  "Тема roadmap по направлению «Leetcode»: More Exercises.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  82,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_JTV6PQZVCXFONG01TX_BF27D551",
+                       "title":  "More Excersises",
+                       "description":  "Тема roadmap по направлению «Leetcode»: More Excersises.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  83,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_EBQZXY_2FWK4FWHYNK_1D4DF4AF",
+                       "title":  "More Exercises",
+                       "description":  "Тема roadmap по направлению «Leetcode»: More Exercises.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  84,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_G1SQIZKN9DBKSV2LXQ_1252428A",
+                       "title":  "More Exercises",
+                       "description":  "Тема roadmap по направлению «Leetcode»: More Exercises.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  85,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_ZSQCHDBPVWSDRTEURO_70B1B500",
+                       "title":  "Network Delay Time",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Network Delay Time.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  86,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_K0XOP6P_EIYRKRSBSG_2219DA26",
+                       "title":  "Non-overlapping Intervals",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Non-overlapping Intervals.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  87,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_MC1JQ5_TRQGCCKM23C_AECAEA39",
+                       "title":  "Non-overlapping Intervals",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Non-overlapping Intervals.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  88,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_FBTSNKP5N3WBJMYCWI_41832985",
+                       "title":  "N-Queens",
+                       "description":  "Тема roadmap по направлению «Leetcode»: N-Queens.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  89,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_XZQHEP8HYQ_VYFWLON_A95FD85F",
+                       "title":  "Number of 1 Bits",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Number of 1 Bits.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  90,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_LINRFYGQMBDTFBEZZM_1D441322",
+                       "title":  "Number of Islands",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Number of Islands.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  91,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_MHSB4EQV970BLLOFFG_F23110C2",
+                       "title":  "Pacific Atlantic Water Flow",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Pacific Atlantic Water Flow.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  92,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_V7PVMZNO_WOUHHSFLT_E327D983",
+                       "title":  "Partition Labels",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Partition Labels.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  93,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_9_5G5QYB3JISWEFABM_8FFA4F6A",
+                       "title":  "Permutations",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Permutations.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  94,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_SKSKYHMPPBJG9THHFB_8EA09A0C",
+                       "title":  "Pick a language",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Pick a language.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  95,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_EA7DIB41V61VZ_EWLC_ECB0090F",
+                       "title":  "Pow(x, n)",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Pow(x, n).",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  96,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_BZVNEZJCNUHPG5SKX9_3E1AD7A0",
+                       "title":  "Python",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Python.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  97,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_EDK5YDPWUT57XDC08Q_54B629ED",
+                       "title":  "Reconstruct Itinerary",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Reconstruct Itinerary.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  98,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_XTDDSFYWX863IERL0R_B1416717",
+                       "title":  "Regular Expression Matching",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Regular Expression Matching.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  99,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_FYGKUHNZ20G6_V4URQ_A4D39F02",
+                       "title":  "Reorder List",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Reorder List.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  100,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_IINHLJ2EVJSS_V2DH3_4D69BF5F",
+                       "title":  "Replace Words",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Replace Words.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  101,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_KHR39YDCVESGJTHRCL_9FAA1041",
+                       "title":  "Reverse Bits",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Reverse Bits.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  102,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_0P0VTUHQXWJ0BGYGTU_CF0D0A9B",
+                       "title":  "Reverse Linked List",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Reverse Linked List.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  103,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_P9U_DFBUTAYWQGZJJF_9B62FA03",
+                       "title":  "Rotate Image",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Rotate Image.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  104,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_XYRCXHZJQFCDNAUSNN_D8741449",
+                       "title":  "Ruby",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Ruby.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  105,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_9H1MZ0XAUVPRNRM9VN_049E322D",
+                       "title":  "Rust",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Rust.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  106,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_ACGRMEUL4ZGGRHPZ7K_FE72753C",
+                       "title":  "Scala",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Scala.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  107,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_ADKTHMCZSPCIT_ST0I_3A39A2BE",
+                       "title":  "Search in Rotated Sorted Array",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Search in Rotated Sorted Array.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  108,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_DH3ZU_8Q765KJM7SIU_0EB16641",
+                       "title":  "Serialize and Deserialize Binary Tree",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Serialize and Deserialize Binary Tree.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  109,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_SCROYCNQOK2U2GW_GH_1FC0EE99",
+                       "title":  "Set Matrix Zeroes",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Set Matrix Zeroes.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  110,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_4UGEVGJQBHBISEH_5B_D512755F",
+                       "title":  "Single Number",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Single Number.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  111,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_1BODZMFOJDDBF1ZWZO_90EF453E",
+                       "title":  "Stage 5 — Sliding Window",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Stage 5 — Sliding Window.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  112,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_ZIPM4HIGUSXWKOKZFR_098B1F65",
+                       "title":  "Sliding Window Maximum",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Sliding Window Maximum.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  113,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_H6LLJWRHJRVQ5ZQKEJ_BCA4E854",
+                       "title":  "Spiral Matrix",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Spiral Matrix.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  114,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_OVS61JKCEGBWV3BFUO_01352224",
+                       "title":  "Stage 3 — Stack",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Stage 3 — Stack.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  115,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_2AFJTRRU4GLL77VL_6_D6C1C854",
+                       "title":  "Subsets",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Subsets.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  116,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_WNHN7OOWZSUFK3HAHU_CBD7E8EB",
+                       "title":  "Longest Substring Without Repeating Characters",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Longest Substring Without Repeating Characters.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  117,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_CUGRS_8TYPT98LEMGF_FCA0ED9E",
+                       "title":  "Sum of Two Integers",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Sum of Two Integers.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  118,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_0X9RWYRXBUZJ30E_TM_BFF83BC0",
+                       "title":  "Swim in Rising Water",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Swim in Rising Water.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  119,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_HLTC2XUPM_CNM9RGZR_F1904F4E",
+                       "title":  "Task Scheduler",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Task Scheduler.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  120,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_RJNTSKTL7CZYWUPQ6Y_AF1B11F4",
+                       "title":  "Top K Frequent Elements",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Top K Frequent Elements.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  121,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_GUWSEHIGMKBBQKYKRZ_562856CE",
+                       "title":  "Trapping Rain Water",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Trapping Rain Water.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  122,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_PQ31G4_7Y5K6D34HVR_3F2F0325",
+                       "title":  "Stage 7 — Trees",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Stage 7 — Trees.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  123,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_DMY_ZE1LQL_HFTNHMF_BC73BE5C",
+                       "title":  "Stage 10 — Tries",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Stage 10 — Tries.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  124,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_NHV86YI2_MSH8BKFUS_262A3378",
+                       "title":  "Stage 2 — Two Pointers",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Stage 2 — Two Pointers.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  125,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_XBFUBWAGTPCEGA31QY_2CA8EE69",
+                       "title":  "Two Sum",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Two Sum.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  126,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_VTPV8ALIKFV0SF13PM_9CDCD45E",
+                       "title":  "Two Sum II",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Two Sum II.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  127,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_XHEBSWGHSRCQOLM9UV_0272E91C",
+                       "title":  "Unique Paths",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Unique Paths.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  128,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_IQR33GOIXK_CJDBATQ_F7AE23F5",
+                       "title":  "Valid Anagram",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Valid Anagram.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  129,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_X6_LRP_ZGV3WNE_GSS_16C052B2",
+                       "title":  "Valid Palindrome",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Valid Palindrome.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  130,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_YNT85B_HBS2IKDFVLJ_F180AF2C",
+                       "title":  "Valid Parentheses",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Valid Parentheses.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  131,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_SCTTG57POE0KXLZFXY_504C3B41",
+                       "title":  "What are coding patterns?",
+                       "description":  "Тема roadmap по направлению «Leetcode»: What are coding patterns?.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  132,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_DUZWC157R_XHCJZ_P8_404AF583",
+                       "title":  "What is LeetCode",
+                       "description":  "Тема roadmap по направлению «Leetcode»: What is LeetCode.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  133,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_1I59D4ME10OOKXTHIL_F8DD8EA6",
+                       "title":  "Word Break",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Word Break.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  134,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_J8YZFOS2SVWILJWDUP_95298233",
+                       "title":  "Word Ladder",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Word Ladder.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  135,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_BOJMDIYIGBV61MDKSB_88853B9F",
+                       "title":  "Word Search",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Word Search.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  136,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_LEETCODE_46Y_WVAUJZWD32MRQR_78D9017A",
+                       "title":  "Word Search II",
+                       "description":  "Тема roadmap по направлению «Leetcode»: Word Search II.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  137,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   }
+               ]
+}

@@ -94,7 +94,7 @@ if (requireAuth()) {
     });
 
     async function loadDashboard() {
-        const roadmapsPage = await roadmapsApi.list(0, 48);
+        const roadmapsPage = await roadmapsApi.list(0, 120);
         state.roadmaps = roadmapsPage.items || [];
 
         if (!state.roadmaps.length) {

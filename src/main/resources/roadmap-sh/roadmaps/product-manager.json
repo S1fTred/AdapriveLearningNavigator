@@ -1,0 +1,3386 @@
+﻿{
+    "source":  "roadmap.sh",
+    "sourceUrl":  "https://roadmap.sh/product-manager",
+    "roleCode":  "product-manager",
+    "roleName":  "Product Manager",
+    "roleDescription":  "Дорожная карта по направлению «Product Manager» из каталога roadmap.sh. Темы и материалы адаптированы для русскоязычного интерфейса сервиса.",
+    "roleStatus":  "ACTIVE",
+    "topics":  [
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_KB8E26BUM8BPTY1_O3_37FC5CC5",
+                       "title":  "Product Development Lifecycle",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Product Development Lifecycle. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  1,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Product Development Lifecycle - MailChimp",
+                                             "url":  "https://mailchimp.com/resources/product-life-cycle/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Mailchimp",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_5OKUFVMUG6MJRKI4FY_364AFAF6",
+                       "title":  "Development",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Development. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  2,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What\u0027s Product Development?",
+                                             "url":  "https://www.youtube.com/watch?v=jLvMGnAYicY",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "What is Product Development?",
+                                             "url":  "https://www.aha.io/roadmapping/guide/what-is-product-development",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Aha",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_GOYEAU_LZ186M3IJY4_3D052FD1",
+                       "title":  "Introduction",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Introduction.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  3,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_9VY4UIOYKK2ZSSYIOK_A5630755",
+                       "title":  "Introduction",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Introduction.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  4,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_LUK1VNPY0DUNEVJEN8_250945EC",
+                       "title":  "What is Product Management?",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: What is Product Management?. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  5,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_9VY4UIOYKK2ZSSYIOK_A5630755",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What is Product Management? - Product Plan",
+                                             "url":  "https://www.productplan.com/learn/what-is-product-management/#what-is-product-management",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Productplan",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "What is Product Management? - Atlassian",
+                                             "url":  "https://www.youtube.com/watch?v=kzMBIyzq9Ag",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_V_IEFB9S2TTOXANHIZ_73D399B1",
+                       "title":  "Product vs Project Management",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Product vs Project Management. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  6,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_9VY4UIOYKK2ZSSYIOK_A5630755",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Product vs Project Manager - Coursera",
+                                             "url":  "https://www.coursera.org/gb/articles/product-manager-vs-project-manager",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Coursera",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Product Manager vs Project Manager",
+                                             "url":  "https://www.youtube.com/watch?v=nPR6HsUO_XY",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_KE5VL9P3OUUPJVMGU5_49E6AEF2",
+                       "title":  "Growth",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Growth.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  7,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_DX6EE8P_AGPW1MLKLA_8B86D058",
+                       "title":  "Roles and Responsibilities",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Roles and Responsibilities. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  8,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_9VY4UIOYKK2ZSSYIOK_A5630755",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Product Manager Roles \u0026 Responsibilities",
+                                             "url":  "https://www.productside.com/product-manager-roles-and-responsibilities-keytask/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Productside",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_AUJTPVO9EB1UOD0MIY_E0AB0D49",
+                       "title":  "Maturity",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Maturity.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  9,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_5W_3JH1_4QSU5KAGRW_059B7AA9",
+                       "title":  "Key Skills",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Key Skills. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  10,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_9VY4UIOYKK2ZSSYIOK_A5630755",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What Skills Does a Product Manager Need?",
+                                             "url":  "https://careerfoundry.com/en/blog/product-management/product-manager-skills/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Careerfoundry",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "Skills Every Product Manager Needs",
+                                             "url":  "https://www.youtube.com/watch?v=ysBpePyeHkU",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_YOVE7G_05UMPXHCGPD_0A392514",
+                       "title":  "Decline",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Decline.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  11,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_BECA7STXYY06RWNN5J_2E737E12",
+                       "title":  "Mind Mapping",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Mind Mapping.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  12,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_0EMYQHL028_M6TDILF_ED75BDE5",
+                       "title":  "Brainwriting",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Brainwriting.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  13,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_ULSPKCYPF06AHZOENV_B70BDB23",
+                       "title":  "SCAMPER",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: SCAMPER.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  14,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_FMPJB_14CYN7PVUOGZ_0E20D842",
+                       "title":  "Product Identification",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Product Identification.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  15,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_69IGQLUIW9CVFEZSIK_19903C13",
+                       "title":  "Brainstorming Techniques",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Brainstorming Techniques.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  16,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_FMPJB_14CYN7PVUOGZ_0E20D842",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_1HYTZY1KRYIQWOQA5F_D3E40E25",
+                       "title":  "Iterative Process",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Iterative Process.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  17,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_FMPJB_14CYN7PVUOGZ_0E20D842",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_GJDCSM_JZMG_Q6YJG__AC33CD24",
+                       "title":  "Blue Ocean Strategy",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Blue Ocean Strategy. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  18,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_FMPJB_14CYN7PVUOGZ_0E20D842",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "How To Differentiate Your Business With BLUE OCEAN STRATEGY",
+                                             "url":  "https://www.youtube.com/watch?v=UKDxj6W7CXs",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_TOC34XXSB_TNHTEKK1_CF2BA2F8",
+                       "title":  "Selection",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Selection.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  19,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_VP4TFZP_HOIASV4K4R_0F4321F0",
+                       "title":  "Discovery",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Discovery. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  20,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "Introduction to Modern Product Discovery by Teresa Torres",
+                                             "url":  "https://youtu.be/l7-5x0ra2tc?si=Zh4LeSF_qAj8y6-a",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_DEWTE_C_JXAFPIABXA_0DC4D790",
+                       "title":  "TRIZ (Theory of Inventive Problem Solving)",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: TRIZ (Theory of Inventive Problem Solving).",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  21,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_FK3ZAX7AMNA1OA_T5A_F9623786",
+                       "title":  "Validation",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Validation.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  22,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_ABJUQVGXMVPLPOHPDT_01B474DC",
+                       "title":  "Problem Framing",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Problem Framing.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  23,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_LHNGYNDEQCAD_DAZF6_8B3980E3",
+                       "title":  "Execution",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Execution.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  24,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_EUSP5P6GNIXTU_YVVO_D4512C36",
+                       "title":  "Market Analysis",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Market Analysis.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  25,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_LKDLK6DSEVBFXZPGOH_4C0A97FA",
+                       "title":  "Identifying Market Needs",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Identifying Market Needs.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  26,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_EUSP5P6GNIXTU_YVVO_D4512C36",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_PBDLYIYS8LAYPE6TV__583655D0",
+                       "title":  "Competitive Analysis",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Competitive Analysis.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  27,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_EUSP5P6GNIXTU_YVVO_D4512C36",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_ADHSPLRZ6SD8SNKCWT_D1B89543",
+                       "title":  "Emerging Market Trends",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Emerging Market Trends.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  28,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_EUSP5P6GNIXTU_YVVO_D4512C36",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_8LAY6UBFRDTRJF8YGA_288F42F4",
+                       "title":  "User Research",
+                       "description":  "Тема roadmap по направлению «Product Manager»: User Research.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  29,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_EUSP5P6GNIXTU_YVVO_D4512C36",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_0Y8F9X6MHAPQKS1VHS_7934C8C3",
+                       "title":  "User Personas",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: User Personas.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  30,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_8LAY6UBFRDTRJF8YGA_288F42F4",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_5KT8AKCSDADLBMSKOK_124CF65E",
+                       "title":  "User Interviews",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: User Interviews.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  31,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_8LAY6UBFRDTRJF8YGA_288F42F4",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_A_5AYOKAGCG0RARZFA_6BCFE2F7",
+                       "title":  "Surveys and Questionnaires",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Surveys and Questionnaires.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  32,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_8LAY6UBFRDTRJF8YGA_288F42F4",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_VWI7PLZIVZWKP3KZD4_C7627F32",
+                       "title":  "Ethnographic Research",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Ethnographic Research.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  33,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_8LAY6UBFRDTRJF8YGA_288F42F4",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_YPQDRZGUH0AREFSE_V_4CC18641",
+                       "title":  "Positioning",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Positioning.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  34,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_8LAY6UBFRDTRJF8YGA_288F42F4",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_TKDLFVVNYM_OIQKOMM_C31FCC4A",
+                       "title":  "USP (Unique Selling Point)",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: USP (Unique Selling Point).",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  35,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_YPQDRZGUH0AREFSE_V_4CC18641",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_3MYJRND6H2ZLCFAXJU_EDF39D98",
+                       "title":  "Market Segmentation",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Market Segmentation.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  36,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_YPQDRZGUH0AREFSE_V_4CC18641",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_JHHJMPTNB646AQKLS__492CC383",
+                       "title":  "Case Studies",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Case Studies.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  37,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_YPQDRZGUH0AREFSE_V_4CC18641",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_GBFBURXIRD76KYR9VK_5D73C420",
+                       "title":  "Feature Creep",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Feature Creep.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  38,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_L_KRMCOKEFPLHQ4J_9_C1D7891E",
+                       "title":  "Vision \u0026 Mission",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Vision \u0026 Mission.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  39,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_DNKHDM0TZ7QQUYRHPD_618C0E94",
+                       "title":  "Statement",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Statement.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  40,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_L_KRMCOKEFPLHQ4J_9_C1D7891E",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_ZCTSBMHAMSAOXLQAJI_327AE40F",
+                       "title":  "Proposition",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Proposition.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  41,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_L_KRMCOKEFPLHQ4J_9_C1D7891E",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_8SRSCEV55ZH1Y4GSP__84347239",
+                       "title":  "Capabilities",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Capabilities.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  42,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_L_KRMCOKEFPLHQ4J_9_C1D7891E",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_EKJ2XFDXU0NAKA932T_F8DFBC61",
+                       "title":  "Solved Constraints",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Solved Constraints.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  43,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_L_KRMCOKEFPLHQ4J_9_C1D7891E",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_WUQZNTN1IVKR9AV_09_A1AEDDBC",
+                       "title":  "Future Constraints",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Future Constraints.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  44,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_L_KRMCOKEFPLHQ4J_9_C1D7891E",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_UXSENTJLTED6FGI1BZ_0D9B7DE2",
+                       "title":  "Reference Materials",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Reference Materials.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  45,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_L_KRMCOKEFPLHQ4J_9_C1D7891E",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_ZS_CJYSTOIKJZN_OUE_14A8B3AB",
+                       "title":  "Narrative",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Narrative.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  46,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_L_KRMCOKEFPLHQ4J_9_C1D7891E",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_N2AYDM2DLJFUZ97JXY_45B41003",
+                       "title":  "Defining Goals",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Defining Goals.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  47,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_L_KRMCOKEFPLHQ4J_9_C1D7891E",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_6OJKCLBUZVJDUDC7IF_FAFE79E7",
+                       "title":  "Value Proposition",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Value Proposition.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  48,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_N2AYDM2DLJFUZ97JXY_45B41003",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_0AQJ2F1N8VKHBWUF4Y_C1EA4722",
+                       "title":  "Value vs Features",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Value vs Features.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  49,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_6OJKCLBUZVJDUDC7IF_FAFE79E7",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_XU8A_QKS6LXZKPMIIF_EB58CB6B",
+                       "title":  "Finding Balance",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Finding Balance.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  50,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_0AQJ2F1N8VKHBWUF4Y_C1EA4722",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_M46LX4DUHIK_BSHQWA_B1B7F71A",
+                       "title":  "Strategic Thinking",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Strategic Thinking.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  51,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_0AQJ2F1N8VKHBWUF4Y_C1EA4722",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_QY_IXZENBOEVBMVVLX_76E01068",
+                       "title":  "Competitive Strategy",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Competitive Strategy.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  52,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_M46LX4DUHIK_BSHQWA_B1B7F71A",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_1J2ZSO7UGNBGOLPYZS_C1F923C5",
+                       "title":  "Defining Value Proposition",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Defining Value Proposition.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  53,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_6OJKCLBUZVJDUDC7IF_FAFE79E7",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_8CW_CLQSC6SC4PIQ3__0A8101F4",
+                       "title":  "Five Forces Analysis",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Five Forces Analysis.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  54,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_TMLFCMEUYPCUNT8VVV_40A620A4",
+                       "title":  "Target",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Target.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  55,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_KJKURKDTCM95VINLLU_1D465868",
+                       "title":  "Value Proposition Canvas",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Value Proposition Canvas.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  56,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_TTUP4GQHVJLZYKYSAS_A9BA3D14",
+                       "title":  "Competetive Advantage",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Competetive Advantage.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  57,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_GPRQSHIHA8PI4A4IMW_93681B1D",
+                       "title":  "Baseline",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Baseline.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  58,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_JWU_ODHOQYK3GKCPOR_B64BFC77",
+                       "title":  "Strategic Partners",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Strategic Partners.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  59,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_S8MK1LLA32B69_RZOW_90903EFC",
+                       "title":  "Trend",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Trend.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  60,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_1M6WPW1WBJCXMB3NF1_A7E66827",
+                       "title":  "Identify Partners",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Identify Partners.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  61,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_E1YPZEHSSJWMDLESIL_EF951068",
+                       "title":  "Timeframe",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Timeframe.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  62,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_VXNF1ACMIDLWW5EYPC_0A721319",
+                       "title":  "Managing Partnerships",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Managing Partnerships.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  63,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_EIQV86PWIZZPWSYQOB_40952950",
+                       "title":  "Creating a Roadmap",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Creating a Roadmap.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  64,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_K7ZV7IS9Y_JKI_ZGRB_039CCF0E",
+                       "title":  "Prioritising Features",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Prioritising Features.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  65,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_0TJ7ZLGOIAIOCMMVAV_9878AF2F",
+                       "title":  "Product Requirements",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Product Requirements.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  66,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_0FQPBFVNKGN_OE2KSC_712C1454",
+                       "title":  "Writing PRDs",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Writing PRDs.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  67,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_0TJ7ZLGOIAIOCMMVAV_9878AF2F",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_KN_UFABQ8J7G0JDDQW_E645898D",
+                       "title":  "User Stories",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: User Stories.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  68,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_0TJ7ZLGOIAIOCMMVAV_9878AF2F",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_QGVHQOSTPYVKLL4MMV_C9DF9F38",
+                       "title":  "Continuous Roadmapping",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Continuous Roadmapping.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  69,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_B9FGJMZVVIAQ7DVSUE_D179A519",
+                       "title":  "Job Stories",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Job Stories.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  70,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_0TJ7ZLGOIAIOCMMVAV_9878AF2F",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_1UAFY3ISLKGMLIRVIF_19733AF9",
+                       "title":  "Outcome-Based Roadmaps",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Outcome-Based Roadmaps.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  71,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_SLB0P_LVDL7_GZUQBO_0F82217A",
+                       "title":  "Prioritization Techniques",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Prioritization Techniques.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  72,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_SQXGQFXWMLUHWTCWN8_D6441C47",
+                       "title":  "Grooming Sessions",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Grooming Sessions.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  73,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_GS3OFDRQDRKBECISKI_178B7608",
+                       "title":  "Product Roadmap",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Product Roadmap. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  74,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_0TJ7ZLGOIAIOCMMVAV_9878AF2F",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "What is a Product Roadmap? - Product Plan",
+                                             "url":  "https://www.productplan.com/learn/what-is-a-product-roadmap/",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Productplan",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         },
+                                         {
+                                             "title":  "What is a Product Roadmap? - Vibhor Chandel",
+                                             "url":  "https://www.youtube.com/watch?v=BJR70jnpHog\u0026ab_channel=VibhorChandel",
+                                             "type":  "VIDEO",
+                                             "language":  "en",
+                                             "durationMinutes":  25,
+                                             "provider":  "YouTube",
+                                             "difficulty":  "BEGINNER",
+                                             "status":  "ACTIVE",
+                                             "rank":  2
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_NJLT_B_KV7FDNKOOMQ_7ADEFBA1",
+                       "title":  "Communicating the Roadmap",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Communicating the Roadmap.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  75,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_GS3OFDRQDRKBECISKI_178B7608",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_LQ5HL1ZXBQRRI_4YWN_193F1131",
+                       "title":  "Backlog Management",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Backlog Management.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  76,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_GS3OFDRQDRKBECISKI_178B7608",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_3JY85TU40ABY9XFOLI_6CBB859F",
+                       "title":  "User Story Mapping",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: User Story Mapping.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  77,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_LQ5HL1ZXBQRRI_4YWN_193F1131",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_VQNK1RNANR_YVI_A0Y_E6F0A2E4",
+                       "title":  "Release Strategies",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Release Strategies.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  78,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_7BCNM9A9PWYQSLMCNV_7FF167D5",
+                       "title":  "Feature Toggles",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Feature Toggles.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  79,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_LFYY5W1YQWUTIM3QRF_6496B456",
+                       "title":  "UX / UI Design",
+                       "description":  "Тема roadmap по направлению «Product Manager»: UX / UI Design.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  80,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_TWL_EQDORSGUPBYR4O_268E7A32",
+                       "title":  "Principles of UX Design",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Principles of UX Design.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  81,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_LFYY5W1YQWUTIM3QRF_6496B456",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_ZWRMH_DJNEZ8HIQBAB_47B4651A",
+                       "title":  "Wireframing and Prototyping",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Wireframing and Prototyping.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  82,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_LFYY5W1YQWUTIM3QRF_6496B456",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_8_VCWPSZKRWMSD1_TH_D5C1D50A",
+                       "title":  "Phased Rollouts",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Phased Rollouts.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  83,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_YPTXGBDEJKFBHF8ZGQ_989F1FD3",
+                       "title":  "Design Thinking",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Design Thinking.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  84,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_LFYY5W1YQWUTIM3QRF_6496B456",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_ACOVHIAZLLWKCKKKWE_E48AC4C5",
+                       "title":  "Dark Launches",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Dark Launches.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  85,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_LXU25QXXGXNNF3C3KD_F01C9810",
+                       "title":  "Service Design",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Service Design.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  86,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_LFYY5W1YQWUTIM3QRF_6496B456",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_S_9MSR3VGZGOQ36ZER_2EF9C4D6",
+                       "title":  "Interaction Design",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Interaction Design.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  87,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_LXU25QXXGXNNF3C3KD_F01C9810",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_53XS2ZKDK6IDDOP07Y_3B1FFB0F",
+                       "title":  "Go-to-Market Strategy",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Go-to-Market Strategy.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  88,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_PBHUFKSVNO6XGJHQXC_59557331",
+                       "title":  "Launch Planning",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Launch Planning.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  89,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_V3HKOWLMBVQ9ECXKUH_DDE4A1CA",
+                       "title":  "User Testing",
+                       "description":  "Тема roadmap по направлению «Product Manager»: User Testing.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  90,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_S_9MSR3VGZGOQ36ZER_2EF9C4D6",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_1UXJKKVOKQPO50M1PM_60E322C3",
+                       "title":  "Usability Testing",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Usability Testing.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  91,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_V3HKOWLMBVQ9ECXKUH_DDE4A1CA",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_WS7IFRHQNOBJLE2TD2_0CD02696",
+                       "title":  "A/B Testing",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: A/B Testing.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  92,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_V3HKOWLMBVQ9ECXKUH_DDE4A1CA",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_5FZE1AW1IN3GP3K31B_EF8C7039",
+                       "title":  "Remote User Testing",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Remote User Testing.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  93,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_V3HKOWLMBVQ9ECXKUH_DDE4A1CA",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_YYO_7LMTW7H74Y4J5P_2F2C85C9",
+                       "title":  "Marketing Strategies",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Marketing Strategies.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  94,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_WNCVMFRPHW7RMAIZLL_4F6CCF6D",
+                       "title":  "Scrum Basics",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Scrum Basics. К теме прикреплены материалы для самостоятельного изучения.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  95,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+                                         {
+                                             "title":  "The Official Scrum Guide",
+                                             "url":  "https://scrumguides.org/scrum-guide.html",
+                                             "type":  "ARTICLE",
+                                             "language":  "en",
+                                             "durationMinutes":  35,
+                                             "provider":  "Scrumguides",
+                                             "difficulty":  "INTERMEDIATE",
+                                             "status":  "ACTIVE",
+                                             "rank":  1
+                                         }
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_WWWCIFPDGB92ED_1KV_8FD3ECAB",
+                       "title":  "Growth Hacking",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Growth Hacking.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  96,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_SAU4GR1HG8S4JAV0BO_9F1F8AA3",
+                       "title":  "Agile Methodology",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Agile Methodology.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  97,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_KJ2HQFESNC5YISU8D9_C3C71CDD",
+                       "title":  "Kanban Basics",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Kanban Basics.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  98,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_SAU4GR1HG8S4JAV0BO_9F1F8AA3",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_2R_NPGCROFMW_PD4RV_B76A7C9B",
+                       "title":  "Working with Engineering Teams",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Working with Engineering Teams.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  99,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_SAU4GR1HG8S4JAV0BO_9F1F8AA3",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_BU_XM_L1XJGIPAFS2P_DBC9C840",
+                       "title":  "Sprint Planning",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Sprint Planning.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  100,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_BZGGJBXIWQB0YR2ZMC_A91B459A",
+                       "title":  "Daily Standups",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Daily Standups.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  101,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_AKKL7PRIPRIQXNSS88_419EFC04",
+                       "title":  "Retrospectives",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Retrospectives.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  102,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_MM5YVAAROSBWDGQUFN_A1122268",
+                       "title":  "Minimum Viable Product (MVP)",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Minimum Viable Product (MVP).",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  103,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_RFLLPWFXWBEHF29OUW_541D62B4",
+                       "title":  "Key Product Metrics",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Key Product Metrics.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  104,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_G2EGVTQWQXLFJBJOMU_91D2C35C",
+                       "title":  "DAU (Daily Active Users)",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: DAU (Daily Active Users).",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  105,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_RFLLPWFXWBEHF29OUW_541D62B4",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_SBI5Y72NU_B1JK6XNP_66315F5C",
+                       "title":  "MAU (Monthly Active Users)",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: MAU (Monthly Active Users).",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  106,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_RFLLPWFXWBEHF29OUW_541D62B4",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_AVKGENNVQOCE7DVEKF_020E9762",
+                       "title":  "Conversion Rate",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Conversion Rate.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  107,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_RFLLPWFXWBEHF29OUW_541D62B4",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_MFG1UHEUWZO8DBS4OG_97BCC7AE",
+                       "title":  "Retention Rate",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Retention Rate.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  108,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_RFLLPWFXWBEHF29OUW_541D62B4",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_JRWVANPTFBXVJPI4WN_D8102390",
+                       "title":  "Churn Rate",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Churn Rate.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  109,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_RFLLPWFXWBEHF29OUW_541D62B4",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_EO7GLNL0HIXQYNOF3U_4C7D738B",
+                       "title":  "Data-Driven Decision Making",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Data-Driven Decision Making.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  110,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_RFLLPWFXWBEHF29OUW_541D62B4",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_V3YGVN7Z_IHLKSCO0__2F2F86A1",
+                       "title":  "A/B Testing",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: A/B Testing.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  111,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_EO7GLNL0HIXQYNOF3U_4C7D738B",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_APDOU9KZHEQPUGKGKF_5026A64F",
+                       "title":  "Cohort Analysis",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Cohort Analysis.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  112,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_EO7GLNL0HIXQYNOF3U_4C7D738B",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_DB_DN0BFG29XV_A8IV_D710FEAA",
+                       "title":  "LTV (Lifetime Value)",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: LTV (Lifetime Value).",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  113,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_RFLLPWFXWBEHF29OUW_541D62B4",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_YSDT5I0PRVYEAFFN4__02032EB8",
+                       "title":  "Predictive Analytics",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Predictive Analytics.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  114,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_EO7GLNL0HIXQYNOF3U_4C7D738B",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_KVD36ZDYJLVVG2NW9G_DE00B733",
+                       "title":  "CAC (Customer Acquisition Cost)",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: CAC (Customer Acquisition Cost).",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  115,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_RFLLPWFXWBEHF29OUW_541D62B4",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_MYKZIDHSIXR_69BDTF_C4E65734",
+                       "title":  "North Star Metric",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: North Star Metric.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  116,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_RFLLPWFXWBEHF29OUW_541D62B4",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_KIRIE5QSXRURUBWGFQ_77492253",
+                       "title":  "Feedback Loops",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Feedback Loops.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  117,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_EO7GLNL0HIXQYNOF3U_4C7D738B",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_O5IPA7PHEXUNEJQ6ML_590CD99A",
+                       "title":  "Interpersonal",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Interpersonal.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  118,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_LPICTVD00HWSCAEFTI_8E4BB454",
+                       "title":  "Business",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Business.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  119,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_XGNJUXZU7_WNPKKLVR_65F1BE86",
+                       "title":  "Communication Techniques",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Communication Techniques.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  120,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_IWCCVEELLFACOAXM5U_61308D07",
+                       "title":  "Difficult Conversations",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Difficult Conversations.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  121,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_D5GXDEAPGWJMLG2_KF_7FE0CDA1",
+                       "title":  "Alignment \u0026 Buy-In",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Alignment \u0026 Buy-In.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  122,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_5_4MXLRJH_4PLF2GIZ_230C439C",
+                       "title":  "Communication Skills",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Communication Skills.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  123,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_FWYC1942Z0_KYIH0BQ_A0DD5D53",
+                       "title":  "Active Listening",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Active Listening.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  124,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_XXEB3T8MJTBUZZJ2HD_78669A7D",
+                       "title":  "Showing Impact",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Showing Impact.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  125,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_SQVKXVLUZHGTIGS7W3_CC6C760C",
+                       "title":  "Conflict Resolution",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Conflict Resolution.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  126,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_X_2MVBUT_PN4O_FEGV_27FE07EC",
+                       "title":  "Managing Stakeholders",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Managing Stakeholders.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  127,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_5_4MXLRJH_4PLF2GIZ_230C439C",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_CRYUK9PCI3Y78HDGV6_C0ACD890",
+                       "title":  "Identifying Stakeholders",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Identifying Stakeholders.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  128,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_X_2MVBUT_PN4O_FEGV_27FE07EC",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_BHA_9GQHVJH40CY8JB_091F96DB",
+                       "title":  "Stakeholder Mapping",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Stakeholder Mapping.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  129,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_XG_QBB_HXL_1R_JINY_D4C820D7",
+                       "title":  "Roadmapping Tools",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Roadmapping Tools.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  130,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_70YVT_OKCADNJZGG8F_6982A20D",
+                       "title":  "Product Board",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Product Board.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  131,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_XG_QBB_HXL_1R_JINY_D4C820D7",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_DR5BLJSZXK50R7VP3C_2B2858BD",
+                       "title":  "Aha",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Aha.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  132,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_XG_QBB_HXL_1R_JINY_D4C820D7",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_DK1YZX84UUE_ES1X_D_5AA17D22",
+                       "title":  "Notion",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Notion.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  133,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_XG_QBB_HXL_1R_JINY_D4C820D7",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_RVQZRVBT73BY5X98DA_36688A5D",
+                       "title":  "Stakeholder Engagement",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Stakeholder Engagement.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  134,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_QGAB7DQM052XPA0LL__01858052",
+                       "title":  "Remote Stakeholders",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Remote Stakeholders.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  135,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_YJXK2GUI5JQONELZBA_01401C50",
+                       "title":  "Project Management Tools",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Project Management Tools.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  136,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_XG_QBB_HXL_1R_JINY_D4C820D7",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_EPQ4_CKR_RQJ457XNI_B11AF74C",
+                       "title":  "Jira",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Jira.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  137,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_YJXK2GUI5JQONELZBA_01401C50",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_PIIGFDN6T8H6TXZUKU_A3BAF902",
+                       "title":  "Linear",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Linear.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  138,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_YJXK2GUI5JQONELZBA_01401C50",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_SD98_S1ET_J2EIIKMC_9C80400C",
+                       "title":  "Trello",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Trello.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  139,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_YJXK2GUI5JQONELZBA_01401C50",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_LJ_7_OYAFWST8ABD5L_E578B719",
+                       "title":  "Analytics Tools",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Analytics Tools.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  140,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_YJXK2GUI5JQONELZBA_01401C50",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_Z5OORPPEJ0YDVWMXSL_204746A7",
+                       "title":  "Amplitude",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Amplitude.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  141,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_LJ_7_OYAFWST8ABD5L_E578B719",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_XAS_T2SAKMJNFB0_ZC_29EDF678",
+                       "title":  "Heap",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Heap.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  142,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_LJ_7_OYAFWST8ABD5L_E578B719",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_Y8YS_WFPXLVFJNGOLR_E4EBF1E1",
+                       "title":  "Looker",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Looker.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  143,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_LJ_7_OYAFWST8ABD5L_E578B719",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_IATA7OX7PAXUZKFDHI_C3F5EAAC",
+                       "title":  "Communication Tools",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Communication Tools.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  144,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_LJ_7_OYAFWST8ABD5L_E578B719",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_UDOJDZKDP_R3E5F_IL_D2BA751F",
+                       "title":  "Slack",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Slack.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  145,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_IATA7OX7PAXUZKFDHI_C3F5EAAC",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_Z72AKK5E5XJEULRAS9_31D974D7",
+                       "title":  "Teams",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Teams.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  146,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_IATA7OX7PAXUZKFDHI_C3F5EAAC",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_E6GO1TWJTER9XWM14G_FFDD0462",
+                       "title":  "Discord",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Discord.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  147,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_IATA7OX7PAXUZKFDHI_C3F5EAAC",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_OO_UJKAPMPOQDKPEKO_BB6F50A4",
+                       "title":  "Identifying Risks",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Identifying Risks.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  148,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_0ZRGIARMUE9XVDSKFN_043DA489",
+                       "title":  "Risk Identification Techniques",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Risk Identification Techniques.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  149,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_OO_UJKAPMPOQDKPEKO_BB6F50A4",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_WBNLICFO9P2ZM57PYX_49AD4270",
+                       "title":  "Risk Register",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Risk Register.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  150,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_OO_UJKAPMPOQDKPEKO_BB6F50A4",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_4GV80QRD08_Y8OZB_H_99B25C59",
+                       "title":  "Mitigation Strategies",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Mitigation Strategies.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  151,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_0URTNYMWTU9JZVIWSV_A4FAE594",
+                       "title":  "Risk Assessment",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Risk Assessment.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  152,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_OO_UJKAPMPOQDKPEKO_BB6F50A4",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_A_SRNDVB0OLGQ0QKAP_219004A8",
+                       "title":  "Risk Mitigation",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Risk Mitigation.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  153,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_0URTNYMWTU9JZVIWSV_A4FAE594",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_YBQ_ZRDLVTTTL8X8GN_478C2FE1",
+                       "title":  "Contingency Planning",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Contingency Planning.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  154,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_A_SRNDVB0OLGQ0QKAP_219004A8",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_4_W4BPDH4DPMNU9QFJ_0CCC9556",
+                       "title":  "Growth Strategies",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Growth Strategies.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  155,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_KXADMIKKJM0XLV4QZ0_4339BDA7",
+                       "title":  "Qualitative Risk Assessment",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Qualitative Risk Assessment.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  156,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_0URTNYMWTU9JZVIWSV_A4FAE594",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_ZJGG20NPSTLPKEL5LK_ABFD39E0",
+                       "title":  "Monitoring and Controlling Risks",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Monitoring and Controlling Risks.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  157,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_A_SRNDVB0OLGQ0QKAP_219004A8",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_LIDOGD1DAZCO1CT7CD_9D57FC59",
+                       "title":  "Internationalization",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Internationalization.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  158,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_G0SBLCG8KEFEHHTSJS_A958ADF6",
+                       "title":  "Quantitative Risk Assessment",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Quantitative Risk Assessment.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  159,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_S2W72SRX_9QVRO7RNB_6BA38572",
+                       "title":  "Risk Monitoring Tools",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Risk Monitoring Tools.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  160,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_ZJGG20NPSTLPKEL5LK_ABFD39E0",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_AO2UUQ_UZWTB_LRKH1_BCE6FCF4",
+                       "title":  "Risk Audits",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Risk Audits.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  161,
+                       "required":  false,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_4I_KX9OZUNMBFYEVU7_E3F2FB46",
+                       "title":  "Scaling Products",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Scaling Products.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  162,
+                       "required":  true,
+                       "prereqs":  [
+
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_EEI56WW04QBUF2I7B7_EF976544",
+                       "title":  "Platform Thinking",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Platform Thinking.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  163,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_4I_KX9OZUNMBFYEVU7_E3F2FB46",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_BGTXI9CHTJFHRMDUEI_92998BB2",
+                       "title":  "Portfolio Management",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Portfolio Management.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  164,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_4I_KX9OZUNMBFYEVU7_E3F2FB46",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_9Y_I41KJHKMYBJJITW_71D260F8",
+                       "title":  "Advanced Analysis",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Advanced Analysis.",
+                       "level":  "ADVANCED",
+                       "core":  true,
+                       "estimatedHours":  9,
+                       "status":  "ACTIVE",
+                       "priority":  165,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_BGTXI9CHTJFHRMDUEI_92998BB2",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_H5N51_YGJATHHPUHXK_F5AB97E2",
+                       "title":  "Predictive Analytics",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Predictive Analytics.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  166,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_9Y_I41KJHKMYBJJITW_71D260F8",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_RZRXYQFENQ3D0WPZV9_E6407DE4",
+                       "title":  "ML in Product Mgmt.",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: ML in Product Mgmt..",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  167,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_9Y_I41KJHKMYBJJITW_71D260F8",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_H7SF23KWV73XJNFCDK_1A1B4E41",
+                       "title":  "AI in Product Mgmt.",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: AI in Product Mgmt..",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  168,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_9Y_I41KJHKMYBJJITW_71D260F8",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_WYKJXHFNBZ6JX_TVG4_73DBFAFD",
+                       "title":  "Leadership and Influence",
+                       "description":  "Тема roadmap по направлению «Product Manager»: Leadership and Influence.",
+                       "level":  "BASIC",
+                       "core":  true,
+                       "estimatedHours":  5,
+                       "status":  "ACTIVE",
+                       "priority":  169,
+                       "required":  true,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_9Y_I41KJHKMYBJJITW_71D260F8",
+                                           "relationType":  "REQUIRED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_MP_JZTOFXCUFNVTSLD_BD1771F8",
+                       "title":  "Building and Leading Teams",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Building and Leading Teams.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  170,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_WYKJXHFNBZ6JX_TVG4_73DBFAFD",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_CMGE123TM9DRZ31LVI_D45DAD42",
+                       "title":  "Influencing without Authority",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Influencing without Authority.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  171,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_WYKJXHFNBZ6JX_TVG4_73DBFAFD",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   },
+                   {
+                       "code":  "RM_PRODUCT_MANAGE_GYNOZIQF1VSFI2J_FA_1AD7CDBC",
+                       "title":  "Emotional Intelligence",
+                       "description":  "Подтема roadmap по направлению «Product Manager»: Emotional Intelligence.",
+                       "level":  "INTERMEDIATE",
+                       "core":  false,
+                       "estimatedHours":  6,
+                       "status":  "ACTIVE",
+                       "priority":  172,
+                       "required":  false,
+                       "prereqs":  [
+                                       {
+                                           "topicCode":  "RM_PRODUCT_MANAGE_WYKJXHFNBZ6JX_TVG4_73DBFAFD",
+                                           "relationType":  "RECOMMENDED"
+                                       }
+                                   ],
+                       "resources":  [
+
+                                     ]
+                   }
+               ]
+}

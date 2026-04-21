@@ -12,7 +12,7 @@ const STORAGE_KEYS = {
     progressByPlan: "aln.progressByPlan"
 };
 
-const STORAGE_VERSION = "2026-04-20-roadmap-ru";
+const STORAGE_VERSION = "2026-04-21-roadmap-sh-bulk";
 
 initializeStorage();
 

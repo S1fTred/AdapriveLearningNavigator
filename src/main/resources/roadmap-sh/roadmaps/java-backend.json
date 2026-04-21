@@ -1,0 +1,137 @@
+{
+  "source": "legacy-kb",
+  "sourceUrl": null,
+  "roleCode": "java-backend",
+  "roleName": "Java Backend Developer",
+  "roleDescription": "Базовая дорожная карта по Java backend-разработке: язык, веб-основы, базы данных и Spring-стек.",
+  "roleStatus": "ACTIVE",
+  "topics": [
+    {
+      "code": "GIT",
+      "title": "Git",
+      "description": "Основы контроля версий: репозиторий, коммиты, ветки и базовый рабочий процесс.",
+      "level": "BASIC",
+      "core": true,
+      "estimatedHours": 2,
+      "status": "ACTIVE",
+      "priority": 1,
+      "required": false,
+      "prereqs": [],
+      "resources": []
+    },
+    {
+      "code": "JAVA_BASICS",
+      "title": "Java Basics",
+      "description": "Синтаксис Java, типы данных, условия, циклы и базовые конструкции языка.",
+      "level": "BASIC",
+      "core": true,
+      "estimatedHours": 6,
+      "status": "ACTIVE",
+      "priority": 2,
+      "required": true,
+      "prereqs": [],
+      "resources": []
+    },
+    {
+      "code": "OOP_JAVA",
+      "title": "OOP in Java",
+      "description": "Классы, объекты, инкапсуляция, наследование и полиморфизм в Java.",
+      "level": "BASIC",
+      "core": true,
+      "estimatedHours": 5,
+      "status": "ACTIVE",
+      "priority": 3,
+      "required": true,
+      "prereqs": [
+        {
+          "topicCode": "JAVA_BASICS",
+          "relationType": "REQUIRED"
+        }
+      ],
+      "resources": []
+    },
+    {
+      "code": "HTTP",
+      "title": "HTTP Basics",
+      "description": "Основы HTTP, структура запросов и ответов, методы, статусы и REST-подход.",
+      "level": "BASIC",
+      "core": true,
+      "estimatedHours": 4,
+      "status": "ACTIVE",
+      "priority": 4,
+      "required": true,
+      "prereqs": [],
+      "resources": []
+    },
+    {
+      "code": "SQL",
+      "title": "SQL Basics",
+      "description": "Базовые SQL-запросы, таблицы, связи и работа с реляционными данными.",
+      "level": "BASIC",
+      "core": true,
+      "estimatedHours": 5,
+      "status": "ACTIVE",
+      "priority": 5,
+      "required": true,
+      "prereqs": [],
+      "resources": []
+    },
+    {
+      "code": "MAVEN",
+      "title": "Maven",
+      "description": "Сборка Java-проекта, зависимости, плагины и базовый жизненный цикл Maven.",
+      "level": "BASIC",
+      "core": false,
+      "estimatedHours": 2,
+      "status": "ACTIVE",
+      "priority": 6,
+      "required": false,
+      "prereqs": [],
+      "resources": []
+    },
+    {
+      "code": "SPRING_BOOT",
+      "title": "Spring Boot",
+      "description": "Быстрый старт со Spring Boot: конфигурация приложения, REST API и базовая backend-архитектура.",
+      "level": "INTERMEDIATE",
+      "core": true,
+      "estimatedHours": 8,
+      "status": "ACTIVE",
+      "priority": 7,
+      "required": true,
+      "prereqs": [
+        {
+          "topicCode": "JAVA_BASICS",
+          "relationType": "REQUIRED"
+        },
+        {
+          "topicCode": "HTTP",
+          "relationType": "REQUIRED"
+        }
+      ],
+      "resources": []
+    },
+    {
+      "code": "JPA",
+      "title": "JPA/Hibernate",
+      "description": "Основы persistence-слоя: сущности, связи, репозитории и работа с JPA/Hibernate.",
+      "level": "INTERMEDIATE",
+      "core": true,
+      "estimatedHours": 8,
+      "status": "ACTIVE",
+      "priority": 8,
+      "required": true,
+      "prereqs": [
+        {
+          "topicCode": "SQL",
+          "relationType": "REQUIRED"
+        },
+        {
+          "topicCode": "SPRING_BOOT",
+          "relationType": "REQUIRED"
+        }
+      ],
+      "resources": []
+    }
+  ]
+}
