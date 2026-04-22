@@ -17,8 +17,8 @@ import com.example.adaprivelearningnavigator.repo.RoleTopicRepository;
 import com.example.adaprivelearningnavigator.repo.TopicPrereqRepository;
 import com.example.adaprivelearningnavigator.repo.TopicRepository;
 import com.example.adaprivelearningnavigator.repo.TopicResourceRepository;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.HashMap;
 import java.util.List;
@@ -26,7 +26,6 @@ import java.util.Map;
 import java.util.Objects;
 
 @Service
-@Transactional
 public class RoadmapShRoadmapSyncService {
 
     private final RoadmapShRoadmapSource roadmapSource;
@@ -37,6 +36,7 @@ public class RoadmapShRoadmapSyncService {
     private final ResourceRepository resourceRepository;
     private final TopicResourceRepository topicResourceRepository;
     private final RoadmapShRoadmapSyncProperties properties;
+    private final JdbcTemplate jdbcTemplate;
 
     public RoadmapShRoadmapSyncService(RoadmapShRoadmapSource roadmapSource,
                                        RoleGoalRepository roleGoalRepository,
@@ -45,7 +45,8 @@ public class RoadmapShRoadmapSyncService {
                                        TopicPrereqRepository topicPrereqRepository,
                                        ResourceRepository resourceRepository,
                                        TopicResourceRepository topicResourceRepository,
-                                       RoadmapShRoadmapSyncProperties properties) {
+                                       RoadmapShRoadmapSyncProperties properties,
+                                       JdbcTemplate jdbcTemplate) {
         this.roadmapSource = roadmapSource;
         this.roleGoalRepository = roleGoalRepository;
         this.topicRepository = topicRepository;
@@ -54,9 +55,12 @@ public class RoadmapShRoadmapSyncService {
         this.resourceRepository = resourceRepository;
         this.topicResourceRepository = topicResourceRepository;
         this.properties = properties;
+        this.jdbcTemplate = jdbcTemplate;
     }
 
     public RoadmapShRoadmapSyncSummary syncRoadmaps() {
+        alignIdentityColumns();
+
         int roadmapsProcessed = 0;
         int rolesCreated = 0;
         int rolesUpdated = 0;
@@ -85,6 +89,7 @@ public class RoadmapShRoadmapSyncService {
                 rolesCreated++;
             } else if (properties.updateExisting()) {
                 boolean dirty = false;
+                EntityStatus targetStatus = manifest.roleStatus() != null ? manifest.roleStatus() : EntityStatus.ACTIVE;
                 if (!Objects.equals(role.getName(), manifest.roleName())) {
                     role.setName(manifest.roleName());
                     dirty = true;
@@ -93,8 +98,8 @@ public class RoadmapShRoadmapSyncService {
                     role.setDescription(manifest.roleDescription());
                     dirty = true;
                 }
-                if (manifest.roleStatus() != null && role.getStatus() != manifest.roleStatus()) {
-                    role.setStatus(manifest.roleStatus());
+                if (role.getStatus() != targetStatus) {
+                    role.setStatus(targetStatus);
                     dirty = true;
                 }
                 if (dirty) {
@@ -304,5 +309,26 @@ public class RoadmapShRoadmapSyncService {
 
     private List<RoadmapShRoadmapResourceManifest> safeResources(RoadmapShRoadmapTopicManifest topic) {
         return topic.resources() == null ? List.of() : topic.resources();
+    }
+
+    private void alignIdentityColumns() {
+        alignIdentity("role_goals", "role_id");
+        alignIdentity("topics", "topic_id");
+        alignIdentity("topic_prereqs", "topic_prereq_id");
+        alignIdentity("resources", "resource_id");
+    }
+
+    private void alignIdentity(String tableName, String columnName) {
+        Long nextValue = jdbcTemplate.queryForObject(
+                "select coalesce(max(" + columnName + "), 0) + 1 from " + tableName,
+                Long.class
+        );
+        if (nextValue == null || nextValue < 1) {
+            nextValue = 1L;
+        }
+
+        jdbcTemplate.execute(
+                "alter table " + tableName + " alter column " + columnName + " restart with " + nextValue
+        );
     }
 }

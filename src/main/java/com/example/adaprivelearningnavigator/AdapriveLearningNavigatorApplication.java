@@ -11,7 +11,9 @@ public class AdapriveLearningNavigatorApplication {
     public static void main(String[] args) {
         ConfigurableApplicationContext context =
                 SpringApplication.run(AdapriveLearningNavigatorApplication.class, args);
-        context.getBean(BrowserLaunchOnStartup.class).openFromContext(context);
+        if (context.isActive()) {
+            context.getBean(BrowserLaunchOnStartup.class).openFromContext(context);
+        }
     }
 
 }

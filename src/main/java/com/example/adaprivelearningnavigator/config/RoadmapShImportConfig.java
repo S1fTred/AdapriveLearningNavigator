@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @EnableConfigurationProperties({
+        RoadmapShBootstrapProperties.class,
         RoadmapShCatalogSyncProperties.class,
         RoadmapShRoadmapSyncProperties.class
 })

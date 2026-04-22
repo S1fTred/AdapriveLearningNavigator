@@ -63,12 +63,16 @@ app:
     auto-open: true
     url-path: /
   roadmap-sh:
+    bootstrap:
+      enabled: false
+      catalog-sync: false
+      roadmap-sync: true
     catalog-sync:
       enabled: false
       catalog-location: classpath:roadmap-sh/catalog.json
       default-status: DRAFT
       update-existing: true
     roadmap-sync:
-      enabled: true
+      enabled: false
       manifest-pattern: file:./src/main/resources/roadmap-sh/roadmaps/*.json,classpath*:roadmap-sh/roadmaps/*.json
       update-existing: true

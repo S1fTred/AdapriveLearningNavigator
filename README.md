@@ -37,14 +37,17 @@ Adaprive Learning Navigator — это веб-сервис для изучени
 #### Главная `/`
 - кратко объясняет, что это за сервис;
 - показывает основную пользу для нового пользователя;
+- нижний блок "Что получает пользователь" оставлен чисто информационным, без дублирующих CTA-кнопок;
 - ведёт к регистрации или входу.
 
 #### Вход `/login`
 - авторизация по email и паролю;
+- лаконичная русскоязычная entry-страница без технических формулировок и шаблонного текста;
 - после успеха переводит пользователя в кабинет.
 
 #### Регистрация `/register`
 - создание аккаунта;
+- лаконичная русскоязычная entry-страница в том же тоне, что и экран входа;
 - после успешной регистрации пользователь получает токены и доступ к приватной части.
 
 #### Кабинет `/dashboard`
@@ -246,6 +249,7 @@ AI-generated route:
 - приложение работает на `http://localhost:8080`;
 - H2 используется как файловая база;
 - SQL init для текущей dev-базы выключен (`spring.sql.init.mode=never`);
+- обычный запуск приложения не делает массовый импорт roadmap'ов на старте;
 - браузер может открываться автоматически при старте;
 - для AI используется Ollama и модель `qwen2.5:7b`.
 
@@ -256,7 +260,28 @@ AI-generated route:
 - запуск через Maven.
 
 После старта приложение открывает сайт на главной странице автоматически, если это разрешено окружением и настройками.
-Автооткрытие браузера работает в best-effort режиме: после `ApplicationReadyEvent` приложение пробует `Desktop.browse`, а на Windows дополнительно использует fallback через `cmd /c start`, `powershell Start-Process` и `explorer.exe`.
+Автооткрытие браузера работает в best-effort режиме: как только web-сервер поднимает порт, приложение пробует открыть страницу через `Desktop.browse`, а на Windows дополнительно использует fallback через `cmd /c start`, `powershell Start-Process` и `explorer.exe`.
+
+### Разовая загрузка KB из roadmap.sh
+
+Полное наполнение локальной H2-базы делается отдельно от обычного старта приложения.
+
+Для этого есть bootstrap-профиль:
+- `src/main/resources/application-roadmap-bootstrap.yaml`
+
+И готовый Windows-скрипт:
+- `tools/Bootstrap-RoadmapKnowledgeBase.ps1`
+
+Что делает bootstrap:
+- запускает приложение в `web-application-type=none`;
+- не поднимает web-сервер и не открывает браузер;
+- выполняет одноразовый массовый import roadmap-данных в локальную H2-базу;
+- после завершения завершает процесс.
+
+Обычный рабочий режим после bootstrap:
+- база уже наполнена;
+- каталог читается сразу из H2;
+- runtime sync на старте приложения отключён.
 
 ## AI и Ollama
 
@@ -289,6 +314,7 @@ AI-generated route:
 - AI prompt/generation/validation;
 - roadmap API;
 - plan API;
+- интеграционная проверка построения roadmap и weekly plan на реальной предзагруженной KB;
 - persistence;
 - page routing.
 
@@ -300,6 +326,7 @@ AI-generated route:
 - `AiPromptBuilderTest`
 - `AiRouteGenerationServiceImplTest`
 - `AiRouteValidationServiceTest`
+- `RoadmapPlanVerificationIntegrationTest`
 - `SharedPrimaryKeyPersistenceTest`
 - `PageControllerTest`
 
@@ -473,11 +500,22 @@ AI-generated route:
 - `app.roadmap-sh.roadmap-sync.enabled`
 - `app.roadmap-sh.roadmap-sync.manifest-pattern`
 - `app.roadmap-sh.roadmap-sync.update-existing`
+- `app.roadmap-sh.bootstrap.enabled`
+- `app.roadmap-sh.bootstrap.catalog-sync`
+- `app.roadmap-sh.bootstrap.roadmap-sync`
 
 Dev-особенность import-слоя:
 - в локальном запуске roadmap-sync читает manifest-файлы сначала напрямую из `src/main/resources/roadmap-sh/roadmaps`, а затем из classpath;
 - это защищает dev-режим от ситуации, когда IDE не успела перекопировать новые JSON-ресурсы в compiled output, и каталог продолжает видеть старый набор roadmap'ов.
 - если один и тот же roadmap встречается и в `file:`, и в `classpath:`, загрузчик схлопывает дубликаты по `roleCode` и оставляет первую найденную версию; это даёт приоритет локальным dev-manifest'ам и не ломает старт приложения.
+- если направление раньше появилось через `catalog-sync` в статусе `DRAFT`, последующий `roadmap-sync` переводит его в `ACTIVE`, чтобы оно становилось видимым в пользовательском каталоге.
+- перед content-sync сервис выравнивает identity-счётчики H2 для `role_goals`, `topics`, `topic_prereqs` и `resources`, чтобы bulk-import не падал на dev-базе после ручных seed-вставок с фиксированными `id`.
+- content-sync больше не держит весь импорт одной общей транзакцией: изменения становятся видимыми по мере обработки roadmap'ов, а каталог не ждёт завершения всего bulk-import.
+
+Текущий рекомендуемый режим работы:
+- `roadmap-sync` и `catalog-sync` на обычном старте приложения выключены;
+- для полного наполнения KB используется отдельный bootstrap-профиль;
+- после завершения bootstrap база считается предзагруженной и используется как основной источник каталога и roadmap-данных.
 
 Текущее ограничение слоя:
 - import остаётся additive и safe-by-default;
@@ -496,7 +534,7 @@ Dev-особенность import-слоя:
 Что уже сделано:
 - `docs/postman/manual_api_seed.sql` локализован для `java-backend` и `java-mobile`;
 - добавлены manifest-файлы `src/main/resources/roadmap-sh/roadmaps/java-backend.json` и `src/main/resources/roadmap-sh/roadmaps/java-mobile.json`;
-- при включённом `app.roadmap-sh.roadmap-sync.enabled=true` существующая dev-база получает обновлённые русские описания ролей и тем по этим кодам без ручного редактирования таблиц;
+- при запуске отдельного KB bootstrap существующая dev-база получает обновлённые русские описания ролей и тем по этим кодам без ручного редактирования таблиц;
 - названия технологий и направлений оставлены в оригинале, а поясняющие описания переведены на русский;
 - для legacy Java-roadmap'ов в текущем KB пока не заведены отдельные `resources`, поэтому локализация на этом шаге покрывает role/topic descriptions и витрину roadmap'ов.
 

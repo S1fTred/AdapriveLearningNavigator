@@ -1,0 +1,15 @@
+server:
+  port: 0
+
+app:
+  browser:
+    auto-open: false
+  roadmap-sh:
+    bootstrap:
+      enabled: true
+      catalog-sync: false
+      roadmap-sync: true
+    catalog-sync:
+      enabled: false
+    roadmap-sync:
+      enabled: false

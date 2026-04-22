@@ -1,6 +1,7 @@
 package com.example.adaprivelearningnavigator.integration.roadmapsh;
 
 import com.example.adaprivelearningnavigator.config.RoadmapShRoadmapSyncProperties;
+import com.example.adaprivelearningnavigator.domain.enums.EntityStatus;
 import com.example.adaprivelearningnavigator.domain.knowledgeBase.Resource;
 import com.example.adaprivelearningnavigator.domain.knowledgeBase.RoleGoal;
 import com.example.adaprivelearningnavigator.domain.knowledgeBase.RoleTopic;
@@ -15,6 +16,7 @@ import com.example.adaprivelearningnavigator.repo.TopicRepository;
 import com.example.adaprivelearningnavigator.repo.TopicResourceRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
@@ -36,6 +38,7 @@ class RoadmapShRoadmapSyncServiceTest {
     @Mock private TopicPrereqRepository topicPrereqRepository;
     @Mock private ResourceRepository resourceRepository;
     @Mock private TopicResourceRepository topicResourceRepository;
+    @Mock private JdbcTemplate jdbcTemplate;
 
     @Test
     void shouldCreateRoadmapTopicsPrereqsAndResources() {
@@ -108,6 +111,7 @@ class RoadmapShRoadmapSyncServiceTest {
         when(resourceRepository.findByUrl("https://learn.microsoft.com/en-us/dotnet/csharp/")).thenReturn(Optional.empty());
         when(resourceRepository.findByUrl("https://learn.unity.com/pathway/unity-essentials/unit/editor-essentials")).thenReturn(Optional.empty());
         when(topicResourceRepository.findByTopic_IdAndResource_Id(any(), any())).thenReturn(Optional.empty());
+        when(jdbcTemplate.queryForObject(any(String.class), org.mockito.ArgumentMatchers.eq(Long.class))).thenReturn(1L);
 
         AtomicLong roleIds = new AtomicLong(100L);
         AtomicLong topicIds = new AtomicLong(200L);
@@ -150,7 +154,8 @@ class RoadmapShRoadmapSyncServiceTest {
                         false,
                         "classpath*:roadmap-sh/roadmaps/*.json",
                         true
-                )
+                ),
+                jdbcTemplate
         );
 
         RoadmapShRoadmapSyncSummary summary = service.syncRoadmaps();
@@ -162,5 +167,54 @@ class RoadmapShRoadmapSyncServiceTest {
         assertEquals(1, summary.prereqsCreated());
         assertEquals(2, summary.resourcesCreated());
         assertEquals(2, summary.topicResourcesCreated());
+    }
+
+    @Test
+    void shouldPromoteExistingDraftRoleToActiveWhenManifestStatusIsMissing() {
+        RoadmapShRoadmapManifest manifest = new RoadmapShRoadmapManifest(
+                "roadmap.sh",
+                "https://roadmap.sh/frontend",
+                "frontend",
+                "Frontend",
+                "Frontend roadmap",
+                null,
+                List.of()
+        );
+
+        RoleGoal existingRole = RoleGoal.builder()
+                .id(10L)
+                .code("frontend")
+                .name("Frontend")
+                .description("Old description")
+                .status(EntityStatus.DRAFT)
+                .build();
+
+        when(roadmapSource.loadRoadmaps()).thenReturn(List.of(manifest));
+        when(roleGoalRepository.findByCode("frontend")).thenReturn(Optional.of(existingRole));
+        when(roleGoalRepository.save(any(RoleGoal.class))).thenAnswer(invocation -> invocation.getArgument(0));
+        when(jdbcTemplate.queryForObject(any(String.class), org.mockito.ArgumentMatchers.eq(Long.class))).thenReturn(1L);
+
+        RoadmapShRoadmapSyncService service = new RoadmapShRoadmapSyncService(
+                roadmapSource,
+                roleGoalRepository,
+                topicRepository,
+                roleTopicRepository,
+                topicPrereqRepository,
+                resourceRepository,
+                topicResourceRepository,
+                new RoadmapShRoadmapSyncProperties(
+                        false,
+                        "classpath*:roadmap-sh/roadmaps/*.json",
+                        true
+                ),
+                jdbcTemplate
+        );
+
+        RoadmapShRoadmapSyncSummary summary = service.syncRoadmaps();
+
+        assertEquals(1, summary.roadmapsProcessed());
+        assertEquals(0, summary.rolesCreated());
+        assertEquals(1, summary.rolesUpdated());
+        assertEquals(EntityStatus.ACTIVE, existingRole.getStatus());
     }
 }

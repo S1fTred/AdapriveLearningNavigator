@@ -4,8 +4,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
-import org.springframework.context.ApplicationListener;
+import org.springframework.boot.web.server.context.WebServerInitializedEvent;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationListener;
+import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
 import java.awt.Desktop;
@@ -37,11 +39,12 @@ public class BrowserLaunchOnStartup implements ApplicationListener<ApplicationRe
         openFromContext(event.getApplicationContext());
     }
 
-    public void openFromContext(ApplicationContext applicationContext) {
-        if (!attempted.compareAndSet(false, true)) {
-            return;
-        }
+    @EventListener
+    public void onWebServerInitialized(WebServerInitializedEvent event) {
+        openFromPort(event.getWebServer().getPort());
+    }
 
+    public void openFromContext(ApplicationContext applicationContext) {
         if (!autoOpenEnabled) {
             log.info("Автооткрытие браузера отключено в конфигурации.");
             return;
@@ -50,6 +53,14 @@ public class BrowserLaunchOnStartup implements ApplicationListener<ApplicationRe
         Integer port = extractPort(applicationContext);
         if (port == null) {
             log.info("Автооткрытие браузера пропущено: web server context недоступен.");
+            return;
+        }
+
+        openFromPort(port);
+    }
+
+    private void openFromPort(int port) {
+        if (!attempted.compareAndSet(false, true)) {
             return;
         }
 

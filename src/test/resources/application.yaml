@@ -47,6 +47,10 @@ app:
   browser:
     auto-open: false
   roadmap-sh:
+    bootstrap:
+      enabled: false
+      catalog-sync: false
+      roadmap-sync: true
     catalog-sync:
       enabled: false
       catalog-location: classpath:roadmap-sh/catalog.json
