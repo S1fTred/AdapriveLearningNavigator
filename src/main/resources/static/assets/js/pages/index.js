@@ -15,7 +15,7 @@ if (hasSession()) {
     }
     if (authSlot) {
         authSlot.innerHTML = `
-            <a class="button button-secondary" href="/dashboard">Кабинет</a>
+            <a class="button button-secondary" href="/dashboard">Каталог</a>
         `;
     }
 }

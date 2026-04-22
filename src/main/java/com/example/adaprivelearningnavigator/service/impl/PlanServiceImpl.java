@@ -47,6 +47,7 @@ import com.example.adaprivelearningnavigator.service.dto.plan.PlanWeekResponse;
 import com.example.adaprivelearningnavigator.service.exception.AiRouteValidationException;
 import com.example.adaprivelearningnavigator.service.exception.NotFoundException;
 import com.example.adaprivelearningnavigator.service.exception.PlanBuildException;
+import com.example.adaprivelearningnavigator.service.support.KnowledgeBaseLocalizationUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -305,7 +306,7 @@ public class PlanServiceImpl implements PlanService {
                 .id(plan.getId())
                 .roleId(plan.getRole().getId())
                 .roleCode(plan.getRole().getCode())
-                .roleName(plan.getRole().getName())
+                .roleName(KnowledgeBaseLocalizationUtil.localizeRoleName(plan.getRole().getCode(), plan.getRole().getName()))
                 .status(plan.getStatus())
                 .scenarioType(plan.getScenarioType())
                 .scenarioLabel(plan.getScenarioLabel())
@@ -864,7 +865,7 @@ public class PlanServiceImpl implements PlanService {
                 .id(plan.getId())
                 .roleId(plan.getRole().getId())
                 .roleCode(plan.getRole().getCode())
-                .roleName(plan.getRole().getName())
+                .roleName(KnowledgeBaseLocalizationUtil.localizeRoleName(plan.getRole().getCode(), plan.getRole().getName()))
                 .status(plan.getStatus())
                 .scenarioType(plan.getScenarioType())
                 .scenarioLabel(plan.getScenarioLabel())
@@ -889,6 +890,7 @@ public class PlanServiceImpl implements PlanService {
     }
 
     private PlanStepResponse toStepResponse(PlanStep step) {
+        String localizedTopicTitle = KnowledgeBaseLocalizationUtil.localizeTopicTitle(step.getTopic().getCode(), step.getTopic().getTitle());
         List<PlanStepResourceResponse> resources = planStepResourceRepository.findAllByPlanStep_Id(step.getId()).stream()
                 .map(resource -> PlanStepResourceResponse.builder()
                         .resourceId(resource.getResource().getId())
@@ -904,7 +906,7 @@ public class PlanServiceImpl implements PlanService {
                 .id(step.getId())
                 .topicId(step.getTopic().getId())
                 .topicCode(step.getTopic().getCode())
-                .topicTitle(step.getTopic().getTitle())
+                .topicTitle(localizedTopicTitle)
                 .orderInWeek(step.getOrderInWeek())
                 .plannedHours(step.getPlannedHours())
                 .isOptional(step.isOptional())
@@ -920,7 +922,7 @@ public class PlanServiceImpl implements PlanService {
                         .map(item -> new PlanStepExplanationResponse.PrereqItem(
                                 item.getPrereqTopic().getId(),
                                 item.getPrereqTopic().getCode(),
-                                item.getPrereqTopic().getTitle(),
+                                KnowledgeBaseLocalizationUtil.localizeTopicTitle(item.getPrereqTopic().getCode(), item.getPrereqTopic().getTitle()),
                                 item.getPrereqStatus()
                         ))
                         .toList();

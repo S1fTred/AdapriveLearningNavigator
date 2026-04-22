@@ -23,6 +23,7 @@ import com.example.adaprivelearningnavigator.service.dto.roadmap.RoadmapSummaryR
 import com.example.adaprivelearningnavigator.service.dto.roadmap.RoadmapTopicDetailResponse;
 import com.example.adaprivelearningnavigator.service.dto.roadmap.RoadmapTopicResponse;
 import com.example.adaprivelearningnavigator.service.exception.NotFoundException;
+import com.example.adaprivelearningnavigator.service.support.KnowledgeBaseLocalizationUtil;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -39,11 +40,21 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.function.Function;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 @Service
 @Transactional(readOnly = true)
 public class RoadmapServiceImpl implements RoadmapService {
+
+    private static final Pattern ROADMAP_SOURCE_PATTERN =
+            Pattern.compile("(?i)\\s*из каталога\\s+roadmap\\.sh\\.?\\s*");
+    private static final Pattern ADAPTATION_NOTE_PATTERN =
+            Pattern.compile("(?i)\\s*темы и материалы адаптированы для русскоязычного интерфейса сервиса\\.?\\s*");
+    private static final Pattern ADDED_FROM_SOURCE_PATTERN =
+            Pattern.compile("(?i)\\s*добавлено из\\s+roadmap\\.sh\\.?\\s*");
+    private static final Pattern MULTISPACE_PATTERN =
+            Pattern.compile("\\s{2,}");
 
     private final RoleGoalRepository roleGoalRepository;
     private final RoleTopicRepository roleTopicRepository;
@@ -94,12 +105,13 @@ public class RoadmapServiceImpl implements RoadmapService {
         List<RoadmapTopicResponse> topicResponses = orderedTopics.stream()
                 .map(topic -> toRoadmapTopicResponse(topic, roleTopicMeta.get(topic.getId()), requiredPrereqMap))
                 .toList();
+        String localizedRoleName = KnowledgeBaseLocalizationUtil.localizeRoleName(roadmap.getCode(), roadmap.getName());
 
         return RoadmapDetailResponse.builder()
                 .id(roadmap.getId())
                 .code(roadmap.getCode())
-                .name(roadmap.getName())
-                .description(roadmap.getDescription())
+                .name(localizedRoleName)
+                .description(sanitizeDescription(roadmap.getDescription(), roadmap.getName(), localizedRoleName, null, null))
                 .topicCount(topicResponses.size())
                 .requiredTopicCount((int) roleTopicMeta.values().stream().filter(RoleTopic::isRequired).count())
                 .totalEstimatedHours(sumEstimatedHours(orderedTopics))
@@ -143,15 +155,17 @@ public class RoadmapServiceImpl implements RoadmapService {
                 .toList();
 
         Quiz quiz = quizRepository.findByTopic_Id(topicId).orElse(null);
+        String localizedRoleName = KnowledgeBaseLocalizationUtil.localizeRoleName(roadmap.getCode(), roadmap.getName());
+        String localizedTopicTitle = KnowledgeBaseLocalizationUtil.localizeTopicTitle(topic.getCode(), topic.getTitle());
 
         return RoadmapTopicDetailResponse.builder()
                 .roleId(roadmap.getId())
                 .roleCode(roadmap.getCode())
-                .roleName(roadmap.getName())
+                .roleName(localizedRoleName)
                 .topicId(topic.getId())
                 .topicCode(topic.getCode())
-                .topicTitle(topic.getTitle())
-                .description(topic.getDescription())
+                .topicTitle(localizedTopicTitle)
+                .description(sanitizeDescription(topic.getDescription(), roadmap.getName(), localizedRoleName, topic.getTitle(), localizedTopicTitle))
                 .level(topic.getLevel())
                 .isCore(topic.isCore())
                 .estimatedHours(topic.getEstimatedHours())
@@ -188,12 +202,13 @@ public class RoadmapServiceImpl implements RoadmapService {
         BigDecimal totalEstimatedHours = sumEstimatedHours(roleTopics.stream()
                 .map(RoleTopic::getTopic)
                 .toList());
+        String localizedRoleName = KnowledgeBaseLocalizationUtil.localizeRoleName(roleGoal.getCode(), roleGoal.getName());
 
         return RoadmapSummaryResponse.builder()
                 .id(roleGoal.getId())
                 .code(roleGoal.getCode())
-                .name(roleGoal.getName())
-                .description(roleGoal.getDescription())
+                .name(localizedRoleName)
+                .description(sanitizeDescription(roleGoal.getDescription(), roleGoal.getName(), localizedRoleName, null, null))
                 .topicCount(roleTopics.size())
                 .requiredTopicCount((int) roleTopics.stream().filter(RoleTopic::isRequired).count())
                 .totalEstimatedHours(totalEstimatedHours)
@@ -308,12 +323,13 @@ public class RoadmapServiceImpl implements RoadmapService {
                                                         RoleTopic roleTopic,
                                                         Map<Long, List<TopicPrereq>> requiredPrereqMap) {
         List<TopicPrereq> prereqs = requiredPrereqMap.getOrDefault(topic.getId(), List.of());
+        String localizedTopicTitle = KnowledgeBaseLocalizationUtil.localizeTopicTitle(topic.getCode(), topic.getTitle());
 
         return RoadmapTopicResponse.builder()
                 .topicId(topic.getId())
                 .topicCode(topic.getCode())
-                .topicTitle(topic.getTitle())
-                .description(topic.getDescription())
+                .topicTitle(localizedTopicTitle)
+                .description(sanitizeDescription(topic.getDescription(), null, null, topic.getTitle(), localizedTopicTitle))
                 .level(topic.getLevel())
                 .isCore(topic.isCore())
                 .estimatedHours(topic.getEstimatedHours())
@@ -333,7 +349,7 @@ public class RoadmapServiceImpl implements RoadmapService {
                 .type(resource.getType())
                 .language(resource.getLanguage())
                 .durationMinutes(resource.getDurationMinutes())
-                .provider(resource.getProvider())
+                .provider(sanitizeProvider(resource.getProvider()))
                 .difficulty(resource.getDifficulty())
                 .rank(topicResource.getRank())
                 .build();
@@ -355,4 +371,66 @@ public class RoadmapServiceImpl implements RoadmapService {
     private boolean isRequired(RoleTopic roleTopic) {
         return roleTopic != null && roleTopic.isRequired();
     }
+
+    private String sanitizeDescription(String description) {
+        return sanitizeDescription(description, null, null, null, null);
+    }
+
+    private String sanitizeDescription(String description,
+                                       String originalRoleName,
+                                       String localizedRoleName,
+                                       String originalTopicTitle,
+                                       String localizedTopicTitle) {
+        return KnowledgeBaseLocalizationUtil.localizeDescription(
+                description,
+                originalRoleName,
+                localizedRoleName,
+                originalTopicTitle,
+                localizedTopicTitle
+        );
+    }
+
+    private String sanitizeProvider(String provider) {
+        return KnowledgeBaseLocalizationUtil.hideSourceProvider(provider);
+    }
+
+/*
+        if (description == null || description.isBlank()) {
+            return description;
+        }
+
+        String sanitized = description
+                .replace("из каталога roadmap.sh.", "")
+                .replace("Из каталога roadmap.sh.", "")
+                .replace("из каталога roadmap.sh", "")
+                .replace("Из каталога roadmap.sh", "")
+                .replace("Темы и материалы адаптированы для русскоязычного интерфейса сервиса.", "")
+                .replace("Темы и материалы адаптированы для русскоязычного интерфейса сервиса", "")
+                .replace("темы и материалы адаптированы для русскоязычного интерфейса сервиса.", "")
+                .replace("темы и материалы адаптированы для русскоязычного интерфейса сервиса", "")
+                .replace("Добавлено из roadmap.sh.", "")
+                .replace("Добавлено из roadmap.sh", "")
+                .replace("добавлено из roadmap.sh.", "")
+                .replace("добавлено из roadmap.sh", "");
+
+        sanitized = MULTISPACE_PATTERN.matcher(sanitized.trim()).replaceAll(" ");
+        sanitized = sanitized.replace(" .", ".").replace(" :", ":").trim();
+
+        if (sanitized.endsWith(":")) {
+            sanitized = sanitized.substring(0, sanitized.length() - 1).trim();
+        }
+
+        return sanitized;
+    }
+
+    private String sanitizeProvider(String provider) {
+        if (provider == null || provider.isBlank()) {
+            return provider;
+        }
+
+        return "roadmap.sh".equalsIgnoreCase(provider.trim())
+                ? null
+                : provider;
+    }
+*/
 }
