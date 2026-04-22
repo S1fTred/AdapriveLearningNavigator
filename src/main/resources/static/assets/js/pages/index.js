@@ -6,7 +6,7 @@ const authSlot = document.querySelector("[data-header-auth]");
 
 if (hasSession()) {
     if (ctaPrimary) {
-        ctaPrimary.textContent = "Открыть кабинет";
+        ctaPrimary.textContent = "Открыть каталог направлений";
         ctaPrimary.setAttribute("href", "/dashboard");
     }
     if (ctaSecondary) {
