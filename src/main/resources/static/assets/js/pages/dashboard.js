@@ -21,6 +21,19 @@ import {
     showStatus
 } from "/assets/js/core/ui.js";
 
+const CATALOG_CATEGORIES = [
+    {
+        id: "ROLE_BASED",
+        title: "Направления на основе ролей",
+        subtitle: "Профессии и карьерные треки"
+    },
+    {
+        id: "SKILL_BASED",
+        title: "Направления на основе навыков",
+        subtitle: "Технологии, языки и отдельные навыки"
+    }
+];
+
 if (requireAuth()) {
     initPrivateShell("dashboard");
 
@@ -42,6 +55,7 @@ if (requireAuth()) {
         planItems: [],
         selectedRoadmap: null,
         searchQuery: "",
+        activeCatalogCategory: "ROLE_BASED",
         knownTopicIds: new Set()
     };
 
@@ -101,7 +115,7 @@ if (requireAuth()) {
             renderEmptyState(
                 roadmapsContainer,
                 "Каталог пока пуст",
-                "В базе знаний пока нет опубликованных roadmap'ов."
+                "В базе знаний пока нет опубликованных roadmap."
             );
             renderEmptyState(
                 roadmapSummary,
@@ -131,6 +145,7 @@ if (requireAuth()) {
         const draft = getPlanDraft();
 
         state.selectedRoadmap = roadmap;
+        state.activeCatalogCategory = roadmap.category || state.activeCatalogCategory;
         state.knownTopicIds = new Set(
             (draft.roleId === roadmapId ? draft.knownTopicIds : [])
                 .filter((topicId) => roadmap.topics.some((topic) => topic.topicId === topicId))
@@ -169,33 +184,31 @@ if (requireAuth()) {
             return;
         }
 
+        const groupedItems = groupRoadmapsByCategory(items);
+        const activeItems = groupedItems[state.activeCatalogCategory] || [];
+
         roadmapsContainer.innerHTML = `
-            <div class="roadmap-catalog">
-                ${items.map((roadmap) => {
-                    const isActive = roadmap.id === state.selectedRoadmap?.id;
-                    return `
-                        <article class="card roadmap-catalog-card ${isActive ? "is-selected" : ""}">
-                            <div>
-                                <p class="eyebrow">${escapeHtml(roadmap.code || "roadmap")}</p>
-                                <h4>${escapeHtml(roadmap.name)}</h4>
-                                <p>${escapeHtml(roadmap.description || "Roadmap без описания.")}</p>
-                            </div>
-                            <div class="pill-row roadmap-card-pills">
-                                <span class="badge">${roadmap.topicCount} тем</span>
-                                <span class="badge badge-dark">${roadmap.requiredTopicCount} обязательных</span>
-                                <span class="badge badge-success">${escapeHtml(formatHours(roadmap.totalEstimatedHours))}</span>
-                            </div>
-                            <div class="list-actions roadmap-card-actions">
-                                <button class="button ${isActive ? "button-primary" : "button-secondary"}" data-select-roadmap="${roadmap.id}">
-                                    ${isActive ? "Выбрано" : "Выбрать"}
-                                </button>
-                                <a class="button button-ghost" href="/roadmap?roadmapId=${roadmap.id}">Открыть</a>
-                            </div>
-                        </article>
-                    `;
-                }).join("")}
+            <div class="roadmap-catalog-tabs" role="tablist" aria-label="Категории roadmap">
+                ${CATALOG_CATEGORIES.map((category) => renderCatalogTab(
+                    category,
+                    groupedItems[category.id]?.length || 0
+                )).join("")}
+            </div>
+            <div class="roadmap-catalog-tab-panel" role="tabpanel">
+                ${activeItems.length ? `
+                    <div class="roadmap-catalog">
+                        ${activeItems.map(renderRoadmapCard).join("")}
+                    </div>
+                ` : renderCatalogEmptyState()}
             </div>
         `;
+
+        roadmapsContainer.querySelectorAll("[data-roadmap-category]").forEach((button) => {
+            button.addEventListener("click", () => {
+                state.activeCatalogCategory = button.dataset.roadmapCategory;
+                renderRoadmapCatalog();
+            });
+        });
 
         roadmapsContainer.querySelectorAll("[data-select-roadmap]").forEach((button) => {
             button.addEventListener("click", async () => {
@@ -203,6 +216,69 @@ if (requireAuth()) {
                 await selectRoadmap(roadmapId);
             });
         });
+    }
+
+    function groupRoadmapsByCategory(items) {
+        return items.reduce((groups, roadmap) => {
+            const category = roadmap.category === "ROLE_BASED" ? "ROLE_BASED" : "SKILL_BASED";
+            groups[category].push(roadmap);
+            return groups;
+        }, {
+            ROLE_BASED: [],
+            SKILL_BASED: []
+        });
+    }
+
+    function renderCatalogTab(category, count) {
+        const isActive = state.activeCatalogCategory === category.id;
+        return `
+            <button
+                class="roadmap-catalog-tab ${isActive ? "is-active" : ""}"
+                type="button"
+                role="tab"
+                aria-selected="${isActive}"
+                data-roadmap-category="${category.id}"
+            >
+                <span>
+                    <strong>${escapeHtml(category.title)}</strong>
+                    <small>${escapeHtml(category.subtitle)}</small>
+                </span>
+                <b>${count}</b>
+            </button>
+        `;
+    }
+
+    function renderCatalogEmptyState() {
+        return `
+            <div class="empty-state">
+                <h3>В этой вкладке ничего не найдено</h3>
+                <p>Попробуйте изменить поисковый запрос или переключить вкладку.</p>
+            </div>
+        `;
+    }
+
+    function renderRoadmapCard(roadmap) {
+        const isActive = roadmap.id === state.selectedRoadmap?.id;
+        return `
+            <article class="card roadmap-catalog-card ${isActive ? "is-selected" : ""}">
+                <div>
+                    <p class="eyebrow">Roadmap</p>
+                    <h4>${escapeHtml(roadmap.name)}</h4>
+                    <p>${escapeHtml(roadmap.description || "Roadmap без описания.")}</p>
+                </div>
+                <div class="pill-row roadmap-card-pills">
+                    <span class="badge">${roadmap.topicCount} тем</span>
+                    <span class="badge badge-dark">${roadmap.requiredTopicCount} обязательных</span>
+                    <span class="badge badge-success">${escapeHtml(formatHours(roadmap.totalEstimatedHours))}</span>
+                </div>
+                <div class="list-actions roadmap-card-actions">
+                    <button class="button ${isActive ? "button-primary" : "button-secondary"}" type="button" data-select-roadmap="${roadmap.id}">
+                        ${isActive ? "Выбрано" : "Выбрать"}
+                    </button>
+                    <a class="button button-ghost" href="/roadmap?roadmapId=${roadmap.id}">Открыть</a>
+                </div>
+            </article>
+        `;
     }
 
     function renderSelectedRoadmap() {
@@ -245,7 +321,7 @@ if (requireAuth()) {
                     >
                     <span>
                         <strong>${escapeHtml(topic.topicTitle)}</strong>
-                        <small>${escapeHtml(topic.topicCode)} · ${escapeHtml(formatHours(topic.estimatedHours))}</small>
+                        <small>${escapeHtml(formatHours(topic.estimatedHours))}</small>
                     </span>
                 </label>
             `).join("")}
@@ -282,7 +358,7 @@ if (requireAuth()) {
                 ${items.map((plan) => `
                     <article class="list-item">
                         <div>
-                            <h4>${escapeHtml(plan.roleName || plan.roleCode || "План обучения")}</h4>
+                            <h4>${escapeHtml(plan.roleName || "План обучения")}</h4>
                             <p>Создан: ${escapeHtml(formatDate(plan.createdAt))}</p>
                             <div class="pill-row roadmap-card-pills">
                                 <span class="badge">${escapeHtml(plan.scenarioType || "BASE")}</span>
@@ -337,27 +413,27 @@ if (requireAuth()) {
         spotlightContainer.innerHTML = `
             <div class="card panel-card plan-highlight">
                 <p class="eyebrow">Последний план по направлению</p>
-                <h3>${escapeHtml(plan.roleName || plan.roleCode || "Личный weekly plan")}</h3>
+                <h3>${escapeHtml(plan.roleName || "Личный weekly plan")}</h3>
                 <p>Snapshot построен ${escapeHtml(formatDate(plan.createdAt))}. Лимит: ${escapeHtml(String(plan.params?.hoursPerWeek || "—"))} ч/нед.</p>
                 <div class="metric-grid panel-top-gap">
                     <article class="metric-card card">
-                        <p>Недель</p>
+                        <p>Недели</p>
                         <strong>${summary.weekCount}</strong>
                         <p>Сколько недель получилось после раскладки roadmap.</p>
                     </article>
                     <article class="metric-card card">
-                        <p>Тем</p>
+                        <p>Темы</p>
                         <strong>${summary.stepCount}</strong>
                         <p>Шагов в личном плане.</p>
                     </article>
                     <article class="metric-card card">
-                        <p>Часов</p>
+                        <p>Часы</p>
                         <strong>${summary.totalHours}</strong>
                         <p>Суммарный объём маршрута.</p>
                     </article>
                     <article class="metric-card card metric-card-compact">
                         <p>Roadmap</p>
-                        <strong class="metric-card-code">${escapeHtml(plan.roleCode || "—")}</strong>
+                        <strong>${escapeHtml(plan.roleName || "Выбранное направление")}</strong>
                         <p>Основа построения weekly plan.</p>
                     </article>
                 </div>
@@ -365,7 +441,7 @@ if (requireAuth()) {
                     ${nextSteps.length ? nextSteps.map((step) => `
                         <article class="list-item plan-highlight-step">
                             <div class="list-item-copy">
-                                <h4>${escapeHtml(step.topicTitle || step.topicCode || `Тема ${step.topicId}`)}</h4>
+                                <h4>${escapeHtml(step.topicTitle || "Тема без названия")}</h4>
                                 <p>Неделя ${step.weekIndex}, ${escapeHtml(formatHours(step.plannedHours))}</p>
                             </div>
                             <span class="badge badge-dark plan-highlight-badge">${escapeHtml(formatRuleLabel(step.explanation?.ruleApplied || "ROADMAP"))}</span>

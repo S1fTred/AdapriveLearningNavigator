@@ -10,6 +10,8 @@ public record RoadmapDetailResponse(
         Long id,
         String code,
         String name,
+        String category,
+        String categoryLabel,
         String description,
         int topicCount,
         int requiredTopicCount,

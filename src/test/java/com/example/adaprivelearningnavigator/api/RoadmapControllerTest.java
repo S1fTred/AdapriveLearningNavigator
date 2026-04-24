@@ -62,6 +62,8 @@ class RoadmapControllerTest {
                                 .id(9201L)
                                 .code("java-backend")
                                 .name("Java Backend Developer")
+                                .category("ROLE_BASED")
+                                .categoryLabel("Направления по ролям")
                                 .topicCount(8)
                                 .requiredTopicCount(6)
                                 .build()))
@@ -74,6 +76,7 @@ class RoadmapControllerTest {
                         .principal(authentication()))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.items[0].code").value("java-backend"))
+                .andExpect(jsonPath("$.items[0].category").value("ROLE_BASED"))
                 .andExpect(jsonPath("$.items[0].topicCount").value(8));
     }
 
@@ -84,6 +87,8 @@ class RoadmapControllerTest {
                         .id(9201L)
                         .code("java-backend")
                         .name("Java Backend Developer")
+                        .category("ROLE_BASED")
+                        .categoryLabel("Направления по ролям")
                         .topics(List.of())
                         .build());
 

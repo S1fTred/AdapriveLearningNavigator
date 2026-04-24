@@ -377,13 +377,6 @@ img {
     line-height: 1.15;
 }
 
-.metric-card-code {
-    overflow-wrap: anywhere;
-    word-break: break-word;
-    hyphens: auto;
-    max-width: 100%;
-}
-
 .panel-card-copy {
     display: flex;
     flex-direction: column;
@@ -1055,6 +1048,111 @@ img {
     margin-top: 18px;
 }
 
+.roadmap-catalog-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    padding: 8px;
+    border-radius: 24px;
+    background: rgba(50, 98, 115, 0.08);
+    border: 1px solid rgba(50, 98, 115, 0.1);
+    margin-bottom: 16px;
+}
+
+.roadmap-catalog-tab {
+    appearance: none;
+    border: 0;
+    border-radius: 18px;
+    padding: 14px 16px;
+    background: transparent;
+    color: var(--color-muted);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    text-align: left;
+    font: inherit;
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.roadmap-catalog-tab:hover {
+    transform: translateY(-1px);
+    color: var(--color-text);
+}
+
+.roadmap-catalog-tab.is-active {
+    background: #ffffff;
+    color: var(--color-text);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.1);
+}
+
+.roadmap-catalog-tab span {
+    display: grid;
+    gap: 3px;
+}
+
+.roadmap-catalog-tab strong {
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.roadmap-catalog-tab small {
+    color: inherit;
+    font-size: 12px;
+    line-height: 1.35;
+    opacity: 0.72;
+}
+
+.roadmap-catalog-tab b {
+    min-width: 34px;
+    height: 34px;
+    display: inline-grid;
+    place-items: center;
+    border-radius: 999px;
+    background: rgba(92, 158, 173, 0.14);
+    color: var(--color-brand-dark);
+    font-size: 13px;
+}
+
+.roadmap-catalog-tab.is-active b {
+    background: var(--color-brand);
+    color: #ffffff;
+}
+
+.roadmap-catalog-tab-panel {
+    display: grid;
+    gap: 14px;
+}
+
+.roadmap-catalog-groups {
+    display: grid;
+    gap: 22px;
+}
+
+.roadmap-catalog-section {
+    display: grid;
+    gap: 12px;
+}
+
+.roadmap-catalog-section + .roadmap-catalog-section {
+    padding-top: 20px;
+    border-top: 1px solid rgba(50, 98, 115, 0.12);
+}
+
+.roadmap-catalog-section-header {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.roadmap-catalog-section-header h4 {
+    margin: 4px 0 0;
+    font-size: 20px;
+    font-family: var(--font-heading);
+}
+
 .roadmap-catalog {
     display: grid;
     gap: 14px;
@@ -1328,6 +1426,7 @@ img {
 
     .metric-grid,
     .auth-stats,
+    .roadmap-catalog-tabs,
     .form-row-inline {
         grid-template-columns: 1fr;
     }

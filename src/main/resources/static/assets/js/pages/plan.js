@@ -54,7 +54,7 @@ if (requireAuth()) {
                     <select class="select" id="plan-select">
                         ${(page.items || []).map((item) => `
                             <option value="${item.id}" ${item.id === activePlanId ? "selected" : ""}>
-                                ${escapeHtml(item.roleName || item.roleCode || `План ${item.id}`)} · ${escapeHtml(formatDate(item.createdAt))}
+                                ${escapeHtml(item.roleName || "План обучения")} · ${escapeHtml(formatDate(item.createdAt))}
                             </option>
                         `).join("")}
                     </select>
@@ -74,7 +74,7 @@ if (requireAuth()) {
             <section class="panel-grid">
                 <article class="card panel-card">
                     <p class="eyebrow">Недельный ритм</p>
-                    <h3>${escapeHtml(plan.roleName || plan.roleCode || "Недельный план")}</h3>
+                    <h3>${escapeHtml(plan.roleName || "Недельный план")}</h3>
                     <p>Лимит пользователя: ${escapeHtml(String(plan.params?.hoursPerWeek || "—"))} ч/нед</p>
                     <div class="pill-row panel-top-gap">
                         <span class="badge">${plan.weeks.length} недель</span>
@@ -117,7 +117,7 @@ if (requireAuth()) {
                                             <span class="badge">${escapeHtml(formatHours(step.plannedHours))}</span>
                                             <span class="badge badge-dark">${escapeHtml(formatRuleLabel(step.explanation?.ruleApplied || "ROADMAP"))}</span>
                                         </div>
-                                        <h4>${escapeHtml(step.topicTitle || step.topicCode || `Тема ${step.topicId}`)}</h4>
+                                        <h4>${escapeHtml(step.topicTitle || "Тема без названия")}</h4>
                                         <p>${escapeHtml(step.explanation?.topicPriorityReason || "Пояснение недоступно.")}</p>
                                         ${renderPrereqStatus(step)}
                                     </article>
@@ -140,11 +140,24 @@ if (requireAuth()) {
             <div class="topic-tags panel-top-gap">
                 ${prereqs.map((item) => `
                     <span class="topic-chip muted">
-                        prerequisite ${escapeHtml(String(item.prereqTopicId))}: ${escapeHtml(item.status)}
+                        Зависимость: ${escapeHtml(formatPrereqStatus(item.status))}
                     </span>
                 `).join("")}
             </div>
         `;
+    }
+
+    function formatPrereqStatus(status) {
+        switch (status) {
+            case "DONE":
+                return "уже знакома";
+            case "IN_PREVIOUS_STEPS":
+                return "будет изучена раньше";
+            case "MISSING":
+                return "нужно добавить в план";
+            default:
+                return "учтена в плане";
+        }
     }
 
     function handleError(error) {

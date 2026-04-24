@@ -107,7 +107,7 @@ if (requireAuth()) {
                     <select class="select" id="roadmap-select">
                         ${(page.items || []).map((item) => `
                             <option value="${item.id}" ${item.id === activeRoadmapId ? "selected" : ""}>
-                                ${escapeHtml(item.name)} · ${escapeHtml(item.code)}
+                                ${escapeHtml(item.name)}
                             </option>
                         `).join("")}
                     </select>
@@ -173,7 +173,6 @@ if (requireAuth()) {
                     return `
                         <button class="roadmap-topic-card ${isSelected ? "is-selected" : ""} ${isKnown ? "is-known" : ""}" type="button" data-topic-id="${topic.topicId}">
                             <div class="step-meta">
-                                <span class="badge badge-dark">${escapeHtml(topic.topicCode)}</span>
                                 <span class="badge">${escapeHtml(formatHours(topic.estimatedHours))}</span>
                             </div>
                             <h4>${escapeHtml(topic.topicTitle)}</h4>
@@ -183,7 +182,6 @@ if (requireAuth()) {
                                 ${topic.isCore ? `<span class="topic-chip">Core</span>` : ""}
                                 ${isKnown ? `<span class="topic-chip known">Уже знакома</span>` : ""}
                                 ${!isKnown && isPlanned ? `<span class="topic-chip">В текущем плане</span>` : ""}
-                                ${topic.prereqTopicCodes.map((code) => `<span class="topic-chip muted">${escapeHtml(code)}</span>`).join("")}
                             </div>
                         </button>
                     `;
@@ -222,7 +220,6 @@ if (requireAuth()) {
                 <h3>${escapeHtml(topic.topicTitle)}</h3>
                 <p>${escapeHtml(topic.description || "Подробное описание темы пока не заполнено.")}</p>
                 <div class="pill-row panel-top-gap">
-                    <span class="badge badge-dark">${escapeHtml(topic.topicCode)}</span>
                     <span class="badge">${escapeHtml(formatHours(topic.estimatedHours))}</span>
                     ${topic.isRequired ? `<span class="badge badge-success">Обязательная</span>` : `<span class="badge">Дополнительная</span>`}
                     ${isKnown ? `<span class="badge">Уже знакома</span>` : ""}
@@ -275,7 +272,7 @@ if (requireAuth()) {
                     <h4>AI Tutor для темы</h4>
                     <p>
                         Следующий этап развития продукта: topic-scoped AI Tutor будет работать из этой панели и
-                        отвечать в контексте выбранной темы, её prerequisite и ресурсов.
+                        отвечать в контексте выбранной темы, её зависимостей и ресурсов.
                     </p>
                     <div class="pill-row">
                         <span class="badge">${quizAvailable ? "Есть квиз" : "Квиз пока не заведён"}</span>
@@ -295,12 +292,12 @@ if (requireAuth()) {
             ` : ""}
 
             <div class="topic-detail-block">
-                <h4>Prerequisite</h4>
+                <h4>Что нужно знать перед темой</h4>
                 ${topic.prereqs.length ? `
                     <div class="topic-tags">
                         ${topic.prereqs.map((item) => `<span class="topic-chip">${escapeHtml(item.topicTitle)}</span>`).join("")}
                     </div>
-                ` : "<p>Эту тему можно брать без обязательных prerequisite.</p>"}
+                ` : "<p>Эту тему можно брать без обязательных предварительных знаний.</p>"}
             </div>
 
             <div class="topic-detail-block">

@@ -48,7 +48,7 @@ if (requireAuth()) {
             <section class="panel-grid">
                 <article class="card panel-card">
                     <p class="eyebrow">Локальный трекер</p>
-                    <h3>${escapeHtml(plan.roleName || plan.roleCode || "Прогресс по плану")}</h3>
+                    <h3>${escapeHtml(plan.roleName || "Прогресс по плану")}</h3>
                     <p>Это клиентский слой поверх текущего backend. Статусы ниже сохраняются локально в браузере, чтобы не терять фокус между сессиями.</p>
                 </article>
                 <article class="card panel-card">
@@ -65,7 +65,7 @@ if (requireAuth()) {
                 ${steps.map((step) => `
                     <article class="list-item">
                         <div>
-                            <h4>${escapeHtml(step.topicTitle || step.topicCode || `Тема ${step.topicId}`)}</h4>
+                            <h4>${escapeHtml(step.topicTitle || "Тема без названия")}</h4>
                             <p>Неделя ${step.weekIndex}. ${escapeHtml(step.explanation?.topicPriorityReason || "Причина выбора недоступна.")}</p>
                         </div>
                         <div class="form-row" style="min-width:200px;">
