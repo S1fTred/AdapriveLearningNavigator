@@ -311,8 +311,18 @@ if (requireAuth()) {
             return;
         }
 
+        const orderedTopics = [...state.selectedRoadmap.topics]
+            .sort((left, right) => {
+                const leftPriority = left.priority ?? Number.MAX_SAFE_INTEGER;
+                const rightPriority = right.priority ?? Number.MAX_SAFE_INTEGER;
+                if (leftPriority !== rightPriority) {
+                    return leftPriority - rightPriority;
+                }
+                return left.topicId - right.topicId;
+            });
+
         knownTopicsPicker.innerHTML = `
-            ${state.selectedRoadmap.topics.map((topic) => `
+            ${orderedTopics.map((topic, index) => `
                 <label class="topic-check-item">
                     <input
                         type="checkbox"
@@ -320,8 +330,9 @@ if (requireAuth()) {
                         ${state.knownTopicIds.has(topic.topicId) ? "checked" : ""}
                     >
                     <span>
+                        <small class="topic-check-item-order">Шаг ${topic.priority ?? index + 1}</small>
                         <strong>${escapeHtml(topic.topicTitle)}</strong>
-                        <small>${escapeHtml(formatHours(topic.estimatedHours))}</small>
+                        <small class="topic-check-item-hours">${escapeHtml(formatHours(topic.estimatedHours))}</small>
                     </span>
                 </label>
             `).join("")}
