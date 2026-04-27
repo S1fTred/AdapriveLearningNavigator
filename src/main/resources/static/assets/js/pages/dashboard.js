@@ -46,6 +46,7 @@ if (requireAuth()) {
     const knownTopicsPicker = document.querySelector("#known-topics-picker");
     const buildForm = document.querySelector("#build-roadmap-plan-form");
     const submitButton = document.querySelector("#build-plan-submit");
+    const planBuilderPanel = document.querySelector("[data-dashboard-plan-panel]");
     const plansContainer = document.querySelector("#plans-list");
     const spotlightContainer = document.querySelector("#plan-spotlight");
     const hoursPerWeekField = document.querySelector("#hoursPerWeek");
@@ -159,6 +160,7 @@ if (requireAuth()) {
         renderRoadmapCatalog();
         renderKnownTopics();
         await renderSpotlightForSelectedRoadmap();
+        focusPlanBuilderPanel();
     }
 
     function renderRoadmapCatalog() {
@@ -260,11 +262,11 @@ if (requireAuth()) {
     function renderRoadmapCard(roadmap) {
         const isActive = roadmap.id === state.selectedRoadmap?.id;
         return `
-            <article class="card roadmap-catalog-card ${isActive ? "is-selected" : ""}">
-                <div>
+            <article class="card roadmap-catalog-card ${isActive ? "is-selected" : ""}" data-roadmap-card-id="${roadmap.id}">
+                <div class="roadmap-card-header">
                     <p class="eyebrow">Roadmap</p>
                     <h4>${escapeHtml(roadmap.name)}</h4>
-                    <p>${escapeHtml(roadmap.description || "Roadmap без описания.")}</p>
+                    <p class="roadmap-card-description">${escapeHtml(roadmap.description || "Roadmap без описания.")}</p>
                 </div>
                 <div class="pill-row roadmap-card-pills">
                     <span class="badge">${roadmap.topicCount} тем</span>
@@ -477,6 +479,16 @@ if (requireAuth()) {
         const draft = getPlanDraft();
         if (hoursPerWeekField) {
             hoursPerWeekField.value = draft.hoursPerWeek || 10;
+        }
+    }
+
+    function focusPlanBuilderPanel() {
+        if (!planBuilderPanel) {
+            return;
+        }
+
+        if (window.matchMedia("(max-width: 1080px)").matches) {
+            planBuilderPanel.scrollIntoView({ behavior: "smooth", block: "start" });
         }
     }
 

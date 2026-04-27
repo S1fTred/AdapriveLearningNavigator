@@ -1275,6 +1275,22 @@ img {
 .roadmap-catalog-tab-panel {
     display: grid;
     gap: 14px;
+    max-height: min(68vh, 980px);
+    overflow: auto;
+    padding-right: 6px;
+}
+
+.roadmap-catalog-tab-panel::-webkit-scrollbar {
+    width: 8px;
+}
+
+.roadmap-catalog-tab-panel::-webkit-scrollbar-thumb {
+    background: rgba(50, 98, 115, 0.24);
+    border-radius: 999px;
+}
+
+.roadmap-catalog-tab-panel::-webkit-scrollbar-track {
+    background: rgba(50, 98, 115, 0.06);
 }
 
 .roadmap-catalog-groups {
@@ -1307,21 +1323,27 @@ img {
 
 .roadmap-catalog {
     display: grid;
-    gap: 14px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
 }
 
 .roadmap-catalog-card {
-    padding: 22px;
+    padding: 18px;
     display: grid;
-    gap: 14px;
+    gap: 12px;
     transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.roadmap-card-header {
+    display: grid;
+    gap: 6px;
 }
 
 .roadmap-catalog-card h4,
 .selection-card-inner h4,
 .topic-detail-card h4 {
     margin: 0;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .roadmap-catalog-card p,
@@ -1345,6 +1367,33 @@ img {
 .roadmap-card-pills,
 .roadmap-card-actions {
     margin-top: 2px;
+}
+
+.roadmap-card-description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    min-height: 44px;
+}
+
+.roadmap-card-actions .button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.dashboard-builder-grid {
+    align-items: start;
+}
+
+.dashboard-catalog-panel {
+    min-height: 0;
+}
+
+.dashboard-plan-panel {
+    position: sticky;
+    top: 24px;
+    align-self: start;
 }
 
 .selection-card {
@@ -1679,6 +1728,20 @@ img {
     .form-row-inline,
     .topic-checklist {
         grid-template-columns: 1fr;
+    }
+
+    .roadmap-catalog {
+        grid-template-columns: 1fr;
+    }
+
+    .roadmap-catalog-tab-panel {
+        max-height: none;
+        overflow: visible;
+        padding-right: 0;
+    }
+
+    .dashboard-plan-panel {
+        position: static;
     }
 
     .topic-checklist {
