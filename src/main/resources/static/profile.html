@@ -21,7 +21,6 @@
 
         <nav class="sidebar-nav">
             <a class="sidebar-link" data-nav="dashboard" data-short="Кат." href="/dashboard"><span>Каталог</span></a>
-            <a class="sidebar-link" data-nav="roadmap" data-short="Карта" href="/roadmap"><span>Карта направлений</span></a>
             <a class="sidebar-link" data-nav="plan" data-short="План" href="/plan"><span>План</span></a>
             <a class="sidebar-link" data-nav="progress" data-short="Прогр." href="/progress"><span>Прогресс</span></a>
             <a class="sidebar-link" data-nav="profile" data-short="Проф." href="/profile"><span>Профиль</span></a>
@@ -39,12 +38,13 @@
     <div class="app-main">
         <header class="app-topbar">
             <div>
-                <h1>Профиль и предпочтения</h1>
+                <h1>Профиль и история работы</h1>
             </div>
         </header>
 
         <main class="app-content">
             <section id="profile-info"></section>
+
             <section class="panel-grid">
                 <article class="card panel-card">
                     <p class="eyebrow">Настройки</p>
@@ -77,35 +77,42 @@
                         </div>
                         <div class="form-actions">
                             <button class="button button-primary" type="submit">Сохранить локально</button>
-                            <a class="button button-secondary" href="/dashboard">К кабинету</a>
+                            <a class="button button-secondary" href="/dashboard">К каталогу</a>
                         </div>
                     </form>
                 </article>
 
                 <article class="card panel-card">
-                    <p class="eyebrow">Статус</p>
-                    <h3>Что уже работает</h3>
-                    <div class="list panel-top-gap">
-                        <article class="list-item">
-                            <div>
-                                <h4>Регистрация и вход</h4>
-                                <p>Фронт уже использует реальные JWT access/refresh endpoint’ы backend.</p>
-                            </div>
-                        </article>
-                        <article class="list-item">
-                            <div>
-                                <h4>Roadmap-first flow</h4>
-                                <p>Пользователь выбирает направление, открывает roadmap и строит weekly plan из базы знаний.</p>
-                            </div>
-                        </article>
-                        <article class="list-item">
-                            <div>
-                                <h4>Локальные настройки</h4>
-                                <p>До появления серверного профиля используется локальная конфигурация браузера.</p>
-                            </div>
-                        </article>
-                    </div>
+                    <p class="eyebrow">Мои планы</p>
+                    <h3>Сохранённые weekly plan</h3>
+                    <p>Здесь собраны последние построенные планы по направлениям.</p>
+                    <div id="profile-plans" class="panel-top-gap"></div>
                 </article>
+            </section>
+
+            <section class="card panel-card">
+                <p class="eyebrow">Статус</p>
+                <h3>Что уже работает</h3>
+                <div class="list panel-top-gap">
+                    <article class="list-item">
+                        <div>
+                            <h4>Регистрация и вход</h4>
+                            <p>Фронт уже использует реальные JWT access/refresh endpoint'ы backend.</p>
+                        </div>
+                    </article>
+                    <article class="list-item">
+                        <div>
+                            <h4>Единый каталог roadmap</h4>
+                            <p>Выбор направления, просмотр roadmap и сборка weekly plan теперь собраны в одном основном разделе.</p>
+                        </div>
+                    </article>
+                    <article class="list-item">
+                        <div>
+                            <h4>Локальные настройки</h4>
+                            <p>До появления серверного профиля используется локальная конфигурация браузера.</p>
+                        </div>
+                    </article>
+                </div>
             </section>
         </main>
     </div>

@@ -10,8 +10,8 @@ if (hasSession()) {
         ctaPrimary.setAttribute("href", "/dashboard");
     }
     if (ctaSecondary) {
-        ctaSecondary.textContent = "Перейти к roadmap";
-        ctaSecondary.setAttribute("href", "/roadmap");
+        ctaSecondary.textContent = "Открыть каталог";
+        ctaSecondary.setAttribute("href", "/dashboard");
     }
     if (authSlot) {
         authSlot.innerHTML = `

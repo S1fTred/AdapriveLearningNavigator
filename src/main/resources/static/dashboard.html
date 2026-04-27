@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кабинет | Adaptive Learning Navigator</title>
+    <title>Каталог | Adaptive Learning Navigator</title>
     <link rel="stylesheet" href="/assets/css/app.css">
 </head>
 <body>
@@ -22,9 +22,6 @@
         <nav class="sidebar-nav">
             <a class="sidebar-link" data-nav="dashboard" data-short="Кат." href="/dashboard">
                 <span>Каталог</span>
-            </a>
-            <a class="sidebar-link" data-nav="roadmap" data-short="Карта" href="/roadmap">
-                <span>Карта направлений</span>
             </a>
             <a class="sidebar-link" data-nav="plan" data-short="План" href="/plan">
                 <span>План</span>
@@ -49,15 +46,15 @@
     <div class="app-main">
         <header class="app-topbar">
             <div>
-                <h1>Каталог roadmap’ов</h1>
+                <h1>Каталог направлений</h1>
                 <p>
-                    Выберите направление из базы знаний, отметьте уже знакомые темы и соберите
-                    персональный недельный план.
+                    Выберите направление из базы знаний, сразу посмотрите его roadmap и здесь же
+                    соберите персональный weekly plan под свой темп.
                 </p>
             </div>
         </header>
 
-        <main class="app-content">
+        <main class="app-content roadmap-content">
             <div id="dashboard-status" class="status-box"></div>
 
             <section class="panel-grid panel-grid-top-aligned dashboard-builder-grid">
@@ -73,8 +70,8 @@
                 <article class="card panel-card dashboard-plan-panel" data-dashboard-plan-panel>
                     <h3>Персональный план</h3>
                     <p>
-                        Сервис исключит уже знакомые темы и разложит оставшийся маршрут по неделям
-                        под ваш лимит часов.
+                        Сервис исключит уже знакомые темы, покажет структуру направления и разложит
+                        оставшийся маршрут по неделям под ваш лимит часов.
                     </p>
 
                     <form id="build-roadmap-plan-form" class="form-grid panel-top-gap">
@@ -94,20 +91,20 @@
 
                         <div class="form-actions">
                             <button class="button button-primary" id="build-plan-submit" type="submit">Построить недельный план</button>
-                            <a class="button button-secondary" id="selected-roadmap-link" href="/roadmap">Открыть roadmap</a>
+                            <a class="button button-secondary" id="selected-roadmap-link" href="#catalog-roadmap">К карте направления</a>
                         </div>
                     </form>
                 </article>
             </section>
 
-            <section class="panel-grid">
-                <article class="card panel-card">
-                    <h3>Сохранённые планы</h3>
-                    <div id="plans-list" class="panel-top-gap"></div>
-                </article>
+            <section id="roadmap-meta"></section>
 
-                <article id="plan-spotlight"></article>
+            <section id="catalog-roadmap" class="roadmap-board">
+                <div id="roadmap-flow"></div>
+                <aside id="roadmap-topic-panel"></aside>
             </section>
+
+            <section id="plan-spotlight"></section>
         </main>
     </div>
 </div>

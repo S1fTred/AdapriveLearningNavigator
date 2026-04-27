@@ -89,7 +89,7 @@ if (requireAuth()) {
                     <p class="eyebrow">Действия</p>
                     <h3>Переключение режимов</h3>
                     <div class="form-actions panel-top-gap">
-                        <a class="button button-primary" href="/roadmap?roadmapId=${plan.roleId}&planId=${plan.id}">Открыть roadmap</a>
+                        <a class="button button-primary" href="/dashboard?roadmapId=${plan.roleId}&planId=${plan.id}#catalog-roadmap">Открыть в каталоге</a>
                         <a class="button button-secondary" href="/dashboard">Вернуться в кабинет</a>
                     </div>
                 </article>
