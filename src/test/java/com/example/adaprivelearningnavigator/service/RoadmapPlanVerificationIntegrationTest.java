@@ -93,31 +93,33 @@ class RoadmapPlanVerificationIntegrationTest {
         RoleGoal role = getActiveRole("java-backend");
         List<RoleTopic> roleTopics = roleTopicRepository.findAllByRole_IdOrderByPriorityAsc(role.getId());
 
-        int minSupportedBudget = safeWeeklyBudget(roleTopics);
-        int largerBudget = minSupportedBudget + 4;
+        int compactBudget = Math.max(1, maxTopicHours(roleTopics) - 1);
+        int largerBudget = compactBudget + 4;
 
         PlanFullResponse compactPlan = planService.buildPlanFromRoadmap(
                 user.getId(),
-                new PlanBuildRequest(role.getId(), minSupportedBudget, Set.of(), null)
+                new PlanBuildRequest(role.getId(), compactBudget, Set.of(), null)
         );
         PlanFullResponse relaxedPlan = planService.buildPlanFromRoadmap(
                 user.getId(),
                 new PlanBuildRequest(role.getId(), largerBudget, Set.of(), null)
         );
 
-        List<Long> compactTopicOrder = flattenSteps(compactPlan).stream()
+        List<Long> compactTopicOrder = collapseConsecutiveDuplicates(flattenSteps(compactPlan).stream()
                 .map(PlanStepResponse::topicId)
-                .toList();
-        List<Long> relaxedTopicOrder = flattenSteps(relaxedPlan).stream()
+                .toList());
+        List<Long> relaxedTopicOrder = collapseConsecutiveDuplicates(flattenSteps(relaxedPlan).stream()
                 .map(PlanStepResponse::topicId)
-                .toList();
+                .toList());
 
         assertEquals(relaxedTopicOrder, compactTopicOrder,
                 "Порядок тем не должен меняться при изменении недельного лимита");
         assertTrue(compactPlan.weeks().size() >= relaxedPlan.weeks().size(),
                 "При меньшем лимите часов количество недель не должно уменьшаться");
 
-        assertAllWeeksRespectBudget(compactPlan.weeks(), minSupportedBudget);
+        assertTrue(flattenSteps(compactPlan).size() > compactTopicOrder.size(),
+                "При малом недельном бюджете должно появляться дробление темы на несколько частей");
+        assertAllWeeksRespectBudget(compactPlan.weeks(), compactBudget);
         assertAllWeeksRespectBudget(relaxedPlan.weeks(), largerBudget);
     }
 
@@ -144,8 +146,7 @@ class RoadmapPlanVerificationIntegrationTest {
                     "Тема '%s' не принадлежит выбранному roadmap".formatted(step.topicCode()));
             assertFalse(knownTopicIds.contains(step.topicId()),
                     "Известная тема '%s' не должна попадать в weekly plan".formatted(step.topicCode()));
-            assertTrue(actualTopicIds.add(step.topicId()),
-                    "Тема '%s' не должна дублироваться в плане".formatted(step.topicCode()));
+            actualTopicIds.add(step.topicId());
             assertTrue(step.plannedHours().compareTo(BigDecimal.ZERO) > 0,
                     "У темы '%s' должны быть положительные часы".formatted(step.topicCode()));
 
@@ -186,14 +187,28 @@ class RoadmapPlanVerificationIntegrationTest {
     }
 
     private int safeWeeklyBudget(List<RoleTopic> roleTopics) {
-        int maxTopicHours = roleTopics.stream()
+        int maxTopicHours = maxTopicHours(roleTopics);
+
+        return Math.max(Math.min(maxTopicHours, 6), 4);
+    }
+
+    private int maxTopicHours(List<RoleTopic> roleTopics) {
+        return roleTopics.stream()
                 .map(RoleTopic::getTopic)
                 .map(topic -> topic.getEstimatedHours() != null ? topic.getEstimatedHours() : BigDecimal.ONE)
                 .map(hours -> hours.setScale(0, RoundingMode.CEILING).intValueExact())
                 .max(Integer::compareTo)
                 .orElse(1);
+    }
 
-        return Math.max(maxTopicHours, 8);
+    private List<Long> collapseConsecutiveDuplicates(List<Long> topicIds) {
+        List<Long> normalized = new java.util.ArrayList<>();
+        for (Long topicId : topicIds) {
+            if (normalized.isEmpty() || !normalized.get(normalized.size() - 1).equals(topicId)) {
+                normalized.add(topicId);
+            }
+        }
+        return normalized;
     }
 
     private RoleGoal getActiveRole(String code) {

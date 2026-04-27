@@ -214,7 +214,7 @@ public class PlanServiceImpl implements PlanService {
 
         Plan plan = savePlan(user, roleGoal);
         savePlanSnapshot(plan, request.hoursPerWeek());
-        savePlanWeeksAndSteps(plan, orderedTopics, request.hoursPerWeek(), knownTopicIds);
+        savePlanWeeksAndStepsWithTopicSplitting(plan, orderedTopics, request.hoursPerWeek(), knownTopicIds);
 
         log.info("AI-план сохранён: userId={}, planId={}, roleId={}", userId, plan.getId(), roleGoal.getId());
         return getPlan(userId, plan.getId());
@@ -256,7 +256,7 @@ public class PlanServiceImpl implements PlanService {
 
         Plan plan = savePlan(user, roleGoal);
         savePlanSnapshot(plan, request.hoursPerWeek());
-        savePlanWeeksAndSteps(plan, orderedTopics, request.hoursPerWeek(), knownTopicIds);
+        savePlanWeeksAndStepsWithTopicSplitting(plan, orderedTopics, request.hoursPerWeek(), knownTopicIds);
 
         log.info("Roadmap-план сохранён: userId={}, planId={}, roleId={}", userId, plan.getId(), roleGoal.getId());
         return getPlan(userId, plan.getId());
@@ -802,6 +802,64 @@ public class PlanServiceImpl implements PlanService {
 
             topicOrder.put(planningTopic.topic().getId(), globalIndex++);
             saveStepExplanation(step, planningTopic, knownTopicIds, topicOrder);
+        }
+
+        currentWeek.setHoursPlanned(currentWeekHours);
+        planWeekRepository.save(currentWeek);
+    }
+
+    private void savePlanWeeksAndStepsWithTopicSplitting(Plan plan,
+                                                         List<PlanningTopic> orderedTopics,
+                                                         Integer hoursPerWeek,
+                                                         Set<Long> knownTopicIds) {
+        BigDecimal weekBudget = BigDecimal.valueOf(hoursPerWeek);
+        BigDecimal currentWeekHours = BigDecimal.ZERO;
+        int weekIndex = 1;
+        int orderInWeek = 1;
+        PlanWeek currentWeek = createWeek(plan, weekIndex, weekBudget);
+        Map<Long, Integer> topicOrder = new HashMap<>();
+        int globalIndex = 0;
+
+        for (PlanningTopic planningTopic : orderedTopics) {
+            BigDecimal remainingTopicHours = planningTopic.plannedHours();
+
+            while (remainingTopicHours.compareTo(BigDecimal.ZERO) > 0) {
+                BigDecimal availableWeekHours = weekBudget.subtract(currentWeekHours);
+                if (availableWeekHours.compareTo(BigDecimal.ZERO) <= 0) {
+                    currentWeek.setHoursPlanned(currentWeekHours);
+                    planWeekRepository.save(currentWeek);
+                    weekIndex++;
+                    currentWeek = createWeek(plan, weekIndex, weekBudget);
+                    currentWeekHours = BigDecimal.ZERO;
+                    orderInWeek = 1;
+                    availableWeekHours = weekBudget;
+                }
+
+                BigDecimal allocatedHours = remainingTopicHours.min(availableWeekHours);
+                currentWeekHours = currentWeekHours.add(allocatedHours);
+
+                PlanStep step = planStepRepository.save(PlanStep.builder()
+                        .planWeek(currentWeek)
+                        .topic(planningTopic.topic())
+                        .orderInWeek(orderInWeek++)
+                        .plannedHours(allocatedHours)
+                        .optional(planningTopic.optional())
+                        .build());
+
+                topicOrder.put(planningTopic.topic().getId(), globalIndex++);
+                saveStepExplanation(step, planningTopic, knownTopicIds, topicOrder);
+                remainingTopicHours = remainingTopicHours.subtract(allocatedHours);
+
+                if (remainingTopicHours.compareTo(BigDecimal.ZERO) > 0
+                        && currentWeekHours.compareTo(weekBudget) >= 0) {
+                    currentWeek.setHoursPlanned(currentWeekHours);
+                    planWeekRepository.save(currentWeek);
+                    weekIndex++;
+                    currentWeek = createWeek(plan, weekIndex, weekBudget);
+                    currentWeekHours = BigDecimal.ZERO;
+                    orderInWeek = 1;
+                }
+            }
         }
 
         currentWeek.setHoursPlanned(currentWeekHours);

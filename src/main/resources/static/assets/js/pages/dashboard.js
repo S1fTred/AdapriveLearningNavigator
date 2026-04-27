@@ -11,11 +11,14 @@ import {
     setSelectedRoadmapId
 } from "/assets/js/core/session.js";
 import {
+    annotatePlanForDisplay,
     clearStatus,
     escapeHtml,
     flattenPlanSteps,
     formatDate,
     formatHours,
+    formatPlanStepContinuation,
+    formatPlanStepTitle,
     renderEmptyState,
     showStatus
 } from "/assets/js/core/ui.js";
@@ -420,7 +423,8 @@ if (requireAuth()) {
 
     function renderSpotlight(plan) {
         const summary = summarizePlan(plan);
-        const nextSteps = flattenPlanSteps(plan).slice(0, 3);
+        const displayPlan = annotatePlanForDisplay(plan);
+        const nextSteps = flattenPlanSteps(displayPlan).slice(0, 3);
 
         spotlightContainer.innerHTML = `
             <div class="card panel-card plan-highlight">
@@ -453,9 +457,11 @@ if (requireAuth()) {
                     ${nextSteps.length ? nextSteps.map((step) => `
                         <article class="list-item plan-highlight-step">
                             <div class="list-item-copy">
-                                <h4>${escapeHtml(step.topicTitle || "Тема без названия")}</h4>
+                                ${formatPlanStepContinuation(step) ? `<p class="step-part-caption">${escapeHtml(formatPlanStepContinuation(step))}</p>` : ""}
+                                <h4>${escapeHtml(formatPlanStepTitle(step))}</h4>
                                 <p>Неделя ${step.weekIndex}, ${escapeHtml(formatHours(step.plannedHours))}</p>
                             </div>
+                            ${step.partLabel ? `<span class="badge plan-highlight-badge">${escapeHtml(step.partLabel)}</span>` : ""}
                         </article>
                     `).join("") : `<p>В этом плане пока нет шагов для предпросмотра.</p>`}
                 </div>

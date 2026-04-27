@@ -65,6 +65,83 @@ export function flattenPlanSteps(plan) {
     );
 }
 
+export function annotatePlanForDisplay(plan) {
+    if (!plan?.weeks?.length) {
+        return {
+            ...(plan || {}),
+            weeks: []
+        };
+    }
+
+    const annotatedWeeks = (plan.weeks || []).map((week) => ({
+        ...week,
+        steps: (week.steps || []).map((step) => ({
+            ...step,
+            displayTitle: step.topicTitle || "Тема без названия",
+            partIndex: null,
+            partCount: 1,
+            partLabel: ""
+        }))
+    }));
+
+    let run = [];
+
+    const flushRun = () => {
+        if (!run.length) {
+            return;
+        }
+
+        const partCount = run.length;
+        run.forEach((step, index) => {
+            step.partCount = partCount;
+            if (partCount > 1) {
+                step.partIndex = index + 1;
+                step.partLabel = `Часть ${index + 1} из ${partCount}`;
+            }
+        });
+
+        run = [];
+    };
+
+    for (const week of annotatedWeeks) {
+        for (const step of week.steps) {
+            if (!run.length || run[run.length - 1].topicId === step.topicId) {
+                run.push(step);
+                continue;
+            }
+
+            flushRun();
+            run.push(step);
+        }
+    }
+
+    flushRun();
+
+    return {
+        ...plan,
+        weeks: annotatedWeeks
+    };
+}
+
+export function formatPlanStepTitle(step) {
+    return step?.displayTitle || step?.topicTitle || "Тема без названия";
+}
+
+export function formatPlanStepContinuation(step) {
+    const partIndex = Number(step?.partIndex || 0);
+    const partCount = Number(step?.partCount || 1);
+
+    if (partCount <= 1) {
+        return "";
+    }
+
+    if (partIndex <= 1) {
+        return "Старт темы";
+    }
+
+    return "Продолжение темы";
+}
+
 export function formatRuleLabel(rule) {
     switch (rule) {
         case "AI_LED_ROUTE_BACKEND_VALIDATED":

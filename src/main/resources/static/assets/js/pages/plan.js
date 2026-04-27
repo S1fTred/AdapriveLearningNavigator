@@ -4,9 +4,12 @@ import { resolveActivePlan } from "/assets/js/core/plans.js";
 import { initPrivateShell } from "/assets/js/core/shell.js";
 import { setSelectedPlanId } from "/assets/js/core/session.js";
 import {
+    annotatePlanForDisplay,
     escapeHtml,
     formatDate,
     formatHours,
+    formatPlanStepContinuation,
+    formatPlanStepTitle,
     formatRuleLabel,
     renderEmptyState,
     showStatus
@@ -70,14 +73,16 @@ if (requireAuth()) {
     }
 
     function renderSummary(plan) {
+        const displayPlan = annotatePlanForDisplay(plan);
+
         summaryContainer.innerHTML = `
             <section class="panel-grid">
                 <article class="card panel-card">
                     <p class="eyebrow">Недельный ритм</p>
-                    <h3>${escapeHtml(plan.roleName || "Недельный план")}</h3>
-                    <p>Лимит пользователя: ${escapeHtml(String(plan.params?.hoursPerWeek || "—"))} ч/нед</p>
+                    <h3>${escapeHtml(displayPlan.roleName || "Недельный план")}</h3>
+                    <p>Лимит пользователя: ${escapeHtml(String(displayPlan.params?.hoursPerWeek || "—"))} ч/нед</p>
                     <div class="pill-row panel-top-gap">
-                        <span class="badge">${plan.weeks.length} недель</span>
+                        <span class="badge">${displayPlan.weeks.length} недель</span>
                     </div>
                 </article>
                 <article class="card panel-card">
@@ -93,9 +98,11 @@ if (requireAuth()) {
     }
 
     function renderWeeks(plan) {
+        const displayPlan = annotatePlanForDisplay(plan);
+
         weeksContainer.innerHTML = `
             <div class="week-grid">
-                ${plan.weeks.map((week) => {
+                ${displayPlan.weeks.map((week) => {
                     const percent = Number(week.hoursBudget) > 0
                         ? Math.min(100, (Number(week.hoursPlanned) / Number(week.hoursBudget)) * 100)
                         : 0;
@@ -115,9 +122,11 @@ if (requireAuth()) {
                                     <article class="step-card">
                                         <div class="step-meta">
                                             <span class="badge">${escapeHtml(formatHours(step.plannedHours))}</span>
+                                            ${step.partLabel ? `<span class="badge">${escapeHtml(step.partLabel)}</span>` : ""}
                                             <span class="badge badge-dark">${escapeHtml(formatRuleLabel(step.explanation?.ruleApplied || "ROADMAP"))}</span>
                                         </div>
-                                        <h4>${escapeHtml(step.topicTitle || "Тема без названия")}</h4>
+                                        ${formatPlanStepContinuation(step) ? `<p class="step-part-caption">${escapeHtml(formatPlanStepContinuation(step))}</p>` : ""}
+                                        <h4>${escapeHtml(formatPlanStepTitle(step))}</h4>
                                         <p>${escapeHtml(step.explanation?.topicPriorityReason || "Пояснение недоступно.")}</p>
                                         ${renderPrereqStatus(step)}
                                     </article>

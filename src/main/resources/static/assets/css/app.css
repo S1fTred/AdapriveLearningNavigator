@@ -1152,6 +1152,14 @@ img {
     line-height: 1.6;
 }
 
+.step-part-caption {
+    margin: 0 0 6px;
+    color: var(--color-muted);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
 .week-card {
     display: grid;
     gap: 16px;

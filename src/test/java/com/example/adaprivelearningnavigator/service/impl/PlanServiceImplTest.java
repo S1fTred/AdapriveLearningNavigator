@@ -167,7 +167,7 @@ class PlanServiceImplTest {
     }
 
     @Test
-    void shouldFailWhenTopicDoesNotFitWeeklyBudget() {
+    void shouldSplitTopicAcrossWeeksWhenTopicExceedsWeeklyBudget() {
         User user = user(1L, "test@example.com");
         RoleGoal role = roleGoal(100L, "java-backend", "Java Backend Developer");
         Topic spring = topic(12L, "SPRING_BOOT", "Spring Boot");
@@ -193,9 +193,20 @@ class PlanServiceImplTest {
         doNothing().when(aiRouteValidationService).validateGeneratedRoute(aiResponse);
         when(aiRouteValidationService.resolveExistingTopic(any(AiGeneratedTopicDto.class))).thenReturn(spring);
 
-        PlanServiceImpl planService = spyPlanService(new ArrayList<>(), new ArrayList<>(), new PlanParamsSnapshot[1]);
+        List<PlanStep> savedSteps = new ArrayList<>();
+        PlanServiceImpl planService = spyPlanService(savedSteps, new ArrayList<>(), new PlanParamsSnapshot[1]);
 
-        assertThrows(PlanBuildException.class, () -> planService.generatePlanWithAi(1L, request));
+        planService.generatePlanWithAi(1L, request);
+
+        assertEquals(3, savedSteps.size());
+        assertEquals(
+                List.of(BigDecimal.valueOf(5), BigDecimal.valueOf(5), BigDecimal.valueOf(2)),
+                savedSteps.stream().map(PlanStep::getPlannedHours).toList()
+        );
+        assertEquals(
+                List.of(1, 1, 1),
+                savedSteps.stream().map(step -> step.getOrderInWeek()).toList()
+        );
     }
 
     @Test
@@ -435,8 +446,10 @@ class PlanServiceImplTest {
         planService.generatePlanWithAi(1L, request);
 
         verify(aiRouteGenerationService, times(1)).generateRoute(eq(request), anyList(), anyString());
-        assertEquals(List.of(basics.getId(), spring.getId()),
+        assertEquals(List.of(basics.getId(), spring.getId(), spring.getId()),
                 savedSteps.stream().map(step -> step.getTopic().getId()).toList());
+        assertEquals(List.of(BigDecimal.valueOf(6), BigDecimal.valueOf(4), BigDecimal.valueOf(4)),
+                savedSteps.stream().map(PlanStep::getPlannedHours).toList());
     }
 
     @Test

@@ -3,7 +3,15 @@ import { requireAuth } from "/assets/js/core/guard.js";
 import { resolveActivePlan } from "/assets/js/core/plans.js";
 import { initPrivateShell } from "/assets/js/core/shell.js";
 import { getProgressState, setSelectedPlanId, setTopicProgress } from "/assets/js/core/session.js";
-import { escapeHtml, flattenPlanSteps, renderEmptyState, showStatus } from "/assets/js/core/ui.js";
+import {
+    annotatePlanForDisplay,
+    escapeHtml,
+    flattenPlanSteps,
+    formatPlanStepContinuation,
+    formatPlanStepTitle,
+    renderEmptyState,
+    showStatus
+} from "/assets/js/core/ui.js";
 
 const STATUS_LABELS = {
     NOT_STARTED: "Не начато",
@@ -39,7 +47,8 @@ if (requireAuth()) {
     }
 
     function renderTracker(plan) {
-        const steps = flattenPlanSteps(plan);
+        const displayPlan = annotatePlanForDisplay(plan);
+        const steps = flattenPlanSteps(displayPlan);
         const progress = getProgressState(plan.id);
         const doneCount = steps.filter((step) => progress[String(step.topicId)] === "DONE").length;
         const percent = steps.length ? Math.round((doneCount / steps.length) * 100) : 0;
@@ -62,15 +71,16 @@ if (requireAuth()) {
 
         trackerContainer.innerHTML = `
             <div class="list">
-                ${steps.map((step) => `
+                ${steps.map((step, index) => `
                     <article class="list-item">
                         <div>
-                            <h4>${escapeHtml(step.topicTitle || "Тема без названия")}</h4>
+                            <h4>${escapeHtml(formatPlanStepTitle(step))}</h4>
+                            ${formatPlanStepContinuation(step) ? `<p class="step-part-caption">${escapeHtml(formatPlanStepContinuation(step))}</p>` : ""}
                             <p>Неделя ${step.weekIndex}. ${escapeHtml(step.explanation?.topicPriorityReason || "Причина выбора недоступна.")}</p>
                         </div>
                         <div class="form-row" style="min-width:200px;">
-                            <label class="field-label" for="progress-${step.topicId}">Статус</label>
-                            <select class="select" id="progress-${step.topicId}" data-progress-topic="${step.topicId}">
+                            <label class="field-label" for="progress-${step.topicId}-${index}">Статус</label>
+                            <select class="select" id="progress-${step.topicId}-${index}" data-progress-topic="${step.topicId}">
                                 ${Object.entries(STATUS_LABELS).map(([value, label]) => `
                                     <option value="${value}" ${(progress[String(step.topicId)] || "NOT_STARTED") === value ? "selected" : ""}>
                                         ${label}
