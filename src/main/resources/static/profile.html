@@ -9,19 +9,22 @@
 <body>
 <div class="app-shell">
     <aside class="app-sidebar">
-        <a class="brand" href="/dashboard">
-            <span class="brand-mark">ALN</span>
-            <span class="brand-copy">
-                <strong>Adaptive Learning Navigator</strong>    
-            </span>
-        </a>
+        <div class="sidebar-head">
+            <a class="brand" href="/dashboard">
+                <span class="brand-mark">ALN</span>
+                <span class="brand-copy">
+                    <strong>Adaptive Learning Navigator</strong>
+                </span>
+            </a>
+            <button class="sidebar-toggle" data-sidebar-toggle type="button" aria-expanded="true" aria-label="Свернуть боковую панель"><<</button>
+        </div>
 
         <nav class="sidebar-nav">
-            <a class="sidebar-link" data-nav="dashboard" href="/dashboard"><span>Каталог</span></a>
-            <a class="sidebar-link" data-nav="roadmap" href="/roadmap"><span>Карта направлений</span></a>
-            <a class="sidebar-link" data-nav="plan" href="/plan"><span>План</span></a>
-            <a class="sidebar-link" data-nav="progress" href="/progress"><span>Прогресс</span></a>
-            <a class="sidebar-link" data-nav="profile" href="/profile"><span>Профиль</span></a>
+            <a class="sidebar-link" data-nav="dashboard" data-short="Кат." href="/dashboard"><span>Каталог</span></a>
+            <a class="sidebar-link" data-nav="roadmap" data-short="Карта" href="/roadmap"><span>Карта направлений</span></a>
+            <a class="sidebar-link" data-nav="plan" data-short="План" href="/plan"><span>План</span></a>
+            <a class="sidebar-link" data-nav="progress" data-short="Прогр." href="/progress"><span>Прогресс</span></a>
+            <a class="sidebar-link" data-nav="profile" data-short="Проф." href="/profile"><span>Профиль</span></a>
         </nav>
 
         <div class="sidebar-footer">
