@@ -372,9 +372,16 @@ img {
     margin: 14px 0 12px;
 }
 
+.metric-card {
+    min-width: 0;
+}
+
 .metric-card-compact strong {
     font-size: 22px;
     line-height: 1.15;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    hyphens: auto;
 }
 
 .panel-card-copy {

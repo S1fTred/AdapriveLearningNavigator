@@ -16,7 +16,6 @@ import {
     flattenPlanSteps,
     formatDate,
     formatHours,
-    formatRuleLabel,
     renderEmptyState,
     showStatus
 } from "/assets/js/core/ui.js";
@@ -457,7 +456,6 @@ if (requireAuth()) {
                                 <h4>${escapeHtml(step.topicTitle || "Тема без названия")}</h4>
                                 <p>Неделя ${step.weekIndex}, ${escapeHtml(formatHours(step.plannedHours))}</p>
                             </div>
-                            <span class="badge badge-dark plan-highlight-badge">${escapeHtml(formatRuleLabel(step.explanation?.ruleApplied || "ROADMAP"))}</span>
                         </article>
                     `).join("") : `<p>В этом плане пока нет шагов для предпросмотра.</p>`}
                 </div>
