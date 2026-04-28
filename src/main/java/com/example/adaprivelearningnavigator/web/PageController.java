@@ -1,5 +1,6 @@
 package com.example.adaprivelearningnavigator.web;
 
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -42,7 +43,10 @@ public class PageController {
     }
 
     @GetMapping("/progress")
-    public String progress() {
-        return "forward:/progress.html";
+    public String progress(HttpServletRequest request) {
+        String query = request.getQueryString();
+        return query == null || query.isBlank()
+                ? "redirect:/plan"
+                : "redirect:/plan?" + query;
     }
 }

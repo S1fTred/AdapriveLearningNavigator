@@ -11,4 +11,6 @@ public interface PlanStepRepository extends JpaRepository<PlanStep, Long> {
     List<PlanStep> findAllByPlanWeek_Plan_IdOrderByPlanWeek_WeekIndexAscOrderInWeekAsc(Long planId);
 
     List<PlanStep> findAllByTopic_Id(Long topicId);
+
+    boolean existsByPlanWeek_Plan_IdAndTopic_Id(Long planId, Long topicId);
 }

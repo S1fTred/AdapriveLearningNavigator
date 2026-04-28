@@ -372,7 +372,6 @@ if (requireAuth()) {
 
         selectedPlanActions.innerHTML = `
             <a class="button button-secondary" href="/plan?planId=${state.activePlanId}">Открыть план</a>
-            <a class="button button-ghost" href="/progress?planId=${state.activePlanId}">Прогресс</a>
         `;
     }
 

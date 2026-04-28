@@ -8,8 +8,7 @@ const STORAGE_KEYS = {
     cachedPlans: "aln.cachedPlans",
     cachedRoadmaps: "aln.cachedRoadmaps",
     cachedRoadmapTopics: "aln.cachedRoadmapTopics",
-    planDraft: "aln.planDraft",
-    progressByPlan: "aln.progressByPlan"
+    planDraft: "aln.planDraft"
 };
 
 const STORAGE_VERSION = "2026-04-23-skill-topic-localization-v7";
@@ -193,17 +192,4 @@ export function getPlanDraft() {
         hoursPerWeek: 10,
         knownTopicIds: []
     });
-}
-
-export function getProgressState(planId) {
-    const state = readJson(STORAGE_KEYS.progressByPlan, {});
-    return state[String(planId)] || {};
-}
-
-export function setTopicProgress(planId, topicId, status) {
-    const current = readJson(STORAGE_KEYS.progressByPlan, {});
-    const key = String(planId);
-    current[key] = current[key] || {};
-    current[key][String(topicId)] = status;
-    writeJson(STORAGE_KEYS.progressByPlan, current);
 }

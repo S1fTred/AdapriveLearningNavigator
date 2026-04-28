@@ -187,6 +187,19 @@ export const plansApi = {
     }
 };
 
+export const progressApi = {
+    async list(planId) {
+        return apiRequest(`/api/plans/${planId}/progress`);
+    },
+
+    async update(planId, payload) {
+        return apiRequest(`/api/plans/${planId}/progress`, {
+            method: "PUT",
+            body: payload
+        });
+    }
+};
+
 export const roadmapsApi = {
     async list(page = 0, size = 24) {
         return apiRequest(`/api/roadmaps?page=${page}&size=${size}`);

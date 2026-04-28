@@ -1,6 +1,7 @@
 package com.example.adaprivelearningnavigator.web;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.mock.web.MockHttpServletRequest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -19,7 +20,15 @@ class PageControllerTest {
         assertEquals("forward:/roadmap.html", controller.roadmap());
         assertEquals("forward:/plan.html", controller.plan());
         assertEquals("forward:/profile.html", controller.profile());
-        assertEquals("forward:/progress.html", controller.progress());
+        assertEquals("redirect:/plan", controller.progress(new MockHttpServletRequest()));
+    }
+
+    @Test
+    void shouldRedirectProgressRouteWithQueryParams() {
+        MockHttpServletRequest request = new MockHttpServletRequest();
+        request.setQueryString("planId=42");
+
+        assertEquals("redirect:/plan?planId=42", controller.progress(request));
     }
 
     @Test
