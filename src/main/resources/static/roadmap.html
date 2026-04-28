@@ -45,12 +45,16 @@
         <main class="app-content roadmap-content">
             <div id="roadmap-status" class="status-box"></div>
             <section id="roadmap-meta"></section>
-            <section class="roadmap-board roadmap-page-board">
+            <section class="roadmap-board roadmap-page-board roadmap-canvas-board">
                 <div id="roadmap-flow"></div>
-                <aside id="roadmap-topic-panel"></aside>
             </section>
         </main>
     </div>
+</div>
+
+<div id="roadmap-topic-drawer" class="topic-drawer" aria-hidden="true">
+    <button class="topic-drawer-backdrop" type="button" data-topic-drawer-close aria-label="Закрыть детали темы"></button>
+    <aside id="roadmap-topic-panel" class="topic-drawer-panel" role="dialog" aria-modal="true" aria-labelledby="topic-drawer-title"></aside>
 </div>
 
 <script type="module" src="/assets/js/pages/roadmap.js"></script>
