@@ -14,6 +14,7 @@ if (requireAuth()) {
     const flowContainer = document.querySelector("#roadmap-flow");
     const topicPanel = document.querySelector("#roadmap-topic-panel");
     const backLink = document.querySelector("#roadmap-back-link");
+    const planLink = document.querySelector("#roadmap-plan-link");
 
     const state = {
         roadmap: null,
@@ -48,7 +49,7 @@ if (requireAuth()) {
         setSelectedRoadmapId(roadmap.id);
         hydrateKnownTopics(roadmap);
         await hydratePlanContext(roadmap.id, explicitPlanId);
-        updateBackLink();
+        updatePageLinks();
         renderMeta(roadmap);
         renderFlow(roadmap);
 
@@ -83,6 +84,9 @@ if (requireAuth()) {
             plan = await plansApi.get(explicitPlanId);
         } else {
             plan = await resolveActivePlan();
+            if (!plan || plan.roleId !== roleId) {
+                plan = await findLatestPlanForRoadmap(roleId);
+            }
         }
 
         if (!plan || plan.roleId !== roleId) {
@@ -123,8 +127,21 @@ if (requireAuth()) {
                     ${knownCount ? `<span class="badge">Уже знакомо: ${knownCount}</span>` : ""}
                     ${state.activePlanId ? `<span class="badge">Есть weekly plan</span>` : ""}
                 </div>
+                <div class="form-actions roadmap-summary-actions">
+                    ${state.activePlanId
+                        ? `<a class="button button-primary" href="/plan?planId=${state.activePlanId}">Открыть план</a>`
+                        : `<a class="button button-primary" href="/dashboard?roadmapId=${roadmap.id}">Собрать план</a>`}
+                    <a class="button button-secondary" href="/dashboard?roadmapId=${roadmap.id}${state.activePlanId ? `&planId=${state.activePlanId}` : ""}">К каталогу</a>
+                </div>
             </article>
         `;
+    }
+
+    async function findLatestPlanForRoadmap(roleId) {
+        const page = await plansApi.list(0, 50);
+        return (page.items || [])
+            .filter((plan) => plan.roleId === roleId)
+            .sort((left, right) => new Date(right.createdAt) - new Date(left.createdAt))[0] || null;
     }
 
     function calculateRemainingRoadmapHours(roadmap, knownTopicIds) {
@@ -322,8 +339,8 @@ if (requireAuth()) {
         `;
     }
 
-    function updateBackLink() {
-        if (!backLink || !state.roadmap) {
+    function updatePageLinks() {
+        if (!state.roadmap) {
             return;
         }
 
@@ -331,7 +348,20 @@ if (requireAuth()) {
         if (state.activePlanId != null) {
             query.set("planId", String(state.activePlanId));
         }
-        backLink.href = `/dashboard?${query.toString()}`;
+
+        if (backLink) {
+            backLink.href = `/dashboard?${query.toString()}`;
+        }
+
+        if (planLink) {
+            if (state.activePlanId != null) {
+                planLink.href = `/plan?planId=${state.activePlanId}`;
+                planLink.textContent = "Открыть план";
+            } else {
+                planLink.href = `/dashboard?roadmapId=${state.roadmap.id}`;
+                planLink.textContent = "Собрать план";
+            }
+        }
     }
 
     function syncRoadmapUrl() {
