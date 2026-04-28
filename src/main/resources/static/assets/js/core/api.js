@@ -138,6 +138,18 @@ export const authApi = {
     }
 };
 
+export const usersApi = {
+    async me() {
+        const response = await apiRequest("/api/users/me");
+        saveUserProfile({
+            email: response.email,
+            displayName: response.displayName,
+            createdAt: response.createdAt
+        });
+        return response;
+    }
+};
+
 export const plansApi = {
     async list(page = 0, size = 12) {
         return apiRequest(`/api/plans?page=${page}&size=${size}`);

@@ -1,4 +1,4 @@
-import { ApiError, plansApi } from "/assets/js/core/api.js";
+import { ApiError, plansApi, usersApi } from "/assets/js/core/api.js";
 import { requireAuth } from "/assets/js/core/guard.js";
 import { initPrivateShell } from "/assets/js/core/shell.js";
 import { getUserProfile } from "/assets/js/core/session.js";
@@ -7,14 +7,36 @@ import { escapeHtml, formatDate, renderEmptyState } from "/assets/js/core/ui.js"
 if (requireAuth()) {
     initPrivateShell("profile");
 
-    const profile = getUserProfile();
     const infoContainer = document.querySelector("#profile-info");
     const plansContainer = document.querySelector("#profile-plans");
 
-    renderInfo();
-    loadSavedPlans().catch((error) => renderPlansError(error));
+    loadProfilePage().catch((error) => renderProfileFallback(error));
 
-    function renderInfo() {
+    async function loadProfilePage() {
+        const [profile, plansPage] = await Promise.all([
+            usersApi.me(),
+            plansApi.list(0, 16)
+        ]);
+
+        const plans = plansPage.items || [];
+        renderInfo(profile, plans);
+        renderSavedPlans(plans);
+    }
+
+    function renderProfileFallback(error) {
+        const localProfile = getUserProfile();
+        renderInfo(localProfile, []);
+        renderPlansError(error);
+    }
+
+    function renderInfo(profile, plans) {
+        const createdAt = profile.createdAt ? formatDate(profile.createdAt) : "Дата пока не указана";
+        const plansCount = plans.length;
+        const lastPlan = plans[0];
+        const lastPlanText = lastPlan
+            ? `${lastPlan.roleName || "План обучения"} · ${formatDate(lastPlan.createdAt)}`
+            : "Пока нет сохранённых планов";
+
         infoContainer.innerHTML = `
             <div class="tile-grid">
                 <article class="card status-card">
@@ -23,18 +45,20 @@ if (requireAuth()) {
                     <p>${escapeHtml(profile.email || "Email не указан")}</p>
                 </article>
                 <article class="card status-card">
-                    <p class="eyebrow">Мои планы</p>
-                    <h3>История</h3>
-                    <p>Сохранённые недельные планы доступны ниже на этой странице.</p>
+                    <p class="eyebrow">Дата регистрации</p>
+                    <h3>${escapeHtml(createdAt)}</h3>
+                    <p>С этого момента профиль хранит вашу историю планов.</p>
+                </article>
+                <article class="card status-card">
+                    <p class="eyebrow">Сохранённые планы</p>
+                    <h3>${plansCount}</h3>
+                    <p>${escapeHtml(lastPlanText)}</p>
                 </article>
             </div>
         `;
     }
 
-    async function loadSavedPlans() {
-        const page = await plansApi.list(0, 16);
-        const items = page.items || [];
-
+    function renderSavedPlans(items) {
         if (!items.length) {
             renderEmptyState(
                 plansContainer,
