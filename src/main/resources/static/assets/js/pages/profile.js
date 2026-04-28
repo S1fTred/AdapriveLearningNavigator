@@ -1,14 +1,13 @@
 import { ApiError, plansApi } from "/assets/js/core/api.js";
 import { requireAuth } from "/assets/js/core/guard.js";
 import { initPrivateShell } from "/assets/js/core/shell.js";
-import { getPlanDraft, getTokenMeta, getUserProfile, savePlanDraft } from "/assets/js/core/session.js";
+import { getPlanDraft, getUserProfile, savePlanDraft } from "/assets/js/core/session.js";
 import { clearStatus, escapeHtml, formatDate, renderEmptyState, showStatus } from "/assets/js/core/ui.js";
 
 if (requireAuth()) {
     initPrivateShell("profile");
 
     const profile = getUserProfile();
-    const { accessPayload, refreshPayload } = getTokenMeta();
     const infoContainer = document.querySelector("#profile-info");
     const plansContainer = document.querySelector("#profile-plans");
     const form = document.querySelector("#profile-preferences-form");
@@ -30,31 +29,29 @@ if (requireAuth()) {
             knownTopics: String(formData.get("knownTopics") || "").trim()
         });
 
-        showStatus(statusBox, "success", "Локальные настройки сохранены. Они будут подставляться в сценарии работы с каталогом.");
+        showStatus(statusBox, "success", "Настройки сохранены. Они будут подставляться при создании новых планов.");
     });
 
     function renderInfo() {
+        const draft = getPlanDraft();
+        const hoursPerWeek = Number(draft.hoursPerWeek || 10);
+
         infoContainer.innerHTML = `
             <div class="tile-grid">
                 <article class="card status-card">
-                    <p class="eyebrow">Пользователь</p>
-                    <h3>${escapeHtml(profile.displayName)}</h3>
-                    <p>${escapeHtml(profile.email || "Email недоступен")}</p>
+                    <p class="eyebrow">Аккаунт</p>
+                    <h3>${escapeHtml(profile.displayName || "Пользователь")}</h3>
+                    <p>${escapeHtml(profile.email || "Email не указан")}</p>
                 </article>
                 <article class="card status-card">
-                    <p class="eyebrow">User ID</p>
-                    <h3>${escapeHtml(profile.userId || "—")}</h3>
-                    <p>Берётся из JWT payload текущей сессии.</p>
+                    <p class="eyebrow">Темп обучения</p>
+                    <h3>${escapeHtml(hoursPerWeek)} ч/нед.</h3>
+                    <p>Значение по умолчанию для новых персональных планов.</p>
                 </article>
                 <article class="card status-card">
-                    <p class="eyebrow">Access exp</p>
-                    <h3>${escapeHtml(formatExpiry(accessPayload?.exp))}</h3>
-                    <p>Frontend использует refresh flow автоматически.</p>
-                </article>
-                <article class="card status-card">
-                    <p class="eyebrow">Refresh exp</p>
-                    <h3>${escapeHtml(formatExpiry(refreshPayload?.exp))}</h3>
-                    <p>После истечения потребуется повторный вход.</p>
+                    <p class="eyebrow">Мои планы</p>
+                    <h3>История</h3>
+                    <p>Сохранённые недельные планы доступны ниже на этой странице.</p>
                 </article>
             </div>
         `;
@@ -86,7 +83,8 @@ if (requireAuth()) {
                             </div>
                         </div>
                         <div class="list-actions">
-                            <a class="button button-secondary" href="/dashboard?roadmapId=${plan.roleId}&planId=${plan.id}#catalog-roadmap">Каталог</a>
+                            <a class="button button-secondary" href="/dashboard?roadmapId=${plan.roleId}&planId=${plan.id}">Каталог</a>
+                            <a class="button button-ghost" href="/roadmap?roadmapId=${plan.roleId}&planId=${plan.id}">Карта</a>
                             <a class="button button-ghost" href="/plan?planId=${plan.id}">План</a>
                         </div>
                     </article>
@@ -122,13 +120,4 @@ if (requireAuth()) {
         }
     }
 
-    function formatExpiry(epochSeconds) {
-        if (!epochSeconds) {
-            return "—";
-        }
-        return new Intl.DateTimeFormat("ru-RU", {
-            dateStyle: "medium",
-            timeStyle: "short"
-        }).format(new Date(epochSeconds * 1000));
-    }
 }

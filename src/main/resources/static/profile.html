@@ -48,13 +48,13 @@
             <section class="panel-grid">
                 <article class="card panel-card">
                     <p class="eyebrow">Настройки</p>
-                    <h3>Значения по умолчанию</h3>
-                    <p>Эти поля сохраняются локально и используются как пользовательские заготовки.</p>
+                    <h3>Предпочтения обучения</h3>
+                    <p>Эти значения будут подставляться при создании новых персональных планов.</p>
                     <div id="profile-status" class="status-box"></div>
                     <form id="profile-preferences-form" class="form-grid panel-top-gap">
                         <div class="form-row">
                             <label for="profile-goal">Цель</label>
-                            <input class="input" id="profile-goal" name="goal" type="text" placeholder="java-backend">
+                            <input class="input" id="profile-goal" name="goal" type="text" placeholder="Например: Java-разработчик">
                         </div>
                         <div class="form-row-inline">
                             <div class="form-row">
@@ -73,10 +73,10 @@
                         </div>
                         <div class="form-row">
                             <label for="profile-known-topics">Известные темы</label>
-                            <textarea class="textarea" id="profile-known-topics" name="knownTopics" placeholder="Java Basics, Git"></textarea>
+                            <textarea class="textarea" id="profile-known-topics" name="knownTopics" placeholder="Например: Git, Maven, основы Java"></textarea>
                         </div>
                         <div class="form-actions">
-                            <button class="button button-primary" type="submit">Сохранить локально</button>
+                            <button class="button button-primary" type="submit">Сохранить настройки</button>
                             <a class="button button-secondary" href="/dashboard">К каталогу</a>
                         </div>
                     </form>
@@ -90,30 +90,6 @@
                 </article>
             </section>
 
-            <section class="card panel-card">
-                <p class="eyebrow">Статус</p>
-                <h3>Что уже работает</h3>
-                <div class="list panel-top-gap">
-                    <article class="list-item">
-                        <div>
-                            <h4>Регистрация и вход</h4>
-                            <p>Фронт уже использует реальные JWT access/refresh endpoint'ы backend.</p>
-                        </div>
-                    </article>
-                    <article class="list-item">
-                        <div>
-                            <h4>Единый каталог roadmap</h4>
-                            <p>Выбор направления, просмотр roadmap и сборка weekly plan теперь собраны в одном основном разделе.</p>
-                        </div>
-                    </article>
-                    <article class="list-item">
-                        <div>
-                            <h4>Локальные настройки</h4>
-                            <p>До появления серверного профиля используется локальная конфигурация браузера.</p>
-                        </div>
-                    </article>
-                </div>
-            </section>
         </main>
     </div>
 </div>
