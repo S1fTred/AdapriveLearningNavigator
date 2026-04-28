@@ -45,49 +45,11 @@
         <main class="app-content">
             <section id="profile-info"></section>
 
-            <section class="panel-grid">
-                <article class="card panel-card">
-                    <p class="eyebrow">Настройки</p>
-                    <h3>Предпочтения обучения</h3>
-                    <p>Эти значения будут подставляться при создании новых персональных планов.</p>
-                    <div id="profile-status" class="status-box"></div>
-                    <form id="profile-preferences-form" class="form-grid panel-top-gap">
-                        <div class="form-row">
-                            <label for="profile-goal">Цель</label>
-                            <input class="input" id="profile-goal" name="goal" type="text" placeholder="Например: Java-разработчик">
-                        </div>
-                        <div class="form-row-inline">
-                            <div class="form-row">
-                                <label for="profile-level">Уровень</label>
-                                <select class="select" id="profile-level" name="currentLevel">
-                                    <option value="BEGINNER">BEGINNER</option>
-                                    <option value="BASIC">BASIC</option>
-                                    <option value="INTERMEDIATE">INTERMEDIATE</option>
-                                    <option value="ADVANCED">ADVANCED</option>
-                                </select>
-                            </div>
-                            <div class="form-row">
-                                <label for="profile-hours">Часов в неделю</label>
-                                <input class="input" id="profile-hours" name="hoursPerWeek" type="number" min="1" max="80" value="10">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <label for="profile-known-topics">Известные темы</label>
-                            <textarea class="textarea" id="profile-known-topics" name="knownTopics" placeholder="Например: Git, Maven, основы Java"></textarea>
-                        </div>
-                        <div class="form-actions">
-                            <button class="button button-primary" type="submit">Сохранить настройки</button>
-                            <a class="button button-secondary" href="/dashboard">К каталогу</a>
-                        </div>
-                    </form>
-                </article>
-
-                <article class="card panel-card">
-                    <p class="eyebrow">Мои планы</p>
-                    <h3>Сохранённые weekly plan</h3>
-                    <p>Здесь собраны последние построенные планы по направлениям.</p>
-                    <div id="profile-plans" class="panel-top-gap"></div>
-                </article>
+            <section class="card panel-card">
+                <p class="eyebrow">Мои планы</p>
+                <h3>Сохранённые weekly plan</h3>
+                <p>Здесь собраны последние построенные планы по направлениям.</p>
+                <div id="profile-plans" class="panel-top-gap"></div>
             </section>
 
         </main>
