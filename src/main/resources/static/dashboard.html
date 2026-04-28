@@ -20,18 +20,10 @@
         </div>
 
         <nav class="sidebar-nav">
-            <a class="sidebar-link" data-nav="dashboard" data-short="Кат." href="/dashboard">
-                <span>Каталог</span>
-            </a>
-            <a class="sidebar-link" data-nav="plan" data-short="План" href="/plan">
-                <span>План</span>
-            </a>
-            <a class="sidebar-link" data-nav="progress" data-short="Прогр." href="/progress">
-                <span>Прогресс</span>
-            </a>
-            <a class="sidebar-link" data-nav="profile" data-short="Проф." href="/profile">
-                <span>Профиль</span>
-            </a>
+            <a class="sidebar-link" data-nav="dashboard" data-short="Кат." href="/dashboard"><span>Каталог</span></a>
+            <a class="sidebar-link" data-nav="plan" data-short="План" href="/plan"><span>План</span></a>
+            <a class="sidebar-link" data-nav="progress" data-short="Прогр." href="/progress"><span>Прогресс</span></a>
+            <a class="sidebar-link" data-nav="profile" data-short="Проф." href="/profile"><span>Профиль</span></a>
         </nav>
 
         <div class="sidebar-footer">
@@ -47,14 +39,11 @@
         <header class="app-topbar">
             <div>
                 <h1>Каталог направлений</h1>
-                <p>
-                    Выберите направление из базы знаний, сразу посмотрите его roadmap и здесь же
-                    соберите персональный weekly plan под свой темп.
-                </p>
+                <p>Выберите направление, отметьте уже знакомые темы и соберите персональный weekly plan под свой темп.</p>
             </div>
         </header>
 
-        <main class="app-content roadmap-content">
+        <main class="app-content">
             <div id="dashboard-status" class="status-box"></div>
 
             <section class="panel-grid panel-grid-top-aligned dashboard-builder-grid">
@@ -69,10 +58,7 @@
 
                 <article class="card panel-card dashboard-plan-panel" data-dashboard-plan-panel>
                     <h3>Персональный план</h3>
-                    <p>
-                        Сервис исключит уже знакомые темы, покажет структуру направления и разложит
-                        оставшийся маршрут по неделям под ваш лимит часов.
-                    </p>
+                    <p>Сервис исключит уже знакомые темы и разложит оставшийся маршрут по неделям под ваш лимит часов.</p>
 
                     <form id="build-roadmap-plan-form" class="form-grid panel-top-gap">
                         <input type="hidden" name="roleId" id="selected-roadmap-id">
@@ -91,20 +77,13 @@
 
                         <div class="form-actions">
                             <button class="button button-primary" id="build-plan-submit" type="submit">Построить недельный план</button>
-                            <a class="button button-secondary" id="selected-roadmap-link" href="#catalog-roadmap">К карте направления</a>
+                            <a class="button button-secondary" id="selected-roadmap-link" href="/roadmap">К карте</a>
                         </div>
+
+                        <div id="selected-plan-actions" class="form-actions dashboard-plan-actions"></div>
                     </form>
                 </article>
             </section>
-
-            <section id="roadmap-meta"></section>
-
-            <section id="catalog-roadmap" class="roadmap-board">
-                <div id="roadmap-flow"></div>
-                <aside id="roadmap-topic-panel"></aside>
-            </section>
-
-            <section id="plan-spotlight"></section>
         </main>
     </div>
 </div>

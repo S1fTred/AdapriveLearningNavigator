@@ -7,13 +7,13 @@ import { getPlanDraft, setSelectedRoadmapId } from "/assets/js/core/session.js";
 import { escapeHtml, formatHours, renderEmptyState, showStatus } from "/assets/js/core/ui.js";
 
 if (requireAuth()) {
-    initPrivateShell("roadmap");
+    initPrivateShell("dashboard");
 
     const statusBox = document.querySelector("#roadmap-status");
-    const switcherContainer = document.querySelector("#roadmap-switcher");
     const metaContainer = document.querySelector("#roadmap-meta");
     const flowContainer = document.querySelector("#roadmap-flow");
     const topicPanel = document.querySelector("#roadmap-topic-panel");
+    const backLink = document.querySelector("#roadmap-back-link");
 
     const state = {
         roadmap: null,
@@ -24,15 +24,15 @@ if (requireAuth()) {
         topicTab: "overview"
     };
 
-    loadPage().catch((error) => handleError(error));
+    loadPage().catch(handleError);
 
     async function loadPage() {
         const query = new URLSearchParams(window.location.search);
         const explicitRoadmapId = Number(query.get("roadmapId")) || null;
         const explicitTopicId = Number(query.get("topicId")) || null;
         const explicitPlanId = Number(query.get("planId")) || null;
-        const roadmap = await resolveActiveRoadmap(explicitRoadmapId);
 
+        const roadmap = await resolveActiveRoadmap(explicitRoadmapId);
         if (!roadmap) {
             renderEmptyState(
                 metaContainer,
@@ -48,18 +48,18 @@ if (requireAuth()) {
         setSelectedRoadmapId(roadmap.id);
         hydrateKnownTopics(roadmap);
         await hydratePlanContext(roadmap.id, explicitPlanId);
-        await renderSwitcher(roadmap.id);
+        updateBackLink();
         renderMeta(roadmap);
         renderFlow(roadmap);
 
-        const initialTopicId = explicitTopicId || roadmap.topics?.[0]?.topicId || null;
-        if (initialTopicId) {
-            await selectTopic(initialTopicId);
+        const initialTopicId = resolveInitialTopicId(roadmap, explicitTopicId);
+        if (initialTopicId != null) {
+            await selectTopic(initialTopicId, { syncUrl: false });
         } else {
             renderEmptyState(
                 topicPanel,
                 "Тема не выбрана",
-                "Выберите карточку в roadmap, чтобы открыть детали."
+                "Выберите узел на карте, чтобы открыть детали темы."
             );
         }
     }
@@ -97,107 +97,105 @@ if (requireAuth()) {
         }
     }
 
-    async function renderSwitcher(activeRoadmapId) {
-        const page = await roadmapsApi.list(0, 40);
-        switcherContainer.innerHTML = `
-            <div class="card panel-card">
-                <h3>Переключить направление</h3>
-                <div class="form-row panel-top-gap">
-                    <label class="field-label" for="roadmap-select">Выберите roadmap</label>
-                    <select class="select" id="roadmap-select">
-                        ${(page.items || []).map((item) => `
-                            <option value="${item.id}" ${item.id === activeRoadmapId ? "selected" : ""}>
-                                ${escapeHtml(item.name)}
-                            </option>
-                        `).join("")}
-                    </select>
-                </div>
-            </div>
-        `;
+    function resolveInitialTopicId(roadmap, explicitTopicId) {
+        if (explicitTopicId && roadmap.topics.some((topic) => topic.topicId === explicitTopicId)) {
+            return explicitTopicId;
+        }
 
-        switcherContainer.querySelector("#roadmap-select")?.addEventListener("change", (event) => {
-            const roadmapId = Number(event.target.value);
-            const suffix = state.activePlanId ? `&planId=${state.activePlanId}` : "";
-            window.location.href = `/roadmap?roadmapId=${roadmapId}${suffix}`;
-        });
+        return roadmap.topics?.[0]?.topicId ?? null;
     }
 
     function renderMeta(roadmap) {
-        const hasPlan = Boolean(state.activePlanId);
         const knownCount = state.knownTopicIds.size;
+        const remainingHours = calculateRemainingRoadmapHours(roadmap, state.knownTopicIds);
 
         metaContainer.innerHTML = `
-            <section class="panel-grid panel-grid-top-aligned">
-                <article class="card panel-card roadmap-summary-card">
+            <article class="card panel-card roadmap-summary-card roadmap-page-summary">
+                <div>
                     <p class="eyebrow">Текущая roadmap</p>
                     <h3>${escapeHtml(roadmap.name)}</h3>
                     <p>${escapeHtml(roadmap.description || "Roadmap без описания.")}</p>
-                    <div class="pill-row roadmap-summary-pills">
-                        <span class="badge">${roadmap.topicCount} тем</span>
-                        <span class="badge badge-dark">${roadmap.requiredTopicCount} обязательных</span>
-                        <span class="badge badge-success">${escapeHtml(formatHours(roadmap.totalEstimatedHours))}</span>
-                        ${knownCount ? `<span class="badge">Уже знакомо: ${knownCount}</span>` : ""}
-                    </div>
-                </article>
-                <article class="card panel-card roadmap-quick-plan-card">
-                    <p class="eyebrow">План</p>
-                    <h3>${hasPlan ? "Личный weekly plan" : "План по направлению"}</h3>
-                    <p>${hasPlan ? "Для этого направления уже есть собранный план." : "Если план ещё не собран, это можно сделать в каталоге."}</p>
-                    <div class="form-actions roadmap-quick-plan-actions">
-                        <a class="button button-secondary" href="${hasPlan ? `/plan?planId=${state.activePlanId}` : "/dashboard"}">
-                            ${hasPlan ? "Открыть план" : "Перейти к сборке"}
-                        </a>
-                    </div>
-                </article>
-            </section>
+                </div>
+                <div class="pill-row roadmap-summary-pills">
+                    <span class="badge">${roadmap.topicCount} тем</span>
+                    <span class="badge badge-dark">${roadmap.requiredTopicCount} обязательных</span>
+                    <span class="badge badge-success">${escapeHtml(formatHours(remainingHours))}</span>
+                    ${knownCount ? `<span class="badge">Уже знакомо: ${knownCount}</span>` : ""}
+                    ${state.activePlanId ? `<span class="badge">Есть weekly plan</span>` : ""}
+                </div>
+            </article>
         `;
+    }
+
+    function calculateRemainingRoadmapHours(roadmap, knownTopicIds) {
+        return (roadmap.topics || [])
+            .filter((topic) => !knownTopicIds.has(topic.topicId))
+            .reduce((sum, topic) => sum + Number(topic.estimatedHours || 0), 0);
     }
 
     function renderFlow(roadmap) {
         if (!roadmap.topics?.length) {
             renderEmptyState(
                 flowContainer,
-                "Roadmap пуст",
+                "Roadmap пустая",
                 "Для этого направления ещё не заведены темы."
             );
             return;
         }
 
-        flowContainer.innerHTML = `
-            <div class="roadmap-topic-grid">
-                ${roadmap.topics.map((topic) => {
-                    const isSelected = topic.topicId === state.selectedTopicId;
-                    const isPlanned = state.plannedTopicIds.has(topic.topicId);
-                    const isKnown = state.knownTopicIds.has(topic.topicId);
+        const orderedTopics = sortTopics(roadmap.topics);
 
-                    return `
-                        <button class="roadmap-topic-card ${isSelected ? "is-selected" : ""} ${isKnown ? "is-known" : ""}" type="button" data-topic-id="${topic.topicId}">
-                            <div class="step-meta">
-                                <span class="badge">${escapeHtml(formatHours(topic.estimatedHours))}</span>
-                            </div>
-                            <h4>${escapeHtml(topic.topicTitle)}</h4>
-                            <p>${escapeHtml(topic.description || "Подробное описание откроется в правой панели.")}</p>
-                            <div class="topic-tags roadmap-card-pills">
-                                ${topic.isRequired ? `<span class="topic-chip">Обязательная</span>` : `<span class="topic-chip muted">Дополнительная</span>`}
-                                ${topic.isCore ? `<span class="topic-chip">Core</span>` : ""}
-                                ${isKnown ? `<span class="topic-chip known">Уже знакома</span>` : ""}
-                                ${!isKnown && isPlanned ? `<span class="topic-chip">В текущем плане</span>` : ""}
-                            </div>
-                        </button>
-                    `;
-                }).join("")}
+        flowContainer.innerHTML = `
+            <div class="roadmap-graph">
+                ${orderedTopics.map((topic, index) => renderTopicNode(topic, index)).join("")}
             </div>
         `;
 
         flowContainer.querySelectorAll("[data-topic-id]").forEach((button) => {
             button.addEventListener("click", async () => {
-                const topicId = Number(button.dataset.topicId);
-                await selectTopic(topicId);
+                await selectTopic(Number(button.dataset.topicId));
             });
         });
     }
 
-    async function selectTopic(topicId) {
+    function sortTopics(topics) {
+        return [...topics].sort((left, right) => {
+            const leftPriority = left.priority ?? Number.MAX_SAFE_INTEGER;
+            const rightPriority = right.priority ?? Number.MAX_SAFE_INTEGER;
+            if (leftPriority !== rightPriority) {
+                return leftPriority - rightPriority;
+            }
+            return left.topicId - right.topicId;
+        });
+    }
+
+    function renderTopicNode(topic, index) {
+        const isSelected = topic.topicId === state.selectedTopicId;
+        const isPlanned = state.plannedTopicIds.has(topic.topicId);
+        const isKnown = state.knownTopicIds.has(topic.topicId);
+
+        return `
+            <button class="roadmap-topic-card roadmap-graph-node ${isSelected ? "is-selected" : ""} ${isKnown ? "is-known" : ""}" type="button" data-topic-id="${topic.topicId}">
+                <span class="roadmap-node-index">${index + 1}</span>
+                <span class="roadmap-node-line" aria-hidden="true"></span>
+                <span class="roadmap-node-copy">
+                    <span class="step-meta">
+                        <span class="badge">${escapeHtml(formatHours(topic.estimatedHours))}</span>
+                        ${topic.isRequired ? `<span class="badge badge-success">Обязательная</span>` : `<span class="badge">Дополнительная</span>`}
+                    </span>
+                    <strong>${escapeHtml(topic.topicTitle)}</strong>
+                    <span>${escapeHtml(topic.description || "Описание откроется в правой панели.")}</span>
+                    <span class="topic-tags roadmap-card-pills">
+                        ${topic.isCore ? `<span class="topic-chip">Core</span>` : ""}
+                        ${isKnown ? `<span class="topic-chip known">Уже знакома</span>` : ""}
+                        ${!isKnown && isPlanned ? `<span class="topic-chip">В текущем плане</span>` : ""}
+                    </span>
+                </span>
+            </button>
+        `;
+    }
+
+    async function selectTopic(topicId, options = {}) {
         if (!state.roadmap) {
             return;
         }
@@ -207,6 +205,10 @@ if (requireAuth()) {
 
         const topic = await roadmapsApi.getTopic(state.roadmap.id, topicId);
         renderTopicPanel(topic);
+
+        if (options.syncUrl !== false) {
+            syncRoadmapUrl();
+        }
     }
 
     function renderTopicPanel(topic) {
@@ -216,7 +218,7 @@ if (requireAuth()) {
 
         topicPanel.innerHTML = `
             <div class="card panel-card topic-detail-card">
-                <p class="eyebrow">Topic detail</p>
+                <p class="eyebrow">Детали темы</p>
                 <h3>${escapeHtml(topic.topicTitle)}</h3>
                 <p>${escapeHtml(topic.description || "Подробное описание темы пока не заполнено.")}</p>
                 <div class="pill-row panel-top-gap">
@@ -247,11 +249,15 @@ if (requireAuth()) {
     }
 
     function renderTopicTabContent(topic, tab, isKnown) {
+        const resources = topic.resources || [];
+        const prereqs = topic.prereqs || [];
+        const unlocks = topic.unlocks || [];
+
         if (tab === "resources") {
-            return topic.resources.length
+            return resources.length
                 ? `
                     <div class="list">
-                        ${topic.resources.map((resource) => `
+                        ${resources.map((resource) => `
                             <article class="list-item">
                                 <div>
                                     <h4>${escapeHtml(resource.title)}</h4>
@@ -271,12 +277,12 @@ if (requireAuth()) {
                 <div class="tutor-placeholder">
                     <h4>AI Tutor для темы</h4>
                     <p>
-                        Следующий этап развития продукта: topic-scoped AI Tutor будет работать из этой панели и
-                        отвечать в контексте выбранной темы, её зависимостей и ресурсов.
+                        Следующий продуктовый шаг: AI Tutor будет отвечать прямо в контексте выбранной темы,
+                        её зависимостей, ресурсов и места в roadmap.
                     </p>
                     <div class="pill-row">
                         <span class="badge">${quizAvailable ? "Есть квиз" : "Квиз пока не заведён"}</span>
-                        <span class="badge badge-dark">${topic.resources.length} ресурсов</span>
+                        <span class="badge badge-dark">${resources.length} ресурсов</span>
                     </div>
                     <button class="button button-secondary panel-top-gap" type="button" disabled>AI Tutor скоро</button>
                 </div>
@@ -287,24 +293,24 @@ if (requireAuth()) {
             ${isKnown ? `
                 <div class="topic-detail-block">
                     <h4>Статус</h4>
-                    <p>Тема отмечена как уже знакомая. Она остаётся в roadmap для сохранения полной структуры направления, но не включается в weekly plan.</p>
+                    <p>Тема отмечена как уже знакомая. Она остаётся в roadmap для понимания структуры, но не включается в новый weekly plan.</p>
                 </div>
             ` : ""}
 
             <div class="topic-detail-block">
                 <h4>Что нужно знать перед темой</h4>
-                ${topic.prereqs.length ? `
+                ${prereqs.length ? `
                     <div class="topic-tags">
-                        ${topic.prereqs.map((item) => `<span class="topic-chip">${escapeHtml(item.topicTitle)}</span>`).join("")}
+                        ${prereqs.map((item) => `<span class="topic-chip">${escapeHtml(item.topicTitle)}</span>`).join("")}
                     </div>
-                ` : "<p>Эту тему можно брать без обязательных предварительных знаний.</p>"}
+                ` : "<p>Эту тему можно брать без обязательных предварительных тем.</p>"}
             </div>
 
             <div class="topic-detail-block">
                 <h4>Что открывает дальше</h4>
-                ${topic.unlocks.length ? `
+                ${unlocks.length ? `
                     <div class="topic-tags">
-                        ${topic.unlocks.map((item) => `<span class="topic-chip muted">${escapeHtml(item.topicTitle)}</span>`).join("")}
+                        ${unlocks.map((item) => `<span class="topic-chip muted">${escapeHtml(item.topicTitle)}</span>`).join("")}
                     </div>
                 ` : "<p>Это конечная тема внутри текущего roadmap.</p>"}
             </div>
@@ -314,6 +320,34 @@ if (requireAuth()) {
                 <p>${topic.quiz?.available ? `Для темы доступен квиз «${escapeHtml(topic.quiz.title)}».` : "Для темы квиз пока не добавлен."}</p>
             </div>
         `;
+    }
+
+    function updateBackLink() {
+        if (!backLink || !state.roadmap) {
+            return;
+        }
+
+        const query = new URLSearchParams({ roadmapId: String(state.roadmap.id) });
+        if (state.activePlanId != null) {
+            query.set("planId", String(state.activePlanId));
+        }
+        backLink.href = `/dashboard?${query.toString()}`;
+    }
+
+    function syncRoadmapUrl() {
+        if (!state.roadmap) {
+            return;
+        }
+
+        const query = new URLSearchParams({ roadmapId: String(state.roadmap.id) });
+        if (state.selectedTopicId != null) {
+            query.set("topicId", String(state.selectedTopicId));
+        }
+        if (state.activePlanId != null) {
+            query.set("planId", String(state.activePlanId));
+        }
+
+        window.history.replaceState({}, "", `/roadmap?${query.toString()}`);
     }
 
     function handleError(error) {

@@ -323,19 +323,18 @@ img {
     align-items: start;
 }
 
-.roadmap-summary-card,
-.roadmap-quick-plan-card {
+.roadmap-summary-card {
     display: grid;
     align-content: center;
     gap: 8px;
     min-height: 200px;
 }
 
-.roadmap-summary-pills {
-    margin-top: 6px;
+.roadmap-page-summary {
+    min-height: 150px;
 }
 
-.roadmap-quick-plan-actions {
+.roadmap-summary-pills {
     margin-top: 6px;
 }
 
@@ -1505,6 +1504,72 @@ img {
     gap: 14px;
 }
 
+.roadmap-page-board {
+    grid-template-columns: minmax(0, 1.1fr) minmax(340px, 0.85fr);
+}
+
+.roadmap-graph {
+    position: relative;
+    display: grid;
+    gap: 14px;
+}
+
+.roadmap-graph::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    bottom: 28px;
+    left: 28px;
+    width: 2px;
+    border-radius: 999px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(92, 158, 173, 0.2));
+}
+
+.roadmap-graph-node {
+    position: relative;
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr);
+    gap: 16px;
+    align-items: start;
+    min-height: 122px;
+}
+
+.roadmap-node-index {
+    position: relative;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    display: inline-grid;
+    place-items: center;
+    border-radius: 16px;
+    background: #000000;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 14px;
+    box-shadow: 0 14px 26px rgba(0, 0, 0, 0.18);
+}
+
+.roadmap-node-copy {
+    display: grid;
+    gap: 8px;
+    min-width: 0;
+}
+
+.roadmap-node-copy > strong {
+    font-size: 18px;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+}
+
+.roadmap-node-copy > span:not(.step-meta):not(.topic-tags) {
+    color: var(--color-muted);
+    line-height: 1.5;
+}
+
+.roadmap-node-line {
+    display: none;
+}
+
 .roadmap-topic-card {
     width: 100%;
     text-align: left;
@@ -1559,6 +1624,14 @@ img {
 .topic-detail-card {
     position: sticky;
     top: 30px;
+}
+
+.dashboard-plan-actions:empty {
+    display: none;
+}
+
+.dashboard-plan-actions {
+    padding-top: 2px;
 }
 
 .topic-tab-row {

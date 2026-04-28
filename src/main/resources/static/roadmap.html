@@ -3,19 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Перенаправление | Adaptive Learning Navigator</title>
+    <title>Карта направления | Adaptive Learning Navigator</title>
     <link rel="stylesheet" href="/assets/css/app.css">
-    <script>
-        window.location.replace(`/dashboard${window.location.search}${window.location.hash || ""}`);
-    </script>
 </head>
 <body>
-<main class="container" style="padding: 48px 0;">
-    <div class="card card-pad">
-        <h1 style="margin-top:0;">Раздел перемещён</h1>
-        <p>Roadmap теперь открыт прямо внутри каталога направлений.</p>
-        <p><a class="button button-primary" href="/dashboard">Перейти в каталог</a></p>
+<div class="app-shell">
+    <aside class="app-sidebar">
+        <div class="sidebar-head">
+            <a class="brand" href="/dashboard">
+                <span class="brand-mark">ALN</span>
+                <span class="brand-copy">
+                    <strong>Adaptive Learning Navigator</strong>
+                </span>
+            </a>
+            <button class="sidebar-toggle" data-sidebar-toggle type="button" aria-expanded="true" aria-label="Свернуть боковую панель"><<</button>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a class="sidebar-link" data-nav="dashboard" href="/dashboard"><span>Каталог</span></a>
+            <a class="sidebar-link" data-nav="plan" href="/plan"><span>План</span></a>
+            <a class="sidebar-link" data-nav="progress" href="/progress"><span>Прогресс</span></a>
+            <a class="sidebar-link" data-nav="profile" href="/profile"><span>Профиль</span></a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="user-pill">
+                <strong data-user-name>Пользователь</strong>
+                <span data-user-email>user@example.com</span>
+            </div>
+            <button class="button button-secondary" data-logout type="button">Выйти</button>
+        </div>
+    </aside>
+
+    <div class="app-main">
+        <header class="app-topbar">
+            <div>
+                <h1>Карта направления</h1>
+                <p>Отдельная страница выбранного roadmap: порядок тем, связи, ресурсы и детали каждой темы.</p>
+            </div>
+            <a class="button button-secondary" id="roadmap-back-link" href="/dashboard">К каталогу</a>
+        </header>
+
+        <main class="app-content roadmap-content">
+            <div id="roadmap-status" class="status-box"></div>
+            <section id="roadmap-meta"></section>
+            <section class="roadmap-board roadmap-page-board">
+                <div id="roadmap-flow"></div>
+                <aside id="roadmap-topic-panel"></aside>
+            </section>
+        </main>
     </div>
-</main>
+</div>
+
+<script type="module" src="/assets/js/pages/roadmap.js"></script>
 </body>
 </html>
