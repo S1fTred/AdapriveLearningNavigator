@@ -13,8 +13,6 @@ if (requireAuth()) {
     const metaContainer = document.querySelector("#roadmap-meta");
     const flowContainer = document.querySelector("#roadmap-flow");
     const topicPanel = document.querySelector("#roadmap-topic-panel");
-    const backLink = document.querySelector("#roadmap-back-link");
-    const planLink = document.querySelector("#roadmap-plan-link");
 
     const state = {
         roadmap: null,
@@ -49,7 +47,6 @@ if (requireAuth()) {
         setSelectedRoadmapId(roadmap.id);
         hydrateKnownTopics(roadmap);
         await hydratePlanContext(roadmap.id, explicitPlanId);
-        updatePageLinks();
         renderMeta(roadmap);
         renderFlow(roadmap);
 
@@ -337,31 +334,6 @@ if (requireAuth()) {
                 <p>${topic.quiz?.available ? `Для темы доступен квиз «${escapeHtml(topic.quiz.title)}».` : "Для темы квиз пока не добавлен."}</p>
             </div>
         `;
-    }
-
-    function updatePageLinks() {
-        if (!state.roadmap) {
-            return;
-        }
-
-        const query = new URLSearchParams({ roadmapId: String(state.roadmap.id) });
-        if (state.activePlanId != null) {
-            query.set("planId", String(state.activePlanId));
-        }
-
-        if (backLink) {
-            backLink.href = `/dashboard?${query.toString()}`;
-        }
-
-        if (planLink) {
-            if (state.activePlanId != null) {
-                planLink.href = `/plan?planId=${state.activePlanId}`;
-                planLink.textContent = "Открыть план";
-            } else {
-                planLink.href = `/dashboard?roadmapId=${state.roadmap.id}`;
-                planLink.textContent = "Собрать план";
-            }
-        }
     }
 
     function syncRoadmapUrl() {
