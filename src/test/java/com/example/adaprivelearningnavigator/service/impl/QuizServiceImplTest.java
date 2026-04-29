@@ -53,11 +53,11 @@ class QuizServiceImplTest {
     private QuizServiceImpl quizService;
 
     @Test
-    void shouldCreateGeneratedQuizWhenTopicHasNoQuiz() {
+    void shouldCreateSubjectSpecificGeneratedQuizWhenTopicHasNoQuiz() {
         Topic topic = Topic.builder()
                 .id(100L)
-                .code("JAVA_BASICS")
-                .title("Learn the Basics")
+                .code("JAVA_STRINGS_METHODS")
+                .title("Strings and Methods")
                 .estimatedHours(BigDecimal.valueOf(7))
                 .build();
         List<QuizQuestion> savedQuestions = new ArrayList<>();
@@ -98,6 +98,9 @@ class QuizServiceImplTest {
         assertThat(response.status()).isEqualTo(EntityStatus.ACTIVE);
         assertThat(response.title()).contains("Проверка по теме");
         assertThat(response.questions()).hasSize(3);
+        assertThat(response.questions().get(0).text()).contains("строки");
+        assertThat(response.questions().get(0).options())
+                .anySatisfy(option -> assertThat(option.text()).contains("String неизменяемый"));
         assertThat(response.questions())
                 .allSatisfy(question -> assertThat(question.options()).hasSize(3));
         verify(quizRepository).save(any(Quiz.class));
