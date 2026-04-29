@@ -1,7 +1,6 @@
 import { hasSession } from "/assets/js/core/session.js";
 
 const ctaPrimary = document.querySelector("[data-hero-primary]");
-const ctaSecondary = document.querySelector("[data-hero-secondary]");
 const authSlot = document.querySelector("[data-header-auth]");
 
 if (hasSession()) {
@@ -9,13 +8,7 @@ if (hasSession()) {
         ctaPrimary.textContent = "Открыть каталог направлений";
         ctaPrimary.setAttribute("href", "/dashboard");
     }
-    if (ctaSecondary) {
-        ctaSecondary.textContent = "Открыть каталог";
-        ctaSecondary.setAttribute("href", "/dashboard");
-    }
     if (authSlot) {
-        authSlot.innerHTML = `
-            <a class="button button-secondary" href="/dashboard">Каталог</a>
-        `;
+        authSlot.innerHTML = "";
     }
 }
