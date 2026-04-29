@@ -23,6 +23,8 @@ if (requireAuth()) {
         knownTopicIds: new Set(),
         topicTab: "overview",
         quizByTopicId: new Map(),
+        quizLoadingTopicIds: new Set(),
+        quizErrorByTopicId: new Map(),
         quizResultByQuizId: new Map(),
         tutorAnswerByTopicId: new Map()
     };
@@ -291,6 +293,11 @@ if (requireAuth()) {
 
         bindTutorForm(topic);
         bindQuizForm(topic);
+        bindQuizRetry(topic);
+
+        if (state.topicTab === "quiz") {
+            ensureQuizLoaded(topic);
+        }
     }
 
     function bindTopicDrawerEvents() {
@@ -427,6 +434,17 @@ if (requireAuth()) {
 
     function renderQuizTab(topic) {
         const quiz = state.quizByTopicId.get(topic.topicId);
+        const quizError = state.quizErrorByTopicId.get(topic.topicId);
+
+        if (quizError) {
+            return `
+                <div class="topic-detail-block">
+                    <h4>Квиз по теме</h4>
+                    <p>${escapeHtml(quizError)}</p>
+                    <button class="button button-primary" type="button" data-quiz-retry>Попробовать ещё раз</button>
+                </div>
+            `;
+        }
 
         if (!quiz) {
             return `
@@ -460,7 +478,8 @@ if (requireAuth()) {
                     const isMultiple = question.type === "MULTIPLE";
                     return `
                         <fieldset class="quiz-question">
-                            <legend>${questionIndex + 1}. ${escapeHtml(question.text)}</legend>
+                            <legend class="visually-hidden">Вопрос ${questionIndex + 1}</legend>
+                            <strong class="quiz-question-title">${questionIndex + 1}. ${escapeHtml(question.text)}</strong>
                             ${(question.options || []).map((option) => `
                                 <label class="quiz-option">
                                     <input type="${isMultiple ? "checkbox" : "radio"}" name="question-${question.id}" value="${option.id}">
@@ -487,8 +506,13 @@ if (requireAuth()) {
         if (state.quizByTopicId.has(topic.topicId)) {
             return;
         }
+        if (state.quizLoadingTopicIds.has(topic.topicId)) {
+            return;
+        }
 
         try {
+            state.quizLoadingTopicIds.add(topic.topicId);
+            state.quizErrorByTopicId.delete(topic.topicId);
             const quiz = await quizzesApi.getTopicQuiz(topic.topicId);
             state.quizByTopicId.set(topic.topicId, quiz);
             if (state.selectedTopicId === topic.topicId && state.topicTab === "quiz") {
@@ -496,7 +520,16 @@ if (requireAuth()) {
                 openTopicDrawer();
             }
         } catch (error) {
-            showStatus(statusBox, "error", error instanceof ApiError ? error.message : "Не удалось загрузить квиз.");
+            state.quizErrorByTopicId.set(
+                topic.topicId,
+                error instanceof ApiError ? error.message : "Не удалось загрузить квиз."
+            );
+            if (state.selectedTopicId === topic.topicId && state.topicTab === "quiz") {
+                renderTopicPanel(topic);
+                openTopicDrawer();
+            }
+        } finally {
+            state.quizLoadingTopicIds.delete(topic.topicId);
         }
     }
 
@@ -574,6 +607,20 @@ if (requireAuth()) {
                 renderTopicPanel(topic);
                 openTopicDrawer();
             }
+        });
+    }
+
+    function bindQuizRetry(topic) {
+        const button = topicPanel.querySelector("[data-quiz-retry]");
+        if (!button) {
+            return;
+        }
+
+        button.addEventListener("click", () => {
+            state.quizErrorByTopicId.delete(topic.topicId);
+            renderTopicPanel(topic);
+            openTopicDrawer();
+            ensureQuizLoaded(topic);
         });
     }
 

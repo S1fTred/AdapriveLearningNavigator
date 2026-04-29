@@ -23,7 +23,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             "/", "/index.html", "/favicon.ico",
             "/assets/**", "/css/**", "/js/**",
             "/auth/**", "/error", "/h2-console/**", "/actuator/**",
-            "/api/topics/**", "/api/roles/**"
+            "/api/roles/**"
     );
 
     private final JwtService jwtService;
