@@ -187,10 +187,16 @@ public class RoadmapServiceImpl implements RoadmapService {
     private List<RoleGoal> loadActiveRoadmaps() {
         List<RoleGoal> active = roleGoalRepository.findAllByStatusOrderByNameAsc(EntityStatus.ACTIVE);
         if (!active.isEmpty()) {
-            return active;
+            return visibleMvpRoadmaps(active);
         }
-        return roleGoalRepository.findAll().stream()
+        return visibleMvpRoadmaps(roleGoalRepository.findAll()).stream()
                 .sorted(Comparator.comparing(RoleGoal::getName, String.CASE_INSENSITIVE_ORDER))
+                .toList();
+    }
+
+    private List<RoleGoal> visibleMvpRoadmaps(Collection<RoleGoal> roadmaps) {
+        return roadmaps.stream()
+                .filter(roleGoal -> KnowledgeBaseLocalizationUtil.isMvpRoadmap(roleGoal.getCode()))
                 .toList();
     }
 

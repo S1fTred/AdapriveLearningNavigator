@@ -47,6 +47,50 @@ class RoadmapServiceImplTest {
     private RoadmapServiceImpl roadmapService;
 
     @Test
+    void shouldExposeOnlyMvpRoadmapsInCatalog() {
+        RoleGoal visibleRole = RoleGoal.builder()
+                .id(101L)
+                .code("frontend")
+                .name("Frontend Developer")
+                .status(EntityStatus.ACTIVE)
+                .build();
+        RoleGoal hiddenLegacyRole = RoleGoal.builder()
+                .id(102L)
+                .code("java-backend")
+                .name("Java Backend Developer")
+                .status(EntityStatus.ACTIVE)
+                .build();
+        RoleGoal hiddenExtraSkillRole = RoleGoal.builder()
+                .id(103L)
+                .code("scala")
+                .name("Scala")
+                .status(EntityStatus.ACTIVE)
+                .build();
+        Topic topic = Topic.builder()
+                .id(501L)
+                .code("HTML")
+                .title("HTML")
+                .estimatedHours(BigDecimal.valueOf(4))
+                .build();
+        RoleTopic roleTopic = RoleTopic.builder()
+                .role(visibleRole)
+                .topic(topic)
+                .priority(1)
+                .required(true)
+                .build();
+
+        when(roleGoalRepository.findAllByStatusOrderByNameAsc(EntityStatus.ACTIVE))
+                .thenReturn(List.of(visibleRole, hiddenLegacyRole, hiddenExtraSkillRole));
+        when(roleTopicRepository.findAllByRole_IdOrderByPriorityAsc(101L)).thenReturn(List.of(roleTopic));
+
+        var catalog = roadmapService.getRoadmaps(0, 12);
+
+        assertThat(catalog.items()).hasSize(1);
+        assertThat(catalog.total()).isEqualTo(1);
+        assertThat(catalog.items().get(0).code()).isEqualTo("frontend");
+    }
+
+    @Test
     void shouldHideRoadmapShSourceMarkersInCatalogAndDetailDescriptions() {
         RoleGoal role = RoleGoal.builder()
                 .id(101L)

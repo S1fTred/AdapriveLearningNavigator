@@ -212,4 +212,17 @@ class KnowledgeBaseLocalizationUtilTest {
         assertThat(KnowledgeBaseLocalizationUtil.roadmapCategory("react")).isEqualTo("SKILL_BASED");
         assertThat(KnowledgeBaseLocalizationUtil.roadmapCategoryLabel("react")).isEqualTo("Направления по навыкам");
     }
+    @Test
+    void shouldExposeOnlyRoadmapShMvpCatalogRoadmaps() {
+        assertThat(KnowledgeBaseLocalizationUtil.isMvpRoadmap("frontend")).isTrue();
+        assertThat(KnowledgeBaseLocalizationUtil.isMvpRoadmap("ai-engineer")).isTrue();
+        assertThat(KnowledgeBaseLocalizationUtil.isMvpRoadmap("sql")).isTrue();
+        assertThat(KnowledgeBaseLocalizationUtil.isMvpRoadmap("claude-code")).isTrue();
+
+        assertThat(KnowledgeBaseLocalizationUtil.isMvpRoadmap("backend-beginner")).isFalse();
+        assertThat(KnowledgeBaseLocalizationUtil.isMvpRoadmap("java-backend")).isFalse();
+        assertThat(KnowledgeBaseLocalizationUtil.isMvpRoadmap("java-mobile")).isFalse();
+        assertThat(KnowledgeBaseLocalizationUtil.isMvpRoadmap("scala")).isFalse();
+        assertThat(KnowledgeBaseLocalizationUtil.isMvpRoadmap("openclaw")).isFalse();
+    }
 }

@@ -1,4 +1,5 @@
 import { ApiError, plansApi, roadmapsApi } from "/assets/js/core/api.js";
+import { filterMvpRoadmaps } from "/assets/js/core/roadmap-catalog.js";
 import { requireAuth } from "/assets/js/core/guard.js";
 import { resolveActiveRoadmap } from "/assets/js/core/roadmaps.js";
 import { initPrivateShell } from "/assets/js/core/shell.js";
@@ -114,7 +115,7 @@ if (requireAuth()) {
             plansApi.list(0, 24)
         ]);
 
-        state.roadmaps = roadmapsPage.items || [];
+        state.roadmaps = filterMvpRoadmaps(roadmapsPage.items || []);
         state.planItems = plansPage.items || [];
 
         if (!state.roadmaps.length) {

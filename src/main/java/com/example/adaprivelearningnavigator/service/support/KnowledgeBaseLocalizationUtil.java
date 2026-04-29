@@ -44,6 +44,89 @@ public final class KnowledgeBaseLocalizationUtil {
             "java-mobile"
     );
 
+    private static final Set<String> MVP_ROLE_BASED_ROADMAP_CODES = Set.of(
+            "frontend",
+            "backend",
+            "full-stack",
+            "devops",
+            "devsecops",
+            "data-analyst",
+            "ai-engineer",
+            "ai-data-scientist",
+            "data-engineer",
+            "android",
+            "machine-learning",
+            "postgresql-dba",
+            "ios",
+            "blockchain",
+            "qa",
+            "software-architect",
+            "cyber-security",
+            "ux-design",
+            "technical-writer",
+            "game-developer",
+            "server-side-game-developer",
+            "mlops",
+            "product-manager",
+            "engineering-manager",
+            "devrel",
+            "bi-analyst"
+    );
+
+    private static final Set<String> MVP_SKILL_BASED_ROADMAP_CODES = Set.of(
+            "sql",
+            "computer-science",
+            "react",
+            "vue",
+            "angular",
+            "javascript",
+            "typescript",
+            "nodejs",
+            "python",
+            "system-design",
+            "java",
+            "aspnet-core",
+            "api-design",
+            "spring-boot",
+            "flutter",
+            "cpp",
+            "rust",
+            "golang",
+            "software-design-architecture",
+            "graphql",
+            "react-native",
+            "design-system",
+            "prompt-engineering",
+            "mongodb",
+            "linux",
+            "kubernetes",
+            "docker",
+            "aws",
+            "terraform",
+            "datastructures-and-algorithms",
+            "redis",
+            "git-github",
+            "php",
+            "cloudflare",
+            "ai-red-teaming",
+            "ai-agents",
+            "nextjs",
+            "code-review",
+            "kotlin",
+            "html",
+            "css",
+            "swift-ui",
+            "shell-bash",
+            "laravel",
+            "elasticsearch",
+            "wordpress",
+            "django",
+            "ruby",
+            "ruby-on-rails",
+            "claude-code",
+            "vibe-coding"
+    );
+
     private static final Map<String, String> ROLE_CODE_OVERRIDES = Map.ofEntries(
             Map.entry("android", "Android-\u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0447\u0438\u043a"),
             Map.entry("ai-agents", "AI-\u0430\u0433\u0435\u043d\u0442\u044b"),
@@ -2655,6 +2738,11 @@ public final class KnowledgeBaseLocalizationUtil {
         return ROLE_BASED_ROADMAP_CODES.contains(roleCode)
                 ? "\u041d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f \u043f\u043e \u0440\u043e\u043b\u044f\u043c"
                 : "\u041d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f \u043f\u043e \u043d\u0430\u0432\u044b\u043a\u0430\u043c";
+    }
+
+    public static boolean isMvpRoadmap(String roleCode) {
+        return MVP_ROLE_BASED_ROADMAP_CODES.contains(roleCode)
+                || MVP_SKILL_BASED_ROADMAP_CODES.contains(roleCode);
     }
 
     public static String localizeDescription(String description,
