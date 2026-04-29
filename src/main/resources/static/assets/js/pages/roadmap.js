@@ -1,4 +1,4 @@
-import { ApiError, plansApi, roadmapsApi } from "/assets/js/core/api.js";
+import { ApiError, plansApi, quizzesApi, roadmapsApi, tutorApi } from "/assets/js/core/api.js";
 import { requireAuth } from "/assets/js/core/guard.js";
 import { resolveActivePlan } from "/assets/js/core/plans.js";
 import { resolveActiveRoadmap } from "/assets/js/core/roadmaps.js";
@@ -21,7 +21,10 @@ if (requireAuth()) {
         activePlanId: null,
         plannedTopicIds: new Set(),
         knownTopicIds: new Set(),
-        topicTab: "overview"
+        topicTab: "overview",
+        quizByTopicId: new Map(),
+        quizResultByQuizId: new Map(),
+        tutorAnswerByTopicId: new Map()
     };
 
     bindTopicDrawerEvents();
@@ -261,6 +264,7 @@ if (requireAuth()) {
                 <div class="topic-tab-row panel-top-gap">
                     <button class="topic-tab ${tab === "overview" ? "is-active" : ""}" type="button" data-topic-tab="overview">Обзор</button>
                     <button class="topic-tab ${tab === "resources" ? "is-active" : ""}" type="button" data-topic-tab="resources">Ресурсы</button>
+                    <button class="topic-tab ${tab === "quiz" ? "is-active" : ""}" type="button" data-topic-tab="quiz">Квиз</button>
                     <button class="topic-tab ${tab === "tutor" ? "is-active" : ""}" type="button" data-topic-tab="tutor">AI Tutor</button>
                 </div>
 
@@ -275,12 +279,18 @@ if (requireAuth()) {
         });
 
         topicPanel.querySelectorAll("[data-topic-tab]").forEach((button) => {
-            button.addEventListener("click", () => {
+            button.addEventListener("click", async () => {
                 state.topicTab = button.dataset.topicTab;
                 renderTopicPanel(topic);
                 openTopicDrawer();
+                if (state.topicTab === "quiz") {
+                    await ensureQuizLoaded(topic);
+                }
             });
         });
+
+        bindTutorForm(topic);
+        bindQuizForm(topic);
     }
 
     function bindTopicDrawerEvents() {
@@ -326,6 +336,14 @@ if (requireAuth()) {
                     </div>
                 `
                 : "<p>Для темы пока не прикреплены ресурсы.</p>";
+        }
+
+        if (tab === "quiz") {
+            return renderQuizTab(topic);
+        }
+
+        if (tab === "tutor") {
+            return renderTutorTab(topic);
         }
 
         if (tab === "tutor") {
@@ -377,6 +395,186 @@ if (requireAuth()) {
                 <p>${topic.quiz?.available ? `Для темы доступен квиз «${escapeHtml(topic.quiz.title)}».` : "Для темы квиз пока не добавлен."}</p>
             </div>
         `;
+    }
+
+    function renderTutorTab(topic) {
+        const savedAnswer = state.tutorAnswerByTopicId.get(topic.topicId);
+
+        return `
+            <div class="tutor-box">
+                <div class="topic-detail-block">
+                    <h4>AI Tutor по теме</h4>
+                    <p>Задайте вопрос именно по этой теме. Ассистент ответит в контексте выбранной roadmap, зависимостей и места темы в маршруте.</p>
+                </div>
+                <form class="form-grid" data-tutor-form>
+                    <label class="form-row">
+                        <span class="field-label">Ваш вопрос</span>
+                        <textarea class="textarea" name="question" rows="5" maxlength="1200" placeholder="Например: объясни простыми словами и покажи небольшой пример"></textarea>
+                    </label>
+                    <div class="form-actions">
+                        <button class="button button-primary" type="submit">Спросить AI Tutor</button>
+                    </div>
+                </form>
+                ${savedAnswer ? `
+                    <div class="tutor-answer ${savedAnswer.error ? "is-error" : ""}">
+                        <h4>${savedAnswer.error ? "Не удалось получить ответ" : "Ответ AI Tutor"}</h4>
+                        <p>${escapeHtml(savedAnswer.answer)}</p>
+                    </div>
+                ` : ""}
+            </div>
+        `;
+    }
+
+    function renderQuizTab(topic) {
+        const quiz = state.quizByTopicId.get(topic.topicId);
+
+        if (!quiz) {
+            return `
+                <div class="topic-detail-block">
+                    <h4>Квиз по теме</h4>
+                    <p>Загружаем короткую проверку понимания. Если для темы ещё нет ручного квиза, сервис создаст базовый self-check автоматически.</p>
+                    <button class="button button-primary" type="button" disabled>Загрузка...</button>
+                </div>
+            `;
+        }
+
+        const questions = quiz.questions || [];
+        const result = state.quizResultByQuizId.get(quiz.id);
+
+        if (!questions.length) {
+            return `
+                <div class="topic-detail-block">
+                    <h4>${escapeHtml(quiz.title || "Квиз")}</h4>
+                    <p>Для этой темы пока нет вопросов.</p>
+                </div>
+            `;
+        }
+
+        return `
+            <form class="quiz-box" data-quiz-form data-quiz-id="${quiz.id}">
+                <div class="topic-detail-block">
+                    <h4>${escapeHtml(quiz.title || "Квиз по теме")}</h4>
+                    <p>Ответьте на вопросы и проверьте, насколько уверенно вы поняли тему.</p>
+                </div>
+                ${questions.map((question, questionIndex) => {
+                    const isMultiple = question.type === "MULTIPLE";
+                    return `
+                        <fieldset class="quiz-question">
+                            <legend>${questionIndex + 1}. ${escapeHtml(question.text)}</legend>
+                            ${(question.options || []).map((option) => `
+                                <label class="quiz-option">
+                                    <input type="${isMultiple ? "checkbox" : "radio"}" name="question-${question.id}" value="${option.id}">
+                                    <span>${escapeHtml(option.text)}</span>
+                                </label>
+                            `).join("")}
+                        </fieldset>
+                    `;
+                }).join("")}
+                <div class="form-actions">
+                    <button class="button button-primary" type="submit">Проверить ответы</button>
+                </div>
+                ${result ? `
+                    <div class="quiz-result">
+                        <strong>${result.correctCount} из ${result.totalCount}</strong>
+                        <span>Результат: ${escapeHtml(String(result.score))}%</span>
+                    </div>
+                ` : ""}
+            </form>
+        `;
+    }
+
+    async function ensureQuizLoaded(topic) {
+        if (state.quizByTopicId.has(topic.topicId)) {
+            return;
+        }
+
+        try {
+            const quiz = await quizzesApi.getTopicQuiz(topic.topicId);
+            state.quizByTopicId.set(topic.topicId, quiz);
+            if (state.selectedTopicId === topic.topicId && state.topicTab === "quiz") {
+                renderTopicPanel(topic);
+                openTopicDrawer();
+            }
+        } catch (error) {
+            showStatus(statusBox, "error", error instanceof ApiError ? error.message : "Не удалось загрузить квиз.");
+        }
+    }
+
+    function bindTutorForm(topic) {
+        const form = topicPanel.querySelector("[data-tutor-form]");
+        if (!form) {
+            return;
+        }
+
+        form.addEventListener("submit", async (event) => {
+            event.preventDefault();
+            const question = new FormData(form).get("question")?.toString().trim();
+            if (!question) {
+                state.tutorAnswerByTopicId.set(topic.topicId, {
+                    error: true,
+                    answer: "Введите вопрос по теме."
+                });
+                renderTopicPanel(topic);
+                return;
+            }
+
+            const button = form.querySelector("button[type='submit']");
+            button.disabled = true;
+            button.textContent = "AI Tutor думает...";
+
+            try {
+                const response = await tutorApi.ask(state.roadmap.id, topic.topicId, { question });
+                state.tutorAnswerByTopicId.set(topic.topicId, {
+                    error: false,
+                    answer: response.answer || "Ответ пустой. Попробуйте переформулировать вопрос."
+                });
+            } catch (error) {
+                state.tutorAnswerByTopicId.set(topic.topicId, {
+                    error: true,
+                    answer: error instanceof ApiError ? error.message : "AI Tutor сейчас недоступен."
+                });
+            } finally {
+                renderTopicPanel(topic);
+                openTopicDrawer();
+            }
+        });
+    }
+
+    function bindQuizForm(topic) {
+        const form = topicPanel.querySelector("[data-quiz-form]");
+        if (!form) {
+            return;
+        }
+
+        form.addEventListener("submit", async (event) => {
+            event.preventDefault();
+            const selectedOptionIds = [...form.querySelectorAll("input:checked")]
+                .map((input) => Number(input.value))
+                .filter(Boolean);
+
+            if (!selectedOptionIds.length) {
+                showStatus(statusBox, "warning", "Выберите хотя бы один вариант ответа.");
+                return;
+            }
+
+            const quizId = Number(form.dataset.quizId);
+            const button = form.querySelector("button[type='submit']");
+            button.disabled = true;
+            button.textContent = "Проверяем...";
+
+            try {
+                const result = await quizzesApi.submit({
+                    quizId,
+                    selectedOptionIds
+                });
+                state.quizResultByQuizId.set(quizId, result);
+            } catch (error) {
+                showStatus(statusBox, "error", error instanceof ApiError ? error.message : "Не удалось отправить квиз.");
+            } finally {
+                renderTopicPanel(topic);
+                openTopicDrawer();
+            }
+        });
     }
 
     function syncRoadmapUrl() {

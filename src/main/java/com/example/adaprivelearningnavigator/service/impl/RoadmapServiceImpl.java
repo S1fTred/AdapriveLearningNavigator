@@ -2,6 +2,7 @@ package com.example.adaprivelearningnavigator.service.impl;
 
 import com.example.adaprivelearningnavigator.domain.enums.EntityStatus;
 import com.example.adaprivelearningnavigator.domain.enums.PrereqRelationType;
+import com.example.adaprivelearningnavigator.domain.enums.ResourceType;
 import com.example.adaprivelearningnavigator.domain.knowledgeBase.Resource;
 import com.example.adaprivelearningnavigator.domain.knowledgeBase.RoleGoal;
 import com.example.adaprivelearningnavigator.domain.knowledgeBase.RoleTopic;
@@ -28,6 +29,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -152,13 +155,15 @@ public class RoadmapServiceImpl implements RoadmapService {
                 .map(nextTopic -> toRoadmapTopicResponse(nextTopic, roleTopicMeta.get(nextTopic.getId()), requiredPrereqMap))
                 .toList();
 
-        List<RoadmapResourceResponse> resources = topicResourceRepository.findAllByTopic_IdOrderByRankAsc(topicId).stream()
-                .map(this::toRoadmapResourceResponse)
-                .toList();
-
         Quiz quiz = quizRepository.findByTopic_Id(topicId).orElse(null);
         String localizedRoleName = KnowledgeBaseLocalizationUtil.localizeRoleName(roadmap.getCode(), roadmap.getName());
         String localizedTopicTitle = KnowledgeBaseLocalizationUtil.localizeTopicTitle(topic.getCode(), topic.getTitle());
+        List<RoadmapResourceResponse> resources = topicResourceRepository.findAllByTopic_IdOrderByRankAsc(topicId).stream()
+                .map(this::toRoadmapResourceResponse)
+                .toList();
+        if (resources.isEmpty()) {
+            resources = fallbackResources(topic, localizedTopicTitle);
+        }
 
         return RoadmapTopicDetailResponse.builder()
                 .roleId(roadmap.getId())
@@ -363,6 +368,48 @@ public class RoadmapServiceImpl implements RoadmapService {
                 .difficulty(resource.getDifficulty())
                 .rank(topicResource.getRank())
                 .build();
+    }
+
+    private List<RoadmapResourceResponse> fallbackResources(Topic topic, String localizedTopicTitle) {
+        String query = localizedTopicTitle + " " + topic.getTitle();
+        String encodedRuQuery = encode(query + " обучение на русском");
+
+        return List.of(
+                RoadmapResourceResponse.builder()
+                        .id(null)
+                        .title("Материалы на Habr по теме: " + localizedTopicTitle)
+                        .url("https://habr.com/ru/search/?q=" + encodedRuQuery + "&target_type=posts")
+                        .type(ResourceType.ARTICLE)
+                        .language("ru")
+                        .provider("Habr")
+                        .difficulty(topic.getLevel() != null ? topic.getLevel().name() : null)
+                        .rank(90)
+                        .build(),
+                RoadmapResourceResponse.builder()
+                        .id(null)
+                        .title("Видеоразборы на русском: " + localizedTopicTitle)
+                        .url("https://www.youtube.com/results?search_query=" + encodedRuQuery)
+                        .type(ResourceType.VIDEO)
+                        .language("ru")
+                        .provider("YouTube")
+                        .difficulty(topic.getLevel() != null ? topic.getLevel().name() : null)
+                        .rank(91)
+                        .build(),
+                RoadmapResourceResponse.builder()
+                        .id(null)
+                        .title("Официальные материалы и документация")
+                        .url("https://www.google.com/search?q=" + encode(query + " official documentation"))
+                        .type(ResourceType.ARTICLE)
+                        .language("en")
+                        .provider("Official docs search")
+                        .difficulty(topic.getLevel() != null ? topic.getLevel().name() : null)
+                        .rank(92)
+                        .build()
+        );
+    }
+
+    private String encode(String value) {
+        return URLEncoder.encode(value, StandardCharsets.UTF_8);
     }
 
     private BigDecimal sumEstimatedHours(Collection<Topic> topics) {

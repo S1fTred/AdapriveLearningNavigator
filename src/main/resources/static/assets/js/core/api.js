@@ -227,3 +227,34 @@ export const roadmapsApi = {
         return response;
     }
 };
+
+export const tutorApi = {
+    async ask(roadmapId, topicId, payload) {
+        return apiRequest(`/api/roadmaps/${roadmapId}/topics/${topicId}/tutor`, {
+            method: "POST",
+            body: payload
+        });
+    }
+};
+
+export const quizzesApi = {
+    async getTopicQuiz(topicId) {
+        return apiRequest(`/api/topics/${topicId}/quiz`);
+    },
+
+    async getQuestions(quizId) {
+        return apiRequest(`/api/quizzes/${quizId}/questions`);
+    },
+
+    async submit(payload) {
+        return apiRequest("/api/quizzes/attempts", {
+            method: "POST",
+            body: payload
+        });
+    },
+
+    async attempts(quizId = null) {
+        const query = quizId ? `?quizId=${quizId}` : "";
+        return apiRequest(`/api/quizzes/attempts${query}`);
+    }
+};
