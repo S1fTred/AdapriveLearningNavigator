@@ -170,9 +170,7 @@ public class RoadmapServiceImpl implements RoadmapService {
         List<RoadmapResourceResponse> resources = topicResourceRepository.findAllByTopic_IdOrderByRankAsc(topicId).stream()
                 .map(this::toRoadmapResourceResponse)
                 .toList();
-        if (resources.isEmpty()) {
-            resources = fallbackResources(topic, localizedTopicTitle);
-        }
+        resources = ensureMinimumResources(resources, topic, localizedTopicTitle, 3);
 
         return RoadmapTopicDetailResponse.builder()
                 .roleId(roadmap.getId())
@@ -379,6 +377,33 @@ public class RoadmapServiceImpl implements RoadmapService {
                 .build();
     }
 
+    private List<RoadmapResourceResponse> ensureMinimumResources(List<RoadmapResourceResponse> resources,
+                                                                 Topic topic,
+                                                                 String localizedTopicTitle,
+                                                                 int minCount) {
+        if (resources.size() >= minCount) {
+            return resources;
+        }
+
+        List<RoadmapResourceResponse> result = new ArrayList<>(resources);
+        Set<String> urls = result.stream()
+                .map(RoadmapResourceResponse::url)
+                .filter(url -> url != null && !url.isBlank())
+                .collect(Collectors.toCollection(LinkedHashSet::new));
+
+        for (RoadmapResourceResponse fallbackResource : fallbackResources(topic, localizedTopicTitle)) {
+            String url = fallbackResource.url();
+            if (url != null && urls.add(url)) {
+                result.add(fallbackResource);
+            }
+            if (result.size() >= minCount) {
+                break;
+            }
+        }
+
+        return result;
+    }
+
     private List<RoadmapResourceResponse> fallbackResources(Topic topic, String localizedTopicTitle) {
         String query = localizedTopicTitle + " " + topic.getTitle();
         String fingerprint = normalizeResourceFingerprint(topic, localizedTopicTitle);
@@ -435,6 +460,55 @@ public class RoadmapServiceImpl implements RoadmapService {
                     resource("Python: документация и справочник на русском", "https://docs-python.ru/", ResourceType.ARTICLE, "ru", "docs-python.ru"),
                     resource("Python: руководство Metanit", "https://metanit.com/python/tutorial/", ResourceType.COURSE, "ru", "Metanit"),
                     resource("Официальная документация Python", "https://docs.python.org/3/", ResourceType.ARTICLE, "en", "Python Docs")
+            );
+        }
+        if (containsAny(fingerprint, "go ", "golang")) {
+            return List.of(
+                    resource("Go by Example на русском", "https://gobyexample.com.ru/", ResourceType.COURSE, "ru", "Go by Example"),
+                    resource("A Tour of Go", "https://go.dev/tour/", ResourceType.INTERACTIVE, "en", "Go"),
+                    resource("Go Documentation", "https://go.dev/doc/", ResourceType.ARTICLE, "en", "Go")
+            );
+        }
+        if (containsAny(fingerprint, "rust")) {
+            return List.of(
+                    resource("The Rust Programming Language на русском", "https://doc.rust-lang.ru/book/", ResourceType.BOOK, "ru", "Rust"),
+                    resource("Rust by Example", "https://doc.rust-lang.org/rust-by-example/", ResourceType.COURSE, "en", "Rust"),
+                    resource("Rust Documentation", "https://www.rust-lang.org/learn", ResourceType.ARTICLE, "en", "Rust")
+            );
+        }
+        if (containsAny(fingerprint, "kotlin")) {
+            return List.of(
+                    resource("Kotlin Documentation", "https://kotlinlang.org/docs/home.html", ResourceType.ARTICLE, "en", "Kotlin"),
+                    resource("Kotlin Koans", "https://play.kotlinlang.org/koans/overview", ResourceType.INTERACTIVE, "en", "Kotlin"),
+                    resource("Android Kotlin на русском", "https://developer.android.com/kotlin?hl=ru", ResourceType.ARTICLE, "ru", "Android")
+            );
+        }
+        if (containsAny(fingerprint, "php", "laravel")) {
+            return List.of(
+                    resource("PHP: руководство на русском", "https://www.php.net/manual/ru/", ResourceType.ARTICLE, "ru", "PHP"),
+                    resource("Laravel Documentation", "https://laravel.com/docs", ResourceType.ARTICLE, "en", "Laravel"),
+                    resource("PHP: руководство Metanit", "https://metanit.com/php/tutorial/", ResourceType.COURSE, "ru", "Metanit")
+            );
+        }
+        if (containsAny(fingerprint, "ruby", "rails")) {
+            return List.of(
+                    resource("Ruby: документация на русском", "https://www.ruby-lang.org/ru/documentation/", ResourceType.ARTICLE, "ru", "Ruby"),
+                    resource("Ruby on Rails Guides", "https://guides.rubyonrails.org/", ResourceType.COURSE, "en", "Ruby on Rails"),
+                    resource("Ruby: материалы на Habr", "https://habr.com/ru/search/?q=Ruby&target_type=posts", ResourceType.ARTICLE, "ru", "Habr")
+            );
+        }
+        if (containsAny(fingerprint, "c++", "cpp")) {
+            return List.of(
+                    resource("C++: руководство Metanit", "https://metanit.com/cpp/tutorial/", ResourceType.COURSE, "ru", "Metanit"),
+                    resource("cppreference", "https://en.cppreference.com/w/", ResourceType.ARTICLE, "en", "cppreference"),
+                    resource("C++ на Habr", "https://habr.com/ru/search/?q=C%2B%2B&target_type=posts", ResourceType.ARTICLE, "ru", "Habr")
+            );
+        }
+        if (containsAny(fingerprint, "c#", "csharp", ".net", "asp.net")) {
+            return List.of(
+                    resource("C# и .NET: руководство Metanit", "https://metanit.com/sharp/tutorial/", ResourceType.COURSE, "ru", "Metanit"),
+                    resource("Документация .NET", "https://learn.microsoft.com/ru-ru/dotnet/", ResourceType.ARTICLE, "ru", "Microsoft Learn"),
+                    resource("ASP.NET Core Documentation", "https://learn.microsoft.com/ru-ru/aspnet/core/", ResourceType.ARTICLE, "ru", "Microsoft Learn")
             );
         }
         if (containsAny(fingerprint, "javascript", "typescript", "node", "promise", "async")) {
@@ -561,13 +635,6 @@ public class RoadmapServiceImpl implements RoadmapService {
                     resource("Flutter Documentation", "https://docs.flutter.dev/", ResourceType.ARTICLE, "en", "Flutter"),
                     resource("React Native Documentation", "https://reactnative.dev/docs/getting-started", ResourceType.ARTICLE, "en", "React Native"),
                     resource("Mobile development на Habr", "https://habr.com/ru/search/?q=mobile%20development&target_type=posts", ResourceType.ARTICLE, "ru", "Habr")
-            );
-        }
-        if (containsAny(fingerprint, "c++", "cpp", "go", "rust", "php", "ruby", "c#")) {
-            return List.of(
-                    resource("Metanit: языки программирования", "https://metanit.com/", ResourceType.COURSE, "ru", "Metanit"),
-                    resource("Документация PHP на русском", "https://www.php.net/manual/ru/", ResourceType.ARTICLE, "ru", "PHP"),
-                    resource("Rust Book на русском", "https://doc.rust-lang.ru/book/", ResourceType.BOOK, "ru", "Rust")
             );
         }
         if (containsAny(fingerprint, "ux", "ui", "design", "product", "research")) {

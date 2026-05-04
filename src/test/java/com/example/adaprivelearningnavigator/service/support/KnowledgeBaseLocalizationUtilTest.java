@@ -187,6 +187,60 @@ class KnowledgeBaseLocalizationUtilTest {
     }
 
     @Test
+    void shouldLocalizeRawLanguageTokensAndCliCommandsForBeginners() {
+        assertThat(KnowledgeBaseLocalizationUtil.localizeTopicTitle("RM_JAVASCRIPT_VAR", "var"))
+                .isEqualTo("Объявление переменных через var");
+        assertThat(KnowledgeBaseLocalizationUtil.localizeTopicTitle("RM_JAVASCRIPT_LET", "let"))
+                .isEqualTo("Блочные переменные через let");
+        assertThat(KnowledgeBaseLocalizationUtil.localizeTopicTitle("RM_JAVASCRIPT_CONST", "const"))
+                .isEqualTo("Объявление констант через const");
+        assertThat(KnowledgeBaseLocalizationUtil.localizeTopicTitle("RM_JAVASCRIPT_STRICT_EQUAL", "==="))
+                .isEqualTo("Строгое сравнение ===");
+        assertThat(KnowledgeBaseLocalizationUtil.localizeTopicTitle("RM_TYPESCRIPT_ANY", "any"))
+                .isEqualTo("Тип any");
+        assertThat(KnowledgeBaseLocalizationUtil.localizeTopicTitle("RM_MONGODB_LOOKUP", "$lookup"))
+                .isEqualTo("Оператор MongoDB $lookup");
+        assertThat(KnowledgeBaseLocalizationUtil.localizeTopicTitle("RM_REDIS_SET", "SET"))
+                .isEqualTo("Команда Redis SET");
+        assertThat(KnowledgeBaseLocalizationUtil.localizeTopicTitle("RM_SQL_AS", "AS"))
+                .isEqualTo("SQL-конструкция AS");
+        assertThat(KnowledgeBaseLocalizationUtil.localizeTopicTitle("RM_ANGULAR_IF", "@if"))
+                .isEqualTo("Блок условия @if");
+        assertThat(KnowledgeBaseLocalizationUtil.localizeTopicTitle("RM_VUE_MODEL", "v-model"))
+                .isEqualTo("Двусторонняя привязка v-model");
+        assertThat(KnowledgeBaseLocalizationUtil.localizeTopicTitle("RM_SWIFT_UI_STATE", "@State"))
+                .isEqualTo("Состояние SwiftUI @State");
+        assertThat(KnowledgeBaseLocalizationUtil.localizeTopicTitle("RM_LINUX_LS", "ls"))
+                .isEqualTo("Просмотр файлов через ls");
+        assertThat(KnowledgeBaseLocalizationUtil.localizeTopicTitle("RM_CLAUDE_CODE_HELP", "/help"))
+                .isEqualTo("Команда Claude Code /help");
+    }
+
+    @Test
+    void shouldLocalizeRemainingCommonMvpRoadmapTopicTails() {
+        assertThat(KnowledgeBaseLocalizationUtil.localizeTopicTitle("RM_HTML_DOCTYPE", "!DOCTYPE Declaration"))
+                .isEqualTo("Декларация !DOCTYPE");
+        assertThat(KnowledgeBaseLocalizationUtil.localizeTopicTitle("RM_GIT_HARD", "--hard"))
+                .isEqualTo("Жёсткий reset через --hard");
+        assertThat(KnowledgeBaseLocalizationUtil.localizeTopicTitle("RM_DSA_A_STAR", "A* Algorithm"))
+                .isEqualTo("Алгоритм A*");
+        assertThat(KnowledgeBaseLocalizationUtil.localizeTopicTitle("RM_API_ENDPOINTS", "API Endpoints"))
+                .isEqualTo("Endpoint'ы API");
+        assertThat(KnowledgeBaseLocalizationUtil.localizeTopicTitle("RM_DOCKER_IMAGES", "Building Container Images"))
+                .isEqualTo("Сборка container images");
+        assertThat(KnowledgeBaseLocalizationUtil.localizeTopicTitle("RM_JS_BUILT_INS", "Built-in Functions"))
+                .isEqualTo("Встроенные функции");
+        assertThat(KnowledgeBaseLocalizationUtil.localizeTopicTitle("RM_LINUX_LOGS", "Checking Service Logs"))
+                .isEqualTo("Проверка логов сервиса");
+        assertThat(KnowledgeBaseLocalizationUtil.localizeTopicTitle("RM_CSS_SHADOWS", "Box Shadows"))
+                .isEqualTo("Тени блоков");
+        assertThat(KnowledgeBaseLocalizationUtil.localizeTopicTitle("RM_UX_CHOICE", "Avoid Choice Overload"))
+                .isEqualTo("Избегать перегрузки выбором");
+        assertThat(KnowledgeBaseLocalizationUtil.localizeTopicTitle("RM_BI_COMMUNITIES", "BI Communities"))
+                .isEqualTo("BI-сообщества");
+    }
+
+    @Test
     void shouldLocalizeFormulaDescriptions() {
         String localized = KnowledgeBaseLocalizationUtil.localizeDescription(
                 "Тема roadmap по направлению «Android Developer»: Pick a Language. К теме прикреплены материалы для самостоятельного изучения.",

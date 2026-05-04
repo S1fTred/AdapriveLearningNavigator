@@ -1152,7 +1152,7 @@ public final class KnowledgeBaseLocalizationUtil {
         ROLE_TOPIC_TITLE_OVERRIDES.put("Managing Discussions", "Управление обсуждениями");
         ROLE_TOPIC_TITLE_OVERRIDES.put("APIs & SDKs", "API и SDK");
         ROLE_TOPIC_TITLE_OVERRIDES.put("Repetition & Reinforcement", "Повторение и закрепление");
-        ROLE_TOPIC_TITLE_OVERRIDES.put("Issues & Pull Requests", "Issues и pull requests");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Issues & Pull Requests", "Issues и запросы на слияние (Pull Request)");
         ROLE_TOPIC_TITLE_OVERRIDES.put("Handling Q&A", "Работа с вопросами и ответами");
         ROLE_TOPIC_TITLE_OVERRIDES.put("What is BI?", "Что такое BI?");
         ROLE_TOPIC_TITLE_OVERRIDES.put("Why BI Matters?", "Почему BI важен?");
@@ -1191,6 +1191,306 @@ public final class KnowledgeBaseLocalizationUtil {
         ROLE_TOPIC_TITLE_OVERRIDES.put("OOP in Java", "ООП в Java");
         ROLE_TOPIC_TITLE_OVERRIDES.put("HTTP Basics", "Основы HTTP");
         ROLE_TOPIC_TITLE_OVERRIDES.put("SQL Basics", "Основы SQL");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Pull Request", "Pull Request");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Pull Requests", "Запросы на слияние (Pull Request)");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("!DOCTYPE Declaration", "Декларация !DOCTYPE");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("$0 in Shell Scripting", "Аргумент $0 в shell-скриптах");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("--hard", "Жёсткий reset через --hard");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("--mixed", "Смешанный reset через --mixed");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("-replace option in apply", "Опция -replace при terraform apply");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("2 3 4 Trees", "2-3-4 деревья");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("2 3 Search Trees", "2-3 деревья поиска");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("2-3 Trees", "2-3 деревья");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("A* Algorithm", "Алгоритм A*");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("AVL Trees", "AVL-деревья");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Binary Trees", "Бинарные деревья");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Bellman Ford's Algorithm", "Алгоритм Беллмана-Форда");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Bellman-Ford Algoritm", "Алгоритм Беллмана-Форда");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Algorithmic Complexity", "Алгоритмическая сложность");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Big-O Notation", "Нотация Big O");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("BigInt Operators", "Операторы BigInt");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("@Input \\u0026 @Output", "Входные и выходные параметры компонентов");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("@MockBean Annotation", "Аннотация @MockBean");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("@SpringBootTest Annotation", "Аннотация @SpringBootTest");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("AOF rewrite & compaction", "Перезапись и сжатие AOF");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("AOF rewrite \\u0026 compaction", "Перезапись и сжатие AOF");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("API Definitions", "Определения API");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("API Endpoints", "Endpoint'ы API");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("API Gateways", "API Gateway");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("API Keys", "API-ключи");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("API Performance", "Производительность API");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("API Protection", "Защита API");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("API Reference", "Справочник API");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("API References", "Справочники API");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("API Requests", "API-запросы");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("API Semantics", "Семантика API");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("API Styles", "Стили API");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("API Usage", "Использование API");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("API strategy", "Стратегия API");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("APIs & Integrations", "API и интеграции");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("APIs \\u0026 Integrations", "API и интеграции");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("APIs & SDKs", "API и SDK");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("APIs \\u0026 SDKs", "API и SDK");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("AI Model Integration", "Интеграция AI-моделей");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("AJAX in WordPress", "AJAX в WordPress");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("AWS Global Infrastructure", "Глобальная инфраструктура AWS");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("AWS / Azure / GCP", "AWS, Azure и GCP");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Accessibilty", "Доступность");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Accesibility", "Доступность");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Accessibility Inspector", "Accessibility Inspector");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Accuracy", "Точность");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Action Views", "Представления Action View");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Active Record Conditions", "Условия в Active Record");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Active-Active geo Distribution", "Active-Active геораспределение");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Activity Diagrams", "Диаграммы активности");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Actors", "Акторы");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Actuators", "Actuator'ы");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Adding / Updating", "Добавление и обновление");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Adding Disks", "Добавление дисков");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Adding Extra Extensions", "Добавление расширений");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Abbreviation Element", "Элемент аббревиатуры");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Address Element", "Элемент адреса");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Article Element", "Элемент статьи");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Aside Element", "Боковой элемент aside");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Body Tag", "Тег body");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Admin Customization", "Настройка админ-панели");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Adversarial Examples", "Состязательные примеры");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Adversarial Training", "Состязательное обучение");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Advocacy", "Адвокация");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Agent Loop", "Цикл работы агента");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Agent Team", "Команда агентов");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Agentic Loop", "Агентный цикл");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Agile Methodology", "Agile-методология");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Algorithmic Bias", "Алгоритмическая предвзятость");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Aliases", "Алиасы");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Alignment & Buy-In", "Согласование и поддержка решения");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Alignment \\u0026 Buy-In", "Согласование и поддержка решения");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Alter Table", "Изменение таблицы ALTER TABLE");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Always use env variables", "Всегда использовать переменные окружения");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Animations & Graphics", "Анимации и графика");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Animations \\u0026 Graphics", "Анимации и графика");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Anti-Corruption Layer", "Антикоррупционный слой");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Anticipate Questions", "Предугадывание вопросов");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Any Frontend Framework", "Любой frontend-фреймворк");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Any Programming Language", "Любой язык программирования");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("App Configurations", "Конфигурация приложения");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("App Directory", "Структура директории приложения");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("App Router", "App Router");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Apple App store", "Apple App Store");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Applicability", "Применимость");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Application Caching", "Кэширование приложения");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Application Layer", "Прикладной уровень");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Array to Slice Conversion", "Преобразование массива в slice");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Ask for Structured Output e.g. JSON, XML, HTML etc.", "Запрос структурированного вывода: JSON, XML, HTML и др.");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Ask for one task at a time", "Запрашивать одну задачу за раз");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Asnc-await (C#)", "Async/await в C#");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Assets Optimization", "Оптимизация assets");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Assets Pipeline", "Assets pipeline");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Assuming Roles", "Принятие ролей");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Async / Await", "Async/await");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Async Components", "Асинхронные компоненты");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Async Programming", "Асинхронное программирование");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Async Request Reply", "Асинхронный request-reply");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Asynchronism", "Асинхронность");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Asynchronous", "Асинхронный режим");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Asynchronous Django", "Асинхронный Django");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Authentication with Laravel", "Аутентификация в Laravel");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Automated Workflows", "Автоматизированные workflows");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Be Concise", "Писать кратко");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Be consistent", "Соблюдать единообразие");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Be mindful of extensions", "Учитывать расширения");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Be specific about what you want", "Формулировать запрос конкретно");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Be specific in what you want", "Формулировать задачу конкретно");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Behavior Change Games", "Игры для изменения поведения");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Benchmark Datasets", "Benchmark-наборы данных");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Better Errors", "Улучшенная обработка ошибок");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Bias Recognition", "Распознавание bias");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Bias Recognition / Mitigation", "Распознавание и снижение bias");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Bias & Toxicity Guardrails", "Защита от bias и токсичности");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Bias \\u0026 Toxicity Guardrails", "Защита от bias и токсичности");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Big Endian", "Порядок байтов Big Endian");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Bind Mounts", "Bind mount'ы");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Blade Loops", "Циклы Blade");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Blade Templating", "Шаблоны Blade");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Blameless Post-mortems", "Post-mortem без поиска виноватых");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Block Display", "Блочное отображение");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Block Editor", "Блочный редактор");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Block Theme Structure", "Структура блочной темы");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Block Theme Styles", "Стили блочной темы");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Block Themes", "Блочные темы");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Blockchains", "Блокчейны");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Blocks", "Блоки");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Blog Posts", "Посты в блоге");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Blogging", "Ведение блога");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Blue-Green Deployments", "Blue-Green deployments");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Board presentations", "Презентации для руководства");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Boundaries", "Границы");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Box Shadows", "Тени блоков");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Break Statement in Ruby", "Оператор break в Ruby");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Breakpoints", "Breakpoint'ы");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Broadcast Receiver", "Broadcast Receiver");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Brown Bags", "Brown bag встречи");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Browser Rendering", "Рендеринг в браузере");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Browsers", "Браузеры");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Brute Force", "Полный перебор");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Buckets / Objects", "Buckets и объекты");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Budget requests", "Бюджетные запросы");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Buffer Overflow", "Переполнение буфера");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Buffered Streams", "Буферизованные потоки");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Building Container Images", "Сборка container images");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Building JSON / RESTful APIs", "Создание JSON и RESTful API");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Building SDKs", "Создание SDK");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Building Your Portfolio", "Создание портфолио");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Building & Consuming APIs", "Создание и использование API");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Building \\u0026 Consuming APIs", "Создание и использование API");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Building for Scale", "Проектирование под масштабирование");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Built-in Functions", "Встроенные функции");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Built-in Types", "Встроенные типы");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Builtin", "Встроенные возможности");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Caching API Endpoints in Next.js", "Кэширование API endpoint'ов в Next.js");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Caching Data", "Кэширование данных");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Calculus", "Математический анализ");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Calibrating LLMs", "Калибровка LLM");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Call to Action", "Призыв к действию");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Callback Functions", "Callback-функции");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Callback Hell", "Callback hell");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Canary Deployments", "Canary deployments");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Canonical Link", "Каноническая ссылка");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Capacity Settings", "Настройки capacity");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Capturing Values & Memory Mgmt.", "Захват значений и управление памятью");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Capturing Values \\u0026 Memory Mgmt.", "Захват значений и управление памятью");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Cardinality Aggregation", "Агрегация cardinality");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Cascading Order", "Порядок каскадирования");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Category", "Категории");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Certificates", "Сертификаты");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Certifications", "Сертификации");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Chain of Thought (CoT)", "Chain of Thought (CoT)");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Chain of Thought Prompting", "Chain-of-Thought prompting");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Change Tracker API", "Change Tracker API");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Change strategy", "Стратегия изменений");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Channel", "Каналы");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Character", "Символы");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Character Encodings", "Кодировки символов");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Chart Categories", "Категории графиков");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Charting", "Построение графиков");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Chat Completions API", "Chat Completions API");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Chatty I/O", "Избыточный ввод-вывод");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Cheating", "Обман в пользовательском поведении");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Checking Service Logs", "Проверка логов сервиса");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Checking Service Status", "Проверка статуса сервиса");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Checkout Tags", "Переключение на теги");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Checksum", "Контрольная сумма");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Child Combinator", "Дочерний комбинатор");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Choreography", "Хореография сервисов");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Cipher", "Шифр");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Circuit Breaker", "Circuit Breaker");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Citing Sources", "Цитирование источников");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Claim Check", "Claim Check");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Classic Editor", "Классический редактор");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Classic Themes", "Классические темы");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Classification", "Классификация");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Clean Code", "Чистый код");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Clean Up", "Очистка ресурсов");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Clear the Page of Distractions", "Убрать отвлекающие элементы со страницы");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Client-Server", "Клиент-серверная архитектура");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Client-Side Data Fetching", "Получение данных на клиенте");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Client-Side Field Level", "Шифрование полей на стороне клиента");
+        ROLE_TOPIC_TITLE_OVERRIDES.put(".NET Framework Based", "На основе .NET Framework");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("ACID, CAP Theorem", "ACID и CAP-теорема");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("ACL", "Списки контроля доступа (ACL)");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("ACLs", "Списки контроля доступа (ACL)");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("AMIs", "AMI-образы");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("AVERAGE", "Функция AVERAGE");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Accessibility Inspector", "Инспектор доступности");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Activity", "Activity в Android");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("ActivityIndicator", "Индикатор загрузки ActivityIndicator");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Adapter", "Паттерн Adapter");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Algorithms", "Алгоритмы");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Amazon EC2 ( Compute)", "Amazon EC2: вычисления");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Amazon RDS (Database)", "Amazon RDS: управляемая база данных");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Animated Builder", "AnimatedBuilder");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Animated Widget", "AnimatedWidget");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Anthropic Tool Use", "Использование tools в Anthropic");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Anthropic\\u0027s Claude", "Claude от Anthropic");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Antimalware", "Защита от вредоносного ПО");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Antivirus", "Антивирусная защита");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Argument Dependent Lookup (ADL)", "Argument Dependent Lookup (ADL)");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Ask Al to create a list of possible causes", "Попросить AI составить список возможных причин");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Asynchronous Flow", "Асинхронный Flow");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Atomic Operations & Memory Barriers", "Атомарные операции и memory barriers");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Atomic Operations \\u0026 Memory Barriers", "Атомарные операции и memory barriers");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Atomicity in Redis", "Атомарность в Redis");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Attack Vectors", "Векторы атак");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Attribute Based Access Control (ABAC)", "Attribute-Based Access Control (ABAC)");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Attribute Inheritance", "Наследование атрибутов");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Attribute Selectors", "Селекторы атрибутов");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Attributes", "Атрибуты");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Attributes Accessors", "Accessor'ы атрибутов");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Audit & Compliance Mapping", "Аудит и карта соответствия требованиям");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Audit \\u0026 Compliance Mapping", "Аудит и карта соответствия требованиям");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Authentication / Authorization", "Аутентификация и авторизация");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Authentication with Starter Kits", "Аутентификация через starter kits");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Authorization Gates", "Authorization Gates");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Auto layout", "Auto Layout");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Auto-Scaling", "Автомасштабирование");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Auto-Scaling Groups", "Группы автомасштабирования");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Autoconfiguration", "Автоконфигурация");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Autoloading", "Автозагрузка классов");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Automate the Act of Repetition", "Автоматизация повторяющихся действий");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Automated Deployments", "Автоматизированные deployments");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Automations", "Автоматизации");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Availability", "Доступность сервиса");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Availability in Numbers", "Доступность в цифрах");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Avoid Choice Overload", "Избегать перегрузки выбором");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Avoid Cognitive Overhead", "Избегать когнитивной перегрузки");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Avoid Direct Payments", "Избегать прямых платежей");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Avoid passing nulls, booleans", "Избегать передачи null и boolean-флагов");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Awareness Blog Posts", "Awareness-посты в блоге");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("BI Communities", "BI-сообщества");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("BI Competitions", "BI-соревнования");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("BI Platforms", "BI-платформы");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("BM25 Algorithm", "Алгоритм BM25");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Back Pressure", "Back pressure");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Backend Automation", "Автоматизация backend-тестов");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Backends for Frontend", "Backend for Frontend");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Backlinking", "Обратные ссылки");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Backpressure", "Backpressure");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Backtracking", "Backtracking");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Backup / Restore", "Backup и восстановление");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Badge", "Badge-компонент");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Badges", "Badge-компоненты");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Balance", "Балансировка решений");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Balanced Search Trees", "Сбалансированные деревья поиска");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Banner", "Banner-компонент");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Banners", "Banner-компоненты");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Barplot", "Столбчатая диаграмма");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Barrier", "Барьер синхронизации");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Base", "Базовые понятия");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Baseline", "Базовая линия");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Bash Alias", "Алиасы Bash");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Bash Debug", "Отладка Bash");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Basic Auth", "Basic Auth");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Basic PHP Syntax", "Базовый синтаксис PHP");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Basic Prompting", "Базовый prompting");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Basic Queries in Active Record", "Базовые запросы в Active Record");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Basic Regex Syntax", "Базовый синтаксис регулярных выражений");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Batch", "Пакетная обработка");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Batch Processing", "Пакетная обработка");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Batching", "Batching");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Bias", "Предвзятость модели");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Big-? Notation", "Нотация Big O");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Boolean Data Type", "Логический тип данных");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Boost Your WordPress Career", "Развитие карьеры в WordPress");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Boosting Queries", "Boosting-запросы");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Boot Loaders", "Загрузчики ОС");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Bottom Sheet", "Bottom Sheet");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Box", "Box-модель");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Brainwriting", "Brainwriting");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Build Tool API", "API build tool");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Business", "Бизнес-контекст");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Busy Frontend", "Перегруженный frontend");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("Buttons", "Кнопки");
+        ROLE_TOPIC_TITLE_OVERRIDES.put("C Interoperability", "Интероперабельность с C");
 
         TOPIC_PHRASE_TRANSLATIONS.put("Product Development", "разработка продукта");
         TOPIC_PHRASE_TRANSLATIONS.put("Product Management", "управление продуктом");
@@ -1204,6 +1504,50 @@ public final class KnowledgeBaseLocalizationUtil {
         TOPIC_PHRASE_TRANSLATIONS.put("Collaboration", "совместная работа");
         TOPIC_PHRASE_TRANSLATIONS.put("Deployment", "развёртывание");
         TOPIC_PHRASE_TRANSLATIONS.put("Prototyping", "прототипирование");
+        TOPIC_PHRASE_TRANSLATIONS.put("Accessibility", "доступность");
+        TOPIC_PHRASE_TRANSLATIONS.put("Aggregation", "агрегация");
+        TOPIC_PHRASE_TRANSLATIONS.put("Algorithmic", "алгоритмический");
+        TOPIC_PHRASE_TRANSLATIONS.put("Application", "приложение");
+        TOPIC_PHRASE_TRANSLATIONS.put("Applications", "приложения");
+        TOPIC_PHRASE_TRANSLATIONS.put("Built-in", "встроенный");
+        TOPIC_PHRASE_TRANSLATIONS.put("Building", "создание");
+        TOPIC_PHRASE_TRANSLATIONS.put("Caching", "кэширование");
+        TOPIC_PHRASE_TRANSLATIONS.put("Callback", "callback");
+        TOPIC_PHRASE_TRANSLATIONS.put("Callbacks", "callbacks");
+        TOPIC_PHRASE_TRANSLATIONS.put("Checking", "проверка");
+        TOPIC_PHRASE_TRANSLATIONS.put("Containers", "контейнеры");
+        TOPIC_PHRASE_TRANSLATIONS.put("Container", "контейнер");
+        TOPIC_PHRASE_TRANSLATIONS.put("Conversion", "преобразование");
+        TOPIC_PHRASE_TRANSLATIONS.put("Customization", "настройка");
+        TOPIC_PHRASE_TRANSLATIONS.put("Directory", "директория");
+        TOPIC_PHRASE_TRANSLATIONS.put("Elements", "элементы");
+        TOPIC_PHRASE_TRANSLATIONS.put("Element", "элемент");
+        TOPIC_PHRASE_TRANSLATIONS.put("Endpoints", "endpoint'ы");
+        TOPIC_PHRASE_TRANSLATIONS.put("Endpoint", "endpoint");
+        TOPIC_PHRASE_TRANSLATIONS.put("Examples", "примеры");
+        TOPIC_PHRASE_TRANSLATIONS.put("Functions", "функции");
+        TOPIC_PHRASE_TRANSLATIONS.put("Function", "функция");
+        TOPIC_PHRASE_TRANSLATIONS.put("Gateway", "gateway");
+        TOPIC_PHRASE_TRANSLATIONS.put("Integrations", "интеграции");
+        TOPIC_PHRASE_TRANSLATIONS.put("Integration", "интеграция");
+        TOPIC_PHRASE_TRANSLATIONS.put("Inspector", "инспектор");
+        TOPIC_PHRASE_TRANSLATIONS.put("Optimization", "оптимизация");
+        TOPIC_PHRASE_TRANSLATIONS.put("Pipeline", "pipeline");
+        TOPIC_PHRASE_TRANSLATIONS.put("Pipelines", "pipelines");
+        TOPIC_PHRASE_TRANSLATIONS.put("Rendering", "рендеринг");
+        TOPIC_PHRASE_TRANSLATIONS.put("Requests", "запросы");
+        TOPIC_PHRASE_TRANSLATIONS.put("Request", "запрос");
+        TOPIC_PHRASE_TRANSLATIONS.put("References", "справочники");
+        TOPIC_PHRASE_TRANSLATIONS.put("Reference", "справочник");
+        TOPIC_PHRASE_TRANSLATIONS.put("Semantics", "семантика");
+        TOPIC_PHRASE_TRANSLATIONS.put("Status", "статус");
+        TOPIC_PHRASE_TRANSLATIONS.put("Strategy", "стратегия");
+        TOPIC_PHRASE_TRANSLATIONS.put("Tags", "теги");
+        TOPIC_PHRASE_TRANSLATIONS.put("Types", "типы");
+        TOPIC_PHRASE_TRANSLATIONS.put("Usage", "использование");
+        TOPIC_PHRASE_TRANSLATIONS.put("Variables", "переменные");
+        TOPIC_PHRASE_TRANSLATIONS.put("Workflows", "workflows");
+        TOPIC_PHRASE_TRANSLATIONS.put("Workflow", "workflow");
         TOPIC_PHRASE_TRANSLATIONS.put("Generation", "генерация");
         TOPIC_PHRASE_TRANSLATIONS.put("Definition", "определение");
         TOPIC_PHRASE_TRANSLATIONS.put("Scope", "границы");
@@ -1698,7 +2042,7 @@ public final class KnowledgeBaseLocalizationUtil {
         TOPIC_PHRASE_TRANSLATIONS.put("Online Communities", "онлайн-сообщества");
         TOPIC_PHRASE_TRANSLATIONS.put("Event Participation", "участие в событиях");
         TOPIC_PHRASE_TRANSLATIONS.put("Managing Discussions", "ведение обсуждений");
-        TOPIC_PHRASE_TRANSLATIONS.put("Issues & Pull Requests", "issues и pull requests");
+        TOPIC_PHRASE_TRANSLATIONS.put("Issues & Pull Requests", "issues и запросы на слияние (Pull Request)");
         TOPIC_PHRASE_TRANSLATIONS.put("Handling Q&A", "работа с Q&A");
         TOPIC_PHRASE_TRANSLATIONS.put("Understanding APIs", "понимание API");
         TOPIC_PHRASE_TRANSLATIONS.put("Writing Documentation", "написание документации");
@@ -2483,6 +2827,11 @@ public final class KnowledgeBaseLocalizationUtil {
         }
 
         String normalized = topicTitle.trim();
+        String contextualKeyword = localizeContextualKeywordTopic(topicCode, normalized);
+        if (contextualKeyword != null) {
+            return contextualKeyword;
+        }
+
         String roleTopic = ROLE_TOPIC_TITLE_OVERRIDES.get(normalized);
         if (roleTopic != null) {
             return roleTopic;
@@ -2514,6 +2863,269 @@ public final class KnowledgeBaseLocalizationUtil {
         }
 
         return cleanup(localized);
+    }
+
+    private static String localizeContextualKeywordTopic(String topicCode, String title) {
+        String code = topicCode == null ? "" : topicCode.toUpperCase();
+
+        if (code.contains("JAVASCRIPT") || code.contains("_JS_") || code.startsWith("RM_JS")) {
+            return switch (title) {
+                case "var" -> "Объявление переменных через var";
+                case "let" -> "Блочные переменные через let";
+                case "const" -> "Объявление констант через const";
+                case "==" -> "Нестрогое сравнение ==";
+                case "===" -> "Строгое сравнение ===";
+                case "call" -> "Метод call()";
+                case "apply" -> "Метод apply()";
+                case "bind" -> "Метод bind()";
+                case "bigint" -> "Тип данных BigInt";
+                case "Symbol" -> "Тип данных Symbol";
+                case "Block" -> "Блочная область видимости";
+                case "DOM APIs" -> "DOM API для работы со страницей";
+                case "ESM" -> "Модули ES Modules";
+                case "CommonJS" -> "Модули CommonJS";
+                case "All about Variables" -> "Переменные в JavaScript";
+                case "Weak Map" -> "WeakMap: слабые ссылки для ключей";
+                case "Weak Set" -> "WeakSet: слабое множество объектов";
+                default -> null;
+            };
+        }
+
+        if (code.contains("TYPESCRIPT")) {
+            return switch (title) {
+                case "any" -> "Тип any";
+                case "unknown" -> "Тип unknown";
+                case "void" -> "Тип void";
+                case "typeof" -> "Оператор typeof";
+                case "as const" -> "Const assertion через as const";
+                case "as any" -> "Приведение типа через as any";
+                case "Awaited" -> "Utility type Awaited";
+                case "Exclude" -> "Utility type Exclude";
+                case "Extract" -> "Utility type Extract";
+                case "Tuple" -> "Кортежи Tuple";
+                case "Enum" -> "Перечисления enum";
+                case "Equality" -> "Сравнение значений";
+                default -> null;
+            };
+        }
+
+        if (code.contains("ANGULAR")) {
+            return switch (title) {
+                case "@if" -> "Блок условия @if";
+                case "@else" -> "Блок альтернативы @else";
+                case "@else if" -> "Блок альтернативного условия @else if";
+                case "@for" -> "Блок цикла @for";
+                case "@switch" -> "Блок выбора @switch";
+                case "@case" -> "Ветка @case";
+                case "@default" -> "Ветка по умолчанию @default";
+                case "@let" -> "Локальная переменная @let";
+                case "@defer" -> "Отложенная загрузка @defer";
+                case "@Input & @Output" -> "Входные и выходные параметры компонентов";
+                case "AoT Compilation" -> "Ahead-of-Time компиляция";
+                case "SSR" -> "Серверный рендеринг (SSR)";
+                default -> null;
+            };
+        }
+
+        if (code.contains("VUE")) {
+            return switch (title) {
+                case "v-if" -> "Условный рендеринг v-if";
+                case "v-else" -> "Альтернативный рендеринг v-else";
+                case "v-for" -> "Рендеринг списков v-for";
+                case "v-model" -> "Двусторонняя привязка v-model";
+                case "v-bind" -> "Привязка атрибутов v-bind";
+                case "v-on" -> "Обработка событий v-on";
+                case "v-show" -> "Показ и скрытие через v-show";
+                case "v-slot" -> "Слоты через v-slot";
+                case "v-text" -> "Текстовое содержимое через v-text";
+                case "v-html" -> "Вставка HTML через v-html";
+                case "v-cloak" -> "Скрытие до компиляции через v-cloak";
+                case "v-pre" -> "Пропуск компиляции через v-pre";
+                case "v-once" -> "Однократный рендеринг через v-once";
+                case "Slots" -> "Слоты компонентов";
+                case "Watchers" -> "Наблюдатели Watchers";
+                default -> null;
+            };
+        }
+
+        if (code.contains("SWIFT") || code.contains("IOS")) {
+            return switch (title) {
+                case "@State" -> "Состояние SwiftUI @State";
+                case "@Binding" -> "Связь состояния @Binding";
+                case "@StateObject" -> "Объект состояния @StateObject";
+                case "@ObservedObject" -> "Наблюдаемый объект @ObservedObject";
+                case "@EnvironmentObject" -> "Объект окружения @EnvironmentObject";
+                case "VStack" -> "Вертикальный стек VStack";
+                case "ZStack" -> "Слоевой стек ZStack";
+                case "TabView" -> "Контейнер вкладок TabView";
+                case "UIKit" -> "UIKit";
+                case "SwiftUI" -> "SwiftUI";
+                case "Xcode" -> "Xcode";
+                case "XCTest" -> "XCTest";
+                default -> null;
+            };
+        }
+
+        if (code.contains("MONGODB")) {
+            if (title.startsWith("$")) {
+                return "Оператор MongoDB " + title;
+            }
+            return switch (title) {
+                case "Aggregation" -> "Агрегация в MongoDB";
+                case "Cursors" -> "Курсоры MongoDB";
+                case "Compound" -> "Составные индексы";
+                case "Expiring" -> "TTL-индексы";
+                default -> null;
+            };
+        }
+
+        if (code.contains("REDIS")) {
+            if (title.matches("[A-Z][A-Z0-9_-]{1,}")) {
+                return "Команда Redis " + title;
+            }
+            return switch (title) {
+                case "Sets" -> "Множества Redis";
+                case "Bitmaps" -> "Bitmap-структуры Redis";
+                case "Usecases" -> "Сценарии использования Redis";
+                case "and Getting Keys" -> "Получение ключей";
+                default -> null;
+            };
+        }
+
+        if (code.contains("SQL") || code.contains("POSTGRESQL")) {
+            if (title.matches("[A-Z][A-Z0-9_]{1,}")) {
+                return "SQL-конструкция " + title;
+            }
+            return switch (title) {
+                case "Table" -> "Таблицы";
+                case "Row" -> "Строки таблицы";
+                case "Rows" -> "Строки таблицы";
+                case "Columns" -> "Столбцы таблицы";
+                case "Schemas" -> "Схемы базы данных";
+                case "Scalar" -> "Скалярные значения";
+                case "Unique" -> "Уникальные ограничения";
+                default -> null;
+            };
+        }
+
+        if (code.contains("PHP")) {
+            if (title.startsWith("$_")) {
+                return "Суперглобальный массив PHP " + title;
+            }
+            return switch (title) {
+                case "$this" -> "Текущий объект через $this";
+                case "echo" -> "Вывод через echo";
+                case "print" -> "Вывод через print";
+                case "var_dump" -> "Отладочный вывод var_dump()";
+                case "require" -> "Подключение файлов через require";
+                case "include" -> "Подключение файлов через include";
+                case "foreach" -> "Цикл foreach";
+                case "while" -> "Цикл while";
+                case "for" -> "Цикл for";
+                case "switch" -> "Оператор switch";
+                case "Traits" -> "Трейты";
+                case "Sessions" -> "Сессии";
+                default -> null;
+            };
+        }
+
+        if (code.contains("SHELL") || code.contains("BASH") || code.contains("LINUX")) {
+            return switch (title) {
+                case "ls" -> "Просмотр файлов через ls";
+                case "pwd" -> "Текущая директория через pwd";
+                case "cat" -> "Команда cat";
+                case "cd" -> "Команда cd";
+                case "cp" -> "Копирование через cp";
+                case "mv" -> "Перемещение через mv";
+                case "rm" -> "Удаление через rm";
+                case "mkdir" -> "Создание директорий через mkdir";
+                case "rmdir" -> "Удаление директорий через rmdir";
+                case "ln" -> "Ссылки через ln";
+                case "chmod" -> "Права доступа через chmod";
+                case "chown" -> "Смена владельца через chown";
+                case "chgrp" -> "Смена группы через chgrp";
+                case "awk" -> "Обработка текста через awk";
+                case "sed" -> "Потоковое редактирование через sed";
+                case "grep" -> "Поиск текста через grep";
+                case "find" -> "Поиск файлов через find";
+                case "sort" -> "Сортировка строк через sort";
+                case "uniq" -> "Удаление дублей через uniq";
+                case "cut" -> "Извлечение колонок через cut";
+                case "tr" -> "Замена символов через tr";
+                case "tee" -> "Запись и вывод через tee";
+                case "wc" -> "Подсчёт строк и слов через wc";
+                case "head" -> "Начало файла через head";
+                case "tail" -> "Конец файла через tail";
+                case "less" -> "Просмотр файла через less";
+                case "more" -> "Постраничный просмотр через more";
+                case "curl" -> "HTTP-запросы через curl";
+                case "wget" -> "Скачивание через wget";
+                case "tar" -> "Архивация через tar";
+                case "touch" -> "Создание файлов через touch";
+                case "rsync" -> "Синхронизация через rsync";
+                case "scp" -> "Копирование по SSH через scp";
+                case "ps" -> "Процессы через ps";
+                case "top" -> "Мониторинг процессов через top";
+                case "kill" -> "Завершение процессов через kill";
+                case "df" -> "Свободное место через df";
+                case "du" -> "Размер файлов через du";
+                case "set -e" -> "Режим Bash set -e";
+                case "set -o" -> "Параметры Bash set -o";
+                case "set -u" -> "Режим Bash set -u";
+                case "set -x" -> "Трассировка Bash set -x";
+                case "Bash -n" -> "Проверка синтаксиса Bash";
+                case "Vi" -> "Редактор vi";
+                case "Vim" -> "Редактор Vim";
+                default -> null;
+            };
+        }
+
+        if (code.contains("KOTLIN")) {
+            return switch (title) {
+                case "while" -> "Цикл while";
+                case "when" -> "Выражение when";
+                case "return" -> "Возврат значения через return";
+                case "varargs" -> "Переменное число аргументов vararg";
+                case "Booleans" -> "Логический тип Boolean";
+                case "Floats" -> "Числа с плавающей точкой Float";
+                default -> null;
+            };
+        }
+
+        if (code.contains("GOLANG")) {
+            return switch (title) {
+                case "break" -> "Оператор break";
+                case "continue" -> "Оператор continue";
+                case "Strings" -> "Строки в Go";
+                case "Slices" -> "Срезы slices";
+                case "Runes" -> "Руны rune";
+                case "Channels" -> "Каналы channels";
+                case "time" -> "Пакет time";
+                case "regexp" -> "Регулярные выражения regexp";
+                default -> null;
+            };
+        }
+
+        if (code.contains("CLAUDE_CODE")) {
+            if (title.startsWith("/")) {
+                return "Команда Claude Code " + title;
+            }
+            return switch (title) {
+                case "Ctrl+C" -> "Горячая клавиша Ctrl+C";
+                case "Ctrl+R" -> "Горячая клавиша Ctrl+R";
+                default -> null;
+            };
+        }
+
+        return switch (title) {
+            case "3 Trees" -> "3-деревья";
+            case "...other" -> "Другие элементы";
+            case "[global] keyword" -> "Глобальное ключевое слово";
+            case ".gitignore" -> "Файл .gitignore";
+            case "--soft" -> "Мягкий reset через --soft";
+            case "--watch" -> "Режим наблюдения --watch";
+            default -> null;
+        };
     }
 
     private static String localizeQuestionTopicTitle(String title) {

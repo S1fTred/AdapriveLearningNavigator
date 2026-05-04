@@ -11,7 +11,7 @@ const STORAGE_KEYS = {
     planDraft: "aln.planDraft"
 };
 
-const STORAGE_VERSION = "2026-04-29-mvp-roadmap-catalog-v1";
+const STORAGE_VERSION = "2026-05-04-topic-localization-v1";
 
 initializeStorage();
 

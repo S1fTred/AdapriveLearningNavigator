@@ -180,7 +180,11 @@ class RoadmapServiceImplTest {
 
         var topicDetail = roadmapService.getRoadmapTopic(102L, 601L);
 
-        assertThat(topicDetail.resources()).hasSize(1);
+        assertThat(topicDetail.resources()).hasSize(3);
         assertThat(topicDetail.resources().get(0).provider()).isNull();
+        assertThat(topicDetail.resources())
+                .extracting("provider")
+                .doesNotContain("roadmap.sh")
+                .contains("Docker", "Habr");
     }
 }
