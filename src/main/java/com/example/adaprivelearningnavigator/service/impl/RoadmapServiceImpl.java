@@ -65,6 +65,15 @@ public class RoadmapServiceImpl implements RoadmapService {
     private final TopicResourceRepository topicResourceRepository;
     private final QuizRepository quizRepository;
 
+    private record FallbackResourceTemplate(
+            String title,
+            String url,
+            ResourceType type,
+            String language,
+            String provider
+    ) {
+    }
+
     public RoadmapServiceImpl(RoleGoalRepository roleGoalRepository,
                               RoleTopicRepository roleTopicRepository,
                               TopicPrereqRepository topicPrereqRepository,
@@ -372,40 +381,273 @@ public class RoadmapServiceImpl implements RoadmapService {
 
     private List<RoadmapResourceResponse> fallbackResources(Topic topic, String localizedTopicTitle) {
         String query = localizedTopicTitle + " " + topic.getTitle();
-        String encodedRuQuery = encode(query + " обучение на русском");
+        String fingerprint = normalizeResourceFingerprint(topic, localizedTopicTitle);
+        List<FallbackResourceTemplate> templates = curatedFallbackResources(fingerprint);
+        List<FallbackResourceTemplate> result = new ArrayList<>(templates);
 
+        if (result.size() < 3) {
+            result.addAll(searchFallbackResources(query, localizedTopicTitle));
+        }
+
+        String difficulty = topic.getLevel() != null ? topic.getLevel().name() : null;
+        List<RoadmapResourceResponse> resources = new ArrayList<>();
+        int rank = 90;
+        Set<String> urls = new LinkedHashSet<>();
+        for (FallbackResourceTemplate template : result) {
+            if (!urls.add(template.url())) {
+                continue;
+            }
+            resources.add(RoadmapResourceResponse.builder()
+                    .id(null)
+                    .title(template.title())
+                    .url(template.url())
+                    .type(template.type())
+                    .language(template.language())
+                    .provider(template.provider())
+                    .difficulty(difficulty)
+                    .rank(rank++)
+                    .build());
+            if (resources.size() == 3) {
+                break;
+            }
+        }
+
+        return resources;
+    }
+
+    private List<FallbackResourceTemplate> curatedFallbackResources(String fingerprint) {
+        if (containsAny(fingerprint, "sql", "postgres", "database", "баз данн", "запрос")) {
+            return List.of(
+                    resource("SQL: интерактивные упражнения", "https://sql-ex.ru/", ResourceType.INTERACTIVE, "ru", "SQL-EX"),
+                    resource("Документация PostgreSQL на русском", "https://postgrespro.ru/docs/postgresql/current/", ResourceType.ARTICLE, "ru", "Postgres Pro"),
+                    resource("SQL и реляционные базы данных", "https://metanit.com/sql/", ResourceType.COURSE, "ru", "Metanit")
+            );
+        }
+        if (containsAny(fingerprint, "java", "jvm", "maven", "gradle")) {
+            return List.of(
+                    resource("Java: руководство Metanit", "https://metanit.com/java/tutorial/", ResourceType.COURSE, "ru", "Metanit"),
+                    resource("JavaRush: лекции по Java", "https://javarush.com/quests/lectures", ResourceType.COURSE, "ru", "JavaRush"),
+                    resource("Официальная документация Java", "https://docs.oracle.com/en/java/", ResourceType.ARTICLE, "en", "Oracle")
+            );
+        }
+        if (containsAny(fingerprint, "python", "django", "pandas", "numpy")) {
+            return List.of(
+                    resource("Python: документация и справочник на русском", "https://docs-python.ru/", ResourceType.ARTICLE, "ru", "docs-python.ru"),
+                    resource("Python: руководство Metanit", "https://metanit.com/python/tutorial/", ResourceType.COURSE, "ru", "Metanit"),
+                    resource("Официальная документация Python", "https://docs.python.org/3/", ResourceType.ARTICLE, "en", "Python Docs")
+            );
+        }
+        if (containsAny(fingerprint, "javascript", "typescript", "node", "promise", "async")) {
+            return List.of(
+                    resource("Современный учебник JavaScript", "https://learn.javascript.ru/", ResourceType.COURSE, "ru", "learn.javascript.ru"),
+                    resource("JavaScript на MDN", "https://developer.mozilla.org/ru/docs/Web/JavaScript", ResourceType.ARTICLE, "ru", "MDN"),
+                    resource("TypeScript Handbook", "https://www.typescriptlang.org/docs/", ResourceType.ARTICLE, "en", "TypeScript")
+            );
+        }
+        if (containsAny(fingerprint, "html", "semantic", "accessibility", "a11y")) {
+            return List.of(
+                    resource("HTML на MDN", "https://developer.mozilla.org/ru/docs/Web/HTML", ResourceType.ARTICLE, "ru", "MDN"),
+                    resource("HTML Academy: основы HTML", "https://htmlacademy.ru/courses/basic-html-css", ResourceType.INTERACTIVE, "ru", "HTML Academy"),
+                    resource("Доступность в вебе на MDN", "https://developer.mozilla.org/ru/docs/Web/Accessibility", ResourceType.ARTICLE, "ru", "MDN")
+            );
+        }
+        if (containsAny(fingerprint, "css", "flexbox", "grid", "layout")) {
+            return List.of(
+                    resource("CSS на MDN", "https://developer.mozilla.org/ru/docs/Web/CSS", ResourceType.ARTICLE, "ru", "MDN"),
+                    resource("CSS Grid Layout на MDN", "https://developer.mozilla.org/ru/docs/Web/CSS/CSS_grid_layout", ResourceType.ARTICLE, "ru", "MDN"),
+                    resource("Flexbox на MDN", "https://developer.mozilla.org/ru/docs/Learn/CSS/CSS_layout/Flexbox", ResourceType.ARTICLE, "ru", "MDN")
+            );
+        }
+        if (containsAny(fingerprint, "react", "next.js", "nextjs")) {
+            return List.of(
+                    resource("React: обучение", "https://ru.react.dev/learn", ResourceType.COURSE, "ru", "React"),
+                    resource("React: справочник API", "https://ru.react.dev/reference/react", ResourceType.ARTICLE, "ru", "React"),
+                    resource("Next.js Documentation", "https://nextjs.org/docs", ResourceType.ARTICLE, "en", "Next.js")
+            );
+        }
+        if (containsAny(fingerprint, "vue")) {
+            return List.of(
+                    resource("Vue: руководство", "https://ru.vuejs.org/guide/introduction.html", ResourceType.COURSE, "ru", "Vue"),
+                    resource("Vue: примеры", "https://ru.vuejs.org/examples/", ResourceType.INTERACTIVE, "ru", "Vue"),
+                    resource("Vue API", "https://ru.vuejs.org/api/", ResourceType.ARTICLE, "ru", "Vue")
+            );
+        }
+        if (containsAny(fingerprint, "angular")) {
+            return List.of(
+                    resource("Angular Documentation", "https://angular.dev/overview", ResourceType.ARTICLE, "en", "Angular"),
+                    resource("Angular Tutorial", "https://angular.dev/tutorials", ResourceType.COURSE, "en", "Angular"),
+                    resource("Angular на Habr", "https://habr.com/ru/search/?q=Angular&target_type=posts", ResourceType.ARTICLE, "ru", "Habr")
+            );
+        }
+        if (containsAny(fingerprint, "git", "github", "version control")) {
+            return List.of(
+                    resource("Pro Git на русском", "https://git-scm.com/book/ru/v2", ResourceType.BOOK, "ru", "Git"),
+                    resource("Git: справочник команд", "https://git-scm.com/docs", ResourceType.ARTICLE, "en", "Git"),
+                    resource("GitHub Docs", "https://docs.github.com/ru", ResourceType.ARTICLE, "ru", "GitHub")
+            );
+        }
+        if (containsAny(fingerprint, "linux", "bash", "shell", "cli", "command line")) {
+            return List.of(
+                    resource("Команды Linux: справочник", "https://losst.pro/komandy-linux", ResourceType.ARTICLE, "ru", "Losst"),
+                    resource("Bash Reference Manual", "https://www.gnu.org/software/bash/manual/bash.html", ResourceType.ARTICLE, "en", "GNU"),
+                    resource("Linux на Habr", "https://habr.com/ru/search/?q=Linux%20Bash&target_type=posts", ResourceType.ARTICLE, "ru", "Habr")
+            );
+        }
+        if (containsAny(fingerprint, "http", "rest", "api", "cors", "graphql")) {
+            return List.of(
+                    resource("HTTP на MDN", "https://developer.mozilla.org/ru/docs/Web/HTTP", ResourceType.ARTICLE, "ru", "MDN"),
+                    resource("REST API: материалы на Habr", "https://habr.com/ru/search/?q=REST%20API&target_type=posts", ResourceType.ARTICLE, "ru", "Habr"),
+                    resource("GraphQL Learn", "https://graphql.org/learn/", ResourceType.COURSE, "en", "GraphQL")
+            );
+        }
+        if (containsAny(fingerprint, "spring", "hibernate", "jpa", "orm")) {
+            return List.of(
+                    resource("Spring Framework и Spring Boot", "https://metanit.com/java/spring/", ResourceType.COURSE, "ru", "Metanit"),
+                    resource("Spring Guides", "https://spring.io/guides", ResourceType.COURSE, "en", "Spring"),
+                    resource("Hibernate ORM Documentation", "https://hibernate.org/orm/documentation/", ResourceType.ARTICLE, "en", "Hibernate")
+            );
+        }
+        if (containsAny(fingerprint, "docker", "container")) {
+            return List.of(
+                    resource("Docker Documentation", "https://docs.docker.com/", ResourceType.ARTICLE, "en", "Docker"),
+                    resource("Docker: материалы на Habr", "https://habr.com/ru/search/?q=Docker&target_type=posts", ResourceType.ARTICLE, "ru", "Habr"),
+                    resource("Docker: getting started", "https://docs.docker.com/get-started/", ResourceType.COURSE, "en", "Docker")
+            );
+        }
+        if (containsAny(fingerprint, "kubernetes", "k8s")) {
+            return List.of(
+                    resource("Kubernetes: документация на русском", "https://kubernetes.io/ru/docs/home/", ResourceType.ARTICLE, "ru", "Kubernetes"),
+                    resource("Kubernetes: основы", "https://kubernetes.io/ru/docs/tutorials/kubernetes-basics/", ResourceType.COURSE, "ru", "Kubernetes"),
+                    resource("Kubernetes на Habr", "https://habr.com/ru/search/?q=Kubernetes&target_type=posts", ResourceType.ARTICLE, "ru", "Habr")
+            );
+        }
+        if (containsAny(fingerprint, "security", "jwt", "oauth", "owasp", "xss", "csrf")) {
+            return List.of(
+                    resource("OWASP Cheat Sheet Series", "https://cheatsheetseries.owasp.org/", ResourceType.ARTICLE, "en", "OWASP"),
+                    resource("Безопасность в вебе на MDN", "https://developer.mozilla.org/ru/docs/Web/Security", ResourceType.ARTICLE, "ru", "MDN"),
+                    resource("OAuth 2.0: материалы на Habr", "https://habr.com/ru/search/?q=OAuth%202.0&target_type=posts", ResourceType.ARTICLE, "ru", "Habr")
+            );
+        }
+        if (containsAny(fingerprint, "algorithm", "data structure", "алгоритм", "структур")) {
+            return List.of(
+                    resource("Алгоритмы и структуры данных", "https://e-maxx.ru/algo/", ResourceType.ARTICLE, "ru", "E-maxx"),
+                    resource("Вики-конспекты ИТМО", "https://neerc.ifmo.ru/wiki/", ResourceType.ARTICLE, "ru", "ИТМО"),
+                    resource("CP-Algorithms", "https://cp-algorithms.com/", ResourceType.ARTICLE, "en", "CP-Algorithms")
+            );
+        }
+        if (containsAny(fingerprint, "machine learning", "ml", "ai", "llm", "embedding", "нейрос")) {
+            return List.of(
+                    resource("Учебник по машинному обучению", "https://education.yandex.ru/handbook/ml", ResourceType.COURSE, "ru", "Яндекс"),
+                    resource("Machine Learning на Habr", "https://habr.com/ru/hubs/machine_learning/articles/", ResourceType.ARTICLE, "ru", "Habr"),
+                    resource("Deep Learning Book", "https://www.deeplearningbook.org/", ResourceType.BOOK, "en", "Deep Learning Book")
+            );
+        }
+        if (containsAny(fingerprint, "android", "kotlin")) {
+            return List.of(
+                    resource("Android Kotlin на русском", "https://developer.android.com/kotlin?hl=ru", ResourceType.ARTICLE, "ru", "Android"),
+                    resource("Курсы Android", "https://developer.android.com/courses?hl=ru", ResourceType.COURSE, "ru", "Android"),
+                    resource("Kotlin Documentation", "https://kotlinlang.org/docs/home.html", ResourceType.ARTICLE, "en", "Kotlin")
+            );
+        }
+        if (containsAny(fingerprint, "swift", "ios", "swiftui")) {
+            return List.of(
+                    resource("SwiftBook", "https://swiftbook.org/", ResourceType.COURSE, "ru", "SwiftBook"),
+                    resource("Swift Documentation", "https://www.swift.org/documentation/", ResourceType.ARTICLE, "en", "Swift"),
+                    resource("Apple Developer Documentation", "https://developer.apple.com/documentation/", ResourceType.ARTICLE, "en", "Apple")
+            );
+        }
+        if (containsAny(fingerprint, "flutter", "react native", "mobile")) {
+            return List.of(
+                    resource("Flutter Documentation", "https://docs.flutter.dev/", ResourceType.ARTICLE, "en", "Flutter"),
+                    resource("React Native Documentation", "https://reactnative.dev/docs/getting-started", ResourceType.ARTICLE, "en", "React Native"),
+                    resource("Mobile development на Habr", "https://habr.com/ru/search/?q=mobile%20development&target_type=posts", ResourceType.ARTICLE, "ru", "Habr")
+            );
+        }
+        if (containsAny(fingerprint, "c++", "cpp", "go", "rust", "php", "ruby", "c#")) {
+            return List.of(
+                    resource("Metanit: языки программирования", "https://metanit.com/", ResourceType.COURSE, "ru", "Metanit"),
+                    resource("Документация PHP на русском", "https://www.php.net/manual/ru/", ResourceType.ARTICLE, "ru", "PHP"),
+                    resource("Rust Book на русском", "https://doc.rust-lang.ru/book/", ResourceType.BOOK, "ru", "Rust")
+            );
+        }
+        if (containsAny(fingerprint, "ux", "ui", "design", "product", "research")) {
+            return List.of(
+                    resource("UX/UI: материалы на Habr", "https://habr.com/ru/search/?q=UX%20UI&target_type=posts", ResourceType.ARTICLE, "ru", "Habr"),
+                    resource("Material Design", "https://m3.material.io/", ResourceType.ARTICLE, "en", "Google"),
+                    resource("Nielsen Norman Group", "https://www.nngroup.com/articles/", ResourceType.ARTICLE, "en", "NN/g")
+            );
+        }
+        if (containsAny(fingerprint, "system design", "architecture", "microservice", "distributed")) {
+            return List.of(
+                    resource("System Design Primer", "https://github.com/donnemartin/system-design-primer", ResourceType.BOOK, "en", "GitHub"),
+                    resource("Архитектура ПО на Habr", "https://habr.com/ru/search/?q=архитектура%20ПО&target_type=posts", ResourceType.ARTICLE, "ru", "Habr"),
+                    resource("Microservices.io", "https://microservices.io/patterns/", ResourceType.ARTICLE, "en", "Microservices.io")
+            );
+        }
+        if (containsAny(fingerprint, "cloud", "aws", "terraform", "devops", "ci/cd", "cicd")) {
+            return List.of(
+                    resource("Terraform Documentation", "https://developer.hashicorp.com/terraform/docs", ResourceType.ARTICLE, "en", "HashiCorp"),
+                    resource("AWS Skill Builder", "https://skillbuilder.aws/", ResourceType.COURSE, "en", "AWS"),
+                    resource("DevOps на Habr", "https://habr.com/ru/search/?q=DevOps&target_type=posts", ResourceType.ARTICLE, "ru", "Habr")
+            );
+        }
+        return List.of();
+    }
+
+    private List<FallbackResourceTemplate> searchFallbackResources(String query, String localizedTopicTitle) {
+        String encodedRuQuery = encode(query + " обучение на русском");
         return List.of(
-                RoadmapResourceResponse.builder()
-                        .id(null)
-                        .title("Материалы на Habr по теме: " + localizedTopicTitle)
-                        .url("https://habr.com/ru/search/?q=" + encodedRuQuery + "&target_type=posts")
-                        .type(ResourceType.ARTICLE)
-                        .language("ru")
-                        .provider("Habr")
-                        .difficulty(topic.getLevel() != null ? topic.getLevel().name() : null)
-                        .rank(90)
-                        .build(),
-                RoadmapResourceResponse.builder()
-                        .id(null)
-                        .title("Видеоразборы на русском: " + localizedTopicTitle)
-                        .url("https://www.youtube.com/results?search_query=" + encodedRuQuery)
-                        .type(ResourceType.VIDEO)
-                        .language("ru")
-                        .provider("YouTube")
-                        .difficulty(topic.getLevel() != null ? topic.getLevel().name() : null)
-                        .rank(91)
-                        .build(),
-                RoadmapResourceResponse.builder()
-                        .id(null)
-                        .title("Официальные материалы и документация")
-                        .url("https://www.google.com/search?q=" + encode(query + " official documentation"))
-                        .type(ResourceType.ARTICLE)
-                        .language("en")
-                        .provider("Official docs search")
-                        .difficulty(topic.getLevel() != null ? topic.getLevel().name() : null)
-                        .rank(92)
-                        .build()
+                resource(
+                        "Материалы на Habr по теме: " + localizedTopicTitle,
+                        "https://habr.com/ru/search/?q=" + encodedRuQuery + "&target_type=posts",
+                        ResourceType.ARTICLE,
+                        "ru",
+                        "Habr"
+                ),
+                resource(
+                        "Видеоразборы на русском: " + localizedTopicTitle,
+                        "https://www.youtube.com/results?search_query=" + encodedRuQuery,
+                        ResourceType.VIDEO,
+                        "ru",
+                        "YouTube"
+                ),
+                resource(
+                        "Официальные материалы и документация",
+                        "https://www.google.com/search?q=" + encode(query + " official documentation"),
+                        ResourceType.ARTICLE,
+                        "en",
+                        "Official docs search"
+                )
         );
+    }
+
+    private FallbackResourceTemplate resource(String title,
+                                              String url,
+                                              ResourceType type,
+                                              String language,
+                                              String provider) {
+        return new FallbackResourceTemplate(title, url, type, language, provider);
+    }
+
+    private String normalizeResourceFingerprint(Topic topic, String localizedTopicTitle) {
+        return (String.join(" ",
+                topic.getCode() != null ? topic.getCode() : "",
+                topic.getTitle() != null ? topic.getTitle() : "",
+                localizedTopicTitle != null ? localizedTopicTitle : "",
+                topic.getDescription() != null ? topic.getDescription() : ""
+        ))
+                .toLowerCase()
+                .replace('_', ' ')
+                .replace('-', ' ');
+    }
+
+    private boolean containsAny(String value, String... markers) {
+        for (String marker : markers) {
+            if (value.contains(marker)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     private String encode(String value) {
