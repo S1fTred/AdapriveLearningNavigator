@@ -180,11 +180,70 @@ class RoadmapServiceImplTest {
 
         var topicDetail = roadmapService.getRoadmapTopic(102L, 601L);
 
-        assertThat(topicDetail.resources()).hasSize(3);
+        assertThat(topicDetail.resources()).hasSizeGreaterThanOrEqualTo(5);
         assertThat(topicDetail.resources().get(0).provider()).isNull();
         assertThat(topicDetail.resources())
                 .extracting("provider")
                 .doesNotContain("roadmap.sh")
                 .contains("Docker", "Habr");
+        assertThat(topicDetail.resources())
+                .filteredOn(resourceResponse -> "ru".equalsIgnoreCase(resourceResponse.language()))
+                .hasSizeGreaterThanOrEqualTo(5);
+    }
+
+    @Test
+    void shouldSupplementTopicResourcesWithAtLeastFiveRussianSources() {
+        RoleGoal role = RoleGoal.builder()
+                .id(103L)
+                .code("frontend")
+                .name("Frontend Developer")
+                .description("Frontend roadmap")
+                .status(EntityStatus.ACTIVE)
+                .build();
+
+        Topic topic = Topic.builder()
+                .id(602L)
+                .code("FRONTEND_TOPIC_DISCOVERY")
+                .title("Topic Discovery")
+                .estimatedHours(BigDecimal.valueOf(4))
+                .build();
+
+        RoleTopic roleTopic = RoleTopic.builder()
+                .role(role)
+                .topic(topic)
+                .priority(1)
+                .required(true)
+                .build();
+
+        Resource resource = Resource.builder()
+                .id(702L)
+                .title("Original English material")
+                .url("https://example.com/original")
+                .type(ResourceType.ARTICLE)
+                .language("en")
+                .provider("Example")
+                .build();
+
+        TopicResource topicResource = TopicResource.builder()
+                .topic(topic)
+                .resource(resource)
+                .rank(1)
+                .build();
+
+        when(roleGoalRepository.findById(103L)).thenReturn(Optional.of(role));
+        when(roleTopicRepository.findAllByRole_IdOrderByPriorityAsc(103L)).thenReturn(List.of(roleTopic));
+        when(topicPrereqRepository.findAll()).thenReturn(List.of());
+        when(topicResourceRepository.findAllByTopic_IdOrderByRankAsc(602L)).thenReturn(List.of(topicResource));
+        when(quizRepository.findByTopic_Id(602L)).thenReturn(Optional.empty());
+
+        var topicDetail = roadmapService.getRoadmapTopic(103L, 602L);
+
+        assertThat(topicDetail.resources().get(0).title()).isEqualTo("Original English material");
+        assertThat(topicDetail.resources())
+                .filteredOn(resourceResponse -> "ru".equalsIgnoreCase(resourceResponse.language()))
+                .hasSizeGreaterThanOrEqualTo(5);
+        assertThat(topicDetail.resources())
+                .extracting("provider")
+                .contains("Habr", "YouTube", "Tproger", "Proglib", "Stepik");
     }
 }

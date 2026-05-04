@@ -58,6 +58,7 @@ public class RoadmapServiceImpl implements RoadmapService {
             Pattern.compile("(?i)\\s*добавлено из\\s+roadmap\\.sh\\.?\\s*");
     private static final Pattern MULTISPACE_PATTERN =
             Pattern.compile("\\s{2,}");
+    private static final int MIN_RUSSIAN_TOPIC_RESOURCES = 5;
 
     private final RoleGoalRepository roleGoalRepository;
     private final RoleTopicRepository roleTopicRepository;
@@ -170,7 +171,7 @@ public class RoadmapServiceImpl implements RoadmapService {
         List<RoadmapResourceResponse> resources = topicResourceRepository.findAllByTopic_IdOrderByRankAsc(topicId).stream()
                 .map(this::toRoadmapResourceResponse)
                 .toList();
-        resources = ensureMinimumResources(resources, topic, localizedTopicTitle, 3);
+        resources = ensureMinimumRussianResources(resources, topic, localizedTopicTitle);
 
         return RoadmapTopicDetailResponse.builder()
                 .roleId(roadmap.getId())
@@ -377,11 +378,13 @@ public class RoadmapServiceImpl implements RoadmapService {
                 .build();
     }
 
-    private List<RoadmapResourceResponse> ensureMinimumResources(List<RoadmapResourceResponse> resources,
-                                                                 Topic topic,
-                                                                 String localizedTopicTitle,
-                                                                 int minCount) {
-        if (resources.size() >= minCount) {
+    private List<RoadmapResourceResponse> ensureMinimumRussianResources(List<RoadmapResourceResponse> resources,
+                                                                        Topic topic,
+                                                                        String localizedTopicTitle) {
+        long russianResourceCount = resources.stream()
+                .filter(this::isRussianResource)
+                .count();
+        if (russianResourceCount >= MIN_RUSSIAN_TOPIC_RESOURCES) {
             return resources;
         }
 
@@ -395,13 +398,33 @@ public class RoadmapServiceImpl implements RoadmapService {
             String url = fallbackResource.url();
             if (url != null && urls.add(url)) {
                 result.add(fallbackResource);
+                if (isRussianResource(fallbackResource)) {
+                    russianResourceCount++;
+                }
             }
-            if (result.size() >= minCount) {
+            if (russianResourceCount >= MIN_RUSSIAN_TOPIC_RESOURCES) {
                 break;
             }
         }
 
         return result;
+    }
+
+    private boolean isRussianResource(RoadmapResourceResponse resource) {
+        if (resource.language() != null && "ru".equalsIgnoreCase(resource.language())) {
+            return true;
+        }
+        String provider = resource.provider() != null ? resource.provider().toLowerCase() : "";
+        String url = resource.url() != null ? resource.url().toLowerCase() : "";
+        return containsAny(provider,
+                "habr", "tproger", "proglib", "stepik", "metanit", "html academy", "hexlet",
+                "javarush", "swiftbook", "postgres pro", "sql-ex", "яндекс", "losst", "итмо"
+        ) || containsAny(url,
+                "/ru/", "habr.com/ru", "tproger.ru", "proglib.io", "stepik.org", "metanit.com",
+                "learn.javascript.ru", "ru.react.dev", "ru.vuejs.org", "postgrespro.ru", "docs-python.ru",
+                "sql-ex.ru", "git-scm.com/book/ru", "developer.mozilla.org/ru", "learn.microsoft.com/ru-ru",
+                "kotlinlang.ru", "doc.rust-lang.ru", "gobyexample.com.ru", "swiftbook.org", "losst.pro"
+        );
     }
 
     private List<RoadmapResourceResponse> fallbackResources(Topic topic, String localizedTopicTitle) {
@@ -410,9 +433,7 @@ public class RoadmapServiceImpl implements RoadmapService {
         List<FallbackResourceTemplate> templates = curatedFallbackResources(fingerprint);
         List<FallbackResourceTemplate> result = new ArrayList<>(templates);
 
-        if (result.size() < 3) {
-            result.addAll(searchFallbackResources(query, localizedTopicTitle));
-        }
+        result.addAll(searchFallbackResources(query, localizedTopicTitle));
 
         String difficulty = topic.getLevel() != null ? topic.getLevel().name() : null;
         List<RoadmapResourceResponse> resources = new ArrayList<>();
@@ -432,9 +453,6 @@ public class RoadmapServiceImpl implements RoadmapService {
                     .difficulty(difficulty)
                     .rank(rank++)
                     .build());
-            if (resources.size() == 3) {
-                break;
-            }
         }
 
         return resources;
@@ -665,25 +683,39 @@ public class RoadmapServiceImpl implements RoadmapService {
         String encodedRuQuery = encode(query + " обучение на русском");
         return List.of(
                 resource(
-                        "Материалы на Habr по теме: " + localizedTopicTitle,
+                        "Habr: материалы по теме «" + localizedTopicTitle + "»",
                         "https://habr.com/ru/search/?q=" + encodedRuQuery + "&target_type=posts",
                         ResourceType.ARTICLE,
                         "ru",
                         "Habr"
                 ),
                 resource(
-                        "Видеоразборы на русском: " + localizedTopicTitle,
+                        "YouTube: разборы на русском по теме «" + localizedTopicTitle + "»",
                         "https://www.youtube.com/results?search_query=" + encodedRuQuery,
                         ResourceType.VIDEO,
                         "ru",
                         "YouTube"
                 ),
                 resource(
-                        "Официальные материалы и документация",
-                        "https://www.google.com/search?q=" + encode(query + " official documentation"),
+                        "Tproger: статьи и подборки по теме «" + localizedTopicTitle + "»",
+                        "https://tproger.ru/search?q=" + encodedRuQuery,
                         ResourceType.ARTICLE,
-                        "en",
-                        "Official docs search"
+                        "ru",
+                        "Tproger"
+                ),
+                resource(
+                        "Proglib: практические материалы по теме «" + localizedTopicTitle + "»",
+                        "https://proglib.io/search?q=" + encodedRuQuery,
+                        ResourceType.ARTICLE,
+                        "ru",
+                        "Proglib"
+                ),
+                resource(
+                        "Stepik: русскоязычные курсы по теме «" + localizedTopicTitle + "»",
+                        "https://stepik.org/catalog/search?q=" + encodedRuQuery,
+                        ResourceType.COURSE,
+                        "ru",
+                        "Stepik"
                 )
         );
     }

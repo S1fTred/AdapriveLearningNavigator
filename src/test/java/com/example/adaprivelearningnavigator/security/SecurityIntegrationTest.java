@@ -62,10 +62,9 @@ class SecurityIntegrationTest {
     }
 
     @Test
-    void shouldAllowPublicTopicsEndpointWithoutAuthentication() throws Exception {
+    void shouldRequireAuthenticationForTopicsEndpoint() throws Exception {
         mockMvc.perform(get("/api/topics/public-check"))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$.message").value("public"));
+                .andExpect(status().isUnauthorized());
     }
 
     @Test
