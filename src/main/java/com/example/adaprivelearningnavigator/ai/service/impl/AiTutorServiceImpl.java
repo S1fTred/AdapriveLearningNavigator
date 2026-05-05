@@ -84,10 +84,18 @@ public class AiTutorServiceImpl implements AiTutorService {
                             Ты AI Tutor внутри русскоязычного сервиса с roadmap для изучения IT.
                             Отвечай по-русски, кратко и практично.
                             Не строй новый roadmap целиком: помогай только с выбранной темой.
+                            Учитывай предыдущие реплики диалога, но не повторяй их без необходимости.
                             Если пользователь просит код или пример, дай небольшой пример и объясни его.
                             Если вопрос выходит за тему, мягко верни ответ к текущей теме.
                             """)
-                    .user(buildUserPrompt(roleName, topicTitle, topicDescription, prereqs, request.question()))
+                    .user(buildUserPrompt(
+                            roleName,
+                            topicTitle,
+                            topicDescription,
+                            prereqs,
+                            formatChatHistory(request.history()),
+                            request.question()
+                    ))
                     .call()
                     .content();
 
@@ -127,21 +135,44 @@ public class AiTutorServiceImpl implements AiTutorService {
                                    String topicTitle,
                                    String topicDescription,
                                    List<String> prereqs,
+                                   String chatHistory,
                                    String question) {
         return """
                 Roadmap: %s
                 Тема: %s
                 Описание темы: %s
                 Предварительные темы: %s
+                Предыдущий диалог:
+                %s
 
-                Вопрос пользователя:
+                Текущий вопрос пользователя:
                 %s
                 """.formatted(
                 roleName,
                 topicTitle,
                 topicDescription == null || topicDescription.isBlank() ? "Описание пока не заполнено." : topicDescription,
                 prereqs.isEmpty() ? "нет обязательных предварительных тем" : String.join(", ", prereqs),
+                chatHistory,
                 question
         );
+    }
+
+    private String formatChatHistory(List<AiTutorRequest.AiTutorMessage> history) {
+        if (history == null || history.isEmpty()) {
+            return "Диалог только начался.";
+        }
+
+        StringBuilder builder = new StringBuilder();
+        history.stream()
+                .filter(message -> message != null)
+                .filter(message -> message.content() != null && !message.content().isBlank())
+                .limit(12)
+                .forEach(message -> builder
+                        .append("user".equals(message.role()) ? "Пользователь" : "AI Tutor")
+                        .append(": ")
+                        .append(message.content().trim())
+                        .append('\n'));
+
+        return builder.isEmpty() ? "Диалог только начался." : builder.toString().trim();
     }
 }

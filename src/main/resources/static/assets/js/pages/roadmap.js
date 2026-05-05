@@ -26,7 +26,8 @@ if (requireAuth()) {
         quizLoadingTopicIds: new Set(),
         quizErrorByTopicId: new Map(),
         quizResultByQuizId: new Map(),
-        tutorAnswerByTopicId: new Map()
+        tutorChatByTopicId: new Map(),
+        tutorLoadingTopicIds: new Set()
     };
 
     bindTopicDrawerEvents();
@@ -251,7 +252,7 @@ if (requireAuth()) {
         const tab = state.topicTab;
 
         topicPanel.innerHTML = `
-            <div class="card panel-card topic-detail-card">
+            <div class="card panel-card topic-detail-card ${tab === "tutor" ? "is-tutor-mode" : ""}">
                 <button class="topic-drawer-close" type="button" data-topic-drawer-close aria-label="Закрыть детали темы">×</button>
                 <p class="eyebrow">Детали темы</p>
                 <h3 id="topic-drawer-title">${escapeHtml(topic.topicTitle)}</h3>
@@ -711,30 +712,46 @@ if (requireAuth()) {
     }
 
     function renderTutorTab(topic) {
-        const savedAnswer = state.tutorAnswerByTopicId.get(topic.topicId);
+        const messages = getTutorMessages(topic.topicId);
+        const isLoading = state.tutorLoadingTopicIds.has(topic.topicId);
+        const visibleMessages = messages.length
+            ? messages
+            : [{
+                role: "assistant",
+                content: "Задайте вопрос по теме. Я отвечу в контексте этой roadmap и смогу продолжить диалог следующими сообщениями."
+            }];
 
         return `
             <div class="tutor-box">
                 <div class="topic-detail-block">
                     <h4>AI Tutor по теме</h4>
-                    <p>Задайте вопрос именно по этой теме. Ассистент ответит в контексте выбранной roadmap, зависимостей и места темы в маршруте.</p>
                 </div>
-                <form class="form-grid" data-tutor-form>
+                <div class="tutor-chat" data-tutor-chat>
+                    ${visibleMessages.map(renderTutorMessage).join("")}
+                    ${isLoading ? renderTutorMessage({ role: "assistant", content: "Думаю над ответом...", loading: true }) : ""}
+                </div>
+                <form class="tutor-chat-form" data-tutor-form>
                     <label class="form-row">
-                        <span class="field-label">Ваш вопрос</span>
-                        <textarea class="textarea" name="question" rows="5" maxlength="1200" placeholder="Например: объясни простыми словами и покажи небольшой пример"></textarea>
+                        <span class="field-label">Сообщение</span>
+                        <textarea class="textarea tutor-chat-input" name="question" rows="1" maxlength="1200" data-tutor-input placeholder="Например: объясни проще и покажи небольшой пример"></textarea>
                     </label>
-                    <div class="form-actions">
-                        <button class="button button-primary" type="submit">Спросить AI Tutor</button>
+                    <div class="form-actions tutor-chat-actions">
+                        <button class="button button-primary" type="submit" ${isLoading ? "disabled" : ""}>Отправить</button>
+                        ${messages.length ? `<button class="button button-ghost" type="button" data-tutor-clear>Очистить чат</button>` : ""}
                     </div>
                 </form>
-                ${savedAnswer ? `
-                    <div class="tutor-answer ${savedAnswer.error ? "is-error" : ""}">
-                        <h4>${savedAnswer.error ? "Не удалось получить ответ" : "Ответ AI Tutor"}</h4>
-                        <p>${escapeHtml(savedAnswer.answer)}</p>
-                    </div>
-                ` : ""}
             </div>
+        `;
+    }
+
+    function renderTutorMessage(message) {
+        const roleLabel = message.role === "user" ? "Вы" : "AI Tutor";
+        const roleClass = message.role === "user" ? "is-user" : "is-assistant";
+        return `
+            <article class="tutor-message ${roleClass} ${message.error ? "is-error" : ""} ${message.loading ? "is-loading" : ""}">
+                <span class="tutor-message-role">${roleLabel}</span>
+                <p>${escapeHtml(message.content)}</p>
+            </article>
         `;
     }
 
@@ -845,36 +862,111 @@ if (requireAuth()) {
             return;
         }
 
+        const clearButton = topicPanel.querySelector("[data-tutor-clear]");
+        clearButton?.addEventListener("click", () => {
+            state.tutorChatByTopicId.delete(topic.topicId);
+            state.tutorLoadingTopicIds.delete(topic.topicId);
+            renderTopicPanel(topic);
+            openTopicDrawer();
+        });
+
+        bindTutorInputAutosize(form);
+
         form.addEventListener("submit", async (event) => {
             event.preventDefault();
+            if (state.tutorLoadingTopicIds.has(topic.topicId)) {
+                return;
+            }
+
             const question = new FormData(form).get("question")?.toString().trim();
             if (!question) {
-                state.tutorAnswerByTopicId.set(topic.topicId, {
-                    error: true,
-                    answer: "Введите вопрос по теме."
+                appendTutorMessage(topic.topicId, {
+                    role: "assistant",
+                    content: "Введите вопрос по теме.",
+                    error: true
                 });
                 renderTopicPanel(topic);
                 return;
             }
 
-            const button = form.querySelector("button[type='submit']");
-            button.disabled = true;
-            button.textContent = "AI Tutor думает...";
+            const history = toTutorHistory(getTutorMessages(topic.topicId));
+            appendTutorMessage(topic.topicId, {
+                role: "user",
+                content: question
+            });
+            state.tutorLoadingTopicIds.add(topic.topicId);
+            renderTopicPanel(topic);
+            openTopicDrawer();
+            scrollTutorChatToBottom();
 
             try {
-                const response = await tutorApi.ask(state.roadmap.id, topic.topicId, { question });
-                state.tutorAnswerByTopicId.set(topic.topicId, {
-                    error: false,
-                    answer: response.answer || "Ответ пустой. Попробуйте переформулировать вопрос."
+                const response = await tutorApi.ask(state.roadmap.id, topic.topicId, { question, history });
+                appendTutorMessage(topic.topicId, {
+                    role: "assistant",
+                    content: response.answer || "Ответ пустой. Попробуйте переформулировать вопрос."
                 });
             } catch (error) {
-                state.tutorAnswerByTopicId.set(topic.topicId, {
+                appendTutorMessage(topic.topicId, {
+                    role: "assistant",
+                    content: error instanceof ApiError ? error.message : "AI Tutor сейчас недоступен.",
                     error: true,
-                    answer: error instanceof ApiError ? error.message : "AI Tutor сейчас недоступен."
                 });
             } finally {
-                renderTopicPanel(topic);
-                openTopicDrawer();
+                state.tutorLoadingTopicIds.delete(topic.topicId);
+                if (state.selectedTopicId === topic.topicId && state.topicTab === "tutor") {
+                    renderTopicPanel(topic);
+                    openTopicDrawer();
+                    scrollTutorChatToBottom();
+                }
+            }
+        });
+    }
+
+    function bindTutorInputAutosize(form) {
+        const input = form.querySelector("[data-tutor-input]");
+        if (!input) {
+            return;
+        }
+
+        const resize = () => {
+            input.style.height = "auto";
+            input.style.height = `${Math.min(input.scrollHeight, 132)}px`;
+        };
+
+        input.addEventListener("input", resize);
+        input.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" && !event.shiftKey && !event.isComposing) {
+                event.preventDefault();
+                form.requestSubmit();
+            }
+        });
+        resize();
+    }
+
+    function getTutorMessages(topicId) {
+        return state.tutorChatByTopicId.get(topicId) || [];
+    }
+
+    function appendTutorMessage(topicId, message) {
+        const messages = [...getTutorMessages(topicId), message].slice(-24);
+        state.tutorChatByTopicId.set(topicId, messages);
+    }
+
+    function toTutorHistory(messages) {
+        return messages
+            .filter((message) => !message.error && !message.loading)
+            .map((message) => ({
+                role: message.role === "user" ? "user" : "assistant",
+                content: message.content
+            }))
+            .slice(-12);
+    }
+
+    function scrollTutorChatToBottom() {
+        requestAnimationFrame(() => {
+            const chat = topicPanel.querySelector("[data-tutor-chat]");
+            if (chat) {
+                chat.scrollTop = chat.scrollHeight;
             }
         });
     }
