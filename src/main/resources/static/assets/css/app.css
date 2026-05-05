@@ -2019,6 +2019,93 @@ img {
     min-height: clamp(540px, calc(100vh - 350px), 760px);
 }
 
+.tutor-chat-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.tutor-prompt-menu {
+    position: relative;
+}
+
+.tutor-prompt-trigger {
+    min-height: 38px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(50, 98, 115, 0.16);
+    background: #ffffff;
+    color: var(--color-text);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    list-style: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+}
+
+.tutor-prompt-trigger::-webkit-details-marker {
+    display: none;
+}
+
+.tutor-prompt-trigger::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: translateY(-2px) rotate(45deg);
+    opacity: 0.72;
+}
+
+.tutor-prompt-menu[open] .tutor-prompt-trigger::after {
+    transform: translateY(2px) rotate(225deg);
+}
+
+.tutor-prompt-list {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    z-index: 8;
+    width: min(268px, calc(100vw - 72px));
+    display: grid;
+    gap: 4px;
+    padding: 8px;
+    border-radius: 16px;
+    background: #ffffff;
+    border: 1px solid rgba(50, 98, 115, 0.14);
+    box-shadow: 0 20px 36px rgba(0, 0, 0, 0.16);
+}
+
+.tutor-prompt-option {
+    width: 100%;
+    min-height: 38px;
+    padding: 9px 10px;
+    border: 0;
+    border-radius: 12px;
+    background: transparent;
+    color: var(--color-text);
+    font-size: 14px;
+    font-weight: 650;
+    text-align: left;
+    cursor: pointer;
+}
+
+.tutor-prompt-option:hover,
+.tutor-prompt-option:focus-visible {
+    outline: none;
+    background: rgba(92, 158, 173, 0.12);
+}
+
+.tutor-prompt-option:disabled {
+    cursor: wait;
+    opacity: 0.58;
+}
+
 .tutor-chat {
     display: grid;
     gap: 12px;
@@ -2427,5 +2514,15 @@ img {
     .tutor-box {
         grid-template-rows: auto minmax(280px, 1fr) auto;
         min-height: 460px;
+    }
+
+    .tutor-chat-header {
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .tutor-prompt-list {
+        left: 0;
+        right: auto;
     }
 }

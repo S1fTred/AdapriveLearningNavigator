@@ -723,8 +723,9 @@ if (requireAuth()) {
 
         return `
             <div class="tutor-box">
-                <div class="topic-detail-block">
+                <div class="topic-detail-block tutor-chat-header">
                     <h4>AI Tutor по теме</h4>
+                    ${renderTutorPromptMenu(topic, isLoading)}
                 </div>
                 <div class="tutor-chat" data-tutor-chat>
                     ${visibleMessages.map(renderTutorMessage).join("")}
@@ -742,6 +743,50 @@ if (requireAuth()) {
                 </form>
             </div>
         `;
+    }
+
+    function renderTutorPromptMenu(topic, isLoading) {
+        const prompts = buildTutorQuickPrompts(topic);
+
+        return `
+            <details class="tutor-prompt-menu">
+                <summary class="tutor-prompt-trigger">Объяснить</summary>
+                <div class="tutor-prompt-list">
+                    ${prompts.map((item) => `
+                        <button class="tutor-prompt-option" type="button" data-tutor-prompt="${escapeHtml(item.prompt)}" ${isLoading ? "disabled" : ""}>
+                            ${escapeHtml(item.label)}
+                        </button>
+                    `).join("")}
+                </div>
+            </details>
+        `;
+    }
+
+    function buildTutorQuickPrompts(topic) {
+        const title = topic.topicTitle || "выбранная тема";
+
+        return [
+            {
+                label: "Объяснить тему",
+                prompt: `Объясни тему «${title}» простыми словами. Добавь короткий пример и покажи, как эта тема связана с roadmap.`
+            },
+            {
+                label: "Ключевые моменты",
+                prompt: `Перечисли ключевые моменты темы «${title}»: что нужно понять, запомнить и уметь применить на практике.`
+            },
+            {
+                label: "Краткое резюме",
+                prompt: `Кратко резюмируй тему «${title}» в 5-7 пунктах без лишней теории.`
+            },
+            {
+                label: "Объяснить как новичку",
+                prompt: `Объясни тему «${title}» максимально простым языком, как для новичка, который впервые сталкивается с этим понятием.`
+            },
+            {
+                label: "Почему это важно?",
+                prompt: `Почему тема «${title}» важна в этом направлении? Объясни, где она применяется и какие проблемы помогает решать.`
+            }
+        ];
     }
 
     function renderTutorMessage(message) {
@@ -871,6 +916,7 @@ if (requireAuth()) {
         });
 
         bindTutorInputAutosize(form);
+        bindTutorPromptMenu(topic);
 
         form.addEventListener("submit", async (event) => {
             event.preventDefault();
@@ -889,37 +935,59 @@ if (requireAuth()) {
                 return;
             }
 
-            const history = toTutorHistory(getTutorMessages(topic.topicId));
-            appendTutorMessage(topic.topicId, {
-                role: "user",
-                content: question
-            });
-            state.tutorLoadingTopicIds.add(topic.topicId);
-            renderTopicPanel(topic);
-            openTopicDrawer();
-            scrollTutorChatToBottom();
-
-            try {
-                const response = await tutorApi.ask(state.roadmap.id, topic.topicId, { question, history });
-                appendTutorMessage(topic.topicId, {
-                    role: "assistant",
-                    content: response.answer || "Ответ пустой. Попробуйте переформулировать вопрос."
-                });
-            } catch (error) {
-                appendTutorMessage(topic.topicId, {
-                    role: "assistant",
-                    content: error instanceof ApiError ? error.message : "AI Tutor сейчас недоступен.",
-                    error: true,
-                });
-            } finally {
-                state.tutorLoadingTopicIds.delete(topic.topicId);
-                if (state.selectedTopicId === topic.topicId && state.topicTab === "tutor") {
-                    renderTopicPanel(topic);
-                    openTopicDrawer();
-                    scrollTutorChatToBottom();
-                }
-            }
+            await sendTutorQuestion(topic, question);
         });
+    }
+
+    function bindTutorPromptMenu(topic) {
+        topicPanel.querySelectorAll("[data-tutor-prompt]").forEach((button) => {
+            button.addEventListener("click", async () => {
+                const prompt = button.dataset.tutorPrompt?.trim();
+                button.closest("details")?.removeAttribute("open");
+                await sendTutorQuestion(topic, prompt);
+            });
+        });
+    }
+
+    async function sendTutorQuestion(topic, question) {
+        const normalizedQuestion = question?.trim();
+        if (!normalizedQuestion || state.tutorLoadingTopicIds.has(topic.topicId)) {
+            return;
+        }
+
+        const history = toTutorHistory(getTutorMessages(topic.topicId));
+        appendTutorMessage(topic.topicId, {
+            role: "user",
+            content: normalizedQuestion
+        });
+        state.tutorLoadingTopicIds.add(topic.topicId);
+        renderTopicPanel(topic);
+        openTopicDrawer();
+        scrollTutorChatToBottom();
+
+        try {
+            const response = await tutorApi.ask(state.roadmap.id, topic.topicId, {
+                question: normalizedQuestion,
+                history
+            });
+            appendTutorMessage(topic.topicId, {
+                role: "assistant",
+                content: response.answer || "Ответ пустой. Попробуйте переформулировать вопрос."
+            });
+        } catch (error) {
+            appendTutorMessage(topic.topicId, {
+                role: "assistant",
+                content: error instanceof ApiError ? error.message : "AI Tutor сейчас недоступен.",
+                error: true,
+            });
+        } finally {
+            state.tutorLoadingTopicIds.delete(topic.topicId);
+            if (state.selectedTopicId === topic.topicId && state.topicTab === "tutor") {
+                renderTopicPanel(topic);
+                openTopicDrawer();
+                scrollTutorChatToBottom();
+            }
+        }
     }
 
     function bindTutorInputAutosize(form) {
