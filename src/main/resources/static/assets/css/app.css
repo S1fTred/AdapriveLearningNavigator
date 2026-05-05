@@ -2008,13 +2008,9 @@ img {
     gap: 14px;
 }
 
-.tutor-box,
-.quiz-box {
+.tutor-box {
     display: grid;
     gap: 16px;
-}
-
-.tutor-box {
     grid-template-rows: auto minmax(360px, 1fr) auto;
     min-height: clamp(540px, calc(100vh - 350px), 760px);
 }
@@ -2027,11 +2023,20 @@ img {
     gap: 12px;
 }
 
+.tutor-quick-actions {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
 .tutor-prompt-menu {
     position: relative;
 }
 
-.tutor-prompt-trigger {
+.tutor-prompt-trigger,
+.tutor-knowledge-button {
     min-height: 38px;
     display: inline-flex;
     align-items: center;
@@ -2046,6 +2051,17 @@ img {
     cursor: pointer;
     list-style: none;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+}
+
+.tutor-knowledge-button {
+    background: var(--color-accent);
+    color: #ffffff;
+    border-color: transparent;
+}
+
+.tutor-knowledge-button:disabled {
+    cursor: wait;
+    opacity: 0.62;
 }
 
 .tutor-prompt-trigger::-webkit-details-marker {
@@ -2193,80 +2209,6 @@ img {
 
 .tutor-chat-actions .button-primary {
     box-shadow: 0 10px 20px rgba(92, 158, 173, 0.24);
-}
-
-.tutor-answer,
-.quiz-result {
-    display: grid;
-    gap: 6px;
-    padding: 16px;
-    border-radius: var(--radius-md);
-    background: rgba(92, 158, 173, 0.1);
-    border: 1px solid rgba(92, 158, 173, 0.18);
-}
-
-.tutor-answer.is-error {
-    background: rgba(181, 74, 74, 0.1);
-    border-color: rgba(181, 74, 74, 0.18);
-}
-
-.tutor-answer h4,
-.quiz-result strong {
-    margin: 0;
-}
-
-.tutor-answer p,
-.quiz-result span {
-    margin: 0;
-    color: var(--color-muted);
-    line-height: 1.55;
-    white-space: pre-wrap;
-}
-
-.quiz-question {
-    display: grid;
-    gap: 10px;
-    margin: 0;
-    padding: 16px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: var(--radius-md);
-    background: var(--color-surface);
-}
-
-.quiz-question legend.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-}
-
-.quiz-question-title {
-    display: block;
-    margin: 0 0 2px;
-    font-weight: 700;
-    line-height: 1.35;
-    overflow-wrap: anywhere;
-}
-
-.quiz-option {
-    display: grid;
-    grid-template-columns: 18px 1fr;
-    align-items: start;
-    gap: 10px;
-    padding: 10px 12px;
-    border-radius: 12px;
-    background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.06);
-    color: var(--color-text);
-}
-
-.quiz-option input {
-    margin-top: 3px;
 }
 
 .footer {
@@ -2519,6 +2461,10 @@ img {
     .tutor-chat-header {
         align-items: start;
         flex-direction: column;
+    }
+
+    .tutor-quick-actions {
+        justify-content: start;
     }
 
     .tutor-prompt-list {

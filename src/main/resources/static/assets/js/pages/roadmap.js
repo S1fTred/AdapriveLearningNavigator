@@ -1,4 +1,4 @@
-import { ApiError, plansApi, quizzesApi, roadmapsApi, tutorApi } from "/assets/js/core/api.js";
+import { ApiError, plansApi, roadmapsApi, tutorApi } from "/assets/js/core/api.js";
 import { requireAuth } from "/assets/js/core/guard.js";
 import { resolveActivePlan } from "/assets/js/core/plans.js";
 import { resolveActiveRoadmap } from "/assets/js/core/roadmaps.js";
@@ -22,10 +22,6 @@ if (requireAuth()) {
         plannedTopicIds: new Set(),
         knownTopicIds: new Set(),
         topicTab: "overview",
-        quizByTopicId: new Map(),
-        quizLoadingTopicIds: new Set(),
-        quizErrorByTopicId: new Map(),
-        quizResultByQuizId: new Map(),
         tutorChatByTopicId: new Map(),
         tutorLoadingTopicIds: new Set()
     };
@@ -267,7 +263,6 @@ if (requireAuth()) {
                 <div class="topic-tab-row panel-top-gap">
                     <button class="topic-tab ${tab === "overview" ? "is-active" : ""}" type="button" data-topic-tab="overview">Обзор</button>
                     <button class="topic-tab ${tab === "resources" ? "is-active" : ""}" type="button" data-topic-tab="resources">Ресурсы</button>
-                    <button class="topic-tab ${tab === "quiz" ? "is-active" : ""}" type="button" data-topic-tab="quiz">Квиз</button>
                     <button class="topic-tab ${tab === "tutor" ? "is-active" : ""}" type="button" data-topic-tab="tutor">AI Tutor</button>
                 </div>
 
@@ -282,23 +277,14 @@ if (requireAuth()) {
         });
 
         topicPanel.querySelectorAll("[data-topic-tab]").forEach((button) => {
-            button.addEventListener("click", async () => {
+            button.addEventListener("click", () => {
                 state.topicTab = button.dataset.topicTab;
                 renderTopicPanel(topic);
                 openTopicDrawer();
-                if (state.topicTab === "quiz") {
-                    await ensureQuizLoaded(topic);
-                }
             });
         });
 
         bindTutorForm(topic);
-        bindQuizForm(topic);
-        bindQuizRetry(topic);
-
-        if (state.topicTab === "quiz") {
-            ensureQuizLoaded(topic);
-        }
     }
 
     function bindTopicDrawerEvents() {
@@ -346,10 +332,6 @@ if (requireAuth()) {
                 : "<p>Для темы пока не прикреплены ресурсы.</p>";
         }
 
-        if (tab === "quiz") {
-            return renderQuizTab(topic);
-        }
-
         if (tab === "tutor") {
             return renderTutorTab(topic);
         }
@@ -358,56 +340,6 @@ if (requireAuth()) {
             <div class="topic-detail-block topic-overview-block">
                 <h4>Кратко о теме</h4>
                 <p>${escapeHtml(buildSmartTopicOverview(topic, isKnown, prereqs, unlocks))}</p>
-            </div>
-        `;
-
-        if (tab === "tutor") {
-            const quizAvailable = topic.quiz?.available;
-            return `
-                <div class="tutor-placeholder">
-                    <h4>AI Tutor для темы</h4>
-                    <p>
-                        Следующий продуктовый шаг: AI Tutor будет отвечать прямо в контексте выбранной темы,
-                        её зависимостей, ресурсов и места в roadmap.
-                    </p>
-                    <div class="pill-row">
-                        <span class="badge">${quizAvailable ? "Есть квиз" : "Квиз пока не заведён"}</span>
-                        <span class="badge badge-dark">${resources.length} ресурсов</span>
-                    </div>
-                    <button class="button button-secondary panel-top-gap" type="button" disabled>AI Tutor скоро</button>
-                </div>
-            `;
-        }
-
-        return `
-            ${isKnown ? `
-                <div class="topic-detail-block">
-                    <h4>Статус</h4>
-                    <p>Тема отмечена как уже знакомая. Она остаётся в roadmap для понимания структуры, но не включается в новый weekly plan.</p>
-                </div>
-            ` : ""}
-
-            <div class="topic-detail-block">
-                <h4>Что нужно знать перед темой</h4>
-                ${prereqs.length ? `
-                    <div class="topic-tags">
-                        ${prereqs.map((item) => `<span class="topic-chip">${escapeHtml(item.topicTitle)}</span>`).join("")}
-                    </div>
-                ` : "<p>Эту тему можно брать без обязательных предварительных тем.</p>"}
-            </div>
-
-            <div class="topic-detail-block">
-                <h4>Что открывает дальше</h4>
-                ${unlocks.length ? `
-                    <div class="topic-tags">
-                        ${unlocks.map((item) => `<span class="topic-chip muted">${escapeHtml(item.topicTitle)}</span>`).join("")}
-                    </div>
-                ` : "<p>Это конечная тема внутри текущего roadmap.</p>"}
-            </div>
-
-            <div class="topic-detail-block">
-                <h4>Квиз</h4>
-                <p>${topic.quiz?.available ? `Для темы доступен квиз «${escapeHtml(topic.quiz.title)}».` : "Для темы квиз пока не добавлен."}</p>
             </div>
         `;
     }
@@ -725,7 +657,10 @@ if (requireAuth()) {
             <div class="tutor-box">
                 <div class="topic-detail-block tutor-chat-header">
                     <h4>AI Tutor по теме</h4>
-                    ${renderTutorPromptMenu(topic, isLoading)}
+                    <div class="tutor-quick-actions">
+                        ${renderTutorPromptMenu(topic, isLoading)}
+                        ${renderTutorKnowledgeButton(topic, isLoading)}
+                    </div>
                 </div>
                 <div class="tutor-chat" data-tutor-chat>
                     ${visibleMessages.map(renderTutorMessage).join("")}
@@ -743,6 +678,27 @@ if (requireAuth()) {
                 </form>
             </div>
         `;
+    }
+
+    function renderTutorKnowledgeButton(topic, isLoading) {
+        return `
+            <button class="tutor-knowledge-button" type="button" data-tutor-prompt="${escapeHtml(buildTutorKnowledgePrompt(topic))}" ${isLoading ? "disabled" : ""}>
+                Проверь знания
+            </button>
+        `;
+    }
+
+    function buildTutorKnowledgePrompt(topic) {
+        const title = topic.topicTitle || "выбранная тема";
+
+        return [
+            `Проверь мои знания по теме «${title}».`,
+            "Составь мини-тест максимум на 10 вопросов.",
+            "Используй вопросы по сути темы, а не общие учебные советы.",
+            "Можно использовать варианты ответов A/B/C/D, задания на выбор правильного ответа и короткие вопросы.",
+            "Не показывай правильные ответы сразу.",
+            "Попроси меня прислать ответы одним сообщением, а после этого проверь их и объясни ошибки."
+        ].join(" ");
     }
 
     function renderTutorPromptMenu(topic, isLoading) {
@@ -798,107 +754,6 @@ if (requireAuth()) {
                 <p>${escapeHtml(message.content)}</p>
             </article>
         `;
-    }
-
-    function renderQuizTab(topic) {
-        const quiz = state.quizByTopicId.get(topic.topicId);
-        const quizError = state.quizErrorByTopicId.get(topic.topicId);
-
-        if (quizError) {
-            return `
-                <div class="topic-detail-block">
-                    <h4>Квиз по теме</h4>
-                    <p>${escapeHtml(quizError)}</p>
-                    <button class="button button-primary" type="button" data-quiz-retry>Попробовать ещё раз</button>
-                </div>
-            `;
-        }
-
-        if (!quiz) {
-            return `
-                <div class="topic-detail-block">
-                    <h4>Квиз по теме</h4>
-                    <p>Загружаем короткую проверку понимания. Если для темы ещё нет ручного квиза, сервис создаст базовый self-check автоматически.</p>
-                    <button class="button button-primary" type="button" disabled>Загрузка...</button>
-                </div>
-            `;
-        }
-
-        const questions = quiz.questions || [];
-        const result = state.quizResultByQuizId.get(quiz.id);
-
-        if (!questions.length) {
-            return `
-                <div class="topic-detail-block">
-                    <h4>${escapeHtml(quiz.title || "Квиз")}</h4>
-                    <p>Для этой темы пока нет вопросов.</p>
-                </div>
-            `;
-        }
-
-        return `
-            <form class="quiz-box" data-quiz-form data-quiz-id="${quiz.id}">
-                <div class="topic-detail-block">
-                    <h4>${escapeHtml(quiz.title || "Квиз по теме")}</h4>
-                    <p>Ответьте на вопросы и проверьте, насколько уверенно вы поняли тему.</p>
-                </div>
-                ${questions.map((question, questionIndex) => {
-                    const isMultiple = question.type === "MULTIPLE";
-                    return `
-                        <fieldset class="quiz-question">
-                            <legend class="visually-hidden">Вопрос ${questionIndex + 1}</legend>
-                            <strong class="quiz-question-title">${questionIndex + 1}. ${escapeHtml(question.text)}</strong>
-                            ${(question.options || []).map((option) => `
-                                <label class="quiz-option">
-                                    <input type="${isMultiple ? "checkbox" : "radio"}" name="question-${question.id}" value="${option.id}">
-                                    <span>${escapeHtml(option.text)}</span>
-                                </label>
-                            `).join("")}
-                        </fieldset>
-                    `;
-                }).join("")}
-                <div class="form-actions">
-                    <button class="button button-primary" type="submit">Проверить ответы</button>
-                </div>
-                ${result ? `
-                    <div class="quiz-result">
-                        <strong>${result.correctCount} из ${result.totalCount}</strong>
-                        <span>Результат: ${escapeHtml(String(result.score))}%</span>
-                    </div>
-                ` : ""}
-            </form>
-        `;
-    }
-
-    async function ensureQuizLoaded(topic) {
-        if (state.quizByTopicId.has(topic.topicId)) {
-            return;
-        }
-        if (state.quizLoadingTopicIds.has(topic.topicId)) {
-            return;
-        }
-
-        try {
-            state.quizLoadingTopicIds.add(topic.topicId);
-            state.quizErrorByTopicId.delete(topic.topicId);
-            const quiz = await quizzesApi.getTopicQuiz(topic.topicId);
-            state.quizByTopicId.set(topic.topicId, quiz);
-            if (state.selectedTopicId === topic.topicId && state.topicTab === "quiz") {
-                renderTopicPanel(topic);
-                openTopicDrawer();
-            }
-        } catch (error) {
-            state.quizErrorByTopicId.set(
-                topic.topicId,
-                error instanceof ApiError ? error.message : "Не удалось загрузить квиз."
-            );
-            if (state.selectedTopicId === topic.topicId && state.topicTab === "quiz") {
-                renderTopicPanel(topic);
-                openTopicDrawer();
-            }
-        } finally {
-            state.quizLoadingTopicIds.delete(topic.topicId);
-        }
     }
 
     function bindTutorForm(topic) {
@@ -1036,57 +891,6 @@ if (requireAuth()) {
             if (chat) {
                 chat.scrollTop = chat.scrollHeight;
             }
-        });
-    }
-
-    function bindQuizForm(topic) {
-        const form = topicPanel.querySelector("[data-quiz-form]");
-        if (!form) {
-            return;
-        }
-
-        form.addEventListener("submit", async (event) => {
-            event.preventDefault();
-            const selectedOptionIds = [...form.querySelectorAll("input:checked")]
-                .map((input) => Number(input.value))
-                .filter(Boolean);
-
-            if (!selectedOptionIds.length) {
-                showStatus(statusBox, "warning", "Выберите хотя бы один вариант ответа.");
-                return;
-            }
-
-            const quizId = Number(form.dataset.quizId);
-            const button = form.querySelector("button[type='submit']");
-            button.disabled = true;
-            button.textContent = "Проверяем...";
-
-            try {
-                const result = await quizzesApi.submit({
-                    quizId,
-                    selectedOptionIds
-                });
-                state.quizResultByQuizId.set(quizId, result);
-            } catch (error) {
-                showStatus(statusBox, "error", error instanceof ApiError ? error.message : "Не удалось отправить квиз.");
-            } finally {
-                renderTopicPanel(topic);
-                openTopicDrawer();
-            }
-        });
-    }
-
-    function bindQuizRetry(topic) {
-        const button = topicPanel.querySelector("[data-quiz-retry]");
-        if (!button) {
-            return;
-        }
-
-        button.addEventListener("click", () => {
-            state.quizErrorByTopicId.delete(topic.topicId);
-            renderTopicPanel(topic);
-            openTopicDrawer();
-            ensureQuizLoaded(topic);
         });
     }
 
