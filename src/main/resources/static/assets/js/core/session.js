@@ -149,6 +149,15 @@ export function getCachedPlan(planId) {
     return cached[String(planId)] || null;
 }
 
+export function removeCachedPlan(planId) {
+    if (planId == null) {
+        return;
+    }
+    const cached = readJson(STORAGE_KEYS.cachedPlans, {});
+    delete cached[String(planId)];
+    writeJson(STORAGE_KEYS.cachedPlans, cached);
+}
+
 export function cacheRoadmap(roadmap) {
     const current = readJson(STORAGE_KEYS.cachedRoadmaps, {});
     current[String(roadmap.id)] = roadmap;

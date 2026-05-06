@@ -101,6 +101,7 @@ Adaprive Learning Navigator — это веб-сервис для изучени
 - не выводит служебные данные сессии вроде internal user id, JWT payload или сроков действия токенов;
 - не содержит старые legacy-поля `Цель`, `Уровень`, `Известные темы` и дефолтные часы, потому что эти параметры больше не участвуют в roadmap-first сценарии;
 - показывает список сохранённых weekly plan с переходами в каталог, карту направления и сам план.
+- позволяет удалить сохранённый план из профиля через кастомное подтверждающее окно в стилистике сайта; удаление мягкое: backend помечает план статусом `DELETED`, скрывает его из списков и запрещает открывать/обновлять прогресс по нему, но не стирает связанные недели, шаги и прогресс физически.
 
 #### Прогресс `/progress`
 - больше не является отдельным основным разделом;
@@ -148,6 +149,7 @@ AI-generated route:
 - `PageController` — маршрутизация HTML-страниц;
 - `AuthServiceImpl` — auth-логика;
 - `PlanServiceImpl` — построение и сохранение персонального плана;
+- `PlanServiceImpl` также отвечает за soft delete сохранённых планов через статус `DELETED`;
 - `RoadmapServiceImpl` — read-model для roadmap'ов;
 - `QuizServiceImpl` — lazy-генерация базового квиза и проверка попыток пользователя;
 - `AiTutorServiceImpl` — формирование topic-scoped prompt и вызов Ollama через Spring AI;
@@ -246,6 +248,7 @@ AI-generated route:
 - `GET /api/plans/{planId}`
 - `POST /api/plans/build-from-roadmap`
 - `POST /api/plans/generate-with-ai` — legacy
+- `DELETE /api/plans/{planId}` — мягко удаляет сохранённый план текущего пользователя
 
 ### Progress API
 - `GET /api/plans/{planId}/progress`

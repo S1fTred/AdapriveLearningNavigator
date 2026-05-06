@@ -5,7 +5,8 @@ import lombok.Getter;
 public enum EntityStatus {
     DRAFT("Черновик"),
     ACTIVE("Активен"),
-    ARCHIVED("Архив");
+    ARCHIVED("Архив"),
+    DELETED("Удалён");
 
     private final String displayName;
 

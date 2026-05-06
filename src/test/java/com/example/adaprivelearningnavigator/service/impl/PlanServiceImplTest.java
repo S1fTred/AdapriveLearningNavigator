@@ -532,8 +532,10 @@ class PlanServiceImplTest {
         second.setCreatedAt(Instant.parse("2026-04-08T10:00:00Z"));
         Plan third = plan(702L, user, role, ScenarioType.BASE, "ARCHIVED");
         third.setCreatedAt(Instant.parse("2026-04-07T10:00:00Z"));
+        Plan deleted = plan(703L, user, role, ScenarioType.BASE, EntityStatus.DELETED.name());
+        deleted.setCreatedAt(Instant.parse("2026-04-10T10:00:00Z"));
 
-        when(planRepository.findAllByUser_IdOrderByCreatedAtDesc(1L)).thenReturn(List.of(first, second, third));
+        when(planRepository.findAllByUser_IdOrderByCreatedAtDesc(1L)).thenReturn(List.of(deleted, first, second, third));
 
         PlanServiceImpl planService = new PlanServiceImpl(
                 userRepository,
@@ -687,6 +689,63 @@ class PlanServiceImplTest {
         );
 
         assertThrows(NotFoundException.class, () -> planService.getPlan(requestedUser.getId(), 500L));
+    }
+
+    @Test
+    void shouldRejectAccessToDeletedPlan() {
+        User user = user(1L, "test@example.com");
+        RoleGoal role = roleGoal(100L, "java-backend", "Java Backend Developer");
+        Plan deletedPlan = plan(500L, user, role, ScenarioType.BASE, EntityStatus.DELETED.name());
+
+        when(planRepository.findById(500L)).thenReturn(Optional.of(deletedPlan));
+
+        PlanServiceImpl planService = new PlanServiceImpl(
+                userRepository,
+                roleGoalRepository,
+                roleTopicRepository,
+                topicPrereqRepository,
+                planRepository,
+                planParamsSnapshotRepository,
+                planWeekRepository,
+                planStepRepository,
+                planStepExplanationRepository,
+                planStepExplanationPrereqRepository,
+                planStepResourceRepository,
+                aiRouteGenerationService,
+                aiRouteValidationService
+        );
+
+        assertThrows(NotFoundException.class, () -> planService.getPlan(user.getId(), 500L));
+    }
+
+    @Test
+    void shouldSoftDeleteOwnedPlan() {
+        User user = user(1L, "test@example.com");
+        RoleGoal role = roleGoal(100L, "java-backend", "Java Backend Developer");
+        Plan plan = plan(500L, user, role, ScenarioType.BASE, EntityStatus.DRAFT.name());
+
+        when(planRepository.findById(500L)).thenReturn(Optional.of(plan));
+
+        PlanServiceImpl planService = new PlanServiceImpl(
+                userRepository,
+                roleGoalRepository,
+                roleTopicRepository,
+                topicPrereqRepository,
+                planRepository,
+                planParamsSnapshotRepository,
+                planWeekRepository,
+                planStepRepository,
+                planStepExplanationRepository,
+                planStepExplanationPrereqRepository,
+                planStepResourceRepository,
+                aiRouteGenerationService,
+                aiRouteValidationService
+        );
+
+        planService.deletePlan(user.getId(), 500L);
+
+        assertEquals(EntityStatus.DELETED.name(), plan.getStatus());
+        verify(planRepository).save(plan);
     }
 
     @Test

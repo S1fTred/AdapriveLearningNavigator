@@ -31,6 +31,8 @@ import java.util.Set;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
+import static org.mockito.Mockito.verify;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -131,6 +133,15 @@ class PlanControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.roleCode").value("java-backend"))
                 .andExpect(jsonPath("$.roleName").value("Java Backend Developer"));
+    }
+
+    @Test
+    void shouldDeletePlanWhenAuthenticationPresent() throws Exception {
+        mockMvc.perform(delete("/api/plans/100")
+                        .principal(authentication()))
+                .andExpect(status().isNoContent());
+
+        verify(planService).deletePlan(42L, 100L);
     }
 
     @Test

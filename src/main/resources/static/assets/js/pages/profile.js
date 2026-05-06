@@ -10,6 +10,11 @@ if (requireAuth()) {
     const infoContainer = document.querySelector("#profile-info");
     const plansContainer = document.querySelector("#profile-plans");
 
+    const state = {
+        profile: null,
+        plans: []
+    };
+
     loadProfilePage().catch((error) => renderProfileFallback(error));
 
     async function loadProfilePage() {
@@ -19,6 +24,8 @@ if (requireAuth()) {
         ]);
 
         const plans = plansPage.items || [];
+        state.profile = profile;
+        state.plans = plans;
         renderInfo(profile, plans);
         renderSavedPlans(plans);
     }
@@ -84,11 +91,95 @@ if (requireAuth()) {
                             <a class="button button-secondary" href="/dashboard?roadmapId=${plan.roleId}&planId=${plan.id}">Каталог</a>
                             <a class="button button-ghost" href="/roadmap?roadmapId=${plan.roleId}&planId=${plan.id}">Карта</a>
                             <a class="button button-ghost" href="/plan?planId=${plan.id}">План</a>
+                            <button class="button button-danger" type="button" data-delete-plan-id="${plan.id}">Удалить</button>
                         </div>
                     </article>
                 `).join("")}
             </div>
         `;
+
+        bindDeletePlanActions();
+    }
+
+    function bindDeletePlanActions() {
+        plansContainer.querySelectorAll("[data-delete-plan-id]").forEach((button) => {
+            button.addEventListener("click", async () => {
+                const planId = Number(button.dataset.deletePlanId);
+                const plan = state.plans.find((item) => item.id === planId);
+                const planName = plan?.roleName || "этот план";
+                const confirmed = await confirmPlanDelete(planName);
+                if (!confirmed) {
+                    return;
+                }
+
+                button.disabled = true;
+                button.textContent = "Удаляем...";
+
+                try {
+                    await plansApi.remove(planId);
+                    await loadProfilePage();
+                } catch (error) {
+                    button.disabled = false;
+                    button.textContent = "Удалить";
+                    window.alert(error instanceof ApiError ? error.message : "Не удалось удалить план.");
+                }
+            });
+        });
+    }
+
+    function confirmPlanDelete(planName) {
+        return new Promise((resolve) => {
+            const previousActiveElement = document.activeElement;
+            const modal = document.createElement("div");
+            modal.className = "app-confirm";
+            modal.setAttribute("role", "dialog");
+            modal.setAttribute("aria-modal", "true");
+            modal.setAttribute("aria-labelledby", "delete-plan-title");
+            modal.innerHTML = `
+                <div class="app-confirm-card" role="document">
+                    <div class="app-confirm-mark" aria-hidden="true">!</div>
+                    <div class="app-confirm-copy">
+                        <p class="eyebrow">Удаление плана</p>
+                        <h3 id="delete-plan-title">Удалить план?</h3>
+                        <p>План «${escapeHtml(planName)}» исчезнет из списка сохранённых планов. Прогресс по нему больше не будет отображаться.</p>
+                    </div>
+                    <div class="app-confirm-actions">
+                        <button class="button button-ghost" type="button" data-confirm-cancel>Отмена</button>
+                        <button class="button button-danger" type="button" data-confirm-delete>Удалить</button>
+                    </div>
+                </div>
+            `;
+
+            const close = (confirmed) => {
+                document.removeEventListener("keydown", handleKeydown);
+                document.body.classList.remove("has-modal");
+                modal.remove();
+                if (previousActiveElement instanceof HTMLElement) {
+                    previousActiveElement.focus();
+                }
+                resolve(confirmed);
+            };
+
+            const handleKeydown = (event) => {
+                if (event.key === "Escape") {
+                    close(false);
+                }
+            };
+
+            modal.addEventListener("click", (event) => {
+                if (event.target === modal) {
+                    close(false);
+                }
+            });
+            modal.querySelector("[data-confirm-cancel]")?.addEventListener("click", () => close(false));
+            modal.querySelector("[data-confirm-delete]")?.addEventListener("click", () => close(true));
+            document.addEventListener("keydown", handleKeydown);
+            document.body.append(modal);
+            document.body.classList.add("has-modal");
+            requestAnimationFrame(() => {
+                modal.querySelector("[data-confirm-cancel]")?.focus();
+            });
+        });
     }
 
     function renderPlansError(error) {

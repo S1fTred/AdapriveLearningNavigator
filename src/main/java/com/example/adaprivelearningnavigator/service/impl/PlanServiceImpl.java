@@ -80,6 +80,7 @@ public class PlanServiceImpl implements PlanService {
 
     private static final Logger log = LoggerFactory.getLogger(PlanServiceImpl.class);
     private static final String AI_ALGO_VERSION = "ai-ollama-v1";
+    private static final String DELETED_STATUS = EntityStatus.DELETED.name();
     private static final Set<String> ROLE_STOP_WORDS = Set.of(
             "a", "an", "and", "for", "in", "of", "on", "the", "to",
             "в", "во", "для", "и", "или", "на", "по", "с", "со"
@@ -270,7 +271,10 @@ public class PlanServiceImpl implements PlanService {
     @Override
     @Transactional(readOnly = true)
     public PageResponse<PlanShortResponse> getPlans(Long userId, int page, int size) {
-        List<Plan> plans = planRepository.findAllByUser_IdOrderByCreatedAtDesc(userId);
+        List<Plan> plans = planRepository.findAllByUser_IdOrderByCreatedAtDesc(userId)
+                .stream()
+                .filter(plan -> !isDeleted(plan))
+                .toList();
         int safePage = Math.max(page, 0);
         int safeSize = Math.max(size, 1);
         int fromIndex = Math.min(safePage * safeSize, plans.size());
@@ -293,6 +297,7 @@ public class PlanServiceImpl implements PlanService {
     public PlanFullResponse getPlan(Long userId, Long planId) {
         Plan plan = planRepository.findById(planId)
                 .filter(value -> value.getUser().getId().equals(userId))
+                .filter(value -> !isDeleted(value))
                 .orElseThrow(() -> new NotFoundException("План не найден"));
 
         Optional<PlanParamsSnapshot> snapshotOpt = planParamsSnapshotRepository.findById(planId);
@@ -315,6 +320,18 @@ public class PlanServiceImpl implements PlanService {
                 .params(snapshotOpt.map(this::toSnapshotResponse).orElse(null))
                 .weeks(weekResponses)
                 .build();
+    }
+
+    @Override
+    public void deletePlan(Long userId, Long planId) {
+        Plan plan = planRepository.findById(planId)
+                .filter(value -> value.getUser().getId().equals(userId))
+                .filter(value -> !isDeleted(value))
+                .orElseThrow(() -> new NotFoundException("План не найден"));
+
+        plan.setStatus(DELETED_STATUS);
+        planRepository.save(plan);
+        log.info("План помечен как удалённый: userId={}, planId={}", userId, planId);
     }
 
     private RoleGoal resolveRoleGoal(String rawGoal) {
@@ -748,6 +765,10 @@ public class PlanServiceImpl implements PlanService {
                 .scenarioLabel(null)
                 .build();
         return planRepository.saveAndFlush(plan);
+    }
+
+    private boolean isDeleted(Plan plan) {
+        return plan != null && DELETED_STATUS.equalsIgnoreCase(plan.getStatus());
     }
 
     private void savePlanSnapshot(Plan plan, Integer hoursPerWeek) {

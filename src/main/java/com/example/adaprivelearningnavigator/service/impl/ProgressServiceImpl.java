@@ -1,6 +1,7 @@
 package com.example.adaprivelearningnavigator.service.impl;
 
 import com.example.adaprivelearningnavigator.domain.compositeKeys.TopicProgressId;
+import com.example.adaprivelearningnavigator.domain.enums.EntityStatus;
 import com.example.adaprivelearningnavigator.domain.enums.ProgressStatus;
 import com.example.adaprivelearningnavigator.domain.knowledgeBase.Topic;
 import com.example.adaprivelearningnavigator.domain.planWhatIf.Plan;
@@ -76,6 +77,7 @@ public class ProgressServiceImpl implements ProgressService {
     private Plan requireOwnedPlan(Long userId, Long planId) {
         return planRepository.findById(planId)
                 .filter(plan -> Objects.equals(plan.getUser().getId(), userId))
+                .filter(plan -> !EntityStatus.DELETED.name().equalsIgnoreCase(plan.getStatus()))
                 .orElseThrow(() -> new NotFoundException("План не найден"));
     }
 

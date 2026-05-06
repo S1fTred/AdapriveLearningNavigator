@@ -8,6 +8,8 @@ import {
     getCachedRoadmap,
     getCachedRoadmapTopic,
     getRefreshToken,
+    getSelectedPlanId,
+    removeCachedPlan,
     saveUserProfile,
     setAuthTokens,
     setSelectedPlanId
@@ -184,6 +186,16 @@ export const plansApi = {
         cachePlan(response);
         setSelectedPlanId(response.id);
         return response;
+    },
+
+    async remove(planId) {
+        await apiRequest(`/api/plans/${planId}`, {
+            method: "DELETE"
+        });
+        removeCachedPlan(planId);
+        if (getSelectedPlanId() === Number(planId)) {
+            setSelectedPlanId(null);
+        }
     }
 };
 

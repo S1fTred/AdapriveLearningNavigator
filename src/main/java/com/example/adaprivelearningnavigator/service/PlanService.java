@@ -19,4 +19,6 @@ public interface PlanService {
     PageResponse<PlanShortResponse> getPlans(Long userId, int page, int size);
 
     PlanFullResponse getPlan(Long userId, Long planId);
+
+    void deletePlan(Long userId, Long planId);
 }
