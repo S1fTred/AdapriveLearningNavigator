@@ -248,25 +248,3 @@ export const tutorApi = {
         });
     }
 };
-
-export const quizzesApi = {
-    async getTopicQuiz(topicId) {
-        return apiRequest(`/api/topics/${topicId}/quiz`);
-    },
-
-    async getQuestions(quizId) {
-        return apiRequest(`/api/quizzes/${quizId}/questions`);
-    },
-
-    async submit(payload) {
-        return apiRequest("/api/quizzes/attempts", {
-            method: "POST",
-            body: payload
-        });
-    },
-
-    async attempts(quizId = null) {
-        const query = quizId ? `?quizId=${quizId}` : "";
-        return apiRequest(`/api/quizzes/attempts${query}`);
-    }
-};
