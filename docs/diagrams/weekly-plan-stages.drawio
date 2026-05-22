@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net" modified="2026-05-19T00:00:00.000Z" agent="Codex" version="24.7.17" type="device">
+  <diagram id="weekly-plan-stages" name="Plan stages">
+    <mxGraphModel dx="1500" dy="760" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="760" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Схема этапов построения недельного плана" style="text;html=1;strokeColor=none;fillColor=none;fontSize=22;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="300" y="30" width="900" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="s1" value="1&lt;br&gt;Выбор направления" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="160" width="150" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="s2" value="2&lt;br&gt;Ввод часов в неделю" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="160" width="150" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="s3" value="3&lt;br&gt;Отметка известных тем" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="160" width="150" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="s4" value="4&lt;br&gt;Загрузка roadmap" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="160" width="150" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="s5" value="5&lt;br&gt;Исключение известных тем" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="160" width="150" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="s6" value="6&lt;br&gt;Проверка зависимостей" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="160" width="150" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="s7" value="7&lt;br&gt;Распределение по неделям" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="160" width="150" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="s8" value="8&lt;br&gt;Дробление крупных тем" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="380" width="170" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="s9" value="9&lt;br&gt;Сохранение плана" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="380" width="170" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="s10" value="10&lt;br&gt;Показ результата пользователю" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="910" y="380" width="180" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="note" value="Эта схема подходит для краткого объяснения алгоритма в тексте: она показывает основные стадии без детализации внутренних классов и SQL-операций." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8F8F8;strokeColor=#666666;align=left;spacing=10;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="560" width="900" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="s1" target="s2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="s2" target="s3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="s3" target="s4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="s4" target="s5"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="s5" target="s6"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e6" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="s6" target="s7"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e7" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="s7" target="s8"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1285" y="310"/><mxPoint x="535" y="310"/></Array></mxGeometry></mxCell>
+        <mxCell id="e8" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="s8" target="s9"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e9" style="endArrow=block;html=1;rounded=0;" edge="1" parent="1" source="s9" target="s10"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

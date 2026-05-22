@@ -1,5 +1,13 @@
 # Adaprive Learning Navigator
 
+## Документационные схемы
+
+- `docs/diagrams/er-current-chen.drawio` — актуальная ER-диаграмма базы данных в нотации Чена для раздела проектирования.
+- `docs/diagrams/weekly-plan-activity.drawio` — activity diagram построения недельного плана.
+- `docs/diagrams/weekly-plan-sequence.drawio` — sequence diagram backend-сценария построения недельного плана.
+- `docs/diagrams/weekly-plan-data-flow.drawio` — data flow diagram для данных, участвующих в построении плана.
+- `docs/diagrams/weekly-plan-stages.drawio` — упрощённая схема этапов построения недельного плана.
+
 ## Аннотация
 
 Adaprive Learning Navigator — это учебный веб-сервис для построения персональных маршрутов изучения IT-направлений. Пользователь выбирает готовую roadmap-карту из каталога, отмечает уже знакомые темы, задаёт количество часов в неделю и получает недельный план обучения. Внутри выбранной темы доступны описание, ресурсы и AI Tutor в формате чата.
