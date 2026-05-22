@@ -92,7 +92,7 @@ class AiTutorServiceImplTest {
         assertThat(userPromptCaptor.getValue())
                 .contains("Предыдущий диалог:")
                 .contains("Пользователь: Что такое массив?")
-                .contains("AI Tutor: Массив хранит набор значений.")
+                .contains("ИИ-наставник: Массив хранит набор значений.")
                 .contains("Текущий вопрос пользователя:")
                 .contains("Покажи короткий пример.");
     }

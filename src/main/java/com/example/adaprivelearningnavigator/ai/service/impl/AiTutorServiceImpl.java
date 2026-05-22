@@ -81,7 +81,7 @@ public class AiTutorServiceImpl implements AiTutorService {
         try {
             String answer = chatClient.prompt()
                     .system("""
-                            Ты AI Tutor внутри русскоязычного сервиса с roadmap для изучения IT.
+                            Ты ИИ-наставник внутри русскоязычного сервиса с roadmap для изучения IT.
                             Отвечай по-русски, кратко и практично.
                             Не строй новый roadmap целиком: помогай только с выбранной темой.
                             Учитывай предыдущие реплики диалога, но не повторяй их без необходимости.
@@ -106,8 +106,8 @@ public class AiTutorServiceImpl implements AiTutorService {
                     .answer(answer)
                     .build();
         } catch (Exception ex) {
-            log.error("Ошибка AI Tutor для roleId={}, topicId={}", roleId, topicId, ex);
-            throw new AiRouteGenerationException("AI Tutor сейчас недоступен. Проверьте, что Ollama запущена.", ex);
+            log.error("Ошибка ИИ-наставника для roleId={}, topicId={}", roleId, topicId, ex);
+            throw new AiRouteGenerationException("ИИ-наставник сейчас недоступен. Проверьте, что Ollama запущена.", ex);
         }
     }
 
@@ -168,7 +168,7 @@ public class AiTutorServiceImpl implements AiTutorService {
                 .filter(message -> message.content() != null && !message.content().isBlank())
                 .limit(12)
                 .forEach(message -> builder
-                        .append("user".equals(message.role()) ? "Пользователь" : "AI Tutor")
+                        .append("user".equals(message.role()) ? "Пользователь" : "ИИ-наставник")
                         .append(": ")
                         .append(message.content().trim())
                         .append('\n'));

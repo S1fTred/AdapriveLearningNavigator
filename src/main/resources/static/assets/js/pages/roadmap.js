@@ -263,7 +263,7 @@ if (requireAuth()) {
                 <div class="topic-tab-row panel-top-gap">
                     <button class="topic-tab ${tab === "overview" ? "is-active" : ""}" type="button" data-topic-tab="overview">Обзор</button>
                     <button class="topic-tab ${tab === "resources" ? "is-active" : ""}" type="button" data-topic-tab="resources">Ресурсы</button>
-                    <button class="topic-tab ${tab === "tutor" ? "is-active" : ""}" type="button" data-topic-tab="tutor">AI Tutor</button>
+                    <button class="topic-tab ${tab === "tutor" ? "is-active" : ""}" type="button" data-topic-tab="tutor">ИИ-наставник</button>
                 </div>
 
                 <div class="topic-detail-section">
@@ -656,7 +656,7 @@ if (requireAuth()) {
         return `
             <div class="tutor-box">
                 <div class="topic-detail-block tutor-chat-header">
-                    <h4>AI Tutor по теме</h4>
+                    <h4>ИИ-наставник по теме</h4>
                     <div class="tutor-quick-actions">
                         ${renderTutorPromptMenu(topic, isLoading)}
                         ${renderTutorKnowledgeButton(topic, isLoading)}
@@ -746,7 +746,7 @@ if (requireAuth()) {
     }
 
     function renderTutorMessage(message) {
-        const roleLabel = message.role === "user" ? "Вы" : "AI Tutor";
+        const roleLabel = message.role === "user" ? "Вы" : "ИИ-наставник";
         const roleClass = message.role === "user" ? "is-user" : "is-assistant";
         return `
             <article class="tutor-message ${roleClass} ${message.error ? "is-error" : ""} ${message.loading ? "is-loading" : ""}">
@@ -832,7 +832,7 @@ if (requireAuth()) {
         } catch (error) {
             appendTutorMessage(topic.topicId, {
                 role: "assistant",
-                content: error instanceof ApiError ? error.message : "AI Tutor сейчас недоступен.",
+                content: error instanceof ApiError ? error.message : "ИИ-наставник сейчас недоступен.",
                 error: true,
             });
         } finally {
